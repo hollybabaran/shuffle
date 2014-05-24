@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/Shuffle/Shuffle.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Shuffle/runtime/Shuffle.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Shuffle/sandbox/Shuffle.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
+
