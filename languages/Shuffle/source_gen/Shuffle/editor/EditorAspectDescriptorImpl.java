@@ -15,7 +15,27 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   public Collection<ConceptEditor> getEditors(ConceptDescriptor descriptor) {
     switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0a, descriptor.getConceptFqName())) {
       case 0:
+        return Collections.<ConceptEditor>singletonList(new Card_Editor());
+      case 1:
+        return Collections.<ConceptEditor>singletonList(new Deal_Editor());
+      case 2:
         return Collections.<ConceptEditor>singletonList(new Deck_Editor());
+      case 3:
+        return Collections.<ConceptEditor>singletonList(new DeckReference_Editor());
+      case 4:
+        return Collections.<ConceptEditor>singletonList(new Main_Editor());
+      case 5:
+        return Collections.<ConceptEditor>singletonList(new Number_Editor());
+      case 6:
+        return Collections.<ConceptEditor>singletonList(new NumberAssignment_Editor());
+      case 7:
+        return Collections.<ConceptEditor>singletonList(new NumberReference_Editor());
+      case 8:
+        return Collections.<ConceptEditor>singletonList(new Player_Editor());
+      case 9:
+        return Collections.<ConceptEditor>singletonList(new ShuffleDeck_Editor());
+      case 10:
+        return Collections.<ConceptEditor>singletonList(new Suit_Editor());
       default:
     }
     return Collections.emptyList();
@@ -32,5 +52,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"Shuffle.structure.Deck"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"Shuffle.structure.Card", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.DeckReference", "Shuffle.structure.Main", "Shuffle.structure.Number", "Shuffle.structure.NumberAssignment", "Shuffle.structure.NumberReference", "Shuffle.structure.Player", "Shuffle.structure.ShuffleDeck", "Shuffle.structure.Suit"};
 }

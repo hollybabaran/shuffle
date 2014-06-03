@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="bly1jp9i2eo8p2qnd5jxyaq3rbo34zq">
-  <dep model="r:8a91b938-6f8a-4cf5-9175-3a13fc608fe6(Shuffle.editor)" hash="8hsfawcko407gspvexhtavmgah12z3o" />
-  <dep model="r:b57e8ebe-29cf-4b39-86c1-3d625dfafc54(Shuffle.typesystem)" hash="-b4pcznlg1llyopd6hrcpvfh55j5qlgu" />
+<dependencies version="2" modelHash="-a1mxdalnywzup6wl3fknjl8g4rriyzu">
+  <dep model="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+  <dep model="r:8a91b938-6f8a-4cf5-9175-3a13fc608fe6(Shuffle.editor)" hash="c4pm93rsq9ju9z5bmy75gcm2z7et4gz" />
+  <dep model="r:b57e8ebe-29cf-4b39-86c1-3d625dfafc54(Shuffle.typesystem)" hash="2ni7xdr17ukbdcrxitb7ia9ti455kjk" />
   <common>
+    <dep model="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:8a91b938-6f8a-4cf5-9175-3a13fc608fe6(Shuffle.editor)" />
     <dep model="r:b57e8ebe-29cf-4b39-86c1-3d625dfafc54(Shuffle.typesystem)" />
     <file name="Language.java" />

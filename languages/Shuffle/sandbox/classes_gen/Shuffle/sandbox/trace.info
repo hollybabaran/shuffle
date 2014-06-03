@@ -5,39 +5,46 @@
     <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="9" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="value" />
     <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="11" startPosition="38" endLine="12" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="12" startPosition="23" endLine="13" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="38" startPosition="42" endLine="39" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="39" startPosition="33" endLine="40" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="40" startPosition="40" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="2834967828304112319" fileName="map_Main.java" startLine="41" startPosition="0" endLine="42" endPosition="49" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304162229" fileName="map_Main.java" startLine="42" startPosition="49" endLine="43" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828305591220" fileName="map_Main.java" startLine="43" startPosition="45" endLine="44" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="44" startPosition="46" endLine="45" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="32" startPosition="27" endLine="33" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="42" startPosition="42" endLine="43" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="43" startPosition="33" endLine="44" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="44" startPosition="40" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7674520359937435073" fileName="map_Main.java" startLine="45" startPosition="0" endLine="46" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7674520359937806858" fileName="map_Main.java" startLine="46" startPosition="14" endLine="47" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7674520359937806834" fileName="map_Main.java" startLine="47" startPosition="14" endLine="48" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7674520359937435091" fileName="map_Main.java" startLine="48" startPosition="45" endLine="49" endPosition="10" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7674520359937435127" fileName="map_Main.java" startLine="49" startPosition="10" endLine="50" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7674520359937807619" fileName="map_Main.java" startLine="50" startPosition="18" endLine="51" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="51" startPosition="19" endLine="52" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="20" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Player#()V" />
     <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="29" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Deck#()V" />
+    <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="32" startPosition="0" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="shuffle#()V" />
     <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="11" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Card#(II)V" />
-    <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="38" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="main#([Ljava/lang/String;)V" />
+    <nodeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="42" startPosition="0" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="main#([Ljava/lang/String;)V" />
     <scopeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="20" startPosition="21" endLine="20" endPosition="21" />
     <scopeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="29" startPosition="19" endLine="29" endPosition="19" />
+    <scopeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="32" startPosition="27" endLine="33" endPosition="43" />
     <scopeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="11" startPosition="38" endLine="13" endPosition="25" />
     <scopeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="20" startPosition="0" endLine="22" endPosition="0" />
     <scopeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="29" startPosition="0" endLine="31" endPosition="0" />
+    <scopeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="32" startPosition="0" endLine="35" endPosition="0" />
     <scopeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="11" startPosition="0" endLine="15" endPosition="0">
       <varInfo nodeId="2834967828303791459" varName="suit" />
       <varInfo nodeId="2834967828303791459" varName="value" />
     </scopeInfo>
-    <scopeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="38" startPosition="42" endLine="45" endPosition="40">
-      <varInfo nodeId="2834967828304112319" varName="card" />
-      <varInfo nodeId="2834967828304162229" varName="deck" />
-      <varInfo nodeId="2834967828305591220" varName="deck2" />
+    <scopeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="42" startPosition="42" endLine="52" endPosition="40">
+      <varInfo nodeId="7674520359937806858" varName="a" />
+      <varInfo nodeId="7674520359937806834" varName="deck" />
+      <varInfo nodeId="7674520359937435073" varName="n" />
       <varInfo nodeId="2834967828303791459" varName="playerlist" />
     </scopeInfo>
-    <scopeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="38" startPosition="0" endLine="47" endPosition="0">
+    <scopeInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="42" startPosition="0" endLine="54" endPosition="0">
       <varInfo nodeId="2834967828303791459" varName="args" />
     </scopeInfo>
     <unitInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="19" startPosition="0" endLine="25" endPosition="0" unitName="Shuffle.sandbox.map_Main$Player" />
-    <unitInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="28" startPosition="0" endLine="34" endPosition="0" unitName="Shuffle.sandbox.map_Main$Deck" />
+    <unitInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="28" startPosition="0" endLine="38" endPosition="0" unitName="Shuffle.sandbox.map_Main$Deck" />
     <unitInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="7" startPosition="0" endLine="18" endPosition="0" unitName="Shuffle.sandbox.map_Main$Card" />
-    <unitInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="6" startPosition="0" endLine="48" endPosition="0" unitName="Shuffle.sandbox.map_Main" />
+    <unitInfo nodeId="2834967828303791459" fileName="map_Main.java" startLine="6" startPosition="0" endLine="55" endPosition="0" unitName="Shuffle.sandbox.map_Main" />
   </root>
 </debugInfo>
 

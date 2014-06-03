@@ -12,12 +12,32 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
 
   public BehaviorDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
-      case 0:
+      case 2:
         return new Deck_BehaviorDescriptor();
+      case 4:
+        return new Main_BehaviorDescriptor();
+      case 0:
+        return new Card_BehaviorDescriptor();
+      case 8:
+        return new Player_BehaviorDescriptor();
+      case 10:
+        return new Suit_BehaviorDescriptor();
+      case 5:
+        return new Number_BehaviorDescriptor();
+      case 7:
+        return new NumberReference_BehaviorDescriptor();
+      case 6:
+        return new NumberAssignment_BehaviorDescriptor();
+      case 3:
+        return new DeckReference_BehaviorDescriptor();
+      case 9:
+        return new ShuffleDeck_BehaviorDescriptor();
+      case 1:
+        return new Deal_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"Shuffle.structure.Deck"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"Shuffle.structure.Card", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.DeckReference", "Shuffle.structure.Main", "Shuffle.structure.Number", "Shuffle.structure.NumberAssignment", "Shuffle.structure.NumberReference", "Shuffle.structure.Player", "Shuffle.structure.ShuffleDeck", "Shuffle.structure.Suit"};
 }

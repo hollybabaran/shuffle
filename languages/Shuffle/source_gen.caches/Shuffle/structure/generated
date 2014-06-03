@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-b1a9jr7hp1285hsee7ajxq3o11m786o">
+<dependencies version="2" modelHash="efx496psmfkfqlhsf8adrxvsrhh7iph">
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  <common hash="c6pcytzc11ttt7omsv3lsu1ezlvyeli">
+  <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
+  <common hash="-7cbjm2g9wwmxzd5zoppfb52ca7mxenb">
     <dep root="2834967828303451498" />
+    <dep root="2834967828303785259" />
+    <dep root="2834967828303818439" />
+    <dep root="2834967828303856791" />
+    <dep root="2834967828304063230" />
+    <dep root="2834967828304112385" />
+    <dep root="7674520359934846973" />
+    <dep root="7674520359935552566" />
+    <dep root="7674520359936137193" />
+    <dep root="7674520359936173280" />
+    <dep root="7674520359936345854" />
+    <dep root="7674520359936346144" />
+    <dep root="7674520359936462567" />
     <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="2834967828303451498" name="Deck" hash="-3kn9tuzspmrg9pm3cn1k3vezdclgvk2" />
+  <source id="2834967828303451498" name="Deck" hash="-du2ytn72w209jq36t6olrsumyjd1lzd" />
+  <source id="2834967828303785259" name="Main" hash="b9xafactxgvcobaed76s45j317kmxbv" />
+  <source id="2834967828303818439" name="Card" hash="cbhmnq0qd4u48dllpf3z4a4tr3pee9j" />
+  <source id="2834967828303856791" name="Variable" hash="-10eojn4xngflpu758zfse7eubvff7mj" />
+  <source id="2834967828304063230" name="Player" hash="-cs5yti8vdxpb76lw0vc7z5ia4kqq9rd" />
+  <source id="2834967828304112385" name="Suit" hash="-3c7oxbqqnx3u3vkbof4kbko9gwro2lf" />
+  <source id="7674520359934846973" name="Number" hash="6q56zz788aiv0bdvmlxv6el8txn7uon" />
+  <source id="7674520359935552566" name="NumberReference" hash="-8u66g6ediwtt25nk7x87vu0m8fzzs4w" />
+  <source id="7674520359936137193" name="Command" hash="-724nqy575wustygpy5k8x2wm3iqqyqh" />
+  <source id="7674520359936173280" name="NumberAssignment" hash="5bpwna1ftavwxfc905wjy3kypaawvlj" />
+  <source id="7674520359936345854" name="DeckReference" hash="4pnjflrq5ymof0taopkha95lc7k6e70" />
+  <source id="7674520359936346144" name="ShuffleDeck" hash="-iu5oqc9zb6pvrx8chxqt207of5ytxi" />
+  <source id="7674520359936462567" name="Deal" hash="1wpzgn0wdtxrh966kxoqkufk06boftc" />
 </dependencies>
 

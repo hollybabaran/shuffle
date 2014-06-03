@@ -29,6 +29,10 @@ public class map_Main {
     public Deck() {
     }
 
+    public void shuffle() {
+      System.out.println("shuffling deck");
+    }
+
 
   }
 
@@ -39,9 +43,12 @@ public class map_Main {
     map_Main.Player[] playerlist;
     playerlist = new map_Main.Player[2];
 
-    map_Main.Card card = new map_Main.Card(1, 1);
+    int n = 1;
+    int a = 2;
     map_Main.Deck deck = new map_Main.Deck();
-    map_Main.Deck deck2 = new map_Main.Deck();
+    n = 2;
+    n = 3 + 2 - n;
+    deck.shuffle();
     System.out.println("test complete");
   }
 }

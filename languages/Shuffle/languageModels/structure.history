@@ -6,5 +6,11 @@
     </dependencies>
     <rename id="ffsp.2834967828303451498" type="CONCEPT" from="Main" to="Deck" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="0" />
+    </dependencies>
+    <rename id="ffsp.2834967828304050224" type="PROPERTY" from="x" to="value" />
+  </StructureModification>
 </history>
 
