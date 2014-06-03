@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="-1" />
+    </dependencies>
+    <rename id="ffsp.2834967828303451498" type="CONCEPT" from="Main" to="Deck" />
+  </StructureModification>
+</history>
+
