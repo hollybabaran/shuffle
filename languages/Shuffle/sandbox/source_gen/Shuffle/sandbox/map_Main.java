@@ -5,12 +5,12 @@ package Shuffle.sandbox;
 
 public class map_Main {
   public static class Card {
-    public String suit;
-    public String rank;
+    public int suit;
+    public int value;
 
-    public Card(String suit, String rank) {
+    public Card(int suit, int value) {
       this.suit = suit;
-      this.rank = rank;
+      this.value = value;
     }
 
 
@@ -46,7 +46,6 @@ public class map_Main {
     int n = 1;
     int a = 2;
     map_Main.Deck deck = new map_Main.Deck();
-    map_Main.Card c = new map_Main.Card("a", "b");
     n = 2;
     n = 3 + 2 - n;
     deck.shuffle();

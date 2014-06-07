@@ -4,7 +4,7 @@
   <language namespace="360f183c-7a9f-4f9b-a4f3-c572eede364e(Shuffle)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="2" implicit="yes" />
+  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="1" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="2834967828303791459" nodeInfo="ng">
@@ -28,8 +28,8 @@
     </node>
     <node role="variable" roleId="ffsp.2834967828304063126" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="6132548542731560067" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="c" />
+      <property name="value" nameId="ffsp.2834967828304050224" value="1" />
       <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
-      <property name="rank" nameId="ffsp.2834967828304050224" value="1" />
     </node>
     <node role="program" roleId="ffsp.7674520359936137324" type="ffsp.NumberAssignment" typeId="ffsp.7674520359936173280" id="7674520359937435091" nodeInfo="ng">
       <node role="variable" roleId="ffsp.7674520359936234808" type="ffsp.NumberReference" typeId="ffsp.7674520359935552566" id="7674520359937435103" nodeInfo="ng">

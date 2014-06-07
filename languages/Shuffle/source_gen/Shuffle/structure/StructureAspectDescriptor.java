@@ -14,7 +14,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new ConceptDescriptorBuilder("Shuffle.structure.Card").super_("Shuffle.structure.Variable").parents("Shuffle.structure.Variable", "jetbrains.mps.lang.core.structure.INamedConcept").properties("rank", "suit").create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.Card").super_("Shuffle.structure.Variable").parents("Shuffle.structure.Variable", "jetbrains.mps.lang.core.structure.INamedConcept").properties("value", "suit").create();
       case 1:
         return new ConceptDescriptorBuilder("Shuffle.structure.Command").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
       case 2:
