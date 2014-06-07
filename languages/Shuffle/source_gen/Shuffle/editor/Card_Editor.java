@@ -98,11 +98,11 @@ public class Card_Editor extends DefaultNodeEditor {
 
   private EditorCell createProperty_8qm9by_g0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("value");
-    provider.setNoTargetText("<no value>");
+    provider.setRole("rank");
+    provider.setNoTargetText("<no rank>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_value");
+    editorCell.setCellId("property_rank");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
