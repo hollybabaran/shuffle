@@ -16,6 +16,7 @@
   <import index="tpf3" modelUID="r:00000000-0000-4000-0000-011c895902f3(jetbrains.mps.lang.generator.generationContext.structure)" version="0" implicit="yes" />
   <root type="tpf8.MappingConfiguration" typeId="tpf8.1095416546421" id="7674419771057231696" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="main" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="CardCollection" />
     <node role="reductionMappingRule" roleId="tpf8.1167328349397" type="tpf8.Reduction_MappingRule" typeId="tpf8.1167327847730" id="2834967828304416950" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpf8.1167169349424" targetNodeId="ffsp.2834967828303818439" resolveInfo="Card" />
       <node role="ruleConsequence" roleId="tpf8.1169672767469" type="tpf8.TemplateDeclarationReference" typeId="tpf8.1168559333462" id="2834967828304417067" nodeInfo="nn">
@@ -408,6 +409,7 @@
   </root>
   <root type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="2834967828304433402" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="reduce_Deck" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="CardCollection" />
     <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="ffsp.2834967828303451498" resolveInfo="Deck" />
     <node role="contentNode" roleId="tpf8.1092060348987" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2834967828304467266" nodeInfo="nn">
       <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2834967828304467267" nodeInfo="nr">

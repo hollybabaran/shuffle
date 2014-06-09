@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="efx496psmfkfqlhsf8adrxvsrhh7iph">
+<dependencies version="2" modelHash="2dwkqa7kzpv4pxfqa0j7v8b0wc8q7v8">
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
@@ -14,6 +14,9 @@
     <dep root="2834967828303856791" />
     <dep root="2834967828304063230" />
     <dep root="2834967828304112385" />
+    <dep root="3854676059697220626" />
+    <dep root="3854676059697422932" />
+    <dep root="3854676059697422937" />
     <dep root="7674520359934846973" />
     <dep root="7674520359935552566" />
     <dep root="7674520359936137193" />
@@ -30,11 +33,11 @@
     <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="2834967828303451498" name="Deck" hash="-du2ytn72w209jq36t6olrsumyjd1lzd" />
+  <source id="2834967828303451498" name="Deck" hash="m7eg73kk3hjgqof2x57gxneua1iphc" />
   <source id="2834967828303785259" name="Main" hash="b9xafactxgvcobaed76s45j317kmxbv" />
-  <source id="2834967828303818439" name="Card" hash="cbhmnq0qd4u48dllpf3z4a4tr3pee9j" />
+  <source id="2834967828303818439" name="Card" hash="45ncev5k0iq7eqcgluak084ic6hnsqu" />
   <source id="2834967828303856791" name="Variable" hash="-10eojn4xngflpu758zfse7eubvff7mj" />
-  <source id="2834967828304063230" name="Player" hash="-cs5yti8vdxpb76lw0vc7z5ia4kqq9rd" />
+  <source id="2834967828304063230" name="Player" hash="-67cgiij2adreot81sjid9jrhg8modyb" />
   <source id="2834967828304112385" name="Suit" hash="-3c7oxbqqnx3u3vkbof4kbko9gwro2lf" />
   <source id="7674520359934846973" name="Number" hash="6q56zz788aiv0bdvmlxv6el8txn7uon" />
   <source id="7674520359935552566" name="NumberReference" hash="-8u66g6ediwtt25nk7x87vu0m8fzzs4w" />
@@ -43,5 +46,8 @@
   <source id="7674520359936345854" name="DeckReference" hash="4pnjflrq5ymof0taopkha95lc7k6e70" />
   <source id="7674520359936346144" name="ShuffleDeck" hash="-iu5oqc9zb6pvrx8chxqt207of5ytxi" />
   <source id="7674520359936462567" name="Deal" hash="1wpzgn0wdtxrh966kxoqkufk06boftc" />
+  <source id="3854676059697220626" name="CardCollection" hash="79hy0h8lw8ff6q3k1nyg43y3nggj3no" />
+  <source id="3854676059697422932" name="Pile" hash="-bmn2095ptz56exfqs33lkkuzuzkeitn" />
+  <source id="3854676059697422937" name="Hand" hash="dedu5tge0eov5apzcsphyegzf3oqz3v" />
 </dependencies>
 
