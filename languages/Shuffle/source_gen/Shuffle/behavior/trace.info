@@ -13,7 +13,7 @@
   <unitInfo fileName="NumberReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.NumberReference_BehaviorDescriptor" />
   <unitInfo fileName="Number_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Number_BehaviorDescriptor" />
   <unitInfo fileName="Pile_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Pile_BehaviorDescriptor" />
-  <unitInfo fileName="Player_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Player_BehaviorDescriptor" />
+  <unitInfo fileName="Player_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Shuffle.behavior.Player_BehaviorDescriptor" />
   <unitInfo fileName="ShuffleDeck_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ShuffleDeck_BehaviorDescriptor" />
   <unitInfo fileName="Variable_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Shuffle.behavior.Variable_BehaviorDescriptor" />
   <root nodeRef="r:88266f50-160d-4022-b70e-078f6bc19dfd(Shuffle.behavior)/7674520359937817982">

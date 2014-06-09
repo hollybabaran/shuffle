@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-2aljnk814lr1ao51yl5vqcelcim74hw">
+<dependencies version="2" modelHash="-aewtd82s1xh5hocak917qfnk03uufg">
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -10,7 +10,7 @@
   <dep model="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
-  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="24232rjx87jgstrgy4q0vc6eoqul75s" />
+  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="e11kav6sbk15mhrperinivqmfeq3hjs" />
   <common hash="68lgrgp479t1ed1suo0go5cbvm2eir2">
     <dep root="2834967828304165839" />
     <dep root="2834967828304417065" />
@@ -33,7 +33,7 @@
     <file name="QueriesGenerated.java" />
   </common>
   <source id="7674419771057231696" name="main" hash="8c3g4u10dwwqn8emiblgvk95smpmod4" />
-  <source id="2834967828304165839" name="map_Main" hash="-9vbxnfnyahk1qth2z0tq429bele7lj" />
+  <source id="2834967828304165839" name="map_Main" hash="30d9we129lwhmc9yccmn8v9btvsi0sm" />
   <source id="2834967828304417065" name="reduce_Card" hash="-4suo5o5fvgmdj6631jhc8dv6255nyrt" />
   <source id="2834967828304433402" name="reduce_Deck" hash="-eq6nc6pda62arj3hee44td68rega8wh" />
   <source id="7674520359934911803" name="reduce_Number" hash="-3sbmeyklx8yjodi852z4c718xt872oh" />

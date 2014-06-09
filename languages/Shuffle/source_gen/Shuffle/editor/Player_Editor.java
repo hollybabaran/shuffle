@@ -28,7 +28,7 @@ public class Player_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createConstant_isa7gl_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Players ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Player ");
     editorCell.setCellId("Constant_isa7gl_a0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -36,11 +36,11 @@ public class Player_Editor extends DefaultNodeEditor {
 
   private EditorCell createProperty_isa7gl_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("number");
-    provider.setNoTargetText("<no number>");
+    provider.setRole("name");
+    provider.setNoTargetText("<no name>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_number");
+    editorCell.setCellId("property_name");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
