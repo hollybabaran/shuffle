@@ -34,8 +34,6 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
         return Collections.<ConceptEditor>singletonList(new Player_Editor());
       case 9:
         return Collections.<ConceptEditor>singletonList(new ShuffleDeck_Editor());
-      case 10:
-        return Collections.<ConceptEditor>singletonList(new Suit_Editor());
       default:
     }
     return Collections.emptyList();
@@ -52,5 +50,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"Shuffle.structure.Card", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.DeckReference", "Shuffle.structure.Main", "Shuffle.structure.Number", "Shuffle.structure.NumberAssignment", "Shuffle.structure.NumberReference", "Shuffle.structure.Player", "Shuffle.structure.ShuffleDeck", "Shuffle.structure.Suit"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"Shuffle.structure.Card", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.DeckReference", "Shuffle.structure.Main", "Shuffle.structure.Number", "Shuffle.structure.NumberAssignment", "Shuffle.structure.NumberReference", "Shuffle.structure.Player", "Shuffle.structure.ShuffleDeck"};
 }

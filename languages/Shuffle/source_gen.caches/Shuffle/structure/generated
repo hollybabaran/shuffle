@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="2dwkqa7kzpv4pxfqa0j7v8b0wc8q7v8">
+<dependencies version="2" modelHash="24232rjx87jgstrgy4q0vc6eoqul75s">
+  <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+  <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
@@ -7,16 +9,18 @@
   <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
   <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
-  <common hash="-7cbjm2g9wwmxzd5zoppfb52ca7mxenb">
+  <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
+  <common hash="-du3ukuv4o0f0tzoiv5imlpvwsne2n8k">
     <dep root="2834967828303451498" />
     <dep root="2834967828303785259" />
     <dep root="2834967828303818439" />
     <dep root="2834967828303856791" />
     <dep root="2834967828304063230" />
-    <dep root="2834967828304112385" />
     <dep root="3854676059697220626" />
     <dep root="3854676059697422932" />
     <dep root="3854676059697422937" />
+    <dep root="3854676059697652960" />
+    <dep root="3854676059697653018" />
     <dep root="7674520359934846973" />
     <dep root="7674520359935552566" />
     <dep root="7674520359936137193" />
@@ -35,10 +39,9 @@
   </common>
   <source id="2834967828303451498" name="Deck" hash="m7eg73kk3hjgqof2x57gxneua1iphc" />
   <source id="2834967828303785259" name="Main" hash="b9xafactxgvcobaed76s45j317kmxbv" />
-  <source id="2834967828303818439" name="Card" hash="45ncev5k0iq7eqcgluak084ic6hnsqu" />
+  <source id="2834967828303818439" name="Card" hash="-3l66d3q3plxjnxlv9md8f218vrzulip" />
   <source id="2834967828303856791" name="Variable" hash="-10eojn4xngflpu758zfse7eubvff7mj" />
   <source id="2834967828304063230" name="Player" hash="-67cgiij2adreot81sjid9jrhg8modyb" />
-  <source id="2834967828304112385" name="Suit" hash="-3c7oxbqqnx3u3vkbof4kbko9gwro2lf" />
   <source id="7674520359934846973" name="Number" hash="6q56zz788aiv0bdvmlxv6el8txn7uon" />
   <source id="7674520359935552566" name="NumberReference" hash="-8u66g6ediwtt25nk7x87vu0m8fzzs4w" />
   <source id="7674520359936137193" name="Command" hash="-724nqy575wustygpy5k8x2wm3iqqyqh" />
@@ -49,5 +52,27 @@
   <source id="3854676059697220626" name="CardCollection" hash="79hy0h8lw8ff6q3k1nyg43y3nggj3no" />
   <source id="3854676059697422932" name="Pile" hash="-bmn2095ptz56exfqs33lkkuzuzkeitn" />
   <source id="3854676059697422937" name="Hand" hash="dedu5tge0eov5apzcsphyegzf3oqz3v" />
+  <source id="3854676059697652960" name="Suit" hash="-2023ym7l9glw1jfni68k3mrqb9jixg4">
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+    <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
+    <file name="Suit.java" />
+    <file name="Suit_PropertySupport.java" />
+  </source>
+  <source id="3854676059697653018" name="Rank" hash="dzm6mals5kty4ssd6q18lcrfa7obh18">
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
+    <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
+    <file name="Rank.java" />
+    <file name="Rank_PropertySupport.java" />
+  </source>
 </dependencies>
 

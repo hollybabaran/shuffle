@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="50" endPosition="0" unitName="Shuffle.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="48" endPosition="0" unitName="Shuffle.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="CardCollection_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.CardCollection_BehaviorDescriptor" />
-  <unitInfo fileName="Card_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Shuffle.behavior.Card_BehaviorDescriptor" />
+  <unitInfo fileName="Card_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Card_BehaviorDescriptor" />
   <unitInfo fileName="Command_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Command_BehaviorDescriptor" />
   <unitInfo fileName="Deal_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Deal_BehaviorDescriptor" />
   <unitInfo fileName="DeckReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.DeckReference_BehaviorDescriptor" />
@@ -15,7 +15,6 @@
   <unitInfo fileName="Pile_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Pile_BehaviorDescriptor" />
   <unitInfo fileName="Player_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Player_BehaviorDescriptor" />
   <unitInfo fileName="ShuffleDeck_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ShuffleDeck_BehaviorDescriptor" />
-  <unitInfo fileName="Suit_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Shuffle.behavior.Suit_BehaviorDescriptor" />
   <unitInfo fileName="Variable_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Shuffle.behavior.Variable_BehaviorDescriptor" />
   <root nodeRef="r:88266f50-160d-4022-b70e-078f6bc19dfd(Shuffle.behavior)/7674520359937817982">
     <nodeInfo nodeId="7674520359937822725" fileName="Main_Behavior.java" startLine="16" startPosition="78" endLine="17" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

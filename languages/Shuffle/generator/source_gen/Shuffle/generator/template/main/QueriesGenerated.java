@@ -17,16 +17,12 @@ public class QueriesGenerated {
     return SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), "players", true), "number");
   }
 
-  public static Object propertyMacro_GetPropertyValue_2834967828304426800(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(_context.getNode(), "suit");
+  public static Object propertyMacro_GetPropertyValue_3854676059697937759(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString_def(_context.getNode(), "suit", "spades");
   }
 
-  public static Object propertyMacro_GetPropertyValue_2834967828304431677(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(_context.getNode(), "value");
-  }
-
-  public static Object propertyMacro_GetPropertyValue_2834967828304437903(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), "name");
+  public static Object propertyMacro_GetPropertyValue_3854676059697985373(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString_def(_context.getNode(), "rank", "ace");
   }
 
   public static Object propertyMacro_GetPropertyValue_2834967828304467600(final IOperationContext operationContext, final PropertyMacroContext _context) {

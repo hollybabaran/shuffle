@@ -20,8 +20,6 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new Card_BehaviorDescriptor();
       case 11:
         return new Player_BehaviorDescriptor();
-      case 13:
-        return new Suit_BehaviorDescriptor();
       case 7:
         return new Number_BehaviorDescriptor();
       case 9:
@@ -45,5 +43,5 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
     }
   }
 
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"Shuffle.structure.Card", "Shuffle.structure.CardCollection", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.DeckReference", "Shuffle.structure.Hand", "Shuffle.structure.Main", "Shuffle.structure.Number", "Shuffle.structure.NumberAssignment", "Shuffle.structure.NumberReference", "Shuffle.structure.Pile", "Shuffle.structure.Player", "Shuffle.structure.ShuffleDeck", "Shuffle.structure.Suit"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"Shuffle.structure.Card", "Shuffle.structure.CardCollection", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.DeckReference", "Shuffle.structure.Hand", "Shuffle.structure.Main", "Shuffle.structure.Number", "Shuffle.structure.NumberAssignment", "Shuffle.structure.NumberReference", "Shuffle.structure.Pile", "Shuffle.structure.Player", "Shuffle.structure.ShuffleDeck"};
 }

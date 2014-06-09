@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="EditorAspectDescriptorImpl.java" startLine="14" startPosition="0" endLine="57" endPosition="0" unitName="Shuffle.editor.EditorAspectDescriptorImpl" />
+  <unitInfo fileName="EditorAspectDescriptorImpl.java" startLine="14" startPosition="0" endLine="55" endPosition="0" unitName="Shuffle.editor.EditorAspectDescriptorImpl" />
   <root nodeRef="r:8a91b938-6f8a-4cf5-9175-3a13fc608fe6(Shuffle.editor)/2834967828303743741">
     <nodeInfo nodeId="2834967828303743741" fileName="Deck_Editor.java" startLine="17" startPosition="79" endLine="18" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2834967828303743741" fileName="Deck_Editor.java" startLine="21" startPosition="89" endLine="22" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -297,172 +297,95 @@
     <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="25" startPosition="81" endLine="26" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="26" startPosition="81" endLine="27" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
     <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="26" startPosition="81" endLine="27" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="27" startPosition="81" endLine="28" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="27" startPosition="81" endLine="28" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="28" startPosition="81" endLine="29" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="28" startPosition="81" endLine="29" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="29" startPosition="81" endLine="30" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="29" startPosition="81" endLine="30" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="30" startPosition="81" endLine="31" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="30" startPosition="81" endLine="31" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="31" startPosition="81" endLine="32" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304063159" fileName="Card_Editor.java" startLine="35" startPosition="88" endLine="36" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063159" fileName="Card_Editor.java" startLine="36" startPosition="91" endLine="37" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063159" fileName="Card_Editor.java" startLine="37" startPosition="47" endLine="38" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063159" fileName="Card_Editor.java" startLine="38" startPosition="34" endLine="39" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="42" startPosition="88" endLine="43" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="43" startPosition="82" endLine="44" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="44" startPosition="29" endLine="45" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="45" startPosition="42" endLine="46" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="46" startPosition="26" endLine="47" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="47" startPosition="58" endLine="48" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="48" startPosition="42" endLine="49" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="49" startPosition="73" endLine="50" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="50" startPosition="57" endLine="51" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="52" startPosition="35" endLine="53" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="53" startPosition="72" endLine="54" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="54" startPosition="78" endLine="55" endPosition="105" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="56" startPosition="10" endLine="57" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304063172" fileName="Card_Editor.java" startLine="60" startPosition="88" endLine="61" endPosition="91" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063172" fileName="Card_Editor.java" startLine="61" startPosition="91" endLine="62" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063172" fileName="Card_Editor.java" startLine="62" startPosition="47" endLine="63" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063172" fileName="Card_Editor.java" startLine="63" startPosition="34" endLine="64" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="67" startPosition="88" endLine="68" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="68" startPosition="82" endLine="69" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="69" startPosition="29" endLine="70" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="70" startPosition="42" endLine="71" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="71" startPosition="26" endLine="72" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="72" startPosition="58" endLine="73" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="73" startPosition="42" endLine="74" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="74" startPosition="73" endLine="75" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="75" startPosition="57" endLine="76" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="77" startPosition="35" endLine="78" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="78" startPosition="72" endLine="79" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="79" startPosition="78" endLine="80" endPosition="105" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="81" startPosition="10" endLine="82" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304112423" fileName="Card_Editor.java" startLine="85" startPosition="88" endLine="86" endPosition="86" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304112423" fileName="Card_Editor.java" startLine="86" startPosition="86" endLine="87" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112423" fileName="Card_Editor.java" startLine="87" startPosition="47" endLine="88" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112423" fileName="Card_Editor.java" startLine="88" startPosition="34" endLine="89" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304063193" fileName="Card_Editor.java" startLine="92" startPosition="88" endLine="93" endPosition="92" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063193" fileName="Card_Editor.java" startLine="93" startPosition="92" endLine="94" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063193" fileName="Card_Editor.java" startLine="94" startPosition="47" endLine="95" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063193" fileName="Card_Editor.java" startLine="95" startPosition="34" endLine="96" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="99" startPosition="88" endLine="100" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="100" startPosition="82" endLine="101" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="101" startPosition="30" endLine="102" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="102" startPosition="43" endLine="103" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="103" startPosition="26" endLine="104" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="104" startPosition="58" endLine="105" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="105" startPosition="43" endLine="106" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="106" startPosition="73" endLine="107" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="107" startPosition="57" endLine="108" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="109" startPosition="35" endLine="110" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="110" startPosition="72" endLine="111" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="111" startPosition="78" endLine="112" endPosition="105" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="113" startPosition="10" endLine="114" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="27" startPosition="81" endLine="28" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="31" startPosition="88" endLine="32" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="32" startPosition="82" endLine="33" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="33" startPosition="29" endLine="34" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="34" startPosition="42" endLine="35" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="35" startPosition="26" endLine="36" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="36" startPosition="58" endLine="37" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="37" startPosition="42" endLine="38" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="38" startPosition="73" endLine="39" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="39" startPosition="57" endLine="40" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="41" startPosition="35" endLine="42" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="42" startPosition="72" endLine="43" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="43" startPosition="78" endLine="44" endPosition="105" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="45" startPosition="10" endLine="46" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3854676059698102266" fileName="Card_Editor.java" startLine="49" startPosition="88" endLine="50" endPosition="87" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102266" fileName="Card_Editor.java" startLine="50" startPosition="87" endLine="51" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059698102266" fileName="Card_Editor.java" startLine="51" startPosition="47" endLine="52" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059698102266" fileName="Card_Editor.java" startLine="52" startPosition="34" endLine="53" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="56" startPosition="88" endLine="57" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="57" startPosition="82" endLine="58" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="58" startPosition="29" endLine="59" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="59" startPosition="42" endLine="60" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="60" startPosition="26" endLine="61" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="61" startPosition="58" endLine="62" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="62" startPosition="42" endLine="63" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="63" startPosition="73" endLine="64" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="64" startPosition="57" endLine="65" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="66" startPosition="35" endLine="67" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="67" startPosition="72" endLine="68" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="68" startPosition="78" endLine="69" endPosition="105" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="70" startPosition="10" endLine="71" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="17" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="2834967828304063159" fileName="Card_Editor.java" startLine="35" startPosition="0" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_8qm9by_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="51" startPosition="59" endLine="57" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2834967828304063172" fileName="Card_Editor.java" startLine="60" startPosition="0" endLine="66" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_8qm9by_c0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="76" startPosition="59" endLine="82" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2834967828304112423" fileName="Card_Editor.java" startLine="85" startPosition="0" endLine="91" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_8qm9by_e0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="2834967828304063193" fileName="Card_Editor.java" startLine="92" startPosition="0" endLine="98" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_8qm9by_f0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="108" startPosition="59" endLine="114" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="21" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_8qm9by_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="42" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createProperty_8qm9by_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="67" startPosition="0" endLine="84" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createProperty_8qm9by_d0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="99" startPosition="0" endLine="116" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createProperty_8qm9by_g0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="40" startPosition="59" endLine="46" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="3854676059698102266" fileName="Card_Editor.java" startLine="49" startPosition="0" endLine="55" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_8qm9by_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="65" startPosition="59" endLine="71" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="21" startPosition="0" endLine="30" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_8qm9by_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="31" startPosition="0" endLine="48" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createProperty_8qm9by_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+    <nodeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="56" startPosition="0" endLine="73" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createProperty_8qm9by_c0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
     <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="17" startPosition="79" endLine="18" endPosition="63" />
     <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="24" startPosition="28" endLine="25" endPosition="81" />
     <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="25" startPosition="81" endLine="26" endPosition="81" />
     <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="26" startPosition="81" endLine="27" endPosition="81" />
-    <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="27" startPosition="81" endLine="28" endPosition="81" />
-    <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="28" startPosition="81" endLine="29" endPosition="81" />
-    <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="29" startPosition="81" endLine="30" endPosition="81" />
-    <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="30" startPosition="81" endLine="31" endPosition="81" />
     <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="17" startPosition="0" endLine="20" endPosition="0">
       <varInfo nodeId="2834967828303818498" varName="editorContext" />
       <varInfo nodeId="2834967828303818498" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="52" startPosition="35" endLine="55" endPosition="105">
-      <varInfo nodeId="2834967828304063165" varName="manager" />
-      <varInfo nodeId="2834967828304063165" varName="opContext" />
+    <scopeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="41" startPosition="35" endLine="44" endPosition="105">
+      <varInfo nodeId="3854676059698102257" varName="manager" />
+      <varInfo nodeId="3854676059698102257" varName="opContext" />
     </scopeInfo>
-    <scopeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="77" startPosition="35" endLine="80" endPosition="105">
-      <varInfo nodeId="6132548542731561388" varName="manager" />
-      <varInfo nodeId="6132548542731561388" varName="opContext" />
+    <scopeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="66" startPosition="35" endLine="69" endPosition="105">
+      <varInfo nodeId="3854676059698102274" varName="manager" />
+      <varInfo nodeId="3854676059698102274" varName="opContext" />
     </scopeInfo>
-    <scopeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="109" startPosition="35" endLine="112" endPosition="105">
-      <varInfo nodeId="2834967828304063207" varName="manager" />
-      <varInfo nodeId="2834967828304063207" varName="opContext" />
+    <scopeInfo nodeId="3854676059698102266" fileName="Card_Editor.java" startLine="49" startPosition="88" endLine="53" endPosition="22">
+      <varInfo nodeId="3854676059698102266" varName="editorCell" />
     </scopeInfo>
-    <scopeInfo nodeId="2834967828304063159" fileName="Card_Editor.java" startLine="35" startPosition="88" endLine="39" endPosition="22">
-      <varInfo nodeId="2834967828304063159" varName="editorCell" />
+    <scopeInfo nodeId="3854676059698102266" fileName="Card_Editor.java" startLine="49" startPosition="0" endLine="55" endPosition="0">
+      <varInfo nodeId="3854676059698102266" varName="editorContext" />
+      <varInfo nodeId="3854676059698102266" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="2834967828304063172" fileName="Card_Editor.java" startLine="60" startPosition="88" endLine="64" endPosition="22">
-      <varInfo nodeId="2834967828304063172" varName="editorCell" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304112423" fileName="Card_Editor.java" startLine="85" startPosition="88" endLine="89" endPosition="22">
-      <varInfo nodeId="2834967828304112423" varName="editorCell" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304063193" fileName="Card_Editor.java" startLine="92" startPosition="88" endLine="96" endPosition="22">
-      <varInfo nodeId="2834967828304063193" varName="editorCell" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304063159" fileName="Card_Editor.java" startLine="35" startPosition="0" endLine="41" endPosition="0">
-      <varInfo nodeId="2834967828304063159" varName="editorContext" />
-      <varInfo nodeId="2834967828304063159" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304063172" fileName="Card_Editor.java" startLine="60" startPosition="0" endLine="66" endPosition="0">
-      <varInfo nodeId="2834967828304063172" varName="editorContext" />
-      <varInfo nodeId="2834967828304063172" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304112423" fileName="Card_Editor.java" startLine="85" startPosition="0" endLine="91" endPosition="0">
-      <varInfo nodeId="2834967828304112423" varName="editorContext" />
-      <varInfo nodeId="2834967828304112423" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304063193" fileName="Card_Editor.java" startLine="92" startPosition="0" endLine="98" endPosition="0">
-      <varInfo nodeId="2834967828304063193" varName="editorContext" />
-      <varInfo nodeId="2834967828304063193" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="21" startPosition="89" endLine="32" endPosition="22">
+    <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="21" startPosition="89" endLine="28" endPosition="22">
       <varInfo nodeId="2834967828303818498" varName="editorCell" />
     </scopeInfo>
-    <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="21" startPosition="0" endLine="34" endPosition="0">
+    <scopeInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="21" startPosition="0" endLine="30" endPosition="0">
       <varInfo nodeId="2834967828303818498" varName="editorContext" />
       <varInfo nodeId="2834967828303818498" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="42" startPosition="88" endLine="57" endPosition="22">
-      <varInfo nodeId="2834967828304063165" varName="attributeConcept" />
-      <varInfo nodeId="2834967828304063165" varName="attributeKind" />
-      <varInfo nodeId="2834967828304063165" varName="editorCell" />
-      <varInfo nodeId="2834967828304063165" varName="provider" />
+    <scopeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="31" startPosition="88" endLine="46" endPosition="22">
+      <varInfo nodeId="3854676059698102257" varName="attributeConcept" />
+      <varInfo nodeId="3854676059698102257" varName="attributeKind" />
+      <varInfo nodeId="3854676059698102257" varName="editorCell" />
+      <varInfo nodeId="3854676059698102257" varName="provider" />
     </scopeInfo>
-    <scopeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="67" startPosition="88" endLine="82" endPosition="22">
-      <varInfo nodeId="6132548542731561388" varName="attributeConcept" />
-      <varInfo nodeId="6132548542731561388" varName="attributeKind" />
-      <varInfo nodeId="6132548542731561388" varName="editorCell" />
-      <varInfo nodeId="6132548542731561388" varName="provider" />
+    <scopeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="56" startPosition="88" endLine="71" endPosition="22">
+      <varInfo nodeId="3854676059698102274" varName="attributeConcept" />
+      <varInfo nodeId="3854676059698102274" varName="attributeKind" />
+      <varInfo nodeId="3854676059698102274" varName="editorCell" />
+      <varInfo nodeId="3854676059698102274" varName="provider" />
     </scopeInfo>
-    <scopeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="99" startPosition="88" endLine="114" endPosition="22">
-      <varInfo nodeId="2834967828304063207" varName="attributeConcept" />
-      <varInfo nodeId="2834967828304063207" varName="attributeKind" />
-      <varInfo nodeId="2834967828304063207" varName="editorCell" />
-      <varInfo nodeId="2834967828304063207" varName="provider" />
+    <scopeInfo nodeId="3854676059698102257" fileName="Card_Editor.java" startLine="31" startPosition="0" endLine="48" endPosition="0">
+      <varInfo nodeId="3854676059698102257" varName="editorContext" />
+      <varInfo nodeId="3854676059698102257" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="2834967828304063165" fileName="Card_Editor.java" startLine="42" startPosition="0" endLine="59" endPosition="0">
-      <varInfo nodeId="2834967828304063165" varName="editorContext" />
-      <varInfo nodeId="2834967828304063165" varName="node" />
+    <scopeInfo nodeId="3854676059698102274" fileName="Card_Editor.java" startLine="56" startPosition="0" endLine="73" endPosition="0">
+      <varInfo nodeId="3854676059698102274" varName="editorContext" />
+      <varInfo nodeId="3854676059698102274" varName="node" />
     </scopeInfo>
-    <scopeInfo nodeId="6132548542731561388" fileName="Card_Editor.java" startLine="67" startPosition="0" endLine="84" endPosition="0">
-      <varInfo nodeId="6132548542731561388" varName="editorContext" />
-      <varInfo nodeId="6132548542731561388" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304063207" fileName="Card_Editor.java" startLine="99" startPosition="0" endLine="116" endPosition="0">
-      <varInfo nodeId="2834967828304063207" varName="editorContext" />
-      <varInfo nodeId="2834967828304063207" varName="node" />
-    </scopeInfo>
-    <unitInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="16" startPosition="0" endLine="117" endPosition="0" unitName="Shuffle.editor.Card_Editor" />
+    <unitInfo nodeId="2834967828303818498" fileName="Card_Editor.java" startLine="16" startPosition="0" endLine="74" endPosition="0" unitName="Shuffle.editor.Card_Editor" />
   </root>
   <root nodeRef="r:8a91b938-6f8a-4cf5-9175-3a13fc608fe6(Shuffle.editor)/2834967828304063279">
     <nodeInfo nodeId="2834967828304063279" fileName="Player_Editor.java" startLine="17" startPosition="79" endLine="18" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -533,94 +456,7 @@
     </scopeInfo>
     <unitInfo nodeId="2834967828304063279" fileName="Player_Editor.java" startLine="16" startPosition="0" endLine="55" endPosition="0" unitName="Shuffle.editor.Player_Editor" />
   </root>
-  <root nodeRef="r:8a91b938-6f8a-4cf5-9175-3a13fc608fe6(Shuffle.editor)/2834967828304112462">
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="18" startPosition="79" endLine="19" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="22" startPosition="89" endLine="23" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="23" startPosition="96" endLine="24" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="24" startPosition="48" endLine="25" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="25" startPosition="28" endLine="26" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="25" startPosition="28" endLine="26" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="26" startPosition="80" endLine="27" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="30" startPosition="87" endLine="31" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="31" startPosition="81" endLine="32" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="32" startPosition="29" endLine="33" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="33" startPosition="42" endLine="34" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="34" startPosition="26" endLine="35" endPosition="76" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="35" startPosition="76" endLine="36" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="36" startPosition="58" endLine="37" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="37" startPosition="73" endLine="38" endPosition="57" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="38" startPosition="57" endLine="39" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="40" startPosition="35" endLine="41" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="41" startPosition="72" endLine="42" endPosition="78" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="42" startPosition="78" endLine="43" endPosition="105" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="44" startPosition="10" endLine="45" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="49" startPosition="33" endLine="50" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-    <nodeInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="53" startPosition="69" endLine="54" endPosition="67" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="57" startPosition="81" endLine="58" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304112550" fileName="Suit_Editor.java" startLine="61" startPosition="92" endLine="62" endPosition="94" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2834967828304112550" fileName="Suit_Editor.java" startLine="62" startPosition="94" endLine="63" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112550" fileName="Suit_Editor.java" startLine="64" startPosition="41" endLine="65" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112550" fileName="Suit_Editor.java" startLine="65" startPosition="42" endLine="66" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112550" fileName="Suit_Editor.java" startLine="67" startPosition="7" endLine="68" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2834967828304112550" fileName="Suit_Editor.java" startLine="68" startPosition="36" endLine="69" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="18" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="49" startPosition="0" endLine="52" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="_Inline_wk575b_a0a#()V" />
-    <nodeInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="53" startPosition="0" endLine="56" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="57" startPosition="0" endLine="60" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="2834967828304112550" fileName="Suit_Editor.java" startLine="63" startPosition="51" endLine="67" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="39" startPosition="59" endLine="45" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="22" startPosition="0" endLine="29" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createCollection_wk575b_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="2834967828304112550" fileName="Suit_Editor.java" startLine="61" startPosition="0" endLine="71" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createConstant_wk575b_a0a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <nodeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="30" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="createRefCell_wk575b_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-    <scopeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="18" startPosition="79" endLine="19" endPosition="63" />
-    <scopeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="25" startPosition="28" endLine="26" endPosition="80" />
-    <scopeInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="49" startPosition="33" endLine="50" endPosition="14" />
-    <scopeInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="53" startPosition="69" endLine="54" endPosition="67" />
-    <scopeInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="57" startPosition="81" endLine="58" endPosition="66" />
-    <scopeInfo nodeId="2834967828304112550" fileName="Suit_Editor.java" startLine="64" startPosition="41" endLine="66" endPosition="35" />
-    <scopeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="18" startPosition="0" endLine="21" endPosition="0">
-      <varInfo nodeId="2834967828304112462" varName="editorContext" />
-      <varInfo nodeId="2834967828304112462" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="40" startPosition="35" endLine="43" endPosition="105">
-      <varInfo nodeId="2834967828304112462" varName="manager" />
-      <varInfo nodeId="2834967828304112462" varName="opContext" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="49" startPosition="0" endLine="52" endPosition="0" />
-    <scopeInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="53" startPosition="0" endLine="56" endPosition="0">
-      <varInfo nodeId="2834967828304112545" varName="editorContext" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="57" startPosition="0" endLine="60" endPosition="0">
-      <varInfo nodeId="2834967828304112545" varName="editorContext" />
-      <varInfo nodeId="2834967828304112545" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="22" startPosition="89" endLine="27" endPosition="22">
-      <varInfo nodeId="2834967828304112462" varName="editorCell" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="22" startPosition="0" endLine="29" endPosition="0">
-      <varInfo nodeId="2834967828304112462" varName="editorContext" />
-      <varInfo nodeId="2834967828304112462" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304112550" fileName="Suit_Editor.java" startLine="61" startPosition="92" endLine="69" endPosition="24">
-      <varInfo nodeId="2834967828304112550" varName="editorCell" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304112550" fileName="Suit_Editor.java" startLine="61" startPosition="0" endLine="71" endPosition="0">
-      <varInfo nodeId="2834967828304112550" varName="editorContext" />
-      <varInfo nodeId="2834967828304112550" varName="node" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="30" startPosition="87" endLine="45" endPosition="22">
-      <varInfo nodeId="2834967828304112462" varName="attributeConcept" />
-      <varInfo nodeId="2834967828304112462" varName="attributeKind" />
-      <varInfo nodeId="2834967828304112462" varName="editorCell" />
-      <varInfo nodeId="2834967828304112462" varName="provider" />
-    </scopeInfo>
-    <scopeInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="30" startPosition="0" endLine="47" endPosition="0">
-      <varInfo nodeId="2834967828304112462" varName="editorContext" />
-      <varInfo nodeId="2834967828304112462" varName="node" />
-    </scopeInfo>
-    <unitInfo nodeId="2834967828304112545" fileName="Suit_Editor.java" startLine="48" startPosition="0" endLine="72" endPosition="0" unitName="Shuffle.editor.Suit_Editor$_Inline_wk575b_a0a" />
-    <unitInfo nodeId="2834967828304112462" fileName="Suit_Editor.java" startLine="17" startPosition="0" endLine="73" endPosition="0" unitName="Shuffle.editor.Suit_Editor" />
-  </root>
+  <root nodeRef="r:8a91b938-6f8a-4cf5-9175-3a13fc608fe6(Shuffle.editor)/2834967828304112462" />
   <root nodeRef="r:8a91b938-6f8a-4cf5-9175-3a13fc608fe6(Shuffle.editor)/7674520359934875819">
     <nodeInfo nodeId="7674520359934875819" fileName="Number_Editor.java" startLine="18" startPosition="79" endLine="19" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="7674520359934875819" fileName="Number_Editor.java" startLine="22" startPosition="89" endLine="23" endPosition="96" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
