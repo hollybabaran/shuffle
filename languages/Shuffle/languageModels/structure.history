@@ -18,5 +18,11 @@
     </dependencies>
     <rename id="ffsp.2834967828304050224" type="PROPERTY" from="value" to="rank" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="2" />
+    </dependencies>
+    <rename id="ffsp.5160494638280568420" type="CONCEPT" from="ExprBlock" to="CommandBlock" />
+  </StructureModification>
 </history>
 
