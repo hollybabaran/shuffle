@@ -19,6 +19,7 @@
     <classNode dependClassName="Shuffle.behavior.GreaterThanStatement_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Hand_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.IfStatement_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.LessThanStatement_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.LogicalExpression_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Main_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.NotStatement_BehaviorDescriptor" />
@@ -109,9 +110,9 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="Shuffle.behavior.GreaterThanStatement_BehaviorDescriptor" file="GreaterThanStatement_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.LogicalExpression_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="Shuffle.behavior.Hand_BehaviorDescriptor" file="Hand_BehaviorDescriptor.java">
@@ -122,6 +123,12 @@
   </dependency>
   <dependency className="Shuffle.behavior.IfStatement_BehaviorDescriptor" file="IfStatement_BehaviorDescriptor.java">
     <classNode dependClassName="Shuffle.behavior.Command_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="Shuffle.behavior.LessThanStatement_BehaviorDescriptor" file="LessThanStatement_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.LogicalExpression_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
