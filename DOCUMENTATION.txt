@@ -1,0 +1,9 @@
+June 12th, 2014
+
+Added CommandBlock which is the parent of SetupBlock and WinConditionBlock. 
+SetupBlock looks like this:
+    
+        setup board :
+            commands...
+        end
+
