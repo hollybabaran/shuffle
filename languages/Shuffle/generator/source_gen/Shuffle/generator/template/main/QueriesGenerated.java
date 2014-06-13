@@ -10,7 +10,9 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.internal.collections.runtime.ITranslator2;
 
 public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_3854676059697937759(final IOperationContext operationContext, final PropertyMacroContext _context) {
@@ -54,6 +56,10 @@ public class QueriesGenerated {
   }
 
   public static Iterable sourceNodesQuery_7674520359936676692(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
-    return SModelOperations.getNodes(_context.getInputModel(), "Shuffle.structure.Command");
+    return ListSequence.fromList(SModelOperations.getNodes(_context.getInputModel(), "Shuffle.structure.SetupBlock")).translate(new ITranslator2<SNode, SNode>() {
+      public Iterable<SNode> translate(SNode it) {
+        return SLinkOperations.getTargets(it, "body", true);
+      }
+    });
   }
 }
