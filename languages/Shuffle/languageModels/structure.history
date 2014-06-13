@@ -24,5 +24,89 @@
     </dependencies>
     <rename id="ffsp.5160494638280568420" type="CONCEPT" from="ExprBlock" to="CommandBlock" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="3" />
+    </dependencies>
+    <rename id="ffsp.5565452210787038188" type="CONCEPT" from="NotStatement" to="notStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="4" />
+    </dependencies>
+    <rename id="ffsp.5565452210787038188" type="CONCEPT" from="notStatement" to="N" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="5" />
+    </dependencies>
+    <rename id="ffsp.5565452210787038188" type="CONCEPT" from="N" to="NotStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="6" />
+    </dependencies>
+    <rename id="ffsp.5565452210787038059" type="CONCEPT" from="else" to="Else" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="7" />
+    </dependencies>
+    <rename id="ffsp.5565452210787038059" type="CONCEPT" from="Else" to="ElseStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="8" />
+    </dependencies>
+    <rename id="ffsp.5565452210787037996" type="CONCEPT" from="elseIfStatement" to="ElseIfStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="9" />
+    </dependencies>
+    <rename id="ffsp.5565452210787037995" type="CONCEPT" from="forStatement" to="ForStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="10" />
+    </dependencies>
+    <rename id="ffsp.5565452210787026454" type="CONCEPT" from="ifStatement" to="IfStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="11" />
+    </dependencies>
+    <rename id="ffsp.5565452210787038123" type="CONCEPT" from="whileStatement" to="WhileStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="12" />
+    </dependencies>
+    <rename id="ffsp.5565452210788214072" type="CHILD" from="condition" to="body" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="13" />
+    </dependencies>
+    <rename id="ffsp.5565452210788214069" type="CHILD" from="elseif" to="body" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="14" />
+    </dependencies>
+    <rename id="ffsp.7881733640606387490" type="CONCEPT" from="GreaterThanSt" to="GreaterThanSta" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="15" />
+    </dependencies>
+    <rename id="ffsp.7881733640606387490" type="CONCEPT" from="GreaterThanSta" to="G" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="16" />
+    </dependencies>
+    <rename id="ffsp.7881733640606387490" type="CONCEPT" from="G" to="GreaterThanStatement" />
+  </StructureModification>
 </history>
 
