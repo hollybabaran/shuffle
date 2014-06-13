@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="47gqgzlwcy30riw4btfh8k8f44g0u1p">
+<dependencies version="2" modelHash="-3ixwybhnhhnkukjhnrtsy5vb12b67nx">
   <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -12,7 +12,7 @@
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
   <dep model="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" />
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
-  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="7c200nr5kos6blpdpp8bovk0d2ahwtu" />
+  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="-aeim38990ro8c2jt9jaxg15neoaur4c" />
   <common hash="-bkadreiy0ykvqcs622jrkjghv7a3ayb">
     <dep root="8630059601820734611" />
     <dep model="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor.cells(MPS.Editor/jetbrains.mps.openapi.editor.cells@java_stub)" />
@@ -30,9 +30,8 @@
     <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" />
     <file name="QueriesGenerated.java" />
   </common>
-  <source id="8630059601820734611" name="DealAll" hash="-ev661gvt8rpq2b5udyxiqmutsykw1rh">
+  <source id="8630059601820734611" name="DealAll" hash="-byjz3qa7axzt3su9nwc7l7ah2tfumj0">
     <dep model="r:00000000-0000-4000-0000-011c895902a9(jetbrains.mps.lang.actions.generator.baseLanguage.template.main@generator)" />
   </source>
-  <source id="8630059601821415776" name="DealAllSubstitue" hash="-cwq4nmc1eduy3uvu2guy3pgmz8z5vyv" />
 </dependencies>
 
