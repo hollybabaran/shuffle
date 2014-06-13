@@ -60,7 +60,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 22:
         return new ConceptDescriptorBuilder("Shuffle.structure.OrStatement").super_("Shuffle.structure.LogicalExpression").parents("Shuffle.structure.LogicalExpression").children(new String[]{"first", "second"}, new boolean[]{false, false}).create();
       case 23:
-        return new ConceptDescriptorBuilder("Shuffle.structure.Pile").super_("Shuffle.structure.CardCollection").parents("Shuffle.structure.CardCollection").alias("pile", "").create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.Pile").super_("Shuffle.structure.CardCollection").parents("Shuffle.structure.CardCollection").properties("isFaceUp").alias("pile", "").create();
       case 24:
         return new ConceptDescriptorBuilder("Shuffle.structure.Player").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"hand"}, new boolean[]{false}).create();
       case 25:

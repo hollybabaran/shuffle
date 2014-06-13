@@ -31,6 +31,49 @@
   <unitInfo fileName="Variable_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Shuffle.behavior.Variable_BehaviorDescriptor" />
   <unitInfo fileName="WhileStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.WhileStatement_BehaviorDescriptor" />
   <unitInfo fileName="WinConditionBlock_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.WinConditionBlock_BehaviorDescriptor" />
+  <root nodeRef="r:88266f50-160d-4022-b70e-078f6bc19dfd(Shuffle.behavior)/6640477685921263924">
+    <nodeInfo nodeId="6640477685921408235" fileName="Deck_Behavior.java" startLine="13" startPosition="174" endLine="14" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6640477685921419457" fileName="Deck_Behavior.java" startLine="14" startPosition="81" endLine="15" endPosition="144" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6640477685921438320" fileName="Deck_Behavior.java" startLine="15" startPosition="144" endLine="16" endPosition="144" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6640477685921407928" fileName="Deck_Behavior.java" startLine="12" startPosition="172" endLine="17" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="6640477685921388069" fileName="Deck_Behavior.java" startLine="11" startPosition="43" endLine="18" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="6640477685921263924" fileName="Deck_Behavior.java" startLine="11" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="6640477685921407931" fileName="Deck_Behavior.java" startLine="13" startPosition="174" endLine="16" endPosition="144" />
+    <scopeInfo nodeId="6640477685921388075" fileName="Deck_Behavior.java" startLine="12" startPosition="172" endLine="17" endPosition="7" />
+    <scopeInfo nodeId="6640477685921407928" fileName="Deck_Behavior.java" startLine="12" startPosition="172" endLine="17" endPosition="7">
+      <varInfo nodeId="6640477685921407929" varName="suit" />
+    </scopeInfo>
+    <scopeInfo nodeId="6640477685921282954" fileName="Deck_Behavior.java" startLine="11" startPosition="43" endLine="18" endPosition="5" />
+    <scopeInfo nodeId="6640477685921388069" fileName="Deck_Behavior.java" startLine="11" startPosition="43" endLine="18" endPosition="5">
+      <varInfo nodeId="6640477685921388071" varName="rank" />
+    </scopeInfo>
+    <scopeInfo nodeId="6640477685921263924" fileName="Deck_Behavior.java" startLine="11" startPosition="0" endLine="20" endPosition="0">
+      <varInfo nodeId="6640477685921263924" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="6640477685921263924" fileName="Deck_Behavior.java" startLine="10" startPosition="0" endLine="21" endPosition="0" unitName="Shuffle.behavior.Deck_Behavior" />
+  </root>
+  <root nodeRef="r:88266f50-160d-4022-b70e-078f6bc19dfd(Shuffle.behavior)/6640477685921374758">
+    <nodeInfo nodeId="6640477685921381186" fileName="Card_Behavior.java" startLine="12" startPosition="83" endLine="13" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6640477685921384744" fileName="Card_Behavior.java" startLine="16" startPosition="83" endLine="17" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6640477685921374758" fileName="Card_Behavior.java" startLine="9" startPosition="0" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="6640477685921374758" fileName="Card_Behavior.java" startLine="12" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_setRank_6640477685921374830#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <nodeInfo nodeId="6640477685921374758" fileName="Card_Behavior.java" startLine="16" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="call_setSuit_6640477685921384290#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="6640477685921374760" fileName="Card_Behavior.java" startLine="9" startPosition="43" endLine="9" endPosition="43" />
+    <scopeInfo nodeId="6640477685921374833" fileName="Card_Behavior.java" startLine="12" startPosition="83" endLine="13" endPosition="54" />
+    <scopeInfo nodeId="6640477685921384293" fileName="Card_Behavior.java" startLine="16" startPosition="83" endLine="17" endPosition="54" />
+    <scopeInfo nodeId="6640477685921374758" fileName="Card_Behavior.java" startLine="9" startPosition="0" endLine="11" endPosition="0">
+      <varInfo nodeId="6640477685921374758" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="6640477685921374758" fileName="Card_Behavior.java" startLine="12" startPosition="0" endLine="15" endPosition="0">
+      <varInfo nodeId="6640477685921450079" varName="rank" />
+      <varInfo nodeId="6640477685921374758" varName="thisNode" />
+    </scopeInfo>
+    <scopeInfo nodeId="6640477685921374758" fileName="Card_Behavior.java" startLine="16" startPosition="0" endLine="19" endPosition="0">
+      <varInfo nodeId="6640477685921458054" varName="suit" />
+      <varInfo nodeId="6640477685921374758" varName="thisNode" />
+    </scopeInfo>
+    <unitInfo nodeId="6640477685921374758" fileName="Card_Behavior.java" startLine="8" startPosition="0" endLine="20" endPosition="0" unitName="Shuffle.behavior.Card_Behavior" />
+  </root>
   <root nodeRef="r:88266f50-160d-4022-b70e-078f6bc19dfd(Shuffle.behavior)/7674520359937817982">
     <nodeInfo nodeId="7674520359937817982" fileName="Main_Behavior.java" startLine="8" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
     <scopeInfo nodeId="7674520359937817984" fileName="Main_Behavior.java" startLine="8" startPosition="43" endLine="8" endPosition="43" />
