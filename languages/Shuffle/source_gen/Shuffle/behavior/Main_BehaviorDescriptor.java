@@ -15,7 +15,7 @@ public class Main_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor impl
   }
 
   public Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
-    return Main_Behavior.virtual_getScope_3734116213129936182(thisNode, kind, child);
+    return ScopeProvider_Behavior.virtual_getScope_3734116213129936182(thisNode, kind, child);
   }
 
   public Scope virtual_getScope_7722139651431880752(SNode thisNode, SNode kind, String role, int index) {

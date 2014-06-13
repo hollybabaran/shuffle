@@ -4,7 +4,7 @@ package Shuffle.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 
-public class CardCollection_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
+public abstract class CardCollection_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
   public CardCollection_BehaviorDescriptor() {
   }
 

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="48" endPosition="0" unitName="Shuffle.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="50" endPosition="0" unitName="Shuffle.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="CardCollection_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.CardCollection_BehaviorDescriptor" />
   <unitInfo fileName="Card_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Card_BehaviorDescriptor" />
+  <unitInfo fileName="CommandBlock_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.CommandBlock_BehaviorDescriptor" />
   <unitInfo fileName="Command_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Command_BehaviorDescriptor" />
   <unitInfo fileName="Deal_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Deal_BehaviorDescriptor" />
   <unitInfo fileName="DeckReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.DeckReference_BehaviorDescriptor" />
@@ -14,26 +15,17 @@
   <unitInfo fileName="Number_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Number_BehaviorDescriptor" />
   <unitInfo fileName="Pile_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Pile_BehaviorDescriptor" />
   <unitInfo fileName="Player_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Shuffle.behavior.Player_BehaviorDescriptor" />
+  <unitInfo fileName="SetupBlock_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.SetupBlock_BehaviorDescriptor" />
   <unitInfo fileName="ShuffleDeck_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ShuffleDeck_BehaviorDescriptor" />
   <unitInfo fileName="Variable_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Shuffle.behavior.Variable_BehaviorDescriptor" />
+  <unitInfo fileName="WinConditionBlock_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.WinConditionBlock_BehaviorDescriptor" />
   <root nodeRef="r:88266f50-160d-4022-b70e-078f6bc19dfd(Shuffle.behavior)/7674520359937817982">
-    <nodeInfo nodeId="7674520359937822725" fileName="Main_Behavior.java" startLine="16" startPosition="78" endLine="17" endPosition="131" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7674520359937824544" fileName="Main_Behavior.java" startLine="18" startPosition="5" endLine="19" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7674520359937817982" fileName="Main_Behavior.java" startLine="12" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-    <nodeInfo nodeId="7674520359937821649" fileName="Main_Behavior.java" startLine="15" startPosition="101" endLine="18" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7674520359937817982" fileName="Main_Behavior.java" startLine="15" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="virtual_getScope_3734116213129936182#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/scope/Scope;" />
-    <scopeInfo nodeId="7674520359937817984" fileName="Main_Behavior.java" startLine="12" startPosition="43" endLine="12" endPosition="43" />
-    <scopeInfo nodeId="7674520359937821650" fileName="Main_Behavior.java" startLine="16" startPosition="78" endLine="17" endPosition="131" />
-    <scopeInfo nodeId="7674520359937817982" fileName="Main_Behavior.java" startLine="12" startPosition="0" endLine="14" endPosition="0">
+    <nodeInfo nodeId="7674520359937817982" fileName="Main_Behavior.java" startLine="8" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="7674520359937817984" fileName="Main_Behavior.java" startLine="8" startPosition="43" endLine="8" endPosition="43" />
+    <scopeInfo nodeId="7674520359937817982" fileName="Main_Behavior.java" startLine="8" startPosition="0" endLine="10" endPosition="0">
       <varInfo nodeId="7674520359937817982" varName="thisNode" />
     </scopeInfo>
-    <scopeInfo nodeId="7674520359937818127" fileName="Main_Behavior.java" startLine="15" startPosition="101" endLine="19" endPosition="16" />
-    <scopeInfo nodeId="7674520359937817982" fileName="Main_Behavior.java" startLine="15" startPosition="0" endLine="21" endPosition="0">
-      <varInfo nodeId="7674520359937818130" varName="child" />
-      <varInfo nodeId="7674520359937818128" varName="kind" />
-      <varInfo nodeId="7674520359937817982" varName="thisNode" />
-    </scopeInfo>
-    <unitInfo nodeId="7674520359937817982" fileName="Main_Behavior.java" startLine="11" startPosition="0" endLine="22" endPosition="0" unitName="Shuffle.behavior.Main_Behavior" />
+    <unitInfo nodeId="7674520359937817982" fileName="Main_Behavior.java" startLine="7" startPosition="0" endLine="11" endPosition="0" unitName="Shuffle.behavior.Main_Behavior" />
   </root>
 </debugInfo>
 

@@ -41,10 +41,6 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "variable", true), "number", false), "name");
   }
 
-  public static SNode sourceNodeQuery_2834967828304483550(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
-    return _context.getNode();
-  }
-
   public static SNode sourceNodeQuery_7674520359936682674(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
     return _context.getNode();
   }
@@ -55,10 +51,6 @@ public class QueriesGenerated {
 
   public static SNode sourceNodeQuery_7674520359936751208(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "expression", true);
-  }
-
-  public static Iterable sourceNodesQuery_2834967828304411860(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getTargets(_context.getNode(), "variable", true);
   }
 
   public static Iterable sourceNodesQuery_7674520359936676692(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
