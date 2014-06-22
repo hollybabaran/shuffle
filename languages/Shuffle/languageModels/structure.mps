@@ -75,6 +75,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7674520359934846973" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Number" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Nums&amp;Vars" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303856791" resolveInfo="Variable" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7674520359935510780" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
