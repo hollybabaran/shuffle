@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="87" endPosition="0" unitName="Shuffle.structure.StructureAspectDescriptor" />
+  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="93" endPosition="0" unitName="Shuffle.structure.StructureAspectDescriptor" />
   <root nodeRef="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)/3854676059697652960">
     <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="15" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myName" />
     <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="17" startPosition="27" endLine="18" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />

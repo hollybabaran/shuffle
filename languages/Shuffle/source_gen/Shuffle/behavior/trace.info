@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <unitInfo fileName="AndStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.AndStatement_BehaviorDescriptor" />
-  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="78" endPosition="0" unitName="Shuffle.behavior.BehaviorAspectDescriptor" />
+  <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="82" endPosition="0" unitName="Shuffle.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="Block_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Block_BehaviorDescriptor" />
-  <unitInfo fileName="CardCollection_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.CardCollection_BehaviorDescriptor" />
+  <unitInfo fileName="CardCollectionReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.CardCollectionReference_BehaviorDescriptor" />
+  <unitInfo fileName="CardCollection_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Shuffle.behavior.CardCollection_BehaviorDescriptor" />
   <unitInfo fileName="Card_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Card_BehaviorDescriptor" />
   <unitInfo fileName="CommandBlock_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.CommandBlock_BehaviorDescriptor" />
   <unitInfo fileName="Command_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Command_BehaviorDescriptor" />
   <unitInfo fileName="ConditionBlock_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ConditionBlock_BehaviorDescriptor" />
   <unitInfo fileName="Deal_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Deal_BehaviorDescriptor" />
-  <unitInfo fileName="DeckReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.DeckReference_BehaviorDescriptor" />
-  <unitInfo fileName="Deck_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="Shuffle.behavior.Deck_BehaviorDescriptor" />
+  <unitInfo fileName="DeckReference_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.DeckReference_BehaviorDescriptor" />
+  <unitInfo fileName="Deck_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Deck_BehaviorDescriptor" />
   <unitInfo fileName="ElseIfStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ElseIfStatement_BehaviorDescriptor" />
   <unitInfo fileName="ElseStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ElseStatement_BehaviorDescriptor" />
   <unitInfo fileName="EqualToStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.EqualToStatement_BehaviorDescriptor" />
@@ -21,12 +22,14 @@
   <unitInfo fileName="LessThanStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.LessThanStatement_BehaviorDescriptor" />
   <unitInfo fileName="LogicalExpression_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.LogicalExpression_BehaviorDescriptor" />
   <unitInfo fileName="Main_BehaviorDescriptor.java" startLine="13" startPosition="0" endLine="38" endPosition="0" unitName="Shuffle.behavior.Main_BehaviorDescriptor" />
-  <unitInfo fileName="NotStatement_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="Shuffle.behavior.NotStatement_BehaviorDescriptor" />
+  <unitInfo fileName="Move_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Move_BehaviorDescriptor" />
+  <unitInfo fileName="NotStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.NotStatement_BehaviorDescriptor" />
   <unitInfo fileName="NumberAssignment_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.NumberAssignment_BehaviorDescriptor" />
   <unitInfo fileName="NumberReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.NumberReference_BehaviorDescriptor" />
   <unitInfo fileName="Number_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Number_BehaviorDescriptor" />
   <unitInfo fileName="OrStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.OrStatement_BehaviorDescriptor" />
-  <unitInfo fileName="Pile_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Pile_BehaviorDescriptor" />
+  <unitInfo fileName="PileReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.PileReference_BehaviorDescriptor" />
+  <unitInfo fileName="Pile_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Pile_BehaviorDescriptor" />
   <unitInfo fileName="Player_BehaviorDescriptor.java" startLine="10" startPosition="0" endLine="23" endPosition="0" unitName="Shuffle.behavior.Player_BehaviorDescriptor" />
   <unitInfo fileName="SetupBlock_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.SetupBlock_BehaviorDescriptor" />
   <unitInfo fileName="ShuffleDeck_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ShuffleDeck_BehaviorDescriptor" />

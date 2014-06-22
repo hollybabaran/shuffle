@@ -32,7 +32,7 @@ public class Deck_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createConstant_sbrh7l_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Deck:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "card set:");
     editorCell.setCellId("Constant_sbrh7l_a0");
     editorCell.setDefaultText("");
     return editorCell;

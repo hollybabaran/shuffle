@@ -2,21 +2,21 @@
 <history>
   <StructureModification>
     <dependencies>
-      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="-1" />
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="2" />
     </dependencies>
-    <rename id="ffsp.2834967828303451498" type="CONCEPT" from="Main" to="Deck" />
+    <rename id="ffsp.8246395769718773635" type="CHILD" from="card" to="cards" />
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="0" />
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="3" />
     </dependencies>
-    <rename id="ffsp.2834967828304050224" type="PROPERTY" from="x" to="value" />
+    <rename id="ffsp.8246395769718773537" type="CONCEPT" from="MoveCardList" to="MoveCard" />
   </StructureModification>
   <StructureModification>
     <dependencies>
-      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="1" />
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="4" />
     </dependencies>
-    <rename id="ffsp.2834967828304050224" type="PROPERTY" from="value" to="rank" />
+    <rename id="ffsp.1547900086658304205" type="CHILD" from="cards" to="card" />
   </StructureModification>
   <StructureModification>
     <dependencies>
@@ -107,6 +107,12 @@
       <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="16" />
     </dependencies>
     <rename id="ffsp.7881733640606387490" type="CONCEPT" from="G" to="GreaterThanStatement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="17" />
+    </dependencies>
+    <rename id="ffsp.6162892231913842746" type="REFERENCE" from="deck" to="d" />
   </StructureModification>
 </history>
 

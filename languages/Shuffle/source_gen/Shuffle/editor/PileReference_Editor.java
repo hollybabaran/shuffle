@@ -17,29 +17,29 @@ import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
-public class NumberReference_Editor extends DefaultNodeEditor {
+public class PileReference_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_xhoxmt_a(editorContext, node);
+    return this.createCollection_ukzol5_a(editorContext, node);
   }
 
-  private EditorCell createCollection_xhoxmt_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_ukzol5_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_xhoxmt_a");
+    editorCell.setCellId("Collection_ukzol5_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createRefCell_xhoxmt_a0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_ukzol5_a0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createRefCell_xhoxmt_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_ukzol5_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("number");
-    provider.setNoTargetText("<no number>");
+    provider.setRole("pile");
+    provider.setNoTargetText("<no pile>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new NumberReference_Editor._Inline_xhoxmt_a0a());
+    provider.setAuxiliaryCellProvider(new PileReference_Editor._Inline_ukzol5_a0a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setRole("number");
+      editorCell.setRole("pile");
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -52,8 +52,8 @@ public class NumberReference_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline_xhoxmt_a0a extends InlineCellProvider {
-    public _Inline_xhoxmt_a0a() {
+  public static class _Inline_ukzol5_a0a extends InlineCellProvider {
+    public _Inline_ukzol5_a0a() {
       super();
     }
 
@@ -62,10 +62,10 @@ public class NumberReference_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_xhoxmt_a0a0(editorContext, node);
+      return this.createProperty_ukzol5_a0a0(editorContext, node);
     }
 
-    private EditorCell createProperty_xhoxmt_a0a0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_ukzol5_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
