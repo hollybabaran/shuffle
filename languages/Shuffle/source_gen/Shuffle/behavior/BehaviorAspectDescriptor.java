@@ -40,34 +40,34 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new SetupBlock_BehaviorDescriptor();
       case 27:
         return new WinConditionBlock_BehaviorDescriptor();
-      case 13:
-        return new IfStatement_BehaviorDescriptor();
-      case 10:
-        return new ForStatement_BehaviorDescriptor();
-      case 7:
-        return new ElseIfStatement_BehaviorDescriptor();
-      case 8:
-        return new ElseStatement_BehaviorDescriptor();
-      case 26:
-        return new WhileStatement_BehaviorDescriptor();
-      case 17:
-        return new NotStatement_BehaviorDescriptor();
+      case 11:
+        return new GreaterThanStatement_BehaviorDescriptor();
       case 15:
         return new LogicalExpression_BehaviorDescriptor();
       case 21:
         return new OrStatement_BehaviorDescriptor();
       case 0:
         return new AndStatement_BehaviorDescriptor();
-      case 9:
-        return new EqualToStatement_BehaviorDescriptor();
-      case 11:
-        return new GreaterThanStatement_BehaviorDescriptor();
-      case 14:
-        return new LessThanStatement_BehaviorDescriptor();
+      case 8:
+        return new ElseStatement_BehaviorDescriptor();
+      case 7:
+        return new ElseIfStatement_BehaviorDescriptor();
+      case 13:
+        return new IfStatement_BehaviorDescriptor();
+      case 10:
+        return new ForStatement_BehaviorDescriptor();
       case 1:
         return new Block_BehaviorDescriptor();
       case 3:
         return new ConditionBlock_BehaviorDescriptor();
+      case 14:
+        return new LessThanStatement_BehaviorDescriptor();
+      case 9:
+        return new EqualToStatement_BehaviorDescriptor();
+      case 26:
+        return new WhileStatement_BehaviorDescriptor();
+      case 17:
+        return new NotStatement_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

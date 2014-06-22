@@ -28,7 +28,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 6:
         return new ConceptDescriptorBuilder("Shuffle.structure.ConditionBlock").super_("Shuffle.structure.Block").parents("Shuffle.structure.Block").children(new String[]{"condition"}, new boolean[]{false}).create();
       case 7:
-        return new ConceptDescriptorBuilder("Shuffle.structure.Deal").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").children(new String[]{"deck"}, new boolean[]{false}).alias("deal", "").create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.Deal").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").properties("all", "number").children(new String[]{"deck"}, new boolean[]{false}).alias("deal", "").create();
       case 8:
         return new ConceptDescriptorBuilder("Shuffle.structure.Deck").super_("Shuffle.structure.CardCollection").parents("Shuffle.structure.CardCollection", "jetbrains.mps.lang.core.structure.INamedConcept").alias("deck", "").create();
       case 9:
