@@ -64,10 +64,10 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new GreaterThanStatement_BehaviorDescriptor();
       case 14:
         return new LessThanStatement_BehaviorDescriptor();
-      case 3:
-        return new ConditionBlock_BehaviorDescriptor();
       case 1:
         return new Block_BehaviorDescriptor();
+      case 3:
+        return new ConditionBlock_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }

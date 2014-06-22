@@ -15,29 +15,43 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   public Collection<ConceptEditor> getEditors(ConceptDescriptor descriptor) {
     switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0a, descriptor.getConceptFqName())) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new Card_Editor());
+        return Collections.<ConceptEditor>singletonList(new AndStatement_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new CommandBlock_Editor());
+        return Collections.<ConceptEditor>singletonList(new Card_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new ConditionBlock_Editor());
+        return Collections.<ConceptEditor>singletonList(new CommandBlock_Editor());
       case 3:
-        return Collections.<ConceptEditor>singletonList(new Deal_Editor());
+        return Collections.<ConceptEditor>singletonList(new ConditionBlock_Editor());
       case 4:
-        return Collections.<ConceptEditor>singletonList(new Deck_Editor());
+        return Collections.<ConceptEditor>singletonList(new Deal_Editor());
       case 5:
-        return Collections.<ConceptEditor>singletonList(new DeckReference_Editor());
+        return Collections.<ConceptEditor>singletonList(new Deck_Editor());
       case 6:
-        return Collections.<ConceptEditor>singletonList(new Main_Editor());
+        return Collections.<ConceptEditor>singletonList(new DeckReference_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new Number_Editor());
+        return Collections.<ConceptEditor>singletonList(new EqualToStatement_Editor());
       case 8:
-        return Collections.<ConceptEditor>singletonList(new NumberAssignment_Editor());
+        return Collections.<ConceptEditor>singletonList(new GreaterThanStatement_Editor());
       case 9:
-        return Collections.<ConceptEditor>singletonList(new NumberReference_Editor());
+        return Collections.<ConceptEditor>singletonList(new LessThanStatement_Editor());
       case 10:
-        return Collections.<ConceptEditor>singletonList(new Player_Editor());
+        return Collections.<ConceptEditor>singletonList(new Main_Editor());
       case 11:
+        return Collections.<ConceptEditor>singletonList(new NotStatement_Editor());
+      case 12:
+        return Collections.<ConceptEditor>singletonList(new Number_Editor());
+      case 13:
+        return Collections.<ConceptEditor>singletonList(new NumberAssignment_Editor());
+      case 14:
+        return Collections.<ConceptEditor>singletonList(new NumberReference_Editor());
+      case 15:
+        return Collections.<ConceptEditor>singletonList(new OrStatement_Editor());
+      case 16:
+        return Collections.<ConceptEditor>singletonList(new Player_Editor());
+      case 17:
         return Collections.<ConceptEditor>singletonList(new ShuffleDeck_Editor());
+      case 18:
+        return Collections.<ConceptEditor>singletonList(new WhileStatement_Editor());
       default:
     }
     return Collections.emptyList();
@@ -54,5 +68,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"Shuffle.structure.Card", "Shuffle.structure.CommandBlock", "Shuffle.structure.ConditionBlock", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.DeckReference", "Shuffle.structure.Main", "Shuffle.structure.Number", "Shuffle.structure.NumberAssignment", "Shuffle.structure.NumberReference", "Shuffle.structure.Player", "Shuffle.structure.ShuffleDeck"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0a = new String[]{"Shuffle.structure.AndStatement", "Shuffle.structure.Card", "Shuffle.structure.CommandBlock", "Shuffle.structure.ConditionBlock", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.DeckReference", "Shuffle.structure.EqualToStatement", "Shuffle.structure.GreaterThanStatement", "Shuffle.structure.LessThanStatement", "Shuffle.structure.Main", "Shuffle.structure.NotStatement", "Shuffle.structure.Number", "Shuffle.structure.NumberAssignment", "Shuffle.structure.NumberReference", "Shuffle.structure.OrStatement", "Shuffle.structure.Player", "Shuffle.structure.ShuffleDeck", "Shuffle.structure.WhileStatement"};
 }
