@@ -15,7 +15,7 @@
   <dep model="r:7f489494-339f-481c-be61-2af4deb51551(jetbrains.mps.execution.util.behavior)" hash="e6vkk9xsk643zv63k7dfh9op5eultxb" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" hash="e5zswcvgdspmt039m3gg97emcadi0ez" />
-  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="3011no1mjejya6t2d1ofj3kxquica74" />
+  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="130jeeknhlrjd8fk408vm449buu22dx" />
   <dep model="r:d1558b8f-fc9e-4ca7-bb90-70ac789f336e(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.post@generator)" hash="npgvdfpnhgphsd6ic5xuzipg1hn1j4" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" hash="efpygk1iagsrvh0j1nroncwiyw07vp1" />
@@ -38,7 +38,6 @@
     <file name="AndStatement_BehaviorDescriptor.java" />
     <file name="BehaviorAspectDescriptor.java" />
     <file name="Block_BehaviorDescriptor.java" />
-    <file name="CardCollectionReference_BehaviorDescriptor.java" />
     <file name="CardCollection_BehaviorDescriptor.java" />
     <file name="Card_BehaviorDescriptor.java" />
     <file name="CommandBlock_BehaviorDescriptor.java" />
@@ -57,13 +56,11 @@
     <file name="LessThanStatement_BehaviorDescriptor.java" />
     <file name="LogicalExpression_BehaviorDescriptor.java" />
     <file name="Main_BehaviorDescriptor.java" />
-    <file name="Move_BehaviorDescriptor.java" />
     <file name="NotStatement_BehaviorDescriptor.java" />
     <file name="NumberAssignment_BehaviorDescriptor.java" />
     <file name="NumberReference_BehaviorDescriptor.java" />
     <file name="Number_BehaviorDescriptor.java" />
     <file name="OrStatement_BehaviorDescriptor.java" />
-    <file name="PileReference_BehaviorDescriptor.java" />
     <file name="Pile_BehaviorDescriptor.java" />
     <file name="Player_BehaviorDescriptor.java" />
     <file name="SetupBlock_BehaviorDescriptor.java" />
