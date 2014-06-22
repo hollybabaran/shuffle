@@ -24,11 +24,13 @@
     <classNode dependClassName="Shuffle.behavior.LessThanStatement_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.LogicalExpression_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Main_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.Move_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.NotStatement_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.NumberAssignment_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.NumberReference_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Number_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.OrStatement_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.PileReference_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Pile_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Player_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.SetupBlock_BehaviorDescriptor" />
@@ -47,10 +49,16 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="Shuffle.behavior.CardCollection_BehaviorDescriptor" file="CardCollection_BehaviorDescriptor.java">
+  <dependency className="Shuffle.behavior.CardCollectionReference_BehaviorDescriptor" file="CardCollectionReference_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="Shuffle.behavior.CardCollection_BehaviorDescriptor" file="CardCollection_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.Command_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="Shuffle.behavior.Card_Behavior" file="Card_Behavior.java">
@@ -88,9 +96,9 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="Shuffle.behavior.DeckReference_BehaviorDescriptor" file="DeckReference_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.CardCollectionReference_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="Shuffle.behavior.Deck_Behavior" file="Deck_Behavior.java">
@@ -176,6 +184,12 @@
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="Shuffle.behavior.Move_BehaviorDescriptor" file="Move_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.Command_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="Shuffle.behavior.NotStatement_BehaviorDescriptor" file="NotStatement_BehaviorDescriptor.java">
     <classNode dependClassName="Shuffle.behavior.LogicalExpression_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
@@ -204,6 +218,12 @@
   </dependency>
   <dependency className="Shuffle.behavior.OrStatement_BehaviorDescriptor" file="OrStatement_BehaviorDescriptor.java">
     <classNode dependClassName="Shuffle.behavior.LogicalExpression_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="Shuffle.behavior.PileReference_BehaviorDescriptor" file="PileReference_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.CardCollectionReference_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
