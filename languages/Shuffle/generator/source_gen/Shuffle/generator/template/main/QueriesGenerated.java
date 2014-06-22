@@ -15,14 +15,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.internal.collections.runtime.ITranslator2;
 
 public class QueriesGenerated {
-  public static Object propertyMacro_GetPropertyValue_3854676059697937759(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString_def(_context.getNode(), "suit", "spades");
-  }
-
-  public static Object propertyMacro_GetPropertyValue_3854676059697985373(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString_def(_context.getNode(), "rank", "ace");
-  }
-
   public static Object propertyMacro_GetPropertyValue_2834967828304467600(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), "name");
   }
