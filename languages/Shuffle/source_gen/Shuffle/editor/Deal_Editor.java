@@ -11,7 +11,6 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
@@ -29,10 +28,10 @@ public class Deal_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_1lkok0_a");
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_1lkok0_a0(editorContext, node));
-    if (renderingCondition_1lkok0_a1a(node, editorContext, editorContext.getOperationContext().getScope())) {
+    if (renderingCondition_1lkok0_a1a(node, editorContext)) {
       editorCell.addEditorCell(this.createConstant_1lkok0_b0(editorContext, node));
     }
-    if (renderingCondition_1lkok0_a2a(node, editorContext, editorContext.getOperationContext().getScope())) {
+    if (renderingCondition_1lkok0_a2a(node, editorContext)) {
       editorCell.addEditorCell(this.createProperty_1lkok0_c0(editorContext, node));
     }
     editorCell.addEditorCell(this.createConstant_1lkok0_d0(editorContext, node));
@@ -58,7 +57,7 @@ public class Deal_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static boolean renderingCondition_1lkok0_a1a(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_1lkok0_a1a(SNode node, EditorContext editorContext) {
     return SPropertyOperations.getBoolean(node, "all");
   }
 
@@ -78,12 +77,12 @@ public class Deal_Editor extends DefaultNodeEditor {
     if (attributeConcept != null) {
       IOperationContext opContext = editorContext.getOperationContext();
       EditorManager manager = EditorManager.getInstanceFromContext(opContext);
-      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
   }
 
-  private static boolean renderingCondition_1lkok0_a2a(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_1lkok0_a2a(SNode node, EditorContext editorContext) {
     return !(SPropertyOperations.getBoolean(node, "all"));
   }
 
@@ -113,7 +112,7 @@ public class Deal_Editor extends DefaultNodeEditor {
     if (attributeConcept != null) {
       IOperationContext opContext = editorContext.getOperationContext();
       EditorManager manager = EditorManager.getInstanceFromContext(opContext);
-      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
   }
