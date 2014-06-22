@@ -53,6 +53,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Variable" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Nums&amp;Vars" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7674520359935706740" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
@@ -60,6 +61,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2834967828304063230" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Player" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3854676059697499073" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -73,6 +75,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7674520359934846973" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Number" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Nums&amp;Vars" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303856791" resolveInfo="Variable" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7674520359935510780" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -90,6 +93,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7674520359935552566" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="NumberReference" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Nums&amp;Vars" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7674520359935552666" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -108,6 +112,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7674520359936173280" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="NumberAssignment" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="set" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Nums&amp;Vars" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7674520359936173539" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -170,8 +175,11 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3854676059697422932" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="CardCollection" />
     <property name="name" nameId="tpck.1169194664001" value="Pile" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="pile" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Pile" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3854676059697220626" resolveInfo="CardCollection" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1721387915554876123" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3854676059697422937" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="CardCollection" />
@@ -485,6 +493,12 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="5565452210787642242" resolveInfo="BooleanExpression" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1721387915554939518" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
+    <property name="name" nameId="tpck.1169194664001" value="NumPlayers" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="number of players" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359934846973" resolveInfo="Number" />
   </root>
 </model>
 
