@@ -20,7 +20,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 2:
         return new ConceptDescriptorBuilder("Shuffle.structure.Card").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("rank", "suit").create();
       case 3:
-        return new ConceptDescriptorBuilder("Shuffle.structure.CardCollection").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").children(new String[]{"cards"}, new boolean[]{true}).abstract_().create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.CardCollection").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("size").children(new String[]{"cards"}, new boolean[]{true}).abstract_().create();
       case 4:
         return new ConceptDescriptorBuilder("Shuffle.structure.Command").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
       case 5:
@@ -64,7 +64,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 24:
         return new ConceptDescriptorBuilder("Shuffle.structure.OrStatement").super_("Shuffle.structure.LogicalExpression").parents("Shuffle.structure.LogicalExpression").children(new String[]{"first", "second"}, new boolean[]{false, false}).create();
       case 25:
-        return new ConceptDescriptorBuilder("Shuffle.structure.Pile").super_("Shuffle.structure.CardCollection").parents("Shuffle.structure.CardCollection").alias("pile", "").create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.Pile").super_("Shuffle.structure.CardCollection").parents("Shuffle.structure.CardCollection", "jetbrains.mps.lang.core.structure.INamedConcept").alias("Pile", "").create();
       case 26:
         return new ConceptDescriptorBuilder("Shuffle.structure.Player").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"hand"}, new boolean[]{false}).create();
       case 27:
