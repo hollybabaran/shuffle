@@ -11,6 +11,7 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="7674520359937840686" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="typeof_NumberReference" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Nums&amp;Vars" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="7674520359937840687" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="7674520359937840804" nodeInfo="nn">
         <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7674520359937840826" nodeInfo="ng">
@@ -34,6 +35,7 @@
   </root>
   <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="7674520359937855917" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="typeof_NumberAssignment" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Nums&amp;Vars" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="7674520359937855918" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="7674520359937856064" nodeInfo="nn">
         <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7674520359937856080" nodeInfo="ng">
@@ -62,6 +64,7 @@
   </root>
   <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="7674520359937865586" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="typeof_Number" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Nums&amp;Vars" />
     <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="7674520359937865587" nodeInfo="sn">
       <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="7674520359937865650" nodeInfo="nn">
         <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7674520359937865666" nodeInfo="ng">

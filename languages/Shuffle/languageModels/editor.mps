@@ -50,6 +50,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2834967828304063279" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.2834967828304063230" resolveInfo="Player" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="2834967828304063289" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2834967828304063296" nodeInfo="nn">
@@ -62,6 +63,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7674520359934875819" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Nums&amp;Vars" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.7674520359934846973" resolveInfo="Number" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7674520359934879847" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7674520359934879866" nodeInfo="nn">
@@ -80,6 +82,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7674520359935552696" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Nums&amp;Vars" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.7674520359935552566" resolveInfo="NumberReference" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="7674520359935552725" nodeInfo="ng">
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ffsp.7674520359935552666" />
@@ -92,16 +95,14 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7674520359936173402" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Nums&amp;Vars" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.7674520359936173280" resolveInfo="NumberAssignment" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7674520359936173431" nodeInfo="nn">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7674520359936295575" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="set" />
-      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7674520359936234860" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ffsp.7674520359936234808" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7674520359936173475" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="as" />
+        <property name="text" nameId="tpc2.1073389577007" value="is" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7674520359936177096" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ffsp.7674520359936173539" />
