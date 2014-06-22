@@ -10,7 +10,7 @@
   <unitInfo fileName="ConditionBlock_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ConditionBlock_BehaviorDescriptor" />
   <unitInfo fileName="Deal_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Deal_BehaviorDescriptor" />
   <unitInfo fileName="DeckReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.DeckReference_BehaviorDescriptor" />
-  <unitInfo fileName="Deck_BehaviorDescriptor.java" startLine="9" startPosition="0" endLine="22" endPosition="0" unitName="Shuffle.behavior.Deck_BehaviorDescriptor" />
+  <unitInfo fileName="Deck_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Deck_BehaviorDescriptor" />
   <unitInfo fileName="ElseIfStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ElseIfStatement_BehaviorDescriptor" />
   <unitInfo fileName="ElseStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ElseStatement_BehaviorDescriptor" />
   <unitInfo fileName="EqualToStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.EqualToStatement_BehaviorDescriptor" />

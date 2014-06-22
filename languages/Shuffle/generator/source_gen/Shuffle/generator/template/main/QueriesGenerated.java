@@ -19,7 +19,7 @@ public class QueriesGenerated {
   public final boolean NEEDS_OPCONTEXT = false;
 
   public static Object propertyMacro_GetPropertyValue_2834967828304467600(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), "name");
+    return "deck";
   }
 
   public static Object propertyMacro_GetPropertyValue_7674520359934919972(final PropertyMacroContext _context) {

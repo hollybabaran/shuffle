@@ -30,7 +30,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 7:
         return new ConceptDescriptorBuilder("Shuffle.structure.Deal").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").alias("deal", "").create();
       case 8:
-        return new ConceptDescriptorBuilder("Shuffle.structure.Deck").super_("Shuffle.structure.CardCollection").parents("Shuffle.structure.CardCollection", "jetbrains.mps.lang.core.structure.INamedConcept").alias("deck", "").create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.Deck").super_("Shuffle.structure.CardCollection").parents("Shuffle.structure.CardCollection").alias("deck", "").create();
       case 9:
         return new ConceptDescriptorBuilder("Shuffle.structure.DeckReference").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("deck").create();
       case 10:
@@ -44,7 +44,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 14:
         return new ConceptDescriptorBuilder("Shuffle.structure.GreaterThanStatement").super_("Shuffle.structure.LogicalExpression").parents("Shuffle.structure.LogicalExpression").children(new String[]{"first", "second"}, new boolean[]{false, false}).create();
       case 15:
-        return new ConceptDescriptorBuilder("Shuffle.structure.Hand").super_("Shuffle.structure.CardCollection").parents("Shuffle.structure.CardCollection").create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.Hand").super_("Shuffle.structure.CardCollection").parents("Shuffle.structure.CardCollection").alias("hand", "").create();
       case 16:
         return new ConceptDescriptorBuilder("Shuffle.structure.IfStatement").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").children(new String[]{"condition", "body", "elseIf", "else"}, new boolean[]{false, true, true, false}).alias("if", "").create();
       case 17:

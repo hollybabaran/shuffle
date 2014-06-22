@@ -102,6 +102,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Command" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7674520359936173280" nodeInfo="ig">
@@ -134,6 +135,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7674520359936346144" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ShuffleDeck" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="shuffle" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7674520359936346172" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -145,6 +147,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7674520359936462567" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Deal" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="deal" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3854676059697220626" nodeInfo="ig">
