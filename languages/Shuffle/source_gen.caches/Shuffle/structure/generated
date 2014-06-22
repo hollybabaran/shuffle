@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-ao08op1r7q2cb4esl60klkgutz3kimp">
+<dependencies version="2" modelHash="-4bu0p30n01pu362z10bual12p9mqlhk">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
@@ -11,7 +11,7 @@
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" hash="efpygk1iagsrvh0j1nroncwiyw07vp1" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-8chtguhcvj45cjy0bx3xiqekte2lox7" />
-  <common hash="1cyf516hmiojra02k49ukn37nvzwa2y" dependsOnNodes="true">
+  <common hash="-7ii6kqem02chgcfitjb9ui24n32z751" dependsOnNodes="true">
     <dep root="150989085052660316" />
     <dep root="150989085052660317" />
     <dep root="2834967828303451498" />
@@ -63,12 +63,12 @@
   <source id="2834967828304063230" name="Player" hash="-7qh34tyo49k3r6n3k4oy9478gbl9sdo" />
   <source id="7674520359934846973" name="Number" hash="6q56zz788aiv0bdvmlxv6el8txn7uon" />
   <source id="7674520359935552566" name="NumberReference" hash="-8u66g6ediwtt25nk7x87vu0m8fzzs4w" />
-  <source id="7674520359936137193" name="Command" hash="-724nqy575wustygpy5k8x2wm3iqqyqh" />
+  <source id="7674520359936137193" name="Command" hash="5kthn5fvxjlxsqtj9con16adfx7x1n3" />
   <source id="7674520359936173280" name="NumberAssignment" hash="5bpwna1ftavwxfc905wjy3kypaawvlj" />
   <source id="7674520359936345854" name="DeckReference" hash="4pnjflrq5ymof0taopkha95lc7k6e70" />
-  <source id="7674520359936346144" name="ShuffleDeck" hash="-iu5oqc9zb6pvrx8chxqt207of5ytxi" />
-  <source id="7674520359936462567" name="Deal" hash="ehjjqqd3spsm9qq6lduags19iviziz3" />
-  <source id="3854676059697220626" name="CardCollection" hash="-5xeprmg4jnjqkawudtcvfe9wor5cwpn" />
+  <source id="7674520359936346144" name="ShuffleDeck" hash="-45qikkyv7x7867gvria5ls0py90jsya" />
+  <source id="7674520359936462567" name="Deal" hash="-735zvbt5ztc0vnc7hyyk9f0rlmxec3n" />
+  <source id="3854676059697220626" name="CardCollection" hash="5rr7tg16bon09dvrhtktb5rs642zudp" />
   <source id="3854676059697422932" name="Pile" hash="-bmn2095ptz56exfqs33lkkuzuzkeitn" />
   <source id="3854676059697422937" name="Hand" hash="6oe9go0labd0b60vwocdi07o0tg2oby" />
   <source id="3854676059697652960" name="Suit" hash="-2023ym7l9glw1jfni68k3mrqb9jixg4">
@@ -93,19 +93,19 @@
   <source id="5160494638280568420" name="CommandBlock" hash="-d7v6no5rd605pz8e30mwkjvly3sg9or" />
   <source id="5160494638280649077" name="SetupBlock" hash="-6gql1g059mmu11vyc05n077qavv2icv" />
   <source id="5160494638280864183" name="WinConditionBlock" hash="-8dinc9rxmr7v3jgdp3x4c8eq5olesee" />
-  <source id="7881733640606387490" name="GreaterThanStatement" hash="7rri18y0hnn3qhzab8zpwn3qnmuijhu" />
-  <source id="5565452210787642242" name="LogicalExpression" hash="4s81ibxz047x4usy12xylmjck5tg2lm" />
-  <source id="7881733640606387386" name="OrStatement" hash="-4jdk73wws84h7kjam5hkck1qmdxuzmh" />
-  <source id="7881733640606387472" name="AndStatement" hash="-5px9adia1tcxev5374l427s7hw5hn4r" />
+  <source id="7881733640606387490" name="GreaterThanStatement" hash="-dr2qq7tt29olyltwnt1q1ma9n2cinee" />
+  <source id="5565452210787642242" name="BooleanExpression" hash="-2xsw855iqyk6t3mev9mv8pwbvfn9iyh" />
+  <source id="7881733640606387386" name="OrStatement" hash="7cwyc0hdfl2uq5otmjwjo50v2nwz5od" />
+  <source id="7881733640606387472" name="AndStatement" hash="c39oembprnb9u2ctd2v57t6k93dees7" />
   <source id="5565452210787038059" name="ElseStatement" hash="-ao4utku6ilvuzdwg4pezknuqmge1xtt" />
-  <source id="5565452210787037996" name="ElseIfStatement" hash="-cctwundnj7srf5bwi1o0ddx0lxt6d77" />
-  <source id="5565452210787026454" name="IfStatement" hash="5pos77eba9xkbvsqngpe0n9lev7ldo1" />
+  <source id="5565452210787037996" name="ElseIfStatement" hash="-zpudsndkm2qxib30629w87yca1o5up" />
+  <source id="5565452210787026454" name="IfStatement" hash="-tikbxg0q3a8abg2j42yx1waoejm5yr" />
   <source id="5565452210787037995" name="ForStatement" hash="yd9y4ptahu6oh51v64uey0c8ra29dt" />
   <source id="150989085052660317" name="Block" hash="-eatlabqhgd7opy1aqe2xh24hmfc1iw8" />
-  <source id="150989085052660316" name="ConditionBlock" hash="2dona2y25rsml1t8hyvyc1ccxi4962k" />
-  <source id="7881733640607028947" name="LessThanStatement" hash="62n8fh0tfkh2g3iyd83rrecnol1zaut" />
-  <source id="7881733640606387481" name="EqualToStatement" hash="-2gxvb1l5xqntfzvxhk3qd4zzwp8atqj" />
-  <source id="5565452210787038123" name="WhileStatement" hash="-3592tjfqjn19wg6vl6zjaf1bf3xzana" />
-  <source id="5565452210787038188" name="NotStatement" hash="-4y2ibt0huy8katzyoo2485vmt7xuc3t" />
+  <source id="150989085052660316" name="ConditionBlock" hash="b09zs7m2631lvrvt7um3ifk19h7kt8g" />
+  <source id="7881733640607028947" name="LessThanStatement" hash="egwca38ius3qzcfkmimkpt9x6cw7bj2" />
+  <source id="7881733640606387481" name="EqualToStatement" hash="-cwb4lq0x61xc6trpmf4vs1f28g11bfm" />
+  <source id="5565452210787038123" name="WhileStatement" hash="1j091grkf7qrlec6cva40jck30yibic" />
+  <source id="5565452210787038188" name="NotStatement" hash="86jxz30sv4de7od24qn8f2iypmpbkht" />
 </dependencies>
 

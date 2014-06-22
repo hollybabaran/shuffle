@@ -3,6 +3,7 @@
   <unitInfo fileName="AndStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.AndStatement_BehaviorDescriptor" />
   <unitInfo fileName="BehaviorAspectDescriptor.java" startLine="9" startPosition="0" endLine="78" endPosition="0" unitName="Shuffle.behavior.BehaviorAspectDescriptor" />
   <unitInfo fileName="Block_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Block_BehaviorDescriptor" />
+  <unitInfo fileName="BooleanExpression_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.BooleanExpression_BehaviorDescriptor" />
   <unitInfo fileName="CardCollection_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.CardCollection_BehaviorDescriptor" />
   <unitInfo fileName="Card_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Card_BehaviorDescriptor" />
   <unitInfo fileName="CommandBlock_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.CommandBlock_BehaviorDescriptor" />
@@ -19,7 +20,6 @@
   <unitInfo fileName="Hand_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Hand_BehaviorDescriptor" />
   <unitInfo fileName="IfStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.IfStatement_BehaviorDescriptor" />
   <unitInfo fileName="LessThanStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.LessThanStatement_BehaviorDescriptor" />
-  <unitInfo fileName="LogicalExpression_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.LogicalExpression_BehaviorDescriptor" />
   <unitInfo fileName="Main_BehaviorDescriptor.java" startLine="13" startPosition="0" endLine="38" endPosition="0" unitName="Shuffle.behavior.Main_BehaviorDescriptor" />
   <unitInfo fileName="NotStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.NotStatement_BehaviorDescriptor" />
   <unitInfo fileName="NumberAssignment_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.NumberAssignment_BehaviorDescriptor" />
