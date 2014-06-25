@@ -26,12 +26,20 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(_context.getNode(), "name");
   }
 
+  public static Object propertyMacro_GetPropertyValue_1472781009440830017(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), "cardNumbers");
+  }
+
   public static Object referenceMacro_GetReferent_7674520359937227968(final ReferenceMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "number", false), "name");
   }
 
   public static Object referenceMacro_GetReferent_7674520359936742814(final ReferenceMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "variable", true), "number", false), "name");
+  }
+
+  public static Object referenceMacro_GetReferent_1472781009440507754(final ReferenceMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "pile", false), "name");
   }
 
   public static SNode sourceNodeQuery_7674520359936682674(final SourceSubstituteMacroNodeContext _context) {
@@ -44,6 +52,14 @@ public class QueriesGenerated {
 
   public static SNode sourceNodeQuery_7674520359936751208(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "expression", true);
+  }
+
+  public static SNode sourceNodeQuery_1472781009440857300(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "pile1", true);
+  }
+
+  public static SNode sourceNodeQuery_1472781009440858998(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "pile2", true);
   }
 
   public static Iterable<SNode> sourceNodesQuery_7674520359936676692(final SourceSubstituteMacroNodesContext _context) {
