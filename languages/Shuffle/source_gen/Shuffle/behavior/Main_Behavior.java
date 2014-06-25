@@ -6,5 +6,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class Main_Behavior {
   public static void init(SNode thisNode) {
+    System.out.println("A new game begins.");
   }
 }

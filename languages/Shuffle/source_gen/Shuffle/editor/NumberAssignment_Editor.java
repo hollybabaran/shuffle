@@ -7,11 +7,11 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 public class NumberAssignment_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -22,21 +22,13 @@ public class NumberAssignment_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_jm7kh7_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createConstant_jm7kh7_a0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_jm7kh7_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_jm7kh7_c0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_jm7kh7_d0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_jm7kh7_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_jm7kh7_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_jm7kh7_c0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_jm7kh7_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "set");
-    editorCell.setCellId("Constant_jm7kh7_a0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createRefNode_jm7kh7_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_jm7kh7_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("variable");
     provider.setNoTargetText("<no variable>");
@@ -56,14 +48,14 @@ public class NumberAssignment_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_jm7kh7_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "as");
-    editorCell.setCellId("Constant_jm7kh7_c0");
+  private EditorCell createConstant_jm7kh7_b0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "is");
+    editorCell.setCellId("Constant_jm7kh7_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNode_jm7kh7_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_jm7kh7_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("expression");
     provider.setNoTargetText("<no expression>");

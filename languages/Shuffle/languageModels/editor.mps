@@ -353,6 +353,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6162892231914411419" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.6162892231914410061" resolveInfo="Move" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6162892231914411448" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6162892231914411455" nodeInfo="ng">

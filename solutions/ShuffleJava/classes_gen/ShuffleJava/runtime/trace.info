@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/6162892231914596193">
+    <unitInfo nodeId="6162892231914596193" fileName="CardPile.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="ShuffleJava.runtime.CardPile" />
+  </root>
+  <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/6162892231914596317">
+    <unitInfo nodeId="6162892231914596317" fileName="Player.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="ShuffleJava.runtime.Player" />
+  </root>
+  <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/6162892231914596383">
+    <unitInfo nodeId="6162892231914596383" fileName="Card.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="ShuffleJava.runtime.Card" />
+  </root>
+</debugInfo>
+

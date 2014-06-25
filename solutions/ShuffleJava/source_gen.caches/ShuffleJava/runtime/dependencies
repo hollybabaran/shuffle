@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="ShuffleJava.runtime.Card" file="Card.java" />
+  <dependency className="ShuffleJava.runtime.CardPile" file="CardPile.java" />
+  <dependency className="ShuffleJava.runtime.Player" file="Player.java" />
+</dependenciesRoot>
+

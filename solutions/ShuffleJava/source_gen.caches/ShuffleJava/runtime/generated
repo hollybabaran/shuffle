@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="eoihfhg8vcs0y3gprc6rbxvwnavvmva">
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
+  <common hash="6zg9tgkxdgzej1nqyng47snqo1sdlol" dependsOnNodes="true">
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+  </common>
+  <source id="6162892231914596193" name="CardPile" hash="-b754youn31uhndv8cess9234nk0la3y">
+    <file name="CardPile.java" />
+  </source>
+  <source id="6162892231914596317" name="Player" hash="epqyrd6ppk2kkl90kykx8zyqwct2e8p">
+    <file name="Player.java" />
+  </source>
+  <source id="6162892231914596383" name="Card" hash="ex5eyda3o9bwm4m5b3vinmawhem5hm7">
+    <file name="Card.java" />
+  </source>
+</dependencies>
+

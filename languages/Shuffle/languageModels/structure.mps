@@ -517,6 +517,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6162892231914410061" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Move" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="move" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6162892231914411311" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="cardNumbers" />
