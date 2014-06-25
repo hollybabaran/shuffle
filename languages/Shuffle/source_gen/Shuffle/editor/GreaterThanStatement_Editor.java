@@ -11,10 +11,6 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 public class GreaterThanStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -26,9 +22,8 @@ public class GreaterThanStatement_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_k7rwy4_a");
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createRefNode_k7rwy4_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_k7rwy4_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_k7rwy4_c0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_k7rwy4_d0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_k7rwy4_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_k7rwy4_c0(editorContext, node));
     return editorCell;
   }
 
@@ -52,24 +47,12 @@ public class GreaterThanStatement_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_k7rwy4_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "gr");
-    editorCell.setCellId("Constant_k7rwy4_b0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
+  private EditorCell createComponent_k7rwy4_b0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "jetbrains.mps.lang.core.editor.alias");
     return editorCell;
   }
 
-  private EditorCell createConstant_k7rwy4_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "than");
-    editorCell.setCellId("Constant_k7rwy4_c0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createRefNode_k7rwy4_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_k7rwy4_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("second");
     provider.setNoTargetText("<no second>");
