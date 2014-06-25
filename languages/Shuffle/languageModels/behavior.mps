@@ -35,7 +35,7 @@
     </node>
   </root>
   <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="6640477685921263924" nodeInfo="ng">
-    <link role="concept" roleId="1i04.1225194240799" targetNodeId="ffsp.2834967828303451498" resolveInfo="CardSet" />
+    <link role="concept" roleId="1i04.1225194240799" targetNodeId="ffsp.2834967828303451498" resolveInfo="Deck" />
     <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="6640477685921282953" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6640477685921282954" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tp2q.ForEachStatement" typeId="tp2q.1153943597977" id="6640477685921388069" nodeInfo="nn">

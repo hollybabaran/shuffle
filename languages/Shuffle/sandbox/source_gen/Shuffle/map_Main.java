@@ -40,7 +40,6 @@ public class map_Main {
 
 
   public static void main(String[] args) {
-    map_Main.Deck deck = new map_Main.Deck();
     System.out.println("test complete");
   }
 }
