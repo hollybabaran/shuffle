@@ -7,7 +7,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
-public class Deck_Behavior {
+public class CardSet_Behavior {
   public static void init(SNode thisNode) {
     for (SNode rank : ListSequence.fromList(SEnumOperations.getEnumMembers(SEnumOperations.getEnum("r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)", "Rank")))) {
       for (SNode suit : ListSequence.fromList(SEnumOperations.getEnumMembers(SEnumOperations.getEnum("r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)", "Suit")))) {
