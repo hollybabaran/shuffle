@@ -7,10 +7,10 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 
 public enum Suit {
-  S("S", "spades"),
-  H("H", "hearts"),
-  C("C", "clubs"),
-  D("D", "diamonds");
+  spades("\u2660", "spades"),
+  hearts("\u2665", "hearts"),
+  clubs("\u2663", "clubs"),
+  diamonds("\u2666", "diamonds");
 
   private String myName;
 
@@ -24,32 +24,32 @@ public enum Suit {
 
   public static List<Suit> getConstants() {
     List<Suit> list = ListSequence.fromList(new LinkedList<Suit>());
-    ListSequence.fromList(list).addElement(Suit.S);
-    ListSequence.fromList(list).addElement(Suit.H);
-    ListSequence.fromList(list).addElement(Suit.C);
-    ListSequence.fromList(list).addElement(Suit.D);
+    ListSequence.fromList(list).addElement(Suit.spades);
+    ListSequence.fromList(list).addElement(Suit.hearts);
+    ListSequence.fromList(list).addElement(Suit.clubs);
+    ListSequence.fromList(list).addElement(Suit.diamonds);
     return list;
   }
 
   public static Suit getDefault() {
-    return Suit.S;
+    return Suit.spades;
   }
 
   public static Suit parseValue(String value) {
     if (value == null) {
       return Suit.getDefault();
     }
-    if (value.equals(Suit.S.getValueAsString())) {
-      return Suit.S;
+    if (value.equals(Suit.spades.getValueAsString())) {
+      return Suit.spades;
     }
-    if (value.equals(Suit.H.getValueAsString())) {
-      return Suit.H;
+    if (value.equals(Suit.hearts.getValueAsString())) {
+      return Suit.hearts;
     }
-    if (value.equals(Suit.C.getValueAsString())) {
-      return Suit.C;
+    if (value.equals(Suit.clubs.getValueAsString())) {
+      return Suit.clubs;
     }
-    if (value.equals(Suit.D.getValueAsString())) {
-      return Suit.D;
+    if (value.equals(Suit.diamonds.getValueAsString())) {
+      return Suit.diamonds;
     }
     return Suit.getDefault();
   }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="18">
+<model modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="19">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -7,9 +7,9 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="18" implicit="yes" />
+  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="19" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2834967828303451498" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Deck" />
+    <property name="name" nameId="tpck.1169194664001" value="CardSet" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="CardCollection" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="CardSet" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3854676059697220626" resolveInfo="CardCollection" />
@@ -186,21 +186,22 @@
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="3854676059697652960" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Card" />
     <property name="name" nameId="tpck.1169194664001" value="Suit" />
+    <property name="memberIdentifierPolicy" nameId="tpce.1197591154882" value="derive_from_internal_value" />
     <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652961" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="spades" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="S" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="♠" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652962" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="H" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="♥" />
       <property name="internalValue" nameId="tpce.1083923523171" value="hearts" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652965" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="C" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="♣" />
       <property name="internalValue" nameId="tpce.1083923523171" value="clubs" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652969" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="D" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="♦" />
       <property name="internalValue" nameId="tpce.1083923523171" value="diamonds" />
     </node>
   </root>

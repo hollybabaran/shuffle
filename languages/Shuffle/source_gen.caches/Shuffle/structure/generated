@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-7l5qwzpi5qk73iwy44dxxot405nxjob">
+<dependencies version="2" modelHash="-4c1qobgctf9facfw4zfkra32y11j8xp">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
@@ -11,7 +11,7 @@
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" hash="efpygk1iagsrvh0j1nroncwiyw07vp1" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-8chtguhcvj45cjy0bx3xiqekte2lox7" />
-  <common hash="-7ii6kqem02chgcfitjb9ui24n32z751" dependsOnNodes="true">
+  <common hash="5tq8nbjnj4tli5x5356e6q7b8dy5bkp" dependsOnNodes="true">
     <dep root="150989085052660316" />
     <dep root="150989085052660317" />
     <dep root="1721387915554939518" />
@@ -60,7 +60,7 @@
     <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="2834967828303451498" name="Deck" hash="4s5uyitv3idw20nk06yi4m2bpd7l5as" />
+  <source id="2834967828303451498" name="CardSet" hash="-eemave0ldo3qx8k6rv5pufp52h4njz0" />
   <source id="2834967828303785259" name="Main" hash="32pxt2gwtfshsqv8zwnfeammysmrfbn" />
   <source id="2834967828303818439" name="Card" hash="-3l66d3q3plxjnxlv9md8f218vrzulip" />
   <source id="2834967828303856791" name="Variable" hash="5qlwtr1rklb73uxkjcdl27trb2mor2j" />
@@ -75,7 +75,7 @@
   <source id="3854676059697220626" name="CardCollection" hash="-bzu3yfxtmozyr446o2p58f360ca7kh9" />
   <source id="3854676059697422932" name="Pile" hash="9a138iqa0hbqu09yfxkiwwuxwap8hzo" />
   <source id="3854676059697422937" name="Hand" hash="6oe9go0labd0b60vwocdi07o0tg2oby" />
-  <source id="3854676059697652960" name="Suit" hash="-2023ym7l9glw1jfni68k3mrqb9jixg4">
+  <source id="3854676059697652960" name="Suit" hash="-9f5a9xrg14ouik4c71vzahf7g150mrt">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />

@@ -6,13 +6,13 @@
   <unitInfo fileName="BooleanExpression_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.BooleanExpression_BehaviorDescriptor" />
   <unitInfo fileName="CardCollectionReference_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.CardCollectionReference_BehaviorDescriptor" />
   <unitInfo fileName="CardCollection_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.CardCollection_BehaviorDescriptor" />
+  <unitInfo fileName="CardSet_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.CardSet_BehaviorDescriptor" />
   <unitInfo fileName="Card_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Card_BehaviorDescriptor" />
   <unitInfo fileName="CommandBlock_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.CommandBlock_BehaviorDescriptor" />
   <unitInfo fileName="Command_BehaviorDescriptor.java" startLine="7" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.behavior.Command_BehaviorDescriptor" />
   <unitInfo fileName="ConditionBlock_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ConditionBlock_BehaviorDescriptor" />
   <unitInfo fileName="Deal_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Deal_BehaviorDescriptor" />
   <unitInfo fileName="DeckReference_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.DeckReference_BehaviorDescriptor" />
-  <unitInfo fileName="Deck_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.Deck_BehaviorDescriptor" />
   <unitInfo fileName="ElseIfStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ElseIfStatement_BehaviorDescriptor" />
   <unitInfo fileName="ElseStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.ElseStatement_BehaviorDescriptor" />
   <unitInfo fileName="EqualToStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.EqualToStatement_BehaviorDescriptor" />
@@ -38,25 +38,25 @@
   <unitInfo fileName="WhileStatement_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.WhileStatement_BehaviorDescriptor" />
   <unitInfo fileName="WinConditionBlock_BehaviorDescriptor.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.behavior.WinConditionBlock_BehaviorDescriptor" />
   <root nodeRef="r:88266f50-160d-4022-b70e-078f6bc19dfd(Shuffle.behavior)/6640477685921263924">
-    <nodeInfo nodeId="6640477685921408235" fileName="Deck_Behavior.java" startLine="13" startPosition="174" endLine="14" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6640477685921419457" fileName="Deck_Behavior.java" startLine="14" startPosition="81" endLine="15" endPosition="144" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6640477685921438320" fileName="Deck_Behavior.java" startLine="15" startPosition="144" endLine="16" endPosition="144" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6640477685921407928" fileName="Deck_Behavior.java" startLine="12" startPosition="172" endLine="17" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="6640477685921388069" fileName="Deck_Behavior.java" startLine="11" startPosition="43" endLine="18" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="6640477685921263924" fileName="Deck_Behavior.java" startLine="11" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-    <scopeInfo nodeId="6640477685921407931" fileName="Deck_Behavior.java" startLine="13" startPosition="174" endLine="16" endPosition="144" />
-    <scopeInfo nodeId="6640477685921388075" fileName="Deck_Behavior.java" startLine="12" startPosition="172" endLine="17" endPosition="7" />
-    <scopeInfo nodeId="6640477685921407928" fileName="Deck_Behavior.java" startLine="12" startPosition="172" endLine="17" endPosition="7">
+    <nodeInfo nodeId="6640477685921408235" fileName="CardSet_Behavior.java" startLine="13" startPosition="174" endLine="14" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6640477685921419457" fileName="CardSet_Behavior.java" startLine="14" startPosition="81" endLine="15" endPosition="144" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6640477685921438320" fileName="CardSet_Behavior.java" startLine="15" startPosition="144" endLine="16" endPosition="144" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6640477685921407928" fileName="CardSet_Behavior.java" startLine="12" startPosition="172" endLine="17" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="6640477685921388069" fileName="CardSet_Behavior.java" startLine="11" startPosition="43" endLine="18" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="6640477685921263924" fileName="CardSet_Behavior.java" startLine="11" startPosition="0" endLine="20" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="6640477685921407931" fileName="CardSet_Behavior.java" startLine="13" startPosition="174" endLine="16" endPosition="144" />
+    <scopeInfo nodeId="6640477685921388075" fileName="CardSet_Behavior.java" startLine="12" startPosition="172" endLine="17" endPosition="7" />
+    <scopeInfo nodeId="6640477685921407928" fileName="CardSet_Behavior.java" startLine="12" startPosition="172" endLine="17" endPosition="7">
       <varInfo nodeId="6640477685921407929" varName="suit" />
     </scopeInfo>
-    <scopeInfo nodeId="6640477685921282954" fileName="Deck_Behavior.java" startLine="11" startPosition="43" endLine="18" endPosition="5" />
-    <scopeInfo nodeId="6640477685921388069" fileName="Deck_Behavior.java" startLine="11" startPosition="43" endLine="18" endPosition="5">
+    <scopeInfo nodeId="6640477685921282954" fileName="CardSet_Behavior.java" startLine="11" startPosition="43" endLine="18" endPosition="5" />
+    <scopeInfo nodeId="6640477685921388069" fileName="CardSet_Behavior.java" startLine="11" startPosition="43" endLine="18" endPosition="5">
       <varInfo nodeId="6640477685921388071" varName="rank" />
     </scopeInfo>
-    <scopeInfo nodeId="6640477685921263924" fileName="Deck_Behavior.java" startLine="11" startPosition="0" endLine="20" endPosition="0">
+    <scopeInfo nodeId="6640477685921263924" fileName="CardSet_Behavior.java" startLine="11" startPosition="0" endLine="20" endPosition="0">
       <varInfo nodeId="6640477685921263924" varName="thisNode" />
     </scopeInfo>
-    <unitInfo nodeId="6640477685921263924" fileName="Deck_Behavior.java" startLine="10" startPosition="0" endLine="21" endPosition="0" unitName="Shuffle.behavior.Deck_Behavior" />
+    <unitInfo nodeId="6640477685921263924" fileName="CardSet_Behavior.java" startLine="10" startPosition="0" endLine="21" endPosition="0" unitName="Shuffle.behavior.CardSet_Behavior" />
   </root>
   <root nodeRef="r:88266f50-160d-4022-b70e-078f6bc19dfd(Shuffle.behavior)/6640477685921374758">
     <nodeInfo nodeId="6640477685921381186" fileName="Card_Behavior.java" startLine="12" startPosition="83" endLine="13" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
