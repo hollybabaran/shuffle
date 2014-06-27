@@ -23,13 +23,19 @@ public class Number_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_ydd9ch_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createProperty_ydd9ch_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_ydd9ch_b0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_ydd9ch_c0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_ydd9ch_a0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_ydd9ch_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_ydd9ch_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_ydd9ch_d0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createProperty_ydd9ch_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createComponent_ydd9ch_a0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "jetbrains.mps.lang.core.editor.alias");
+    return editorCell;
+  }
+
+  private EditorCell createProperty_ydd9ch_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -47,14 +53,14 @@ public class Number_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_ydd9ch_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_ydd9ch_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "is ");
-    editorCell.setCellId("Constant_ydd9ch_b0");
+    editorCell.setCellId("Constant_ydd9ch_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNode_ydd9ch_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_ydd9ch_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("expression");
     provider.setNoTargetText("<no expression>");

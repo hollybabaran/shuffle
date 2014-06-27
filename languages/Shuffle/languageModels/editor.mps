@@ -3,12 +3,12 @@
   <persistence version="8" />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="19" />
+  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="21" />
   <import index="tpco" modelUID="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" version="-1" />
   <import index="tpc2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="35" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2834967828303743741" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="CardCollection" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.2834967828303451498" resolveInfo="Deck" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="3854676059698296146" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Vertical" typeId="tpc2.1106270571710" id="3854676059698296147" nodeInfo="nn" />
@@ -63,9 +63,12 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7674520359934875819" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Nums&amp;Vars" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.Number" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.7674520359934846973" resolveInfo="Number" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7674520359934879847" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6304222537138290281" nodeInfo="ng">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
+      </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="7674520359935263025" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
       </node>
@@ -108,7 +111,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7674520359936345890" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="CardCollection" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.7674520359936345854" resolveInfo="DeckReference" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6162892231913879929" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6162892231913879930" nodeInfo="nn" />
@@ -210,7 +213,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6335293957956486509" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="BooleanExpression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.7881733640606387386" resolveInfo="OrStatement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6335293957956486544" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6335293957956486545" nodeInfo="nn" />
@@ -226,7 +229,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6335293957956486207" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="BooleanExpression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.7881733640606387472" resolveInfo="AndStatement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6335293957956486269" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6335293957956486270" nodeInfo="nn" />
@@ -242,7 +245,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6335293957956489906" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="BooleanExpression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.7881733640607028947" resolveInfo="LessThanStatement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6335293957956489935" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6335293957956489936" nodeInfo="nn" />
@@ -258,7 +261,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6335293957956486909" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="BooleanExpression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.7881733640606387481" resolveInfo="EqualToStatement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6335293957956486938" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6335293957956486939" nodeInfo="nn" />
@@ -274,7 +277,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6335293957956486696" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="BooleanExpression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.5565452210787038188" resolveInfo="NotStatement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6335293957956486725" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6335293957956486726" nodeInfo="nn" />
@@ -287,7 +290,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6335293957956489618" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="BooleanExpression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.7881733640606387490" resolveInfo="GreaterThanStatement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6335293957956489768" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6335293957956489769" nodeInfo="nn" />
@@ -303,7 +306,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="1721387915554876410" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="CardCollection" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.3854676059697422932" resolveInfo="Pile" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="1721387915554890111" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="1721387915554890118" nodeInfo="nn">
@@ -322,7 +325,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6162892231914410929" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="CardCollection" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.6162892231914410451" resolveInfo="PileReference" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6162892231914410960" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="6162892231914410967" nodeInfo="ng">
@@ -360,6 +363,22 @@
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ffsp.6162892231914411208" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6162892231914411451" nodeInfo="nn" />
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="6304222537139633769" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.Number" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.1721387915554939518" resolveInfo="NumPlayers" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="6304222537139633822" nodeInfo="nn">
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="6304222537139633829" nodeInfo="ng">
+        <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6304222537139633834" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="is" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6304222537139633842" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ffsp.7674520359935510780" />
+      </node>
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6304222537139633825" nodeInfo="nn" />
     </node>
   </root>
 </model>

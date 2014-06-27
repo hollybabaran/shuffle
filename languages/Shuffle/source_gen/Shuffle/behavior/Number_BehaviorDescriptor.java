@@ -4,7 +4,7 @@ package Shuffle.behavior;
 
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 
-public class Number_BehaviorDescriptor extends Variable_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor {
+public class Number_BehaviorDescriptor extends VariableDeclaration_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor {
   public Number_BehaviorDescriptor() {
   }
 
