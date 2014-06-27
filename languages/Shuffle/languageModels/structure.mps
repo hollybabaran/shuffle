@@ -309,7 +309,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
     <property name="name" nameId="tpck.1169194664001" value="BooleanExpression" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7881733640606387386" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
