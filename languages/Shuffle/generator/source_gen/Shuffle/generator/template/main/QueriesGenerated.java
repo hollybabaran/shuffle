@@ -9,10 +9,6 @@ import jetbrains.mps.generator.template.ReferenceMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
-import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.internal.collections.runtime.ITranslator2;
 
 @Generated
 public class QueriesGenerated {
@@ -42,11 +38,7 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "pile", false), "name");
   }
 
-  public static SNode sourceNodeQuery_7674520359936682674(final SourceSubstituteMacroNodeContext _context) {
-    return _context.getNode();
-  }
-
-  public static SNode sourceNodeQuery_465858332973579974(final SourceSubstituteMacroNodeContext _context) {
+  public static SNode sourceNodeQuery_465858332973658066(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "winConditionBlock", true), "condition", true);
   }
 
@@ -64,13 +56,5 @@ public class QueriesGenerated {
 
   public static SNode sourceNodeQuery_1472781009440858998(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "pile2", true);
-  }
-
-  public static Iterable<SNode> sourceNodesQuery_7674520359936676692(final SourceSubstituteMacroNodesContext _context) {
-    return ListSequence.fromList(SModelOperations.getNodes(_context.getInputModel(), "Shuffle.structure.SetupBlock")).translate(new ITranslator2<SNode, SNode>() {
-      public Iterable<SNode> translate(SNode it) {
-        return SLinkOperations.getTargets(it, "body", true);
-      }
-    });
   }
 }
