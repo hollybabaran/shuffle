@@ -42,20 +42,22 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 12:
         return Collections.<ConceptEditor>singletonList(new NotStatement_Editor());
       case 13:
-        return Collections.<ConceptEditor>singletonList(new Number_Editor());
+        return Collections.<ConceptEditor>singletonList(new NumPlayers_Editor());
       case 14:
-        return Collections.<ConceptEditor>singletonList(new NumberAssignment_Editor());
+        return Collections.<ConceptEditor>singletonList(new Number_Editor());
       case 15:
-        return Collections.<ConceptEditor>singletonList(new NumberReference_Editor());
+        return Collections.<ConceptEditor>singletonList(new NumberAssignment_Editor());
       case 16:
-        return Collections.<ConceptEditor>singletonList(new OrStatement_Editor());
+        return Collections.<ConceptEditor>singletonList(new NumberReference_Editor());
       case 17:
-        return Collections.<ConceptEditor>singletonList(new Pile_Editor());
+        return Collections.<ConceptEditor>singletonList(new OrStatement_Editor());
       case 18:
-        return Collections.<ConceptEditor>singletonList(new PileReference_Editor());
+        return Collections.<ConceptEditor>singletonList(new Pile_Editor());
       case 19:
-        return Collections.<ConceptEditor>singletonList(new Player_Editor());
+        return Collections.<ConceptEditor>singletonList(new PileReference_Editor());
       case 20:
+        return Collections.<ConceptEditor>singletonList(new Player_Editor());
+      case 21:
         return Collections.<ConceptEditor>singletonList(new ShuffleDeck_Editor());
       default:
     }
@@ -68,5 +70,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
 
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"Shuffle.structure.AndStatement", "Shuffle.structure.Card", "Shuffle.structure.CommandBlock", "Shuffle.structure.ConditionBlock", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.DeckReference", "Shuffle.structure.EqualToStatement", "Shuffle.structure.GreaterThanStatement", "Shuffle.structure.LessThanStatement", "Shuffle.structure.Main", "Shuffle.structure.Move", "Shuffle.structure.NotStatement", "Shuffle.structure.Number", "Shuffle.structure.NumberAssignment", "Shuffle.structure.NumberReference", "Shuffle.structure.OrStatement", "Shuffle.structure.Pile", "Shuffle.structure.PileReference", "Shuffle.structure.Player", "Shuffle.structure.ShuffleDeck"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"Shuffle.structure.AndStatement", "Shuffle.structure.Card", "Shuffle.structure.CommandBlock", "Shuffle.structure.ConditionBlock", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.DeckReference", "Shuffle.structure.EqualToStatement", "Shuffle.structure.GreaterThanStatement", "Shuffle.structure.LessThanStatement", "Shuffle.structure.Main", "Shuffle.structure.Move", "Shuffle.structure.NotStatement", "Shuffle.structure.NumPlayers", "Shuffle.structure.Number", "Shuffle.structure.NumberAssignment", "Shuffle.structure.NumberReference", "Shuffle.structure.OrStatement", "Shuffle.structure.Pile", "Shuffle.structure.PileReference", "Shuffle.structure.Player", "Shuffle.structure.ShuffleDeck"};
 }

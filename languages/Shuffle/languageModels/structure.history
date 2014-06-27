@@ -126,5 +126,23 @@
     </dependencies>
     <rename id="ffsp.2834967828303451498" type="CONCEPT" from="Deck" to="CardSet" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="18" />
+    </dependencies>
+    <rename id="ffsp.6304222537137825854" type="CONCEPT" from="Declaration" to="VariableDeclaration" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="19" />
+    </dependencies>
+    <rename id="ffsp.2834967828303856791" type="CONCEPT" from="Variable" to="VariableDeclaration" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="20" />
+    </dependencies>
+    <rename id="ffsp.6304222537138290359" type="REFERENCE" from="declaration" to="variable" />
+  </StructureModification>
 </history>
 

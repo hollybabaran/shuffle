@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="95" endPosition="0" unitName="Shuffle.structure.StructureAspectDescriptor" />
+  <unitInfo fileName="StructureAspectDescriptor.java" startLine="10" startPosition="0" endLine="97" endPosition="0" unitName="Shuffle.structure.StructureAspectDescriptor" />
   <root nodeRef="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)/3854676059697652960">
     <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="15" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myName" />
     <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="17" startPosition="27" endLine="18" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="21" startPosition="36" endLine="22" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="25" startPosition="43" endLine="26" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="26" startPosition="68" endLine="27" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="27" startPosition="51" endLine="28" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="28" startPosition="51" endLine="29" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="29" startPosition="51" endLine="30" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="30" startPosition="51" endLine="31" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="34" startPosition="35" endLine="35" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="26" startPosition="68" endLine="27" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="27" startPosition="56" endLine="28" endPosition="56" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="28" startPosition="56" endLine="29" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="29" startPosition="55" endLine="30" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="30" startPosition="58" endLine="31" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="34" startPosition="35" endLine="35" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="39" startPosition="24" endLine="40" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="42" startPosition="50" endLine="43" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="45" startPosition="50" endLine="46" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="48" startPosition="50" endLine="49" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="51" startPosition="50" endLine="52" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="42" startPosition="55" endLine="43" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="45" startPosition="55" endLine="46" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="48" startPosition="54" endLine="49" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="51" startPosition="57" endLine="52" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="53" startPosition="5" endLine="54" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="57" startPosition="0" endLine="58" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="myValue" />
     <nodeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="59" startPosition="35" endLine="60" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -59,12 +59,12 @@
     <nodeInfo nodeId="3854676059697652960" fileName="Suit_PropertySupport.java" startLine="24" startPosition="0" endLine="37" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
     <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="17" startPosition="27" endLine="18" endPosition="23" />
     <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="21" startPosition="36" endLine="22" endPosition="24" />
-    <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="34" startPosition="35" endLine="35" endPosition="18" />
+    <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="34" startPosition="35" endLine="35" endPosition="23" />
     <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="39" startPosition="24" endLine="40" endPosition="31" />
-    <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="42" startPosition="50" endLine="43" endPosition="20" />
-    <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="45" startPosition="50" endLine="46" endPosition="20" />
-    <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="48" startPosition="50" endLine="49" endPosition="20" />
-    <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="51" startPosition="50" endLine="52" endPosition="20" />
+    <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="42" startPosition="55" endLine="43" endPosition="25" />
+    <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="45" startPosition="55" endLine="46" endPosition="25" />
+    <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="48" startPosition="54" endLine="49" endPosition="24" />
+    <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="51" startPosition="57" endLine="52" endPosition="27" />
     <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="64" startPosition="28" endLine="65" endPosition="24" />
     <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="59" startPosition="35" endLine="61" endPosition="25" />
     <scopeInfo nodeId="3854676059697652960" fileName="Suit.java" startLine="17" startPosition="0" endLine="20" endPosition="0" />
