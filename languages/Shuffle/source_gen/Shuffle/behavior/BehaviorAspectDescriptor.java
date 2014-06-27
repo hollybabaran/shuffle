@@ -28,7 +28,7 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new NumberAssignment_BehaviorDescriptor();
       case 6:
         return new DeckReference_BehaviorDescriptor();
-      case 27:
+      case 28:
         return new ShuffleDeck_BehaviorDescriptor();
       case 4:
         return new Deal_BehaviorDescriptor();
@@ -36,9 +36,9 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new Pile_BehaviorDescriptor();
       case 12:
         return new Hand_BehaviorDescriptor();
-      case 26:
+      case 27:
         return new SetupBlock_BehaviorDescriptor();
-      case 30:
+      case 31:
         return new WinConditionBlock_BehaviorDescriptor();
       case 11:
         return new GreaterThanStatement_BehaviorDescriptor();
@@ -62,7 +62,7 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new LessThanStatement_BehaviorDescriptor();
       case 9:
         return new EqualToStatement_BehaviorDescriptor();
-      case 29:
+      case 30:
         return new WhileStatement_BehaviorDescriptor();
       case 17:
         return new NotStatement_BehaviorDescriptor();
@@ -72,12 +72,14 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new PileReference_BehaviorDescriptor();
       case 16:
         return new Move_BehaviorDescriptor();
-      case 28:
+      case 29:
         return new VariableReference_BehaviorDescriptor();
+      case 26:
+        return new PlayerTurnBlock_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"Shuffle.structure.AndStatement", "Shuffle.structure.Block", "Shuffle.structure.Card", "Shuffle.structure.ConditionBlock", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.DeckReference", "Shuffle.structure.ElseIfStatement", "Shuffle.structure.ElseStatement", "Shuffle.structure.EqualToStatement", "Shuffle.structure.ForStatement", "Shuffle.structure.GreaterThanStatement", "Shuffle.structure.Hand", "Shuffle.structure.IfStatement", "Shuffle.structure.LessThanStatement", "Shuffle.structure.Main", "Shuffle.structure.Move", "Shuffle.structure.NotStatement", "Shuffle.structure.NumPlayers", "Shuffle.structure.Number", "Shuffle.structure.NumberAssignment", "Shuffle.structure.NumberReference", "Shuffle.structure.OrStatement", "Shuffle.structure.Pile", "Shuffle.structure.PileReference", "Shuffle.structure.Player", "Shuffle.structure.SetupBlock", "Shuffle.structure.ShuffleDeck", "Shuffle.structure.VariableReference", "Shuffle.structure.WhileStatement", "Shuffle.structure.WinConditionBlock"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"Shuffle.structure.AndStatement", "Shuffle.structure.Block", "Shuffle.structure.Card", "Shuffle.structure.ConditionBlock", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.DeckReference", "Shuffle.structure.ElseIfStatement", "Shuffle.structure.ElseStatement", "Shuffle.structure.EqualToStatement", "Shuffle.structure.ForStatement", "Shuffle.structure.GreaterThanStatement", "Shuffle.structure.Hand", "Shuffle.structure.IfStatement", "Shuffle.structure.LessThanStatement", "Shuffle.structure.Main", "Shuffle.structure.Move", "Shuffle.structure.NotStatement", "Shuffle.structure.NumPlayers", "Shuffle.structure.Number", "Shuffle.structure.NumberAssignment", "Shuffle.structure.NumberReference", "Shuffle.structure.OrStatement", "Shuffle.structure.Pile", "Shuffle.structure.PileReference", "Shuffle.structure.Player", "Shuffle.structure.PlayerTurnBlock", "Shuffle.structure.SetupBlock", "Shuffle.structure.ShuffleDeck", "Shuffle.structure.VariableReference", "Shuffle.structure.WhileStatement", "Shuffle.structure.WinConditionBlock"};
 }

@@ -32,6 +32,7 @@
     <classNode dependClassName="Shuffle.behavior.OrStatement_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.PileReference_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Pile_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.PlayerTurnBlock_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Player_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.SetupBlock_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.ShuffleDeck_BehaviorDescriptor" />
@@ -53,7 +54,7 @@
   <dependency className="Shuffle.behavior.BooleanExpression_BehaviorDescriptor" file="BooleanExpression_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.Expression_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="Shuffle.behavior.CardCollectionReference_BehaviorDescriptor" file="CardCollectionReference_BehaviorDescriptor.java">
@@ -244,6 +245,12 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="Shuffle.behavior.PlayerTurnBlock_BehaviorDescriptor" file="PlayerTurnBlock_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.CommandBlock_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="Shuffle.behavior.Player_BehaviorDescriptor" file="Player_BehaviorDescriptor.java">
