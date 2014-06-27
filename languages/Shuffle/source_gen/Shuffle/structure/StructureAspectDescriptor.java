@@ -14,15 +14,15 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new ConceptDescriptorBuilder("Shuffle.structure.AndStatement").super_("Shuffle.structure.BooleanExpression").parents("Shuffle.structure.BooleanExpression").children(new String[]{"first", "second"}, new boolean[]{false, false}).create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.AndStatement").super_("Shuffle.structure.BooleanExpression").parents("Shuffle.structure.BooleanExpression").children(new String[]{"first", "second"}, new boolean[]{false, false}).alias("and", "").create();
       case 1:
         return new ConceptDescriptorBuilder("Shuffle.structure.Block").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").create();
       case 2:
-        return new ConceptDescriptorBuilder("Shuffle.structure.BooleanExpression").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.BooleanExpression").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
       case 3:
         return new ConceptDescriptorBuilder("Shuffle.structure.Card").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("rank", "suit").create();
       case 4:
-        return new ConceptDescriptorBuilder("Shuffle.structure.CardCollection").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").properties("size").children(new String[]{"cards"}, new boolean[]{true}).abstract_().create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.CardCollection").super_("Shuffle.structure.Variable").parents("Shuffle.structure.Variable").properties("size").children(new String[]{"cards"}, new boolean[]{true}).abstract_().create();
       case 5:
         return new ConceptDescriptorBuilder("Shuffle.structure.CardCollectionReference").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
       case 6:
@@ -42,7 +42,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 13:
         return new ConceptDescriptorBuilder("Shuffle.structure.ElseStatement").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").children(new String[]{"body"}, new boolean[]{true}).alias("else", "").create();
       case 14:
-        return new ConceptDescriptorBuilder("Shuffle.structure.EqualToStatement").super_("Shuffle.structure.BooleanExpression").parents("Shuffle.structure.BooleanExpression").children(new String[]{"first", "second"}, new boolean[]{false, false}).create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.EqualToStatement").super_("Shuffle.structure.BooleanExpression").parents("Shuffle.structure.BooleanExpression").children(new String[]{"first", "second"}, new boolean[]{false, false}).alias("equal to", "").create();
       case 15:
         return new ConceptDescriptorBuilder("Shuffle.structure.ForStatement").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").alias("for", "").create();
       case 16:
@@ -80,7 +80,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 32:
         return new ConceptDescriptorBuilder("Shuffle.structure.ShuffleDeck").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").children(new String[]{"deck"}, new boolean[]{false}).alias("shuffle", "").create();
       case 33:
-        return new ConceptDescriptorBuilder("Shuffle.structure.Variable").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").abstract_().create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.Variable").super_("jetbrains.mps.baseLanguage.structure.Expression").parents("jetbrains.mps.baseLanguage.structure.Expression", "jetbrains.mps.lang.core.structure.INamedConcept").abstract_().create();
       case 34:
         return new ConceptDescriptorBuilder("Shuffle.structure.WhileStatement").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").children(new String[]{"condition", "body"}, new boolean[]{false, true}).alias("while", "").create();
       case 35:
