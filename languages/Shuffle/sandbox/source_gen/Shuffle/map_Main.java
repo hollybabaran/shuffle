@@ -7,8 +7,6 @@ public class map_Main {
 
 
   public static void main(String[] args) {
-    System.out.println("test complete");
-
     // Game Loop 
     while (true) {
       // win condition 

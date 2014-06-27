@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeRef="r:596fbfcd-29f6-4a5e-ad85-69a59fa0d7f8(Shuffle)/465858332973504699">
+    <nodeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="9" startPosition="42" endLine="10" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="11" startPosition="18" endLine="12" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="13" startPosition="19" endLine="14" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
+    <nodeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="16" startPosition="5" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="17" startPosition="0" endLine="18" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="18" startPosition="21" endLine="19" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="12" startPosition="23" endLine="15" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="10" startPosition="17" endLine="16" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
+    <nodeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="9" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="main#([Ljava/lang/String;)V" />
+    <scopeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="13" startPosition="19" endLine="14" endPosition="14" />
+    <scopeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="11" startPosition="18" endLine="15" endPosition="7" />
+    <scopeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="9" startPosition="42" endLine="19" endPosition="41" />
+    <scopeInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="9" startPosition="0" endLine="21" endPosition="0">
+      <varInfo nodeId="465858332973504699" varName="args" />
+    </scopeInfo>
+    <unitInfo nodeId="465858332973504699" fileName="map_Main.java" startLine="6" startPosition="0" endLine="22" endPosition="0" unitName="Shuffle.map_Main" />
+  </root>
+</debugInfo>
+

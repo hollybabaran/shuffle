@@ -187,18 +187,18 @@
     <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652961" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="spades" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="S" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="♠" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652962" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="H" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="♥" />
       <property name="internalValue" nameId="tpce.1083923523171" value="hearts" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652965" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="C" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="♣" />
       <property name="internalValue" nameId="tpce.1083923523171" value="clubs" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652969" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="D" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="♦" />
       <property name="internalValue" nameId="tpce.1083923523171" value="diamonds" />
     </node>
   </root>

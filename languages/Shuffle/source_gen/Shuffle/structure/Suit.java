@@ -7,10 +7,10 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 
 public enum Suit {
-  spades("S", "spades"),
-  hearts("H", "hearts"),
-  clubs("C", "clubs"),
-  diamonds("D", "diamonds");
+  spades("\u2660", "spades"),
+  hearts("\u2665", "hearts"),
+  clubs("\u2663", "clubs"),
+  diamonds("\u2666", "diamonds");
 
   private String myName;
 
