@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeRef="r:d123cd1a-5e00-4516-ae0e-506d0da751c1(Shuffle.textGen)/465858332973598852">
+    <nodeInfo nodeId="465858332973602355" fileName="EqualToStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973602355" fileName="EqualToStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973602355" fileName="EqualToStatement_TextGen.java" startLine="11" startPosition="63" endLine="12" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973602355" fileName="EqualToStatement_TextGen.java" startLine="12" startPosition="24" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973602355" fileName="EqualToStatement_TextGen.java" startLine="12" startPosition="24" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973602355" fileName="EqualToStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973598852" fileName="EqualToStatement_TextGen.java" startLine="10" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="465858332973602355" fileName="EqualToStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" />
+    <scopeInfo nodeId="465858332973602355" fileName="EqualToStatement_TextGen.java" startLine="12" startPosition="24" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973598852" fileName="EqualToStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973602355" fileName="EqualToStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973598852" fileName="EqualToStatement_TextGen.java" startLine="10" startPosition="0" endLine="15" endPosition="0">
+      <varInfo nodeId="465858332973598852" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="465858332973598852" fileName="EqualToStatement_TextGen.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.textGen.EqualToStatement_TextGen" />
+  </root>
+  <root nodeRef="r:d123cd1a-5e00-4516-ae0e-506d0da751c1(Shuffle.textGen)/465858332973608167">
+    <nodeInfo nodeId="465858332973608215" fileName="AndStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973608215" fileName="AndStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973608215" fileName="AndStatement_TextGen.java" startLine="11" startPosition="63" endLine="12" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973608215" fileName="AndStatement_TextGen.java" startLine="12" startPosition="24" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973608215" fileName="AndStatement_TextGen.java" startLine="12" startPosition="24" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973608215" fileName="AndStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973608167" fileName="AndStatement_TextGen.java" startLine="10" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="465858332973608215" fileName="AndStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" />
+    <scopeInfo nodeId="465858332973608215" fileName="AndStatement_TextGen.java" startLine="12" startPosition="24" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973608167" fileName="AndStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973608215" fileName="AndStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973608167" fileName="AndStatement_TextGen.java" startLine="10" startPosition="0" endLine="15" endPosition="0">
+      <varInfo nodeId="465858332973608167" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="465858332973608167" fileName="AndStatement_TextGen.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.textGen.AndStatement_TextGen" />
+  </root>
+  <root nodeRef="r:d123cd1a-5e00-4516-ae0e-506d0da751c1(Shuffle.textGen)/465858332973611758">
+    <nodeInfo nodeId="465858332973611806" fileName="GreaterThanStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973611806" fileName="GreaterThanStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973611806" fileName="GreaterThanStatement_TextGen.java" startLine="11" startPosition="63" endLine="12" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973611806" fileName="GreaterThanStatement_TextGen.java" startLine="12" startPosition="23" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973611806" fileName="GreaterThanStatement_TextGen.java" startLine="12" startPosition="23" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973611806" fileName="GreaterThanStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973611758" fileName="GreaterThanStatement_TextGen.java" startLine="10" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="465858332973611806" fileName="GreaterThanStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" />
+    <scopeInfo nodeId="465858332973611806" fileName="GreaterThanStatement_TextGen.java" startLine="12" startPosition="23" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973611758" fileName="GreaterThanStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973611806" fileName="GreaterThanStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973611758" fileName="GreaterThanStatement_TextGen.java" startLine="10" startPosition="0" endLine="15" endPosition="0">
+      <varInfo nodeId="465858332973611758" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="465858332973611758" fileName="GreaterThanStatement_TextGen.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.textGen.GreaterThanStatement_TextGen" />
+  </root>
+  <root nodeRef="r:d123cd1a-5e00-4516-ae0e-506d0da751c1(Shuffle.textGen)/465858332973615808">
+    <nodeInfo nodeId="465858332973615856" fileName="LessThanStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973615856" fileName="LessThanStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973615856" fileName="LessThanStatement_TextGen.java" startLine="11" startPosition="63" endLine="12" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973615856" fileName="LessThanStatement_TextGen.java" startLine="12" startPosition="23" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973615856" fileName="LessThanStatement_TextGen.java" startLine="12" startPosition="23" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973615856" fileName="LessThanStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973615808" fileName="LessThanStatement_TextGen.java" startLine="10" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="465858332973615856" fileName="LessThanStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" />
+    <scopeInfo nodeId="465858332973615856" fileName="LessThanStatement_TextGen.java" startLine="12" startPosition="23" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973615808" fileName="LessThanStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973615856" fileName="LessThanStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973615808" fileName="LessThanStatement_TextGen.java" startLine="10" startPosition="0" endLine="15" endPosition="0">
+      <varInfo nodeId="465858332973615808" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="465858332973615808" fileName="LessThanStatement_TextGen.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.textGen.LessThanStatement_TextGen" />
+  </root>
+  <root nodeRef="r:d123cd1a-5e00-4516-ae0e-506d0da751c1(Shuffle.textGen)/465858332973618456">
+    <nodeInfo nodeId="465858332973626501" fileName="NotStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973626501" fileName="NotStatement_TextGen.java" startLine="11" startPosition="21" endLine="12" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973626501" fileName="NotStatement_TextGen.java" startLine="11" startPosition="21" endLine="12" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973626501" fileName="NotStatement_TextGen.java" startLine="10" startPosition="42" endLine="12" endPosition="65" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973618456" fileName="NotStatement_TextGen.java" startLine="10" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="465858332973626501" fileName="NotStatement_TextGen.java" startLine="11" startPosition="21" endLine="12" endPosition="65" />
+    <scopeInfo nodeId="465858332973618456" fileName="NotStatement_TextGen.java" startLine="10" startPosition="42" endLine="12" endPosition="65" />
+    <scopeInfo nodeId="465858332973626501" fileName="NotStatement_TextGen.java" startLine="10" startPosition="42" endLine="12" endPosition="65" />
+    <scopeInfo nodeId="465858332973618456" fileName="NotStatement_TextGen.java" startLine="10" startPosition="0" endLine="14" endPosition="0">
+      <varInfo nodeId="465858332973618456" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="465858332973618456" fileName="NotStatement_TextGen.java" startLine="9" startPosition="0" endLine="15" endPosition="0" unitName="Shuffle.textGen.NotStatement_TextGen" />
+  </root>
+  <root nodeRef="r:d123cd1a-5e00-4516-ae0e-506d0da751c1(Shuffle.textGen)/465858332973630631">
+    <nodeInfo nodeId="465858332973630679" fileName="OrStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973630679" fileName="OrStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973630679" fileName="OrStatement_TextGen.java" startLine="11" startPosition="63" endLine="12" endPosition="24" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973630679" fileName="OrStatement_TextGen.java" startLine="12" startPosition="24" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973630679" fileName="OrStatement_TextGen.java" startLine="12" startPosition="24" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="465858332973630679" fileName="OrStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="465858332973630631" fileName="OrStatement_TextGen.java" startLine="10" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+    <scopeInfo nodeId="465858332973630679" fileName="OrStatement_TextGen.java" startLine="10" startPosition="42" endLine="11" endPosition="63" />
+    <scopeInfo nodeId="465858332973630679" fileName="OrStatement_TextGen.java" startLine="12" startPosition="24" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973630631" fileName="OrStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973630679" fileName="OrStatement_TextGen.java" startLine="10" startPosition="42" endLine="13" endPosition="64" />
+    <scopeInfo nodeId="465858332973630631" fileName="OrStatement_TextGen.java" startLine="10" startPosition="0" endLine="15" endPosition="0">
+      <varInfo nodeId="465858332973630631" varName="node" />
+    </scopeInfo>
+    <unitInfo nodeId="465858332973630631" fileName="OrStatement_TextGen.java" startLine="9" startPosition="0" endLine="16" endPosition="0" unitName="Shuffle.textGen.OrStatement_TextGen" />
+  </root>
+</debugInfo>
+
