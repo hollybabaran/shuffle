@@ -214,38 +214,38 @@
     <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653019" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="ace" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="A" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="A " />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653020" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="2" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="2 " />
       <property name="internalValue" nameId="tpce.1083923523171" value="two" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653023" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="3" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="3 " />
       <property name="internalValue" nameId="tpce.1083923523171" value="three" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653027" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="4" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="4 " />
       <property name="internalValue" nameId="tpce.1083923523171" value="four" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653032" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="5" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="5 " />
       <property name="internalValue" nameId="tpce.1083923523171" value="five" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653038" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="6" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="6 " />
       <property name="internalValue" nameId="tpce.1083923523171" value="six" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653045" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="7" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="7 " />
       <property name="internalValue" nameId="tpce.1083923523171" value="seven" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653053" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="8" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="8 " />
       <property name="internalValue" nameId="tpce.1083923523171" value="eight" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653062" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="9" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="9 " />
       <property name="internalValue" nameId="tpce.1083923523171" value="nine" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653072" nodeInfo="ig">
@@ -253,15 +253,15 @@
       <property name="internalValue" nameId="tpce.1083923523171" value="ten" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653083" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="J" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="J " />
       <property name="internalValue" nameId="tpce.1083923523171" value="jack" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653095" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="Q" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="Q " />
       <property name="internalValue" nameId="tpce.1083923523171" value="queen" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653108" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="K" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="K " />
       <property name="internalValue" nameId="tpce.1083923523171" value="king" />
     </node>
   </root>
