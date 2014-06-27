@@ -46,7 +46,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 15:
         return new ConceptDescriptorBuilder("Shuffle.structure.ForStatement").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").alias("for", "").create();
       case 16:
-        return new ConceptDescriptorBuilder("Shuffle.structure.GreaterThanStatement").super_("Shuffle.structure.BooleanExpression").parents("Shuffle.structure.BooleanExpression").children(new String[]{"first", "second"}, new boolean[]{false, false}).create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.GreaterThanStatement").super_("Shuffle.structure.BooleanExpression").parents("Shuffle.structure.BooleanExpression").children(new String[]{"first", "second"}, new boolean[]{false, false}).alias("greater than", "").create();
       case 17:
         return new ConceptDescriptorBuilder("Shuffle.structure.Hand").super_("Shuffle.structure.CardCollection").parents("Shuffle.structure.CardCollection").alias("hand", "").create();
       case 18:
