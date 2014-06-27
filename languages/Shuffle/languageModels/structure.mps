@@ -24,6 +24,12 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="5160494638280649077" resolveInfo="SetupBlock" />
     </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="465858332974171242" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="playerTurnBlock" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="465858332974170854" resolveInfo="PlayerTurnBlock" />
+    </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5722923068946478778" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="winConditionBlock" />
@@ -548,6 +554,12 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="465858332974170854" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
+    <property name="name" nameId="tpck.1169194664001" value="PlayerTurnBlock" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="player turn" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5160494638280568420" resolveInfo="CommandBlock" />
   </root>
 </model>
 
