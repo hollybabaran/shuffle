@@ -549,5 +549,11 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4113687324191539085" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
+    <property name="name" nameId="tpck.1169194664001" value="CurrentPlayer" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="currentPlayer" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828304063230" resolveInfo="Player" />
+  </root>
 </model>
 
