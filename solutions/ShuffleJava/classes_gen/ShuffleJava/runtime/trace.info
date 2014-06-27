@@ -1,13 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
+  <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/1472781009440827330">
+    <nodeInfo nodeId="1472781009441030028" fileName="CardPileUtil.java" startLine="8" startPosition="35" endLine="9" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1472781009441030058" fileName="CardPileUtil.java" startLine="9" startPosition="13" endLine="10" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1472781009441030397" fileName="CardPileUtil.java" startLine="10" startPosition="23" endLine="11" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1472781009441027559" fileName="CardPileUtil.java" startLine="7" startPosition="68" endLine="12" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForStatement" />
+    <nodeInfo nodeId="1472781009440827401" fileName="CardPileUtil.java" startLine="7" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="move#(ILShuffleJava/runtime/CardPile;LShuffleJava/runtime/CardPile;)V" />
+    <scopeInfo nodeId="1472781009441027560" fileName="CardPileUtil.java" startLine="8" startPosition="35" endLine="11" endPosition="19">
+      <varInfo nodeId="1472781009441030029" varName="c" />
+    </scopeInfo>
+    <scopeInfo nodeId="1472781009440827404" fileName="CardPileUtil.java" startLine="7" startPosition="68" endLine="12" endPosition="5" />
+    <scopeInfo nodeId="1472781009441027559" fileName="CardPileUtil.java" startLine="7" startPosition="68" endLine="12" endPosition="5">
+      <varInfo nodeId="1472781009441027561" varName="i" />
+    </scopeInfo>
+    <scopeInfo nodeId="1472781009440827401" fileName="CardPileUtil.java" startLine="7" startPosition="0" endLine="14" endPosition="0">
+      <varInfo nodeId="1472781009440827415" varName="num" />
+      <varInfo nodeId="1472781009440827442" varName="pile1" />
+      <varInfo nodeId="1472781009440827498" varName="pile2" />
+    </scopeInfo>
+    <unitInfo nodeId="1472781009440827330" fileName="CardPileUtil.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ShuffleJava.runtime.CardPileUtil" />
+  </root>
   <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/6162892231914596193">
-    <unitInfo nodeId="6162892231914596193" fileName="CardPile.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="ShuffleJava.runtime.CardPile" />
+    <nodeInfo nodeId="5165761802077073187" fileName="CardPile.java" startLine="8" startPosition="0" endLine="9" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="pile" />
+    <nodeInfo nodeId="5165761802077073231" fileName="CardPile.java" startLine="10" startPosition="21" endLine="11" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5165761802077088846" fileName="CardPile.java" startLine="16" startPosition="30" endLine="17" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1472781009440956041" fileName="CardPile.java" startLine="22" startPosition="22" endLine="23" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1472781009440956150" fileName="CardPile.java" startLine="23" startPosition="11" endLine="24" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1472781009440987645" fileName="CardPile.java" startLine="24" startPosition="34" endLine="25" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1472781009441018762" fileName="CardPile.java" startLine="25" startPosition="33" endLine="26" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1472781009440894672" fileName="CardPile.java" startLine="29" startPosition="0" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="shuffle#()V" />
+    <nodeInfo nodeId="5165761802077073032" fileName="CardPile.java" startLine="10" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="CardPile#()V" />
+    <nodeInfo nodeId="5165761802077087182" fileName="CardPile.java" startLine="16" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="add#(LShuffleJava/runtime/Card;)V" />
+    <nodeInfo nodeId="1472781009440946493" fileName="CardPile.java" startLine="22" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="draw#()LShuffleJava/runtime/Card;" />
+    <scopeInfo nodeId="1472781009440894675" fileName="CardPile.java" startLine="29" startPosition="25" endLine="29" endPosition="25" />
+    <scopeInfo nodeId="5165761802077073035" fileName="CardPile.java" startLine="10" startPosition="21" endLine="11" endPosition="33" />
+    <scopeInfo nodeId="5165761802077087185" fileName="CardPile.java" startLine="16" startPosition="30" endLine="17" endPosition="19" />
+    <scopeInfo nodeId="1472781009440894672" fileName="CardPile.java" startLine="29" startPosition="0" endLine="31" endPosition="0" />
+    <scopeInfo nodeId="5165761802077073032" fileName="CardPile.java" startLine="10" startPosition="0" endLine="13" endPosition="0" />
+    <scopeInfo nodeId="5165761802077087182" fileName="CardPile.java" startLine="16" startPosition="0" endLine="19" endPosition="0">
+      <varInfo nodeId="5165761802077088013" varName="card" />
+    </scopeInfo>
+    <scopeInfo nodeId="1472781009440946496" fileName="CardPile.java" startLine="22" startPosition="22" endLine="26" endPosition="13">
+      <varInfo nodeId="1472781009440956042" varName="c" />
+    </scopeInfo>
+    <scopeInfo nodeId="1472781009440946493" fileName="CardPile.java" startLine="22" startPosition="0" endLine="28" endPosition="0" />
+    <unitInfo nodeId="6162892231914596193" fileName="CardPile.java" startLine="7" startPosition="0" endLine="32" endPosition="0" unitName="ShuffleJava.runtime.CardPile" />
   </root>
   <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/6162892231914596317">
-    <unitInfo nodeId="6162892231914596317" fileName="Player.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="ShuffleJava.runtime.Player" />
+    <nodeInfo nodeId="5165761802077080186" fileName="Player.java" startLine="7" startPosition="0" endLine="9" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Player#()V" />
+    <scopeInfo nodeId="5165761802077080189" fileName="Player.java" startLine="7" startPosition="19" endLine="7" endPosition="19" />
+    <scopeInfo nodeId="5165761802077080186" fileName="Player.java" startLine="7" startPosition="0" endLine="9" endPosition="0" />
+    <unitInfo nodeId="6162892231914596317" fileName="Player.java" startLine="6" startPosition="0" endLine="10" endPosition="0" unitName="ShuffleJava.runtime.Player" />
   </root>
   <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/6162892231914596383">
-    <unitInfo nodeId="6162892231914596383" fileName="Card.java" startLine="6" startPosition="0" endLine="8" endPosition="0" unitName="ShuffleJava.runtime.Card" />
+    <nodeInfo nodeId="5165761802077067970" fileName="Card.java" startLine="7" startPosition="0" endLine="8" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="rank" />
+    <nodeInfo nodeId="5165761802077068041" fileName="Card.java" startLine="8" startPosition="0" endLine="9" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="suit" />
+    <nodeInfo nodeId="5165761802077068075" fileName="Card.java" startLine="10" startPosition="44" endLine="11" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5165761802077070312" fileName="Card.java" startLine="11" startPosition="17" endLine="12" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5165761802077067833" fileName="Card.java" startLine="10" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Card#(Ljava/lang/String;Ljava/lang/String;)V" />
+    <scopeInfo nodeId="5165761802077067836" fileName="Card.java" startLine="10" startPosition="44" endLine="12" endPosition="18" />
+    <scopeInfo nodeId="5165761802077067833" fileName="Card.java" startLine="10" startPosition="0" endLine="14" endPosition="0">
+      <varInfo nodeId="5165761802077067896" varName="rankeI" />
+      <varInfo nodeId="5165761802077067908" varName="suitI" />
+    </scopeInfo>
+    <unitInfo nodeId="6162892231914596383" fileName="Card.java" startLine="6" startPosition="0" endLine="15" endPosition="0" unitName="ShuffleJava.runtime.Card" />
   </root>
 </debugInfo>
 

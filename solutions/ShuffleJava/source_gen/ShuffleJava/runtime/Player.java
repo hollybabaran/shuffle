@@ -4,4 +4,6 @@ package ShuffleJava.runtime;
 
 
 public class Player {
+  public Player() {
+  }
 }

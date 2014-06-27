@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="eoihfhg8vcs0y3gprc6rbxvwnavvmva">
+<dependencies version="2" modelHash="-agrjduu8lr428up9act0xz51u5wch1w">
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <common hash="6zg9tgkxdgzej1nqyng47snqo1sdlol" dependsOnNodes="true">
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   </common>
-  <source id="6162892231914596193" name="CardPile" hash="-b754youn31uhndv8cess9234nk0la3y">
+  <source id="6162892231914596193" name="CardPile" hash="5u2gesb71x9z9n5jpukq30vto4d9e6w">
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="CardPile.java" />
   </source>
-  <source id="6162892231914596317" name="Player" hash="epqyrd6ppk2kkl90kykx8zyqwct2e8p">
+  <source id="6162892231914596317" name="Player" hash="9rh2u63vkvyc94jkfoz4to02ehpdjo1">
     <file name="Player.java" />
   </source>
-  <source id="6162892231914596383" name="Card" hash="ex5eyda3o9bwm4m5b3vinmawhem5hm7">
+  <source id="6162892231914596383" name="Card" hash="2mtpvp0sn9qns1wq4s3nmkg2nl9ivsw">
     <file name="Card.java" />
+  </source>
+  <source id="1472781009440827330" name="CardPileUtil" hash="-6r7zyc60iz8ghgz415om6vds7wmced0">
+    <file name="CardPileUtil.java" />
   </source>
 </dependencies>
 
