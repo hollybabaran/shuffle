@@ -23,6 +23,7 @@ public class Main_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createRefNode_w8a4ih_a0(editorContext, node));
     editorCell.addEditorCell(this.createRefNode_w8a4ih_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_w8a4ih_c0(editorContext, node));
     return editorCell;
   }
 
@@ -47,6 +48,26 @@ public class Main_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createRefNode_w8a4ih_b0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+    provider.setRole("playerTurnBlock");
+    provider.setNoTargetText("<no playerTurnBlock>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setRole("playerTurnBlock");
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+
+  private EditorCell createRefNode_w8a4ih_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("winConditionBlock");
     provider.setNoTargetText("<no winConditionBlock>");
