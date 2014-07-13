@@ -24,34 +24,42 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 3:
         return Collections.<ConceptEditor>singletonList(new ConditionBlock_Editor());
       case 4:
-        return Collections.<ConceptEditor>singletonList(new Deal_Editor());
+        return Collections.<ConceptEditor>singletonList(new CurrentPlayer_Editor());
       case 5:
-        return Collections.<ConceptEditor>singletonList(new Deck_Editor());
+        return Collections.<ConceptEditor>singletonList(new Deal_Editor());
       case 6:
-        return Collections.<ConceptEditor>singletonList(new EqualToStatement_Editor());
+        return Collections.<ConceptEditor>singletonList(new Deck_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new GreaterThanStatement_Editor());
+        return Collections.<ConceptEditor>singletonList(new EmptyLine_Editor());
       case 8:
-        return Collections.<ConceptEditor>singletonList(new LessThanStatement_Editor());
+        return Collections.<ConceptEditor>singletonList(new EqualToStatement_Editor());
       case 9:
-        return Collections.<ConceptEditor>singletonList(new Main_Editor());
+        return Collections.<ConceptEditor>singletonList(new GreaterThanStatement_Editor());
       case 10:
-        return Collections.<ConceptEditor>singletonList(new Move_Editor());
+        return Collections.<ConceptEditor>singletonList(new LessThanStatement_Editor());
       case 11:
-        return Collections.<ConceptEditor>singletonList(new NotStatement_Editor());
+        return Collections.<ConceptEditor>singletonList(new Main_Editor());
       case 12:
-        return Collections.<ConceptEditor>singletonList(new NumPlayers_Editor());
+        return Collections.<ConceptEditor>singletonList(new Move_Editor());
       case 13:
-        return Collections.<ConceptEditor>singletonList(new Number_Editor());
+        return Collections.<ConceptEditor>singletonList(new NotStatement_Editor());
       case 14:
-        return Collections.<ConceptEditor>singletonList(new OrStatement_Editor());
+        return Collections.<ConceptEditor>singletonList(new NumPlayers_Editor());
       case 15:
-        return Collections.<ConceptEditor>singletonList(new Pile_Editor());
+        return Collections.<ConceptEditor>singletonList(new Number_Editor());
       case 16:
-        return Collections.<ConceptEditor>singletonList(new Player_Editor());
+        return Collections.<ConceptEditor>singletonList(new OrStatement_Editor());
       case 17:
-        return Collections.<ConceptEditor>singletonList(new ShuffleDeck_Editor());
+        return Collections.<ConceptEditor>singletonList(new Pile_Editor());
       case 18:
+        return Collections.<ConceptEditor>singletonList(new Player_Editor());
+      case 19:
+        return Collections.<ConceptEditor>singletonList(new PlayerHand_Editor());
+      case 20:
+        return Collections.<ConceptEditor>singletonList(new ShuffleDeck_Editor());
+      case 21:
+        return Collections.<ConceptEditor>singletonList(new Size_Editor());
+      case 22:
         return Collections.<ConceptEditor>singletonList(new VariableReference_Editor());
       default:
     }
@@ -64,5 +72,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
 
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"Shuffle.structure.AndStatement", "Shuffle.structure.Card", "Shuffle.structure.CommandBlock", "Shuffle.structure.ConditionBlock", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.EqualToStatement", "Shuffle.structure.GreaterThanStatement", "Shuffle.structure.LessThanStatement", "Shuffle.structure.Main", "Shuffle.structure.Move", "Shuffle.structure.NotStatement", "Shuffle.structure.NumPlayers", "Shuffle.structure.Number", "Shuffle.structure.OrStatement", "Shuffle.structure.Pile", "Shuffle.structure.Player", "Shuffle.structure.ShuffleDeck", "Shuffle.structure.VariableReference"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"Shuffle.structure.AndStatement", "Shuffle.structure.Card", "Shuffle.structure.CommandBlock", "Shuffle.structure.ConditionBlock", "Shuffle.structure.CurrentPlayer", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.EmptyLine", "Shuffle.structure.EqualToStatement", "Shuffle.structure.GreaterThanStatement", "Shuffle.structure.LessThanStatement", "Shuffle.structure.Main", "Shuffle.structure.Move", "Shuffle.structure.NotStatement", "Shuffle.structure.NumPlayers", "Shuffle.structure.Number", "Shuffle.structure.OrStatement", "Shuffle.structure.Pile", "Shuffle.structure.Player", "Shuffle.structure.PlayerHand", "Shuffle.structure.ShuffleDeck", "Shuffle.structure.Size", "Shuffle.structure.VariableReference"};
 }

@@ -144,5 +144,17 @@
     </dependencies>
     <rename id="ffsp.6304222537138290359" type="REFERENCE" from="declaration" to="variable" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="21" />
+    </dependencies>
+    <rename id="ffsp.1298433529544916353" type="CONCEPT" from="HandSize" to="Size" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="22" />
+    </dependencies>
+    <rename id="ffsp.1298433529544916381" type="CHILD" from="player" to="cardpile" />
+  </StructureModification>
 </history>
 
