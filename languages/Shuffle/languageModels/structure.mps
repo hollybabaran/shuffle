@@ -140,11 +140,6 @@
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3854676059697422937" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
-    <property name="name" nameId="tpck.1169194664001" value="Hand" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3854676059697220626" resolveInfo="CardCollection" />
-  </root>
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="3854676059697652960" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Card" />
     <property name="name" nameId="tpck.1169194664001" value="Suit" />
