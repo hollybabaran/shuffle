@@ -396,5 +396,57 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="ffsp.7881733640606387386" resolveInfo="OrStatement" />
     </node>
   </root>
+  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="7542747518847945605" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="typeof_PlayerHand" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
+    <property name="overrides" nameId="tpd4.1195213689297" value="true" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="7542747518847971190" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="7542747518848026912" nodeInfo="nn">
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7542747518848026922" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="7542747518848026918" nodeInfo="nn">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7542747518848026951" nodeInfo="nn">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="7542747518847971192" resolveInfo="playerHand" />
+            </node>
+          </node>
+        </node>
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7542747518848039036" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.NodeBuilder" typeId="tp3r.5455284157993863837" id="7542747518848039032" nodeInfo="nn">
+            <node role="quotedNode" roleId="tp3r.5455284157993863838" type="tp3r.NodeBuilderNode" typeId="tp3r.5455284157993863840" id="7542747518848039085" nodeInfo="nn">
+              <link role="concept" roleId="tp3r.5455284157993910961" targetNodeId="ffsp.3854676059697422932" resolveInfo="Pile" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7542747518847971192" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="playerHand" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="ffsp.1298433529544915672" resolveInfo="PlayerHand" />
+    </node>
+  </root>
+  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="7542747518848039464" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="typeof_Size" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
+    <property name="overrides" nameId="tpd4.1195213689297" value="true" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="7542747518848039465" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="7542747518848039474" nodeInfo="nn">
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7542747518848039484" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="7542747518848039480" nodeInfo="nn">
+            <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7542747518848039513" nodeInfo="nn">
+              <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="7542747518848039467" resolveInfo="size" />
+            </node>
+          </node>
+        </node>
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7542747518848039559" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="7542747518848039555" nodeInfo="nn">
+            <node role="quotedNode" roleId="tp3r.1196350785114" type="tpee.IntegerType" typeId="tpee.1070534370425" id="7542747518848039600" nodeInfo="in" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="7542747518848039467" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="size" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="ffsp.1298433529544916353" resolveInfo="Size" />
+    </node>
+  </root>
 </model>
 
