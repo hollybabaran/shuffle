@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="38vhbfi5qk9a9troe84fsmpsa708ikb">
+<dependencies version="2" modelHash="-ayco97uw6ng3cotz3kq9aq8k74yt0k0">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
@@ -38,14 +38,9 @@
     <dep root="5565452210787038188" />
     <dep root="5565452210787642242" />
     <dep root="6162892231914410061" />
-    <dep root="6162892231914410210" />
-    <dep root="6162892231914410451" />
     <dep root="6304222537138290358" />
     <dep root="7674520359934846973" />
-    <dep root="7674520359935552566" />
     <dep root="7674520359936137193" />
-    <dep root="7674520359936173280" />
-    <dep root="7674520359936345854" />
     <dep root="7674520359936346144" />
     <dep root="7674520359936462567" />
     <dep root="7881733640606387386" />
@@ -64,16 +59,13 @@
     <file name="StructureAspectDescriptor.java" />
   </common>
   <source id="2834967828303451498" name="Deck" hash="ecp6wzua472dtbpkmfoiy7jw4h48cpx" />
-  <source id="2834967828303785259" name="Main" hash="9ooj4xmwuvm6gdp5pf8np9yorcsdj2u" />
+  <source id="2834967828303785259" name="Main" hash="dtchm3sxurs3te22k6fwabrsen88sre" />
   <source id="2834967828303818439" name="Card" hash="-3l66d3q3plxjnxlv9md8f218vrzulip" />
   <source id="2834967828303856791" name="VariableDeclaration" hash="7wpl5t82izxdsza2t9pk5wu7jee7pot" />
   <source id="2834967828304063230" name="Player" hash="-3i596264etecobscpe1rf4vmwo4gtul" />
   <source id="7674520359934846973" name="Number" hash="-92l5ckx8xq6ac1lq6djesarnuprsj1z" />
-  <source id="7674520359935552566" name="NumberReference" hash="b02tohtnusuulzbxwj4y5hjgzcblxd5" />
   <source id="7674520359936137193" name="Command" hash="5kthn5fvxjlxsqtj9con16adfx7x1n3" />
-  <source id="7674520359936173280" name="NumberAssignment" hash="-ew8wlb4uq3ir3tzpitkyb3z8quh8tay" />
-  <source id="7674520359936345854" name="DeckReference" hash="-53ro64tz21wzoldfni7ima6983ftnra" />
-  <source id="7674520359936346144" name="ShuffleDeck" hash="-45qikkyv7x7867gvria5ls0py90jsya" />
+  <source id="7674520359936346144" name="ShuffleDeck" hash="-1q1mzpvqc93adl0eempzxjhxfoaly8a" />
   <source id="7674520359936462567" name="Deal" hash="-735zvbt5ztc0vnc7hyyk9f0rlmxec3n" />
   <source id="3854676059697220626" name="CardCollection" hash="-7jadcmdbf61vd7td0snypkkayflcgqq" />
   <source id="3854676059697422932" name="Pile" hash="afiwkrq1o0xx6dmzrpzeqxlavzrazeg" />
@@ -110,14 +102,12 @@
   <source id="5565452210787037995" name="ForStatement" hash="yd9y4ptahu6oh51v64uey0c8ra29dt" />
   <source id="150989085052660317" name="Block" hash="-eatlabqhgd7opy1aqe2xh24hmfc1iw8" />
   <source id="150989085052660316" name="ConditionBlock" hash="b09zs7m2631lvrvt7um3ifk19h7kt8g" />
-  <source id="7881733640607028947" name="LessThanStatement" hash="-252w172d1jul9t01d5ttqm3fo6t3zqa" />
+  <source id="7881733640607028947" name="LessThanStatement" hash="c1xidac2coyesa2qm54d1bzo0nirgcl" />
   <source id="7881733640606387481" name="EqualToStatement" hash="b679a1j0m7vnjurbut2tzytbu3po7l8" />
   <source id="5565452210787038123" name="WhileStatement" hash="1j091grkf7qrlec6cva40jck30yibic" />
   <source id="5565452210787038188" name="NotStatement" hash="832qu8fjoz1x26als4ulay0t8bcu21" />
   <source id="1721387915554939518" name="NumPlayers" hash="3u59agxr492j5bsrtz285dohsy11ojw" />
-  <source id="6162892231914410210" name="CardCollectionReference" hash="cxv2y34cunxby9spxj873wymb7qlz6c" />
-  <source id="6162892231914410451" name="PileReference" hash="5q6sy1j0dc9l1omksgoqk19c9lre7w9" />
-  <source id="6162892231914410061" name="Move" hash="71hfw5uas800mq4r5gzbury2rxh0p1u" />
+  <source id="6162892231914410061" name="Move" hash="-1p28qu91wxfq043lf1v0aoyrlcz3los" />
   <source id="6304222537138290358" name="VariableReference" hash="58k3nqerz302li1yxb7xv74mv1whikr" />
   <source id="4113687324191539085" name="CurrentPlayer" hash="rs9za2puk0ai6gogcnixb5l70qybii" />
   <source id="465858332974170854" name="PlayerTurnBlock" hash="9hra0fnn6e5iu84vf8ehch3a53kyvdq" />
