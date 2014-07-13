@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-ayco97uw6ng3cotz3kq9aq8k74yt0k0">
+<dependencies version="2" modelHash="ep7f29huopi01d4jxom0tgbcrgxan0n">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
@@ -11,7 +11,10 @@
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" hash="efpygk1iagsrvh0j1nroncwiyw07vp1" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-8chtguhcvj45cjy0bx3xiqekte2lox7" />
-  <common hash="2phgd5lsexhfleuq8dq420sea1fwcmi" dependsOnNodes="true">
+  <common hash="-3b68l644mvhpzm98cez3jid5eboink1" dependsOnNodes="true">
+    <dep root="1298433529544597390" />
+    <dep root="1298433529544915672" />
+    <dep root="1298433529544916353" />
     <dep root="150989085052660316" />
     <dep root="150989085052660317" />
     <dep root="1721387915554939518" />
@@ -39,6 +42,7 @@
     <dep root="5565452210787642242" />
     <dep root="6162892231914410061" />
     <dep root="6304222537138290358" />
+    <dep root="7542747518848405576" />
     <dep root="7674520359934846973" />
     <dep root="7674520359936137193" />
     <dep root="7674520359936346144" />
@@ -62,14 +66,14 @@
   <source id="2834967828303785259" name="Main" hash="dtchm3sxurs3te22k6fwabrsen88sre" />
   <source id="2834967828303818439" name="Card" hash="-3l66d3q3plxjnxlv9md8f218vrzulip" />
   <source id="2834967828303856791" name="VariableDeclaration" hash="7wpl5t82izxdsza2t9pk5wu7jee7pot" />
-  <source id="2834967828304063230" name="Player" hash="-3i596264etecobscpe1rf4vmwo4gtul" />
+  <source id="2834967828304063230" name="Player" hash="2tbamf0f3s0i70x8orn5tubitzzwg3f" />
   <source id="7674520359934846973" name="Number" hash="-92l5ckx8xq6ac1lq6djesarnuprsj1z" />
   <source id="7674520359936137193" name="Command" hash="5kthn5fvxjlxsqtj9con16adfx7x1n3" />
   <source id="7674520359936346144" name="ShuffleDeck" hash="-1q1mzpvqc93adl0eempzxjhxfoaly8a" />
   <source id="7674520359936462567" name="Deal" hash="-735zvbt5ztc0vnc7hyyk9f0rlmxec3n" />
   <source id="3854676059697220626" name="CardCollection" hash="-7jadcmdbf61vd7td0snypkkayflcgqq" />
   <source id="3854676059697422932" name="Pile" hash="afiwkrq1o0xx6dmzrpzeqxlavzrazeg" />
-  <source id="3854676059697422937" name="Hand" hash="c8pwzxgfwjjaakuuxa8rgpumge2qide" />
+  <source id="3854676059697422937" name="Hand" hash="-7g2izidit83cynnsykymbyit1tg7kpc" />
   <source id="3854676059697652960" name="Suit" hash="-9f5a9xrg14ouik4c71vzahf7g150mrt">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -108,8 +112,12 @@
   <source id="5565452210787038188" name="NotStatement" hash="832qu8fjoz1x26als4ulay0t8bcu21" />
   <source id="1721387915554939518" name="NumPlayers" hash="3u59agxr492j5bsrtz285dohsy11ojw" />
   <source id="6162892231914410061" name="Move" hash="-1p28qu91wxfq043lf1v0aoyrlcz3los" />
-  <source id="6304222537138290358" name="VariableReference" hash="58k3nqerz302li1yxb7xv74mv1whikr" />
+  <source id="6304222537138290358" name="VariableReference" hash="5t01i7si584j4y00soqhryo5v0e07l2" />
   <source id="4113687324191539085" name="CurrentPlayer" hash="rs9za2puk0ai6gogcnixb5l70qybii" />
   <source id="465858332974170854" name="PlayerTurnBlock" hash="9hra0fnn6e5iu84vf8ehch3a53kyvdq" />
+  <source id="1298433529544597390" name="EmptyLine" hash="8wt2fijoj7t1w75f3r27u1pcb6mmu5g" />
+  <source id="1298433529544915672" name="PlayerHand" hash="-5tmzs5hcujvkpi4z3rnqzhhblp27zxl" />
+  <source id="1298433529544916353" name="Size" hash="8m4ee3fm3ymnrisa3fdqxuhdyzjcl1i" />
+  <source id="7542747518848405576" name="Variable" hash="3glrzo07dseufe8doxq6slxy25ttd0x" />
 </dependencies>
 

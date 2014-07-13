@@ -68,9 +68,9 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 26:
         return new ConceptDescriptorBuilder("Shuffle.structure.Pile").super_("Shuffle.structure.CardCollection").parents("Shuffle.structure.CardCollection", "jetbrains.mps.lang.core.structure.INamedConcept").alias("Pile", "").create();
       case 27:
-        return new ConceptDescriptorBuilder("Shuffle.structure.Player").super_("Shuffle.structure.VariableReference").parents("Shuffle.structure.VariableReference", "jetbrains.mps.lang.core.structure.INamedConcept").create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.Player").super_("Shuffle.structure.Variable").parents("Shuffle.structure.Variable", "jetbrains.mps.lang.core.structure.INamedConcept").create();
       case 28:
-        return new ConceptDescriptorBuilder("Shuffle.structure.PlayerHand").super_("Shuffle.structure.VariableReference").parents("Shuffle.structure.VariableReference").children(new String[]{"player"}, new boolean[]{false}).alias("hand", "").create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.PlayerHand").super_("Shuffle.structure.Variable").parents("Shuffle.structure.Variable").children(new String[]{"player"}, new boolean[]{false}).alias("hand", "").create();
       case 29:
         return new ConceptDescriptorBuilder("Shuffle.structure.PlayerTurnBlock").super_("Shuffle.structure.CommandBlock").parents("Shuffle.structure.CommandBlock").alias("player turn", "").create();
       case 30:
@@ -78,19 +78,21 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 31:
         return new ConceptDescriptorBuilder("Shuffle.structure.ShuffleDeck").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").children(new String[]{"deck"}, new boolean[]{false}).alias("shuffle", "").create();
       case 32:
-        return new ConceptDescriptorBuilder("Shuffle.structure.Size").super_("Shuffle.structure.VariableReference").parents("Shuffle.structure.VariableReference").children(new String[]{"cardpile"}, new boolean[]{false}).alias("size", "").create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.Size").super_("Shuffle.structure.Variable").parents("Shuffle.structure.Variable").children(new String[]{"cardpile"}, new boolean[]{false}).alias("size", "").create();
       case 33:
-        return new ConceptDescriptorBuilder("Shuffle.structure.VariableDeclaration").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command", "jetbrains.mps.lang.core.structure.INamedConcept").abstract_().create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.Variable").super_("jetbrains.mps.baseLanguage.structure.Expression").parents("jetbrains.mps.baseLanguage.structure.Expression").abstract_().create();
       case 34:
-        return new ConceptDescriptorBuilder("Shuffle.structure.VariableReference").super_("jetbrains.mps.baseLanguage.structure.Expression").parents("jetbrains.mps.baseLanguage.structure.Expression").references("variable").create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.VariableDeclaration").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command", "jetbrains.mps.lang.core.structure.INamedConcept").abstract_().create();
       case 35:
-        return new ConceptDescriptorBuilder("Shuffle.structure.WhileStatement").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").children(new String[]{"condition", "body"}, new boolean[]{false, true}).alias("while", "").create();
+        return new ConceptDescriptorBuilder("Shuffle.structure.VariableReference").super_("Shuffle.structure.Variable").parents("Shuffle.structure.Variable").references("variable").create();
       case 36:
+        return new ConceptDescriptorBuilder("Shuffle.structure.WhileStatement").super_("Shuffle.structure.Command").parents("Shuffle.structure.Command").children(new String[]{"condition", "body"}, new boolean[]{false, true}).alias("while", "").create();
+      case 37:
         return new ConceptDescriptorBuilder("Shuffle.structure.WinConditionBlock").super_("Shuffle.structure.ConditionBlock").parents("Shuffle.structure.ConditionBlock").alias("win condition", "").create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
 
-  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"Shuffle.structure.AndStatement", "Shuffle.structure.Block", "Shuffle.structure.BooleanExpression", "Shuffle.structure.Card", "Shuffle.structure.CardCollection", "Shuffle.structure.Command", "Shuffle.structure.CommandBlock", "Shuffle.structure.ConditionBlock", "Shuffle.structure.CurrentPlayer", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.ElseIfStatement", "Shuffle.structure.ElseStatement", "Shuffle.structure.EmptyLine", "Shuffle.structure.EqualToStatement", "Shuffle.structure.ForStatement", "Shuffle.structure.GreaterThanStatement", "Shuffle.structure.Hand", "Shuffle.structure.IfStatement", "Shuffle.structure.LessThanStatement", "Shuffle.structure.Main", "Shuffle.structure.Move", "Shuffle.structure.NotStatement", "Shuffle.structure.NumPlayers", "Shuffle.structure.Number", "Shuffle.structure.OrStatement", "Shuffle.structure.Pile", "Shuffle.structure.Player", "Shuffle.structure.PlayerHand", "Shuffle.structure.PlayerTurnBlock", "Shuffle.structure.SetupBlock", "Shuffle.structure.ShuffleDeck", "Shuffle.structure.Size", "Shuffle.structure.VariableDeclaration", "Shuffle.structure.VariableReference", "Shuffle.structure.WhileStatement", "Shuffle.structure.WinConditionBlock"};
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"Shuffle.structure.AndStatement", "Shuffle.structure.Block", "Shuffle.structure.BooleanExpression", "Shuffle.structure.Card", "Shuffle.structure.CardCollection", "Shuffle.structure.Command", "Shuffle.structure.CommandBlock", "Shuffle.structure.ConditionBlock", "Shuffle.structure.CurrentPlayer", "Shuffle.structure.Deal", "Shuffle.structure.Deck", "Shuffle.structure.ElseIfStatement", "Shuffle.structure.ElseStatement", "Shuffle.structure.EmptyLine", "Shuffle.structure.EqualToStatement", "Shuffle.structure.ForStatement", "Shuffle.structure.GreaterThanStatement", "Shuffle.structure.Hand", "Shuffle.structure.IfStatement", "Shuffle.structure.LessThanStatement", "Shuffle.structure.Main", "Shuffle.structure.Move", "Shuffle.structure.NotStatement", "Shuffle.structure.NumPlayers", "Shuffle.structure.Number", "Shuffle.structure.OrStatement", "Shuffle.structure.Pile", "Shuffle.structure.Player", "Shuffle.structure.PlayerHand", "Shuffle.structure.PlayerTurnBlock", "Shuffle.structure.SetupBlock", "Shuffle.structure.ShuffleDeck", "Shuffle.structure.Size", "Shuffle.structure.Variable", "Shuffle.structure.VariableDeclaration", "Shuffle.structure.VariableReference", "Shuffle.structure.WhileStatement", "Shuffle.structure.WinConditionBlock"};
 }

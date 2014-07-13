@@ -30,6 +30,10 @@ public class QueriesGenerated {
     return SLinkOperations.getTarget(_context.getNode(), "setupBlock", true);
   }
 
+  public static SNode sourceNodeQuery_8142839966539356181(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "playerTurnBlock", true);
+  }
+
   public static SNode sourceNodeQuery_465858332973658066(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "winConditionBlock", true), "condition", true);
   }
@@ -47,6 +51,10 @@ public class QueriesGenerated {
   }
 
   public static Iterable<SNode> sourceNodesQuery_6796815332554477675(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "body", true);
+  }
+
+  public static Iterable<SNode> sourceNodesQuery_8142839966539474929(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "body", true);
   }
 }
