@@ -509,29 +509,10 @@
     <property name="name" nameId="tpck.1169194664001" value="EmptyLine" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1298433529544915672" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
-    <property name="name" nameId="tpck.1169194664001" value="PlayerHand" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="hand" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6304222537138290358" resolveInfo="VariableReference" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1298433529544915844" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="player" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2834967828304063230" resolveInfo="Player" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1298433529544916353" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
-    <property name="name" nameId="tpck.1169194664001" value="Size" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="size" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6304222537138290358" resolveInfo="VariableReference" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1298433529544916381" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <property name="role" nameId="tpce.1071599776563" value="cardpile" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6304222537138290358" resolveInfo="VariableReference" />
-    </node>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2241509385806353940" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
+    <property name="name" nameId="tpck.1169194664001" value="Hand" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3854676059697220626" resolveInfo="CardCollection" />
   </root>
 </model>
 
