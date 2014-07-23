@@ -406,5 +406,12 @@
       <property name="text" nameId="tpc2.1073389577007" value="Size" />
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2190890532995476144" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ffsp.2241509385806353940" resolveInfo="Hand" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2190890532995476296" nodeInfo="nn">
+      <property name="text" nameId="tpc2.1073389577007" value="Hand" />
+    </node>
+  </root>
 </model>
 
