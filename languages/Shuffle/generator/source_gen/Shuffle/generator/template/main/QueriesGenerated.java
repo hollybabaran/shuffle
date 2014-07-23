@@ -14,16 +14,16 @@ import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 public class QueriesGenerated {
   public final boolean NEEDS_OPCONTEXT = false;
 
-  public static Object propertyMacro_GetPropertyValue_2834967828304467600(final PropertyMacroContext _context) {
-    return "deck";
-  }
-
   public static Object propertyMacro_GetPropertyValue_7674520359934919972(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), "name");
   }
 
   public static Object propertyMacro_GetPropertyValue_1472781009440830017(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), "cardNumbers");
+  }
+
+  public static Object propertyMacro_GetPropertyValue_912009110482792793(final PropertyMacroContext _context) {
+    return "deck";
   }
 
   public static SNode sourceNodeQuery_6796815332554471128(final SourceSubstituteMacroNodeContext _context) {
