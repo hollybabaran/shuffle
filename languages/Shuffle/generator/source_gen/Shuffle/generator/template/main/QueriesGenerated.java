@@ -26,10 +26,6 @@ public class QueriesGenerated {
     return "deck";
   }
 
-  public static SNode sourceNodeQuery_6796815332554471128(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), "setupBlock", true);
-  }
-
   public static SNode sourceNodeQuery_8142839966539356181(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "playerTurnBlock", true);
   }
@@ -48,6 +44,10 @@ public class QueriesGenerated {
 
   public static SNode sourceNodeQuery_1472781009440858998(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "pile2", true);
+  }
+
+  public static Iterable<SNode> sourceNodesQuery_1747264128838123057(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "setupBlock", true), "body", true);
   }
 
   public static Iterable<SNode> sourceNodesQuery_6796815332554477675(final SourceSubstituteMacroNodesContext _context) {

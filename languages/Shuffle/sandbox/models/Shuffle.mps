@@ -170,15 +170,6 @@
         </node>
         <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="912009110482866669" nodeInfo="ng">
           <property name="rank" nameId="ffsp.2834967828304050224" value="RANK" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="SUIT" />
-        </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="912009110482866670" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="RANK" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="SUIT" />
-        </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="912009110482866671" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="RANK" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="SUIT" />
         </node>
         <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="912009110482866672" nodeInfo="ng">
           <property name="rank" nameId="ffsp.2834967828304050224" value="RANK" />
@@ -217,14 +208,19 @@
           <property name="suit" nameId="ffsp.2834967828304063038" value="SUIT" />
         </node>
       </node>
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.NumPlayers" typeId="ffsp.1721387915554939518" id="1747264128837518259" nodeInfo="ng">
+        <node role="expression" roleId="ffsp.7674520359935510780" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1747264128837518283" nodeInfo="nn">
+          <property name="value" nameId="tpee.1068580320021" value="4" />
+        </node>
+      </node>
     </node>
     <node role="playerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.PlayerTurnBlock" typeId="ffsp.465858332974170854" id="4161858660889596981" nodeInfo="ng" />
     <node role="winConditionBlock" roleId="ffsp.5722923068946478778" type="ffsp.WinConditionBlock" typeId="ffsp.5160494638280864183" id="4161858660889599256" nodeInfo="ng">
       <node role="condition" roleId="ffsp.150989085052711727" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4161858660889623684" nodeInfo="ng">
-        <node role="first" roleId="ffsp.7881733640606387482" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4161858660889623693" nodeInfo="nn">
-          <property name="value" nameId="tpee.1068580320021" value="4" />
+        <node role="first" roleId="ffsp.7881733640606387482" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2190890532995545272" nodeInfo="nn">
+          <property name="value" nameId="tpee.1068580320021" value="1" />
         </node>
-        <node role="second" roleId="ffsp.7881733640606387485" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7542747518848465708" nodeInfo="nn">
+        <node role="second" roleId="ffsp.7881733640606387485" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1747264128838259667" nodeInfo="nn">
           <property name="value" nameId="tpee.1068580320021" value="1" />
         </node>
       </node>
