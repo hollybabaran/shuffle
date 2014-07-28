@@ -181,7 +181,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6796815332555043153" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="6796815332555043292" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="1747264128837986272" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="gameState.setNumberofPlayers(" />
+            <property name="value" nameId="2omo.1237305576108" value="gameState.setNumberPlayers(" />
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="1747264128837989373" nodeInfo="ng">
             <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1747264128837989669" nodeInfo="nn">

@@ -208,6 +208,7 @@
           <property name="suit" nameId="ffsp.2834967828304063038" value="SUIT" />
         </node>
       </node>
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="1747264128838387590" nodeInfo="ng" />
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.NumPlayers" typeId="ffsp.1721387915554939518" id="1747264128837518259" nodeInfo="ng">
         <node role="expression" roleId="ffsp.7674520359935510780" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1747264128837518283" nodeInfo="nn">
           <property name="value" nameId="tpee.1068580320021" value="4" />
@@ -220,7 +221,7 @@
         <node role="first" roleId="ffsp.7881733640606387482" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2190890532995545272" nodeInfo="nn">
           <property name="value" nameId="tpee.1068580320021" value="1" />
         </node>
-        <node role="second" roleId="ffsp.7881733640606387485" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1747264128838259667" nodeInfo="nn">
+        <node role="second" roleId="ffsp.7881733640606387485" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1747264128838281801" nodeInfo="nn">
           <property name="value" nameId="tpee.1068580320021" value="1" />
         </node>
       </node>
