@@ -162,5 +162,17 @@
     </dependencies>
     <rename id="ffsp.2355677863976398931" type="REFERENCE" from="Deck" to="deck" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="23" />
+    </dependencies>
+    <rename id="ffsp.6952526287830939805" type="CONCEPT" from="AbastractVariable" to="AbstractVariable" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="24" />
+    </dependencies>
+    <rename id="ffsp.6952526287830939805" type="CONCEPT" from="AbstractVariable" to="AbstractVariableReference" />
+  </StructureModification>
 </history>
 
