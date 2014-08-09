@@ -139,11 +139,9 @@
     <property name="name" nameId="tpck.1169194664001" value="Pile" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Pile" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3854676059697220626" resolveInfo="CardCollection" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6965435806309702625" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="faceup" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6965435806309701932" resolveInfo="faceupIndicator" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2824091188896369485" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="faceup" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="2824091188895594038" resolveInfo="faceupdown" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1721387915554876123" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
@@ -561,29 +559,23 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="default CardSet" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303451498" resolveInfo="Deck" />
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6965435806309702037" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
-    <property name="name" nameId="tpck.1169194664001" value="faceup" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="faceup" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6965435806309701932" resolveInfo="faceupIndicator" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6965435806309702518" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
-    <property name="name" nameId="tpck.1169194664001" value="facedown" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="facedown" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6965435806309701932" resolveInfo="faceupIndicator" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6965435806309701932" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="faceupIndicator" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6965435806309709998" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CardPileType" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Types" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+  </root>
+  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="2824091188895594038" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
+    <property name="name" nameId="tpck.1169194664001" value="faceupdown" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2824091188895594497" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="faceup" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="true" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2824091188895612938" nodeInfo="ig">
+      <property name="externalValue" nameId="tpce.1083923523172" value="facedown" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="false" />
+    </node>
   </root>
 </model>
 
