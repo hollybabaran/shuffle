@@ -206,7 +206,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="1707132686102326231" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="4394993291215445729" nodeInfo="ng" />
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="1707132686102326251" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="__deck.add( new Card ( &quot;" />
+            <property name="value" nameId="2omo.1237305576108" value="    __deck.add( new Card ( &quot;" />
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="1707132686102373983" nodeInfo="ng">
             <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1707132686102374298" nodeInfo="nn">
@@ -228,7 +228,7 @@
             </node>
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="1707132686102377659" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="&quot;));\n" />
+            <property name="value" nameId="2omo.1237305576108" value="&quot; ));" />
           </node>
         </node>
       </node>
