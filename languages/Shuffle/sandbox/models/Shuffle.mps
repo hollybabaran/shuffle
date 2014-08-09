@@ -23,14 +23,16 @@
       </node>
     </node>
     <node role="playerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.PlayerTurnBlock" typeId="ffsp.465858332974170854" id="2355677863976340079" nodeInfo="ng">
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="6952526287832824772" nodeInfo="ng">
-        <property name="cardNumbers" nameId="ffsp.6162892231914411311" value="1" />
-        <node role="pile1" roleId="ffsp.6162892231914411206" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6952526287832824825" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="6952526287832824806" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="6952526287832824907" nodeInfo="ng" />
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4654595638703623566" nodeInfo="ng">
+        <node role="pile1" roleId="ffsp.6162892231914411206" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4654595638703623605" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4654595638703623586" nodeInfo="ng" />
+          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4654595638703623663" nodeInfo="ng" />
         </node>
-        <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4319553422816034373" nodeInfo="ng">
-          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4319553422816034309" resolveInfo="middle" />
+        <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.NumCards" typeId="ffsp.4654595638702054266" id="4654595638703623569" nodeInfo="ng">
+          <property name="numCards" nameId="ffsp.4654595638702054267" value="1" />
+        </node>
+        <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4654595638703624489" nodeInfo="ng">
+          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4654595638703624267" resolveInfo="middle" />
         </node>
       </node>
     </node>
@@ -72,57 +74,66 @@
           <property name="value" nameId="tpee.1068580320021" value="4" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="6952526287832824225" nodeInfo="ng">
-        <property name="cardNumbers" nameId="ffsp.6162892231914411311" value="2" />
-        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="6952526287832824270" nodeInfo="ng" />
-        <node role="pile2" roleId="ffsp.6162892231914411208" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6952526287832824322" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="6952526287832824285" nodeInfo="ng">
-            <node role="number" roleId="ffsp.6952526287832333226" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6952526287832824669" nodeInfo="nn">
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="4654595638703624509" nodeInfo="ng" />
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4654595638703624608" nodeInfo="ng">
+        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="4654595638703624680" nodeInfo="ng" />
+        <node role="pile2" roleId="ffsp.6162892231914411208" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4654595638703624732" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="4654595638703624695" nodeInfo="ng">
+            <node role="number" roleId="ffsp.6952526287832333226" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4654595638703624712" nodeInfo="nn">
               <property name="value" nameId="tpee.1068580320021" value="0" />
             </node>
           </node>
-          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="6952526287832824414" nodeInfo="ng" />
+          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4654595638703624800" nodeInfo="ng" />
+        </node>
+        <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.NumCards" typeId="ffsp.4654595638702054266" id="4654595638703624614" nodeInfo="ng">
+          <property name="numCards" nameId="ffsp.4654595638702054267" value="2" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="6952526287832824431" nodeInfo="ng">
-        <property name="cardNumbers" nameId="ffsp.6162892231914411311" value="2" />
-        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="6952526287832824432" nodeInfo="ng" />
-        <node role="pile2" roleId="ffsp.6162892231914411208" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6952526287832824433" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="6952526287832824434" nodeInfo="ng">
-            <node role="number" roleId="ffsp.6952526287832333226" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6952526287832824435" nodeInfo="nn">
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4654595638703624884" nodeInfo="ng">
+        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="4654595638703624973" nodeInfo="ng" />
+        <node role="pile2" roleId="ffsp.6162892231914411208" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4654595638703625025" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="4654595638703624988" nodeInfo="ng">
+            <node role="number" roleId="ffsp.6952526287832333226" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4654595638703625005" nodeInfo="nn">
               <property name="value" nameId="tpee.1068580320021" value="1" />
             </node>
           </node>
-          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="6952526287832824436" nodeInfo="ng" />
+          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4654595638703625093" nodeInfo="ng" />
+        </node>
+        <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.NumCards" typeId="ffsp.4654595638702054266" id="4654595638703624890" nodeInfo="ng">
+          <property name="numCards" nameId="ffsp.4654595638702054267" value="2" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="6952526287832824501" nodeInfo="ng">
-        <property name="cardNumbers" nameId="ffsp.6162892231914411311" value="2" />
-        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="6952526287832824502" nodeInfo="ng" />
-        <node role="pile2" roleId="ffsp.6162892231914411208" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6952526287832824503" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="6952526287832824504" nodeInfo="ng">
-            <node role="number" roleId="ffsp.6952526287832333226" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6952526287832824693" nodeInfo="nn">
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4654595638703625194" nodeInfo="ng">
+        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="4654595638703625300" nodeInfo="ng" />
+        <node role="pile2" roleId="ffsp.6162892231914411208" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4654595638703625352" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="4654595638703625315" nodeInfo="ng">
+            <node role="number" roleId="ffsp.6952526287832333226" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4654595638703625332" nodeInfo="nn">
               <property name="value" nameId="tpee.1068580320021" value="2" />
             </node>
           </node>
-          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="6952526287832824506" nodeInfo="ng" />
+          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4654595638703625420" nodeInfo="ng" />
+        </node>
+        <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.NumCards" typeId="ffsp.4654595638702054266" id="4654595638703625200" nodeInfo="ng">
+          <property name="numCards" nameId="ffsp.4654595638702054267" value="2" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="6952526287832824577" nodeInfo="ng">
-        <property name="cardNumbers" nameId="ffsp.6162892231914411311" value="2" />
-        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="6952526287832824578" nodeInfo="ng" />
-        <node role="pile2" roleId="ffsp.6162892231914411208" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6952526287832824579" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="6952526287832824580" nodeInfo="ng">
-            <node role="number" roleId="ffsp.6952526287832333226" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6952526287832824713" nodeInfo="nn">
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4654595638703625861" nodeInfo="ng">
+        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="4654595638703625984" nodeInfo="ng" />
+        <node role="pile2" roleId="ffsp.6162892231914411208" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4654595638703626174" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="4654595638703626101" nodeInfo="ng">
+            <node role="number" roleId="ffsp.6952526287832333226" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4654595638703626154" nodeInfo="nn">
               <property name="value" nameId="tpee.1068580320021" value="3" />
             </node>
           </node>
-          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="6952526287832824582" nodeInfo="ng" />
+          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4654595638703626242" nodeInfo="ng" />
+        </node>
+        <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.NumCards" typeId="ffsp.4654595638702054266" id="4654595638703625867" nodeInfo="ng">
+          <property name="numCards" nameId="ffsp.4654595638702054267" value="3" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Pile" typeId="ffsp.3854676059697422932" id="4319553422816034309" nodeInfo="ng">
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="4654595638703626259" nodeInfo="ng" />
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Pile" typeId="ffsp.3854676059697422932" id="4654595638703624267" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="middle" />
-        <node role="faceup" roleId="ffsp.6965435806309702625" type="ffsp.faceup" typeId="ffsp.6965435806309702037" id="6965435806310439156" nodeInfo="ng" />
       </node>
     </node>
   </root>
