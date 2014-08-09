@@ -549,5 +549,11 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2834967828303451498" resolveInfo="Deck" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1415725632945178473" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="DefaultDeck" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="default CardSet" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303451498" resolveInfo="Deck" />
+  </root>
 </model>
 
