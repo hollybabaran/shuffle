@@ -122,6 +122,7 @@
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Pile" typeId="ffsp.3854676059697422932" id="4319553422816034309" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="middle" />
+        <node role="faceup" roleId="ffsp.6965435806309702625" type="ffsp.faceup" typeId="ffsp.6965435806309702037" id="6965435806310439156" nodeInfo="ng" />
       </node>
     </node>
   </root>
