@@ -128,7 +128,7 @@
           <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4654595638703626242" nodeInfo="ng" />
         </node>
         <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.NumCards" typeId="ffsp.4654595638702054266" id="4654595638703625867" nodeInfo="ng">
-          <property name="numCards" nameId="ffsp.4654595638702054267" value="3" />
+          <property name="numCards" nameId="ffsp.4654595638702054267" value="2" />
         </node>
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="4654595638703626259" nodeInfo="ng" />
