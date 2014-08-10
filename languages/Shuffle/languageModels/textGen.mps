@@ -333,6 +333,7 @@
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="6965435806310022890" nodeInfo="ng">
             <property name="value" nameId="2omo.1237305576108" value=");" />
           </node>
+          <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="8019396473305827825" nodeInfo="ng" />
         </node>
       </node>
     </node>
@@ -357,7 +358,6 @@
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="6952526287831813386" nodeInfo="ng">
             <property name="value" nameId="2omo.1237305576108" value=")" />
           </node>
-          <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="5424172662728369031" nodeInfo="ng" />
         </node>
       </node>
     </node>
