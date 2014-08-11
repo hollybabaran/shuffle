@@ -44,7 +44,7 @@
         </node>
         <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5396954793338551366" nodeInfo="ng">
           <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="5396954793338551367" nodeInfo="nn">
-            <node role="quotedNode" roleId="tp3r.1196350785114" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5396954793338551368" nodeInfo="in" />
+            <node role="quotedNode" roleId="tp3r.1196350785114" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5964992898507954847" nodeInfo="in" />
           </node>
         </node>
       </node>
@@ -549,6 +549,71 @@
     <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="6952526287832286743" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="player" />
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="ffsp.2834967828304063230" resolveInfo="Player" />
+    </node>
+  </root>
+  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5964992898507958563" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="typeof_SuitObj" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardRefs" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5964992898507958564" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="5964992898507958763" nodeInfo="nn">
+        <property name="checkOnly" nameId="tpd4.1206359757216" value="false" />
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5964992898507958764" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="5964992898507958765" nodeInfo="nn">
+            <node role="term" roleId="tpd4.1174657509053" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5964992898507977382" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5964992898507977215" nodeInfo="nn">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5964992898507958566" resolveInfo="suitObj" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5964992898507979166" nodeInfo="nn">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="ffsp.5964992898507957153" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5964992898507958767" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="5964992898507958768" nodeInfo="nn">
+            <node role="quotedNode" roleId="tp3r.1196350785114" type="tp25.SEnumMemberType" typeId="tp25.1240170042401" id="5964992898507979329" nodeInfo="in">
+              <link role="enum" roleId="tp25.1240170836027" targetNodeId="ffsp.3854676059697652960" resolveInfo="Suit" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="5964992898507976462" nodeInfo="nn" />
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5964992898507958566" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="suitObj" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="ffsp.5964992898507957035" resolveInfo="SuitObj" />
+    </node>
+  </root>
+  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="5964992898508211693" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="typeof_RankObj" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardRefs" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="5964992898508211694" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateEquationStatement" typeId="tpd4.1174658326157" id="5964992898508211730" nodeInfo="nn">
+        <property name="checkOnly" nameId="tpd4.1206359757216" value="false" />
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5964992898508211731" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="5964992898508211732" nodeInfo="nn">
+            <node role="term" roleId="tpd4.1174657509053" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5964992898508211733" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="5964992898508211947" nodeInfo="nn">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="5964992898508211696" resolveInfo="rankObj" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5964992898508212867" nodeInfo="nn">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="ffsp.5964992898508211431" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="5964992898508211736" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tp3r.Quotation" typeId="tp3r.1196350785113" id="5964992898508211737" nodeInfo="nn">
+            <node role="quotedNode" roleId="tp3r.1196350785114" type="tp25.SEnumMemberType" typeId="tp25.1240170042401" id="5964992898508211738" nodeInfo="in">
+              <link role="enum" roleId="tp25.1240170836027" targetNodeId="ffsp.3854676059697653018" resolveInfo="Rank" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="5964992898508211696" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="rankObj" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="ffsp.5964992898508211424" resolveInfo="RankObj" />
     </node>
   </root>
 </model>
