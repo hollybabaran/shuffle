@@ -178,7 +178,31 @@
     <dependencies>
       <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="25" />
     </dependencies>
+    <rename id="ffsp.1418645885567322850" type="CONCEPT" from="CardRefDe" to="CardRefDeclaration" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="25" />
+    </dependencies>
     <rename id="ffsp.2678928131163028766" type="CONCEPT" from="T" to="TopCard" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="26" />
+    </dependencies>
+    <rename id="ffsp.9156110024835574326" type="CHILD" from="card" to="cardd" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="27" />
+    </dependencies>
+    <rename id="ffsp.9156110024835574326" type="CHILD" from="cardd" to="card" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="28" />
+    </dependencies>
+    <rename id="ffsp.9156110024835916862" type="PROPERTY" from="Rank" to="rank" />
   </StructureModification>
 </history>
 
