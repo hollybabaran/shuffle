@@ -675,23 +675,5 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="1418645885567322850" resolveInfo="CardRefDeclaration" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="939205226782726196" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="VariableAssignment" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Assignment" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="939205226782740261" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="lvalue" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6304222537138290358" resolveInfo="VariableReference" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="939205226782740263" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="value" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1068431790191" resolveInfo="Expression" />
-    </node>
-  </root>
 </model>
 
