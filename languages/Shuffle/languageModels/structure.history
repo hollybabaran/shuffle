@@ -208,6 +208,24 @@
     <dependencies>
       <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="29" />
     </dependencies>
+    <rename id="ffsp.9156110024836363822" type="CHILD" from="cardNumbers" to="card" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="29" />
+    </dependencies>
+    <rename id="ffsp.7181767954433034087" type="CONCEPT" from="StringExpression" to="AllExpression" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="30" />
+    </dependencies>
+    <rename id="ffsp.7181767954433034087" type="CONCEPT" from="AllExpression" to="AllKeyword" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="29" />
+    </dependencies>
     <rename id="ffsp.5565452210787037995" type="CONCEPT" from="ForStatement" to="ForEachStatement" />
   </StructureModification>
 </history>
