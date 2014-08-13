@@ -9,16 +9,16 @@
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="4161858660889596979" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="midtermDemo" />
     <node role="winConditionBlock" roleId="ffsp.5722923068946478778" type="ffsp.WinConditionBlock" typeId="ffsp.5160494638280864183" id="2355677863975804107" nodeInfo="ng">
-      <node role="condition" roleId="ffsp.150989085052711727" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="2355677863975826215" nodeInfo="ng">
-        <node role="first" roleId="ffsp.7881733640606387482" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6952526287832826475" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6952526287832825683" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="6952526287832825011" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="6952526287832825769" nodeInfo="ng" />
-          </node>
-          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="6952526287832826585" nodeInfo="ng" />
-        </node>
-        <node role="second" roleId="ffsp.7881733640606387485" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6952526287832826658" nodeInfo="nn">
+      <node role="condition" roleId="ffsp.150989085052711727" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="7163396788749688418" nodeInfo="ng">
+        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7163396788749688493" nodeInfo="nn">
           <property name="value" nameId="tpee.1068580320021" value="0" />
+        </node>
+        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7163396788749687662" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7163396788749687555" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="7163396788749687531" nodeInfo="ng" />
+            <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="7163396788749687622" nodeInfo="ng" />
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="7163396788749687754" nodeInfo="ng" />
         </node>
       </node>
     </node>
@@ -70,7 +70,7 @@
         </node>
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.NumPlayers" typeId="ffsp.1721387915554939518" id="1747264128837518259" nodeInfo="ng">
-        <node role="expression" roleId="ffsp.7674520359935510780" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1747264128837518283" nodeInfo="nn">
+        <node role="expression" roleId="ffsp.7163396788749457844" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1747264128837518283" nodeInfo="nn">
           <property name="value" nameId="tpee.1068580320021" value="4" />
         </node>
       </node>
@@ -359,7 +359,7 @@
         <property name="name" nameId="tpck.1169194664001" value="deck" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.NumPlayers" typeId="ffsp.1721387915554939518" id="317224616453922522" nodeInfo="ng">
-        <node role="expression" roleId="ffsp.7674520359935510780" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="317224616453922601" nodeInfo="nn">
+        <node role="expression" roleId="ffsp.7163396788749457844" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="317224616453922601" nodeInfo="nn">
           <property name="value" nameId="tpee.1068580320021" value="4" />
         </node>
       </node>
@@ -507,16 +507,16 @@
       </node>
     </node>
     <node role="winConditionBlock" roleId="ffsp.5722923068946478778" type="ffsp.WinConditionBlock" typeId="ffsp.5160494638280864183" id="4319553422816035321" nodeInfo="ng">
-      <node role="condition" roleId="ffsp.150989085052711727" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4319553422816035544" nodeInfo="ng">
-        <node role="second" roleId="ffsp.7881733640606387485" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4319553422816035585" nodeInfo="nn">
+      <node role="condition" roleId="ffsp.150989085052711727" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="7163396788749564563" nodeInfo="ng">
+        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7163396788749564626" nodeInfo="nn">
           <property name="value" nameId="tpee.1068580320021" value="0" />
         </node>
-        <node role="first" roleId="ffsp.7881733640606387482" type="tpee.DotExpression" typeId="tpee.1197027756228" id="317224616453940188" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="317224616453939420" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="317224616453938747" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="317224616453939482" nodeInfo="ng" />
+        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7163396788749563792" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7163396788749563673" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="7163396788749563661" nodeInfo="ng" />
+            <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="7163396788749563752" nodeInfo="ng" />
           </node>
-          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="317224616453940271" nodeInfo="ng" />
+          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="7163396788749563899" nodeInfo="ng" />
         </node>
       </node>
     </node>
@@ -530,8 +530,8 @@
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.ShuffleDeck" typeId="ffsp.7674520359936346144" id="2931096516754708555" nodeInfo="ng">
         <node role="deck" roleId="ffsp.7674520359936346172" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="2931096516754708562" nodeInfo="ng" />
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.NumPlayers" typeId="ffsp.1721387915554939518" id="2931096516754708570" nodeInfo="ng">
-        <node role="expression" roleId="ffsp.7674520359935510780" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8187829176104148301" nodeInfo="nn">
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.NumPlayers" typeId="ffsp.1721387915554939518" id="7163396788749426399" nodeInfo="ng">
+        <node role="expression" roleId="ffsp.7163396788749457844" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7163396788749426491" nodeInfo="nn">
           <property name="value" nameId="tpee.1068580320021" value="4" />
         </node>
       </node>
@@ -625,14 +625,14 @@
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="2931096516754855122" nodeInfo="ng">
         <node role="elseBody" roleId="ffsp.8116400040793688461" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="2931096516754864314" nodeInfo="ng">
           <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="7181767954433896044" nodeInfo="ng">
+            <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8187829176104446963" nodeInfo="ng">
+              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="8187829176104282811" resolveInfo="middleDeck" />
+            </node>
             <node role="pile1" roleId="ffsp.6162892231914411206" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7181767954433896120" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="7181767954433896100" nodeInfo="ng" />
               <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="7181767954433896183" nodeInfo="ng" />
             </node>
             <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.AllKeyword" typeId="ffsp.7181767954433034087" id="7181767954433896084" nodeInfo="ng" />
-            <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8187829176104446963" nodeInfo="ng">
-              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="8187829176104282811" resolveInfo="middleDeck" />
-            </node>
           </node>
         </node>
         <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="2931096516754868446" nodeInfo="ng">
@@ -649,16 +649,16 @@
             </node>
           </node>
         </node>
-        <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.LessThanStatement" typeId="ffsp.7881733640607028947" id="8187829176104293478" nodeInfo="ng">
-          <node role="first" roleId="ffsp.7881733640607028948" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8187829176104294205" nodeInfo="ng">
-            <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="8187829176104283287" resolveInfo="x" />
-          </node>
-          <node role="second" roleId="ffsp.7881733640607028951" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8187829176104297763" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8187829176104295599" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="8187829176104294227" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="8187829176104296359" nodeInfo="ng" />
+        <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.LessThanStatement" typeId="ffsp.7881733640607028947" id="7163396788749660173" nodeInfo="ng">
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7163396788749664887" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7163396788749662493" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="7163396788749661010" nodeInfo="ng" />
+              <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="7163396788749663370" nodeInfo="ng" />
             </node>
-            <node role="operation" roleId="tpee.1197027833540" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="8187829176104298544" nodeInfo="ng" />
+            <node role="operation" roleId="tpee.1197027833540" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="7163396788749665789" nodeInfo="ng" />
+          </node>
+          <node role="leftExpression" roleId="tpee.1081773367580" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7163396788749659052" nodeInfo="ng">
+            <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="8187829176104283287" resolveInfo="x" />
           </node>
         </node>
       </node>
@@ -667,26 +667,26 @@
           <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="8187829176104283287" resolveInfo="x" />
         </node>
         <node role="value" roleId="ffsp.939205226782740263" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="2931096516754854062" nodeInfo="nn">
-          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2931096516754854065" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580320021" value="1" />
-          </node>
           <node role="leftExpression" roleId="tpee.1081773367580" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8187829176104310929" nodeInfo="ng">
             <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="8187829176104283287" resolveInfo="x" />
+          </node>
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2931096516754854065" nodeInfo="nn">
+            <property name="value" nameId="tpee.1068580320021" value="1" />
           </node>
         </node>
       </node>
     </node>
     <node role="winConditionBlock" roleId="ffsp.5722923068946478778" type="ffsp.WinConditionBlock" typeId="ffsp.5160494638280864183" id="2931096516754708540" nodeInfo="ng">
-      <node role="condition" roleId="ffsp.150989085052711727" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="2931096516754709014" nodeInfo="ng">
-        <node role="first" roleId="ffsp.7881733640606387482" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2931096516754709197" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2931096516754709058" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="2931096516754709037" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="2931096516754709142" nodeInfo="ng" />
-          </node>
-          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="2931096516754709278" nodeInfo="ng" />
-        </node>
-        <node role="second" roleId="ffsp.7881733640606387485" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2931096516754709311" nodeInfo="nn">
+      <node role="condition" roleId="ffsp.150989085052711727" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="7163396788749667543" nodeInfo="ng">
+        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7163396788749667618" nodeInfo="nn">
           <property name="value" nameId="tpee.1068580320021" value="0" />
+        </node>
+        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7163396788749666787" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7163396788749666680" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="7163396788749666656" nodeInfo="ng" />
+            <node role="operation" roleId="tpee.1197027833540" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="7163396788749666747" nodeInfo="ng" />
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="7163396788749666879" nodeInfo="ng" />
         </node>
       </node>
     </node>
