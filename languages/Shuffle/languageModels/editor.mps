@@ -75,12 +75,23 @@
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6952526287832421361" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="[" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PaddingLeftStyleClassItem" typeId="tpc2.1215007883204" id="1897680560087333965" nodeInfo="nn">
+          <property name="value" nameId="tpc2.1215007802031" value="-1" />
+          <property name="measure" nameId="tpc2.1226504838901" value="SPACES" />
+        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="6952526287832372192" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ffsp.6952526287832333226" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PaddingLeftStyleClassItem" typeId="tpc2.1215007883204" id="1897680560087442913" nodeInfo="nn">
+          <property name="value" nameId="tpc2.1215007802031" value="-1" />
+        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="6952526287832421371" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="]" />
+        <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PaddingLeftStyleClassItem" typeId="tpc2.1215007883204" id="1897680560087335136" nodeInfo="nn">
+          <property name="value" nameId="tpc2.1215007802031" value="-1" />
+          <property name="measure" nameId="tpc2.1226504838901" value="SPACES" />
+        </node>
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2834967828304063292" nodeInfo="nn" />
     </node>
