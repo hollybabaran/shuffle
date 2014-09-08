@@ -69,7 +69,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2834967828304063230" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Player" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Player" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="player" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6952526287830939805" resolveInfo="AbstractVariableReference" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6952526287832333226" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -245,13 +245,13 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5160494638280649077" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
     <property name="name" nameId="tpck.1169194664001" value="SetupBlock" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="setup board" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Setup Board" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5160494638280568420" resolveInfo="CommandBlock" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5160494638280864183" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
     <property name="name" nameId="tpck.1169194664001" value="WinConditionBlock" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="win condition" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Win Condition" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="150989085052660316" resolveInfo="ConditionBlock" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7881733640606387490" nodeInfo="ig">
@@ -406,7 +406,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1721387915554939518" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.Number" />
     <property name="name" nameId="tpck.1169194664001" value="NumPlayers" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Number of Players" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="number of players" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7163396788749457844" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -459,7 +459,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="465858332974170854" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
     <property name="name" nameId="tpck.1169194664001" value="PlayerTurnBlock" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="player turn" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Player Turn" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5160494638280568420" resolveInfo="CommandBlock" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1298433529544597390" nodeInfo="ig">
@@ -470,7 +470,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2241509385806353940" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
     <property name="name" nameId="tpck.1169194664001" value="Hand" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Hand" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="hand" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2190890532995261187" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpee.1197027803184" resolveInfo="IOperation" />
@@ -479,7 +479,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2190890532995396246" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.Number" />
     <property name="name" nameId="tpck.1169194664001" value="Size" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Size" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="size" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2190890532995507889" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpee.1197027803184" resolveInfo="IOperation" />
