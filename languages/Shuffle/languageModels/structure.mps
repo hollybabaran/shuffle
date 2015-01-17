@@ -137,11 +137,19 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3854676059697422932" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection.Pile" />
     <property name="name" nameId="tpck.1169194664001" value="Pile" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Create Pile" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Pile" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3854676059697220626" resolveInfo="CardCollection" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2824091188896369485" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="faceup" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="2824091188895594038" resolveInfo="faceupdown" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8960773502389131203" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="horizontal" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8960773502389047198" resolveInfo="Horizontal" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8960773502389131208" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="vertical" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8960773502389052909" resolveInfo="Vertical" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1721387915554876123" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
