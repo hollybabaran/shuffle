@@ -293,7 +293,7 @@
         <property name="faceup" nameId="ffsp.2824091188896369485" value="true" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Pile" typeId="ffsp.3854676059697422932" id="939205226783575771" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="topCard" />
+        <property name="name" nameId="tpck.1169194664001" value="topCardPile" />
         <property name="faceup" nameId="ffsp.2824091188896369485" value="true" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="2524059026154968594" nodeInfo="ng">
@@ -517,7 +517,7 @@
                   <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="317224616453922260" resolveInfo="middlePile" />
                 </node>
                 <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="2524059026156544022" nodeInfo="ng">
-                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="939205226783575771" resolveInfo="topCard" />
+                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="939205226783575771" resolveInfo="topCardPile" />
                 </node>
                 <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2524059026156543879" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="2524059026156543816" nodeInfo="ng">
@@ -542,7 +542,7 @@
               </node>
               <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="2524059026156544487" nodeInfo="ng">
                 <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="2524059026156544659" nodeInfo="ng">
-                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="939205226783575771" resolveInfo="topCard" />
+                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="939205226783575771" resolveInfo="topCardPile" />
                 </node>
                 <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="2524059026156544674" nodeInfo="ng">
                   <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="317224616453922260" resolveInfo="middlePile" />
@@ -741,7 +741,6 @@
               </node>
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="8674722826290466921" nodeInfo="ng" />
         </node>
         <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="8674722826290444543" nodeInfo="ng">
           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="8674722826290444604" nodeInfo="nn">
