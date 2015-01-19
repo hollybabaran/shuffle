@@ -287,14 +287,18 @@
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Pile" typeId="ffsp.3854676059697422932" id="317224616453922390" nodeInfo="ng">
         <property name="faceup" nameId="ffsp.2824091188896369485" value="false" />
         <property name="name" nameId="tpck.1169194664001" value="deck" />
+        <property name="horizontal" nameId="ffsp.8960773502389131203" value="A" />
+        <property name="vertical" nameId="ffsp.8960773502389131208" value="0" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Pile" typeId="ffsp.3854676059697422932" id="317224616453922260" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="middlePile" />
         <property name="faceup" nameId="ffsp.2824091188896369485" value="true" />
+        <property name="vertical" nameId="ffsp.8960773502389131208" value="0" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Pile" typeId="ffsp.3854676059697422932" id="939205226783575771" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="topCardPile" />
         <property name="faceup" nameId="ffsp.2824091188896369485" value="true" />
+        <property name="vertical" nameId="ffsp.8960773502389131208" value="0" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="2524059026154968594" nodeInfo="ng">
         <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="2524059026154968742" nodeInfo="ng" />

@@ -9,7 +9,6 @@
   <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="33" />
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="3eno" modelUID="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)" version="-1" />
-  <import index="6ghs" modelUID="r:88266f50-160d-4022-b70e-078f6bc19dfd(Shuffle.behavior)" version="-1" />
   <import index="fkzy" modelUID="r:f3388331-a38a-49dc-9b90-0a9c842a8d7f(ShuffleJava.gui)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpf8" modelUID="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" version="2" implicit="yes" />
@@ -549,40 +548,6 @@
       </node>
     </node>
   </root>
-  <root type="tpf8.TemplateDeclaration" typeId="tpf8.1092059087312" id="912009110482789805" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="reduce_CardCollection" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
-    <link role="applicableConcept" roleId="tpf8.1168285871518" targetNodeId="ffsp.3854676059697220626" resolveInfo="CardCollection" />
-    <node role="contentNode" roleId="tpf8.1092060348987" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="912009110482792787" nodeInfo="nn">
-      <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="912009110482792788" nodeInfo="nr">
-        <property name="name" nameId="tpck.1169194664001" value="cardPile" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="912009110482792789" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3eno.6162892231914596193" resolveInfo="CardPile" />
-        </node>
-        <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="912009110482792790" nodeInfo="nn">
-          <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="912009110482792791" nodeInfo="nn">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3eno.5165761802077073032" resolveInfo="CardPile" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5206962039409984346" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="deck" />
-            </node>
-          </node>
-        </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.PropertyMacro" typeId="tpf8.1087833241328" id="912009110482792792" nodeInfo="nn">
-          <property name="propertyName" nameId="tpck.1757699476691236117" value="name" />
-          <node role="propertyValueFunction" roleId="tpf8.1167756362303" type="tpf8.PropertyMacro_GetPropertyValue" typeId="tpf8.1167756080639" id="912009110482792793" nodeInfo="nn">
-            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="912009110482792794" nodeInfo="sn">
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="912009110482792795" nodeInfo="nn">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="912009110482792796" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="deck" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tpf8.TemplateFragment" typeId="tpf8.1095672379244" id="912009110482792797" nodeInfo="ng" />
-    </node>
-  </root>
   <root type="tpf8.TemplateSwitch" typeId="tpf8.1112730859144" id="1707132686103361272" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="suitEnum" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="card" />
@@ -1085,6 +1050,12 @@
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5206962039409967834" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="deck" />
                 </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="890072256730758650" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="E" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="890072256730759627" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="5" />
+                </node>
               </node>
             </node>
           </node>
@@ -1128,6 +1099,12 @@
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3eno.5165761802077073032" resolveInfo="CardPile" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5206962039409988981" nodeInfo="nn">
                   <property name="value" nameId="tpee.1070475926801" value="standard_deck" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="890072256730764631" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="E" />
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="890072256730765923" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1068580320021" value="5" />
                 </node>
               </node>
             </node>
