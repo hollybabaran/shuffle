@@ -731,7 +731,7 @@
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="8960773502389052909" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection.Pile" />
     <property name="name" nameId="tpck.1169194664001" value="Vertical" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052910" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="0" />
       <property name="externalValue" nameId="tpce.1083923523172" value="0" />
