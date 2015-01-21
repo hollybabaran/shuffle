@@ -3,7 +3,7 @@
   <persistence version="8" />
   <language namespace="360f183c-7a9f-4f9b-a4f3-c572eede364e(Shuffle)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="31" implicit="yes" />
+  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="35" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="4319553422816035318" nodeInfo="ng">
@@ -341,7 +341,7 @@
         </node>
       </node>
     </node>
-    <node role="playerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.PlayerTurnBlock" typeId="ffsp.465858332974170854" id="4319553422816035320" nodeInfo="ng">
+    <node role="computerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.ComputerTurnBlock" typeId="ffsp.465858332974170854" id="4319553422816035320" nodeInfo="ng">
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Boolean" typeId="ffsp.2678928131162238767" id="2678928131162881252" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="cardPlayed" />
         <node role="value" roleId="ffsp.2678928131162280636" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2678928131162881258" nodeInfo="nn" />
@@ -770,6 +770,7 @@
         </node>
       </node>
     </node>
+    <node role="playerTurnBlock" roleId="ffsp.1790098884239327234" type="ffsp.PlayerTurnBlock" typeId="ffsp.1790098884239250114" id="4374016492607110654" nodeInfo="ng" />
   </root>
 </model>
 
