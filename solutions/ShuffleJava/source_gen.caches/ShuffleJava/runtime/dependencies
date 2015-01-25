@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="ShuffleJava.runtime.Card" file="Card.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ShuffleJava.runtime.CardPile" file="CardPile.java">
+    <classNode dependClassName="ShuffleJava.runtime.Card" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Collections" />
+  </dependency>
+  <dependency className="ShuffleJava.runtime.CardPileUtil" file="CardPileUtil.java">
+    <classNode dependClassName="ShuffleJava.runtime.Card" />
+    <classNode dependClassName="ShuffleJava.runtime.CardPile" />
+    <classNode dependClassName="java.lang.System" />
+  </dependency>
+  <dependency className="ShuffleJava.runtime.GameState" file="GameState.java">
+    <classNode dependClassName="ShuffleJava.runtime.Player" />
+    <classNode dependClassName="ShuffleJava.runtime.ShuffleException" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+  </dependency>
+  <dependency className="ShuffleJava.runtime.Player" file="Player.java">
+    <classNode dependClassName="ShuffleJava.runtime.CardPile" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ShuffleJava.runtime.Printer" file="Printer.java">
+    <classNode dependClassName="ShuffleJava.runtime.GameState" />
+    <classNode dependClassName="java.lang.System" />
+  </dependency>
+  <dependency className="ShuffleJava.runtime.ShuffleException" file="ShuffleException.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.lang.Exception" />
+  </dependency>
+</dependenciesRoot>
+

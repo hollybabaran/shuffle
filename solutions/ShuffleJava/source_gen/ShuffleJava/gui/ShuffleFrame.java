@@ -5,9 +5,11 @@ package ShuffleJava.gui;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.GridLayout;
+import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import java.awt.Color;
+import java.awt.FlowLayout;
 
 public class ShuffleFrame {
   public final JFrame frame = new JFrame("Shuffle");
@@ -15,16 +17,25 @@ public class ShuffleFrame {
 
 
   public ShuffleFrame() {
-    frame.setVisible(true);
     frame.pack();
     frame.setSize(800, 700);
     frame.setLocationRelativeTo(null);
-    frame.add(canvas);
+    frame.setLayout(new BorderLayout());
 
     ClassLoader classLoader = getClass().getClassLoader();
-    JLabel background = new JLabel(new ImageIcon(classLoader.getResource("bg.jpg")));
-    canvas.add(background);
-    canvas.setBackground(Color.GREEN);
+    JLabel background = new JLabel(new ImageIcon(classLoader.getResource("background.png")));
+    background.setBackground(Color.GREEN);
+    background.setLayout(new FlowLayout());
+    frame.add(background);
+
     canvas.setVisible(true);
+    canvas.setOpaque(false);
+    background.add(canvas);
+
+    frame.add(background);
+
+    canvas.add(new CardButton("ace", "clubs"));
+    canvas.invalidate();
+    frame.setVisible(true);
   }
 }

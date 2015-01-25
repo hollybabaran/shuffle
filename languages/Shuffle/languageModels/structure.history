@@ -240,5 +240,11 @@
     </dependencies>
     <rename id="ffsp.465858332974171242" type="CHILD" from="playerTurnBlock" to="computerTurnBlock" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="35" />
+    </dependencies>
+    <rename id="ffsp.6265495446095981821" type="CONCEPT" from="PrintSta" to="PrintStatement" />
+  </StructureModification>
 </history>
 
