@@ -228,5 +228,11 @@
     </dependencies>
     <rename id="ffsp.5565452210787037995" type="CONCEPT" from="ForStatement" to="ForEachStatement" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="33" />
+    </dependencies>
+    <rename id="ffsp.2719425773106398155" type="CHILD" from="expression" to="operand" />
+  </StructureModification>
 </history>
 

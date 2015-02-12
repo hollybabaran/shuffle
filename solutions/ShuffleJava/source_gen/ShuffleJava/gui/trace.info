@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <root nodeRef="r:f3388331-a38a-49dc-9b90-0a9c842a8d7f(ShuffleJava.gui)/8960773502388261241">
+    <nodeInfo nodeId="8960773502388323751" fileName="ShuffleFrame.java" startLine="15" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="frame" />
+    <nodeInfo nodeId="1979322611760456837" fileName="ShuffleFrame.java" startLine="16" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="canvas" />
+    <nodeInfo nodeId="1979322611759723327" fileName="ShuffleFrame.java" startLine="19" startPosition="25" endLine="20" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1979322611760581378" fileName="ShuffleFrame.java" startLine="20" startPosition="27" endLine="21" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1979322611760587281" fileName="ShuffleFrame.java" startLine="21" startPosition="17" endLine="22" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1979322611760592595" fileName="ShuffleFrame.java" startLine="22" startPosition="28" endLine="23" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4660632900848509817" fileName="ShuffleFrame.java" startLine="23" startPosition="38" endLine="24" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1979322611760483837" fileName="ShuffleFrame.java" startLine="24" startPosition="40" endLine="25" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="1979322611760537934" fileName="ShuffleFrame.java" startLine="25" startPosition="0" endLine="26" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1979322611760497273" fileName="ShuffleFrame.java" startLine="26" startPosition="58" endLine="27" endPosition="85" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="4660632900848678872" fileName="ShuffleFrame.java" startLine="27" startPosition="85" endLine="28" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4660632900848500335" fileName="ShuffleFrame.java" startLine="28" startPosition="42" endLine="29" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4660632900848523037" fileName="ShuffleFrame.java" startLine="29" startPosition="43" endLine="30" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="890072256731352937" fileName="ShuffleFrame.java" startLine="30" startPosition="26" endLine="31" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="1979322611760561738" fileName="ShuffleFrame.java" startLine="31" startPosition="0" endLine="32" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4660632900848592987" fileName="ShuffleFrame.java" startLine="32" startPosition="28" endLine="33" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4660632900848533449" fileName="ShuffleFrame.java" startLine="33" startPosition="28" endLine="34" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="890072256731363852" fileName="ShuffleFrame.java" startLine="34" startPosition="27" endLine="35" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="4660632900847817962" fileName="ShuffleFrame.java" startLine="35" startPosition="0" endLine="36" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8960773502388446966" fileName="ShuffleFrame.java" startLine="19" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="ShuffleFrame#()V" />
+    <scopeInfo nodeId="8960773502388446969" fileName="ShuffleFrame.java" startLine="19" startPosition="25" endLine="36" endPosition="26">
+      <varInfo nodeId="1979322611760497274" varName="background" />
+      <varInfo nodeId="1979322611760537935" varName="classLoader" />
+    </scopeInfo>
+    <scopeInfo nodeId="8960773502388446966" fileName="ShuffleFrame.java" startLine="19" startPosition="0" endLine="38" endPosition="0" />
+    <unitInfo nodeId="8960773502388261241" fileName="ShuffleFrame.java" startLine="14" startPosition="0" endLine="39" endPosition="0" unitName="ShuffleJava.gui.ShuffleFrame" />
+  </root>
+</debugInfo>
+

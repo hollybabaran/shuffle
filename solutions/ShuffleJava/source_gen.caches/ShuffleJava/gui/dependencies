@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="ShuffleJava.gui.ShuffleFrame" file="ShuffleFrame.java">
+    <classNode dependClassName="java.awt.BorderLayout" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.FlowLayout" />
+    <classNode dependClassName="java.awt.GridLayout" />
+    <classNode dependClassName="java.lang.ClassLoader" />
+    <classNode dependClassName="javax.swing.ImageIcon" />
+    <classNode dependClassName="javax.swing.JFrame" />
+    <classNode dependClassName="javax.swing.JLabel" />
+    <classNode dependClassName="javax.swing.JPanel" />
+  </dependency>
+</dependenciesRoot>
+
