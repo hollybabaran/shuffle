@@ -1074,7 +1074,7 @@
     </node>
   </root>
   <root type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="9073716074621001535" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.MathExpression" />
     <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="ffsp.2455425859176050087" resolveInfo="ShuffleBinaryExpression" />
     <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="9073716074621001536" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="9073716074621001537" nodeInfo="sn">
