@@ -246,5 +246,17 @@
     </dependencies>
     <rename id="ffsp.6265495446095981821" type="CONCEPT" from="PrintSta" to="PrintStatement" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="36" />
+    </dependencies>
+    <rename id="ffsp.4653797233416199712" type="CHILD" from="string" to="message" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="37" />
+    </dependencies>
+    <rename id="ffsp.4653797233416199976" type="CHILD" from="string" to="options" />
+  </StructureModification>
 </history>
 
