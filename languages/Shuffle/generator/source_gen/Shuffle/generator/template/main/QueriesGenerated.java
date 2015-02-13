@@ -89,7 +89,7 @@ public class QueriesGenerated {
   }
 
   public static SNode sourceNodeQuery_8187829176103803838(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), "playerTurnBlock", true);
+    return SLinkOperations.getTarget(_context.getNode(), "computerTurnBlock", true);
   }
 
   public static SNode sourceNodeQuery_8187829176103803852(final SourceSubstituteMacroNodeContext _context) {
@@ -134,5 +134,9 @@ public class QueriesGenerated {
 
   public static Iterable<SNode> sourceNodesQuery_1415725632945991686(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "cards", true);
+  }
+
+  public static Iterable<SNode> sourceNodesQuery_1790098884239404537(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "body", true);
   }
 }
