@@ -1105,15 +1105,9 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="94506569027873119" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="94506569027986579" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="94506569027986699" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="ArrayList&lt;String&gt; options;" />
+            <property name="value" nameId="2omo.1237305576108" value="java.util.ArrayList&lt;String&gt; options = new java.util.ArrayList&lt;String&gt;();" />
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="94506569027988392" nodeInfo="ng" />
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="7657862373416325005" nodeInfo="nn">
-          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="7657862373416325308" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="options = new ArrayList&lt;String&gt;();" />
-          </node>
-          <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="7657862373416325616" nodeInfo="ng" />
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="94506569028194512" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="94506569028221266" nodeInfo="ng">
@@ -1213,7 +1207,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="94506569027905604" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="94506569027905624" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="Popup popup = new Popup(" />
+            <property name="value" nameId="2omo.1237305576108" value="ShuffleJava.gui.Popup popup = new ShuffleJava.gui.Popup(" />
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="94506569027971543" nodeInfo="ng">
             <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="94506569027980197" nodeInfo="nn">
