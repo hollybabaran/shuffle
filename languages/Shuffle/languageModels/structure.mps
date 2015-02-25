@@ -786,7 +786,7 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2455425859176049884" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.MathExpression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <property name="name" nameId="tpck.1169194664001" value="ShuffleExpression" />
@@ -842,7 +842,7 @@
     <property name="name" nameId="tpck.1169194664001" value="ShuffleBinaryExpression" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;?&gt;" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="?" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2455425859176050383" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -915,6 +915,16 @@
     <property name="name" nameId="tpck.1169194664001" value="multExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="*" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176095937" resolveInfo="MathExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8642299736868079625" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression" />
+    <property name="name" nameId="tpck.1169194664001" value="StringConstant" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&quot;" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8642299736868227465" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="value" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    </node>
   </root>
 </model>
 
