@@ -3,6 +3,7 @@
   <persistence version="8" />
   <language namespace="360f183c-7a9f-4f9b-a4f3-c572eede364e(Shuffle)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
+  <import index="dbrf" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.swing(JDK/javax.swing@java_stub)" version="-1" />
   <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="38" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
@@ -345,6 +346,26 @@
             <node role="operation" roleId="tpee.1197027833540" type="ffsp.TopCard" typeId="ffsp.2678928131163028766" id="5964992898508290429" nodeInfo="ng" />
           </node>
           <node role="operation" roleId="tpee.1197027833540" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="5964992898508290603" nodeInfo="ng" />
+        </node>
+      </node>
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Popup" typeId="ffsp.4653797233416144760" id="94506569028231211" nodeInfo="ng">
+        <node role="message" roleId="ffsp.4653797233416199712" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="94506569028231213" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="popup" />
+        </node>
+        <node role="options" roleId="ffsp.4653797233416199976" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="94506569028231363" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="1" />
+        </node>
+        <node role="options" roleId="ffsp.4653797233416199976" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="94506569028231377" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="sdkfjlksdjf" />
+        </node>
+        <node role="options" roleId="ffsp.4653797233416199976" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="94506569028231392" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="sdfk;sdkf" />
+        </node>
+        <node role="options" roleId="ffsp.4653797233416199976" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="94506569029785239" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="dfsfs" />
+        </node>
+        <node role="variable" roleId="ffsp.4653797233416726098" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="94506569028231408" nodeInfo="ng">
+          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="5964992898508185281" resolveInfo="currentSuit" />
         </node>
       </node>
     </node>
