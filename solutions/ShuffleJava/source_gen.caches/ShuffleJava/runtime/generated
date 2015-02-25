@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="-5khw5fc95fzo6yz7us7dbb0obgp3m2b">
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
+  <common hash="-qnb75cp3w5vexnxp7gkrpm5gtk1wqi" dependsOnNodes="true">
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+  </common>
+  <source id="6162892231914596193" name="CardPile" hash="-45ps3totebn7236nw12pa6eq2pw30i4">
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="CardPile.java" />
+  </source>
+  <source id="6162892231914596317" name="Player" hash="38jswb8138i1vkiyjk2ckx26y1l328j">
+    <file name="Player.java" />
+  </source>
+  <source id="6162892231914596383" name="Card" hash="-clstfxlm58g56yyagtyr73ux3imme5w">
+    <file name="Card.java" />
+  </source>
+  <source id="1472781009440827330" name="CardPileUtil" hash="ddlkxdysar2t3b8qexoux2s8qbgfltl">
+    <file name="CardPileUtil.java" />
+  </source>
+  <source id="1747264128837885076" name="GameState" hash="-7itwzjc8s072clajivlx4q2o6k3fjov">
+    <file name="GameState.java" />
+  </source>
+  <source id="1904212697478843359" name="Printer" hash="8lxnuutmf87ft61v6adc9asjte4kcb1">
+    <file name="Printer.java" />
+  </source>
+  <source id="2678928131163821319" name="ShuffleException" hash="-4vsnqowy7j3hz9b1ei4tkcxr3wp6u71">
+    <file name="ShuffleException.java" />
+  </source>
+</dependencies>
+
