@@ -13,18 +13,18 @@ import java.awt.FlowLayout;
 
 public class ShuffleFrame {
   public final JFrame frame = new JFrame("Shuffle");
+  public final JPanel console = new JPanel(new GridLayout(10, 10), true);
   public final JPanel canvas = new JPanel(new GridLayout(10, 10), true);
 
 
   public ShuffleFrame() {
-    frame.setVisible(true);
     frame.pack();
     frame.setSize(800, 700);
     frame.setLocationRelativeTo(null);
     frame.setLayout(new BorderLayout());
 
     ClassLoader classLoader = getClass().getClassLoader();
-    JLabel background = new JLabel(new ImageIcon(classLoader.getResource("bg.jpg")));
+    JLabel background = new JLabel(new ImageIcon(classLoader.getResource("background.png")));
     background.setBackground(Color.GREEN);
     background.setLayout(new FlowLayout());
     frame.add(background);
@@ -34,5 +34,8 @@ public class ShuffleFrame {
     background.add(canvas);
 
     frame.add(background);
+
+    canvas.invalidate();
+    frame.setVisible(true);
   }
 }
