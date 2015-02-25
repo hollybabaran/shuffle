@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="Crazy8s.map_Main" file="map_Main.java">
-    <classNode dependClassName="ShuffleJava.gui.CardButton" />
-    <classNode dependClassName="ShuffleJava.gui.Grid" />
     <classNode dependClassName="ShuffleJava.gui.ShuffleFrame" />
     <classNode dependClassName="ShuffleJava.runtime.Card" />
     <classNode dependClassName="ShuffleJava.runtime.CardPile" />

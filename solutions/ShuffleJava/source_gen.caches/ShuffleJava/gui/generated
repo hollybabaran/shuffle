@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="-bpcdku3tk1xabuk0qws6f4ydj6ucw6n">
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
+  <common hash="-qsknky2gzxug70bsa69g1a3jq4xt5x" dependsOnNodes="true">
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+  </common>
+  <source id="8960773502388261241" name="ShuffleFrame" hash="5ccmgwcmnz913sz6t0y5ixf0tnpjdoj">
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="ShuffleFrame.java" />
+  </source>
+  <source id="8960773502389956726" name="Grid" hash="-4gf0t5ju8z54xfwqk3jbf51w5ku9upl">
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <file name="Grid.java" />
+  </source>
+  <source id="2620082582375565807" name="CardButton" hash="-aklf4nbqwefjx8voorysq48ujzwdhw1">
+    <file name="CardButton.java" />
+  </source>
+  <source id="3488828158364571431" name="CardPileDisplay" hash="-ab16oaz27hjaeugyh5q6d2jzc9rw5v1">
+    <file name="CardPileDisplay.java" />
+  </source>
+</dependencies>
+
