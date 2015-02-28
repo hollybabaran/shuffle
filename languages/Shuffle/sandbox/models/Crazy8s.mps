@@ -348,6 +348,9 @@
         </node>
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Popup" typeId="ffsp.4653797233416144760" id="94506569031857840" nodeInfo="ng">
+        <node role="variable" roleId="ffsp.4653797233416726098" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7657862373419343056" nodeInfo="ng">
+          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="5964992898508185281" resolveInfo="currentSuit" />
+        </node>
         <node role="message" roleId="ffsp.4653797233416199712" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="94506569031857842" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="What is your favourite number?" />
         </node>
@@ -363,13 +366,21 @@
         <node role="options" roleId="ffsp.4653797233416199976" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="94506569031858056" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="4" />
         </node>
-        <node role="variable" roleId="ffsp.4653797233416726098" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7657862373419343056" nodeInfo="ng">
-          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="5964992898508185281" resolveInfo="currentSuit" />
-        </node>
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="94506569031550913" nodeInfo="ng" />
     </node>
     <node role="computerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.ComputerTurnBlock" typeId="ffsp.465858332974170854" id="4319553422816035320" nodeInfo="ng">
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="5567602624660542905" nodeInfo="ng">
+        <node role="string" roleId="ffsp.6265495446096126114" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5567602624660545650" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="Computer player " />
+        </node>
+        <node role="string" roleId="ffsp.6265495446096126114" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5567602624661312893" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="plays" />
+        </node>
+        <node role="string" roleId="ffsp.6265495446096126114" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5567602624661312936" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="something" />
+        </node>
+      </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Boolean" typeId="ffsp.2678928131162238767" id="2678928131162881252" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="cardPlayed" />
         <node role="value" roleId="ffsp.2678928131162280636" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="7797185839636851861" nodeInfo="ng">
