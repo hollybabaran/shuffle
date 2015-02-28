@@ -13,6 +13,11 @@
       <node role="parameter" roleId="ffsp.8340020017782267500" type="ffsp.Parameter" typeId="ffsp.8340020017784107743" id="8340020017784606524" nodeInfo="ng">
         <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="317224616453922390" resolveInfo="deck" />
       </node>
+      <node role="body" roleId="ffsp.8340020017782266822" type="ffsp.ReturnStatement" typeId="ffsp.8340020017782162052" id="8340020017789299560" nodeInfo="ng">
+        <node role="boolean" roleId="ffsp.8340020017782162085" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="8340020017789299572" nodeInfo="ng">
+          <property name="value" nameId="ffsp.2003306783291602631" value="false" />
+        </node>
+      </node>
     </node>
     <node role="setupBlock" roleId="ffsp.5722923068946478776" type="ffsp.SetupBlock" typeId="ffsp.5160494638280649077" id="4319553422816035319" nodeInfo="ng">
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.DefaultDeck" typeId="ffsp.1415725632945178473" id="317224616453922099" nodeInfo="ng">
