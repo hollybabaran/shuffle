@@ -6,6 +6,7 @@ import javax.swing.JButton;
 import ShuffleJava.runtime.Card;
 import javax.swing.ImageIcon;
 import java.awt.Dimension;
+import java.awt.Graphics;
 
 public class CardButton extends JButton {
   private Card card;
@@ -19,26 +20,34 @@ public class CardButton extends JButton {
   public CardButton(Card card) {
     this.card = card;
     imageFaceup = card.getSuit() + "_" + card.getRank() + ".png";
-
     ClassLoader classLoader = getClass().getClassLoader();
     iconFacedown = new ImageIcon(classLoader.getResource(imageFacedown));
     iconFaceup = new ImageIcon(classLoader.getResource(imageFaceup));
-
-    this.setIcon(iconFacedown);
-    this.setPreferredSize(new Dimension(this.getIcon().getIconWidth(), this.getIcon().getIconHeight()));
-
-    this.setVisible(true);
-    // set jbutton size etc 
+    this.setPreferredSize(new Dimension(this.iconFaceup.getIconWidth(), this.iconFaceup.getIconHeight()));
+    this.faceup = false;
   }
 
 
 
   public void setFaceup(Boolean faceup) {
     this.faceup = faceup;
+  }
+
+
+
+  public void update() {
     if (faceup) {
       this.setIcon(iconFaceup);
     } else {
       this.setIcon(iconFacedown);
     }
+  }
+
+
+
+  public void paintComponent(Graphics g) {
+    this.update();
+    super.paintComponent(g);
+    System.out.println("we painted a card");
   }
 }

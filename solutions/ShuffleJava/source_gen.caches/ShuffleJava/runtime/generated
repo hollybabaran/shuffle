@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-5khw5fc95fzo6yz7us7dbb0obgp3m2b">
+<dependencies version="2" modelHash="-d9exux5k9ghbrz12im77qn6lk36ernj">
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
@@ -12,7 +12,7 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="CardPile.java" />
   </source>
-  <source id="6162892231914596317" name="Player" hash="38jswb8138i1vkiyjk2ckx26y1l328j">
+  <source id="6162892231914596317" name="Player" hash="51fszsvfz1j2alm00ymbc1jp1xe4p53">
     <file name="Player.java" />
   </source>
   <source id="6162892231914596383" name="Card" hash="-clstfxlm58g56yyagtyr73ux3imme5w">
