@@ -3,6 +3,7 @@
   <dependency className="ShuffleJava.gui.CardButton" file="CardButton.java">
     <classNode dependClassName="ShuffleJava.runtime.Card" />
     <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.ClassLoader" />
     <classNode dependClassName="java.lang.String" />
@@ -12,23 +13,41 @@
   <dependency className="ShuffleJava.gui.CardPileDisplay" file="CardPileDisplay.java">
     <classNode dependClassName="ShuffleJava.gui.CardButton" />
     <classNode dependClassName="ShuffleJava.runtime.CardPile" />
-    <classNode dependClassName="java.util.ArrayList" />
-    <classNode extendsClassName="javax.swing.JComponent" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.ClassLoader" />
+    <classNode dependClassName="javax.swing.ImageIcon" />
+    <classNode dependClassName="javax.swing.JLabel" />
+    <classNode dependClassName="javax.swing.OverlayLayout" />
+    <classNode extendsClassName="javax.swing.JPanel" />
   </dependency>
   <dependency className="ShuffleJava.gui.Grid" file="Grid.java">
     <classNode dependClassName="ShuffleJava.runtime.CardPile" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
+  <dependency className="ShuffleJava.gui.Popup" file="Popup.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="javax.swing.JFrame" />
+    <classNode dependClassName="javax.swing.JOptionPane" />
+  </dependency>
   <dependency className="ShuffleJava.gui.ShuffleFrame" file="ShuffleFrame.java">
-    <classNode dependClassName="java.awt.BorderLayout" />
     <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.FlowLayout" />
     <classNode dependClassName="java.awt.GridLayout" />
     <classNode dependClassName="java.lang.ClassLoader" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="javax.swing.BoxLayout" />
     <classNode dependClassName="javax.swing.ImageIcon" />
     <classNode dependClassName="javax.swing.JFrame" />
     <classNode dependClassName="javax.swing.JLabel" />
     <classNode dependClassName="javax.swing.JPanel" />
+    <classNode dependClassName="javax.swing.JScrollPane" />
+    <classNode dependClassName="javax.swing.JTextPane" />
   </dependency>
 </dependenciesRoot>
 

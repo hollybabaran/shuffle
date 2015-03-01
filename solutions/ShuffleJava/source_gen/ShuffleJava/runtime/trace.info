@@ -54,49 +54,65 @@
     <unitInfo nodeId="1472781009440827330" fileName="CardPileUtil.java" startLine="6" startPosition="0" endLine="40" endPosition="0" unitName="ShuffleJava.runtime.CardPileUtil" />
   </root>
   <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/1747264128837885076">
-    <nodeInfo nodeId="1747264128837886545" fileName="GameState.java" startLine="8" startPosition="0" endLine="9" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="playerList" />
-    <nodeInfo nodeId="1747264128837886802" fileName="GameState.java" startLine="9" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="currentPlayer" />
-    <nodeInfo nodeId="6952526287832983912" fileName="GameState.java" startLine="11" startPosition="22" endLine="12" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="317224616453456463" fileName="GameState.java" startLine="12" startPosition="41" endLine="13" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3401611587229597740" fileName="GameState.java" startLine="18" startPosition="75" endLine="19" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="8187829176103753178" fileName="GameState.java" startLine="20" startPosition="28" endLine="21" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
-    <nodeInfo nodeId="1747264128837952454" fileName="GameState.java" startLine="23" startPosition="45" endLine="24" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="317224616453450788" fileName="GameState.java" startLine="30" startPosition="32" endLine="31" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="6952526287831616945" fileName="GameState.java" startLine="31" startPosition="43" endLine="32" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1747264128837887223" fileName="GameState.java" startLine="37" startPosition="33" endLine="38" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1747264128837909707" fileName="GameState.java" startLine="43" startPosition="33" endLine="44" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1211703652757706511" fileName="GameState.java" startLine="44" startPosition="60" endLine="45" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1904212697479134303" fileName="GameState.java" startLine="51" startPosition="28" endLine="52" endPosition="102" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8187829176103647772" fileName="GameState.java" startLine="19" startPosition="68" endLine="22" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1747264128837949729" fileName="GameState.java" startLine="22" startPosition="5" endLine="25" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForStatement" />
-    <nodeInfo nodeId="1747264128837887157" fileName="GameState.java" startLine="37" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="currentPlayer#()LShuffleJava/runtime/Player;" />
-    <nodeInfo nodeId="1747264128837886619" fileName="GameState.java" startLine="11" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="GameState#()V" />
-    <nodeInfo nodeId="6952526287831611011" fileName="GameState.java" startLine="30" startPosition="0" endLine="34" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="player#(I)LShuffleJava/runtime/Player;" />
-    <nodeInfo nodeId="1747264128837908312" fileName="GameState.java" startLine="43" startPosition="0" endLine="47" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="incrementPlayer#()V" />
-    <nodeInfo nodeId="1904212697479127373" fileName="GameState.java" startLine="50" startPosition="0" endLine="54" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toString#()Ljava/lang/String;" />
-    <nodeInfo nodeId="1747264128837886728" fileName="GameState.java" startLine="18" startPosition="0" endLine="27" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setNumberPlayers#(I)V" />
-    <scopeInfo nodeId="8187829176103647775" fileName="GameState.java" startLine="20" startPosition="28" endLine="21" endPosition="80" />
-    <scopeInfo nodeId="1747264128837949730" fileName="GameState.java" startLine="23" startPosition="45" endLine="24" endPosition="36" />
-    <scopeInfo nodeId="1747264128837887160" fileName="GameState.java" startLine="37" startPosition="33" endLine="38" endPosition="41" />
-    <scopeInfo nodeId="1904212697479127376" fileName="GameState.java" startLine="51" startPosition="28" endLine="52" endPosition="102" />
-    <scopeInfo nodeId="1747264128837886622" fileName="GameState.java" startLine="11" startPosition="22" endLine="13" endPosition="22" />
-    <scopeInfo nodeId="6952526287831611014" fileName="GameState.java" startLine="30" startPosition="32" endLine="32" endPosition="34" />
-    <scopeInfo nodeId="1747264128837908315" fileName="GameState.java" startLine="43" startPosition="33" endLine="45" endPosition="64" />
-    <scopeInfo nodeId="1747264128837949729" fileName="GameState.java" startLine="22" startPosition="5" endLine="25" endPosition="5">
+    <nodeInfo nodeId="1747264128837886545" fileName="GameState.java" startLine="9" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="playerList" />
+    <nodeInfo nodeId="1747264128837886802" fileName="GameState.java" startLine="10" startPosition="0" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="currentPlayer" />
+    <nodeInfo nodeId="3998867066255422417" fileName="GameState.java" startLine="12" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="cardPiles" />
+    <nodeInfo nodeId="3998867066255428697" fileName="GameState.java" startLine="13" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="strings" />
+    <nodeInfo nodeId="3998867066255434731" fileName="GameState.java" startLine="14" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="booleans" />
+    <nodeInfo nodeId="6952526287832983912" fileName="GameState.java" startLine="17" startPosition="22" endLine="18" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="317224616453456463" fileName="GameState.java" startLine="18" startPosition="41" endLine="19" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3401611587229597740" fileName="GameState.java" startLine="24" startPosition="75" endLine="25" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8187829176103753178" fileName="GameState.java" startLine="26" startPosition="28" endLine="27" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="1747264128837952454" fileName="GameState.java" startLine="29" startPosition="45" endLine="30" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="317224616453450788" fileName="GameState.java" startLine="36" startPosition="32" endLine="37" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="6952526287831616945" fileName="GameState.java" startLine="37" startPosition="43" endLine="38" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1747264128837887223" fileName="GameState.java" startLine="43" startPosition="33" endLine="44" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1747264128837909707" fileName="GameState.java" startLine="49" startPosition="33" endLine="50" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1211703652757706511" fileName="GameState.java" startLine="50" startPosition="60" endLine="51" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3998867066255791214" fileName="GameState.java" startLine="57" startPosition="42" endLine="58" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3998867066255810480" fileName="GameState.java" startLine="59" startPosition="47" endLine="60" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3998867066255822511" fileName="GameState.java" startLine="61" startPosition="12" endLine="62" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1904212697479134303" fileName="GameState.java" startLine="69" startPosition="28" endLine="70" endPosition="102" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3998867066255787807" fileName="GameState.java" startLine="61" startPosition="10" endLine="63" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="8187829176103647772" fileName="GameState.java" startLine="25" startPosition="68" endLine="28" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1747264128837949729" fileName="GameState.java" startLine="28" startPosition="5" endLine="31" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForStatement" />
+    <nodeInfo nodeId="1747264128837887157" fileName="GameState.java" startLine="43" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="currentPlayer#()LShuffleJava/runtime/Player;" />
+    <nodeInfo nodeId="1747264128837886619" fileName="GameState.java" startLine="17" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="GameState#()V" />
+    <nodeInfo nodeId="6952526287831611011" fileName="GameState.java" startLine="36" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="player#(I)LShuffleJava/runtime/Player;" />
+    <nodeInfo nodeId="1747264128837908312" fileName="GameState.java" startLine="49" startPosition="0" endLine="53" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="incrementPlayer#()V" />
+    <nodeInfo nodeId="1904212697479127373" fileName="GameState.java" startLine="68" startPosition="0" endLine="72" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toString#()Ljava/lang/String;" />
+    <nodeInfo nodeId="3998867066255762498" fileName="GameState.java" startLine="56" startPosition="44" endLine="63" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1747264128837886728" fileName="GameState.java" startLine="24" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setNumberPlayers#(I)V" />
+    <nodeInfo nodeId="3998867066255528742" fileName="GameState.java" startLine="56" startPosition="0" endLine="65" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="whichMap#(Ljava/lang/String;)Ljava/util/HashMap;" />
+    <scopeInfo nodeId="8187829176103647775" fileName="GameState.java" startLine="26" startPosition="28" endLine="27" endPosition="80" />
+    <scopeInfo nodeId="1747264128837949730" fileName="GameState.java" startLine="29" startPosition="45" endLine="30" endPosition="36" />
+    <scopeInfo nodeId="1747264128837887160" fileName="GameState.java" startLine="43" startPosition="33" endLine="44" endPosition="41" />
+    <scopeInfo nodeId="3998867066255762499" fileName="GameState.java" startLine="57" startPosition="42" endLine="58" endPosition="23" />
+    <scopeInfo nodeId="3998867066255777537" fileName="GameState.java" startLine="59" startPosition="47" endLine="60" endPosition="21" />
+    <scopeInfo nodeId="3998867066255787808" fileName="GameState.java" startLine="61" startPosition="12" endLine="62" endPosition="22" />
+    <scopeInfo nodeId="1904212697479127376" fileName="GameState.java" startLine="69" startPosition="28" endLine="70" endPosition="102" />
+    <scopeInfo nodeId="1747264128837886622" fileName="GameState.java" startLine="17" startPosition="22" endLine="19" endPosition="22" />
+    <scopeInfo nodeId="6952526287831611014" fileName="GameState.java" startLine="36" startPosition="32" endLine="38" endPosition="34" />
+    <scopeInfo nodeId="1747264128837908315" fileName="GameState.java" startLine="49" startPosition="33" endLine="51" endPosition="64" />
+    <scopeInfo nodeId="1747264128837949729" fileName="GameState.java" startLine="28" startPosition="5" endLine="31" endPosition="5">
       <varInfo nodeId="1747264128837949731" varName="x" />
     </scopeInfo>
-    <scopeInfo nodeId="1747264128837887157" fileName="GameState.java" startLine="37" startPosition="0" endLine="40" endPosition="0" />
-    <scopeInfo nodeId="1747264128837886619" fileName="GameState.java" startLine="11" startPosition="0" endLine="15" endPosition="0" />
-    <scopeInfo nodeId="6952526287831611011" fileName="GameState.java" startLine="30" startPosition="0" endLine="34" endPosition="0">
+    <scopeInfo nodeId="1747264128837887157" fileName="GameState.java" startLine="43" startPosition="0" endLine="46" endPosition="0" />
+    <scopeInfo nodeId="1747264128837886619" fileName="GameState.java" startLine="17" startPosition="0" endLine="21" endPosition="0" />
+    <scopeInfo nodeId="6952526287831611011" fileName="GameState.java" startLine="36" startPosition="0" endLine="40" endPosition="0">
       <varInfo nodeId="6952526287831614168" varName="id" />
     </scopeInfo>
-    <scopeInfo nodeId="1747264128837908312" fileName="GameState.java" startLine="43" startPosition="0" endLine="47" endPosition="0" />
-    <scopeInfo nodeId="1904212697479127373" fileName="GameState.java" startLine="50" startPosition="0" endLine="54" endPosition="0" />
-    <scopeInfo nodeId="1747264128837886731" fileName="GameState.java" startLine="18" startPosition="75" endLine="25" endPosition="5" />
-    <scopeInfo nodeId="1747264128837886728" fileName="GameState.java" startLine="18" startPosition="0" endLine="27" endPosition="0">
+    <scopeInfo nodeId="1747264128837908312" fileName="GameState.java" startLine="49" startPosition="0" endLine="53" endPosition="0" />
+    <scopeInfo nodeId="1904212697479127373" fileName="GameState.java" startLine="68" startPosition="0" endLine="72" endPosition="0" />
+    <scopeInfo nodeId="1747264128837886731" fileName="GameState.java" startLine="24" startPosition="75" endLine="31" endPosition="5" />
+    <scopeInfo nodeId="3998867066255528745" fileName="GameState.java" startLine="56" startPosition="44" endLine="63" endPosition="5" />
+    <scopeInfo nodeId="1747264128837886728" fileName="GameState.java" startLine="24" startPosition="0" endLine="33" endPosition="0">
       <varInfo nodeId="1747264128837947248" varName="numberPlayers" />
     </scopeInfo>
-    <unitInfo nodeId="1747264128837885076" fileName="GameState.java" startLine="7" startPosition="0" endLine="55" endPosition="0" unitName="ShuffleJava.runtime.GameState" />
+    <scopeInfo nodeId="3998867066255528742" fileName="GameState.java" startLine="56" startPosition="0" endLine="65" endPosition="0">
+      <varInfo nodeId="3998867066255540124" varName="variable" />
+    </scopeInfo>
+    <unitInfo nodeId="1747264128837885076" fileName="GameState.java" startLine="8" startPosition="0" endLine="73" endPosition="0" unitName="ShuffleJava.runtime.GameState" />
   </root>
   <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/1904212697478843359">
     <nodeInfo nodeId="6952526287832888228" fileName="Printer.java" startLine="7" startPosition="0" endLine="8" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="g" />
@@ -250,7 +266,7 @@
     <nodeInfo nodeId="4161858660889769492" fileName="Player.java" startLine="29" startPosition="26" endLine="30" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4161858660889773407" fileName="Player.java" startLine="35" startPosition="25" endLine="36" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4161858660889786494" fileName="Player.java" startLine="41" startPosition="38" endLine="42" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1904212697479222355" fileName="Player.java" startLine="48" startPosition="28" endLine="49" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1904212697479222355" fileName="Player.java" startLine="48" startPosition="28" endLine="49" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4161858660889764978" fileName="Player.java" startLine="23" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="id#()I" />
     <nodeInfo nodeId="4161858660889768926" fileName="Player.java" startLine="29" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hand#()LShuffleJava/runtime/CardPile;" />
     <nodeInfo nodeId="4161858660889772794" fileName="Player.java" startLine="35" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getScore#()I" />
@@ -261,7 +277,7 @@
     <scopeInfo nodeId="4161858660889768929" fileName="Player.java" startLine="29" startPosition="26" endLine="30" endPosition="21" />
     <scopeInfo nodeId="4161858660889772797" fileName="Player.java" startLine="35" startPosition="25" endLine="36" endPosition="22" />
     <scopeInfo nodeId="4161858660889785054" fileName="Player.java" startLine="41" startPosition="38" endLine="42" endPosition="32" />
-    <scopeInfo nodeId="1904212697479218394" fileName="Player.java" startLine="48" startPosition="28" endLine="49" endPosition="59" />
+    <scopeInfo nodeId="1904212697479218394" fileName="Player.java" startLine="48" startPosition="28" endLine="49" endPosition="26" />
     <scopeInfo nodeId="4161858660889764978" fileName="Player.java" startLine="23" startPosition="0" endLine="26" endPosition="0" />
     <scopeInfo nodeId="4161858660889768926" fileName="Player.java" startLine="29" startPosition="0" endLine="32" endPosition="0" />
     <scopeInfo nodeId="4161858660889772794" fileName="Player.java" startLine="35" startPosition="0" endLine="38" endPosition="0" />

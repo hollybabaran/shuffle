@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-cnw22mixj6td0zvtbedp1r3d3du1dox">
+<dependencies version="2" modelHash="-6e4oei0hf8akcvy7uokuluaomqkk8jl">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="-5mgxduek28h3ywdzzsk4capaz4hgjm0" />
-  <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" hash="46jsxl802hw5is64gtjcw36kxhxdzvx" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" hash="efpygk1iagsrvh0j1nroncwiyw07vp1" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-8chtguhcvj45cjy0bx3xiqekte2lox7" />
-  <common hash="-4ajr9zupiw8onruozbnrkd2jt3mrekf" dependsOnNodes="true">
+  <common hash="1jifb75ob2h1d4d1ony921htedw8bqo" dependsOnNodes="true">
+    <dep root="1291148986966014861" />
     <dep root="1298433529544597390" />
     <dep root="1415725632945178473" />
     <dep root="1418645885567267462" />
@@ -20,12 +20,22 @@
     <dep root="150989085052660317" />
     <dep root="1721387915554939518" />
     <dep root="1790098884239250114" />
+    <dep root="2003306783291590326" />
     <dep root="2190890532995396246" />
     <dep root="2241509385806353940" />
+    <dep root="2455425859175603937" />
+    <dep root="2455425859176049884" />
+    <dep root="2455425859176050087" />
+    <dep root="2455425859176095200" />
+    <dep root="2455425859176095937" />
+    <dep root="2455425859176103333" />
+    <dep root="2455425859176336643" />
     <dep root="2524059026155569696" />
     <dep root="2524059026155779482" />
     <dep root="2678928131162238767" />
     <dep root="2678928131163028766" />
+    <dep root="2719425773106347456" />
+    <dep root="2719425773106586486" />
     <dep root="2824091188895594038" />
     <dep root="2824091188896932087" />
     <dep root="2834967828303451498" />
@@ -38,6 +48,7 @@
     <dep root="3854676059697652960" />
     <dep root="3854676059697653018" />
     <dep root="4113687324191539085" />
+    <dep root="4653797233416144760" />
     <dep root="465858332974170854" />
     <dep root="5084755040949647097" />
     <dep root="5160494638280568420" />
@@ -69,13 +80,17 @@
     <dep root="7881733640606387481" />
     <dep root="7881733640606387490" />
     <dep root="7881733640607028947" />
+    <dep root="8340020017781900658" />
+    <dep root="8340020017782162052" />
+    <dep root="8642299736868079625" />
     <dep root="8960773502389047198" />
     <dep root="8960773502389052909" />
+    <dep root="9073716074620380222" />
+    <dep root="9073716074620391503" />
     <dep root="939205226782726196" />
     <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
-    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
@@ -83,13 +98,13 @@
     <file name="StructureAspectDescriptor.java" />
   </common>
   <source id="2834967828303451498" name="Deck" hash="ecp6wzua472dtbpkmfoiy7jw4h48cpx" />
-  <source id="2834967828303785259" name="Main" hash="-d61yguwvfb325gk0jgfxk2vg0vzwrt2" />
+  <source id="2834967828303785259" name="Main" hash="-98nctv1m860lqgk5d4ace6bl37n1q2k" />
   <source id="2834967828303818439" name="Card" hash="-3l66d3q3plxjnxlv9md8f218vrzulip" />
   <source id="2834967828303856791" name="VariableDeclaration" hash="7wpl5t82izxdsza2t9pk5wu7jee7pot" />
-  <source id="2834967828304063230" name="Player" hash="-21s15ad1cmxcb5t1j44brbavsqon78" />
-  <source id="7674520359934846973" name="Number" hash="-92l5ckx8xq6ac1lq6djesarnuprsj1z" />
+  <source id="2834967828304063230" name="Player" hash="-7fg75ntenfauar5w7tubdhlqi5vqufs" />
+  <source id="7674520359934846973" name="Number" hash="cpj0b6xdaynjy55qfducsd38txbyp8e" />
   <source id="7674520359936137193" name="Command" hash="5kthn5fvxjlxsqtj9con16adfx7x1n3" />
-  <source id="7674520359936346144" name="ShuffleDeck" hash="-52614qixftpnnno7dwvrxtnviy98kgt" />
+  <source id="7674520359936346144" name="ShuffleDeck" hash="7ha98eb10u9p70w01dh2kx9ld5n4p2l" />
   <source id="7674520359936462567" name="Deal" hash="-735zvbt5ztc0vnc7hyyk9f0rlmxec3n" />
   <source id="3854676059697220626" name="CardCollection" hash="-7jadcmdbf61vd7td0snypkkayflcgqq" />
   <source id="3854676059697422932" name="Pile" hash="eowq4qs9wny84e7edabpzf97hohzc8i" />
@@ -116,27 +131,27 @@
   <source id="5160494638280649077" name="SetupBlock" hash="4pio0ziujjbptcq8oxrgtkmxper3llm" />
   <source id="5160494638280864183" name="WinConditionBlock" hash="62jgcjrmpsettnir8fgkk8x2pviyhej" />
   <source id="7881733640606387490" name="GreaterThanStatement" hash="-kqxf3cw5ckwsw5cih9tnjkkakbfcfd" />
-  <source id="5565452210787642242" name="BooleanExpression" hash="-9g8q3jddcqhlocqnfb13jr3ugzrg9f4" />
+  <source id="5565452210787642242" name="BooleanExpression" hash="-3vmfvu20rw4sfhoyf5xaumxnnv7vkir" />
   <source id="7881733640606387386" name="OrStatement" hash="-17jnpl1gysl6ac89jgkmjtgpuyr49ty" />
   <source id="7881733640606387472" name="AndStatement" hash="a8rr0cwbwwry4w3rgorsa7ik77ojplo" />
-  <source id="5565452210787037996" name="ElseIfStatement" hash="coa29ei37npuxd95sjz52qunvsice9c" />
-  <source id="5565452210787026454" name="IfStatement" hash="-2rjfn5ftpvm4jw7029s9h3w0n46a2n3" />
-  <source id="5565452210787037995" name="ForEachStatement" hash="e4sdv1pzabagp2jzp2themhm7t4mef6" />
+  <source id="5565452210787037996" name="ElseIfStatement" hash="97keog5wgiu15arqojufus8spmx8p4n" />
+  <source id="5565452210787026454" name="IfStatement" hash="dcpwqw3rw9bxh99ukbqgjwetk6eqikf" />
+  <source id="5565452210787037995" name="ForEachStatement" hash="-bfqwelkm6fgtp336p1rkv27jchoahgq" />
   <source id="150989085052660317" name="Block" hash="-eatlabqhgd7opy1aqe2xh24hmfc1iw8" />
-  <source id="150989085052660316" name="ConditionBlock" hash="eho1cvajwhz3vrkmbi5nr0grkiwqm8i" />
+  <source id="150989085052660316" name="ConditionBlock" hash="718icbkm8dm2h7azdavf8bb7ejmvjbq" />
   <source id="7881733640607028947" name="LessThanStatement" hash="2iei0n3jjeautw7yomfz5qjb75flxca" />
   <source id="7881733640606387481" name="EqualToStatement" hash="2mpyv7inm79qahj7p4e0bsvoc3aqgt2" />
   <source id="5565452210787038123" name="WhileStatement" hash="1j091grkf7qrlec6cva40jck30yibic" />
-  <source id="5565452210787038188" name="NotStatement" hash="177nw1ckt989p2q3olhuumx4f5oid2j" />
-  <source id="1721387915554939518" name="NumPlayers" hash="-6qomynvfeyggc5ie0k601y4a03qjznc" />
-  <source id="6162892231914410061" name="Move" hash="-2slb2npv5nvrcf8kzwm8zt51lseb2mx" />
+  <source id="5565452210787038188" name="NotStatement" hash="-7dzpwodxx60x6m0f3yanf75l7ewwy82" />
+  <source id="1721387915554939518" name="NumPlayers" hash="bcmaeq5tp9aqbpg0mes9psgdkzqient" />
+  <source id="6162892231914410061" name="Move" hash="-7abi8wny348jpxt2gzqpf55zf7ku7zu" />
   <source id="6304222537138290358" name="VariableReference" hash="69hy5ipp4trb3h3ac88pkjekdd3qsjh" />
   <source id="4113687324191539085" name="CurrentPlayer" hash="-58k6njsofoj7zi8glzj21vuevq97h87" />
   <source id="465858332974170854" name="ComputerTurnBlock" hash="-3uiix5sg1oh2m51j8jvw39kctwzqp5o" />
   <source id="1298433529544597390" name="EmptyLine" hash="8wt2fijoj7t1w75f3r27u1pcb6mmu5g" />
-  <source id="2241509385806353940" name="Hand" hash="ekyhbd0l7frfi5e8vxfox4ymv6q4ktk" />
-  <source id="2190890532995396246" name="Size" hash="-6me226lz2aathqungpp05oqoo0439ke" />
-  <source id="6952526287830939805" name="AbstractVariableReference" hash="-e1sj79nws8lkviunnipeicmj2iuo1z1" />
+  <source id="2241509385806353940" name="Hand" hash="-9nxneoap1qsvsypgpvz3x34mvxhflmk" />
+  <source id="2190890532995396246" name="Size" hash="-7lnuaylx1viknkiijmi057us7mek90j" />
+  <source id="6952526287830939805" name="AbstractVariableReference" hash="3jact39q67jqdnot5cnp5oxkg1hw9cb" />
   <source id="5084755040949647097" name="DeckReference" hash="-e0g3j879c3rstdvjdfy308roht30pyn" />
   <source id="2824091188895594038" name="faceupdown" hash="-dw0asrkzs8ytzxg8wqcgipkogjna1mi">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
@@ -149,20 +164,20 @@
   </source>
   <source id="1415725632945178473" name="DefaultDeck" hash="-1e8h8t4jnin3hfjdntb8m42645y2umw" />
   <source id="6965435806309709998" name="CardPileType" hash="8hz0uiwa9iy6hux7fokjp99t8p2txrg" />
-  <source id="2678928131162238767" name="Boolean" hash="-38cfrucm12dufrfcf2utyng6iz8bm8m" />
-  <source id="2678928131163028766" name="TopCard" hash="-5xu1errdc8s9bnc5ffwfh2xwarpc6tu" />
+  <source id="2678928131162238767" name="Boolean" hash="dt6c9z6i774tuicccegkrwkavuaynq" />
+  <source id="2678928131163028766" name="TopCard" hash="6uptqgjj5xbjxhnclw6rts8ytq0kbjh" />
   <source id="2824091188896932087" name="CommandList" hash="56embyzcvij97ypwpkbgot4cj5nf1jt" />
-  <source id="5964992898508211424" name="RankObj" hash="-2fycez18vqb7r0iac525pgqh3i4n5te" />
-  <source id="5964992898508211303" name="RankOp" hash="c8nq57ioexj06c0da08vja0kgaw7e0k" />
-  <source id="5964992898507957035" name="SuitObj" hash="-84lp8nxjwemry3025i6abxw57i1do6t" />
-  <source id="5964992898508062080" name="SuitOp" hash="-etc721y6o4o9n81hnti825rq28wosd8" />
-  <source id="1418645885567322850" name="CardRefDeclaration" hash="94uaqk759t0q7379w1evh22fxm3iftq" />
+  <source id="5964992898508211424" name="RankObj" hash="-238vplg2yqz4jsgxga6yr6mcxw6o4vd" />
+  <source id="5964992898508211303" name="RankOp" hash="-6n2zoehsxkhbryflnflod08pk6xq0m6" />
+  <source id="5964992898507957035" name="SuitObj" hash="6wy1mqy5pb73yqzj7k0e78dfsyxpmm" />
+  <source id="5964992898508062080" name="SuitOp" hash="-eftzqldli8dtwcwdevaw76ijo144oyj" />
+  <source id="1418645885567322850" name="CardRefDeclaration" hash="p4kdbez90zq49kd7g8dqpfs7xsemc5" />
   <source id="1418645885567267462" name="CardReference" hash="-e129tvn0kjblrxtc2f4c4bujl2nztsf" />
   <source id="7878805613278894690" name="ForEachVarReference" hash="dkwqmuinivvyzpz5a2l7zgy6zsahn52" />
-  <source id="939205226782726196" name="VariableAssignment" hash="7eqzj3yntzsdeddnianqk9cvnez5oov" />
-  <source id="7181767954433034087" name="AllKeyword" hash="e76f250w1neydfza8xnw644sor256ko" />
-  <source id="2524059026155569696" name="RankLiteral" hash="7ttdbsksceys2ud7efiet2pwd53plbh" />
-  <source id="2524059026155779482" name="SuitLiteral" hash="7ybskt5trqzghtim0nk2bvy9jcz7422" />
+  <source id="939205226782726196" name="VariableAssignment" hash="-8nrzxsj5122c6ji5045x0nbvponeko2" />
+  <source id="7181767954433034087" name="AllKeyword" hash="-dkq96wq2iihjgcs5hricichpnmpn9i9" />
+  <source id="2524059026155569696" name="RankLiteral" hash="-9iegfezzxt24ndb64xcwy0k9e7vde4f" />
+  <source id="2524059026155779482" name="SuitLiteral" hash="edqev9aeozwuhhpxab613inp1366kdr" />
   <source id="8960773502389047198" name="Horizontal" hash="-8fjhm41cf0qoofflt78foi2uo2ubanq">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -181,7 +196,24 @@
     <file name="Vertical.java" />
     <file name="Vertical_PropertySupport.java" />
   </source>
+  <source id="2455425859176095937" name="MathExpression" hash="-6gltrorr76hp2rxlp0xtxlpph1k68k2" />
+  <source id="2455425859175603937" name="playCard" hash="7ty1vlpibnimz9i6hy2ecchth61uloi" />
+  <source id="2455425859176049884" name="ShuffleExpression" hash="-1xpp2su04koh9nugpr6exm6i5n6aqeb" />
+  <source id="2455425859176103333" name="minusExpression" hash="5hxxvk5hfvnz10spsgm69768rd0k28f" />
+  <source id="2455425859176095200" name="addExpression" hash="-28uo6bc87ujj44nq27mtml4q9wprn6x" />
   <source id="1790098884239250114" name="PlayerTurnBlock" hash="-6bbfciu1mv8w7k2sdgl9np0vjmtsfp4" />
-  <source id="6265495446096081949" name="Print" hash="-e6s7eijpuvfqxlae6oyn9t2965ro2j0" />
+  <source id="4653797233416144760" name="Popup" hash="-2a45wif2pvevkitjnrnxoc0to1rcfbz" />
+  <source id="2719425773106586486" name="dotOperation" hash="4rsx6u1nk95c8yl8gfgiqcyvyauqu3e" />
+  <source id="2455425859176050087" name="ShuffleBinaryExpression" hash="-4gagw1toc0ogdb978myrm8yu66dfu46" />
+  <source id="6265495446096081949" name="Print" hash="-6jd96o0q0h1h0rwtga26we81scmb5ft" />
+  <source id="2455425859176336643" name="NumberConstant" hash="-839zcnlfz51gmpy1905j98uvktw5hkz" />
+  <source id="2003306783291590326" name="boolConstant" hash="4dmw3f9i20n5udx10si4pqs5yabax3z" />
+  <source id="2719425773106347456" name="dotOperator" hash="5x4wbl1fya5n15xbc7zwjb2wcbsvco9" />
+  <source id="9073716074620391503" name="divideExpression" hash="a1sdsnr2aek5elv9ajmxvin6wqw7fdh" />
+  <source id="9073716074620380222" name="multExpression" hash="7qd4xwid7bcyekwuzh5jh2vc1nqbncl" />
+  <source id="8642299736868079625" name="StringConstant" hash="bayltbrxc1xwiv5te5zfll6kfbu9k8b" />
+  <source id="8340020017782162052" name="ReturnStatement" hash="-8ohvqwskp0vc75k5itizm3tle18w365" />
+  <source id="8340020017781900658" name="FunctionDefinition" hash="e7f63r0xr127hrnl3m62zs61j1yryj8" />
+  <source id="1291148986966014861" name="NotEqualToStatement" hash="-20bxgz9698wk70h4f1zfb27y1cu6qpn" />
 </dependencies>
 

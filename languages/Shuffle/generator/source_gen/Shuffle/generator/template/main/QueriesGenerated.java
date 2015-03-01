@@ -120,6 +120,10 @@ public class QueriesGenerated {
     return SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "setupBlock", true), "body", true);
   }
 
+  public static Iterable<SNode> sourceNodesQuery_8340020017787125917(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "functions", true);
+  }
+
   public static Iterable<SNode> sourceNodesQuery_6796815332554477675(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "body", true);
   }
