@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-3vntob5mofblcat4ypzmd09of9vssjc">
+<dependencies version="2" modelHash="c9jcj33kwnut4wiv1upbc7vxo0vlble">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -15,7 +15,7 @@
   <dep model="r:88266f50-160d-4022-b70e-078f6bc19dfd(Shuffle.behavior)" hash="-5y7e6n19o2ecw3t4hlc3j2arnsbut04" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" hash="e5zswcvgdspmt039m3gg97emcadi0ez" />
-  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="-1p87eg1nlm2pr650i0fj0u7dipooldt" />
+  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="efyq6jeahqn28r5rq8b4hdvnknp2wro" />
   <dep model="r:d1558b8f-fc9e-4ca7-bb90-70ac789f336e(jetbrains.mps.baseLanguage.collections.generator.baseLanguage.template.post@generator)" hash="npgvdfpnhgphsd6ic5xuzipg1hn1j4" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-8chtguhcvj45cjy0bx3xiqekte2lox7" />
@@ -112,7 +112,7 @@
     <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" />
     <file name="EmptyLine_TextGen.java" />
   </source>
-  <source id="2355677863975958405" name="Pile_TextGen" hash="-1609bt3viikdm8tf8krar8mprqco1j0">
+  <source id="2355677863975958405" name="Pile_TextGen" hash="-p9nxgydsl0d55gzsz4ucfigd9adtnb">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -131,7 +131,7 @@
     <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" />
     <file name="Player_TextGen.java" />
   </source>
-  <source id="8746187347602857884" name="VariableReference_TextGen" hash="e5b68gcj858mut052cc1thg6cetl39o">
+  <source id="8746187347602857884" name="VariableReference_TextGen" hash="-errf1048eu6f49qlin54346rj7w2wrt">
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
     <dep model="r:1e88207e-a8e3-4e7e-8d9b-916f60cbdc61(jetbrains.mps.lang.textGen.generator.template.main@generator)" />
@@ -147,7 +147,7 @@
     <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" />
     <file name="DeckReference_TextGen.java" />
   </source>
-  <source id="2678928131162754147" name="Boolean_TextGen" hash="4s3rbt9kd8pt7tiew4u3katsj8x4k8h">
+  <source id="2678928131162754147" name="Boolean_TextGen" hash="-3ifpp7gnt1csa9z1bk54pdi508ncekb">
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
     <dep model="r:1e88207e-a8e3-4e7e-8d9b-916f60cbdc61(jetbrains.mps.lang.textGen.generator.template.main@generator)" />
@@ -182,7 +182,7 @@
     <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
     <file name="CommandList_TextGen.java" />
   </source>
-  <source id="5964992898507986055" name="SuitObj_TextGen" hash="1e3np0v7lgbyuoq8oae7pqp2d50zlbf">
+  <source id="5964992898507986055" name="SuitObj_TextGen" hash="-6nholi3fhx16j6y58tq1uxmz3tjwk0d">
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
     <dep model="r:1e88207e-a8e3-4e7e-8d9b-916f60cbdc61(jetbrains.mps.lang.textGen.generator.template.main@generator)" />
@@ -224,7 +224,7 @@
     <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" />
     <file name="ElseIfStatement_TextGen.java" />
   </source>
-  <source id="5964992898508213574" name="RankObj_TextGen" hash="cu2v48x8mkltixxi9obz0f7ho0it6m4">
+  <source id="5964992898508213574" name="RankObj_TextGen" hash="-dyixy07c1ejuyxyyijet0qldoutcm3d">
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
     <dep model="r:1e88207e-a8e3-4e7e-8d9b-916f60cbdc61(jetbrains.mps.lang.textGen.generator.template.main@generator)" />
@@ -251,10 +251,12 @@
     <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" />
     <file name="CardRefDeclaration_TextGen.java" />
   </source>
-  <source id="939205226782809343" name="VariableAssignment_TextGen" hash="a7ynaoxuthrcv13mp21uzrmq2ai1nil">
+  <source id="939205226782809343" name="VariableAssignment_TextGen" hash="aeba5m8783dx8sonbzfmhqciwy04g54">
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" />
     <dep model="r:1e88207e-a8e3-4e7e-8d9b-916f60cbdc61(jetbrains.mps.lang.textGen.generator.template.main@generator)" />
     <dep model="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
+    <dep model="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
     <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" />
     <file name="VariableAssignment_TextGen.java" />
   </source>
@@ -318,7 +320,7 @@
     <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
     <file name="Print_TextGen.java" />
   </source>
-  <source id="94506569027871221" name="Popup_TextGen" hash="-9ulnlejk7nqd8r8v29bhemrw1m2vhn2">
+  <source id="94506569027871221" name="Popup_TextGen" hash="bnf7was4w7rzvp6n3217fg3rm0808yp">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <dep model="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
@@ -406,7 +408,7 @@
     <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" />
     <file name="StringConstant_TextGen.java" />
   </source>
-  <source id="8340020017785021058" name="FunctionDefinition_TextGen" hash="8fpd0vk2v56ofpe7czijm62r4nsbhte">
+  <source id="8340020017785021058" name="FunctionDefinition_TextGen" hash="9fcyvb2fctqelgrra2glr3mrfhwv6yl">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <dep model="f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" />
@@ -426,6 +428,13 @@
     <dep model="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" />
     <file name="ReturnStatement_TextGen.java" />
+  </source>
+  <source id="6092235325267890349" name="NotEqualToStatement_TextGen" hash="-5shy1whil613yy5pqbb77iq4b5z4qi2">
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:1e88207e-a8e3-4e7e-8d9b-916f60cbdc61(jetbrains.mps.lang.textGen.generator.template.main@generator)" />
+    <dep model="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
+    <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" />
+    <file name="NotEqualToStatement_TextGen.java" />
   </source>
 </dependencies>
 

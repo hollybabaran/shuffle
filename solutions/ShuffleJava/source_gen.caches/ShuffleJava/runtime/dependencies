@@ -18,12 +18,15 @@
     <classNode dependClassName="java.lang.System" />
   </dependency>
   <dependency className="ShuffleJava.runtime.GameState" file="GameState.java">
+    <classNode dependClassName="ShuffleJava.runtime.CardPile" />
     <classNode dependClassName="ShuffleJava.runtime.Player" />
     <classNode dependClassName="ShuffleJava.runtime.ShuffleException" />
+    <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.HashMap" />
   </dependency>
   <dependency className="ShuffleJava.runtime.Player" file="Player.java">
     <classNode dependClassName="ShuffleJava.runtime.CardPile" />

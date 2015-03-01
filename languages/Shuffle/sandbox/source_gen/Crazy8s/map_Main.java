@@ -14,6 +14,7 @@ import ShuffleJava.runtime.CardPileUtil;
 public class map_Main {
 
 
+
   public static void executeGame() throws ShuffleException {
     CardPileDisplay __debug_include_cardpiledisplay = new CardPileDisplay(new CardPile("___debug_include_cardpiledisplay"));
     Card __debug_include_Card;
@@ -86,21 +87,26 @@ gameState.setNumberPlayers(4);__deck.shuffle();
     CardPileUtil.move(8, __deck, gameState.player(3).hand());
     CardPileUtil.move(8, __deck, gameState.player(4).hand());CardPile deck = new CardPile("deck", false);
 frame.canvas.add(new CardPileDisplay(deck),0,0);
+gameState.cardPiles.put("deck",deck);
 CardPile middlePile = new CardPile("middlePile", true);
 frame.canvas.add(new CardPileDisplay(middlePile),0,1);
+gameState.cardPiles.put("middlePile",middlePile);
 CardPile topCardPile = new CardPile("topCardPile", true);
 frame.canvas.add(new CardPileDisplay(topCardPile),1,2);
+gameState.cardPiles.put("topCardPile",topCardPile);
 
-    CardPileUtil.move(1, __deck, middlePile);
-    CardPileUtil.moveAll(__deck, deck);String currentSuit = middlePile.getTopCard().getSuit();
-String currentRank = middlePile.getTopCard().getRank();
+    CardPileUtil.move(1, __deck, gameState.cardPiles.get("middlePile"));
+    CardPileUtil.moveAll(__deck, gameState.cardPiles.get("deck"));String currentSuit = gameState.cardPiles.get("middlePile").getTopCard().getSuit();
+gameState.strings.put("currentSuit",gameState.cardPiles.get("middlePile").getTopCard().getSuit());
+String currentRank = gameState.cardPiles.get("middlePile").getTopCard().getRank();
+gameState.strings.put("currentRank",gameState.cardPiles.get("middlePile").getTopCard().getRank());
 java.util.ArrayList<String> options = new java.util.ArrayList<String>();
 options.add("1");
 options.add("2");
 options.add("3");
 options.add("4");
 ShuffleJava.gui.Popup popup = new ShuffleJava.gui.Popup("What is your favourite number?", options);
-currentSuit= options.get(popup.show());
+gameState.strings.put(gameState.strings.get("currentSuit"),options.get(popup.show()));
 
 
     frame.redraw();
@@ -108,74 +114,75 @@ currentSuit= options.get(popup.show());
     while (true) {
       // Perform Player turn code 
 boolean cardPlayed = false;
-CardPile __Pile6274currentCard= new CardPile(gameState.currentPlayer().hand());
-for (Card currentCard : __Pile6274currentCard.getArrayList()){
-      if(cardPlayed == false){
-      if(currentCard.getRank() == currentRank || currentCard.getSuit() == currentSuit){
+gameState.booleans.put("cardPlayed",false);
+CardPile __Pile3275currentCard= new CardPile(gameState.currentPlayer().hand());
+for (Card currentCard : __Pile3275currentCard.getArrayList()){
+      if(gameState.booleans.get("cardPlayed") == false){
+      if(currentCard.getRank() == gameState.strings.get("currentRank") || currentCard.getSuit() == gameState.strings.get("currentSuit")){
       
-      CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), middlePile);
+      CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile"));
       frame.printToConsole(gameState.currentPlayer(), " plays ", currentCard);
-      cardPlayed = true;
+      gameState.booleans.put("cardPlayed",true);
 
-      currentSuit = currentCard.getSuit();
+      gameState.strings.put("currentSuit",currentCard.getSuit());
 
-      currentRank = currentCard.getRank();
+      gameState.strings.put("currentRank",currentCard.getRank());
 
 
 }
 else if(gameState.currentPlayer().hand().size() > 1 && currentCard.getRank() == "eight"){
       
-      CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), middlePile);
+      CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile"));
       frame.printToConsole(gameState.currentPlayer(), " plays ", currentCard);
-      cardPlayed = true;
+      gameState.booleans.put("cardPlayed",true);
 
-      currentSuit = gameState.currentPlayer().hand().getTopCard().getSuit();
+      gameState.strings.put("currentSuit",gameState.currentPlayer().hand().getTopCard().getSuit());
 
-      currentRank = currentCard.getRank();
-
-
-}
+      gameState.strings.put("currentRank",currentCard.getRank());
 
 
 }
 
-}
-if(cardPlayed == false){
-      if(deck.size() == 0){
-      
-      CardPileUtil.move(middlePile.getTopCard(), middlePile, topCardPile);
-      
-      CardPileUtil.moveAll(middlePile, deck);
-      deck.shuffle();
-
-      
-      CardPileUtil.moveAll(topCardPile, middlePile);
 
 }
 
+}
+if(gameState.booleans.get("cardPlayed") == false){
+      if(gameState.cardPiles.get("deck").size() == 0){
       
-      CardPileUtil.move(1, deck, gameState.currentPlayer().hand());
+      CardPileUtil.move(gameState.cardPiles.get("middlePile").getTopCard(), gameState.cardPiles.get("middlePile"), gameState.cardPiles.get("topCardPile"));
+      
+      CardPileUtil.moveAll(gameState.cardPiles.get("middlePile"), gameState.cardPiles.get("deck"));
+      gameState.cardPiles.get("deck").shuffle();
+
+      
+      CardPileUtil.moveAll(gameState.cardPiles.get("topCardPile"), gameState.cardPiles.get("middlePile"));
+
+}
+
+      
+      CardPileUtil.move(1, gameState.cardPiles.get("deck"), gameState.currentPlayer().hand());
       Card currentCard = gameState.currentPlayer().hand().getTopCard();
-      if(cardPlayed == false){
-      if(currentCard.getRank() == currentRank || currentCard.getSuit() == currentSuit){
+      if(gameState.booleans.get("cardPlayed") == false){
+      if(currentCard.getRank() == gameState.strings.get("currentRank") || currentCard.getSuit() == gameState.strings.get("currentSuit")){
       
-      CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), middlePile);
-      cardPlayed = true;
+      CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile"));
+      gameState.booleans.put("cardPlayed",true);
 
-      currentSuit = currentCard.getSuit();
+      gameState.strings.put("currentSuit",currentCard.getSuit());
 
-      currentRank = currentCard.getRank();
+      gameState.strings.put("currentRank",currentCard.getRank());
 
 
 }
 else if(gameState.currentPlayer().hand().size() > 1 && currentCard.getRank() == "eight"){
       
-      CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), middlePile);
-      cardPlayed = true;
+      CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile"));
+      gameState.booleans.put("cardPlayed",true);
 
-      currentSuit = gameState.currentPlayer().hand().getTopCard().getSuit();
+      gameState.strings.put("currentSuit",gameState.currentPlayer().hand().getTopCard().getSuit());
 
-      currentRank = currentCard.getRank();
+      gameState.strings.put("currentRank",currentCard.getRank());
 
 
 }
@@ -201,7 +208,7 @@ else if(gameState.currentPlayer().hand().size() > 1 && currentCard.getRank() == 
     System.out.println("Player " + (gameState.currentPlayer().id() + 1) + " WINS!");
   }
 
-public static boolean canPlay (ShuffleJava.runtime.CardPile deck){
+public static boolean canPlay(){
 return false;
 }
 

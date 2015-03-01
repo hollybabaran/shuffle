@@ -8,17 +8,6 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="4319553422816035318" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="finalDemo" />
-    <node role="functions" roleId="ffsp.8340020017782161297" type="ffsp.FunctionDefinition" typeId="ffsp.8340020017781900658" id="8340020017783939128" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="canPlay" />
-      <node role="body" roleId="ffsp.8340020017782266822" type="ffsp.ReturnStatement" typeId="ffsp.8340020017782162052" id="8340020017789299560" nodeInfo="ng">
-        <node role="boolean" roleId="ffsp.8340020017782162085" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="8340020017789299572" nodeInfo="ng">
-          <property name="value" nameId="ffsp.2003306783291602631" value="false" />
-        </node>
-      </node>
-      <node role="parameter" roleId="ffsp.8340020017782267500" type="ffsp.Parameter" typeId="ffsp.8340020017784107743" id="8340020017784606524" nodeInfo="ng">
-        <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="317224616453922390" resolveInfo="deck" />
-      </node>
-    </node>
     <node role="setupBlock" roleId="ffsp.5722923068946478776" type="ffsp.SetupBlock" typeId="ffsp.5160494638280649077" id="4319553422816035319" nodeInfo="ng">
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.DefaultDeck" typeId="ffsp.1415725632945178473" id="317224616453922099" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="__deck" />
@@ -825,6 +814,14 @@
       </node>
     </node>
     <node role="playerTurnBlock" roleId="ffsp.1790098884239327234" type="ffsp.PlayerTurnBlock" typeId="ffsp.1790098884239250114" id="4374016492607110654" nodeInfo="ng" />
+    <node role="functions" roleId="ffsp.8340020017782161297" type="ffsp.FunctionDefinition" typeId="ffsp.8340020017781900658" id="3998867066258408787" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="canPlay" />
+      <node role="body" roleId="ffsp.8340020017782266822" type="ffsp.ReturnStatement" typeId="ffsp.8340020017782162052" id="3998867066258408789" nodeInfo="ng">
+        <node role="boolean" roleId="ffsp.8340020017782162085" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="3998867066258408793" nodeInfo="ng">
+          <property name="value" nameId="ffsp.2003306783291602631" value="false" />
+        </node>
+      </node>
+    </node>
   </root>
 </model>
 

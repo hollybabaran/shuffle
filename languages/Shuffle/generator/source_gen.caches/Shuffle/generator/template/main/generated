@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-e533s9t2grcvgcig4yphtw38bbiqvmv">
+<dependencies version="2" modelHash="xfs4op2so21ak41u5f7pqld9qnioib">
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" hash="-15uwdtf1y5pg0o0e3fc6ujv2qcw23bv" />
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="-8z73tx2nml9xagbxlfmq60ehji8q3f5" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
-  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="-1p87eg1nlm2pr650i0fj0u7dipooldt" />
+  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="efyq6jeahqn28r5rq8b4hdvnknp2wro" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <common hash="-a0vt0txvs6j4um0t2a2z7x09ecsr1qc" dependsOnNodes="true">
     <dep root="1415725632945990508" />
@@ -28,7 +28,7 @@
   <source id="7674419771057231696" name="main" hash="8yjfwytqihd6gv2g0rc3irm76iu4yal">
     <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" />
   </source>
-  <source id="2834967828304165839" name="map_Main" hash="dzgopc2l7oqrdje1kto2xf0vx8d6f7l">
+  <source id="2834967828304165839" name="map_Main" hash="-1ogpmj32mm1j33dnw7pql21n51ubz3q">
     <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
   </source>
   <source id="5165761802077123674" name="reduce_Move" hash="5ek77hkq8ax538rg4rj9k1n19pe3gqt" />
