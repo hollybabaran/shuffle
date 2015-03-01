@@ -250,7 +250,7 @@
     <nodeInfo nodeId="4161858660889769492" fileName="Player.java" startLine="29" startPosition="26" endLine="30" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4161858660889773407" fileName="Player.java" startLine="35" startPosition="25" endLine="36" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4161858660889786494" fileName="Player.java" startLine="41" startPosition="38" endLine="42" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1904212697479222355" fileName="Player.java" startLine="48" startPosition="28" endLine="49" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1904212697479222355" fileName="Player.java" startLine="48" startPosition="28" endLine="49" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4161858660889764978" fileName="Player.java" startLine="23" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="id#()I" />
     <nodeInfo nodeId="4161858660889768926" fileName="Player.java" startLine="29" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="hand#()LShuffleJava/runtime/CardPile;" />
     <nodeInfo nodeId="4161858660889772794" fileName="Player.java" startLine="35" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getScore#()I" />
@@ -261,7 +261,7 @@
     <scopeInfo nodeId="4161858660889768929" fileName="Player.java" startLine="29" startPosition="26" endLine="30" endPosition="21" />
     <scopeInfo nodeId="4161858660889772797" fileName="Player.java" startLine="35" startPosition="25" endLine="36" endPosition="22" />
     <scopeInfo nodeId="4161858660889785054" fileName="Player.java" startLine="41" startPosition="38" endLine="42" endPosition="32" />
-    <scopeInfo nodeId="1904212697479218394" fileName="Player.java" startLine="48" startPosition="28" endLine="49" endPosition="59" />
+    <scopeInfo nodeId="1904212697479218394" fileName="Player.java" startLine="48" startPosition="28" endLine="49" endPosition="26" />
     <scopeInfo nodeId="4161858660889764978" fileName="Player.java" startLine="23" startPosition="0" endLine="26" endPosition="0" />
     <scopeInfo nodeId="4161858660889768926" fileName="Player.java" startLine="29" startPosition="0" endLine="32" endPosition="0" />
     <scopeInfo nodeId="4161858660889772794" fileName="Player.java" startLine="35" startPosition="0" endLine="38" endPosition="0" />
