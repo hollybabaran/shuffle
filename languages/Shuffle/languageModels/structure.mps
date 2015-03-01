@@ -7,7 +7,7 @@
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="34" implicit="yes" />
+  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="42" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2834967828303451498" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Deck" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
@@ -971,6 +971,11 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
     <property name="name" nameId="tpck.1169194664001" value="Parameter" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6304222537138290358" resolveInfo="VariableReference" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1291148986966014861" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
+    <property name="name" nameId="tpck.1169194664001" value="NotEqualToStatement" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5565452210787642242" resolveInfo="BooleanExpression" />
   </root>
 </model>
 
