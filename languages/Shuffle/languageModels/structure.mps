@@ -972,5 +972,11 @@
     <property name="name" nameId="tpck.1169194664001" value="Parameter" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="6304222537138290358" resolveInfo="VariableReference" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6092235325267883351" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
+    <property name="name" nameId="tpck.1169194664001" value="NotEqualToStatement" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="not equal to" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5565452210787642242" resolveInfo="BooleanExpression" />
+  </root>
 </model>
 
