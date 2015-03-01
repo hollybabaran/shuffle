@@ -53,7 +53,6 @@
     <classNode dependClassName="Shuffle.behavior.NumberConstant_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Number_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.OrStatement_BehaviorDescriptor" />
-    <classNode dependClassName="Shuffle.behavior.Parameter_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Pile_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.PlayerTurnBlock_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Player_BehaviorDescriptor" />
@@ -349,12 +348,6 @@
   </dependency>
   <dependency className="Shuffle.behavior.OrStatement_BehaviorDescriptor" file="OrStatement_BehaviorDescriptor.java">
     <classNode dependClassName="Shuffle.behavior.BooleanExpression_BehaviorDescriptor" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="Shuffle.behavior.Parameter_BehaviorDescriptor" file="Parameter_BehaviorDescriptor.java">
-    <classNode dependClassName="Shuffle.behavior.VariableReference_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />

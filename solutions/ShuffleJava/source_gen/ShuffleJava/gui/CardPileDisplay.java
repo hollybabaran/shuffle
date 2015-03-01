@@ -7,6 +7,7 @@ import ShuffleJava.runtime.CardPile;
 import javax.swing.JLabel;
 import javax.swing.OverlayLayout;
 import javax.swing.ImageIcon;
+import java.awt.Dimension;
 import java.awt.Color;
 import java.awt.Graphics;
 
@@ -24,13 +25,21 @@ public class CardPileDisplay extends JPanel {
 
     ClassLoader classLoader1 = getClass().getClassLoader();
     this.stack = new JLabel(new ImageIcon(classLoader1.getResource("stack.png")));
+    this.stack.setAlignmentX(1.0f);
+    this.stack.setAlignmentY(1.0f);
+
+
     ClassLoader classLoader2 = getClass().getClassLoader();
     this.empty = new JLabel(new ImageIcon(classLoader2.getResource("nothing.png")));
+    this.empty.setAlignmentX(1.0f);
+    this.empty.setAlignmentY(1.0f);
+
+    // <node> 
+    this.setPreferredSize(new Dimension(this.stack.getIcon().getIconWidth(), this.stack.getIcon().getIconHeight()));
 
     this.setBackground(new Color(21, 67, 31));
 
     this.add(this.empty);
-
   }
 
 
@@ -41,19 +50,24 @@ public class CardPileDisplay extends JPanel {
 
 
 
-  public void update() {
+  public void update(Graphics g) {
     this.removeAll();
     if (this.cascading == false) {
       if (this.pile.size() > 0) {
+
         this.add(this.stack);
+        this.stack.paintComponents(g);
+
         CardButton topcard = new CardButton(this.pile.getTopCard());
         topcard.setFaceup(this.pile.isFaceup());
+        topcard.setAlignmentX(1.0f);
+        topcard.setAlignmentY(1.0f);
         this.add(topcard);
-        System.out.println("we have a stacked pile");
+        topcard.paintComponent(g);
 
       } else {
         this.add(this.empty);
-        System.out.println("we have an empty pile");
+        this.empty.paint(g);
       }
     } else {
       // cascade 
@@ -64,9 +78,9 @@ public class CardPileDisplay extends JPanel {
 
 
   public void paintComponent(Graphics g) {
-    this.update();
-    this.setVisible(true);
     super.paintComponent(g);
+    this.update(g);
+    this.setVisible(true);
   }
 
 

@@ -23,7 +23,7 @@ public class CardButton extends JButton {
     ClassLoader classLoader = getClass().getClassLoader();
     iconFacedown = new ImageIcon(classLoader.getResource(imageFacedown));
     iconFaceup = new ImageIcon(classLoader.getResource(imageFaceup));
-    this.setPreferredSize(new Dimension(this.iconFaceup.getIconWidth(), this.iconFaceup.getIconHeight()));
+    this.setMaximumSize(new Dimension(this.iconFaceup.getIconWidth(), this.iconFaceup.getIconHeight()));
     this.faceup = false;
   }
 
@@ -46,8 +46,7 @@ public class CardButton extends JButton {
 
 
   public void paintComponent(Graphics g) {
-    this.update();
     super.paintComponent(g);
-    System.out.println("we painted a card");
+    this.update();
   }
 }

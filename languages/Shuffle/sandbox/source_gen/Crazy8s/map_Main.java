@@ -115,8 +115,8 @@ gameState.strings.put(gameState.strings.get("currentSuit"),options.get(popup.sho
       // Perform Player turn code 
 boolean cardPlayed = false;
 gameState.booleans.put("cardPlayed",false);
-CardPile __Pile3275currentCard= new CardPile(gameState.currentPlayer().hand());
-for (Card currentCard : __Pile3275currentCard.getArrayList()){
+CardPile __Pile6534currentCard= new CardPile(gameState.currentPlayer().hand());
+for (Card currentCard : __Pile6534currentCard.getArrayList()){
       if(gameState.booleans.get("cardPlayed") == false){
       if(currentCard.getRank() == gameState.strings.get("currentRank") || currentCard.getSuit() == gameState.strings.get("currentSuit")){
       
