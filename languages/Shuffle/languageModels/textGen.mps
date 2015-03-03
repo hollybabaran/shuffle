@@ -178,7 +178,7 @@
     </node>
   </root>
   <root type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="6796815332555043151" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.Number" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
     <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="ffsp.1721387915554939518" resolveInfo="NumPlayers" />
     <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="6796815332555043152" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6796815332555043153" nodeInfo="sn">
