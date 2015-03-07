@@ -7,10 +7,12 @@ public class Player {
   private CardPile hand;
   private int id;
   private int score;
+  private boolean human;
 
 
   public Player(int id) {
     this.id = id;
+    this.human = (id == 0 ? true : false);
     // <node> 
     // <node> 
     // <node> 
@@ -34,6 +36,12 @@ public class Player {
 
   public int getScore() {
     return this.score;
+  }
+
+
+
+  public boolean isHuman() {
+    return this.human;
   }
 
 

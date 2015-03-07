@@ -65,6 +65,14 @@ public class GameState {
 
 
 
+  public void clearSelectionsOnPiles() {
+    for (CardPile cardpile : this.cardPiles.values()) {
+      cardpile.clearSelection();
+    }
+  }
+
+
+
   @Override
   public String toString() {
     return "CurrentPlayer is:" + currentPlayer + 1 + "of " + playerList.size() + " number of players";

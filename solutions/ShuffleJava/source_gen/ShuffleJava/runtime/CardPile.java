@@ -6,9 +6,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class CardPile {
+
   private ArrayList<Card> pile;
   private boolean faceup;
   private String name;
+  private int maxSelectionSize;
+  private ArrayList<Card> selection;
+
 
   public CardPile(String name) {
     pile = new ArrayList<Card>();
@@ -105,6 +109,74 @@ public class CardPile {
 
   public int size() {
     return pile.size();
+  }
+
+
+
+  public boolean isSelectable() {
+    return (this.size() != 0 ? true : false);
+  }
+
+
+
+  public void setSelectable(boolean b) {
+    this.maxSelectionSize = (b ? pile.size() : 0);
+  }
+
+
+
+  public void setSelectable(int size) {
+    this.maxSelectionSize = size;
+  }
+
+
+
+  /**
+   * Adds a card to the selection card collection - this is done when the player selects a card
+   */
+  private void addSelection(Card card) {
+    if (selection.size() < maxSelectionSize) {
+      this.selection.add(card);
+      card.setSelected(true);
+    }
+  }
+
+
+
+  /**
+   * Removes card from the selection card collection - this is done when the player unselects a card
+   */
+  private void removeSelection(Card card) {
+    this.selection.remove(card);
+    card.setSelected(false);
+  }
+
+
+
+  public void toggleSelection(Card c) {
+    if (this.selection.contains(c)) {
+      removeSelection(c);
+    } else {
+      addSelection(c);
+    }
+  }
+
+
+
+  public ArrayList<Card> getSelection() {
+    return selection;
+  }
+
+
+
+  public void clearSelection() {
+    if (this.selection != null) {
+      for (Card c : this.selection) {
+        c.setSelected(false);
+      }
+      this.selection.clear();
+    }
+    this.maxSelectionSize = 0;
   }
 
 
