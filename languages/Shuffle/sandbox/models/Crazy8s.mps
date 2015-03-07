@@ -840,7 +840,12 @@
         </node>
         <node role="pile" roleId="ffsp.5144139994148159655" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="5144139994148420469" nodeInfo="ng">
           <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="5144139994148420460" nodeInfo="ng" />
-          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="5144139994148420481" nodeInfo="ng" />
+          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="5144139994149813571" nodeInfo="ng" />
+        </node>
+      </node>
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Disallow" typeId="ffsp.5144139994149540014" id="5144139994149813593" nodeInfo="ng">
+        <node role="pile" roleId="ffsp.5144139994149540209" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="5144139994149813606" nodeInfo="ng">
+          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="317224616453922260" resolveInfo="middlePile" />
         </node>
       </node>
     </node>
