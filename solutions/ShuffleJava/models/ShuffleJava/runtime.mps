@@ -2192,8 +2192,8 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7714697523649451160" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="7714697523649451158" nodeInfo="nn">
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7714697523648802552" resolveInfo="pause" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7714697523649453115" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="2" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7714697523651324977" nodeInfo="nn">
+              <property name="value" nameId="tpee.1068580320021" value="1" />
             </node>
           </node>
         </node>
@@ -2375,8 +2375,8 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7714697523649459219" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.LocalMethodCall" typeId="tpee.7812454656619025412" id="7714697523649459217" nodeInfo="nn">
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="7714697523648802552" resolveInfo="pause" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7714697523650070794" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="2" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7714697523651324923" nodeInfo="nn">
+              <property name="value" nameId="tpee.1068580320021" value="1" />
             </node>
           </node>
         </node>
