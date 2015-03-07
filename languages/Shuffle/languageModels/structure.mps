@@ -1039,7 +1039,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
     <property name="name" nameId="tpck.1169194664001" value="Selection" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="selection" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5144139994150387347" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2719425773106586486" resolveInfo="dotOperation" />
     </node>

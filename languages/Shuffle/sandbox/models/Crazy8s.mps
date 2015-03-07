@@ -289,13 +289,12 @@
         <property name="displayType" nameId="ffsp.162709756679410976" value="stacked" />
         <property name="vertical" nameId="ffsp.8960773502389131208" value="1" />
         <property name="faceup" nameId="ffsp.2824091188896369485" value="false" />
-        <property name="horizontal" nameId="ffsp.8960773502389131203" value="E" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Pile" typeId="ffsp.3854676059697422932" id="317224616453922260" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="middlePile" />
         <property name="faceup" nameId="ffsp.2824091188896369485" value="true" />
         <property name="vertical" nameId="ffsp.8960773502389131208" value="2" />
-        <property name="horizontal" nameId="ffsp.8960773502389131203" value="E" />
+        <property name="horizontal" nameId="ffsp.8960773502389131203" value="A" />
         <property name="displayType" nameId="ffsp.162709756679410976" value="stacked" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Pile" typeId="ffsp.3854676059697422932" id="939205226783575771" nodeInfo="ng">

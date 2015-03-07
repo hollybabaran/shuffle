@@ -10,15 +10,19 @@
         <property name="name" nameId="tpck.1169194664001" value="__deck" />
         <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7714697523646215439" nodeInfo="ng">
           <property name="rank" nameId="ffsp.2834967828304050224" value="two" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
         </node>
         <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7714697523646215543" nodeInfo="ng">
           <property name="rank" nameId="ffsp.2834967828304050224" value="three" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
         </node>
         <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7714697523646215546" nodeInfo="ng">
           <property name="rank" nameId="ffsp.2834967828304050224" value="four" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
         </node>
         <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7714697523646215550" nodeInfo="ng">
           <property name="rank" nameId="ffsp.2834967828304050224" value="five" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
         </node>
         <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7714697523646215555" nodeInfo="ng">
           <property name="rank" nameId="ffsp.2834967828304050224" value="two" />
@@ -109,6 +113,7 @@
         <property name="horizontal" nameId="ffsp.8960773502389131203" value="E" />
         <property name="vertical" nameId="ffsp.8960773502389131208" value="3" />
         <property name="displayType" nameId="ffsp.162709756679410976" value="stacked" />
+        <property name="faceup" nameId="ffsp.2824091188896369485" value="false" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7714697523646234948" nodeInfo="ng" />
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7714697523646215648" nodeInfo="ng" />

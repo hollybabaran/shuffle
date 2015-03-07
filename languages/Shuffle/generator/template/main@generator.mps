@@ -348,7 +348,7 @@
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8187829176103803797" resolveInfo="gameState" />
                     </node>
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7714697523647661642" nodeInfo="nn">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3eno.7714697523647358577" resolveInfo="clearSelectionsOnPiles" />
+                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3eno.7714697523647358577" resolveInfo="clearHumanPlayerState" />
                     </node>
                   </node>
                 </node>
