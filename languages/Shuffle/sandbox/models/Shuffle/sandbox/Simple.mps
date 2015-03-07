@@ -134,6 +134,11 @@
           <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="7714697523646251476" nodeInfo="ng" />
         </node>
       </node>
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Allow" typeId="ffsp.5144139994143192935" id="7714697523650496025" nodeInfo="ng">
+        <node role="pile" roleId="ffsp.5144139994143234770" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7714697523650496035" nodeInfo="ng">
+          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7714697523646250921" resolveInfo="middlePile" />
+        </node>
+      </node>
     </node>
     <node role="winConditionBlock" roleId="ffsp.5722923068946478778" type="ffsp.WinConditionBlock" typeId="ffsp.5160494638280864183" id="7714697523646178843" nodeInfo="ng">
       <node role="condition" roleId="ffsp.150989085052711727" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="7714697523646251540" nodeInfo="ng">
