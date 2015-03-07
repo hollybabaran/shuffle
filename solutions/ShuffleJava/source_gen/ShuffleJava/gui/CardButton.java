@@ -5,6 +5,9 @@ package ShuffleJava.gui;
 import javax.swing.JButton;
 import ShuffleJava.runtime.Card;
 import javax.swing.ImageIcon;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
+import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Graphics;
 
@@ -16,6 +19,10 @@ public class CardButton extends JButton {
   private ImageIcon iconFacedown;
   private ImageIcon iconFaceup;
 
+  public static int DEFAULT_HEIGHT;
+  public static int DEFAULT_WIDTH;
+
+
 
   public CardButton(Card card) {
     this.card = card;
@@ -23,8 +30,34 @@ public class CardButton extends JButton {
     ClassLoader classLoader = getClass().getClassLoader();
     iconFacedown = new ImageIcon(classLoader.getResource(imageFacedown));
     iconFaceup = new ImageIcon(classLoader.getResource(imageFaceup));
-    this.setMaximumSize(new Dimension(this.iconFaceup.getIconWidth(), this.iconFaceup.getIconHeight()));
+    this.setMaximumSize(this.getDimension());
     this.faceup = false;
+    this.addMouseListener(new MouseListener() {
+      public void mouseClicked(MouseEvent p0) {
+        setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+      }
+
+      public void mousePressed(MouseEvent p0) {
+      }
+
+      public void mouseReleased(MouseEvent p0) {
+      }
+
+      public void mouseEntered(MouseEvent p0) {
+        CardButton.this.getTopLevelAncestor().setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+
+      }
+
+      public void mouseExited(MouseEvent p0) {
+        CardButton.this.getTopLevelAncestor().setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+      }
+    });
+  }
+
+
+
+  public Dimension getDimension() {
+    return new Dimension(this.iconFaceup.getIconWidth(), this.iconFaceup.getIconHeight());
   }
 
 
