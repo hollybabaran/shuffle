@@ -1999,7 +1999,7 @@
             </node>
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="8340020017785031968" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="(GameState gameState){" />
+            <property name="value" nameId="2omo.1237305576108" value="(){" />
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="8340020017785032257" nodeInfo="ng" />
         </node>
