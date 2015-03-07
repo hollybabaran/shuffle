@@ -4,6 +4,22 @@ package ShuffleJava.runtime;
 
 
 public abstract class CardPileUtil {
+
+
+
+  /**
+   * This move called to move selected cards from pile1 to pile2
+   */
+  public static void move(CardPile pile1, CardPile pile2) {
+    for (Card c : pile1.getSelection()) {
+      pile1.removeCard(c);
+      pile2.add(c);
+    }
+    pile1.clearSelection();
+  }
+
+
+
   public static void move(int num, CardPile pile1, CardPile pile2) {
     for (int i = 0; i < num; i++) {
       Card c;

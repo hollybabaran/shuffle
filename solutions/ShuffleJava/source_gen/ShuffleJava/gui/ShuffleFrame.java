@@ -19,6 +19,7 @@ public class ShuffleFrame {
   public final JPanel canvas = new JPanel(new GridLayout(10, 10), true);
   public JScrollPane console;
   private JTextPane consoleText;
+  public Grid grid;
 
 
   public void printToConsole(Object... text) {
@@ -66,6 +67,8 @@ public class ShuffleFrame {
     canvas.setVisible(true);
     canvas.setOpaque(false);
     background.add(canvas);
+
+    grid = new Grid(canvas);
 
     canvas.invalidate();
     frame.setVisible(true);

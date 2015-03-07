@@ -359,26 +359,6 @@
           <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="7797185839636851702" nodeInfo="ng" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Popup" typeId="ffsp.4653797233416144760" id="94506569031857840" nodeInfo="ng">
-        <node role="variable" roleId="ffsp.4653797233416726098" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7657862373422056458" nodeInfo="ng">
-          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="5964992898508185281" resolveInfo="currentSuit" />
-        </node>
-        <node role="message" roleId="ffsp.4653797233416199712" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="94506569031857842" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="What is your favourite number?" />
-        </node>
-        <node role="options" roleId="ffsp.4653797233416199976" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="94506569031857975" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1" />
-        </node>
-        <node role="options" roleId="ffsp.4653797233416199976" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="94506569031858001" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="2" />
-        </node>
-        <node role="options" roleId="ffsp.4653797233416199976" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="94506569031858022" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="3" />
-        </node>
-        <node role="options" roleId="ffsp.4653797233416199976" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="94506569031858056" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="4" />
-        </node>
-      </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="94506569031550913" nodeInfo="ng" />
     </node>
     <node role="computerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.ComputerTurnBlock" typeId="ffsp.465858332974170854" id="4319553422816035320" nodeInfo="ng">
