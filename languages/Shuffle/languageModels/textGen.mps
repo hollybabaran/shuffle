@@ -2164,5 +2164,18 @@
       </node>
     </node>
   </root>
+  <root type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="7501337804225774672" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
+    <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="ffsp.5144139994150387084" resolveInfo="Selection" />
+    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="7501337804225776569" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7501337804225776570" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="7501337804225794924" nodeInfo="nn">
+          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="7501337804225794944" nodeInfo="ng">
+            <property name="value" nameId="2omo.1237305576108" value="getSelection()" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
 </model>
 
