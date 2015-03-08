@@ -2,7 +2,7 @@
 <model modelUID="r:3f46e443-6da0-44b4-a9ff-d704d9890ddc(Shuffle.sandbox.Simple)">
   <persistence version="8" />
   <language namespace="360f183c-7a9f-4f9b-a4f3-c572eede364e(Shuffle)" />
-  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="42" implicit="yes" />
+  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="43" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="7714697523646178086" nodeInfo="ng">
     <node role="setupBlock" roleId="ffsp.5722923068946478776" type="ffsp.SetupBlock" typeId="ffsp.5160494638280649077" id="7714697523646178840" nodeInfo="ng">
@@ -116,7 +116,6 @@
         <property name="faceup" nameId="ffsp.2824091188896369485" value="false" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7714697523646234948" nodeInfo="ng" />
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7714697523646215648" nodeInfo="ng" />
     </node>
     <node role="computerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.ComputerTurnBlock" typeId="ffsp.465858332974170854" id="7714697523646178841" nodeInfo="ng">
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="7714697523646251056" nodeInfo="ng">
@@ -137,11 +136,6 @@
         <node role="pile" roleId="ffsp.5144139994143234770" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="7714697523646251191" nodeInfo="ng">
           <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="7714697523646251182" nodeInfo="ng" />
           <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="7714697523646251476" nodeInfo="ng" />
-        </node>
-      </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Allow" typeId="ffsp.5144139994143192935" id="7714697523650496025" nodeInfo="ng">
-        <node role="pile" roleId="ffsp.5144139994143234770" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7714697523650496035" nodeInfo="ng">
-          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7714697523646250921" resolveInfo="middlePile" />
         </node>
       </node>
     </node>

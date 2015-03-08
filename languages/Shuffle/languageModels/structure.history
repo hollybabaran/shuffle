@@ -252,5 +252,11 @@
     </dependencies>
     <rename id="ffsp.8340020017782161955" type="CHILD" from="returnStatement" to="returnStatement1" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="42" />
+    </dependencies>
+    <rename id="ffsp.7501337804229938774" type="CONCEPT" from="T" to="ToMove" />
+  </StructureModification>
 </history>
 
