@@ -1621,7 +1621,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6265495446096542598" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="5567602624660637618" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="5567602624660637816" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="frame.printToConsole(" />
+            <property name="value" nameId="2omo.1237305576108" value="frame.console.printToConsole(" />
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="5567602624660641281" nodeInfo="ng">
             <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5567602624660645102" nodeInfo="nn">
