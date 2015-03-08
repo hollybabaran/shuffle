@@ -1048,17 +1048,17 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
     <property name="name" nameId="tpck.1169194664001" value="CCDisplayType" />
     <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="162709756679418748" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="&quot;hidden&quot;" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="hidden" />
-    </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="162709756679418749" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="&quot;stacked&quot;" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="stacked" />
       <property name="externalValue" nameId="tpce.1083923523172" value="stacked" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="162709756679418752" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="&quot;cascading&quot;" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="&quot;cascading&quot;" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="cascading" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="cascading" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="162709756679418748" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="hidden" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="hidden" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7501337804229937804" nodeInfo="ig">
