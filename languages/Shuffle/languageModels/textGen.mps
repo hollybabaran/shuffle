@@ -355,7 +355,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="162709756685114545" nodeInfo="nn" />
         <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="7501337804241684821" nodeInfo="nn">
           <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="7501337804241685506" nodeInfo="nn">
-            <property name="text" nameId="tpee.6329021646629104958" value="Create the appropiate type of PileDisplay according to syntax, then add " />
+            <property name="text" nameId="tpee.6329021646629104958" value="Create the appropiate type of PileDisplay according to syntax, then add them to the canvas through the frame" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="162709756679444485" nodeInfo="nn">
@@ -368,12 +368,6 @@
                 <link role="property" roleId="tp25.1138056395725" targetNodeId="ffsp.162709756679410976" resolveInfo="displayType" />
               </node>
             </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7501337804241872629" nodeInfo="nn">
-          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7501337804241872632" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="type" />
-            <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="7501337804241872627" nodeInfo="in" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="162709756685146927" nodeInfo="nn" />
