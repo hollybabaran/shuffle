@@ -2,8 +2,9 @@
 <model modelUID="r:3f46e443-6da0-44b4-a9ff-d704d9890ddc(Shuffle.sandbox.Simple)">
   <persistence version="8" />
   <language namespace="360f183c-7a9f-4f9b-a4f3-c572eede364e(Shuffle)" />
-  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="43" implicit="yes" />
+  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="44" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="7714697523646178086" nodeInfo="ng">
     <node role="functions" roleId="ffsp.8340020017782161297" type="ffsp.FunctionDefinition" typeId="ffsp.8340020017781900658" id="7501337804236015175" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="canPlay" />
@@ -14,6 +15,12 @@
       </node>
     </node>
     <node role="setupBlock" roleId="ffsp.5722923068946478776" type="ffsp.SetupBlock" typeId="ffsp.5160494638280649077" id="7714697523646178840" nodeInfo="ng">
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="7501337804238306194" nodeInfo="ng">
+        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="7501337804238306246" nodeInfo="nn">
+          <property name="text" nameId="tpee.6329021646629104958" value="this is a comment" />
+        </node>
+      </node>
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7501337804238518109" nodeInfo="ng" />
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Deck" typeId="ffsp.2834967828303451498" id="7714697523646215399" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="__deck" />
         <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7714697523646215439" nodeInfo="ng">
