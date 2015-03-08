@@ -2,7 +2,7 @@
 <model modelUID="r:3f46e443-6da0-44b4-a9ff-d704d9890ddc(Shuffle.sandbox.Simple)">
   <persistence version="8" />
   <language namespace="360f183c-7a9f-4f9b-a4f3-c572eede364e(Shuffle)" />
-  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="43" implicit="yes" />
+  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="44" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="7714697523646178086" nodeInfo="ng">
     <node role="setupBlock" roleId="ffsp.5722923068946478776" type="ffsp.SetupBlock" typeId="ffsp.5160494638280649077" id="7714697523646178840" nodeInfo="ng">
@@ -112,7 +112,7 @@
         <property name="name" nameId="tpck.1169194664001" value="middlePile" />
         <property name="horizontal" nameId="ffsp.8960773502389131203" value="E" />
         <property name="vertical" nameId="ffsp.8960773502389131208" value="3" />
-        <property name="displayType" nameId="ffsp.162709756679410976" value="stacked" />
+        <property name="displayType" nameId="ffsp.162709756679410976" value="hidden" />
         <property name="faceup" nameId="ffsp.2824091188896369485" value="false" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7714697523646234948" nodeInfo="ng" />
