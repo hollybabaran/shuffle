@@ -5,6 +5,14 @@
   <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="43" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="7714697523646178086" nodeInfo="ng">
+    <node role="functions" roleId="ffsp.8340020017782161297" type="ffsp.FunctionDefinition" typeId="ffsp.8340020017781900658" id="7501337804236015175" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="canPlay" />
+      <node role="body" roleId="ffsp.8340020017782266822" type="ffsp.ReturnStatement" typeId="ffsp.8340020017782162052" id="7501337804236968090" nodeInfo="ng">
+        <node role="boolean" roleId="ffsp.8340020017782162085" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="7501337804236968096" nodeInfo="ng">
+          <property name="value" nameId="ffsp.2003306783291602631" value="true" />
+        </node>
+      </node>
+    </node>
     <node role="setupBlock" roleId="ffsp.5722923068946478776" type="ffsp.SetupBlock" typeId="ffsp.5160494638280649077" id="7714697523646178840" nodeInfo="ng">
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Deck" typeId="ffsp.2834967828303451498" id="7714697523646215399" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="__deck" />
@@ -133,33 +141,26 @@
     </node>
     <node role="playerTurnBlock" roleId="ffsp.1790098884239327234" type="ffsp.PlayerTurnBlock" typeId="ffsp.1790098884239250114" id="7714697523646178842" nodeInfo="ng">
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Allow" typeId="ffsp.5144139994143192935" id="7714697523646251178" nodeInfo="ng">
-        <node role="pile" roleId="ffsp.5144139994143234770" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="7501337804232441701" nodeInfo="ng">
-          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="7714697523646251182" nodeInfo="ng" />
-          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="7501337804232441740" nodeInfo="ng" />
+        <node role="pile" roleId="ffsp.5144139994143234770" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="7501337804235858412" nodeInfo="ng">
+          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="7501337804235858370" nodeInfo="ng" />
+          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="7501337804235858424" nodeInfo="ng" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.WaitForPlayer" typeId="ffsp.7501337804229937804" id="7501337804234185884" nodeInfo="ng">
-        <node role="expression" roleId="ffsp.7501337804230073635" type="ffsp.OrStatement" typeId="ffsp.7881733640606387386" id="7501337804235601156" nodeInfo="ng">
-          <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.ToMove" typeId="ffsp.7501337804229938774" id="7501337804235601195" nodeInfo="ng">
-            <node role="selection" roleId="ffsp.7501337804230072938" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="7501337804235601273" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="7501337804235601234" nodeInfo="ng" />
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="7501337804235601315" nodeInfo="ng" />
-            </node>
-            <node role="pile" roleId="ffsp.7501337804230072940" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7501337804235601327" nodeInfo="ng">
-              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7714697523646250921" resolveInfo="middlePile" />
-            </node>
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.WaitForPlayer" typeId="ffsp.7501337804229937804" id="7501337804235858442" nodeInfo="ng">
+        <node role="expression" roleId="ffsp.7501337804230073635" type="ffsp.ToMoveCheck" typeId="ffsp.7501337804235854819" id="7501337804236015163" nodeInfo="ng">
+          <node role="selectedPile" roleId="ffsp.7501337804235855654" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="7501337804236186969" nodeInfo="ng">
+            <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="7501337804236186959" nodeInfo="ng" />
+            <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="7501337804236186984" nodeInfo="ng" />
           </node>
-          <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.ToMove" typeId="ffsp.7501337804229938774" id="7501337804235601508" nodeInfo="ng">
-            <node role="selection" roleId="ffsp.7501337804230072938" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7501337804235601565" nodeInfo="ng">
-              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7714697523646250921" resolveInfo="middlePile" />
-            </node>
-            <node role="pile" roleId="ffsp.7501337804230072940" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="7501337804235601681" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="7501337804235601620" nodeInfo="ng" />
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="7501337804235601745" nodeInfo="ng" />
-            </node>
+          <node role="pile" roleId="ffsp.7501337804235855656" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7501337804236186997" nodeInfo="ng">
+            <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7714697523646250921" resolveInfo="middlePile" />
+          </node>
+          <node role="function" roleId="ffsp.7501337804235855659" type="ffsp.FunctionCall" typeId="ffsp.7501337804236030156" id="7501337804236186955" nodeInfo="ng">
+            <link role="definition" roleId="ffsp.7501337804236030235" targetNodeId="7501337804236015175" resolveInfo="canPlay" />
           </node>
         </node>
       </node>
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7501337804235859764" nodeInfo="ng" />
     </node>
     <node role="winConditionBlock" roleId="ffsp.5722923068946478778" type="ffsp.WinConditionBlock" typeId="ffsp.5160494638280864183" id="7714697523646178843" nodeInfo="ng">
       <node role="condition" roleId="ffsp.150989085052711727" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="7714697523646251540" nodeInfo="ng">
