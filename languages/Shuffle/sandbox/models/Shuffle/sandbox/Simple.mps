@@ -287,7 +287,7 @@
         <property name="name" nameId="tpck.1169194664001" value="middlePile" />
         <property name="horizontal" nameId="ffsp.8960773502389131203" value="E" />
         <property name="vertical" nameId="ffsp.8960773502389131208" value="3" />
-        <property name="displayType" nameId="ffsp.162709756679410976" value="cascading" />
+        <property name="displayType" nameId="ffsp.162709756679410976" value="stacked" />
         <property name="faceup" nameId="ffsp.2824091188896369485" value="true" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7714697523646234948" nodeInfo="ng" />
