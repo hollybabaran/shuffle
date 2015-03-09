@@ -11,7 +11,7 @@ public class ValidMove {
   private boolean moved;
 
 
-  public ValidMove(String firstPile, String secondPile, int size, String function) {
+  public ValidMove(String firstPile, String secondPile, String function) {
     this.firstPile = firstPile;
     this.secondPile = secondPile;
     this.function = function;

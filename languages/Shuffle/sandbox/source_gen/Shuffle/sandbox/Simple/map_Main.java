@@ -50,7 +50,7 @@ gameState.setNumberPlayers(4);__deck.shuffle();
     CardPileUtil.move(2, __deck, gameState.player(3).hand());
     CardPileUtil.move(2, __deck, gameState.player(4).hand());
 CardPile middlePile = new CardPile("middlePile", false);
-HiddenPileDisplay middlePile_disp = new HiddenPileDisplay(middlePile);
+StackedPileDisplay middlePile_disp = new StackedPileDisplay(middlePile);
 frame.getCanvas().addShuffleComponent(middlePile_disp,"E",3);
 gameState.cardPiles.put("middlePile",middlePile);
 

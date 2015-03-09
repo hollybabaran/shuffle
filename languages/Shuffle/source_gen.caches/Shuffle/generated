@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-7wmw31xcsc71czr4vh757afrnu08qlb">
+<dependencies version="2" modelHash="cr3zofra9j7p16u29fhmat0fss5qtq8">
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
-  <dep model="r:8a91b938-6f8a-4cf5-9175-3a13fc608fe6(Shuffle.editor)" hash="clj2vhvzuiwqdvtmm7pqwt7po13yk23" />
+  <dep model="r:8a91b938-6f8a-4cf5-9175-3a13fc608fe6(Shuffle.editor)" hash="-1f9z8brg2nv416t3c6lhzokiyfkm39k" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
-  <dep model="r:b57e8ebe-29cf-4b39-86c1-3d625dfafc54(Shuffle.typesystem)" hash="z7d02bpq1pm7z4veuwuzaeiu99ehd9" />
+  <dep model="r:b57e8ebe-29cf-4b39-86c1-3d625dfafc54(Shuffle.typesystem)" hash="-26rz794ci4rrmv22xlmpkbd7ufdu55w" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <common dependsOnNodes="true">
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />

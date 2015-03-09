@@ -134,8 +134,8 @@ gameState.cardPiles.get("middlePile").setSelectable(false);
         // computer player code 
 boolean cardPlayed = false;
 gameState.booleans.put("cardPlayed",false);
-CardPile __Pile1302currentCard= new CardPile(gameState.currentPlayer().hand());
-for (Card currentCard : __Pile1302currentCard.getArrayList()){
+CardPile __Pile7274currentCard= new CardPile(gameState.currentPlayer().hand());
+for (Card currentCard : __Pile7274currentCard.getArrayList()){
         if(gameState.booleans.get("cardPlayed") == false){
         if(currentCard.getRank() == gameState.strings.get("currentRank") || currentCard.getSuit() == gameState.strings.get("currentSuit")){
         
@@ -229,8 +229,8 @@ else if(gameState.currentPlayer().hand().size() > 1 && currentCard.getRank() == 
   }
 
 public static boolean canPlay(){
-CardPile __Pile448card= new CardPile(gameState.currentPlayer().hand().getSelection());
-for (Card card : __Pile448card.getArrayList()){
+CardPile __Pile9440card= new CardPile(gameState.currentPlayer().hand().getSelection());
+for (Card card : __Pile9440card.getArrayList()){
   if(card.getRank()!=gameState.strings.get("currentRank") || card.getSuit()!=gameState.strings.get("currentSuit") || card.getRank()!="eight"){
   return false;
 

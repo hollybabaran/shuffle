@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-17ww4qxb53q9gpardl46n71koq8aa7m">
+<dependencies version="2" modelHash="-2cllsj8lcez5b5vi7irrjskbnk01042">
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
@@ -12,7 +12,7 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="CardPile.java" />
   </source>
-  <source id="6162892231914596317" name="Player" hash="-ageq4y3lx80yil1f1sjm3i8vbhjo98">
+  <source id="6162892231914596317" name="Player" hash="-3fkqme1yrr9qqpnra65hd94vfuqrjbv">
     <file name="Player.java" />
   </source>
   <source id="6162892231914596383" name="Card" hash="-9tna8ricwr8futmesb0487bcchresau">
@@ -21,7 +21,7 @@
   <source id="1472781009440827330" name="CardPileUtil" hash="33cw1p3ih27r8zew3c4a35llyhny6lt">
     <file name="CardPileUtil.java" />
   </source>
-  <source id="1747264128837885076" name="GameState" hash="5sr87xxww8l4iqcd4matlzg288nwwgk">
+  <source id="1747264128837885076" name="GameState" hash="-4m6uqqwehbncmmd0x3q6qifs0z0gpgk">
     <file name="GameState.java" />
   </source>
   <source id="1904212697478843359" name="Printer" hash="-e2ywi818l70dafrkfyl04apj0966b9w">
@@ -30,7 +30,7 @@
   <source id="2678928131163821319" name="ShuffleException" hash="676woyva81nc4h2rst8080ujnn2yicl">
     <file name="ShuffleException.java" />
   </source>
-  <source id="7714697523651564469" name="ValidMove" hash="-9m37krxh6spnugpolr3vyp1ipwjz5sa">
+  <source id="7714697523651564469" name="ValidMove" hash="-4k6waqpfccolejyqfpoxa2vq82pm9g5">
     <file name="ValidMove.java" />
   </source>
 </dependencies>

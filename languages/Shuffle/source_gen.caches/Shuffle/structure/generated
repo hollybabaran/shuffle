@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="anko4btgzd3v04mv82o4dula17wd24i">
+<dependencies version="2" modelHash="1c0rx4tnh92uiev5typhddmoxtlm5xs">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
@@ -10,7 +10,7 @@
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" hash="efpygk1iagsrvh0j1nroncwiyw07vp1" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-8chtguhcvj45cjy0bx3xiqekte2lox7" />
-  <common hash="ejfjeppbj9v5lrlfex3ll1j440dj4g0" dependsOnNodes="true">
+  <common hash="1h63rz4ectegbobxh5z80w62lofunqd" dependsOnNodes="true">
     <dep root="1291148986966014861" />
     <dep root="1298433529544597390" />
     <dep root="1415725632945178473" />
@@ -79,6 +79,9 @@
     <dep root="7181767954433034087" />
     <dep root="7501337804229937804" />
     <dep root="7501337804229938774" />
+    <dep root="7501337804235854819" />
+    <dep root="7501337804236030156" />
+    <dep root="7501337804237190121" />
     <dep root="7674520359934846973" />
     <dep root="7674520359936137193" />
     <dep root="7674520359936346144" />
@@ -240,6 +243,9 @@
     <file name="CCDisplayType_PropertySupport.java" />
   </source>
   <source id="7501337804229937804" name="WaitForPlayer" hash="ch7jb5msqije0jwptj6vjf0enhpidd7" />
-  <source id="7501337804229938774" name="ToMove" hash="4jzoq6m81ociv0mgk8fxoucofnp9ycw" />
+  <source id="7501337804229938774" name="ToMove" hash="-5ee62m2myajspz5t2elmnbvvpnkguhb" />
+  <source id="7501337804235854819" name="ToMoveCheck" hash="-cypej65rz3v82j449cmv7d10r1sssud" />
+  <source id="7501337804236030156" name="FunctionCall" hash="-8x14a4sa5u3dlij7kbq396avjc722qx" />
+  <source id="7501337804237190121" name="Comment" hash="-asvt0cqfzn18yh552kakm63mplk3zfs" />
 </dependencies>
 

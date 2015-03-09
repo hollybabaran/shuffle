@@ -15,7 +15,7 @@ public class GameState {
   public HashMap<String, String> strings = new HashMap<String, String>();
   public HashMap<String, Boolean> booleans = new HashMap<String, Boolean>();
 
-  private ArrayList<ValidMove> validMoves;
+  private ArrayList<ValidMove> validMoves = new ArrayList<ValidMove>();
 
 
   public GameState() {
@@ -83,6 +83,20 @@ public class GameState {
     if (this.validMoves != null) {
       this.validMoves.clear();
     }
+  }
+
+
+
+  public ValidMove getValidMove(CardPile firstPile, CardPile secondPile, String functionName) {
+    for (ValidMove v : this.validMoves) {
+      if (v.getFirstPile().equals(firstPile.getName()) && v.getSecondPile().equals(secondPile.getName()) && v.getFunctionName().equals(functionName)) {
+        return v;
+      }
+    }
+    ValidMove validMove = new ValidMove(firstPile.getName(), secondPile.getName(), functionName);
+    this.validMoves.add(validMove);
+    return validMove;
+
   }
 
 
