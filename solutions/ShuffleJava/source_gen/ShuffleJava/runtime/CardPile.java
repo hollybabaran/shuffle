@@ -33,6 +33,12 @@ public class CardPile {
 
 
 
+  public CardPile(ArrayList<Card> arrayList) {
+    this.pile = arrayList;
+  }
+
+
+
   public String getName() {
     return this.name;
   }
@@ -120,13 +126,28 @@ public class CardPile {
 
 
   public void setSelectable(boolean b) {
-    this.maxSelectionSize = (b ? pile.size() : 0);
+    if (b) {
+      this.maxSelectionSize = pile.size();
+      setCardsSelectable(true);
+    } else {
+      this.maxSelectionSize = 0;
+      setCardsSelectable(false);
+    }
   }
 
 
 
   public void setSelectable(int size) {
     this.maxSelectionSize = size;
+    setCardsSelectable(true);
+  }
+
+
+
+  private void setCardsSelectable(boolean b) {
+    for (Card c : this.pile) {
+      c.setSelectable(b);
+    }
   }
 
 
@@ -153,11 +174,11 @@ public class CardPile {
 
 
 
-  public void toggleSelection(Card c) {
-    if (this.selection.contains(c)) {
-      removeSelection(c);
+  public void toggleSelection(int indexOfCard) {
+    if (this.selection.contains(pile.get(indexOfCard))) {
+      removeSelection(pile.get(indexOfCard));
     } else {
-      addSelection(c);
+      addSelection(pile.get(indexOfCard));
     }
   }
 
@@ -173,6 +194,7 @@ public class CardPile {
     if (this.selection != null) {
       for (Card c : this.selection) {
         c.setSelected(false);
+        c.setSelectable(false);
       }
       this.selection.clear();
     }

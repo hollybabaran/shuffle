@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="ShuffleJava.gui_2.Canvas" file="Canvas.java">
+    <classNode dependClassName="ShuffleJava.gui_2.ShuffleDraw" />
+    <classNode dependClassName="ShuffleJava.gui_2.ShuffleMouseEvents" />
+    <classNode dependClassName="ShuffleJava.gui_2.StackedPileDisplay" />
+    <classNode dependClassName="ShuffleJava.runtime.GameState" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.awt.image.BufferedImage" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.ClassLoader" />
+    <classNode dependClassName="java.lang.Float" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="javax.imageio.ImageIO" />
+    <classNode extendsClassName="javax.swing.JPanel" />
+  </dependency>
+  <dependency className="ShuffleJava.gui_2.CardDisplay" file="CardDisplay.java">
+    <classNode dependClassName="ShuffleJava.runtime.Card" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.awt.image.BufferedImage" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.ClassLoader" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="javax.imageio.ImageIO" />
+    <classNode extendsClassName="ShuffleJava.gui_2.ShuffleDraw" />
+  </dependency>
+  <dependency className="ShuffleJava.gui_2.CardPileDisplay" file="CardPileDisplay.java">
+    <classNode dependClassName="ShuffleJava.runtime.CardPile" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.lang.ClassLoader" />
+  </dependency>
+  <dependency className="ShuffleJava.gui_2.CascadingPileDisplay" file="CascadingPileDisplay.java">
+    <classNode dependClassName="ShuffleJava.gui_2.CardDisplay" />
+    <classNode dependClassName="ShuffleJava.runtime.Card" />
+    <classNode dependClassName="ShuffleJava.runtime.CardPile" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode extendsClassName="ShuffleJava.gui_2.CardPileDisplay" />
+    <classNode extendsClassName="ShuffleJava.gui_2.ShuffleDraw" />
+  </dependency>
+  <dependency className="ShuffleJava.gui_2.Console" file="Console.java">
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="javax.swing.JScrollPane" />
+    <classNode dependClassName="javax.swing.JTextPane" />
+    <classNode extendsClassName="javax.swing.JPanel" />
+  </dependency>
+  <dependency className="ShuffleJava.gui_2.HiddenPileDisplay" file="HiddenPileDisplay.java">
+    <classNode dependClassName="ShuffleJava.runtime.CardPile" />
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode extendsClassName="ShuffleJava.gui_2.CardPileDisplay" />
+    <classNode extendsClassName="ShuffleJava.gui_2.ShuffleDraw" />
+  </dependency>
+  <dependency className="ShuffleJava.gui_2.Popup" file="Popup.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="javax.swing.JFrame" />
+    <classNode dependClassName="javax.swing.JOptionPane" />
+  </dependency>
+  <dependency className="ShuffleJava.gui_2.ShuffleDraw" file="ShuffleDraw.java">
+    <classNode dependClassName="java.awt.Graphics" />
+  </dependency>
+  <dependency className="ShuffleJava.gui_2.ShuffleFrame" file="ShuffleFrame.java">
+    <classNode dependClassName="ShuffleJava.gui_2.Canvas" />
+    <classNode dependClassName="ShuffleJava.gui_2.Console" />
+    <classNode dependClassName="ShuffleJava.runtime.GameState" />
+    <classNode dependClassName="java.lang.ClassLoader" />
+    <classNode dependClassName="javax.swing.BoxLayout" />
+    <classNode dependClassName="javax.swing.JFrame" />
+  </dependency>
+  <dependency className="ShuffleJava.gui_2.ShuffleMouseEvents" file="ShuffleMouseEvents.java">
+    <classNode dependClassName="ShuffleJava.gui_2.CardPileDisplay" />
+    <classNode dependClassName="ShuffleJava.gui_2.ShuffleDraw" />
+    <classNode dependClassName="ShuffleJava.runtime.CardPileUtil" />
+    <classNode dependClassName="ShuffleJava.runtime.GameState" />
+    <classNode dependClassName="java.awt.Component" />
+    <classNode dependClassName="java.awt.Cursor" />
+    <classNode dependClassName="java.awt.event.MouseEvent" />
+    <classNode dependClassName="java.awt.event.MouseWheelEvent" />
+    <classNode dependClassName="java.lang.Float" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode extendsClassName="java.awt.event.MouseAdapter" />
+  </dependency>
+  <dependency className="ShuffleJava.gui_2.StackedPileDisplay" file="StackedPileDisplay.java">
+    <classNode dependClassName="ShuffleJava.gui_2.CardDisplay" />
+    <classNode dependClassName="ShuffleJava.runtime.CardPile" />
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.awt.image.BufferedImage" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="javax.imageio.ImageIO" />
+    <classNode extendsClassName="ShuffleJava.gui_2.CardPileDisplay" />
+    <classNode extendsClassName="ShuffleJava.gui_2.ShuffleDraw" />
+  </dependency>
+</dependenciesRoot>
+

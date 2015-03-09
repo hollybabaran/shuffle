@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="-1n8i5dm92cmfi7dv1r71baye8nij3zx">
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
+  <common hash="-cv9z2te6w54865d5gasj2czw1wkq3sd" dependsOnNodes="true">
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+  </common>
+  <source id="3619922401759128673" name="ShuffleFrame" hash="-36aqura8t9p3dosavr85fcp2jz8x9gj">
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <file name="ShuffleFrame.java" />
+  </source>
+  <source id="3619922401759130026" name="Canvas" hash="-4dq6cc8yb9679lwfn8xeiau5yb51nwa">
+    <file name="Canvas.java" />
+  </source>
+  <source id="7501337804239398819" name="ShuffleDraw" hash="-6li8ztdffup1jn2y2rrd7rrrh2cgy2w">
+    <file name="ShuffleDraw.java" />
+  </source>
+  <source id="7501337804239217555" name="Console" hash="-fy8pst32n1ie46el8e5ys5h48cqfvv">
+    <file name="Console.java" />
+  </source>
+  <source id="7501337804239802872" name="ShuffleMouseEvents" hash="-5a98r8p5nf4u09txoikfxhwg5p3q617">
+    <file name="ShuffleMouseEvents.java" />
+  </source>
+  <source id="1320406746498730016" name="HiddenPileDisplay" hash="1hvrv9jthfih31qv96p0oqs9mvoshxi">
+    <file name="HiddenPileDisplay.java" />
+  </source>
+  <source id="1320406746497901522" name="CascadingPileDisplay" hash="-7iuy0b9ffsvcjhe577g9if42b5esc1l">
+    <file name="CascadingPileDisplay.java" />
+  </source>
+  <source id="3488828158364571431" name="CardPileDisplay" hash="-1g564xh3zymt7efuxsj0ypvepejtlxh">
+    <file name="CardPileDisplay.java" />
+  </source>
+  <source id="1320406746497776223" name="StackedPileDisplay" hash="bweb25it48e8mhl80pbiv6h24cfknyq">
+    <file name="StackedPileDisplay.java" />
+  </source>
+  <source id="1320406746499165060" name="CardDisplay" hash="-c0zrrjb2or2nw76oy0gpo5q2lt83r0p">
+    <file name="CardDisplay.java" />
+  </source>
+  <source id="7501337804242882693" name="Popup" hash="-9rzsm03nxftttbvodalmq9beomreimn">
+    <file name="Popup.java" />
+  </source>
+</dependencies>
+

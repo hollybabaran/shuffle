@@ -4,6 +4,8 @@ package ShuffleJava.runtime;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.lang.reflect.Method;
+import ShuffleJava.gui_2.ShuffleFrame;
 
 public class GameState {
   private ArrayList<Player> playerList;
@@ -13,9 +15,12 @@ public class GameState {
   public HashMap<String, String> strings = new HashMap<String, String>();
   public HashMap<String, Boolean> booleans = new HashMap<String, Boolean>();
 
+  private ArrayList<ValidMove> validMoves;
+
 
   public GameState() {
     playerList = new ArrayList<Player>();
+    validMoves = new ArrayList<ValidMove>();
     currentPlayer = 0;
   }
 
@@ -23,12 +28,18 @@ public class GameState {
 
   public void setNumberPlayers(int numberPlayers) throws ShuffleException {
     System.out.println(numberPlayers + " players are in this game");
-    if (numberPlayers < 1) {
+    if (numberPlayers < 1 || numberPlayers > 4) {
       throw new ShuffleException("Invalid number of players: " + numberPlayers);
     }
     for (int x = 0; x < numberPlayers; x++) {
       playerList.add(new Player(x));
     }
+  }
+
+
+
+  public ArrayList<Player> getPlayers() {
+    return playerList;
   }
 
 
@@ -65,9 +76,69 @@ public class GameState {
 
 
 
-  public void clearSelectionsOnPiles() {
+  public void clearHumanPlayerState() {
     for (CardPile cardpile : this.cardPiles.values()) {
       cardpile.clearSelection();
+    }
+    if (this.validMoves != null) {
+      this.validMoves.clear();
+    }
+  }
+
+
+
+  public boolean isValidPileDrag(String firstPile, String secondPile) {
+    for (ValidMove v : validMoves) {
+      if (firstPile.equals(v.getFirstPile()) && secondPile.equals(v.getSecondPile()) && passesCheck(v.getFunctionName())) {
+        return true;
+
+      }
+    }
+    return false;
+  }
+
+
+
+  public void setValidMoveFlag(String firstPile, String secondPile) {
+    for (ValidMove v : validMoves) {
+      if (firstPile.equals(v.getFirstPile()) && secondPile.equals(v.getSecondPile())) {
+        v.setMoved(true);
+      }
+    }
+  }
+
+
+
+  private boolean passesCheck(String function) {
+    // return boolean function from mains value 
+    Boolean value = false;
+    try {
+      Class clas = Class.forName("crazy8s.map_Main");
+      Method method = clas.getMethod(function);
+      value = ((Boolean) method.invoke(clas));
+    } catch (Exception exception) {
+    }
+    return value;
+  }
+
+
+
+  private void addValidMove(ValidMove v) {
+    this.validMoves.add(v);
+  }
+
+
+
+  private void removeValidMove(ValidMove v) {
+    this.validMoves.remove(v);
+  }
+
+
+
+  public void addHandDisplaysToFrame(ShuffleFrame frame) {
+
+    for (int i = 0; i < playerList.size(); i++) {
+      frame.getCanvas().addShufflComponent(playerList.get(i).getHandDisplay(), playerList.size(), i + 1);
     }
   }
 
