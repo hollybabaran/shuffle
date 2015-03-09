@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Crazy8s.map_Main" file="map_Main.java">
+  <dependency className="Shuffle.sandbox.Simple.map_Main" file="map_Main.java">
     <classNode dependClassName="ShuffleJava.gui_2.CascadingPileDisplay" />
     <classNode dependClassName="ShuffleJava.gui_2.HiddenPileDisplay" />
     <classNode dependClassName="ShuffleJava.gui_2.ShuffleFrame" />

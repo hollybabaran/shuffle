@@ -12,6 +12,18 @@
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="Shuffle.behavior.AllowWithSize_BehaviorDescriptor" file="AllowWithSize_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.Command_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="Shuffle.behavior.Allow_BehaviorDescriptor" file="Allow_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.Command_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="Shuffle.behavior.AndStatement_BehaviorDescriptor" file="AndStatement_BehaviorDescriptor.java">
     <classNode dependClassName="Shuffle.behavior.BooleanExpression_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
@@ -20,6 +32,8 @@
   </dependency>
   <dependency className="Shuffle.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
     <classNode dependClassName="Shuffle.behavior.AllKeyword_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.AllowWithSize_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.Allow_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.AndStatement_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Block_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Boolean_BehaviorDescriptor" />
@@ -35,6 +49,7 @@
     <classNode dependClassName="Shuffle.behavior.DeckReference_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Deck_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.DefaultDeck_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.Disallow_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.ElseIfStatement_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.EmptyLine_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.EqualToStatement_BehaviorDescriptor" />
@@ -49,6 +64,7 @@
     <classNode dependClassName="Shuffle.behavior.Move_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.NotEqualToStatement_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.NotStatement_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.NumHumanPlayers_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.NumPlayers_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.NumberConstant_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Number_BehaviorDescriptor" />
@@ -62,6 +78,7 @@
     <classNode dependClassName="Shuffle.behavior.RankObj_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.RankOp_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.ReturnStatement_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.Selection_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.SetupBlock_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.ShuffleDeck_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.Size_BehaviorDescriptor" />
@@ -69,9 +86,11 @@
     <classNode dependClassName="Shuffle.behavior.SuitLiteral_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.SuitObj_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.SuitOp_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.ToMove_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.TopCard_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.VariableAssignment_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.VariableReference_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.WaitForPlayer_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.WhileStatement_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.WinConditionBlock_BehaviorDescriptor" />
     <classNode dependClassName="Shuffle.behavior.addExpression_BehaviorDescriptor" />
@@ -209,6 +228,12 @@
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="Shuffle.behavior.Disallow_BehaviorDescriptor" file="Disallow_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.Command_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="Shuffle.behavior.ElseIfStatement_BehaviorDescriptor" file="ElseIfStatement_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -326,10 +351,20 @@
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="Shuffle.behavior.NumPlayers_BehaviorDescriptor" file="NumPlayers_BehaviorDescriptor.java">
+  <dependency className="Shuffle.behavior.NumHumanPlayers_BehaviorDescriptor" file="NumHumanPlayers_BehaviorDescriptor.java">
     <classNode dependClassName="Shuffle.behavior.Command_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.setupCommand_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="Shuffle.behavior.NumPlayers_BehaviorDescriptor" file="NumPlayers_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.Command_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.setupCommand_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="Shuffle.behavior.NumberConstant_BehaviorDescriptor" file="NumberConstant_BehaviorDescriptor.java">
@@ -415,6 +450,14 @@
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="Shuffle.behavior.Selection_BehaviorDescriptor" file="Selection_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.ShuffleExpression_BehaviorDescriptor" />
+    <classNode dependClassName="Shuffle.behavior.dotOperation_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="Shuffle.behavior.SetupBlock_BehaviorDescriptor" file="SetupBlock_BehaviorDescriptor.java">
     <classNode dependClassName="Shuffle.behavior.CommandBlock_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
@@ -473,6 +516,12 @@
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="Shuffle.behavior.ToMove_BehaviorDescriptor" file="ToMove_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.ShuffleExpression_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="Shuffle.behavior.TopCard_BehaviorDescriptor" file="TopCard_BehaviorDescriptor.java">
     <classNode dependClassName="Shuffle.behavior.dotOperation_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
@@ -499,6 +548,12 @@
   </dependency>
   <dependency className="Shuffle.behavior.VariableReference_BehaviorDescriptor" file="VariableReference_BehaviorDescriptor.java">
     <classNode dependClassName="Shuffle.behavior.AbstractVariableReference_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="Shuffle.behavior.WaitForPlayer_BehaviorDescriptor" file="WaitForPlayer_BehaviorDescriptor.java">
+    <classNode dependClassName="Shuffle.behavior.Command_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
@@ -558,5 +613,6 @@
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="Shuffle.behavior.setupCommand_BehaviorDescriptor" file="setupCommand_BehaviorDescriptor.java" />
 </dependenciesRoot>
 

@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="8ohkw72rl0tsfapjz1pekvqc9i9rx3e">
+<dependencies version="2" modelHash="-17ww4qxb53q9gpardl46n71koq8aa7m">
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
-  <common hash="-qnb75cp3w5vexnxp7gkrpm5gtk1wqi" dependsOnNodes="true">
+  <common hash="-6097dhgp1r5xityxm5n3dc7b8wbf303" dependsOnNodes="true">
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   </common>
-  <source id="6162892231914596193" name="CardPile" hash="-45ps3totebn7236nw12pa6eq2pw30i4">
+  <source id="6162892231914596193" name="CardPile" hash="-9xcouvtxxj67o4ax9tikhzf4gzllr3n">
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="CardPile.java" />
   </source>
-  <source id="6162892231914596317" name="Player" hash="51fszsvfz1j2alm00ymbc1jp1xe4p53">
+  <source id="6162892231914596317" name="Player" hash="-ageq4y3lx80yil1f1sjm3i8vbhjo98">
     <file name="Player.java" />
   </source>
-  <source id="6162892231914596383" name="Card" hash="-clstfxlm58g56yyagtyr73ux3imme5w">
+  <source id="6162892231914596383" name="Card" hash="-9tna8ricwr8futmesb0487bcchresau">
     <file name="Card.java" />
   </source>
-  <source id="1472781009440827330" name="CardPileUtil" hash="ddlkxdysar2t3b8qexoux2s8qbgfltl">
+  <source id="1472781009440827330" name="CardPileUtil" hash="33cw1p3ih27r8zew3c4a35llyhny6lt">
     <file name="CardPileUtil.java" />
   </source>
-  <source id="1747264128837885076" name="GameState" hash="c4crm7ahlmgc1fna0i2d1t9emmghhih">
+  <source id="1747264128837885076" name="GameState" hash="5sr87xxww8l4iqcd4matlzg288nwwgk">
     <file name="GameState.java" />
   </source>
-  <source id="1904212697478843359" name="Printer" hash="8lxnuutmf87ft61v6adc9asjte4kcb1">
+  <source id="1904212697478843359" name="Printer" hash="-e2ywi818l70dafrkfyl04apj0966b9w">
     <file name="Printer.java" />
   </source>
-  <source id="2678928131163821319" name="ShuffleException" hash="-4vsnqowy7j3hz9b1ei4tkcxr3wp6u71">
+  <source id="2678928131163821319" name="ShuffleException" hash="676woyva81nc4h2rst8080ujnn2yicl">
     <file name="ShuffleException.java" />
+  </source>
+  <source id="7714697523651564469" name="ValidMove" hash="-9m37krxh6spnugpolr3vyp1ipwjz5sa">
+    <file name="ValidMove.java" />
   </source>
 </dependencies>
 

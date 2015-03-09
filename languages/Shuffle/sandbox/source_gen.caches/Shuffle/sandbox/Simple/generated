@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="vplzez8bmxyvpzqiupagls7s95932q">
+<dependencies version="2" modelHash="de6yypk510s7mdcoerimqf0cz9057rj">
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
-  <common hash="1w6bzdk75bd1ps92qmhfjbg3zxxdb6f" dependsOnNodes="true">
+  <common hash="arq6pmvbxp2m9hauza8oxhi5dwg42q7" dependsOnNodes="true">
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   </common>
-  <source id="8960773502388261241" name="ShuffleFrame" hash="7t297pr0lock24q9bmfng9lgi70jycw">
+  <source id="7714697523646178086" hash="-bqkhi5vy248ozd9xut64jjj171t0jz1">
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-    <file name="ShuffleFrame.java" />
-  </source>
-  <source id="8960773502389956726" name="Grid" hash="3fnfqpnls3ihl93cxshqml9pm0nacno">
-    <file name="Grid.java" />
-  </source>
-  <source id="2620082582375565807" name="CardButton" hash="-5gd7920jxn1hg1bn49gd82t7m7wzo4k">
-    <file name="CardButton.java" />
-  </source>
-  <source id="3488828158364571431" name="CardPileDisplay" hash="c0s3zpc7wzlgd54kurranfn9via9mq8">
-    <file name="CardPileDisplay.java" />
-  </source>
-  <source id="4653797233416988659" name="Popup" hash="3plkvds35bldmvemleqoeqp4by9054w">
-    <file name="Popup.java" />
+    <file name="map_Main.java" />
   </source>
 </dependencies>
 

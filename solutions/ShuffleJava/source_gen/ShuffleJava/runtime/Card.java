@@ -8,6 +8,7 @@ public class Card {
   private final String rank;
   private final String suit;
   private boolean selected;
+  private boolean selectable;
 
 
   public Card(String rankI, String suitI) {
@@ -57,6 +58,20 @@ public class Card {
   public void setSelected(boolean s) {
     this.selected = s;
   }
+
+
+
+  public boolean isSelectable() {
+    return this.selectable;
+  }
+
+
+
+  public void setSelectable(boolean b) {
+    this.selectable = b;
+
+  }
+
 
 
 

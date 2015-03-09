@@ -88,7 +88,11 @@ public class QueriesGenerated {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), "cardNumbers", true), "Shuffle.structure.AllKeyword");
   }
 
-  public static SNode sourceNodeQuery_8187829176103803838(final SourceSubstituteMacroNodeContext _context) {
+  public static SNode sourceNodeQuery_5144139994151045845(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "playerTurnBlock", true);
+  }
+
+  public static SNode sourceNodeQuery_5144139994151046316(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "computerTurnBlock", true);
   }
 
