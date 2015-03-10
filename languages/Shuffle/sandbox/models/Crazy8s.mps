@@ -822,31 +822,42 @@
       </node>
     </node>
     <node role="playerTurnBlock" roleId="ffsp.1790098884239327234" type="ffsp.PlayerTurnBlock" typeId="ffsp.1790098884239250114" id="4374016492607110654" nodeInfo="ng">
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Allow" typeId="ffsp.5144139994143192935" id="5144139994147972670" nodeInfo="ng">
-        <node role="pile" roleId="ffsp.5144139994143234770" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="2480633097876139082" nodeInfo="ng">
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.AllowWithSize" typeId="ffsp.5144139994148159356" id="8290625116339521305" nodeInfo="ng">
+        <node role="size" roleId="ffsp.5144139994148159653" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8290625116339521338" nodeInfo="nn">
+          <property name="value" nameId="tpee.1068580320021" value="1" />
+        </node>
+        <node role="pile" roleId="ffsp.5144139994148159655" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8290625116339521997" nodeInfo="ng">
           <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="162709756679617992" resolveInfo="deck" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.AllowWithSize" typeId="ffsp.5144139994148159356" id="5144139994148420334" nodeInfo="ng">
-        <node role="size" roleId="ffsp.5144139994148159653" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5144139994148420351" nodeInfo="nn">
-          <property name="value" nameId="tpee.1068580320021" value="1" />
-        </node>
-        <node role="pile" roleId="ffsp.5144139994148159655" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="5144139994148420469" nodeInfo="ng">
-          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="5144139994148420460" nodeInfo="ng" />
-          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="5144139994149813571" nodeInfo="ng" />
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Allow" typeId="ffsp.5144139994143192935" id="8290625116339522047" nodeInfo="ng">
+        <node role="pile" roleId="ffsp.5144139994143234770" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="8290625116339522078" nodeInfo="ng">
+          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="8290625116339522069" nodeInfo="ng" />
+          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="8290625116339522090" nodeInfo="ng" />
         </node>
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.WaitForPlayer" typeId="ffsp.7501337804229937804" id="2480633097877577794" nodeInfo="ng">
-        <node role="expression" roleId="ffsp.7501337804230073635" type="ffsp.ToMoveCheck" typeId="ffsp.7501337804235854819" id="2480633097877577910" nodeInfo="ng">
-          <node role="selectedPile" roleId="ffsp.7501337804235855654" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="2480633097877577934" nodeInfo="ng">
-            <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="2480633097877577925" nodeInfo="ng" />
-            <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="2480633097877577946" nodeInfo="ng" />
+        <node role="expression" roleId="ffsp.7501337804230073635" type="ffsp.OrStatement" typeId="ffsp.7881733640606387386" id="8290625116339995912" nodeInfo="ng">
+          <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.ToMove" typeId="ffsp.7501337804229938774" id="8290625116339995951" nodeInfo="ng">
+            <node role="selection" roleId="ffsp.7501337804230072938" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8290625116339995990" nodeInfo="ng">
+              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="162709756679617992" resolveInfo="deck" />
+            </node>
+            <node role="pile" roleId="ffsp.7501337804230072940" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="8290625116339996048" nodeInfo="ng">
+              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="8290625116339996027" nodeInfo="ng" />
+              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="8290625116339996090" nodeInfo="ng" />
+            </node>
           </node>
-          <node role="pile" roleId="ffsp.7501337804235855656" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="2480633097877577958" nodeInfo="ng">
-            <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="317224616453922260" resolveInfo="middlePile" />
-          </node>
-          <node role="function" roleId="ffsp.7501337804235855659" type="ffsp.FunctionCall" typeId="ffsp.7501337804236030156" id="2480633097877577922" nodeInfo="ng">
-            <link role="definition" roleId="ffsp.7501337804236030235" targetNodeId="992247128578069672" resolveInfo="canPlay" />
+          <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.ToMoveCheck" typeId="ffsp.7501337804235854819" id="8290625116339996224" nodeInfo="ng">
+            <node role="selectedPile" roleId="ffsp.7501337804235855654" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="8290625116339996338" nodeInfo="ng">
+              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="8290625116339996299" nodeInfo="ng" />
+              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="8290625116339996380" nodeInfo="ng" />
+            </node>
+            <node role="pile" roleId="ffsp.7501337804235855656" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8290625116339996392" nodeInfo="ng">
+              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="317224616453922260" resolveInfo="middlePile" />
+            </node>
+            <node role="function" roleId="ffsp.7501337804235855659" type="ffsp.FunctionCall" typeId="ffsp.7501337804236030156" id="8290625116339996266" nodeInfo="ng">
+              <link role="definition" roleId="ffsp.7501337804236030235" targetNodeId="992247128578069672" resolveInfo="canPlay" />
+            </node>
           </node>
         </node>
       </node>
