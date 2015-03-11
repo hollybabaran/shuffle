@@ -3,7 +3,7 @@
   <persistence version="8" />
   <language namespace="360f183c-7a9f-4f9b-a4f3-c572eede364e(Shuffle)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="44" implicit="yes" />
+  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="45" implicit="yes" />
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="6780516275958117667" nodeInfo="ng">
     <node role="setupBlock" roleId="ffsp.5722923068946478776" type="ffsp.SetupBlock" typeId="ffsp.5160494638280649077" id="6780516275958117668" nodeInfo="ng">
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="6780516275959184641" nodeInfo="ng" />
