@@ -287,11 +287,9 @@
           <property name="number" nameId="ffsp.2455425859176336673" value="1" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="8329788417295689613" nodeInfo="ng" />
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.ShuffleButton" typeId="ffsp.6780516275963016114" id="8329788417296720112" nodeInfo="ng">
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="2674640898150772238" nodeInfo="ng" />
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.ShuffleButton" typeId="ffsp.6780516275963016114" id="2674640898150772423" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="done" />
-        <property name="vertical" nameId="ffsp.6780516275963027849" value="2" />
-        <property name="horizontal" nameId="ffsp.6780516275963027847" value="B" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Pile" typeId="ffsp.3854676059697422932" id="8329788417295689822" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="deck" />
@@ -307,7 +305,16 @@
         <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.AllKeyword" typeId="ffsp.7181767954433034087" id="8329788417295690204" nodeInfo="ng" />
       </node>
     </node>
-    <node role="computerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.ComputerTurnBlock" typeId="ffsp.465858332974170854" id="8329788417295680741" nodeInfo="ng" />
+    <node role="computerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.ComputerTurnBlock" typeId="ffsp.465858332974170854" id="8329788417295680741" nodeInfo="ng">
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="2674640898151594315" nodeInfo="ng">
+        <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.isClicked" typeId="ffsp.2674640898150006095" id="2674640898151594327" nodeInfo="ng">
+          <node role="button" roleId="ffsp.2674640898150017257" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="2674640898151594345" nodeInfo="ng">
+            <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="2674640898150772423" resolveInfo="done" />
+          </node>
+        </node>
+        <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="2674640898151594317" nodeInfo="ng" />
+      </node>
+    </node>
     <node role="playerTurnBlock" roleId="ffsp.1790098884239327234" type="ffsp.PlayerTurnBlock" typeId="ffsp.1790098884239250114" id="8329788417295680742" nodeInfo="ng">
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Allow" typeId="ffsp.5144139994143192935" id="8329788417297311289" nodeInfo="ng">
         <node role="pile" roleId="ffsp.5144139994143234770" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8329788417297311293" nodeInfo="ng">
@@ -317,8 +324,8 @@
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.WaitForPlayer" typeId="ffsp.7501337804229937804" id="8329788417297311345" nodeInfo="ng">
         <node role="expression" roleId="ffsp.7501337804230073635" type="ffsp.OrStatement" typeId="ffsp.7881733640606387386" id="8329788417297311389" nodeInfo="ng">
           <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.ToClick" typeId="ffsp.6780516275963637041" id="8329788417297311428" nodeInfo="ng">
-            <node role="button" roleId="ffsp.6780516275963637095" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8329788417297311464" nodeInfo="ng">
-              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="8329788417296720112" resolveInfo="done" />
+            <node role="button" roleId="ffsp.6780516275963637095" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="2674640898150772549" nodeInfo="ng">
+              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="2674640898150772423" resolveInfo="done" />
             </node>
           </node>
           <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.ToMove" typeId="ffsp.7501337804229938774" id="8329788417297311573" nodeInfo="ng">
