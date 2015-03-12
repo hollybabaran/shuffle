@@ -175,79 +175,79 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Card" />
     <property name="name" nameId="tpck.1169194664001" value="Suit" />
     <property name="memberIdentifierPolicy" nameId="tpce.1197591154882" value="derive_from_internal_value" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652961" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="spades" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
       <property name="externalValue" nameId="tpce.1083923523172" value="♠" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652962" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="♥" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="hearts" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="2" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652965" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="♣" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="clubs" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="3" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652969" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="♦" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="diamonds" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="4" />
     </node>
   </root>
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="3854676059697653018" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Card" />
     <property name="name" nameId="tpck.1169194664001" value="Rank" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653019" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="ace" />
       <property name="externalValue" nameId="tpce.1083923523172" value="A " />
+      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653020" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="2 " />
-      <property name="internalValue" nameId="tpce.1083923523171" value="two" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="2" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653023" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="3 " />
-      <property name="internalValue" nameId="tpce.1083923523171" value="three" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="3" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653027" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="4 " />
-      <property name="internalValue" nameId="tpce.1083923523171" value="four" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="4" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653032" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="5 " />
-      <property name="internalValue" nameId="tpce.1083923523171" value="five" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="5" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653038" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="6 " />
-      <property name="internalValue" nameId="tpce.1083923523171" value="six" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="6" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653045" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="7 " />
-      <property name="internalValue" nameId="tpce.1083923523171" value="seven" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="7" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653053" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="8 " />
-      <property name="internalValue" nameId="tpce.1083923523171" value="eight" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="8" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653062" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="9 " />
-      <property name="internalValue" nameId="tpce.1083923523171" value="nine" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="9" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653072" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="10" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="ten" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="10" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653083" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="J " />
-      <property name="internalValue" nameId="tpce.1083923523171" value="jack" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="11" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653095" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="Q " />
-      <property name="internalValue" nameId="tpce.1083923523171" value="queen" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="12" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653108" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="K " />
-      <property name="internalValue" nameId="tpce.1083923523171" value="king" />
+      <property name="internalValue" nameId="tpce.1083923523171" value="13" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5160494638280568420" nodeInfo="ig">

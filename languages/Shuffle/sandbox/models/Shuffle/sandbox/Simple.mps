@@ -366,6 +366,22 @@
         <property name="horizontal" nameId="ffsp.8960773502389131203" value="F" />
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="8329788417280851498" nodeInfo="ng" />
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="8329788417298106066" nodeInfo="ng" />
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Number" typeId="ffsp.7674520359934846973" id="8329788417298106403" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="five" />
+        <node role="expression" roleId="ffsp.7674520359935510780" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="8329788417298106550" nodeInfo="ng">
+          <property name="number" nameId="ffsp.2455425859176336673" value="5" />
+        </node>
+      </node>
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="8329788417298106679" nodeInfo="ng">
+        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="8329788417298106829" nodeInfo="ng" />
+        <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8329788417298106844" nodeInfo="ng">
+          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="8329788417292919290" resolveInfo="A2" />
+        </node>
+        <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8329788417298106810" nodeInfo="ng">
+          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="8329788417298106403" resolveInfo="five" />
+        </node>
+      </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="8329788417275187345" nodeInfo="ng">
         <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="8329788417275187473" nodeInfo="ng" />
         <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8329788417295662299" nodeInfo="ng">
