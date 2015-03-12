@@ -7,7 +7,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Graphics;
+import javax.swing.BorderFactory;
 
 public class Console extends JPanel {
   private int HEIGHT = 700;
@@ -25,16 +25,15 @@ public class Console extends JPanel {
     consoleText.setPreferredSize(new Dimension(WIDTH, HEIGHT));
 
     console = new JScrollPane(consoleText, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-    console = new JScrollPane();
     console.setBackground(Color.BLACK);
     console.getViewport().setBackground(Color.BLACK);
-    console.setOpaque(false);
+
+    console.setBorder(BorderFactory.createEmptyBorder());
+    consoleText.setBorder(BorderFactory.createEmptyBorder());
 
     this.add(console);
     console.setVisible(true);
-    this.add(consoleText);
     consoleText.setVisible(true);
-
 
     this.invalidate();
     this.setVisible(true);
@@ -43,19 +42,14 @@ public class Console extends JPanel {
 
 
   public void printToConsole(Object... text) {
-    String output = consoleText + "<";
+    StringBuilder sb = new StringBuilder(consoleText.getText());
+    sb.append(">");
     for (int i = 0; i < text.length; i++) {
-      output = output + text[i].toString();
+      sb.append(text[i].toString());
     }
-    output = output + "\n";
-  }
+    sb.append("\n");
+    consoleText.setText(sb.toString());
 
-
-
-  public void paintComponent(Graphics g) {
-    super.paintComponent(g);
-    this.console.paint(g);
-    this.consoleText.paint(g);
   }
 
 

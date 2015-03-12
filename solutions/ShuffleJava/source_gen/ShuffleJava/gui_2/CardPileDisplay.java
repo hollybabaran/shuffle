@@ -28,6 +28,11 @@ public abstract class CardPileDisplay {
 
 
 
+  public int getCardIndexAt(int x, int y) {
+    return -1;
+  }
+
+
 
 
 

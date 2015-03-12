@@ -7,6 +7,11 @@ import ShuffleJava.runtime.GameState;
 import javax.swing.BoxLayout;
 
 public class ShuffleFrame {
+  public static int WIDTH = 1000;
+  public static int HEIGHT = 700;
+  public static int CANVAS_WIDTH = 760;
+  public static int CANVAS_HEIGHT = 660;
+
   public final JFrame frame = new JFrame("Shuffle");
   public Canvas canvas;
   public Console console;
@@ -21,7 +26,7 @@ public class ShuffleFrame {
 
   public ShuffleFrame(GameState g) {
     frame.pack();
-    frame.setSize(1000, 700);
+    frame.setSize(WIDTH, HEIGHT);
     frame.setLocationRelativeTo(null);
     frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.X_AXIS));
 
@@ -31,9 +36,9 @@ public class ShuffleFrame {
     frame.getContentPane().add(console);
 
     // it turns out the frame size is its OUTSIDE, so shrink canvas to fit 
-    canvas = new Canvas(760, 660, g);
+    canvas = new Canvas(CANVAS_WIDTH, CANVAS_HEIGHT, g);
     frame.getContentPane().add(canvas);
-
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
     canvas.invalidate();
