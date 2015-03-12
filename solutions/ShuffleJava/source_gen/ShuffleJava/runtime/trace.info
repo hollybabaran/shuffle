@@ -96,175 +96,194 @@
     <nodeInfo nodeId="3998867066255422417" fileName="GameState.java" startLine="14" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="cardPiles" />
     <nodeInfo nodeId="3998867066255428697" fileName="GameState.java" startLine="15" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="strings" />
     <nodeInfo nodeId="3998867066255434731" fileName="GameState.java" startLine="16" startPosition="0" endLine="17" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="booleans" />
-    <nodeInfo nodeId="7714697523651870691" fileName="GameState.java" startLine="18" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="validMoves" />
-    <nodeInfo nodeId="6952526287832983912" fileName="GameState.java" startLine="21" startPosition="22" endLine="22" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="6828944434371997464" fileName="GameState.java" startLine="22" startPosition="41" endLine="23" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="317224616453456463" fileName="GameState.java" startLine="23" startPosition="44" endLine="24" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3401611587229597740" fileName="GameState.java" startLine="29" startPosition="75" endLine="30" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="8187829176103753178" fileName="GameState.java" startLine="31" startPosition="49" endLine="32" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
-    <nodeInfo nodeId="1747264128837952454" fileName="GameState.java" startLine="34" startPosition="45" endLine="35" endPosition="36" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="162709756686971061" fileName="GameState.java" startLine="41" startPosition="41" endLine="42" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="317224616453450788" fileName="GameState.java" startLine="47" startPosition="32" endLine="48" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="6952526287831616945" fileName="GameState.java" startLine="48" startPosition="43" endLine="49" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1747264128837887223" fileName="GameState.java" startLine="54" startPosition="33" endLine="55" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1747264128837909707" fileName="GameState.java" startLine="60" startPosition="33" endLine="61" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1211703652757706511" fileName="GameState.java" startLine="61" startPosition="60" endLine="62" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3998867066255791214" fileName="GameState.java" startLine="68" startPosition="42" endLine="69" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3998867066255810480" fileName="GameState.java" startLine="70" startPosition="47" endLine="71" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3998867066255822511" fileName="GameState.java" startLine="72" startPosition="12" endLine="73" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7714697523647442010" fileName="GameState.java" startLine="80" startPosition="55" endLine="81" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7501337804226978075" fileName="GameState.java" startLine="83" startPosition="34" endLine="84" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7501337804233017749" fileName="GameState.java" startLine="92" startPosition="151" endLine="93" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7501337804233175668" fileName="GameState.java" startLine="95" startPosition="5" endLine="96" endPosition="97" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7501337804233353848" fileName="GameState.java" startLine="96" startPosition="97" endLine="97" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7501337804233413842" fileName="GameState.java" startLine="97" startPosition="35" endLine="98" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7501337804233306568" fileName="GameState.java" startLine="98" startPosition="21" endLine="99" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523651934543" fileName="GameState.java" startLine="106" startPosition="123" endLine="107" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7501337804226371202" fileName="GameState.java" startLine="107" startPosition="20" endLine="108" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523651934565" fileName="GameState.java" startLine="110" startPosition="5" endLine="111" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7501337804241045093" fileName="GameState.java" startLine="118" startPosition="87" endLine="119" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7501337804227547370" fileName="GameState.java" startLine="126" startPosition="48" endLine="127" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7501337804228013368" fileName="GameState.java" startLine="127" startPosition="48" endLine="128" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7501337804228725431" fileName="GameState.java" startLine="129" startPosition="9" endLine="130" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7501337804228197083" fileName="GameState.java" startLine="130" startPosition="53" endLine="131" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7501337804228224609" fileName="GameState.java" startLine="131" startPosition="47" endLine="132" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7501337804228151612" fileName="GameState.java" startLine="134" startPosition="5" endLine="135" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7714697523651986463" fileName="GameState.java" startLine="140" startPosition="42" endLine="141" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523652175508" fileName="GameState.java" startLine="146" startPosition="45" endLine="147" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7501337804245914636" fileName="GameState.java" startLine="152" startPosition="58" endLine="153" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7501337804245913211" fileName="GameState.java" startLine="154" startPosition="49" endLine="155" endPosition="106" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1904212697479134303" fileName="GameState.java" startLine="162" startPosition="28" endLine="163" endPosition="102" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="3998867066255787807" fileName="GameState.java" startLine="72" startPosition="10" endLine="74" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="8187829176103647772" fileName="GameState.java" startLine="30" startPosition="68" endLine="33" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1747264128837949729" fileName="GameState.java" startLine="33" startPosition="5" endLine="36" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForStatement" />
-    <nodeInfo nodeId="162709756686960196" fileName="GameState.java" startLine="41" startPosition="0" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getPlayers#()Ljava/util/ArrayList;" />
-    <nodeInfo nodeId="1747264128837887157" fileName="GameState.java" startLine="54" startPosition="0" endLine="57" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="currentPlayer#()LShuffleJava/runtime/Player;" />
-    <nodeInfo nodeId="7714697523647428896" fileName="GameState.java" startLine="79" startPosition="39" endLine="82" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="7501337804227202417" fileName="GameState.java" startLine="82" startPosition="5" endLine="85" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7501337804233006636" fileName="GameState.java" startLine="91" startPosition="41" endLine="94" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7501337804241040307" fileName="GameState.java" startLine="117" startPosition="36" endLine="120" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7714697523651986461" fileName="GameState.java" startLine="140" startPosition="0" endLine="143" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addValidMove#(LShuffleJava/runtime/ValidMove;)V" />
-    <nodeInfo nodeId="7714697523652137926" fileName="GameState.java" startLine="146" startPosition="0" endLine="149" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="removeValidMove#(LShuffleJava/runtime/ValidMove;)V" />
-    <nodeInfo nodeId="7511151326109837313" fileName="GameState.java" startLine="153" startPosition="0" endLine="156" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForStatement" />
-    <nodeInfo nodeId="6952526287831611011" fileName="GameState.java" startLine="47" startPosition="0" endLine="51" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="player#(I)LShuffleJava/runtime/Player;" />
-    <nodeInfo nodeId="1747264128837908312" fileName="GameState.java" startLine="60" startPosition="0" endLine="64" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="incrementPlayer#()V" />
-    <nodeInfo nodeId="7714697523651934541" fileName="GameState.java" startLine="105" startPosition="36" endLine="109" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="1904212697479127373" fileName="GameState.java" startLine="161" startPosition="0" endLine="165" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toString#()Ljava/lang/String;" />
-    <nodeInfo nodeId="1747264128837886619" fileName="GameState.java" startLine="21" startPosition="0" endLine="26" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="GameState#()V" />
-    <nodeInfo nodeId="7501337804233000825" fileName="GameState.java" startLine="90" startPosition="95" endLine="95" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="7501337804241036007" fileName="GameState.java" startLine="116" startPosition="69" endLine="121" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="7714697523651934539" fileName="GameState.java" startLine="104" startPosition="71" endLine="110" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="7501337804228040163" fileName="GameState.java" startLine="128" startPosition="26" endLine="134" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
-    <nodeInfo nodeId="7511151326109806079" fileName="GameState.java" startLine="152" startPosition="0" endLine="158" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addHandDisplaysToFrame#(LShuffleJava/gui_2/ShuffleFrame;)V" />
-    <nodeInfo nodeId="3998867066255762498" fileName="GameState.java" startLine="67" startPosition="44" endLine="74" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7501337804240951224" fileName="GameState.java" startLine="116" startPosition="0" endLine="123" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setValidMoveFlag#(Ljava/lang/String;Ljava/lang/String;)V" />
-    <nodeInfo nodeId="7714697523647358577" fileName="GameState.java" startLine="79" startPosition="0" endLine="87" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="clearHumanPlayerState#()V" />
-    <nodeInfo nodeId="1747264128837886728" fileName="GameState.java" startLine="29" startPosition="0" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setNumberPlayers#(I)V" />
-    <nodeInfo nodeId="3998867066255528742" fileName="GameState.java" startLine="67" startPosition="0" endLine="76" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="whichMap#(Ljava/lang/String;)Ljava/util/HashMap;" />
-    <nodeInfo nodeId="7714697523651934537" fileName="GameState.java" startLine="104" startPosition="0" endLine="113" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isValidPileDrag#(Ljava/lang/String;Ljava/lang/String;)Z" />
-    <nodeInfo nodeId="7501337804232919705" fileName="GameState.java" startLine="90" startPosition="0" endLine="101" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValidMove#(LShuffleJava/runtime/CardPile;LShuffleJava/runtime/CardPile;Ljava/lang/String;)LShuffleJava/runtime/ValidMove;" />
-    <nodeInfo nodeId="7501337804227520934" fileName="GameState.java" startLine="126" startPosition="0" endLine="137" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="passesCheck#(Ljava/lang/String;)Z" />
-    <scopeInfo nodeId="7501337804228040166" fileName="GameState.java" startLine="133" startPosition="0" endLine="133" endPosition="35">
+    <nodeInfo nodeId="6780516275965009773" fileName="GameState.java" startLine="17" startPosition="0" endLine="18" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="numbers" />
+    <nodeInfo nodeId="6780516275965096743" fileName="GameState.java" startLine="18" startPosition="0" endLine="19" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="buttons" />
+    <nodeInfo nodeId="7714697523651870691" fileName="GameState.java" startLine="20" startPosition="0" endLine="21" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="validMoves" />
+    <nodeInfo nodeId="6952526287832983912" fileName="GameState.java" startLine="23" startPosition="22" endLine="24" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6828944434371997464" fileName="GameState.java" startLine="24" startPosition="41" endLine="25" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="317224616453456463" fileName="GameState.java" startLine="25" startPosition="44" endLine="26" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3401611587229597740" fileName="GameState.java" startLine="31" startPosition="75" endLine="32" endPosition="68" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8187829176103753178" fileName="GameState.java" startLine="33" startPosition="49" endLine="34" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+    <nodeInfo nodeId="1747264128837952454" fileName="GameState.java" startLine="36" startPosition="45" endLine="37" endPosition="51" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="162709756686971061" fileName="GameState.java" startLine="43" startPosition="41" endLine="44" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="317224616453450788" fileName="GameState.java" startLine="49" startPosition="32" endLine="50" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="6952526287831616945" fileName="GameState.java" startLine="50" startPosition="43" endLine="51" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1747264128837887223" fileName="GameState.java" startLine="56" startPosition="33" endLine="57" endPosition="41" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1747264128837909707" fileName="GameState.java" startLine="62" startPosition="33" endLine="63" endPosition="60" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1211703652757706511" fileName="GameState.java" startLine="63" startPosition="60" endLine="64" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3998867066255791214" fileName="GameState.java" startLine="70" startPosition="42" endLine="71" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="3998867066255810480" fileName="GameState.java" startLine="72" startPosition="47" endLine="73" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6780516275965211802" fileName="GameState.java" startLine="74" startPosition="48" endLine="75" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6780516275965361633" fileName="GameState.java" startLine="76" startPosition="47" endLine="77" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6780516275965401245" fileName="GameState.java" startLine="78" startPosition="12" endLine="79" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6780516275965248898" fileName="GameState.java" startLine="80" startPosition="5" endLine="81" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523647442010" fileName="GameState.java" startLine="87" startPosition="55" endLine="88" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7501337804226978075" fileName="GameState.java" startLine="90" startPosition="34" endLine="91" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8329788417297043849" fileName="GameState.java" startLine="93" startPosition="49" endLine="94" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7501337804233017749" fileName="GameState.java" startLine="102" startPosition="151" endLine="103" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7501337804233175668" fileName="GameState.java" startLine="105" startPosition="5" endLine="106" endPosition="97" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2480633097875764457" fileName="GameState.java" startLine="106" startPosition="97" endLine="107" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7501337804233353848" fileName="GameState.java" startLine="107" startPosition="43" endLine="108" endPosition="35" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7501337804233413842" fileName="GameState.java" startLine="108" startPosition="35" endLine="109" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7501337804233306568" fileName="GameState.java" startLine="109" startPosition="21" endLine="110" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523651934543" fileName="GameState.java" startLine="117" startPosition="123" endLine="118" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7501337804226371202" fileName="GameState.java" startLine="118" startPosition="20" endLine="119" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523651934565" fileName="GameState.java" startLine="121" startPosition="5" endLine="122" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7501337804241045093" fileName="GameState.java" startLine="129" startPosition="87" endLine="130" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7501337804227547370" fileName="GameState.java" startLine="137" startPosition="48" endLine="138" endPosition="48" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="2480633097867042625" fileName="GameState.java" startLine="139" startPosition="25" endLine="140" endPosition="18" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7501337804228013368" fileName="GameState.java" startLine="141" startPosition="5" endLine="142" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7501337804228725431" fileName="GameState.java" startLine="143" startPosition="9" endLine="144" endPosition="53" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7501337804228197083" fileName="GameState.java" startLine="144" startPosition="53" endLine="145" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7501337804228224609" fileName="GameState.java" startLine="145" startPosition="47" endLine="146" endPosition="46" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2480633097875488405" fileName="GameState.java" startLine="147" startPosition="35" endLine="148" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2480633097877853314" fileName="GameState.java" startLine="149" startPosition="5" endLine="150" endPosition="64" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7501337804228151612" fileName="GameState.java" startLine="150" startPosition="64" endLine="151" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="7714697523651986463" fileName="GameState.java" startLine="156" startPosition="42" endLine="157" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523652175508" fileName="GameState.java" startLine="162" startPosition="45" endLine="163" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7501337804245914636" fileName="GameState.java" startLine="168" startPosition="58" endLine="169" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7501337804245913211" fileName="GameState.java" startLine="170" startPosition="49" endLine="171" endPosition="106" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1904212697479134303" fileName="GameState.java" startLine="178" startPosition="28" endLine="179" endPosition="102" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6780516275965266862" fileName="GameState.java" startLine="78" startPosition="10" endLine="80" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="8187829176103647772" fileName="GameState.java" startLine="32" startPosition="68" endLine="35" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1747264128837949729" fileName="GameState.java" startLine="35" startPosition="5" endLine="38" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForStatement" />
+    <nodeInfo nodeId="162709756686960196" fileName="GameState.java" startLine="43" startPosition="0" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getPlayers#()Ljava/util/ArrayList;" />
+    <nodeInfo nodeId="1747264128837887157" fileName="GameState.java" startLine="56" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="currentPlayer#()LShuffleJava/runtime/Player;" />
+    <nodeInfo nodeId="7714697523647428896" fileName="GameState.java" startLine="86" startPosition="39" endLine="89" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="7501337804227202417" fileName="GameState.java" startLine="89" startPosition="5" endLine="92" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="8329788417297021469" fileName="GameState.java" startLine="92" startPosition="5" endLine="95" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="7501337804233006636" fileName="GameState.java" startLine="101" startPosition="41" endLine="104" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7501337804241040307" fileName="GameState.java" startLine="128" startPosition="36" endLine="131" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2480633097867023117" fileName="GameState.java" startLine="138" startPosition="48" endLine="141" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7714697523651986461" fileName="GameState.java" startLine="156" startPosition="0" endLine="159" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addValidMove#(LShuffleJava/runtime/ValidMove;)V" />
+    <nodeInfo nodeId="7714697523652137926" fileName="GameState.java" startLine="162" startPosition="0" endLine="165" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="removeValidMove#(LShuffleJava/runtime/ValidMove;)V" />
+    <nodeInfo nodeId="7511151326109837313" fileName="GameState.java" startLine="169" startPosition="0" endLine="172" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForStatement" />
+    <nodeInfo nodeId="6952526287831611011" fileName="GameState.java" startLine="49" startPosition="0" endLine="53" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="player#(I)LShuffleJava/runtime/Player;" />
+    <nodeInfo nodeId="1747264128837908312" fileName="GameState.java" startLine="62" startPosition="0" endLine="66" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="incrementPlayer#()V" />
+    <nodeInfo nodeId="7714697523651934541" fileName="GameState.java" startLine="116" startPosition="36" endLine="120" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="1904212697479127373" fileName="GameState.java" startLine="177" startPosition="0" endLine="181" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toString#()Ljava/lang/String;" />
+    <nodeInfo nodeId="1747264128837886619" fileName="GameState.java" startLine="23" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="GameState#()V" />
+    <nodeInfo nodeId="7501337804233000825" fileName="GameState.java" startLine="100" startPosition="95" endLine="105" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="7501337804241036007" fileName="GameState.java" startLine="127" startPosition="69" endLine="132" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="7714697523651934539" fileName="GameState.java" startLine="115" startPosition="71" endLine="121" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="7511151326109806079" fileName="GameState.java" startLine="168" startPosition="0" endLine="174" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addHandDisplaysToFrame#(LShuffleJava/gui_2/ShuffleFrame;)V" />
+    <nodeInfo nodeId="7501337804240951224" fileName="GameState.java" startLine="127" startPosition="0" endLine="134" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setValidMoveFlag#(Ljava/lang/String;Ljava/lang/String;)V" />
+    <nodeInfo nodeId="7501337804228040163" fileName="GameState.java" startLine="142" startPosition="26" endLine="149" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="1747264128837886728" fileName="GameState.java" startLine="31" startPosition="0" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setNumberPlayers#(I)V" />
+    <nodeInfo nodeId="7714697523651934537" fileName="GameState.java" startLine="115" startPosition="0" endLine="124" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isValidPileDrag#(Ljava/lang/String;Ljava/lang/String;)Z" />
+    <nodeInfo nodeId="3998867066255762498" fileName="GameState.java" startLine="69" startPosition="44" endLine="80" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7714697523647358577" fileName="GameState.java" startLine="86" startPosition="0" endLine="97" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="clearHumanPlayerState#()V" />
+    <nodeInfo nodeId="7501337804232919705" fileName="GameState.java" startLine="100" startPosition="0" endLine="112" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getValidMove#(LShuffleJava/runtime/CardPile;LShuffleJava/runtime/CardPile;Ljava/lang/String;)LShuffleJava/runtime/ValidMove;" />
+    <nodeInfo nodeId="3998867066255528742" fileName="GameState.java" startLine="69" startPosition="0" endLine="83" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="whichMap#(Ljava/lang/String;)Ljava/util/HashMap;" />
+    <nodeInfo nodeId="7501337804227520934" fileName="GameState.java" startLine="137" startPosition="0" endLine="153" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="passesCheck#(Ljava/lang/String;)Z" />
+    <scopeInfo nodeId="8187829176103647775" fileName="GameState.java" startLine="33" startPosition="49" endLine="34" endPosition="80" />
+    <scopeInfo nodeId="1747264128837949730" fileName="GameState.java" startLine="36" startPosition="45" endLine="37" endPosition="51" />
+    <scopeInfo nodeId="162709756686960199" fileName="GameState.java" startLine="43" startPosition="41" endLine="44" endPosition="22" />
+    <scopeInfo nodeId="1747264128837887160" fileName="GameState.java" startLine="56" startPosition="33" endLine="57" endPosition="41" />
+    <scopeInfo nodeId="3998867066255762499" fileName="GameState.java" startLine="70" startPosition="42" endLine="71" endPosition="23" />
+    <scopeInfo nodeId="3998867066255777537" fileName="GameState.java" startLine="72" startPosition="47" endLine="73" endPosition="21" />
+    <scopeInfo nodeId="6780516275965211801" fileName="GameState.java" startLine="74" startPosition="48" endLine="75" endPosition="22" />
+    <scopeInfo nodeId="6780516275965229760" fileName="GameState.java" startLine="76" startPosition="47" endLine="77" endPosition="21" />
+    <scopeInfo nodeId="6780516275965266863" fileName="GameState.java" startLine="78" startPosition="12" endLine="79" endPosition="21" />
+    <scopeInfo nodeId="7714697523647428897" fileName="GameState.java" startLine="87" startPosition="55" endLine="88" endPosition="32" />
+    <scopeInfo nodeId="7501337804227202420" fileName="GameState.java" startLine="90" startPosition="34" endLine="91" endPosition="30" />
+    <scopeInfo nodeId="8329788417297021472" fileName="GameState.java" startLine="93" startPosition="49" endLine="94" endPosition="31" />
+    <scopeInfo nodeId="7501337804233006637" fileName="GameState.java" startLine="102" startPosition="151" endLine="103" endPosition="17" />
+    <scopeInfo nodeId="7501337804241040308" fileName="GameState.java" startLine="129" startPosition="87" endLine="130" endPosition="25" />
+    <scopeInfo nodeId="2480633097867023120" fileName="GameState.java" startLine="139" startPosition="25" endLine="140" endPosition="18" />
+    <scopeInfo nodeId="7501337804228040166" fileName="GameState.java" startLine="147" startPosition="0" endLine="148" endPosition="38">
       <varInfo nodeId="7501337804228040168" varName="exception" />
     </scopeInfo>
-    <scopeInfo nodeId="7501337804228040172" fileName="GameState.java" startLine="133" startPosition="35" endLine="133" endPosition="35" />
-    <scopeInfo nodeId="8187829176103647775" fileName="GameState.java" startLine="31" startPosition="49" endLine="32" endPosition="80" />
-    <scopeInfo nodeId="1747264128837949730" fileName="GameState.java" startLine="34" startPosition="45" endLine="35" endPosition="36" />
-    <scopeInfo nodeId="162709756686960199" fileName="GameState.java" startLine="41" startPosition="41" endLine="42" endPosition="22" />
-    <scopeInfo nodeId="1747264128837887160" fileName="GameState.java" startLine="54" startPosition="33" endLine="55" endPosition="41" />
-    <scopeInfo nodeId="3998867066255762499" fileName="GameState.java" startLine="68" startPosition="42" endLine="69" endPosition="23" />
-    <scopeInfo nodeId="3998867066255777537" fileName="GameState.java" startLine="70" startPosition="47" endLine="71" endPosition="21" />
-    <scopeInfo nodeId="3998867066255787808" fileName="GameState.java" startLine="72" startPosition="12" endLine="73" endPosition="22" />
-    <scopeInfo nodeId="7714697523647428897" fileName="GameState.java" startLine="80" startPosition="55" endLine="81" endPosition="32" />
-    <scopeInfo nodeId="7501337804227202420" fileName="GameState.java" startLine="83" startPosition="34" endLine="84" endPosition="30" />
-    <scopeInfo nodeId="7501337804233006637" fileName="GameState.java" startLine="92" startPosition="151" endLine="93" endPosition="17" />
-    <scopeInfo nodeId="7501337804241040308" fileName="GameState.java" startLine="118" startPosition="87" endLine="119" endPosition="25" />
-    <scopeInfo nodeId="7714697523651986462" fileName="GameState.java" startLine="140" startPosition="42" endLine="141" endPosition="27" />
-    <scopeInfo nodeId="7714697523652137929" fileName="GameState.java" startLine="146" startPosition="45" endLine="147" endPosition="30" />
-    <scopeInfo nodeId="7511151326109837314" fileName="GameState.java" startLine="154" startPosition="49" endLine="155" endPosition="106" />
-    <scopeInfo nodeId="1904212697479127376" fileName="GameState.java" startLine="162" startPosition="28" endLine="163" endPosition="102" />
-    <scopeInfo nodeId="6952526287831611014" fileName="GameState.java" startLine="47" startPosition="32" endLine="49" endPosition="34" />
-    <scopeInfo nodeId="1747264128837908315" fileName="GameState.java" startLine="60" startPosition="33" endLine="62" endPosition="64" />
-    <scopeInfo nodeId="7714697523651934542" fileName="GameState.java" startLine="106" startPosition="123" endLine="108" endPosition="0" />
-    <scopeInfo nodeId="1747264128837886622" fileName="GameState.java" startLine="21" startPosition="22" endLine="24" endPosition="22" />
-    <scopeInfo nodeId="1747264128837949729" fileName="GameState.java" startLine="33" startPosition="5" endLine="36" endPosition="5">
+    <scopeInfo nodeId="7501337804228040172" fileName="GameState.java" startLine="147" startPosition="35" endLine="148" endPosition="38" />
+    <scopeInfo nodeId="7714697523651986462" fileName="GameState.java" startLine="156" startPosition="42" endLine="157" endPosition="27" />
+    <scopeInfo nodeId="7714697523652137929" fileName="GameState.java" startLine="162" startPosition="45" endLine="163" endPosition="30" />
+    <scopeInfo nodeId="7511151326109837314" fileName="GameState.java" startLine="170" startPosition="49" endLine="171" endPosition="106" />
+    <scopeInfo nodeId="1904212697479127376" fileName="GameState.java" startLine="178" startPosition="28" endLine="179" endPosition="102" />
+    <scopeInfo nodeId="6952526287831611014" fileName="GameState.java" startLine="49" startPosition="32" endLine="51" endPosition="34" />
+    <scopeInfo nodeId="1747264128837908315" fileName="GameState.java" startLine="62" startPosition="33" endLine="64" endPosition="64" />
+    <scopeInfo nodeId="7714697523651934542" fileName="GameState.java" startLine="117" startPosition="123" endLine="119" endPosition="0" />
+    <scopeInfo nodeId="1747264128837886622" fileName="GameState.java" startLine="23" startPosition="22" endLine="26" endPosition="22" />
+    <scopeInfo nodeId="1747264128837949729" fileName="GameState.java" startLine="35" startPosition="5" endLine="38" endPosition="5">
       <varInfo nodeId="1747264128837949731" varName="x" />
     </scopeInfo>
-    <scopeInfo nodeId="162709756686960196" fileName="GameState.java" startLine="41" startPosition="0" endLine="44" endPosition="0" />
-    <scopeInfo nodeId="1747264128837887157" fileName="GameState.java" startLine="54" startPosition="0" endLine="57" endPosition="0" />
-    <scopeInfo nodeId="7714697523647428896" fileName="GameState.java" startLine="79" startPosition="39" endLine="82" endPosition="5">
+    <scopeInfo nodeId="162709756686960196" fileName="GameState.java" startLine="43" startPosition="0" endLine="46" endPosition="0" />
+    <scopeInfo nodeId="1747264128837887157" fileName="GameState.java" startLine="56" startPosition="0" endLine="59" endPosition="0" />
+    <scopeInfo nodeId="7714697523647428896" fileName="GameState.java" startLine="86" startPosition="39" endLine="89" endPosition="5">
       <varInfo nodeId="7714697523647428898" varName="cardpile" />
     </scopeInfo>
-    <scopeInfo nodeId="7501337804233000826" fileName="GameState.java" startLine="91" startPosition="41" endLine="94" endPosition="7" />
-    <scopeInfo nodeId="7501337804241036008" fileName="GameState.java" startLine="117" startPosition="36" endLine="120" endPosition="7" />
-    <scopeInfo nodeId="7501337804228040165" fileName="GameState.java" startLine="129" startPosition="9" endLine="132" endPosition="46">
+    <scopeInfo nodeId="8329788417297021469" fileName="GameState.java" startLine="92" startPosition="5" endLine="95" endPosition="5">
+      <varInfo nodeId="8329788417297021475" varName="button" />
+    </scopeInfo>
+    <scopeInfo nodeId="7501337804233000826" fileName="GameState.java" startLine="101" startPosition="41" endLine="104" endPosition="7" />
+    <scopeInfo nodeId="7501337804241036008" fileName="GameState.java" startLine="128" startPosition="36" endLine="131" endPosition="7" />
+    <scopeInfo nodeId="7501337804228040165" fileName="GameState.java" startLine="143" startPosition="9" endLine="146" endPosition="46">
       <varInfo nodeId="7501337804228725432" varName="clas" />
       <varInfo nodeId="7501337804228197084" varName="method" />
     </scopeInfo>
-    <scopeInfo nodeId="7714697523651986461" fileName="GameState.java" startLine="140" startPosition="0" endLine="143" endPosition="0">
+    <scopeInfo nodeId="7714697523651986461" fileName="GameState.java" startLine="156" startPosition="0" endLine="159" endPosition="0">
       <varInfo nodeId="7714697523651986472" varName="v" />
     </scopeInfo>
-    <scopeInfo nodeId="7714697523652137926" fileName="GameState.java" startLine="146" startPosition="0" endLine="149" endPosition="0">
+    <scopeInfo nodeId="7714697523652137926" fileName="GameState.java" startLine="162" startPosition="0" endLine="165" endPosition="0">
       <varInfo nodeId="7714697523652163636" varName="v" />
     </scopeInfo>
-    <scopeInfo nodeId="7511151326109837313" fileName="GameState.java" startLine="153" startPosition="0" endLine="156" endPosition="5">
+    <scopeInfo nodeId="7511151326109837313" fileName="GameState.java" startLine="169" startPosition="0" endLine="172" endPosition="5">
       <varInfo nodeId="7511151326109837315" varName="i" />
     </scopeInfo>
-    <scopeInfo nodeId="6952526287831611011" fileName="GameState.java" startLine="47" startPosition="0" endLine="51" endPosition="0">
+    <scopeInfo nodeId="6952526287831611011" fileName="GameState.java" startLine="49" startPosition="0" endLine="53" endPosition="0">
       <varInfo nodeId="6952526287831614168" varName="id" />
     </scopeInfo>
-    <scopeInfo nodeId="1747264128837908312" fileName="GameState.java" startLine="60" startPosition="0" endLine="64" endPosition="0" />
-    <scopeInfo nodeId="7714697523651934540" fileName="GameState.java" startLine="105" startPosition="36" endLine="109" endPosition="7" />
-    <scopeInfo nodeId="7511151326109806082" fileName="GameState.java" startLine="152" startPosition="58" endLine="156" endPosition="5" />
-    <scopeInfo nodeId="1904212697479127373" fileName="GameState.java" startLine="161" startPosition="0" endLine="165" endPosition="0" />
-    <scopeInfo nodeId="1747264128837886619" fileName="GameState.java" startLine="21" startPosition="0" endLine="26" endPosition="0" />
-    <scopeInfo nodeId="7501337804233000825" fileName="GameState.java" startLine="90" startPosition="95" endLine="95" endPosition="5">
+    <scopeInfo nodeId="1747264128837908312" fileName="GameState.java" startLine="62" startPosition="0" endLine="66" endPosition="0" />
+    <scopeInfo nodeId="7714697523651934540" fileName="GameState.java" startLine="116" startPosition="36" endLine="120" endPosition="7" />
+    <scopeInfo nodeId="7511151326109806082" fileName="GameState.java" startLine="168" startPosition="58" endLine="172" endPosition="5" />
+    <scopeInfo nodeId="1904212697479127373" fileName="GameState.java" startLine="177" startPosition="0" endLine="181" endPosition="0" />
+    <scopeInfo nodeId="1747264128837886619" fileName="GameState.java" startLine="23" startPosition="0" endLine="28" endPosition="0" />
+    <scopeInfo nodeId="7501337804233000825" fileName="GameState.java" startLine="100" startPosition="95" endLine="105" endPosition="5">
       <varInfo nodeId="7501337804233000827" varName="v" />
     </scopeInfo>
-    <scopeInfo nodeId="7501337804240951227" fileName="GameState.java" startLine="116" startPosition="69" endLine="121" endPosition="5" />
-    <scopeInfo nodeId="7501337804241036007" fileName="GameState.java" startLine="116" startPosition="69" endLine="121" endPosition="5">
+    <scopeInfo nodeId="7501337804240951227" fileName="GameState.java" startLine="127" startPosition="69" endLine="132" endPosition="5" />
+    <scopeInfo nodeId="7501337804241036007" fileName="GameState.java" startLine="127" startPosition="69" endLine="132" endPosition="5">
       <varInfo nodeId="7501337804241036009" varName="v" />
     </scopeInfo>
-    <scopeInfo nodeId="7714697523647358580" fileName="GameState.java" startLine="79" startPosition="39" endLine="85" endPosition="5" />
-    <scopeInfo nodeId="7714697523651934539" fileName="GameState.java" startLine="104" startPosition="71" endLine="110" endPosition="5">
+    <scopeInfo nodeId="7714697523651934539" fileName="GameState.java" startLine="115" startPosition="71" endLine="121" endPosition="5">
       <varInfo nodeId="7714697523651934562" varName="v" />
     </scopeInfo>
-    <scopeInfo nodeId="7511151326109806079" fileName="GameState.java" startLine="152" startPosition="0" endLine="158" endPosition="0">
+    <scopeInfo nodeId="7511151326109806079" fileName="GameState.java" startLine="168" startPosition="0" endLine="174" endPosition="0">
       <varInfo nodeId="7511151326109822450" varName="frame" />
     </scopeInfo>
-    <scopeInfo nodeId="1747264128837886731" fileName="GameState.java" startLine="29" startPosition="75" endLine="36" endPosition="5" />
-    <scopeInfo nodeId="3998867066255528745" fileName="GameState.java" startLine="67" startPosition="44" endLine="74" endPosition="5" />
-    <scopeInfo nodeId="7714697523651934538" fileName="GameState.java" startLine="104" startPosition="71" endLine="111" endPosition="17" />
-    <scopeInfo nodeId="7501337804240951224" fileName="GameState.java" startLine="116" startPosition="0" endLine="123" endPosition="0">
+    <scopeInfo nodeId="1747264128837886731" fileName="GameState.java" startLine="31" startPosition="75" endLine="38" endPosition="5" />
+    <scopeInfo nodeId="7714697523651934538" fileName="GameState.java" startLine="115" startPosition="71" endLine="122" endPosition="17" />
+    <scopeInfo nodeId="7501337804240951224" fileName="GameState.java" startLine="127" startPosition="0" endLine="134" endPosition="0">
       <varInfo nodeId="7501337804240980442" varName="firstPile" />
       <varInfo nodeId="7501337804240994323" varName="secondPile" />
     </scopeInfo>
-    <scopeInfo nodeId="7714697523647358577" fileName="GameState.java" startLine="79" startPosition="0" endLine="87" endPosition="0" />
-    <scopeInfo nodeId="1747264128837886728" fileName="GameState.java" startLine="29" startPosition="0" endLine="38" endPosition="0">
+    <scopeInfo nodeId="1747264128837886728" fileName="GameState.java" startLine="31" startPosition="0" endLine="40" endPosition="0">
       <varInfo nodeId="1747264128837947248" varName="numberPlayers" />
     </scopeInfo>
-    <scopeInfo nodeId="3998867066255528742" fileName="GameState.java" startLine="67" startPosition="0" endLine="76" endPosition="0">
-      <varInfo nodeId="3998867066255540124" varName="variable" />
-    </scopeInfo>
-    <scopeInfo nodeId="7501337804232919708" fileName="GameState.java" startLine="90" startPosition="95" endLine="99" endPosition="0">
-      <varInfo nodeId="7501337804233175669" varName="validMove" />
-    </scopeInfo>
-    <scopeInfo nodeId="7714697523651934537" fileName="GameState.java" startLine="104" startPosition="0" endLine="113" endPosition="0">
+    <scopeInfo nodeId="7714697523647358580" fileName="GameState.java" startLine="86" startPosition="39" endLine="95" endPosition="5" />
+    <scopeInfo nodeId="7714697523651934537" fileName="GameState.java" startLine="115" startPosition="0" endLine="124" endPosition="0">
       <varInfo nodeId="7714697523651934569" varName="firstPile" />
       <varInfo nodeId="7714697523651934571" varName="secondPile" />
     </scopeInfo>
-    <scopeInfo nodeId="7501337804227520937" fileName="GameState.java" startLine="126" startPosition="48" endLine="135" endPosition="17">
-      <varInfo nodeId="7501337804228013371" varName="value" />
+    <scopeInfo nodeId="7501337804232919708" fileName="GameState.java" startLine="100" startPosition="95" endLine="110" endPosition="0">
+      <varInfo nodeId="7501337804233175669" varName="validMove" />
     </scopeInfo>
-    <scopeInfo nodeId="7501337804232919705" fileName="GameState.java" startLine="90" startPosition="0" endLine="101" endPosition="0">
+    <scopeInfo nodeId="7714697523647358577" fileName="GameState.java" startLine="86" startPosition="0" endLine="97" endPosition="0" />
+    <scopeInfo nodeId="3998867066255528745" fileName="GameState.java" startLine="69" startPosition="44" endLine="81" endPosition="0" />
+    <scopeInfo nodeId="7501337804232919705" fileName="GameState.java" startLine="100" startPosition="0" endLine="112" endPosition="0">
       <varInfo nodeId="7501337804232935106" varName="firstPile" />
       <varInfo nodeId="7501337804232963040" varName="functionName" />
       <varInfo nodeId="7501337804232949007" varName="secondPile" />
     </scopeInfo>
-    <scopeInfo nodeId="7501337804227520934" fileName="GameState.java" startLine="126" startPosition="0" endLine="137" endPosition="0">
+    <scopeInfo nodeId="3998867066255528742" fileName="GameState.java" startLine="69" startPosition="0" endLine="83" endPosition="0">
+      <varInfo nodeId="3998867066255540124" varName="variable" />
+    </scopeInfo>
+    <scopeInfo nodeId="7501337804227520937" fileName="GameState.java" startLine="137" startPosition="48" endLine="151" endPosition="17">
+      <varInfo nodeId="7501337804228013371" varName="value" />
+    </scopeInfo>
+    <scopeInfo nodeId="7501337804227520934" fileName="GameState.java" startLine="137" startPosition="0" endLine="153" endPosition="0">
       <varInfo nodeId="7501337804227561947" varName="function" />
     </scopeInfo>
-    <unitInfo nodeId="1747264128837885076" fileName="GameState.java" startLine="10" startPosition="0" endLine="166" endPosition="0" unitName="ShuffleJava.runtime.GameState" />
+    <unitInfo nodeId="1747264128837885076" fileName="GameState.java" startLine="10" startPosition="0" endLine="182" endPosition="0" unitName="ShuffleJava.runtime.GameState" />
   </root>
   <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/1904212697478843359">
     <nodeInfo nodeId="6952526287832888228" fileName="Printer.java" startLine="7" startPosition="0" endLine="8" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="g" />
@@ -298,199 +317,225 @@
     <nodeInfo nodeId="5206962039409648877" fileName="CardPile.java" startLine="12" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="name" />
     <nodeInfo nodeId="5144139994144015482" fileName="CardPile.java" startLine="13" startPosition="0" endLine="14" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="maxSelectionSize" />
     <nodeInfo nodeId="5144139994144164856" fileName="CardPile.java" startLine="14" startPosition="0" endLine="15" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="selection" />
-    <nodeInfo nodeId="5165761802077073231" fileName="CardPile.java" startLine="17" startPosition="32" endLine="18" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5206962039409659704" fileName="CardPile.java" startLine="18" startPosition="33" endLine="19" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3401611587230274657" fileName="CardPile.java" startLine="20" startPosition="39" endLine="21" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="8674722826291590933" fileName="CardPile.java" startLine="25" startPosition="38" endLine="26" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="8674722826291435049" fileName="CardPile.java" startLine="27" startPosition="44" endLine="28" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="8674722826291225760" fileName="CardPile.java" startLine="29" startPosition="5" endLine="30" endPosition="38" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5206962039409665121" fileName="CardPile.java" startLine="30" startPosition="38" endLine="31" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7501337804226091006" fileName="CardPile.java" startLine="36" startPosition="46" endLine="37" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5206962039409739778" fileName="CardPile.java" startLine="42" startPosition="27" endLine="43" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="8674722826291261612" fileName="CardPile.java" startLine="48" startPosition="29" endLine="49" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="6965435806310178308" fileName="CardPile.java" startLine="54" startPosition="48" endLine="55" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5206962039409839917" fileName="CardPile.java" startLine="55" startPosition="33" endLine="56" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5206962039409843504" fileName="CardPile.java" startLine="56" startPosition="25" endLine="57" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="3401611587229874464" fileName="CardPile.java" startLine="57" startPosition="21" endLine="58" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5165761802077088846" fileName="CardPile.java" startLine="63" startPosition="30" endLine="64" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2678928131163940284" fileName="CardPile.java" startLine="69" startPosition="34" endLine="70" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1472781009440956041" fileName="CardPile.java" startLine="75" startPosition="22" endLine="76" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1472781009440956150" fileName="CardPile.java" startLine="76" startPosition="11" endLine="77" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1472781009440987645" fileName="CardPile.java" startLine="77" startPosition="34" endLine="78" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1472781009441018762" fileName="CardPile.java" startLine="78" startPosition="33" endLine="79" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2678928131163188009" fileName="CardPile.java" startLine="84" startPosition="28" endLine="85" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="2678928131163223563" fileName="CardPile.java" startLine="85" startPosition="11" endLine="86" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2678928131163258092" fileName="CardPile.java" startLine="86" startPosition="34" endLine="87" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2678928131163769663" fileName="CardPile.java" startLine="94" startPosition="29" endLine="95" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="2678928131163795308" fileName="CardPile.java" startLine="97" startPosition="5" endLine="98" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="1904212697478694324" fileName="CardPile.java" startLine="103" startPosition="25" endLine="104" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="2355677863976389042" fileName="CardPile.java" startLine="104" startPosition="47" endLine="105" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7878805613279615151" fileName="CardPile.java" startLine="110" startPosition="41" endLine="111" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="4161858660889689786" fileName="CardPile.java" startLine="116" startPosition="21" endLine="117" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5144139994145404360" fileName="CardPile.java" startLine="122" startPosition="33" endLine="123" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="7714697523651040274" fileName="CardPile.java" startLine="129" startPosition="12" endLine="130" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523651049978" fileName="CardPile.java" startLine="130" startPosition="42" endLine="131" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523651052932" fileName="CardPile.java" startLine="132" startPosition="12" endLine="133" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523651056240" fileName="CardPile.java" startLine="133" startPosition="32" endLine="134" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5144139994144102167" fileName="CardPile.java" startLine="140" startPosition="39" endLine="141" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523651034984" fileName="CardPile.java" startLine="141" startPosition="33" endLine="142" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523651016324" fileName="CardPile.java" startLine="148" startPosition="30" endLine="149" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5144139994145664173" fileName="CardPile.java" startLine="159" startPosition="46" endLine="160" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5144139994146523898" fileName="CardPile.java" startLine="160" startPosition="31" endLine="161" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5144139994144477306" fileName="CardPile.java" startLine="170" startPosition="43" endLine="171" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5144139994146527791" fileName="CardPile.java" startLine="171" startPosition="32" endLine="172" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5144139994146305888" fileName="CardPile.java" startLine="178" startPosition="57" endLine="179" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5144139994146307599" fileName="CardPile.java" startLine="180" startPosition="12" endLine="181" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5144139994144716868" fileName="CardPile.java" startLine="187" startPosition="41" endLine="188" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5144139994149103104" fileName="CardPile.java" startLine="195" startPosition="37" endLine="196" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523651074404" fileName="CardPile.java" startLine="196" startPosition="29" endLine="197" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5144139994145318267" fileName="CardPile.java" startLine="198" startPosition="7" endLine="199" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="5144139994145329492" fileName="CardPile.java" startLine="200" startPosition="5" endLine="201" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1904212697479020651" fileName="CardPile.java" startLine="207" startPosition="28" endLine="208" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="1211703652758935392" fileName="CardPile.java" startLine="208" startPosition="28" endLine="209" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="1904212697479036676" fileName="CardPile.java" startLine="209" startPosition="14" endLine="210" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-    <nodeInfo nodeId="5144139994146306476" fileName="CardPile.java" startLine="180" startPosition="10" endLine="182" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="3401611587230270775" fileName="CardPile.java" startLine="19" startPosition="21" endLine="22" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="8674722826291428385" fileName="CardPile.java" startLine="26" startPosition="33" endLine="29" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="7501337804226074056" fileName="CardPile.java" startLine="36" startPosition="0" endLine="39" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="CardPile#(Ljava/util/ArrayList;)V" />
-    <nodeInfo nodeId="5206962039409729647" fileName="CardPile.java" startLine="42" startPosition="0" endLine="45" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
-    <nodeInfo nodeId="8674722826291253034" fileName="CardPile.java" startLine="48" startPosition="0" endLine="51" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isFaceup#()Z" />
-    <nodeInfo nodeId="5165761802077087182" fileName="CardPile.java" startLine="63" startPosition="0" endLine="66" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="add#(LShuffleJava/runtime/Card;)V" />
-    <nodeInfo nodeId="2678928131163901344" fileName="CardPile.java" startLine="69" startPosition="0" endLine="72" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="removeCard#(LShuffleJava/runtime/Card;)V" />
-    <nodeInfo nodeId="2678928131163546475" fileName="CardPile.java" startLine="93" startPosition="25" endLine="96" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7878805613279607132" fileName="CardPile.java" startLine="110" startPosition="0" endLine="113" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getArrayList#()Ljava/util/ArrayList;" />
-    <nodeInfo nodeId="4161858660889686778" fileName="CardPile.java" startLine="116" startPosition="0" endLine="119" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="size#()I" />
-    <nodeInfo nodeId="5144139994143882183" fileName="CardPile.java" startLine="122" startPosition="0" endLine="125" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isSelectable#()Z" />
-    <nodeInfo nodeId="7714697523651051428" fileName="CardPile.java" startLine="132" startPosition="10" endLine="135" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="7714697523650997517" fileName="CardPile.java" startLine="147" startPosition="46" endLine="150" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="5144139994144693015" fileName="CardPile.java" startLine="187" startPosition="0" endLine="190" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelection#()Ljava/util/ArrayList;" />
-    <nodeInfo nodeId="1472781009440894672" fileName="CardPile.java" startLine="103" startPosition="0" endLine="107" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="shuffle#()V" />
-    <nodeInfo nodeId="5144139994144067896" fileName="CardPile.java" startLine="140" startPosition="0" endLine="144" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setSelectable#(I)V" />
-    <nodeInfo nodeId="5144139994145648577" fileName="CardPile.java" startLine="158" startPosition="40" endLine="162" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5144139994149095689" fileName="CardPile.java" startLine="194" startPosition="33" endLine="198" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="2678928131163108801" fileName="CardPile.java" startLine="84" startPosition="0" endLine="89" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTopCard#()LShuffleJava/runtime/Card;" />
-    <nodeInfo nodeId="2678928131163541655" fileName="CardPile.java" startLine="92" startPosition="39" endLine="97" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
-    <nodeInfo nodeId="7714697523650981677" fileName="CardPile.java" startLine="147" startPosition="0" endLine="152" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setCardsSelectable#(Z)V" />
-    <nodeInfo nodeId="5144139994146298169" fileName="CardPile.java" startLine="177" startPosition="48" endLine="182" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="6965435806310178305" fileName="CardPile.java" startLine="54" startPosition="0" endLine="60" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="CardPile#(Ljava/lang/String;Z)V" />
-    <nodeInfo nodeId="1472781009440946493" fileName="CardPile.java" startLine="75" startPosition="0" endLine="81" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="draw#()LShuffleJava/runtime/Card;" />
-    <nodeInfo nodeId="1904212697479007423" fileName="CardPile.java" startLine="206" startPosition="0" endLine="212" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toString#()Ljava/lang/String;" />
-    <nodeInfo nodeId="5165761802077073032" fileName="CardPile.java" startLine="17" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="CardPile#(Ljava/lang/String;)V" />
-    <nodeInfo nodeId="7714697523651038110" fileName="CardPile.java" startLine="128" startPosition="40" endLine="135" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="5144139994144454236" fileName="CardPile.java" startLine="167" startPosition="0" endLine="174" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="removeSelection#(LShuffleJava/runtime/Card;)V" />
-    <nodeInfo nodeId="5144139994146272420" fileName="CardPile.java" startLine="177" startPosition="0" endLine="184" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toggleSelection#(I)V" />
-    <nodeInfo nodeId="7714697523647901043" fileName="CardPile.java" startLine="193" startPosition="32" endLine="200" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="8674722826291209624" fileName="CardPile.java" startLine="25" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="CardPile#(LShuffleJava/runtime/CardPile;)V" />
-    <nodeInfo nodeId="2678928131163496193" fileName="CardPile.java" startLine="92" startPosition="0" endLine="100" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="checkCard#(LShuffleJava/runtime/Card;)Z" />
-    <nodeInfo nodeId="5144139994143949148" fileName="CardPile.java" startLine="128" startPosition="0" endLine="137" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setSelectable#(Z)V" />
-    <nodeInfo nodeId="5144139994144361188" fileName="CardPile.java" startLine="155" startPosition="0" endLine="164" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addSelection#(LShuffleJava/runtime/Card;)V" />
-    <nodeInfo nodeId="5144139994145294100" fileName="CardPile.java" startLine="193" startPosition="0" endLine="203" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="clearSelection#()V" />
-    <scopeInfo nodeId="3401611587230270778" fileName="CardPile.java" startLine="20" startPosition="39" endLine="21" endPosition="62" />
-    <scopeInfo nodeId="8674722826291428388" fileName="CardPile.java" startLine="27" startPosition="44" endLine="28" endPosition="23" />
-    <scopeInfo nodeId="7501337804226074059" fileName="CardPile.java" startLine="36" startPosition="46" endLine="37" endPosition="26" />
-    <scopeInfo nodeId="5206962039409729650" fileName="CardPile.java" startLine="42" startPosition="27" endLine="43" endPosition="21" />
-    <scopeInfo nodeId="8674722826291253037" fileName="CardPile.java" startLine="48" startPosition="29" endLine="49" endPosition="23" />
-    <scopeInfo nodeId="5165761802077087185" fileName="CardPile.java" startLine="63" startPosition="30" endLine="64" endPosition="19" />
-    <scopeInfo nodeId="2678928131163901347" fileName="CardPile.java" startLine="69" startPosition="34" endLine="70" endPosition="19" />
-    <scopeInfo nodeId="2678928131163769664" fileName="CardPile.java" startLine="94" startPosition="29" endLine="95" endPosition="20" />
-    <scopeInfo nodeId="7878805613279607135" fileName="CardPile.java" startLine="110" startPosition="41" endLine="111" endPosition="16" />
-    <scopeInfo nodeId="4161858660889686781" fileName="CardPile.java" startLine="116" startPosition="21" endLine="117" endPosition="23" />
-    <scopeInfo nodeId="5144139994143882186" fileName="CardPile.java" startLine="122" startPosition="33" endLine="123" endPosition="45" />
-    <scopeInfo nodeId="7714697523650997518" fileName="CardPile.java" startLine="148" startPosition="30" endLine="149" endPosition="25" />
-    <scopeInfo nodeId="5144139994146298170" fileName="CardPile.java" startLine="178" startPosition="57" endLine="179" endPosition="45" />
-    <scopeInfo nodeId="5144139994146306477" fileName="CardPile.java" startLine="180" startPosition="12" endLine="181" endPosition="42" />
-    <scopeInfo nodeId="5144139994144693018" fileName="CardPile.java" startLine="187" startPosition="41" endLine="188" endPosition="21" />
-    <scopeInfo nodeId="1472781009440894675" fileName="CardPile.java" startLine="103" startPosition="25" endLine="105" endPosition="30" />
-    <scopeInfo nodeId="7714697523651038113" fileName="CardPile.java" startLine="129" startPosition="12" endLine="131" endPosition="31" />
-    <scopeInfo nodeId="7714697523651051429" fileName="CardPile.java" startLine="132" startPosition="12" endLine="134" endPosition="32" />
-    <scopeInfo nodeId="5144139994144067899" fileName="CardPile.java" startLine="140" startPosition="39" endLine="142" endPosition="29" />
-    <scopeInfo nodeId="5144139994145648580" fileName="CardPile.java" startLine="159" startPosition="46" endLine="161" endPosition="29" />
-    <scopeInfo nodeId="5144139994144454239" fileName="CardPile.java" startLine="170" startPosition="43" endLine="172" endPosition="28" />
-    <scopeInfo nodeId="5144139994149095692" fileName="CardPile.java" startLine="195" startPosition="37" endLine="197" endPosition="31" />
-    <scopeInfo nodeId="8674722826291428385" fileName="CardPile.java" startLine="26" startPosition="33" endLine="29" endPosition="5">
+    <nodeInfo nodeId="1227169015833033210" fileName="CardPile.java" startLine="17" startPosition="122" endLine="18" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1227169015833036921" fileName="CardPile.java" startLine="18" startPosition="21" endLine="19" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1227169015833041454" fileName="CardPile.java" startLine="19" startPosition="31" endLine="20" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1227169015833046609" fileName="CardPile.java" startLine="20" startPosition="21" endLine="21" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1227169015833050070" fileName="CardPile.java" startLine="21" startPosition="25" endLine="22" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1227169015833072891" fileName="CardPile.java" startLine="27" startPosition="32" endLine="28" endPosition="72" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3401611587230274657" fileName="CardPile.java" startLine="29" startPosition="39" endLine="30" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1227169015833334580" fileName="CardPile.java" startLine="36" startPosition="38" endLine="37" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8674722826291435049" fileName="CardPile.java" startLine="38" startPosition="44" endLine="39" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1227169015833087318" fileName="CardPile.java" startLine="40" startPosition="5" endLine="41" endPosition="81" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1227169015833117066" fileName="CardPile.java" startLine="46" startPosition="46" endLine="47" endPosition="79" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1227169015833442566" fileName="CardPile.java" startLine="52" startPosition="48" endLine="53" endPosition="73" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="3401611587229874464" fileName="CardPile.java" startLine="53" startPosition="73" endLine="54" endPosition="71" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5206962039409739778" fileName="CardPile.java" startLine="60" startPosition="27" endLine="61" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="8674722826291261612" fileName="CardPile.java" startLine="66" startPosition="29" endLine="67" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5165761802077088846" fileName="CardPile.java" startLine="73" startPosition="30" endLine="74" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2678928131163940284" fileName="CardPile.java" startLine="79" startPosition="34" endLine="80" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1472781009440956041" fileName="CardPile.java" startLine="85" startPosition="22" endLine="86" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1472781009440956150" fileName="CardPile.java" startLine="86" startPosition="11" endLine="87" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1472781009440987645" fileName="CardPile.java" startLine="87" startPosition="34" endLine="88" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1472781009441018762" fileName="CardPile.java" startLine="88" startPosition="33" endLine="89" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2678928131163188009" fileName="CardPile.java" startLine="94" startPosition="28" endLine="95" endPosition="11" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="2678928131163223563" fileName="CardPile.java" startLine="95" startPosition="11" endLine="96" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2678928131163258092" fileName="CardPile.java" startLine="96" startPosition="34" endLine="97" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2678928131163769663" fileName="CardPile.java" startLine="104" startPosition="29" endLine="105" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2678928131163795308" fileName="CardPile.java" startLine="107" startPosition="5" endLine="108" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1904212697478694324" fileName="CardPile.java" startLine="113" startPosition="25" endLine="114" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2355677863976389042" fileName="CardPile.java" startLine="114" startPosition="47" endLine="115" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7878805613279615151" fileName="CardPile.java" startLine="120" startPosition="41" endLine="121" endPosition="16" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="4161858660889689786" fileName="CardPile.java" startLine="126" startPosition="21" endLine="127" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5144139994145404360" fileName="CardPile.java" startLine="132" startPosition="33" endLine="133" endPosition="55" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="2480633097868365888" fileName="CardPile.java" startLine="139" startPosition="12" endLine="140" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523651040274" fileName="CardPile.java" startLine="140" startPosition="45" endLine="141" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523651049978" fileName="CardPile.java" startLine="141" startPosition="42" endLine="142" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523651052932" fileName="CardPile.java" startLine="143" startPosition="12" endLine="144" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523651056240" fileName="CardPile.java" startLine="144" startPosition="32" endLine="145" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2480633097868398240" fileName="CardPile.java" startLine="151" startPosition="39" endLine="152" endPosition="43" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5144139994144102167" fileName="CardPile.java" startLine="152" startPosition="43" endLine="153" endPosition="33" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523651034984" fileName="CardPile.java" startLine="153" startPosition="33" endLine="154" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523651016324" fileName="CardPile.java" startLine="160" startPosition="30" endLine="161" endPosition="25" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5144139994145664173" fileName="CardPile.java" startLine="171" startPosition="46" endLine="172" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5144139994146523898" fileName="CardPile.java" startLine="172" startPosition="31" endLine="173" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5144139994144477306" fileName="CardPile.java" startLine="182" startPosition="43" endLine="183" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5144139994146527791" fileName="CardPile.java" startLine="183" startPosition="32" endLine="184" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2480633097869085711" fileName="CardPile.java" startLine="189" startPosition="48" endLine="190" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2480633097869282584" fileName="CardPile.java" startLine="191" startPosition="34" endLine="192" endPosition="54" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2480633097868100175" fileName="CardPile.java" startLine="192" startPosition="54" endLine="193" endPosition="13" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5144139994146305888" fileName="CardPile.java" startLine="195" startPosition="57" endLine="196" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5144139994146307599" fileName="CardPile.java" startLine="197" startPosition="12" endLine="198" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2480633097868195087" fileName="CardPile.java" startLine="199" startPosition="5" endLine="200" endPosition="80" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5144139994144716868" fileName="CardPile.java" startLine="205" startPosition="41" endLine="206" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5144139994149103104" fileName="CardPile.java" startLine="213" startPosition="37" endLine="214" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523651074404" fileName="CardPile.java" startLine="214" startPosition="29" endLine="215" endPosition="31" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5144139994145318267" fileName="CardPile.java" startLine="216" startPosition="7" endLine="217" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="5144139994145329492" fileName="CardPile.java" startLine="218" startPosition="5" endLine="219" endPosition="30" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="2120739237294398900" fileName="CardPile.java" startLine="224" startPosition="30" endLine="225" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="1904212697479020651" fileName="CardPile.java" startLine="229" startPosition="28" endLine="230" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="1211703652758935392" fileName="CardPile.java" startLine="230" startPosition="28" endLine="231" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="1904212697479036676" fileName="CardPile.java" startLine="231" startPosition="14" endLine="232" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="5144139994146306476" fileName="CardPile.java" startLine="197" startPosition="10" endLine="199" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="3401611587230270775" fileName="CardPile.java" startLine="28" startPosition="72" endLine="31" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="8674722826291428385" fileName="CardPile.java" startLine="37" startPosition="52" endLine="40" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="7501337804226074056" fileName="CardPile.java" startLine="46" startPosition="0" endLine="49" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="CardPile#(Ljava/util/ArrayList;)V" />
+    <nodeInfo nodeId="5206962039409729647" fileName="CardPile.java" startLine="60" startPosition="0" endLine="63" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="8674722826291253034" fileName="CardPile.java" startLine="66" startPosition="0" endLine="69" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isFaceup#()Z" />
+    <nodeInfo nodeId="5165761802077087182" fileName="CardPile.java" startLine="73" startPosition="0" endLine="76" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="add#(LShuffleJava/runtime/Card;)V" />
+    <nodeInfo nodeId="2678928131163901344" fileName="CardPile.java" startLine="79" startPosition="0" endLine="82" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="removeCard#(LShuffleJava/runtime/Card;)V" />
+    <nodeInfo nodeId="2678928131163546475" fileName="CardPile.java" startLine="103" startPosition="25" endLine="106" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7878805613279607132" fileName="CardPile.java" startLine="120" startPosition="0" endLine="123" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getArrayList#()Ljava/util/ArrayList;" />
+    <nodeInfo nodeId="4161858660889686778" fileName="CardPile.java" startLine="126" startPosition="0" endLine="129" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="size#()I" />
+    <nodeInfo nodeId="5144139994143882183" fileName="CardPile.java" startLine="132" startPosition="0" endLine="135" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isSelectable#()Z" />
+    <nodeInfo nodeId="7714697523651051428" fileName="CardPile.java" startLine="143" startPosition="10" endLine="146" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="7714697523650997517" fileName="CardPile.java" startLine="159" startPosition="46" endLine="162" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="5144139994144693015" fileName="CardPile.java" startLine="205" startPosition="0" endLine="208" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getSelection#()Ljava/util/ArrayList;" />
+    <nodeInfo nodeId="2120739237294380117" fileName="CardPile.java" startLine="224" startPosition="0" endLine="227" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getCard#(I)LShuffleJava/runtime/Card;" />
+    <nodeInfo nodeId="6965435806310178305" fileName="CardPile.java" startLine="52" startPosition="0" endLine="56" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="CardPile#(Ljava/lang/String;Z)V" />
+    <nodeInfo nodeId="1472781009440894672" fileName="CardPile.java" startLine="113" startPosition="0" endLine="117" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="shuffle#()V" />
+    <nodeInfo nodeId="5144139994145648577" fileName="CardPile.java" startLine="170" startPosition="40" endLine="174" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2480633097868093601" fileName="CardPile.java" startLine="190" startPosition="54" endLine="194" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5144139994149095689" fileName="CardPile.java" startLine="212" startPosition="33" endLine="216" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="2678928131163108801" fileName="CardPile.java" startLine="94" startPosition="0" endLine="99" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getTopCard#()LShuffleJava/runtime/Card;" />
+    <nodeInfo nodeId="2678928131163541655" fileName="CardPile.java" startLine="102" startPosition="39" endLine="107" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+    <nodeInfo nodeId="5144139994144067896" fileName="CardPile.java" startLine="151" startPosition="0" endLine="156" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setSelectable#(I)V" />
+    <nodeInfo nodeId="7714697523650981677" fileName="CardPile.java" startLine="159" startPosition="0" endLine="164" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setCardsSelectable#(Z)V" />
+    <nodeInfo nodeId="5144139994146298169" fileName="CardPile.java" startLine="194" startPosition="5" endLine="199" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5165761802077073032" fileName="CardPile.java" startLine="27" startPosition="0" endLine="33" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="CardPile#(Ljava/lang/String;)V" />
+    <nodeInfo nodeId="1472781009440946493" fileName="CardPile.java" startLine="85" startPosition="0" endLine="91" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="draw#()LShuffleJava/runtime/Card;" />
+    <nodeInfo nodeId="1904212697479007423" fileName="CardPile.java" startLine="228" startPosition="0" endLine="234" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toString#()Ljava/lang/String;" />
+    <nodeInfo nodeId="1227169015832916546" fileName="CardPile.java" startLine="17" startPosition="0" endLine="24" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setup#(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/Boolean;I)V" />
+    <nodeInfo nodeId="8674722826291209624" fileName="CardPile.java" startLine="36" startPosition="0" endLine="43" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="CardPile#(LShuffleJava/runtime/CardPile;)V" />
+    <nodeInfo nodeId="5144139994144454236" fileName="CardPile.java" startLine="179" startPosition="0" endLine="186" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="removeSelection#(LShuffleJava/runtime/Card;)V" />
+    <nodeInfo nodeId="7714697523647901043" fileName="CardPile.java" startLine="211" startPosition="32" endLine="218" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="2678928131163496193" fileName="CardPile.java" startLine="102" startPosition="0" endLine="110" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="checkCard#(LShuffleJava/runtime/Card;)Z" />
+    <nodeInfo nodeId="7714697523651038110" fileName="CardPile.java" startLine="138" startPosition="40" endLine="146" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="5144139994144361188" fileName="CardPile.java" startLine="167" startPosition="0" endLine="176" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="addSelection#(LShuffleJava/runtime/Card;)V" />
+    <nodeInfo nodeId="5144139994143949148" fileName="CardPile.java" startLine="138" startPosition="0" endLine="148" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setSelectable#(Z)V" />
+    <nodeInfo nodeId="5144139994145294100" fileName="CardPile.java" startLine="211" startPosition="0" endLine="221" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="clearSelection#()V" />
+    <nodeInfo nodeId="5144139994146272420" fileName="CardPile.java" startLine="189" startPosition="0" endLine="202" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toggleSelection#(I)V" />
+    <scopeInfo nodeId="3401611587230270778" fileName="CardPile.java" startLine="29" startPosition="39" endLine="30" endPosition="62" />
+    <scopeInfo nodeId="8674722826291428388" fileName="CardPile.java" startLine="38" startPosition="44" endLine="39" endPosition="21" />
+    <scopeInfo nodeId="7501337804226074059" fileName="CardPile.java" startLine="46" startPosition="46" endLine="47" endPosition="79" />
+    <scopeInfo nodeId="5206962039409729650" fileName="CardPile.java" startLine="60" startPosition="27" endLine="61" endPosition="21" />
+    <scopeInfo nodeId="8674722826291253037" fileName="CardPile.java" startLine="66" startPosition="29" endLine="67" endPosition="23" />
+    <scopeInfo nodeId="5165761802077087185" fileName="CardPile.java" startLine="73" startPosition="30" endLine="74" endPosition="19" />
+    <scopeInfo nodeId="2678928131163901347" fileName="CardPile.java" startLine="79" startPosition="34" endLine="80" endPosition="19" />
+    <scopeInfo nodeId="2678928131163769664" fileName="CardPile.java" startLine="104" startPosition="29" endLine="105" endPosition="20" />
+    <scopeInfo nodeId="7878805613279607135" fileName="CardPile.java" startLine="120" startPosition="41" endLine="121" endPosition="16" />
+    <scopeInfo nodeId="4161858660889686781" fileName="CardPile.java" startLine="126" startPosition="21" endLine="127" endPosition="23" />
+    <scopeInfo nodeId="5144139994143882186" fileName="CardPile.java" startLine="132" startPosition="33" endLine="133" endPosition="55" />
+    <scopeInfo nodeId="7714697523650997518" fileName="CardPile.java" startLine="160" startPosition="30" endLine="161" endPosition="25" />
+    <scopeInfo nodeId="5144139994146298170" fileName="CardPile.java" startLine="195" startPosition="57" endLine="196" endPosition="45" />
+    <scopeInfo nodeId="5144139994146306477" fileName="CardPile.java" startLine="197" startPosition="12" endLine="198" endPosition="42" />
+    <scopeInfo nodeId="5144139994144693018" fileName="CardPile.java" startLine="205" startPosition="41" endLine="206" endPosition="21" />
+    <scopeInfo nodeId="2120739237294380120" fileName="CardPile.java" startLine="224" startPosition="30" endLine="225" endPosition="23" />
+    <scopeInfo nodeId="6965435806310178307" fileName="CardPile.java" startLine="52" startPosition="48" endLine="54" endPosition="71" />
+    <scopeInfo nodeId="1472781009440894675" fileName="CardPile.java" startLine="113" startPosition="25" endLine="115" endPosition="30" />
+    <scopeInfo nodeId="7714697523651051429" fileName="CardPile.java" startLine="143" startPosition="12" endLine="145" endPosition="32" />
+    <scopeInfo nodeId="5144139994145648580" fileName="CardPile.java" startLine="171" startPosition="46" endLine="173" endPosition="29" />
+    <scopeInfo nodeId="5144139994144454239" fileName="CardPile.java" startLine="182" startPosition="43" endLine="184" endPosition="28" />
+    <scopeInfo nodeId="2480633097868093604" fileName="CardPile.java" startLine="191" startPosition="34" endLine="193" endPosition="13" />
+    <scopeInfo nodeId="5144139994149095692" fileName="CardPile.java" startLine="213" startPosition="37" endLine="215" endPosition="31" />
+    <scopeInfo nodeId="8674722826291428385" fileName="CardPile.java" startLine="37" startPosition="52" endLine="40" endPosition="5">
       <varInfo nodeId="8674722826291428391" varName="c" />
     </scopeInfo>
-    <scopeInfo nodeId="7501337804226074056" fileName="CardPile.java" startLine="36" startPosition="0" endLine="39" endPosition="0">
+    <scopeInfo nodeId="7501337804226074056" fileName="CardPile.java" startLine="46" startPosition="0" endLine="49" endPosition="0">
       <varInfo nodeId="7501337804226090730" varName="arrayList" />
     </scopeInfo>
-    <scopeInfo nodeId="5206962039409729647" fileName="CardPile.java" startLine="42" startPosition="0" endLine="45" endPosition="0" />
-    <scopeInfo nodeId="8674722826291253034" fileName="CardPile.java" startLine="48" startPosition="0" endLine="51" endPosition="0" />
-    <scopeInfo nodeId="5165761802077087182" fileName="CardPile.java" startLine="63" startPosition="0" endLine="66" endPosition="0">
+    <scopeInfo nodeId="5206962039409729647" fileName="CardPile.java" startLine="60" startPosition="0" endLine="63" endPosition="0" />
+    <scopeInfo nodeId="8674722826291253034" fileName="CardPile.java" startLine="66" startPosition="0" endLine="69" endPosition="0" />
+    <scopeInfo nodeId="5165761802077087182" fileName="CardPile.java" startLine="73" startPosition="0" endLine="76" endPosition="0">
       <varInfo nodeId="5165761802077088013" varName="card" />
     </scopeInfo>
-    <scopeInfo nodeId="2678928131163901344" fileName="CardPile.java" startLine="69" startPosition="0" endLine="72" endPosition="0">
+    <scopeInfo nodeId="2678928131163901344" fileName="CardPile.java" startLine="79" startPosition="0" endLine="82" endPosition="0">
       <varInfo nodeId="2678928131163933508" varName="c" />
     </scopeInfo>
-    <scopeInfo nodeId="2678928131163108804" fileName="CardPile.java" startLine="84" startPosition="28" endLine="87" endPosition="13">
+    <scopeInfo nodeId="2678928131163108804" fileName="CardPile.java" startLine="94" startPosition="28" endLine="97" endPosition="13">
       <varInfo nodeId="2678928131163188010" varName="c" />
     </scopeInfo>
-    <scopeInfo nodeId="2678928131163541656" fileName="CardPile.java" startLine="93" startPosition="25" endLine="96" endPosition="7" />
-    <scopeInfo nodeId="7878805613279607132" fileName="CardPile.java" startLine="110" startPosition="0" endLine="113" endPosition="0" />
-    <scopeInfo nodeId="4161858660889686778" fileName="CardPile.java" startLine="116" startPosition="0" endLine="119" endPosition="0" />
-    <scopeInfo nodeId="5144139994143882183" fileName="CardPile.java" startLine="122" startPosition="0" endLine="125" endPosition="0" />
-    <scopeInfo nodeId="7714697523650981680" fileName="CardPile.java" startLine="147" startPosition="46" endLine="150" endPosition="5" />
-    <scopeInfo nodeId="7714697523650997517" fileName="CardPile.java" startLine="147" startPosition="46" endLine="150" endPosition="5">
+    <scopeInfo nodeId="2678928131163541656" fileName="CardPile.java" startLine="103" startPosition="25" endLine="106" endPosition="7" />
+    <scopeInfo nodeId="7878805613279607132" fileName="CardPile.java" startLine="120" startPosition="0" endLine="123" endPosition="0" />
+    <scopeInfo nodeId="4161858660889686778" fileName="CardPile.java" startLine="126" startPosition="0" endLine="129" endPosition="0" />
+    <scopeInfo nodeId="5144139994143882183" fileName="CardPile.java" startLine="132" startPosition="0" endLine="135" endPosition="0" />
+    <scopeInfo nodeId="7714697523651038113" fileName="CardPile.java" startLine="139" startPosition="12" endLine="142" endPosition="31" />
+    <scopeInfo nodeId="5144139994144067899" fileName="CardPile.java" startLine="151" startPosition="39" endLine="154" endPosition="29" />
+    <scopeInfo nodeId="7714697523650981680" fileName="CardPile.java" startLine="159" startPosition="46" endLine="162" endPosition="5" />
+    <scopeInfo nodeId="7714697523650997517" fileName="CardPile.java" startLine="159" startPosition="46" endLine="162" endPosition="5">
       <varInfo nodeId="7714697523650997519" varName="c" />
     </scopeInfo>
-    <scopeInfo nodeId="5144139994144693015" fileName="CardPile.java" startLine="187" startPosition="0" endLine="190" endPosition="0" />
-    <scopeInfo nodeId="1904212697479007426" fileName="CardPile.java" startLine="207" startPosition="28" endLine="210" endPosition="21">
+    <scopeInfo nodeId="5144139994144693015" fileName="CardPile.java" startLine="205" startPosition="0" endLine="208" endPosition="0" />
+    <scopeInfo nodeId="2120739237294380117" fileName="CardPile.java" startLine="224" startPosition="0" endLine="227" endPosition="0">
+      <varInfo nodeId="2120739237294398876" varName="i" />
+    </scopeInfo>
+    <scopeInfo nodeId="1904212697479007426" fileName="CardPile.java" startLine="229" startPosition="28" endLine="232" endPosition="21">
       <varInfo nodeId="1904212697479020654" varName="retString" />
     </scopeInfo>
-    <scopeInfo nodeId="6965435806310178307" fileName="CardPile.java" startLine="54" startPosition="48" endLine="58" endPosition="66" />
-    <scopeInfo nodeId="1472781009440946496" fileName="CardPile.java" startLine="75" startPosition="22" endLine="79" endPosition="13">
-      <varInfo nodeId="1472781009440956042" varName="c" />
-    </scopeInfo>
-    <scopeInfo nodeId="1472781009440894672" fileName="CardPile.java" startLine="103" startPosition="0" endLine="107" endPosition="0" />
-    <scopeInfo nodeId="5144139994144067896" fileName="CardPile.java" startLine="140" startPosition="0" endLine="144" endPosition="0">
-      <varInfo nodeId="5144139994144089755" varName="size" />
-    </scopeInfo>
-    <scopeInfo nodeId="5144139994144361191" fileName="CardPile.java" startLine="158" startPosition="40" endLine="162" endPosition="5" />
-    <scopeInfo nodeId="5144139994149095689" fileName="CardPile.java" startLine="194" startPosition="33" endLine="198" endPosition="7">
-      <varInfo nodeId="5144139994149095695" varName="c" />
-    </scopeInfo>
-    <scopeInfo nodeId="5165761802077073035" fileName="CardPile.java" startLine="17" startPosition="32" endLine="22" endPosition="5" />
-    <scopeInfo nodeId="2678928131163108801" fileName="CardPile.java" startLine="84" startPosition="0" endLine="89" endPosition="0" />
-    <scopeInfo nodeId="2678928131163541655" fileName="CardPile.java" startLine="92" startPosition="39" endLine="97" endPosition="5">
-      <varInfo nodeId="2678928131163541657" varName="c" />
-    </scopeInfo>
-    <scopeInfo nodeId="7714697523650981677" fileName="CardPile.java" startLine="147" startPosition="0" endLine="152" endPosition="0">
-      <varInfo nodeId="7714697523651016613" varName="b" />
-    </scopeInfo>
-    <scopeInfo nodeId="5144139994146272423" fileName="CardPile.java" startLine="177" startPosition="48" endLine="182" endPosition="5" />
-    <scopeInfo nodeId="7714697523647901046" fileName="CardPile.java" startLine="194" startPosition="33" endLine="199" endPosition="29" />
-    <scopeInfo nodeId="8674722826291209627" fileName="CardPile.java" startLine="25" startPosition="38" endLine="31" endPosition="30" />
-    <scopeInfo nodeId="6965435806310178305" fileName="CardPile.java" startLine="54" startPosition="0" endLine="60" endPosition="0">
+    <scopeInfo nodeId="5165761802077073035" fileName="CardPile.java" startLine="27" startPosition="32" endLine="31" endPosition="5" />
+    <scopeInfo nodeId="6965435806310178305" fileName="CardPile.java" startLine="52" startPosition="0" endLine="56" endPosition="0">
       <varInfo nodeId="5206962039409836272" varName="faceup" />
       <varInfo nodeId="6965435806310178321" varName="name" />
     </scopeInfo>
-    <scopeInfo nodeId="1472781009440946493" fileName="CardPile.java" startLine="75" startPosition="0" endLine="81" endPosition="0" />
-    <scopeInfo nodeId="2678928131163496196" fileName="CardPile.java" startLine="92" startPosition="39" endLine="98" endPosition="17" />
-    <scopeInfo nodeId="1904212697479007423" fileName="CardPile.java" startLine="206" startPosition="0" endLine="212" endPosition="0" />
-    <scopeInfo nodeId="5165761802077073032" fileName="CardPile.java" startLine="17" startPosition="0" endLine="24" endPosition="0">
+    <scopeInfo nodeId="1472781009440946496" fileName="CardPile.java" startLine="85" startPosition="22" endLine="89" endPosition="13">
+      <varInfo nodeId="1472781009440956042" varName="c" />
+    </scopeInfo>
+    <scopeInfo nodeId="1472781009440894672" fileName="CardPile.java" startLine="113" startPosition="0" endLine="117" endPosition="0" />
+    <scopeInfo nodeId="5144139994144361191" fileName="CardPile.java" startLine="170" startPosition="40" endLine="174" endPosition="5" />
+    <scopeInfo nodeId="5144139994149095689" fileName="CardPile.java" startLine="212" startPosition="33" endLine="216" endPosition="7">
+      <varInfo nodeId="5144139994149095695" varName="c" />
+    </scopeInfo>
+    <scopeInfo nodeId="1227169015832916549" fileName="CardPile.java" startLine="17" startPosition="122" endLine="22" endPosition="45" />
+    <scopeInfo nodeId="8674722826291209627" fileName="CardPile.java" startLine="36" startPosition="38" endLine="41" endPosition="81">
+      <varInfo nodeId="1227169015833334581" varName="newPile" />
+    </scopeInfo>
+    <scopeInfo nodeId="2678928131163108801" fileName="CardPile.java" startLine="94" startPosition="0" endLine="99" endPosition="0" />
+    <scopeInfo nodeId="2678928131163541655" fileName="CardPile.java" startLine="102" startPosition="39" endLine="107" endPosition="5">
+      <varInfo nodeId="2678928131163541657" varName="c" />
+    </scopeInfo>
+    <scopeInfo nodeId="5144139994144067896" fileName="CardPile.java" startLine="151" startPosition="0" endLine="156" endPosition="0">
+      <varInfo nodeId="5144139994144089755" varName="size" />
+    </scopeInfo>
+    <scopeInfo nodeId="7714697523650981677" fileName="CardPile.java" startLine="159" startPosition="0" endLine="164" endPosition="0">
+      <varInfo nodeId="7714697523651016613" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="7714697523647901046" fileName="CardPile.java" startLine="212" startPosition="33" endLine="217" endPosition="29" />
+    <scopeInfo nodeId="5165761802077073032" fileName="CardPile.java" startLine="27" startPosition="0" endLine="33" endPosition="0">
       <varInfo nodeId="5206962039409603387" varName="name" />
     </scopeInfo>
-    <scopeInfo nodeId="5144139994143949151" fileName="CardPile.java" startLine="128" startPosition="40" endLine="135" endPosition="5" />
-    <scopeInfo nodeId="5144139994144454236" fileName="CardPile.java" startLine="167" startPosition="0" endLine="174" endPosition="0">
-      <varInfo nodeId="5144139994144466488" varName="card" />
+    <scopeInfo nodeId="1472781009440946493" fileName="CardPile.java" startLine="85" startPosition="0" endLine="91" endPosition="0" />
+    <scopeInfo nodeId="2678928131163496196" fileName="CardPile.java" startLine="102" startPosition="39" endLine="108" endPosition="17" />
+    <scopeInfo nodeId="1904212697479007423" fileName="CardPile.java" startLine="228" startPosition="0" endLine="234" endPosition="0" />
+    <scopeInfo nodeId="1227169015832916546" fileName="CardPile.java" startLine="17" startPosition="0" endLine="24" endPosition="0">
+      <varInfo nodeId="1227169015833000661" varName="faceup" />
+      <varInfo nodeId="1227169015833016927" varName="maxSelectionSize" />
+      <varInfo nodeId="1227169015832984404" varName="name" />
+      <varInfo nodeId="1227169015832951528" varName="pile" />
+      <varInfo nodeId="1227169015832967931" varName="selection" />
     </scopeInfo>
-    <scopeInfo nodeId="5144139994146272420" fileName="CardPile.java" startLine="177" startPosition="0" endLine="184" endPosition="0">
-      <varInfo nodeId="5144139994146286108" varName="indexOfCard" />
-    </scopeInfo>
-    <scopeInfo nodeId="8674722826291209624" fileName="CardPile.java" startLine="25" startPosition="0" endLine="33" endPosition="0">
+    <scopeInfo nodeId="8674722826291209624" fileName="CardPile.java" startLine="36" startPosition="0" endLine="43" endPosition="0">
       <varInfo nodeId="8674722826291217779" varName="cardpile" />
     </scopeInfo>
-    <scopeInfo nodeId="2678928131163496193" fileName="CardPile.java" startLine="92" startPosition="0" endLine="100" endPosition="0">
+    <scopeInfo nodeId="5144139994144454236" fileName="CardPile.java" startLine="179" startPosition="0" endLine="186" endPosition="0">
+      <varInfo nodeId="5144139994144466488" varName="card" />
+    </scopeInfo>
+    <scopeInfo nodeId="2678928131163496193" fileName="CardPile.java" startLine="102" startPosition="0" endLine="110" endPosition="0">
       <varInfo nodeId="2678928131163502775" varName="card" />
     </scopeInfo>
-    <scopeInfo nodeId="5144139994145294103" fileName="CardPile.java" startLine="193" startPosition="32" endLine="201" endPosition="30" />
-    <scopeInfo nodeId="5144139994143949148" fileName="CardPile.java" startLine="128" startPosition="0" endLine="137" endPosition="0">
-      <varInfo nodeId="5144139994149553412" varName="b" />
-    </scopeInfo>
-    <scopeInfo nodeId="5144139994144361188" fileName="CardPile.java" startLine="155" startPosition="0" endLine="164" endPosition="0">
+    <scopeInfo nodeId="5144139994143949151" fileName="CardPile.java" startLine="138" startPosition="40" endLine="146" endPosition="5" />
+    <scopeInfo nodeId="5144139994145294103" fileName="CardPile.java" startLine="211" startPosition="32" endLine="219" endPosition="30" />
+    <scopeInfo nodeId="5144139994144361188" fileName="CardPile.java" startLine="167" startPosition="0" endLine="176" endPosition="0">
       <varInfo nodeId="5144139994144383438" varName="card" />
     </scopeInfo>
-    <scopeInfo nodeId="5144139994145294100" fileName="CardPile.java" startLine="193" startPosition="0" endLine="203" endPosition="0" />
-    <unitInfo nodeId="6162892231914596193" fileName="CardPile.java" startLine="8" startPosition="0" endLine="213" endPosition="0" unitName="ShuffleJava.runtime.CardPile" />
+    <scopeInfo nodeId="5144139994143949148" fileName="CardPile.java" startLine="138" startPosition="0" endLine="148" endPosition="0">
+      <varInfo nodeId="5144139994149553412" varName="b" />
+    </scopeInfo>
+    <scopeInfo nodeId="5144139994145294100" fileName="CardPile.java" startLine="211" startPosition="0" endLine="221" endPosition="0" />
+    <scopeInfo nodeId="5144139994146272423" fileName="CardPile.java" startLine="189" startPosition="48" endLine="200" endPosition="80" />
+    <scopeInfo nodeId="5144139994146272420" fileName="CardPile.java" startLine="189" startPosition="0" endLine="202" endPosition="0">
+      <varInfo nodeId="5144139994146286108" varName="indexOfCard" />
+    </scopeInfo>
+    <unitInfo nodeId="6162892231914596193" fileName="CardPile.java" startLine="8" startPosition="0" endLine="235" endPosition="0" unitName="ShuffleJava.runtime.CardPile" />
   </root>
   <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/6162892231914596317">
     <nodeInfo nodeId="4161858660889672076" fileName="Player.java" startLine="8" startPosition="0" endLine="9" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="hand" />
@@ -498,11 +543,11 @@
     <nodeInfo nodeId="4161858660889744353" fileName="Player.java" startLine="10" startPosition="0" endLine="11" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="score" />
     <nodeInfo nodeId="5144139994150798617" fileName="Player.java" startLine="11" startPosition="0" endLine="12" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="human" />
     <nodeInfo nodeId="162709756686761153" fileName="Player.java" startLine="12" startPosition="0" endLine="13" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="handDisplay" />
-    <nodeInfo nodeId="4161858660889744433" fileName="Player.java" startLine="15" startPosition="25" endLine="16" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4161858660889744433" fileName="Player.java" startLine="15" startPosition="41" endLine="16" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="5144139994150802732" fileName="Player.java" startLine="16" startPosition="17" endLine="17" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="4161858660889747367" fileName="Player.java" startLine="17" startPosition="42" endLine="18" endPosition="82" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="1320406746500162326" fileName="Player.java" startLine="18" startPosition="82" endLine="19" endPosition="59" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="4161858660889758731" fileName="Player.java" startLine="19" startPosition="59" endLine="20" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="1320406746500162326" fileName="Player.java" startLine="18" startPosition="82" endLine="19" endPosition="66" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="4161858660889758731" fileName="Player.java" startLine="19" startPosition="66" endLine="20" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="4161858660889765475" fileName="Player.java" startLine="25" startPosition="19" endLine="26" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4161858660889769492" fileName="Player.java" startLine="31" startPosition="26" endLine="32" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
     <nodeInfo nodeId="4161858660889773407" fileName="Player.java" startLine="37" startPosition="25" endLine="38" endPosition="22" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
@@ -517,7 +562,7 @@
     <nodeInfo nodeId="4161858660889785051" fileName="Player.java" startLine="49" startPosition="0" endLine="52" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="adjustScore#(I)I" />
     <nodeInfo nodeId="7501337804246345957" fileName="Player.java" startLine="60" startPosition="0" endLine="63" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getHandDisplay#()LShuffleJava/gui_2/HandDisplay;" />
     <nodeInfo nodeId="1904212697479218391" fileName="Player.java" startLine="55" startPosition="0" endLine="59" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="toString#()Ljava/lang/String;" />
-    <nodeInfo nodeId="5165761802077080186" fileName="Player.java" startLine="15" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Player#(I)V" />
+    <nodeInfo nodeId="5165761802077080186" fileName="Player.java" startLine="15" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Player#(II)V" />
     <scopeInfo nodeId="4161858660889764981" fileName="Player.java" startLine="25" startPosition="19" endLine="26" endPosition="19" />
     <scopeInfo nodeId="4161858660889768929" fileName="Player.java" startLine="31" startPosition="26" endLine="32" endPosition="21" />
     <scopeInfo nodeId="4161858660889772797" fileName="Player.java" startLine="37" startPosition="25" endLine="38" endPosition="22" />
@@ -534,9 +579,10 @@
     </scopeInfo>
     <scopeInfo nodeId="7501337804246345957" fileName="Player.java" startLine="60" startPosition="0" endLine="63" endPosition="0" />
     <scopeInfo nodeId="1904212697479218391" fileName="Player.java" startLine="55" startPosition="0" endLine="59" endPosition="0" />
-    <scopeInfo nodeId="5165761802077080189" fileName="Player.java" startLine="15" startPosition="25" endLine="20" endPosition="19" />
+    <scopeInfo nodeId="5165761802077080189" fileName="Player.java" startLine="15" startPosition="41" endLine="20" endPosition="19" />
     <scopeInfo nodeId="5165761802077080186" fileName="Player.java" startLine="15" startPosition="0" endLine="22" endPosition="0">
       <varInfo nodeId="4161858660889744386" varName="id" />
+      <varInfo nodeId="1227169015835571288" varName="numPlayers" />
     </scopeInfo>
     <unitInfo nodeId="6162892231914596317" fileName="Player.java" startLine="7" startPosition="0" endLine="66" endPosition="0" unitName="ShuffleJava.runtime.Player" />
   </root>
@@ -599,6 +645,32 @@
       <varInfo nodeId="2678928131163993718" varName="c" />
     </scopeInfo>
     <unitInfo nodeId="6162892231914596383" fileName="Card.java" startLine="6" startPosition="0" endLine="81" endPosition="0" unitName="ShuffleJava.runtime.Card" />
+  </root>
+  <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/6780516275963412581">
+    <nodeInfo nodeId="6780516275963443720" fileName="Button.java" startLine="8" startPosition="0" endLine="9" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="isClicked" />
+    <nodeInfo nodeId="6780516275969860072" fileName="Button.java" startLine="9" startPosition="0" endLine="10" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="name" />
+    <nodeInfo nodeId="6780516275969860562" fileName="Button.java" startLine="12" startPosition="30" endLine="13" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6780516275963447762" fileName="Button.java" startLine="13" startPosition="21" endLine="14" endPosition="27" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="6780516275963454808" fileName="Button.java" startLine="19" startPosition="30" endLine="20" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6780516275963458399" fileName="Button.java" startLine="25" startPosition="44" endLine="26" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6780516275969871699" fileName="Button.java" startLine="29" startPosition="27" endLine="30" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+    <nodeInfo nodeId="6780516275963454568" fileName="Button.java" startLine="19" startPosition="0" endLine="22" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="isClicked#()Z" />
+    <nodeInfo nodeId="6780516275963458039" fileName="Button.java" startLine="25" startPosition="0" endLine="28" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="setClicked#(Z)Z" />
+    <nodeInfo nodeId="6780516275969870396" fileName="Button.java" startLine="29" startPosition="0" endLine="32" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" propertyString="getName#()Ljava/lang/String;" />
+    <nodeInfo nodeId="6780516275963418471" fileName="Button.java" startLine="12" startPosition="0" endLine="16" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" propertyString="Button#(Ljava/lang/String;)V" />
+    <scopeInfo nodeId="6780516275963454571" fileName="Button.java" startLine="19" startPosition="30" endLine="20" endPosition="21" />
+    <scopeInfo nodeId="6780516275963458042" fileName="Button.java" startLine="25" startPosition="44" endLine="26" endPosition="34" />
+    <scopeInfo nodeId="6780516275969870399" fileName="Button.java" startLine="29" startPosition="27" endLine="30" endPosition="21" />
+    <scopeInfo nodeId="6780516275963418474" fileName="Button.java" startLine="12" startPosition="30" endLine="14" endPosition="27" />
+    <scopeInfo nodeId="6780516275963454568" fileName="Button.java" startLine="19" startPosition="0" endLine="22" endPosition="0" />
+    <scopeInfo nodeId="6780516275963458039" fileName="Button.java" startLine="25" startPosition="0" endLine="28" endPosition="0">
+      <varInfo nodeId="6780516275963458222" varName="click" />
+    </scopeInfo>
+    <scopeInfo nodeId="6780516275969870396" fileName="Button.java" startLine="29" startPosition="0" endLine="32" endPosition="0" />
+    <scopeInfo nodeId="6780516275963418471" fileName="Button.java" startLine="12" startPosition="0" endLine="16" endPosition="0">
+      <varInfo nodeId="6780516275969860328" varName="name" />
+    </scopeInfo>
+    <unitInfo nodeId="6780516275963412581" fileName="Button.java" startLine="6" startPosition="0" endLine="33" endPosition="0" unitName="ShuffleJava.runtime.Button" />
   </root>
   <root nodeRef="r:62b3d1a0-4e00-49b2-906e-7767a97fab81(ShuffleJava.runtime)/7714697523651564469">
     <nodeInfo nodeId="7714697523651583825" fileName="ValidMove.java" startLine="8" startPosition="0" endLine="9" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.FieldDeclaration" propertyString="firstPile" />

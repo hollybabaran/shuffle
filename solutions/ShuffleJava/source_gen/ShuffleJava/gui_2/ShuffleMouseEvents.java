@@ -20,6 +20,7 @@ public class ShuffleMouseEvents extends MouseAdapter {
   private CardPileDisplay draggingPile;
   private GameState gameState;
   private boolean dragging = false;
+  private int clickedIndex = -1;
 
 
   public ShuffleMouseEvents(List<ShuffleDraw> components, Map<ShuffleDraw, Float[]> locations, Integer[] canvasDimensions, GameState gameState) {
@@ -33,28 +34,34 @@ public class ShuffleMouseEvents extends MouseAdapter {
 
   @Override
   public void mouseClicked(MouseEvent event) {
-    ShuffleDraw clickedObj = figureOutWhatObject(event.getX(), event.getY());
-    if (clickedObj != null) {
-      int x = getAbsoluteX(canvasDimensions[0], locations.get(clickedObj)[0]);
-      int y = getAbsoluteY(canvasDimensions[1], locations.get(clickedObj)[1]);
-      x = event.getX() - x;
-      y = event.getY() - y;
-      clickedObj.click(x, y);
-    }
+    super.mouseClicked(event);
   }
 
   @Override
   public void mousePressed(MouseEvent event) {
     ShuffleDraw clickedObj = figureOutWhatObject(event.getX(), event.getY());
     if (clickedObj != null) {
-      if (clickedObj instanceof CardPileDisplay) {
+      if (clickedObj instanceof CardPileDisplay && ((CardPileDisplay) clickedObj).pile.isSelectable()) {
         draggingPile = ((CardPileDisplay) clickedObj);
+        int x = getAbsoluteX(canvasDimensions[0], locations.get(clickedObj)[0]);
+        int y = getAbsoluteY(canvasDimensions[1], locations.get(clickedObj)[1]);
+        x = event.getX() - x;
+        y = event.getY() - y;
+        int i = draggingPile.getCardIndexAt(x, y);
+        if (!(draggingPile.pile.getCard(i).isSelected())) {
+          draggingPile.pile.toggleSelection(i);
+        } else {
+          clickedIndex = i;
+        }
+        ((Component) event.getSource()).repaint();
+
         dragging = true;
         ((Component) event.getSource()).setCursor(Cursor.getPredefinedCursor(Cursor.MOVE_CURSOR));
+      } else {
+        clickedObj.click(event.getX(), event.getY());
       }
     }
 
-    super.mousePressed(event);
   }
 
   @Override
@@ -66,12 +73,24 @@ public class ShuffleMouseEvents extends MouseAdapter {
           CardPileDisplay dropPile = ((CardPileDisplay) clickedObj);
           if (gameState.isValidPileDrag(draggingPile.pile.getName(), dropPile.pile.getName())) {
             CardPileUtil.move(draggingPile.pile, dropPile.pile, gameState);
+          } else if (draggingPile == dropPile) {
+            int x = getAbsoluteX(canvasDimensions[0], locations.get(clickedObj)[0]);
+            int y = getAbsoluteY(canvasDimensions[1], locations.get(clickedObj)[1]);
+            y = event.getY() - y;
+            x = event.getX() - x;
+            int i = draggingPile.getCardIndexAt(x, y);
+            if (i == clickedIndex) {
+              draggingPile.pile.toggleSelection(i);
+            }
           }
         }
       }
     }
+    clickedIndex = -1;
     ((Component) event.getSource()).setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     dragging = false;
+    ((Component) event.getSource()).repaint();
+
   }
 
   @Override
@@ -96,7 +115,22 @@ public class ShuffleMouseEvents extends MouseAdapter {
 
   @Override
   public void mouseMoved(MouseEvent event) {
-    super.mouseMoved(event);
+    ShuffleDraw clickedObj = figureOutWhatObject(event.getX(), event.getY());
+    if (clickedObj != null) {
+      if (clickedObj instanceof CardPileDisplay) {
+        CardPileDisplay pile = ((CardPileDisplay) clickedObj);
+        if (pile.pile.isSelectable()) {
+          ((Component) event.getSource()).setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        } else {
+          ((Component) event.getSource()).setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+        }
+      } else if (clickedObj instanceof ButtonDisplay) {
+        ((Component) event.getSource()).setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+      }
+    } else {
+      ((Component) event.getSource()).setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+    }
+
   }
 
 

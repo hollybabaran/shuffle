@@ -14,28 +14,46 @@ public class CardPile {
   private ArrayList<Card> selection;
 
 
-  public CardPile(String name) {
-    pile = new ArrayList<Card>();
+  private void setup(ArrayList<Card> pile, ArrayList<Card> selection, String name, Boolean faceup, int maxSelectionSize) {
+    this.pile = pile;
+    this.selection = selection;
     this.name = name;
+    this.faceup = faceup;
+    this.maxSelectionSize = maxSelectionSize;
+  }
+
+
+
+  public CardPile(String name) {
+    setup(new ArrayList<Card>(), new ArrayList<Card>(), name, false, 0);
     if (name.equals("standard_deck")) {
       System.out.println("standard_deck is used for CardSet");
     }
   }
 
+
+
   public CardPile(CardPile cardpile) {
-    pile = new ArrayList<Card>();
+    ArrayList<Card> newPile = new ArrayList<Card>();
     for (Card c : cardpile.getArrayList()) {
-      this.pile.add(c);
+      newPile.add(c);
     }
-    this.faceup = cardpile.isFaceup();
-    this.name = cardpile.name;
+    setup(newPile, new ArrayList<Card>(), cardpile.name, cardpile.isFaceup(), 0);
   }
 
 
 
   public CardPile(ArrayList<Card> arrayList) {
-    this.pile = arrayList;
+    setup(arrayList, new ArrayList<Card>(), "default_cardpile_name", false, 0);
   }
+
+
+
+  public CardPile(String name, boolean faceup) {
+    setup(new ArrayList<Card>(), new ArrayList<Card>(), name, faceup, 0);
+    System.out.println("New pile called " + this.name + " is created");
+  }
+
 
 
 
@@ -49,14 +67,6 @@ public class CardPile {
     return this.faceup;
   }
 
-
-
-  public CardPile(String name, boolean faceup) {
-    pile = new ArrayList<Card>();
-    this.faceup = faceup;
-    this.name = name;
-    System.out.println("New pile called " + name + " is created");
-  }
 
 
 
@@ -120,13 +130,14 @@ public class CardPile {
 
 
   public boolean isSelectable() {
-    return (this.size() != 0 ? true : false);
+    return (this.maxSelectionSize != 0 ? true : false);
   }
 
 
 
   public void setSelectable(boolean b) {
     if (b) {
+      this.selection = new ArrayList<Card>();
       this.maxSelectionSize = pile.size();
       setCardsSelectable(true);
     } else {
@@ -138,6 +149,7 @@ public class CardPile {
 
 
   public void setSelectable(int size) {
+    this.selection = new ArrayList<Card>();
     this.maxSelectionSize = size;
     setCardsSelectable(true);
   }
@@ -175,11 +187,17 @@ public class CardPile {
 
 
   public void toggleSelection(int indexOfCard) {
+    System.out.println("I'm trying to toggle stuff!");
+    if (isSelectable() == false) {
+      System.out.println("I can't toggle this shit!");
+      return;
+    }
     if (this.selection.contains(pile.get(indexOfCard))) {
       removeSelection(pile.get(indexOfCard));
     } else {
       addSelection(pile.get(indexOfCard));
     }
+    System.out.println("selection:" + this.selection + " index:" + indexOfCard);
   }
 
 
@@ -202,6 +220,10 @@ public class CardPile {
   }
 
 
+
+  public Card getCard(int i) {
+    return pile.get(i);
+  }
 
   @Override
   public String toString() {

@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="ShuffleJava.runtime.Button" file="Button.java">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="ShuffleJava.runtime.Card" file="Card.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="ShuffleJava.runtime.CardPile" file="CardPile.java">
     <classNode dependClassName="ShuffleJava.runtime.Card" />
+    <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
@@ -21,6 +25,7 @@
   </dependency>
   <dependency className="ShuffleJava.runtime.GameState" file="GameState.java">
     <classNode dependClassName="ShuffleJava.gui_2.ShuffleFrame" />
+    <classNode dependClassName="ShuffleJava.runtime.Button" />
     <classNode dependClassName="ShuffleJava.runtime.CardPile" />
     <classNode dependClassName="ShuffleJava.runtime.Player" />
     <classNode dependClassName="ShuffleJava.runtime.ShuffleException" />
@@ -28,6 +33,7 @@
     <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />

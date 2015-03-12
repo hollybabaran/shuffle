@@ -7,6 +7,7 @@ import ShuffleJava.runtime.CardPile;
 import javax.imageio.ImageIO;
 import java.io.IOException;
 import java.awt.Graphics;
+import java.awt.Color;
 
 public class StackedPileDisplay extends CardPileDisplay implements ShuffleDraw {
   public static int STACK_WIDTH = 55;
@@ -73,8 +74,23 @@ public class StackedPileDisplay extends CardPileDisplay implements ShuffleDraw {
     } else {
       g.drawImage(emptyImg, x, y, this.bgcolour, null);
     }
+    g.setColor(Color.LIGHT_GRAY);
+    int length = pile.getName().length() * 6;
+    int beginningGrid = x - ((100 - CardDisplay.CARD_WIDTH) / 2);
+    int startingPoint = (100 - length) / 2;
+    g.drawString(pile.getName(), beginningGrid + startingPoint, y + STACK_HEIGHT + 15);
   }
 
+
+
+
+  @Override
+  public int getCardIndexAt(int x, int y) {
+    if (pile.size() > 0) {
+      return 0;
+    }
+    return -1;
+  }
 
 
 

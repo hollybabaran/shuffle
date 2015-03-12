@@ -12,11 +12,11 @@ public class Player {
   private HandDisplay handDisplay;
 
 
-  public Player(int id) {
+  public Player(int id, int numPlayers) {
     this.id = id;
     this.human = (id == 0 ? true : false);
     this.hand = new CardPile("player_" + (id + 1), ((this.human ? true : false)));
-    this.handDisplay = new HandDisplay(this.hand, this.id);
+    this.handDisplay = new HandDisplay(this.hand, id, numPlayers);
     this.score = 0;
   }
 

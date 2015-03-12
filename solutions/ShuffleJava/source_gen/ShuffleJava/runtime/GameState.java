@@ -14,6 +14,8 @@ public class GameState {
   public HashMap<String, CardPile> cardPiles = new HashMap<String, CardPile>();
   public HashMap<String, String> strings = new HashMap<String, String>();
   public HashMap<String, Boolean> booleans = new HashMap<String, Boolean>();
+  public HashMap<String, Integer> numbers = new HashMap<String, Integer>();
+  public HashMap<String, Button> buttons = new HashMap<String, Button>();
 
   private ArrayList<ValidMove> validMoves = new ArrayList<ValidMove>();
 
@@ -32,7 +34,7 @@ public class GameState {
       throw new ShuffleException("Invalid number of players: " + numberPlayers);
     }
     for (int x = 0; x < numberPlayers; x++) {
-      playerList.add(new Player(x));
+      playerList.add(new Player(x, numberPlayers));
     }
   }
 
@@ -69,9 +71,14 @@ public class GameState {
       return cardPiles;
     } else if (strings.get(variable) != null) {
       return strings;
-    } else {
+    } else if (booleans.get(variable) != null) {
       return booleans;
+    } else if (numbers.get(variable) != null) {
+      return numbers;
+    } else {
+      return buttons;
     }
+
   }
 
 
@@ -82,6 +89,9 @@ public class GameState {
     }
     if (this.validMoves != null) {
       this.validMoves.clear();
+    }
+    for (Button button : this.buttons.values()) {
+      button.setClicked(false);
     }
   }
 
@@ -94,6 +104,7 @@ public class GameState {
       }
     }
     ValidMove validMove = new ValidMove(firstPile.getName(), secondPile.getName(), functionName);
+    System.out.println("Create validmove");
     this.validMoves.add(validMove);
     return validMove;
 
@@ -125,13 +136,18 @@ public class GameState {
 
   private boolean passesCheck(String function) {
     // return boolean function from mains value 
+    if (function == "") {
+      return true;
+    }
     Boolean value = false;
     try {
-      Class clas = Class.forName("crazy8s.map_Main");
+      Class clas = Class.forName("Crazy8s.map_Main");
       Method method = clas.getMethod(function);
       value = ((Boolean) method.invoke(clas));
     } catch (Exception exception) {
+      System.out.println("exception");
     }
+    System.out.println("THE drag is passes the check:" + value);
     return value;
   }
 

@@ -10,15 +10,22 @@ import java.awt.Color;
 
 public class HandDisplay extends CascadingPileDisplay implements ShuffleDraw {
   private boolean isVertical;
+  private int playerNum;
+  private CardPile cardPile;
 
 
-  public HandDisplay(CardPile c, int PlayerNum) {
+  public HandDisplay(CardPile c, int playerNum, int numPlayers) {
     super(c);
-    // first two (0,1) players horizontal; 3,4 vertical 
-    this.isVertical = ((PlayerNum > 1 ? true : false));
+    this.cardPile = c;
+    this.playerNum = playerNum;
+    if (numPlayers > 2) {
+      // clockwise from bottom: 0,1,2,3 
+      this.isVertical = ((playerNum % 2 == 0 ? false : true));
+    } else {
+      // top and bottom 
+      this.isVertical = false;
+    }
   }
-
-
 
 
 
@@ -27,6 +34,10 @@ public class HandDisplay extends CascadingPileDisplay implements ShuffleDraw {
       return super.getWidth();
     }
     return CardDisplay.CARD_WIDTH;
+  }
+
+  public int getHandSize() {
+    return this.cardPile.getArrayList().size();
   }
 
 
@@ -71,6 +82,40 @@ public class HandDisplay extends CascadingPileDisplay implements ShuffleDraw {
         int locY = (isVertical ? CardDisplay.CARD_HEIGHT / 2 * i + y : y);
         cards.get(i).draw(g, locX, locY);
       }
+      g.setColor(Color.LIGHT_GRAY);
+      switch (playerNum) {
+        case 0:
+          g.drawString("Player 1", 350, 570);
+          break;
+        case 1:
+          if (isVertical) {
+            int startingIndex = 300;
+            String str = "Player 2";
+            String c;
+            for (int i = 0; i < str.length(); i++) {
+              c = "" + str.charAt(i);
+              g.drawString(c, 70, startingIndex + 15 * i);
+            }
+          } else {
+            g.drawString("Player 2", 350, 95);
+
+          }
+          break;
+        case 2:
+          g.drawString("Player 3", 350, 95);
+          break;
+        case 3:
+          int startingIndex = 300;
+          String str = "Player 4";
+          String c;
+          for (int i = 0; i < str.length(); i++) {
+            c = "" + str.charAt(i);
+            g.drawString(c, 680, startingIndex + 15 * i);
+          }
+          break;
+        default:
+      }
+
     }
   }
 
@@ -79,7 +124,7 @@ public class HandDisplay extends CascadingPileDisplay implements ShuffleDraw {
   public void click(int x, int y) {
     for (int i = 1; i <= this.pile.size(); i++) {
       if ((x < i * CardDisplay.CARD_WIDTH && !(isVertical)) || (y < i * CardDisplay.CARD_HEIGHT / 2 && isVertical)) {
-        pile.toggleSelection(i);
+        pile.toggleSelection(i - 1);
         break;
       }
     }

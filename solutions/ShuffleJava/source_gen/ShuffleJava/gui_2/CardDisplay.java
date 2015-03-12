@@ -15,6 +15,7 @@ public class CardDisplay implements ShuffleDraw {
   public static int CARD_HEIGHT = 70;
   public static int CARD_WIDTH = 48;
 
+
   private BufferedImage img;
   private Card card;
   protected ClassLoader classLoader;
@@ -100,6 +101,7 @@ public class CardDisplay implements ShuffleDraw {
       g.fillRect(x, y, getWidth(), getHeight());
     }
   }
+
 
 
 

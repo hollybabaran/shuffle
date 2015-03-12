@@ -149,7 +149,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3854676059697422932" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection.Pile" />
     <property name="name" nameId="tpck.1169194664001" value="Pile" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Pile" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="create Pile" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3854676059697220626" resolveInfo="CardCollection" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2824091188896369485" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="faceup" />
@@ -1165,6 +1165,18 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6780516275963027849" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="vertical" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8960773502389052909" resolveInfo="Vertical" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2674640898150006095" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
+    <property name="name" nameId="tpck.1169194664001" value="isClicked" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="player clicked" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2674640898150017257" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="button" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="6304222537138290358" resolveInfo="VariableReference" />
     </node>
   </root>
 </model>

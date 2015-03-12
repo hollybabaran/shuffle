@@ -62,6 +62,25 @@ public class CascadingPileDisplay extends CardPileDisplay implements ShuffleDraw
         cards.get(i).draw(g, CardDisplay.CARD_WIDTH * i + x, y);
       }
     }
+    g.setColor(Color.LIGHT_GRAY);
+    int length = pile.getName().length() * 6;
+    int beginningGrid = x - ((100 - CardDisplay.CARD_WIDTH) / 2);
+    int startingPoint = (100 - length) / 2;
+    g.drawString(pile.getName(), beginningGrid + startingPoint, y + CardDisplay.CARD_HEIGHT + 15);
+
+  }
+
+
+
+
+  @Override
+  public int getCardIndexAt(int x, int y) {
+    for (int i = 1; i <= this.pile.size(); i++) {
+      if (x < i * CardDisplay.CARD_WIDTH) {
+        return i - 1;
+      }
+    }
+    return -1;
   }
 
 
@@ -69,7 +88,7 @@ public class CascadingPileDisplay extends CardPileDisplay implements ShuffleDraw
   public void click(int x, int y) {
     for (int i = 1; i <= this.pile.size(); i++) {
       if (x < i * CardDisplay.CARD_WIDTH) {
-        pile.toggleSelection(i);
+        pile.toggleSelection(i - 1);
         break;
       }
     }
