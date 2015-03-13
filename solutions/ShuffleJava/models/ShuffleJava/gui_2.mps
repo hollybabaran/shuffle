@@ -950,7 +950,7 @@
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7511151326110894863" nodeInfo="nn">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="e2lb.~ClassLoader%dgetResource(java%dlang%dString)%cjava%dnet%dURL" resolveInfo="getResource" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7511151326110923666" nodeInfo="nn">
-                        <property name="value" nameId="tpee.1070475926801" value="background.png" />
+                        <property name="value" nameId="tpee.1070475926801" value="background.jpg" />
                       </node>
                     </node>
                   </node>
@@ -8092,7 +8092,7 @@
                 </node>
               </node>
               <node role="ifFalse" roleId="tpee.1163668934364" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7501337804246945508" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="deckback_small.jpg" />
+                <property name="value" nameId="tpee.1070475926801" value="deckback_small.png" />
               </node>
             </node>
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="1320406746499451161" nodeInfo="in" />

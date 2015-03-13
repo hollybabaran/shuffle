@@ -8,6 +8,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="4319553422816035318" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="finalDemo" />
+    <node role="endBlock" roleId="ffsp.3561890535519279272" type="ffsp.EndBlock" typeId="ffsp.3561890535518455856" id="3561890535519717170" nodeInfo="ng" />
     <node role="setupBlock" roleId="ffsp.5722923068946478776" type="ffsp.SetupBlock" typeId="ffsp.5160494638280649077" id="4319553422816035319" nodeInfo="ng">
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.DefaultDeck" typeId="ffsp.1415725632945178473" id="317224616453922099" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="__deck" />
@@ -963,9 +964,6 @@
           </node>
         </node>
       </node>
-      <node role="body" roleId="ffsp.8340020017782266822" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="2480633097878129254" nodeInfo="ng" />
-      <node role="body" roleId="ffsp.8340020017782266822" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="2480633097878126403" nodeInfo="ng" />
-      <node role="body" roleId="ffsp.8340020017782266822" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="2480633097878126357" nodeInfo="ng" />
       <node role="body" roleId="ffsp.8340020017782266822" type="ffsp.ReturnStatement" typeId="ffsp.8340020017782162052" id="992247128579553814" nodeInfo="ng">
         <node role="boolean" roleId="ffsp.8340020017782162085" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="992247128579554025" nodeInfo="ng">
           <property name="value" nameId="ffsp.2003306783291602631" value="true" />
