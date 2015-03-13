@@ -8,6 +8,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="4319553422816035318" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="finalDemo" />
+    <node role="endBlock" roleId="ffsp.3561890535519279272" type="ffsp.EndBlock" typeId="ffsp.3561890535518455856" id="3561890535519717170" nodeInfo="ng" />
     <node role="setupBlock" roleId="ffsp.5722923068946478776" type="ffsp.SetupBlock" typeId="ffsp.5160494638280649077" id="4319553422816035319" nodeInfo="ng">
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.DefaultDeck" typeId="ffsp.1415725632945178473" id="317224616453922099" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="__deck" />
@@ -791,7 +792,7 @@
                     </node>
                     <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="2480633097878737755" nodeInfo="ng">
                       <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="2480633097878737783" nodeInfo="ng">
-                        <property name="value" nameId="ffsp.8642299736868227465" value="The current suit is" />
+                        <property name="value" nameId="ffsp.8642299736868227465" value="Suit changed to " />
                       </node>
                       <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4209354522004600458" nodeInfo="ng">
                         <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="5964992898508185281" resolveInfo="currentSuit" />
@@ -951,6 +952,14 @@
                   <property name="value" nameId="tpee.1070475926801" value="spades" />
                 </node>
               </node>
+              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="2638489066508006952" nodeInfo="ng">
+                <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="2638489066508007181" nodeInfo="ng">
+                  <property name="value" nameId="ffsp.8642299736868227465" value="Suit changed to " />
+                </node>
+                <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="2638489066508007163" nodeInfo="ng">
+                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="5964992898508185281" resolveInfo="currentSuit" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -961,7 +970,6 @@
         </node>
       </node>
     </node>
-    <node role="endBlock" roleId="ffsp.3561890535519279272" type="ffsp.EndBlock" typeId="ffsp.3561890535518455856" id="3561890535519717170" nodeInfo="ng" />
   </root>
 </model>
 
