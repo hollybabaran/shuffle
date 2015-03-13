@@ -275,7 +275,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5160494638280864183" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
     <property name="name" nameId="tpck.1169194664001" value="WinConditionBlock" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Win Condition" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="End Condition" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="150989085052660316" resolveInfo="ConditionBlock" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7881733640606387490" nodeInfo="ig">
@@ -1196,6 +1196,12 @@
     <property name="name" nameId="tpck.1169194664001" value="CurrentPlayerNumber" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="currentPlayerNumber" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3561890535518455856" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
+    <property name="name" nameId="tpck.1169194664001" value="EndBlock" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="End Block" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5160494638280568420" resolveInfo="CommandBlock" />
   </root>
 </model>
 
