@@ -27,6 +27,7 @@
     <classNode dependClassName="Shuffle.typesystem.typeof_Player_InferenceRule" />
     <classNode dependClassName="Shuffle.typesystem.typeof_RankObj_InferenceRule" />
     <classNode dependClassName="Shuffle.typesystem.typeof_RankOp_InferenceRule" />
+    <classNode dependClassName="Shuffle.typesystem.typeof_ShuffleButton_InferenceRule" />
     <classNode dependClassName="Shuffle.typesystem.typeof_Size_InferenceRule" />
     <classNode dependClassName="Shuffle.typesystem.typeof_StringConstant_InferenceRule" />
     <classNode dependClassName="Shuffle.typesystem.typeof_SuitObj_InferenceRule" />
@@ -36,6 +37,7 @@
     <classNode dependClassName="Shuffle.typesystem.typeof_VariableReference_InferenceRule" />
     <classNode dependClassName="Shuffle.typesystem.typeof_boolConstant_InferenceRule" />
     <classNode dependClassName="Shuffle.typesystem.typeof_dotOperator_InferenceRule" />
+    <classNode dependClassName="Shuffle.typesystem.typeof_isClicked_InferenceRule" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.BaseHelginsDescriptor" />
   </dependency>
@@ -339,6 +341,15 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
+  <dependency className="Shuffle.typesystem.typeof_ShuffleButton_InferenceRule" file="typeof_ShuffleButton_InferenceRule.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
   <dependency className="Shuffle.typesystem.typeof_Size_InferenceRule" file="typeof_Size_InferenceRule.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
@@ -438,6 +449,18 @@
     <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
     <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
+  <dependency className="Shuffle.typesystem.typeof_isClicked_InferenceRule" file="typeof_isClicked_InferenceRule.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.EquationInfo" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>

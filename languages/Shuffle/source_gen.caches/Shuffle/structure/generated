@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="1c0rx4tnh92uiev5typhddmoxtlm5xs">
+<dependencies version="2" modelHash="c20s4va01i2by8cxo6k14x2vbkwh50w">
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
@@ -10,7 +10,7 @@
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" hash="efpygk1iagsrvh0j1nroncwiyw07vp1" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-8chtguhcvj45cjy0bx3xiqekte2lox7" />
-  <common hash="1h63rz4ectegbobxh5z80w62lofunqd" dependsOnNodes="true">
+  <common hash="coivgmasetaxqoes4d22fslzbps0tal" dependsOnNodes="true">
     <dep root="1291148986966014861" />
     <dep root="1298433529544597390" />
     <dep root="1415725632945178473" />
@@ -33,6 +33,7 @@
     <dep root="2455425859176336643" />
     <dep root="2524059026155569696" />
     <dep root="2524059026155779482" />
+    <dep root="2674640898150006095" />
     <dep root="2678928131162238767" />
     <dep root="2678928131163028766" />
     <dep root="2719425773106347456" />
@@ -74,6 +75,8 @@
     <dep root="6162892231914410061" />
     <dep root="6265495446096081949" />
     <dep root="6304222537138290358" />
+    <dep root="6780516275963016114" />
+    <dep root="6780516275963637041" />
     <dep root="6952526287830939805" />
     <dep root="6965435806309709998" />
     <dep root="7181767954433034087" />
@@ -119,7 +122,7 @@
   <source id="7674520359936346144" name="ShuffleDeck" hash="7ha98eb10u9p70w01dh2kx9ld5n4p2l" />
   <source id="7674520359936462567" name="Deal" hash="-735zvbt5ztc0vnc7hyyk9f0rlmxec3n" />
   <source id="3854676059697220626" name="CardCollection" hash="-7jadcmdbf61vd7td0snypkkayflcgqq" />
-  <source id="3854676059697422932" name="Pile" hash="-3pemcte2ziy2ryu395hgbtd1i37q8f4" />
+  <source id="3854676059697422932" name="Pile" hash="10yjrpgsugij7kppr4g37kf6c6chf2n" />
   <source id="3854676059697652960" name="Suit" hash="-9f5a9xrg14ouik4c71vzahf7g150mrt">
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
     <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -247,5 +250,8 @@
   <source id="7501337804235854819" name="ToMoveCheck" hash="-cypej65rz3v82j449cmv7d10r1sssud" />
   <source id="7501337804236030156" name="FunctionCall" hash="-8x14a4sa5u3dlij7kbq396avjc722qx" />
   <source id="7501337804237190121" name="Comment" hash="-asvt0cqfzn18yh552kakm63mplk3zfs" />
+  <source id="6780516275963637041" name="ToClick" hash="8kfm5xs3eignk4sor71xjp8s0tr9qru" />
+  <source id="6780516275963016114" name="ShuffleButton" hash="7taix3x7isbjjn29buc1ovw1o9xms5f" />
+  <source id="2674640898150006095" name="isClicked" hash="apdebkhpz46t8pi0jghm0hz594eoowi" />
 </dependencies>
 
