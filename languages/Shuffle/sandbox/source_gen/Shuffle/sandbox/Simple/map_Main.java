@@ -6,6 +6,8 @@ import ShuffleJava.runtime.GameState;
 import ShuffleJava.runtime.ShuffleException;
 import ShuffleJava.runtime.Card;
 import ShuffleJava.runtime.CardPile;
+import ShuffleJava.runtime.Button;
+import ShuffleJava.gui_2.ButtonDisplay;
 import ShuffleJava.gui_2.StackedPileDisplay;
 import ShuffleJava.gui_2.CascadingPileDisplay;
 import ShuffleJava.gui_2.HiddenPileDisplay;
@@ -20,6 +22,8 @@ public class map_Main {
   public static void executeGame() throws ShuffleException {
     Card __debug_include_Card;
     CardPile __debug_include_piledisplay;
+    Button __debug_include_button;
+    ButtonDisplay __debug_iclude_BD;
     StackedPileDisplay __debug_include_SPD;
     CascadingPileDisplay __debug_include_CPD;
     HiddenPileDisplay __debug_include_HPD;
@@ -31,29 +35,168 @@ public class map_Main {
     Printer printer = new Printer(gameState);
 
     // Setup Block 
-    CardPile __deck = new CardPile("deck");
+    CardPile __deck = new CardPile("standard_deck");
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 1,1 ));
+gameState.setNumberPlayers(2);__deck.shuffle();
 
-    __deck.add( new Card ( "two","spades" ));
-    __deck.add( new Card ( "three","spades" ));
-    __deck.add( new Card ( "four","spades" ));
-    __deck.add( new Card ( "five","spades" ));
-    __deck.add( new Card ( "two","hearts" ));
-    __deck.add( new Card ( "three","hearts" ));
-    __deck.add( new Card ( "four","hearts" ));
-    __deck.add( new Card ( "five","hearts" ));
+    CardPileUtil.move(10, __deck, gameState.player(1).hand());
+    CardPileUtil.move(10, __deck, gameState.player(2).hand());
+Button pass = new Button("pass");
+ButtonDisplay pass_disp = new ButtonDisplay(pass);
+frame.getCanvas().addShuffleComponent(pass_disp,"A",1);
+gameState.buttons.put("pass",pass);
+CardPile A2 = new CardPile("A2", true);
+StackedPileDisplay A2_disp = new StackedPileDisplay(A2);
+frame.getCanvas().addShuffleComponent(A2_disp,"A",2);
+gameState.cardPiles.put("A2",A2);
+CardPile A3 = new CardPile("A3", true);
+StackedPileDisplay A3_disp = new StackedPileDisplay(A3);
+frame.getCanvas().addShuffleComponent(A3_disp,"A",3);
+gameState.cardPiles.put("A3",A3);
+CardPile A4 = new CardPile("A4", true);
+StackedPileDisplay A4_disp = new StackedPileDisplay(A4);
+frame.getCanvas().addShuffleComponent(A4_disp,"A",4);
+gameState.cardPiles.put("A4",A4);
+CardPile B1 = new CardPile("B1", true);
+StackedPileDisplay B1_disp = new StackedPileDisplay(B1);
+frame.getCanvas().addShuffleComponent(B1_disp,"B",1);
+gameState.cardPiles.put("B1",B1);
+CardPile B2 = new CardPile("B2", true);
+StackedPileDisplay B2_disp = new StackedPileDisplay(B2);
+frame.getCanvas().addShuffleComponent(B2_disp,"B",2);
+gameState.cardPiles.put("B2",B2);
+CardPile B3 = new CardPile("B3", true);
+StackedPileDisplay B3_disp = new StackedPileDisplay(B3);
+frame.getCanvas().addShuffleComponent(B3_disp,"B",3);
+gameState.cardPiles.put("B3",B3);
+CardPile B4 = new CardPile("B4", true);
+StackedPileDisplay B4_disp = new StackedPileDisplay(B4);
+frame.getCanvas().addShuffleComponent(B4_disp,"B",4);
+gameState.cardPiles.put("B4",B4);
+CardPile C1 = new CardPile("C1", true);
+StackedPileDisplay C1_disp = new StackedPileDisplay(C1);
+frame.getCanvas().addShuffleComponent(C1_disp,"C",1);
+gameState.cardPiles.put("C1",C1);
+CardPile C2 = new CardPile("C2", true);
+StackedPileDisplay C2_disp = new StackedPileDisplay(C2);
+frame.getCanvas().addShuffleComponent(C2_disp,"C",2);
+gameState.cardPiles.put("C2",C2);
+CardPile C3 = new CardPile("C3", true);
+StackedPileDisplay C3_disp = new StackedPileDisplay(C3);
+frame.getCanvas().addShuffleComponent(C3_disp,"C",3);
+gameState.cardPiles.put("C3",C3);
+CardPile C4 = new CardPile("C4", true);
+StackedPileDisplay C4_disp = new StackedPileDisplay(C4);
+frame.getCanvas().addShuffleComponent(C4_disp,"C",4);
+gameState.cardPiles.put("C4",C4);
+CardPile D1 = new CardPile("D1", true);
+StackedPileDisplay D1_disp = new StackedPileDisplay(D1);
+frame.getCanvas().addShuffleComponent(D1_disp,"D",1);
+gameState.cardPiles.put("D1",D1);
+CardPile D2 = new CardPile("D2", true);
+StackedPileDisplay D2_disp = new StackedPileDisplay(D2);
+frame.getCanvas().addShuffleComponent(D2_disp,"D",2);
+gameState.cardPiles.put("D2",D2);
+CardPile D3 = new CardPile("D3", true);
+StackedPileDisplay D3_disp = new StackedPileDisplay(D3);
+frame.getCanvas().addShuffleComponent(D3_disp,"D",3);
+gameState.cardPiles.put("D3",D3);
+CardPile D4 = new CardPile("D4", true);
+StackedPileDisplay D4_disp = new StackedPileDisplay(D4);
+frame.getCanvas().addShuffleComponent(D4_disp,"D",4);
+gameState.cardPiles.put("D4",D4);
+CardPile E1 = new CardPile("E1", true);
+StackedPileDisplay E1_disp = new StackedPileDisplay(E1);
+frame.getCanvas().addShuffleComponent(E1_disp,"E",1);
+gameState.cardPiles.put("E1",E1);
+CardPile E2 = new CardPile("E2", true);
+StackedPileDisplay E2_disp = new StackedPileDisplay(E2);
+frame.getCanvas().addShuffleComponent(E2_disp,"E",2);
+gameState.cardPiles.put("E2",E2);
+CardPile E3 = new CardPile("E3", true);
+StackedPileDisplay E3_disp = new StackedPileDisplay(E3);
+frame.getCanvas().addShuffleComponent(E3_disp,"E",3);
+gameState.cardPiles.put("E3",E3);
+CardPile E4 = new CardPile("E4", true);
+StackedPileDisplay E4_disp = new StackedPileDisplay(E4);
+frame.getCanvas().addShuffleComponent(E4_disp,"E",4);
+gameState.cardPiles.put("E4",E4);
+CardPile F1 = new CardPile("F1", true);
+StackedPileDisplay F1_disp = new StackedPileDisplay(F1);
+frame.getCanvas().addShuffleComponent(F1_disp,"F",1);
+gameState.cardPiles.put("F1",F1);
+CardPile F2 = new CardPile("F2", true);
+StackedPileDisplay F2_disp = new StackedPileDisplay(F2);
+frame.getCanvas().addShuffleComponent(F2_disp,"F",2);
+gameState.cardPiles.put("F2",F2);
+CardPile F3 = new CardPile("F3", true);
+StackedPileDisplay F3_disp = new StackedPileDisplay(F3);
+frame.getCanvas().addShuffleComponent(F3_disp,"F",3);
+gameState.cardPiles.put("F3",F3);
+CardPile F4 = new CardPile("F4", true);
+StackedPileDisplay F4_disp = new StackedPileDisplay(F4);
+frame.getCanvas().addShuffleComponent(F4_disp,"F",4);
+gameState.cardPiles.put("F4",F4);
 
-gameState.setNumberPlayers(4);__deck.shuffle();
 
-
-    CardPileUtil.move(2, __deck, gameState.player(1).hand());
-    CardPileUtil.move(2, __deck, gameState.player(2).hand());
-    CardPileUtil.move(2, __deck, gameState.player(3).hand());
-    CardPileUtil.move(2, __deck, gameState.player(4).hand());
-CardPile middlePile = new CardPile("middlePile", false);
-StackedPileDisplay middlePile_disp = new StackedPileDisplay(middlePile);
-frame.getCanvas().addShuffleComponent(middlePile_disp,"E",3);
-gameState.cardPiles.put("middlePile",middlePile);
-
+int five = 5;
+gameState.numbers.put("five",5);
+    CardPileUtil.move(gameState.numbers.get("five")
+, __deck, gameState.cardPiles.get("A2")
+);
+    CardPileUtil.moveAll(__deck, gameState.cardPiles.get("A2")
+);
 
 
     gameState.addHandDisplaysToFrame(frame);
@@ -68,12 +211,13 @@ gameState.cardPiles.put("middlePile",middlePile);
       if (gameState.currentPlayer().isHuman()) {
         // human player code 
 gameState.currentPlayer().hand().setSelectable(true);
+while(!(gameState.getValidMove(gameState.currentPlayer().hand(),gameState.cardPiles.get("A2")
+,"").isMoved() )){}
 
         gameState.clearHumanPlayerState();
       } else {
         // computer player code 
 
-        CardPileUtil.move(1, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile"));
       }
 
       // win condition 

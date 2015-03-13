@@ -34,6 +34,7 @@
     <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
   </dependency>
   <dependency className="Shuffle.textGen.Card_TextGen" file="Card_TextGen.java">
+    <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
@@ -175,6 +176,7 @@
     <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
   </dependency>
   <dependency className="Shuffle.textGen.RankLiteral_TextGen" file="RankLiteral_TextGen.java">
+    <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
@@ -203,6 +205,11 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
   </dependency>
+  <dependency className="Shuffle.textGen.ShuffleButton_TextGen" file="ShuffleButton_TextGen.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
+  </dependency>
   <dependency className="Shuffle.textGen.ShuffleDeck_TextGen" file="ShuffleDeck_TextGen.java">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
@@ -217,7 +224,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
   </dependency>
+  <dependency className="Shuffle.textGen.String_TextGen" file="String_TextGen.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
+  </dependency>
   <dependency className="Shuffle.textGen.SuitLiteral_TextGen" file="SuitLiteral_TextGen.java">
+    <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
@@ -229,6 +243,11 @@
     <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
   </dependency>
   <dependency className="Shuffle.textGen.SuitOp_TextGen" file="SuitOp_TextGen.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
+  </dependency>
+  <dependency className="Shuffle.textGen.ToClick_TextGen" file="ToClick_TextGen.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
   </dependency>

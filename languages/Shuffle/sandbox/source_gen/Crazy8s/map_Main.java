@@ -6,6 +6,8 @@ import ShuffleJava.runtime.GameState;
 import ShuffleJava.runtime.ShuffleException;
 import ShuffleJava.runtime.Card;
 import ShuffleJava.runtime.CardPile;
+import ShuffleJava.runtime.Button;
+import ShuffleJava.gui_2.ButtonDisplay;
 import ShuffleJava.gui_2.StackedPileDisplay;
 import ShuffleJava.gui_2.CascadingPileDisplay;
 import ShuffleJava.gui_2.HiddenPileDisplay;
@@ -20,6 +22,8 @@ public class map_Main {
   public static void executeGame() throws ShuffleException {
     Card __debug_include_Card;
     CardPile __debug_include_piledisplay;
+    Button __debug_include_button;
+    ButtonDisplay __debug_iclude_BD;
     StackedPileDisplay __debug_include_SPD;
     CascadingPileDisplay __debug_include_CPD;
     HiddenPileDisplay __debug_include_HPD;
@@ -32,58 +36,58 @@ public class map_Main {
 
     // Setup Block 
     CardPile __deck = new CardPile("standard_deck");
-    __deck.add( new Card ( "ace","spades" ));
-    __deck.add( new Card ( "two","spades" ));
-    __deck.add( new Card ( "three","spades" ));
-    __deck.add( new Card ( "four","spades" ));
-    __deck.add( new Card ( "five","spades" ));
-    __deck.add( new Card ( "six","spades" ));
-    __deck.add( new Card ( "seven","spades" ));
-    __deck.add( new Card ( "eight","spades" ));
-    __deck.add( new Card ( "nine","spades" ));
-    __deck.add( new Card ( "ten","spades" ));
-    __deck.add( new Card ( "jack","spades" ));
-    __deck.add( new Card ( "queen","spades" ));
-    __deck.add( new Card ( "king","spades" ));
-    __deck.add( new Card ( "ace","hearts" ));
-    __deck.add( new Card ( "two","hearts" ));
-    __deck.add( new Card ( "three","hearts" ));
-    __deck.add( new Card ( "four","hearts" ));
-    __deck.add( new Card ( "five","hearts" ));
-    __deck.add( new Card ( "six","hearts" ));
-    __deck.add( new Card ( "seven","hearts" ));
-    __deck.add( new Card ( "eight","hearts" ));
-    __deck.add( new Card ( "nine","hearts" ));
-    __deck.add( new Card ( "ten","hearts" ));
-    __deck.add( new Card ( "jack","hearts" ));
-    __deck.add( new Card ( "queen","hearts" ));
-    __deck.add( new Card ( "king","hearts" ));
-    __deck.add( new Card ( "ace","clubs" ));
-    __deck.add( new Card ( "two","clubs" ));
-    __deck.add( new Card ( "three","clubs" ));
-    __deck.add( new Card ( "four","clubs" ));
-    __deck.add( new Card ( "five","clubs" ));
-    __deck.add( new Card ( "six","clubs" ));
-    __deck.add( new Card ( "seven","clubs" ));
-    __deck.add( new Card ( "eight","clubs" ));
-    __deck.add( new Card ( "nine","clubs" ));
-    __deck.add( new Card ( "ten","clubs" ));
-    __deck.add( new Card ( "jack","clubs" ));
-    __deck.add( new Card ( "queen","clubs" ));
-    __deck.add( new Card ( "king","clubs" ));
-    __deck.add( new Card ( "ace","diamonds" ));
-    __deck.add( new Card ( "two","diamonds" ));
-    __deck.add( new Card ( "three","diamonds" ));
-    __deck.add( new Card ( "four","diamonds" ));
-    __deck.add( new Card ( "five","diamonds" ));
-    __deck.add( new Card ( "six","diamonds" ));
-    __deck.add( new Card ( "seven","diamonds" ));
-    __deck.add( new Card ( "eight","diamonds" ));
-    __deck.add( new Card ( "nine","diamonds" ));
-    __deck.add( new Card ( "ten","diamonds" ));
-    __deck.add( new Card ( "jack","diamonds" ));
-    __deck.add( new Card ( "queen","diamonds" ));
-    __deck.add( new Card ( "king","diamonds" ));
+    __deck.add( new Card ( 1,1 ));
+    __deck.add( new Card ( 2,1 ));
+    __deck.add( new Card ( 3,1 ));
+    __deck.add( new Card ( 4,1 ));
+    __deck.add( new Card ( 5,1 ));
+    __deck.add( new Card ( 6,1 ));
+    __deck.add( new Card ( 7,1 ));
+    __deck.add( new Card ( 8,1 ));
+    __deck.add( new Card ( 9,1 ));
+    __deck.add( new Card ( 10,1 ));
+    __deck.add( new Card ( 11,1 ));
+    __deck.add( new Card ( 12,1 ));
+    __deck.add( new Card ( 13,1 ));
+    __deck.add( new Card ( 1,2 ));
+    __deck.add( new Card ( 2,2 ));
+    __deck.add( new Card ( 3,2 ));
+    __deck.add( new Card ( 4,2 ));
+    __deck.add( new Card ( 5,2 ));
+    __deck.add( new Card ( 6,2 ));
+    __deck.add( new Card ( 7,2 ));
+    __deck.add( new Card ( 8,2 ));
+    __deck.add( new Card ( 9,2 ));
+    __deck.add( new Card ( 10,2 ));
+    __deck.add( new Card ( 11,2 ));
+    __deck.add( new Card ( 12,2 ));
+    __deck.add( new Card ( 13,2 ));
+    __deck.add( new Card ( 1,3 ));
+    __deck.add( new Card ( 2,3 ));
+    __deck.add( new Card ( 3,3 ));
+    __deck.add( new Card ( 4,3 ));
+    __deck.add( new Card ( 5,3 ));
+    __deck.add( new Card ( 6,3 ));
+    __deck.add( new Card ( 7,3 ));
+    __deck.add( new Card ( 8,3 ));
+    __deck.add( new Card ( 9,3 ));
+    __deck.add( new Card ( 10,3 ));
+    __deck.add( new Card ( 11,3 ));
+    __deck.add( new Card ( 12,3 ));
+    __deck.add( new Card ( 13,3 ));
+    __deck.add( new Card ( 1,4 ));
+    __deck.add( new Card ( 2,4 ));
+    __deck.add( new Card ( 3,4 ));
+    __deck.add( new Card ( 4,4 ));
+    __deck.add( new Card ( 5,4 ));
+    __deck.add( new Card ( 6,4 ));
+    __deck.add( new Card ( 7,4 ));
+    __deck.add( new Card ( 8,4 ));
+    __deck.add( new Card ( 9,4 ));
+    __deck.add( new Card ( 10,4 ));
+    __deck.add( new Card ( 11,4 ));
+    __deck.add( new Card ( 12,4 ));
+    __deck.add( new Card ( 13,4 ));
 gameState.setNumberPlayers(4);__deck.shuffle();
 
     CardPileUtil.move(8, __deck, gameState.player(1).hand());
@@ -102,15 +106,21 @@ HiddenPileDisplay topCardPile_disp = new HiddenPileDisplay(topCardPile);
 frame.getCanvas().addShuffleComponent(topCardPile_disp,"B",3);
 gameState.cardPiles.put("topCardPile",topCardPile);
 
-    CardPileUtil.move(1, __deck, gameState.cardPiles.get("middlePile"));
-    CardPileUtil.moveAll(__deck, gameState.cardPiles.get("deck"));gameState.cardPiles.get("middlePile").setSelectable(true);
-gameState.cardPiles.get("deck").setSelectable(1);
-
-
-String currentSuit = gameState.cardPiles.get("middlePile").getTopCard().getSuit();
-gameState.strings.put("currentSuit",gameState.cardPiles.get("middlePile").getTopCard().getSuit());
-String currentRank = gameState.cardPiles.get("middlePile").getTopCard().getRank();
-gameState.strings.put("currentRank",gameState.cardPiles.get("middlePile").getTopCard().getRank());
+    CardPileUtil.move(1, __deck, gameState.cardPiles.get("middlePile")
+);
+    CardPileUtil.moveAll(__deck, gameState.cardPiles.get("deck")
+);gameState.cardPiles.get("middlePile")
+.setSelectable(true);
+gameState.cardPiles.get("deck")
+.setSelectable(1);
+int currentSuit = gameState.cardPiles.get("middlePile")
+.getTopCard().getSuitInt();
+gameState.numbers.put("currentSuit",gameState.cardPiles.get("middlePile")
+.getTopCard().getSuitInt());
+int currentRank = gameState.cardPiles.get("middlePile")
+.getTopCard().getRankInt();
+gameState.numbers.put("currentRank",gameState.cardPiles.get("middlePile")
+.getTopCard().getRankInt());
 
 
 
@@ -125,84 +135,111 @@ gameState.strings.put("currentRank",gameState.cardPiles.get("middlePile").getTop
 
       if (gameState.currentPlayer().isHuman()) {
         // human player code 
-gameState.cardPiles.get("middlePile").setSelectable(true);
-gameState.currentPlayer().hand().setSelectable(1);
-gameState.cardPiles.get("middlePile").setSelectable(false);
+gameState.cardPiles.get("deck")
+.setSelectable(1);
+gameState.currentPlayer().hand().setSelectable(true);
+while(!(gameState.getValidMove(gameState.cardPiles.get("deck")
+,gameState.currentPlayer().hand(),"").isMoved()  || gameState.getValidMove(gameState.currentPlayer().hand(),gameState.cardPiles.get("middlePile")
+,"canPlay").isMoved() )){}
 
         gameState.clearHumanPlayerState();
       } else {
         // computer player code 
 boolean cardPlayed = false;
 gameState.booleans.put("cardPlayed",false);
-CardPile __Pile7274currentCard= new CardPile(gameState.currentPlayer().hand());
-for (Card currentCard : __Pile7274currentCard.getArrayList()){
-        if(gameState.booleans.get("cardPlayed") == false){
-        if(currentCard.getRank() == gameState.strings.get("currentRank") || currentCard.getSuit() == gameState.strings.get("currentSuit")){
+CardPile __Pile1449currentCard= new CardPile(gameState.currentPlayer().hand());
+for (Card currentCard : __Pile1449currentCard.getArrayList()){
+        if(gameState.booleans.get("cardPlayed")
+ == false){
+        if(currentCard.getRankInt() == gameState.numbers.get("currentRank")
+ || currentCard.getSuitInt() == gameState.numbers.get("currentSuit")
+){
         
-        CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile"));
-        
+        CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile")
+);
+        frame.console.printToConsole(gameState.currentPlayer(), " plays ", currentCard);
         gameState.booleans.put("cardPlayed",true);
 
-        gameState.strings.put("currentSuit",currentCard.getSuit());
+        gameState.numbers.put("currentSuit",currentCard.getSuitInt());
 
-        gameState.strings.put("currentRank",currentCard.getRank());
+        gameState.numbers.put("currentRank",currentCard.getRankInt());
 
 
 }
-else if(gameState.currentPlayer().hand().size() > 1 && currentCard.getRank() == "eight"){
+else if(gameState.currentPlayer().hand().size() > 1 && currentCard.getRankInt() == 8){
         
-        CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile"));
-        
+        CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile")
+);
+        frame.console.printToConsole(gameState.currentPlayer(), " plays ", currentCard);
         gameState.booleans.put("cardPlayed",true);
 
-        gameState.strings.put("currentSuit",gameState.currentPlayer().hand().getTopCard().getSuit());
+        gameState.numbers.put("currentSuit",gameState.currentPlayer().hand().getTopCard().getSuitInt());
 
-        gameState.strings.put("currentRank",currentCard.getRank());
-
-
-}
+        gameState.numbers.put("currentRank",currentCard.getRankInt());
 
 
 }
 
-}
-if(gameState.booleans.get("cardPlayed") == false){
-        if(gameState.cardPiles.get("deck").size() == 0){
-        
-        CardPileUtil.move(gameState.cardPiles.get("middlePile").getTopCard(), gameState.cardPiles.get("middlePile"), gameState.cardPiles.get("topCardPile"));
-        
-        CardPileUtil.moveAll(gameState.cardPiles.get("middlePile"), gameState.cardPiles.get("deck"));
-        gameState.cardPiles.get("deck").shuffle();
-
-        
-        CardPileUtil.moveAll(gameState.cardPiles.get("topCardPile"), gameState.cardPiles.get("middlePile"));
 
 }
 
+}
+if(gameState.booleans.get("cardPlayed")
+ == false){
+        if(gameState.cardPiles.get("deck")
+.size() == 0){
         
-        CardPileUtil.move(1, gameState.cardPiles.get("deck"), gameState.currentPlayer().hand());
+        CardPileUtil.move(gameState.cardPiles.get("middlePile")
+.getTopCard(), gameState.cardPiles.get("middlePile")
+, gameState.cardPiles.get("topCardPile")
+);
+        
+        CardPileUtil.moveAll(gameState.cardPiles.get("middlePile")
+, gameState.cardPiles.get("deck")
+);
+        gameState.cardPiles.get("deck")
+.shuffle();
+
+        
+        CardPileUtil.moveAll(gameState.cardPiles.get("topCardPile")
+, gameState.cardPiles.get("middlePile")
+);
+
+}
+
+        
+        CardPileUtil.move(1, gameState.cardPiles.get("deck")
+, gameState.currentPlayer().hand());
         Card currentCard = gameState.currentPlayer().hand().getTopCard();
-        if(gameState.booleans.get("cardPlayed") == false){
-        if(currentCard.getRank() == gameState.strings.get("currentRank") || currentCard.getSuit() == gameState.strings.get("currentSuit")){
+        if(gameState.booleans.get("cardPlayed")
+ == false){
+        if(currentCard.getRankInt() == gameState.numbers.get("currentRank")
+ || currentCard.getSuitInt() == gameState.numbers.get("currentSuit")
+){
         
-        CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile"));
+        CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile")
+);
         gameState.booleans.put("cardPlayed",true);
 
-        gameState.strings.put("currentSuit",currentCard.getSuit());
+        gameState.numbers.put("currentSuit",currentCard.getSuitInt());
 
-        gameState.strings.put("currentRank",currentCard.getRank());
+        gameState.numbers.put("currentRank",currentCard.getRankInt());
 
 
 }
-else if(gameState.currentPlayer().hand().size() > 1 && currentCard.getRank() == "eight"){
+else if(gameState.currentPlayer().hand().size() > 1 && currentCard.getRankInt() == 8){
         
-        CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile"));
+        CardPileUtil.move(currentCard, gameState.currentPlayer().hand(), gameState.cardPiles.get("middlePile")
+);
         gameState.booleans.put("cardPlayed",true);
 
-        gameState.strings.put("currentSuit",gameState.currentPlayer().hand().getTopCard().getSuit());
+        gameState.numbers.put("currentSuit",gameState.currentPlayer().hand().getTopCard().getSuitInt());
 
-        gameState.strings.put("currentRank",currentCard.getRank());
+        gameState.numbers.put("currentRank",currentCard.getRankInt());
 
+        frame.console.printToConsole("The current suit is");
+        frame.console.printToConsole(gameState.numbers.get("currentSuit")
+);
 
 }
 
@@ -229,27 +266,64 @@ else if(gameState.currentPlayer().hand().size() > 1 && currentCard.getRank() == 
   }
 
 public static boolean canPlay(){
-CardPile __Pile9440card= new CardPile(gameState.currentPlayer().hand().getSelection());
-for (Card card : __Pile9440card.getArrayList()){
-  if(card.getRank()!=gameState.strings.get("currentRank") || card.getSuit()!=gameState.strings.get("currentSuit") || card.getRank()!="eight"){
+CardPile __Pile5220card= new CardPile(gameState.currentPlayer().hand().getSelection());
+for (Card card : __Pile5220card.getArrayList()){
+  if(card.getRankInt()!=gameState.numbers.get("currentRank")
+ && card.getSuitInt()!=gameState.numbers.get("currentSuit")
+ && card.getRankInt()!=8){
   return false;
 
 
 }
 
-  if(card.getRank() == "eight"){
+  if(card.getRankInt() == 8){
+  gameState.strings.put("suit","");
+
   java.util.ArrayList<String> options = new java.util.ArrayList<String>();
 options.add("hearts");
 options.add("diamonds");
 options.add("clubs");
 options.add("spades");
 ShuffleJava.gui_2.Popup popup = new ShuffleJava.gui_2.Popup("What suit do you pick?", options);
-gameState.strings.put(gameState.strings.get("currentSuit"),options.get(popup.show()));
+gameState.strings.put(gameState.strings.get("suit")
+,options.get(popup.show()));
+
+  if(gameState.strings.get("suit")
+ == "hearts"){
+  gameState.numbers.put("currentSuit",2);
+
+
+}
+else if(gameState.strings.get("suit")
+ == "diamonds"){
+  gameState.numbers.put("currentSuit",4);
+
+
+}
+else if(gameState.strings.get("suit")
+ == "diamonds"){
+  gameState.numbers.put("currentSuit",3);
+
+
+}
+else if(gameState.strings.get("suit")
+ == "spades"){
+  gameState.numbers.put("currentSuit",1);
 
 
 }
 
+  
+
+
 }
+
+  
+
+}
+
+
+
 return true;
 }
 
