@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-4bg937521vhzxe6wc2szp61zi2wc7a9">
+<dependencies version="2" modelHash="94kp5hsxylelt5qxofowx08664ebya9">
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
@@ -15,13 +15,13 @@
   <source id="6162892231914596317" name="Player" hash="-3bhn38tzhlz1fzs57i6jsondjb519gy">
     <file name="Player.java" />
   </source>
-  <source id="6162892231914596383" name="Card" hash="8rd4ltq2z5mv76eo41t5nkzzidnrx6z">
+  <source id="6162892231914596383" name="Card" hash="2u9plhpp33eoz3k48rtstlarpe9677j">
     <file name="Card.java" />
   </source>
   <source id="1472781009440827330" name="CardPileUtil" hash="33cw1p3ih27r8zew3c4a35llyhny6lt">
     <file name="CardPileUtil.java" />
   </source>
-  <source id="1747264128837885076" name="GameState" hash="-mz7o9ybp86yjl0qhtrtt520ji9zwbx">
+  <source id="1747264128837885076" name="GameState" hash="-3ffy8xh04atq89qex4rl9p1q7orbnbb">
     <file name="GameState.java" />
   </source>
   <source id="1904212697478843359" name="Printer" hash="-e2ywi818l70dafrkfyl04apj0966b9w">

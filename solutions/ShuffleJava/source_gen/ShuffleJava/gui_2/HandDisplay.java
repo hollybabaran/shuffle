@@ -80,7 +80,11 @@ public class HandDisplay extends CascadingPileDisplay implements ShuffleDraw {
         // draw cards 
         int locX = (isVertical ? x : CardDisplay.CARD_WIDTH * i + x);
         int locY = (isVertical ? CardDisplay.CARD_HEIGHT / 2 * i + y : y);
-        cards.get(i).draw(g, locX, locY);
+        if (this.cards.get(i).isSelected()) {
+          cards.get(i).draw(g, locX + getDragOffsetx(), locY + getDragOffsety());
+        } else {
+          cards.get(i).draw(g, locX, locY);
+        }
       }
       g.setColor(Color.LIGHT_GRAY);
       switch (playerNum) {
@@ -129,6 +133,8 @@ public class HandDisplay extends CascadingPileDisplay implements ShuffleDraw {
       }
     }
   }
+
+
 
 
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="7lpw1a5j027l2q6n6mfwal1x21rml8d">
+<dependencies version="2" modelHash="-8kod376gng3pmv0w31o05rwf1w7f59q">
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" hash="-15uwdtf1y5pg0o0e3fc6ujv2qcw23bv" />
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="-8z73tx2nml9xagbxlfmq60ehji8q3f5" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
-  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="-3orb0wey7geivpxu2snshdolc5zxgba" />
+  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="-4gqrtn5ekbuxdy8x19zo7xowucbt74c" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <common hash="bbkjgivlk1bj31f2ohbhipqap1uu7b4" dependsOnNodes="true">
     <dep root="1415725632945990508" />
@@ -14,6 +14,7 @@
     <dep root="1707132686103383859" />
     <dep root="1790098884239403622" />
     <dep root="2834967828304165839" />
+    <dep root="3561890535522580147" />
     <dep root="5165761802077123674" />
     <dep root="6796815332554477571" />
     <dep root="8142839966539474224" />
@@ -25,8 +26,11 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="QueriesGenerated.java" />
   </common>
-  <source id="7674419771057231696" name="main" hash="8yjfwytqihd6gv2g0rc3irm76iu4yal">
+  <source id="7674419771057231696" name="main" hash="-deoream0ov2jh3e48rv5j37ukh45hwq">
     <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" />
+  </source>
+  <source id="2834967828304165839" name="map_Main" hash="-prda2zdrtj159g0za25l6un2m8nu2h">
+    <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
   </source>
   <source id="5165761802077123674" name="reduce_Move" hash="5ek77hkq8ax538rg4rj9k1n19pe3gqt" />
   <source id="6796815332554477571" name="reduce_SetupBlock" hash="dlv2hj0j8hlep004g7avb80yvzncufh" />
@@ -36,8 +40,6 @@
   <source id="1707132686102726996" name="reduce_Deck" hash="4lsp7okvdvdvgina6c3fg5fyens3hsn" />
   <source id="1415725632945990508" name="reduce_DefaultDeck" hash="-dfeac9c3ukaj5lf9j626cf8li6rlvzn" />
   <source id="1790098884239403622" name="reduce_PlayerTurnBlock" hash="193zeporeg1zeddpk03rsyi4inzx3u7" />
-  <source id="2834967828304165839" name="map_Main" hash="24mwaqd0orsr8bo42uhbphxnf9lq4qu">
-    <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
-  </source>
+  <source id="3561890535522580147" name="reduce_EndBlock" hash="2q9o6uq3gugpyrws0d7h9uhtjngsr1c" />
 </dependencies>
 

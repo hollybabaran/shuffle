@@ -88,6 +88,22 @@ public class QueriesGenerated {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), "cardNumbers", true), "Shuffle.structure.AllKeyword");
   }
 
+  public static SNode sourceNodeQuery_5144139994151045845(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "playerTurnBlock", true);
+  }
+
+  public static SNode sourceNodeQuery_5144139994151046316(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "computerTurnBlock", true);
+  }
+
+  public static SNode sourceNodeQuery_8187829176103803852(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "winConditionBlock", true), "condition", true);
+  }
+
+  public static SNode sourceNodeQuery_3561890535519296911(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "endBlock", true);
+  }
+
   public static SNode sourceNodeQuery_4654595638703165195(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "pile1", true);
   }
@@ -108,16 +124,12 @@ public class QueriesGenerated {
     return SLinkOperations.getTarget(_context.getNode(), "pile2", true);
   }
 
-  public static SNode sourceNodeQuery_5144139994151045845(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), "playerTurnBlock", true);
+  public static Iterable<SNode> sourceNodesQuery_8187829176103803816(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "setupBlock", true), "body", true);
   }
 
-  public static SNode sourceNodeQuery_5144139994151046316(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), "computerTurnBlock", true);
-  }
-
-  public static SNode sourceNodeQuery_8187829176103803852(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "winConditionBlock", true), "condition", true);
+  public static Iterable<SNode> sourceNodesQuery_8340020017787125917(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "functions", true);
   }
 
   public static Iterable<SNode> sourceNodesQuery_6796815332554477675(final SourceSubstituteMacroNodesContext _context) {
@@ -140,11 +152,7 @@ public class QueriesGenerated {
     return SLinkOperations.getTargets(_context.getNode(), "body", true);
   }
 
-  public static Iterable<SNode> sourceNodesQuery_8187829176103803816(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "setupBlock", true), "body", true);
-  }
-
-  public static Iterable<SNode> sourceNodesQuery_8340020017787125917(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getTargets(_context.getNode(), "functions", true);
+  public static Iterable<SNode> sourceNodesQuery_3561890535522580652(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "body", true);
   }
 }

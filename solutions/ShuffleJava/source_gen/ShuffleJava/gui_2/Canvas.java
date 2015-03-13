@@ -63,7 +63,7 @@ public class Canvas extends JPanel {
 
     ClassLoader classLoader = getClass().getClassLoader();
     try {
-      bgImg = ImageIO.read(classLoader.getResource("background.png"));
+      bgImg = ImageIO.read(classLoader.getResource("background.jpg"));
 
     } catch (IOException e) {
       System.out.println("ERROR: Canvas: background image not found");

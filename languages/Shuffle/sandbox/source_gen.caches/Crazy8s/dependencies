@@ -3,6 +3,7 @@
   <dependency className="Crazy8s.map_Main" file="map_Main.java">
     <classNode dependClassName="ShuffleJava.gui_2.ButtonDisplay" />
     <classNode dependClassName="ShuffleJava.gui_2.CascadingPileDisplay" />
+    <classNode dependClassName="ShuffleJava.gui_2.Console" />
     <classNode dependClassName="ShuffleJava.gui_2.HiddenPileDisplay" />
     <classNode dependClassName="ShuffleJava.gui_2.ShuffleFrame" />
     <classNode dependClassName="ShuffleJava.gui_2.StackedPileDisplay" />
@@ -15,6 +16,7 @@
     <classNode dependClassName="ShuffleJava.runtime.ShuffleException" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.Date" />
   </dependency>
 </dependenciesRoot>
 

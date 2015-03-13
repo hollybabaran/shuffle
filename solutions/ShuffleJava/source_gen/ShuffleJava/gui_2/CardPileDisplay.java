@@ -12,6 +12,25 @@ public abstract class CardPileDisplay {
   protected Color bgcolour;
   protected ClassLoader classLoader1;
 
+  protected int dragStartx;
+  protected int dragStarty;
+
+  protected int dragOffsetx = 0;
+  protected int dragOffsety = 0;
+
+
+
+  protected int getDragOffsetx() {
+    return dragOffsetx;
+  }
+
+
+
+  protected int getDragOffsety() {
+    return dragOffsety;
+  }
+
+
 
 
   protected CardPileDisplay(CardPile pile) {
@@ -33,6 +52,28 @@ public abstract class CardPileDisplay {
   }
 
 
+
+  public void startDrag(int x, int y) {
+    dragStartx = x;
+    dragStarty = y;
+
+  }
+
+
+
+  public void drag(int x, int y) {
+    dragOffsetx = x - dragStartx;
+    dragOffsety = y - dragStarty;
+
+  }
+
+
+
+  public void endDrag() {
+    dragOffsetx = 0;
+    dragOffsety = 0;
+
+  }
 
 
 

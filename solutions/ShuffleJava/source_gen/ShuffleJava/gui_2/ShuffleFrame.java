@@ -53,4 +53,10 @@ public class ShuffleFrame {
   }
 
 
+
+  public void printToConsole(Console.OutputType type, Object... text) {
+    console.printToConsole(type, text);
+  }
+
+
 }

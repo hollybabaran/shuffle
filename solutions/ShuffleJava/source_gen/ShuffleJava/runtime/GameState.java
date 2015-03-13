@@ -4,6 +4,7 @@ package ShuffleJava.runtime;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import ShuffleJava.gui_2.Console;
 import java.lang.reflect.Method;
 import ShuffleJava.gui_2.ShuffleFrame;
 
@@ -19,17 +20,28 @@ public class GameState {
 
   private ArrayList<ValidMove> validMoves = new ArrayList<ValidMove>();
 
+  private String mapMainClassName;
 
-  public GameState() {
+  private Console console;
+
+
+  public GameState(String mapMainClassName) {
     playerList = new ArrayList<Player>();
     validMoves = new ArrayList<ValidMove>();
     currentPlayer = 0;
+    this.mapMainClassName = mapMainClassName;
+  }
+
+
+
+  public void setConsole(Console console) {
+    this.console = console;
   }
 
 
 
   public void setNumberPlayers(int numberPlayers) throws ShuffleException {
-    System.out.println(numberPlayers + " players are in this game");
+    console.printToConsole(Console.OutputType.INFO, numberPlayers + " players are in this game");
     if (numberPlayers < 1 || numberPlayers > 4) {
       throw new ShuffleException("Invalid number of players: " + numberPlayers);
     }
@@ -61,7 +73,19 @@ public class GameState {
 
   public void incrementPlayer() {
     currentPlayer = (currentPlayer + 1) % playerList.size();
-    System.out.print("Player" + (currentPlayer + 1) + " turn:");
+    // <node> 
+  }
+
+
+
+  public void setCurrentPlayer(int p) {
+    currentPlayer = p;
+  }
+
+
+
+  public int getCurrentPlayerNumber() {
+    return currentPlayer;
   }
 
 
@@ -141,7 +165,7 @@ public class GameState {
     }
     Boolean value = false;
     try {
-      Class clas = Class.forName("Crazy8s.map_Main");
+      Class clas = Class.forName(mapMainClassName);
       Method method = clas.getMethod(function);
       value = ((Boolean) method.invoke(clas));
     } catch (Exception exception) {

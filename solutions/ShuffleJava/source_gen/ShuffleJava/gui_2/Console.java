@@ -5,9 +5,18 @@ package ShuffleJava.gui_2;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
-import java.awt.Color;
+import javax.swing.text.Style;
+import javax.swing.BoxLayout;
 import java.awt.Dimension;
+import java.awt.Color;
+import javax.swing.plaf.basic.BasicScrollBarUI;
 import javax.swing.BorderFactory;
+import javax.swing.text.StyledDocument;
+import javax.swing.text.StyleConstants;
+import javax.swing.UIManager;
+import javax.swing.plaf.ColorUIResource;
+import ShuffleJava.runtime.Card;
+import javax.swing.text.BadLocationException;
 
 public class Console extends JPanel {
   private int HEIGHT = 700;
@@ -16,20 +25,85 @@ public class Console extends JPanel {
   public JScrollPane console;
   private JTextPane consoleText;
 
+  private static Style[] styles;
+
+
+  public static   enum OutputType {
+    USER(0),
+    INFO(1),
+    ERROR(2),
+    DEBUG(3),
+    CARD(4),
+    FORMAT(5);
+
+
+    private int num;
+
+
+    public Style getStyle() {
+      return styles[num];
+    }
+
+
+
+    OutputType(int n) {
+      num = n;
+    }
+  }
+
+
 
   public Console() {
+    setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
     consoleText = new JTextPane();
     consoleText.setOpaque(false);
     consoleText.setEditable(false);
-    consoleText.setForeground(Color.YELLOW);
     consoleText.setPreferredSize(new Dimension(WIDTH, HEIGHT));
 
-    console = new JScrollPane(consoleText, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+    console = new JScrollPane(consoleText, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
     console.setBackground(Color.BLACK);
     console.getViewport().setBackground(Color.BLACK);
+    console.getVerticalScrollBar().setUI(new BasicScrollBarUI() {
+      public void configureScrollBarColors() {
+        this.thumbColor = new Color(19, 136, 8);
+        this.trackColor = new Color(1, 50, 32);
+      }
+    });
 
-    console.setBorder(BorderFactory.createEmptyBorder());
+    console.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 5, new Color(19, 136, 8)));
     consoleText.setBorder(BorderFactory.createEmptyBorder());
+
+    styles = new Style[6];
+    StyledDocument doc = consoleText.getStyledDocument();
+    Style userStyle = consoleText.addStyle("UserOutput", null);
+    StyleConstants.setForeground(userStyle, Color.YELLOW);
+    StyleConstants.setFontFamily(userStyle, "Monospaced");
+    styles[0] = userStyle;
+    Style infoStyle = consoleText.addStyle("InfoOutput", null);
+    StyleConstants.setForeground(infoStyle, Color.CYAN);
+    StyleConstants.setFontFamily(infoStyle, "Monospaced");
+    styles[1] = infoStyle;
+    Style errorStyle = consoleText.addStyle("ErrorOutput", null);
+    StyleConstants.setForeground(errorStyle, Color.RED);
+    StyleConstants.setFontFamily(errorStyle, "Monospaced");
+    styles[2] = errorStyle;
+    Style debugStyle = consoleText.addStyle("DebugOutput", null);
+    StyleConstants.setForeground(debugStyle, Color.LIGHT_GRAY);
+    StyleConstants.setFontFamily(debugStyle, "Monospaced");
+    styles[3] = debugStyle;
+    Style cardStyle = consoleText.addStyle("CardOutput", null);
+    StyleConstants.setForeground(cardStyle, Color.GREEN);
+    StyleConstants.setBold(cardStyle, true);
+    StyleConstants.setFontFamily(cardStyle, "Monospaced");
+    styles[4] = cardStyle;
+    Style formatStyle = consoleText.addStyle("FormatOutput", null);
+    StyleConstants.setForeground(formatStyle, Color.WHITE);
+    StyleConstants.setFontFamily(formatStyle, "Monospaced");
+    StyleConstants.setBold(formatStyle, true);
+    styles[5] = formatStyle;
+
+    UIManager.put("ScrollBar.thumb", new ColorUIResource(19, 136, 8));
+    UIManager.put("Button.foreground", new ColorUIResource(19, 136, 8));
 
     this.add(console);
     console.setVisible(true);
@@ -41,17 +115,37 @@ public class Console extends JPanel {
 
 
 
-  public void printToConsole(Object... text) {
-    StringBuilder sb = new StringBuilder(consoleText.getText());
-    sb.append(">");
+  public void printToConsole(Console.OutputType type, Object... text) {
+    // <node> 
+    StringBuilder sb = new StringBuilder();
     for (int i = 0; i < text.length; i++) {
-      sb.append(text[i].toString());
+      if (text[i] instanceof Card) {
+        insertToDoc(sb.toString(), type.getStyle());
+        sb.setLength(0);
+        insertToDoc(text[i].toString(), Console.OutputType.CARD.getStyle());
+      } else {
+        sb.append(text[i].toString());
+      }
     }
     sb.append("\n");
-    consoleText.setText(sb.toString());
-
+    insertToDoc(sb.toString(), type.getStyle());
+    consoleText.setCaretPosition(consoleText.getDocument().getLength());
+    if (console.getVerticalScrollBar().isVisible()) {
+      console.setBorder(null);
+    }
   }
 
 
 
+  private void insertToDoc(String text, Style style) {
+    StyledDocument doc = consoleText.getStyledDocument();
+    try {
+      doc.insertString(doc.getLength(), text, style);
+      if (style == Console.OutputType.INFO.getStyle()) {
+        System.out.print(text);
+      }
+    } catch (BadLocationException e) {
+      e.printStackTrace();
+    }
+  }
 }

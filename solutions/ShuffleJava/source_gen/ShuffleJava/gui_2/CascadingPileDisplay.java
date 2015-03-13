@@ -14,6 +14,15 @@ public class CascadingPileDisplay extends CardPileDisplay implements ShuffleDraw
 
   protected ArrayList<CardDisplay> cards = new ArrayList<CardDisplay>();
 
+  private int dragStarty;
+  private int dragStartx;
+
+  private int dragOffsetx = 0;
+  private int dragOffsety = 0;
+
+
+
+
 
   public CascadingPileDisplay(CardPile pile) {
     super(pile);
@@ -59,7 +68,11 @@ public class CascadingPileDisplay extends CardPileDisplay implements ShuffleDraw
     } else {
       for (int i = 0; i < this.cards.size(); i++) {
         // draw cards 
-        cards.get(i).draw(g, CardDisplay.CARD_WIDTH * i + x, y);
+        if (cards.get(i).isSelected()) {
+          cards.get(i).draw(g, CardDisplay.CARD_WIDTH * i + x + dragOffsetx, y + dragOffsety);
+        } else {
+          cards.get(i).draw(g, CardDisplay.CARD_WIDTH * i + x, y);
+        }
       }
     }
     g.setColor(Color.LIGHT_GRAY);
@@ -93,6 +106,7 @@ public class CascadingPileDisplay extends CardPileDisplay implements ShuffleDraw
       }
     }
   }
+
 
 
 }

@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-e3e1s38vlsc6twljw74ttvpt88fii7j">
+<dependencies version="2" modelHash="7okukd0kwnv7ttwimuvzs20ivhbv48o">
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
-  <common hash="-3zfvte90zmmw665uaoxlsxn3g6i7fzn" dependsOnNodes="true">
+  <common hash="-3ef2e6c656ctir03va5ctv5u8fu3jej" dependsOnNodes="true">
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
   </common>
-  <source id="3619922401759128673" name="ShuffleFrame" hash="7mcoc7vbg9e0eorimvq7e9sio279p7g">
+  <source id="3619922401759128673" name="ShuffleFrame" hash="c278d3e6eznwhmzjovmm8i41dbour4w">
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
     <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="ShuffleFrame.java" />
   </source>
-  <source id="3619922401759130026" name="Canvas" hash="50z8ll7nr6or1fw2yl31t1199h3mnly">
+  <source id="3619922401759130026" name="Canvas" hash="b99bib4f2uwkl20r0si9l0fik9e2f0o">
     <file name="Canvas.java" />
   </source>
   <source id="7501337804239398819" name="ShuffleDraw" hash="uifa23nbvjr80k94aczjmbjil287a9">
     <file name="ShuffleDraw.java" />
   </source>
-  <source id="7501337804239217555" name="Console" hash="-7hgrjdpldxj24lhbzze96ekyb4w5woq">
+  <source id="7501337804239217555" name="Console" hash="37h92h02j7847ul3ho7bp7379jmwoci">
     <file name="Console.java" />
   </source>
-  <source id="7501337804239802872" name="ShuffleMouseEvents" hash="-2xlp4qtmsk7h1pm4n41dqh3fh0newuv">
+  <source id="7501337804239802872" name="ShuffleMouseEvents" hash="41349loyhc0zl7k9tnhnk1qmlc5e5cj">
     <file name="ShuffleMouseEvents.java" />
   </source>
   <source id="1320406746498730016" name="HiddenPileDisplay" hash="-coool5fna94ukgs9425mxv4b121zw92">
     <file name="HiddenPileDisplay.java" />
   </source>
-  <source id="1320406746497901522" name="CascadingPileDisplay" hash="-7iiltp02qpss4du6zssaopjsggc4w5k">
+  <source id="1320406746497901522" name="CascadingPileDisplay" hash="8uwcn88bfo3y56fqggwsed6plnorwr">
     <file name="CascadingPileDisplay.java" />
   </source>
-  <source id="3488828158364571431" name="CardPileDisplay" hash="-w44y7y3iudjky8u3gy7b4q27kdvzus">
+  <source id="3488828158364571431" name="CardPileDisplay" hash="dyzgv6x3ou2pb3t4h28jjwazyydu7el">
     <file name="CardPileDisplay.java" />
   </source>
-  <source id="1320406746497776223" name="StackedPileDisplay" hash="-aj2uvrm1k3pv04qi858bzx3497dyui9">
+  <source id="1320406746497776223" name="StackedPileDisplay" hash="-46vq6euog9rrnjirg30zvm3qqclqjlp">
     <file name="StackedPileDisplay.java" />
   </source>
-  <source id="1320406746499165060" name="CardDisplay" hash="2l8rt89aianiznh9qu3hpttw6adr51u">
+  <source id="1320406746499165060" name="CardDisplay" hash="8glkyu8crcew6njyj5cfbez71yqp0sa">
     <file name="CardDisplay.java" />
   </source>
   <source id="7501337804242882693" name="Popup" hash="-6e2731yd4h8pzhess57rgclc8ujcxmc">
     <file name="Popup.java" />
   </source>
-  <source id="8143029741232962131" name="HandDisplay" hash="e82b09fc2e1y990cm2ps3idfz4j4ro6">
+  <source id="8143029741232962131" name="HandDisplay" hash="-2sbmhvlno93dcoivl7reiudzv18wwu7">
     <file name="HandDisplay.java" />
   </source>
-  <source id="6780516275963467547" name="ButtonDisplay" hash="3ydqy6ydrpzx1ntysu441juviaypt7j">
+  <source id="6780516275963467547" name="ButtonDisplay" hash="-ek3plu205o05re4aa71rpnh80fxpcmj">
     <file name="ButtonDisplay.java" />
   </source>
 </dependencies>

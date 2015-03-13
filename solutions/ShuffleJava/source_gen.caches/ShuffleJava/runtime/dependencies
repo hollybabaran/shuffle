@@ -24,6 +24,7 @@
     <classNode dependClassName="java.util.Date" />
   </dependency>
   <dependency className="ShuffleJava.runtime.GameState" file="GameState.java">
+    <classNode dependClassName="ShuffleJava.gui_2.Console" />
     <classNode dependClassName="ShuffleJava.gui_2.ShuffleFrame" />
     <classNode dependClassName="ShuffleJava.runtime.Button" />
     <classNode dependClassName="ShuffleJava.runtime.CardPile" />

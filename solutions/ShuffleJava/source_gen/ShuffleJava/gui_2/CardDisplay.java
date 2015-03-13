@@ -57,7 +57,7 @@ public class CardDisplay implements ShuffleDraw {
 
 
   private void update() {
-    String imgName = (faceUp ? card.getSuit() + "_" + card.getRank() + ".png" : "deckback_small.jpg");
+    String imgName = (faceUp ? card.getSuit() + "_" + card.getRank() + ".png" : "deckback_small.png");
     classLoader = getClass().getClassLoader();
     try {
       img = ImageIO.read(classLoader.getResource(imgName));
@@ -106,5 +106,11 @@ public class CardDisplay implements ShuffleDraw {
 
 
   public void click(int x, int y) {
+  }
+
+
+
+  public boolean isSelected() {
+    return card.isSelected();
   }
 }

@@ -24,6 +24,11 @@ public class StackedPileDisplay extends CardPileDisplay implements ShuffleDraw {
 
   private CardDisplay topCardDisplay;
 
+  private int dragStartx;
+  private int dragStarty;
+
+  private int dragOffsetx = 0;
+  private int dragOffsety = 0;
 
   public StackedPileDisplay(CardPile pile) {
     super(pile);
@@ -70,7 +75,8 @@ public class StackedPileDisplay extends CardPileDisplay implements ShuffleDraw {
     // <node> 
     if (this.pile.size() > 0) {
       g.drawImage(stackImg, x, y, this.bgcolour, null);
-      topCardDisplay.draw(g, x + CARD_X_OFFSET, y + CARD_Y_OFFSET);
+      topCardDisplay.draw(g, x + CARD_X_OFFSET + getDragOffsetx(), y + CARD_Y_OFFSET + getDragOffsety());
+
     } else {
       g.drawImage(emptyImg, x, y, this.bgcolour, null);
     }
@@ -97,6 +103,13 @@ public class StackedPileDisplay extends CardPileDisplay implements ShuffleDraw {
   public void click(int x, int y) {
     pile.toggleSelection(0);
   }
+
+
+
+
+
+
+
 
 
 }

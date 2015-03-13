@@ -56,6 +56,7 @@ public class ShuffleMouseEvents extends MouseAdapter {
         ((Component) event.getSource()).repaint();
 
         dragging = true;
+        draggingPile.startDrag(event.getX(), event.getY());
         ((Component) event.getSource()).setCursor(Cursor.getPredefinedCursor(Cursor.MOVE_CURSOR));
       } else {
         clickedObj.click(event.getX(), event.getY());
@@ -85,6 +86,7 @@ public class ShuffleMouseEvents extends MouseAdapter {
           }
         }
       }
+      draggingPile.endDrag();
     }
     clickedIndex = -1;
     ((Component) event.getSource()).setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -110,6 +112,11 @@ public class ShuffleMouseEvents extends MouseAdapter {
 
   @Override
   public void mouseDragged(MouseEvent event) {
+    if (dragging) {
+      draggingPile.drag(event.getX(), event.getY());
+      ((Component) event.getSource()).repaint();
+
+    }
     super.mouseDragged(event);
   }
 

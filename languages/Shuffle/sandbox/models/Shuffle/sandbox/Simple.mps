@@ -271,8 +271,8 @@
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="8329788417298106679" nodeInfo="ng">
         <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="8329788417298106829" nodeInfo="ng" />
-        <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8329788417298106844" nodeInfo="ng">
-          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="8329788417292919290" resolveInfo="A2" />
+        <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="379871053818183764" nodeInfo="ng">
+          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7644071217999365559" resolveInfo="A2" />
         </node>
         <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="8329788417298106810" nodeInfo="ng">
           <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="8329788417298106403" resolveInfo="five" />
