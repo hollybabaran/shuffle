@@ -944,6 +944,87 @@
                   <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7740785425696102698" resolveInfo="suit" />
                 </node>
               </node>
+              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="7740785425696613213" nodeInfo="ng">
+                <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="7740785425696613262" nodeInfo="ng">
+                  <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7740785425696613237" nodeInfo="ng">
+                    <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7740785425696102698" resolveInfo="suit" />
+                  </node>
+                  <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="7740785425696613286" nodeInfo="ng">
+                    <property name="value" nameId="ffsp.8642299736868227465" value="hearts" />
+                  </node>
+                </node>
+                <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="7740785425696613217" nodeInfo="ng">
+                  <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="7740785425696613344" nodeInfo="ng">
+                    <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7740785425696613356" nodeInfo="ng">
+                      <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="5964992898508185281" resolveInfo="currentSuit" />
+                    </node>
+                    <node role="value" roleId="ffsp.939205226782740263" type="ffsp.SuitLiteral" typeId="ffsp.2524059026155779482" id="7740785425696864723" nodeInfo="ng">
+                      <property name="suit" nameId="ffsp.2524059026155779483" value="2" />
+                    </node>
+                  </node>
+                </node>
+                <node role="elseIf" roleId="ffsp.5565452210788292793" type="ffsp.ElseIfStatement" typeId="ffsp.5565452210787037996" id="7740785425696865629" nodeInfo="ng">
+                  <node role="condition" roleId="ffsp.5565452210788214067" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="7740785425696865699" nodeInfo="ng">
+                    <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7740785425696865674" nodeInfo="ng">
+                      <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7740785425696102698" resolveInfo="suit" />
+                    </node>
+                    <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="7740785425696865745" nodeInfo="ng">
+                      <property name="value" nameId="ffsp.8642299736868227465" value="diamonds" />
+                    </node>
+                  </node>
+                  <node role="body" roleId="ffsp.5565452210788214069" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="7740785425696865166" nodeInfo="ng">
+                    <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="7740785425696865947" nodeInfo="ng">
+                      <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7740785425696865959" nodeInfo="ng">
+                        <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="5964992898508185281" resolveInfo="currentSuit" />
+                      </node>
+                      <node role="value" roleId="ffsp.939205226782740263" type="ffsp.SuitLiteral" typeId="ffsp.2524059026155779482" id="7740785425696865976" nodeInfo="ng">
+                        <property name="suit" nameId="ffsp.2524059026155779483" value="4" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node role="elseIf" roleId="ffsp.5565452210788292793" type="ffsp.ElseIfStatement" typeId="ffsp.5565452210787037996" id="7740785425696870373" nodeInfo="ng">
+                  <node role="body" roleId="ffsp.5565452210788214069" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="7740785425696870321" nodeInfo="ng">
+                    <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="7740785425696870492" nodeInfo="ng">
+                      <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7740785425696870493" nodeInfo="ng">
+                        <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="5964992898508185281" resolveInfo="currentSuit" />
+                      </node>
+                      <node role="value" roleId="ffsp.939205226782740263" type="ffsp.SuitLiteral" typeId="ffsp.2524059026155779482" id="7740785425696870512" nodeInfo="ng">
+                        <property name="suit" nameId="ffsp.2524059026155779483" value="3" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="condition" roleId="ffsp.5565452210788214067" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="7740785425696870456" nodeInfo="ng">
+                    <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7740785425696870457" nodeInfo="ng">
+                      <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7740785425696102698" resolveInfo="suit" />
+                    </node>
+                    <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="7740785425696870458" nodeInfo="ng">
+                      <property name="value" nameId="ffsp.8642299736868227465" value="diamonds" />
+                    </node>
+                  </node>
+                </node>
+                <node role="elseIf" roleId="ffsp.5565452210788292793" type="ffsp.ElseIfStatement" typeId="ffsp.5565452210787037996" id="7740785425696870946" nodeInfo="ng">
+                  <node role="body" roleId="ffsp.5565452210788214069" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="7740785425696870876" nodeInfo="ng">
+                    <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="7740785425696871595" nodeInfo="ng">
+                      <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7740785425696871607" nodeInfo="ng">
+                        <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="5964992898508185281" resolveInfo="currentSuit" />
+                      </node>
+                      <node role="value" roleId="ffsp.939205226782740263" type="ffsp.SuitLiteral" typeId="ffsp.2524059026155779482" id="7740785425696871624" nodeInfo="ng">
+                        <property name="suit" nameId="ffsp.2524059026155779483" value="1" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="condition" roleId="ffsp.5565452210788214067" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="7740785425696871055" nodeInfo="ng">
+                    <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7740785425696871056" nodeInfo="ng">
+                      <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7740785425696102698" resolveInfo="suit" />
+                    </node>
+                    <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="7740785425696871057" nodeInfo="ng">
+                      <property name="value" nameId="ffsp.8642299736868227465" value="spades" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7740785425696870244" nodeInfo="ng" />
             </node>
             <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="7740785425695877369" nodeInfo="ng">
               <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="7740785425695877397" nodeInfo="ng">
@@ -957,8 +1038,7 @@
               </node>
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7740785425696102638" nodeInfo="ng" />
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7740785425695950900" nodeInfo="ng" />
+          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7740785425696867483" nodeInfo="ng" />
         </node>
       </node>
       <node role="body" roleId="ffsp.8340020017782266822" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="2480633097878129254" nodeInfo="ng" />

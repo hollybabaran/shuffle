@@ -181,16 +181,16 @@
       <property name="externalValue" nameId="tpce.1083923523172" value="♠" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652962" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="♥" />
       <property name="internalValue" nameId="tpce.1083923523171" value="2" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="♥" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652965" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="♣" />
       <property name="internalValue" nameId="tpce.1083923523171" value="3" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="♣" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652969" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="♦" />
       <property name="internalValue" nameId="tpce.1083923523171" value="4" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="♦" />
     </node>
   </root>
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="3854676059697653018" nodeInfo="ng">
