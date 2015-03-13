@@ -264,5 +264,11 @@
     </dependencies>
     <rename id="ffsp.7501337804237190869" type="CHILD" from="string" to="comment" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="44" />
+    </dependencies>
+    <rename id="ffsp.6780516275963027849" type="PROPERTY" from="vertic" to="vertical" />
+  </StructureModification>
 </history>
 
