@@ -7,6 +7,11 @@
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="8329788417295680739" nodeInfo="ng">
     <node role="functions" roleId="ffsp.8340020017782161297" type="ffsp.FunctionDefinition" typeId="ffsp.8340020017781900658" id="3295612155886749430" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="faceScoreOver17" />
+      <node role="body" roleId="ffsp.8340020017782266822" type="ffsp.ReturnStatement" typeId="ffsp.8340020017782162052" id="3295612155887823228" nodeInfo="ng">
+        <node role="boolean" roleId="ffsp.8340020017782162085" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="3295612155887823410" nodeInfo="ng">
+          <property name="value" nameId="ffsp.2003306783291602631" value="true" />
+        </node>
+      </node>
     </node>
     <node role="setupBlock" roleId="ffsp.5722923068946478776" type="ffsp.SetupBlock" typeId="ffsp.5160494638280649077" id="8329788417295680740" nodeInfo="ng">
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.DefaultDeck" typeId="ffsp.1415725632945178473" id="7740785425696122843" nodeInfo="ng">
