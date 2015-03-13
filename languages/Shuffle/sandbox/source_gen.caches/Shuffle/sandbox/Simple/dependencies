@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="Shuffle.sandbox.Simple.map_Main" file="map_Main.java">
+    <classNode dependClassName="ShuffleJava.gui_2.ButtonDisplay" />
     <classNode dependClassName="ShuffleJava.gui_2.CascadingPileDisplay" />
     <classNode dependClassName="ShuffleJava.gui_2.HiddenPileDisplay" />
     <classNode dependClassName="ShuffleJava.gui_2.ShuffleFrame" />
     <classNode dependClassName="ShuffleJava.gui_2.StackedPileDisplay" />
+    <classNode dependClassName="ShuffleJava.runtime.Button" />
     <classNode dependClassName="ShuffleJava.runtime.Card" />
     <classNode dependClassName="ShuffleJava.runtime.CardPile" />
     <classNode dependClassName="ShuffleJava.runtime.CardPileUtil" />

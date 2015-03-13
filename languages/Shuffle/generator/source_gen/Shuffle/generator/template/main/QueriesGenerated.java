@@ -17,87 +17,75 @@ public class QueriesGenerated {
   public final boolean NEEDS_OPCONTEXT = false;
 
   public static boolean baseMappingRule_Condition_1707132686103362161(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "suit", "spades", "spades");
+    return SPropertyOperations.hasValue(_context.getNode(), "suit", "1", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103377856(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "suit", "clubs", "spades");
+    return SPropertyOperations.hasValue(_context.getNode(), "suit", "3", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103378368(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "suit", "hearts", "spades");
+    return SPropertyOperations.hasValue(_context.getNode(), "suit", "2", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103379252(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "suit", "diamonds", "spades");
+    return SPropertyOperations.hasValue(_context.getNode(), "suit", "4", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103385454(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "two", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "2", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103399976(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "three", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "3", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103400879(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "four", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "4", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103401434(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "five", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "5", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103402037(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "six", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "6", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103402428(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "seven", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "7", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103402558(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "eight", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "8", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103403355(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "nine", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "9", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103409814(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "ten", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "10", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103411165(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "jack", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "11", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103412580(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "queen", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "12", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103413519(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "king", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "13", "1");
   }
 
   public static boolean baseMappingRule_Condition_1707132686103414506(final BaseMappingRuleContext _context) {
-    return SPropertyOperations.hasValue(_context.getNode(), "rank", "ace", "ace");
+    return SPropertyOperations.hasValue(_context.getNode(), "rank", "1", "1");
   }
 
   public static boolean ifMacro_Condition_4654595638703165210(final IfMacroContext _context) {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), "cardNumbers", true), "Shuffle.structure.AllKeyword");
-  }
-
-  public static SNode sourceNodeQuery_5144139994151045845(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), "playerTurnBlock", true);
-  }
-
-  public static SNode sourceNodeQuery_5144139994151046316(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), "computerTurnBlock", true);
-  }
-
-  public static SNode sourceNodeQuery_8187829176103803852(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "winConditionBlock", true), "condition", true);
   }
 
   public static SNode sourceNodeQuery_4654595638703165195(final SourceSubstituteMacroNodeContext _context) {
@@ -120,12 +108,16 @@ public class QueriesGenerated {
     return SLinkOperations.getTarget(_context.getNode(), "pile2", true);
   }
 
-  public static Iterable<SNode> sourceNodesQuery_8187829176103803816(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "setupBlock", true), "body", true);
+  public static SNode sourceNodeQuery_5144139994151045845(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "playerTurnBlock", true);
   }
 
-  public static Iterable<SNode> sourceNodesQuery_8340020017787125917(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getTargets(_context.getNode(), "functions", true);
+  public static SNode sourceNodeQuery_5144139994151046316(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "computerTurnBlock", true);
+  }
+
+  public static SNode sourceNodeQuery_8187829176103803852(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "winConditionBlock", true), "condition", true);
   }
 
   public static Iterable<SNode> sourceNodesQuery_6796815332554477675(final SourceSubstituteMacroNodesContext _context) {
@@ -146,5 +138,13 @@ public class QueriesGenerated {
 
   public static Iterable<SNode> sourceNodesQuery_1790098884239404537(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "body", true);
+  }
+
+  public static Iterable<SNode> sourceNodesQuery_8187829176103803816(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "setupBlock", true), "body", true);
+  }
+
+  public static Iterable<SNode> sourceNodesQuery_8340020017787125917(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(_context.getNode(), "functions", true);
   }
 }

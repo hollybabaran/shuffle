@@ -7,13 +7,58 @@ public class Card {
 
   private final String rank;
   private final String suit;
+  private final int rankInt;
+  private final int suitInt;
   private boolean selected;
   private boolean selectable;
 
 
-  public Card(String rankI, String suitI) {
-    this.suit = suitI;
-    this.rank = rankI;
+  public Card(int rankI, int suitI) {
+    this.suitInt = suitI;
+    this.rankInt = rankI;
+
+    if (this.rankInt == 1) {
+      this.rank = "ace";
+    } else if (this.rankInt == 2) {
+      this.rank = "two";
+    } else if (this.rankInt == 3) {
+      this.rank = "three";
+    } else if (this.rankInt == 4) {
+      this.rank = "four";
+    } else if (this.rankInt == 5) {
+      this.rank = "five";
+    } else if (this.rankInt == 6) {
+      this.rank = "six";
+    } else if (this.rankInt == 7) {
+      this.rank = "seven";
+    } else if (this.rankInt == 8) {
+      this.rank = "eight";
+    } else if (this.rankInt == 9) {
+      this.rank = "nine";
+    } else if (this.rankInt == 10) {
+      this.rank = "ten";
+    } else if (this.rankInt == 11) {
+      this.rank = "jack";
+    } else if (this.rankInt == 12) {
+      this.rank = "queen";
+    } else if (this.rankInt == 13) {
+      this.rank = "king";
+    } else {
+      this.rank = "";
+    }
+
+    if (this.suitInt == 1) {
+      this.suit = "spades";
+    } else if (this.suitInt == 2) {
+      this.suit = "hearts";
+    } else if (this.suitInt == 3) {
+      this.suit = "clubs";
+    } else if (this.suitInt == 4) {
+      this.suit = "diamonds";
+    } else {
+      this.suit = "";
+    }
+
   }
 
 
@@ -33,6 +78,16 @@ public class Card {
 
   public String getRank() {
     return rank;
+  }
+
+  public int getSuitInt() {
+    return suitInt;
+  }
+
+
+
+  public int getRankInt() {
+    return rankInt;
   }
 
 
