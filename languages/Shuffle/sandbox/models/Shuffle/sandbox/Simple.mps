@@ -268,26 +268,9 @@
         </node>
         <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.AllKeyword" typeId="ffsp.7181767954433034087" id="8329788417275187458" nodeInfo="ng" />
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Number" typeId="ffsp.7674520359934846973" id="7644071217999809954" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="playerWithHighestCardSoFar" />
-        <node role="expression" roleId="ffsp.7674520359935510780" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="7644071217999810075" nodeInfo="ng">
-          <property name="number" nameId="ffsp.2455425859176336673" value="0" />
-        </node>
-      </node>
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="3561890535520513578" nodeInfo="ng" />
     </node>
-    <node role="computerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.ComputerTurnBlock" typeId="ffsp.465858332974170854" id="7714697523646178841" nodeInfo="ng">
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="7644071218000943935" nodeInfo="ng">
-        <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7644071218000943952" nodeInfo="ng">
-          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7644071217999809954" resolveInfo="playerWithHighestCardSoFar" />
-        </node>
-        <node role="value" roleId="ffsp.939205226782740263" type="ffsp.CurrentPlayerNumber" typeId="ffsp.7644071217999812459" id="7644071218000943969" nodeInfo="ng" />
-      </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.SetCurrentPlayer" typeId="ffsp.7644071217998376951" id="7644071217999809950" nodeInfo="ng">
-        <node role="value" roleId="ffsp.7644071217998378970" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="7644071217999810198" nodeInfo="ng">
-          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="7644071217999809954" resolveInfo="playerWithHighestCardSoFar" />
-        </node>
-      </node>
-    </node>
+    <node role="computerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.ComputerTurnBlock" typeId="ffsp.465858332974170854" id="7714697523646178841" nodeInfo="ng" />
     <node role="playerTurnBlock" roleId="ffsp.1790098884239327234" type="ffsp.PlayerTurnBlock" typeId="ffsp.1790098884239250114" id="7714697523646178842" nodeInfo="ng">
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Allow" typeId="ffsp.5144139994143192935" id="8329788417289966797" nodeInfo="ng">
         <node role="pile" roleId="ffsp.5144139994143234770" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="8329788417289966815" nodeInfo="ng">
