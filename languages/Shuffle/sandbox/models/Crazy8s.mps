@@ -793,9 +793,7 @@
                       <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="2480633097878737783" nodeInfo="ng">
                         <property name="value" nameId="ffsp.8642299736868227465" value="The current suit is" />
                       </node>
-                    </node>
-                    <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="2480633097878735675" nodeInfo="ng">
-                      <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="2480633097878737324" nodeInfo="ng">
+                      <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4209354522004600458" nodeInfo="ng">
                         <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="5964992898508185281" resolveInfo="currentSuit" />
                       </node>
                     </node>
