@@ -6,215 +6,215 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="8329788417295680739" nodeInfo="ng">
     <node role="setupBlock" roleId="ffsp.5722923068946478776" type="ffsp.SetupBlock" typeId="ffsp.5160494638280649077" id="8329788417295680740" nodeInfo="ng">
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.DefaultDeck" typeId="ffsp.1415725632945178473" id="8329788417295681462" nodeInfo="ng">
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.DefaultDeck" typeId="ffsp.1415725632945178473" id="7740785425696122843" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="__deck" />
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681463" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="ace" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122844" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="1" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681464" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="two" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122845" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="2" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681465" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="three" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122846" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="3" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681466" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="four" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122847" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="4" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681467" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="five" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122848" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="5" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681468" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="six" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122849" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="6" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681469" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="seven" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122850" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="7" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681470" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="eight" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122851" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="8" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681471" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="nine" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122852" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="9" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681472" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="ten" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122853" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="10" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681473" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="jack" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122854" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="11" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681474" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="queen" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122855" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="12" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681475" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="king" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="spades" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122856" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="13" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681476" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="ace" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122857" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="1" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681477" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="two" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122858" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="2" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681478" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="three" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122859" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="3" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681479" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="four" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122860" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="4" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681480" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="five" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122861" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="5" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681481" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="six" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122862" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="6" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681482" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="seven" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122863" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="7" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681483" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="eight" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122864" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="8" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681484" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="nine" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122865" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="9" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681485" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="ten" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122866" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="10" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681486" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="jack" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122867" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="11" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681487" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="queen" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122868" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="12" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681488" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="king" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="hearts" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122869" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="13" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681489" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="ace" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122870" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="1" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681490" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="two" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122871" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="2" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681491" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="three" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122872" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="3" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681492" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="four" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122873" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="4" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681493" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="five" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122874" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="5" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681494" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="six" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122875" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="6" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681495" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="seven" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122876" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="7" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681496" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="eight" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122877" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="8" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681497" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="nine" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122878" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="9" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681498" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="ten" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122879" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="10" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681499" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="jack" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122880" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="11" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681500" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="queen" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122881" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="12" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681501" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="king" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="clubs" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122882" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="13" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681502" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="ace" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122883" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="1" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681503" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="two" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122884" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="2" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681504" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="three" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122885" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="3" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681505" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="four" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122886" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="4" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681506" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="five" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122887" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="5" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681507" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="six" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122888" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="6" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681508" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="seven" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122889" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="7" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681509" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="eight" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122890" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="8" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681510" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="nine" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122891" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="9" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681511" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="ten" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122892" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="10" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681512" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="jack" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122893" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="11" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681513" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="queen" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122894" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="12" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="8329788417295681514" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="king" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="diamonds" />
+        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="7740785425696122895" nodeInfo="ng">
+          <property name="rank" nameId="ffsp.2834967828304050224" value="13" />
+          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
         </node>
       </node>
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.ShuffleDeck" typeId="ffsp.7674520359936346144" id="8329788417296220174" nodeInfo="ng">
