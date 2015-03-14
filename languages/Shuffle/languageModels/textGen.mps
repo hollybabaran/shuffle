@@ -2796,6 +2796,16 @@
     <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="ffsp.7644071217998376951" resolveInfo="SetCurrentPlayer" />
     <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="7644071217998649777" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7644071217998649778" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="940413447902275783" nodeInfo="nn">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="940413447902275878" nodeInfo="nn">
+            <property name="text" nameId="tpee.6329021646629104958" value="-1 because it always increments at the end of the game" />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="940413447902276040" nodeInfo="nn">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="940413447902276137" nodeInfo="nn">
+            <property name="text" nameId="tpee.6329021646629104958" value="another -1 to deal with our 1 based indices" />
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="7644071217998807777" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="7644071217998807797" nodeInfo="ng">
             <property name="value" nameId="2omo.1237305576108" value="gameState.setCurrentPlayer(" />
@@ -2809,7 +2819,7 @@
             </node>
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="7644071217998837307" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="-1);" />
+            <property name="value" nameId="2omo.1237305576108" value="-2);" />
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="7644071217998837589" nodeInfo="ng" />
         </node>
