@@ -1957,12 +1957,17 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="7644071217993763573" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="7644071217993763735" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="String result = options.get(popup.show());" />
+            <property name="value" nameId="2omo.1237305576108" value="int result = popup.show();" />
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="825709193639891616" nodeInfo="nn">
+          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="825709193639891771" nodeInfo="ng">
+            <property name="value" nameId="2omo.1237305576108" value="System.out.println(result);" />
           </node>
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="7644071217995370631" nodeInfo="nn">
           <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="7644071217995370797" nodeInfo="ng">
-            <property name="value" nameId="2omo.1237305576108" value="gameState.strings.put(&quot;" />
+            <property name="value" nameId="2omo.1237305576108" value="gameState.numbers.put(&quot;" />
           </node>
           <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="7644071217995370911" nodeInfo="ng">
             <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7644071217995374867" nodeInfo="nn">
