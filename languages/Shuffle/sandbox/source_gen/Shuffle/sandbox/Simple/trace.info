@@ -17,81 +17,86 @@
     <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="36" startPosition="40" endLine="37" endPosition="40" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
     <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="37" startPosition="40" endLine="38" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
     <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="38" startPosition="0" endLine="39" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="39" startPosition="23" endLine="40" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="40" startPosition="45" endLine="41" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="41" startPosition="0" endLine="42" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="8329788417276422898" fileName="map_Main.java" startLine="42" startPosition="19" endLine="43" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="8329788417276422898" fileName="map_Main.java" startLine="43" startPosition="52" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646232247" fileName="map_Main.java" startLine="97" startPosition="0" endLine="98" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523646250263" fileName="map_Main.java" startLine="98" startPosition="62" endLine="99" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="112" startPosition="0" endLine="113" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="113" startPosition="0" endLine="114" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="114" startPosition="44" endLine="115" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="115" startPosition="0" endLine="116" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="116" startPosition="45" endLine="117" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="117" startPosition="19" endLine="118" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="118" startPosition="0" endLine="119" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="120" startPosition="18" endLine="121" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="121" startPosition="34" endLine="122" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="123" startPosition="48" endLine="124" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="124" startPosition="29" endLine="125" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="128" startPosition="0" endLine="129" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="130" startPosition="14" endLine="131" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="131" startPosition="32" endLine="132" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="133" startPosition="7" endLine="134" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="134" startPosition="0" endLine="135" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="136" startPosition="57" endLine="137" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="138" startPosition="7" endLine="139" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="139" startPosition="0" endLine="140" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="140" startPosition="47" endLine="141" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="141" startPosition="34" endLine="142" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="143" startPosition="5" endLine="144" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="144" startPosition="0" endLine="145" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="145" startPosition="17" endLine="146" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="146" startPosition="0" endLine="147" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="147" startPosition="21" endLine="148" endPosition="119" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="153" startPosition="41" endLine="154" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="154" startPosition="28" endLine="155" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="156" startPosition="62" endLine="157" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="158" startPosition="5" endLine="159" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="165" startPosition="9" endLine="166" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="167" startPosition="34" endLine="168" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="8329788417275187345" fileName="map_Main.java" startLine="109" startPosition="2" endLine="111" endPosition="2" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="8329788417298106679" fileName="map_Main.java" startLine="106" startPosition="32" endLine="109" endPosition="2" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="130" startPosition="12" endLine="133" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="135" startPosition="23" endLine="138" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="155" startPosition="26" endLine="158" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="164" startPosition="42" endLine="169" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="164" startPosition="0" endLine="171" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="main#([Ljava/lang/String;)V" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="153" startPosition="0" endLine="161" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="pause#(I)V" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="122" startPosition="0" endLine="133" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="119" startPosition="17" endLine="143" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
-    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="25" startPosition="0" endLine="150" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="executeGame#()V" />
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="136" startPosition="57" endLine="137" endPosition="14" />
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="156" startPosition="62" endLine="157" endPosition="23" />
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="165" startPosition="9" endLine="166" endPosition="20" />
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="167" startPosition="0" endLine="168" endPosition="58">
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="39" startPosition="23" endLine="40" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="40" startPosition="0" endLine="41" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="41" startPosition="45" endLine="42" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="42" startPosition="0" endLine="43" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="43" startPosition="19" endLine="44" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="8329788417276422898" fileName="map_Main.java" startLine="44" startPosition="0" endLine="45" endPosition="52" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="8329788417276422898" fileName="map_Main.java" startLine="45" startPosition="52" endLine="46" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646232247" fileName="map_Main.java" startLine="99" startPosition="0" endLine="100" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523646250263" fileName="map_Main.java" startLine="100" startPosition="62" endLine="101" endPosition="62" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="114" startPosition="0" endLine="115" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="115" startPosition="0" endLine="116" endPosition="44" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="116" startPosition="44" endLine="117" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="117" startPosition="0" endLine="118" endPosition="45" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="118" startPosition="45" endLine="119" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="119" startPosition="0" endLine="120" endPosition="19" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="120" startPosition="19" endLine="121" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="121" startPosition="0" endLine="122" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="122" startPosition="17" endLine="123" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="124" startPosition="18" endLine="125" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="125" startPosition="34" endLine="126" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="127" startPosition="48" endLine="128" endPosition="29" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="128" startPosition="29" endLine="129" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="132" startPosition="0" endLine="133" endPosition="42" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="134" startPosition="14" endLine="135" endPosition="32" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="135" startPosition="32" endLine="136" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="137" startPosition="7" endLine="138" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="138" startPosition="0" endLine="139" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="139" startPosition="23" endLine="140" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="141" startPosition="57" endLine="142" endPosition="14" conceptFqName="jetbrains.mps.baseLanguage.structure.BreakStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="143" startPosition="7" endLine="144" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="144" startPosition="0" endLine="145" endPosition="47" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="145" startPosition="47" endLine="146" endPosition="34" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="146" startPosition="34" endLine="147" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="148" startPosition="5" endLine="149" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="149" startPosition="0" endLine="150" endPosition="17" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="150" startPosition="17" endLine="151" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="151" startPosition="0" endLine="152" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="152" startPosition="0" endLine="153" endPosition="21" conceptFqName="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="158" startPosition="41" endLine="159" endPosition="28" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="159" startPosition="28" endLine="160" endPosition="26" conceptFqName="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="161" startPosition="62" endLine="162" endPosition="23" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="163" startPosition="5" endLine="164" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.Statement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="170" startPosition="9" endLine="171" endPosition="20" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="172" startPosition="34" endLine="173" endPosition="58" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8329788417275187345" fileName="map_Main.java" startLine="111" startPosition="2" endLine="113" endPosition="2" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="8329788417298106679" fileName="map_Main.java" startLine="108" startPosition="32" endLine="111" endPosition="2" conceptFqName="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="134" startPosition="12" endLine="137" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="140" startPosition="0" endLine="143" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="160" startPosition="26" endLine="163" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="169" startPosition="42" endLine="174" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="169" startPosition="0" endLine="176" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="main#([Ljava/lang/String;)V" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="158" startPosition="0" endLine="166" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="pause#(I)V" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="126" startPosition="0" endLine="137" endPosition="7" conceptFqName="jetbrains.mps.baseLanguage.structure.IfStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="123" startPosition="0" endLine="148" endPosition="5" conceptFqName="jetbrains.mps.baseLanguage.structure.WhileStatement" />
+    <nodeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="25" startPosition="0" endLine="155" endPosition="0" conceptFqName="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" propertyString="executeGame#()V" />
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="141" startPosition="57" endLine="142" endPosition="14" />
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="161" startPosition="62" endLine="162" endPosition="23" />
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="170" startPosition="9" endLine="171" endPosition="20" />
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="172" startPosition="0" endLine="173" endPosition="58">
       <varInfo nodeId="7714697523646178086" varName="e" />
     </scopeInfo>
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="167" startPosition="34" endLine="168" endPosition="58" />
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="130" startPosition="14" endLine="132" endPosition="0" />
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="164" startPosition="42" endLine="169" endPosition="5" />
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="123" startPosition="48" endLine="129" endPosition="42" />
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="153" startPosition="41" endLine="159" endPosition="0">
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="172" startPosition="34" endLine="173" endPosition="58" />
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="134" startPosition="14" endLine="136" endPosition="0" />
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="169" startPosition="42" endLine="174" endPosition="5" />
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="127" startPosition="48" endLine="133" endPosition="42" />
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="158" startPosition="41" endLine="164" endPosition="0">
       <varInfo nodeId="7714697523646178086" varName="end" />
       <varInfo nodeId="7714697523646178086" varName="start" />
     </scopeInfo>
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="164" startPosition="0" endLine="171" endPosition="0">
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="169" startPosition="0" endLine="176" endPosition="0">
       <varInfo nodeId="7714697523646178086" varName="args" />
     </scopeInfo>
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="153" startPosition="0" endLine="161" endPosition="0">
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="158" startPosition="0" endLine="166" endPosition="0">
       <varInfo nodeId="7714697523646178086" varName="seconds" />
     </scopeInfo>
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="120" startPosition="18" endLine="142" endPosition="21" />
-    <scopeInfo nodeId="8329788417276422898" fileName="map_Main.java" startLine="42" startPosition="19" endLine="96" endPosition="0">
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="124" startPosition="18" endLine="147" endPosition="21" />
+    <scopeInfo nodeId="8329788417276422898" fileName="map_Main.java" startLine="44" startPosition="0" endLine="98" endPosition="0">
       <varInfo nodeId="8329788417276422898" varName="__deck" />
     </scopeInfo>
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="25" startPosition="60" endLine="148" endPosition="119">
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="25" startPosition="60" endLine="153" endPosition="21">
       <varInfo nodeId="7714697523646178086" varName="__debug_iclude_BD" />
       <varInfo nodeId="7714697523646178086" varName="__debug_include_CPD" />
       <varInfo nodeId="7714697523646178086" varName="__debug_include_Card" />
@@ -102,8 +107,8 @@
       <varInfo nodeId="7714697523646178086" varName="__debug_include_piledisplay" />
       <varInfo nodeId="7714697523646178086" varName="printer" />
     </scopeInfo>
-    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="25" startPosition="0" endLine="150" endPosition="0" />
-    <unitInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="20" startPosition="0" endLine="172" endPosition="0" unitName="Shuffle.sandbox.Simple.map_Main" />
+    <scopeInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="25" startPosition="0" endLine="155" endPosition="0" />
+    <unitInfo nodeId="7714697523646178086" fileName="map_Main.java" startLine="20" startPosition="0" endLine="177" endPosition="0" unitName="Shuffle.sandbox.Simple.map_Main" />
   </root>
 </debugInfo>
 
