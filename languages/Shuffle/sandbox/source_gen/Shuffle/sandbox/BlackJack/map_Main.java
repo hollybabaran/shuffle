@@ -37,9 +37,11 @@ public class map_Main {
     gameState.setConsole(frame.console);
 
     // state variables 
+
     Printer printer = new Printer(gameState);
 
     // Setup Block 
+
     CardPile __deck = new CardPile("standard_deck");
     __deck.add( new Card ( 1,1 ));
     __deck.add( new Card ( 2,1 ));
@@ -131,9 +133,11 @@ gameState.numbers.put("compScore",0);
     gameState.addHandDisplaysToFrame(frame);
 
     // make hand displays from player hands  
+
     frame.redraw();
 
     // Game Loop 
+
     while (true) {
       // Perform Player turn code 
 
@@ -147,14 +151,14 @@ while(!(gameState.buttons.get("done")
 ,gameState.cardPiles.get("HPShownCard")
 ,"").isMoved() )){}
 
-gameState.numbers.put("humanScore",0);CardPile __Pile5062currentCard= new CardPile(gameState.currentPlayer().hand());
-for (Card currentCard : __Pile5062currentCard.getArrayList()){
+gameState.numbers.put("humanScore",0);CardPile __Pile7645currentCard= new CardPile(gameState.currentPlayer().hand());
+for (Card currentCard : __Pile7645currentCard.getArrayList()){
         gameState.numbers.put("humanScore",gameState.numbers.get("humanScore")
 +currentCard.getRankInt());
 }
-CardPile __Pile1014currentCard= new CardPile(gameState.cardPiles.get("HPShownCard")
+CardPile __Pile6763currentCard= new CardPile(gameState.cardPiles.get("HPShownCard")
 );
-for (Card currentCard : __Pile1014currentCard.getArrayList()){
+for (Card currentCard : __Pile6763currentCard.getArrayList()){
         gameState.numbers.put("humanScore",gameState.numbers.get("humanScore")
 +currentCard.getRankInt());
 }
@@ -163,14 +167,14 @@ for (Card currentCard : __Pile1014currentCard.getArrayList()){
         gameState.clearHumanPlayerState();
       } else {
         // computer player code 
-gameState.numbers.put("compScore",0);CardPile __Pile6477currentCard= new CardPile(gameState.currentPlayer().hand());
-for (Card currentCard : __Pile6477currentCard.getArrayList()){
+gameState.numbers.put("compScore",0);CardPile __Pile1224currentCard= new CardPile(gameState.currentPlayer().hand());
+for (Card currentCard : __Pile1224currentCard.getArrayList()){
         gameState.numbers.put("compScore",gameState.numbers.get("compScore")
 +currentCard.getRankInt());
 }
-CardPile __Pile2441currentCard= new CardPile(gameState.cardPiles.get("HPShownCard")
+CardPile __Pile1329currentCard= new CardPile(gameState.cardPiles.get("HPShownCard")
 );
-for (Card currentCard : __Pile2441currentCard.getArrayList()){
+for (Card currentCard : __Pile1329currentCard.getArrayList()){
         gameState.numbers.put("compScore",gameState.numbers.get("compScore")
 +currentCard.getRankInt());
 }
@@ -180,6 +184,7 @@ for (Card currentCard : __Pile2441currentCard.getArrayList()){
       }
 
       // win condition 
+
       if (gameState.currentPlayer() == gameState.player(1) && gameState.numbers.get("humanScore")
  < 21 || gameState.numbers.get("humanScore")
  == 21) {
@@ -193,8 +198,8 @@ for (Card currentCard : __Pile2441currentCard.getArrayList()){
 
     // End Block 
 
+
     // Game Finished 
-    frame.console.printToConsole(Console.OutputType.INFO, "Player " + (gameState.currentPlayer().id() + 1) + " WINS!");
   }
 
 public static boolean faceScoreOver17(){

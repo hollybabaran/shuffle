@@ -37,9 +37,11 @@ public class map_Main {
     gameState.setConsole(frame.console);
 
     // state variables 
+
     Printer printer = new Printer(gameState);
 
     // Setup Block 
+
     CardPile __deck = new CardPile("standard_deck");
     __deck.add( new Card ( 1,1 ));
     __deck.add( new Card ( 1,1 ));
@@ -114,9 +116,11 @@ gameState.numbers.put("five",5);
     gameState.addHandDisplaysToFrame(frame);
 
     // make hand displays from player hands  
+
     frame.redraw();
 
     // Game Loop 
+
     while (true) {
       // Perform Player turn code 
 
@@ -133,6 +137,7 @@ while(!(gameState.getValidMove(gameState.currentPlayer().hand(),gameState.cardPi
       }
 
       // win condition 
+
       if (gameState.currentPlayer().hand().size() == 0) {
         break;
       }
@@ -144,8 +149,8 @@ while(!(gameState.getValidMove(gameState.currentPlayer().hand(),gameState.cardPi
 
     // End Block 
 
+
     // Game Finished 
-    frame.console.printToConsole(Console.OutputType.INFO, "Player " + (gameState.currentPlayer().id() + 1) + " WINS!");
   }
 
 

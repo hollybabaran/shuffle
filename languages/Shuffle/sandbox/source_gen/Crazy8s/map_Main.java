@@ -37,9 +37,11 @@ public class map_Main {
     gameState.setConsole(frame.console);
 
     // state variables 
+
     Printer printer = new Printer(gameState);
 
     // Setup Block 
+
     CardPile __deck = new CardPile("standard_deck");
     __deck.add( new Card ( 1,1 ));
     __deck.add( new Card ( 2,1 ));
@@ -134,9 +136,11 @@ gameState.numbers.put("currentRank",gameState.cardPiles.get("middlePile")
     gameState.addHandDisplaysToFrame(frame);
 
     // make hand displays from player hands  
+
     frame.redraw();
 
     // Game Loop 
+
     while (true) {
       // Perform Player turn code 
 
@@ -154,8 +158,8 @@ while(!(gameState.getValidMove(gameState.cardPiles.get("deck")
         // computer player code 
 boolean cardPlayed = false;
 gameState.booleans.put("cardPlayed",false);
-CardPile __Pile2369currentCard= new CardPile(gameState.currentPlayer().hand());
-for (Card currentCard : __Pile2369currentCard.getArrayList()){
+CardPile __Pile1463currentCard= new CardPile(gameState.currentPlayer().hand());
+for (Card currentCard : __Pile1463currentCard.getArrayList()){
         if(gameState.booleans.get("cardPlayed")
  == false){
         if(currentCard.getRankInt() == gameState.numbers.get("currentRank")
@@ -259,6 +263,7 @@ else if(gameState.currentPlayer().hand().size() > 1 && currentCard.getRankInt() 
       }
 
       // win condition 
+
       if (gameState.currentPlayer().hand().size() == 0) {
         break;
       }
@@ -270,13 +275,13 @@ else if(gameState.currentPlayer().hand().size() > 1 && currentCard.getRankInt() 
 
     // End Block 
 
+
     // Game Finished 
-    frame.console.printToConsole(Console.OutputType.INFO, "Player " + (gameState.currentPlayer().id() + 1) + " WINS!");
   }
 
 public static boolean canPlay(){
-CardPile __Pile5282card= new CardPile(gameState.currentPlayer().hand().getSelection());
-for (Card card : __Pile5282card.getArrayList()){
+CardPile __Pile2484card= new CardPile(gameState.currentPlayer().hand().getSelection());
+for (Card card : __Pile2484card.getArrayList()){
   if(card.getRankInt()!=gameState.numbers.get("currentRank")
  && card.getSuitInt()!=gameState.numbers.get("currentSuit")
  && card.getRankInt()!=8){
@@ -292,7 +297,7 @@ options.add("diamonds");
 options.add("clubs");
 options.add("spades");
 ShuffleJava.gui_2.Popup popup = new ShuffleJava.gui_2.Popup("What suit do you pick?", options);
-String result = options.get(popup.show());gameState.strings.put("currentSuit",result);
+int result = popup.show();System.out.println(result);gameState.numbers.put("currentSuit",result);
 
 }
 
