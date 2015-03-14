@@ -418,8 +418,8 @@
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5565452210788213921" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="body" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7674520359936137193" resolveInfo="Command" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="2824091188896932087" resolveInfo="CommandList" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5565452210787038188" nodeInfo="ig">
@@ -1223,6 +1223,11 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5265026447207044013" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ControlFlow" />
+    <property name="name" nameId="tpck.1169194664001" value="ForNumberStatement" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
   </root>
 </model>
 

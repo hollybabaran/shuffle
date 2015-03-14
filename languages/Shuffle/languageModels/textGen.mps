@@ -2860,5 +2860,58 @@
       </node>
     </node>
   </root>
+  <root type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="6377060046496382250" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="ControlFlow" />
+    <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="ffsp.5565452210787038123" resolveInfo="WhileStatement" />
+    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="6377060046496383773" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6377060046496383774" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="6377060046496383775" nodeInfo="nn">
+          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="6377060046496383776" nodeInfo="ng">
+            <property name="value" nameId="2omo.1237305576108" value="while(" />
+          </node>
+          <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="6377060046496383777" nodeInfo="ng">
+            <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6377060046496383778" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="2omo.NodeParameter" typeId="2omo.1233748055915" id="6377060046496383779" nodeInfo="nn" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6377060046496385878" nodeInfo="nn">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="ffsp.5565452210788213847" />
+              </node>
+            </node>
+          </node>
+          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="6377060046496383781" nodeInfo="ng">
+            <property name="value" nameId="2omo.1237305576108" value="){" />
+          </node>
+          <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="6377060046496383782" nodeInfo="ng" />
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="2omo.AppendOperation" typeId="2omo.1237306079178" id="6377060046496383783" nodeInfo="nn">
+          <node role="part" roleId="2omo.1237306115446" type="2omo.NodeAppendPart" typeId="2omo.1237305334312" id="6377060046496383784" nodeInfo="ng">
+            <node role="value" roleId="2omo.1237305790512" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6377060046496431634" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="2omo.NodeParameter" typeId="2omo.1233748055915" id="6377060046496383786" nodeInfo="nn" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="6377060046496432868" nodeInfo="nn">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="ffsp.5565452210788213921" />
+              </node>
+            </node>
+          </node>
+          <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="6377060046496383788" nodeInfo="ng" />
+          <node role="part" roleId="2omo.1237306115446" type="2omo.ConstantStringAppendPart" typeId="2omo.1237305557638" id="6377060046496383789" nodeInfo="ng">
+            <property name="value" nameId="2omo.1237305576108" value="}" />
+          </node>
+          <node role="part" roleId="2omo.1237306115446" type="2omo.NewLineAppendPart" typeId="2omo.1237305208784" id="6377060046496383790" nodeInfo="ng" />
+        </node>
+      </node>
+    </node>
+  </root>
+  <root type="2omo.ConceptTextGenDeclaration" typeId="2omo.1233670071145" id="8887962621203411009" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
+    <link role="conceptDeclaration" roleId="2omo.1233670257997" targetNodeId="ffsp.7501337804237190121" resolveInfo="Comment" />
+    <node role="textGenBlock" roleId="2omo.1233749296504" type="2omo.GenerateTextDeclaration" typeId="2omo.1233749247888" id="8887962621203437600" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8887962621203437601" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.SingleLineComment" typeId="tpee.6329021646629104954" id="8887962621204062510" nodeInfo="nn">
+          <node role="commentPart" roleId="tpee.6329021646629175155" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="8887962621204062522" nodeInfo="nn">
+            <property name="text" nameId="tpee.6329021646629104958" value="append nothing. We need this textgen, don't remove it ;P" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
 </model>
 
