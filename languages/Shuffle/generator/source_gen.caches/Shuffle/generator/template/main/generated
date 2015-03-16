@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-8kod376gng3pmv0w31o05rwf1w7f59q">
+<dependencies version="2" modelHash="7xqbrcdn7ptgaem9ywdaldfw066op1n">
   <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" hash="-15uwdtf1y5pg0o0e3fc6ujv2qcw23bv" />
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="-8z73tx2nml9xagbxlfmq60ehji8q3f5" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
-  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="-4gqrtn5ekbuxdy8x19zo7xowucbt74c" />
+  <dep model="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" hash="dl5g2ymyhth35tioq0mfqj5c7wk2cu2" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
-  <common hash="bbkjgivlk1bj31f2ohbhipqap1uu7b4" dependsOnNodes="true">
+  <common hash="95shudmxil8v3wqbj28lizgoy65mcy3" dependsOnNodes="true">
     <dep root="1415725632945990508" />
     <dep root="1707132686102726996" />
     <dep root="1707132686103361272" />
@@ -29,7 +29,7 @@
   <source id="7674419771057231696" name="main" hash="-deoream0ov2jh3e48rv5j37ukh45hwq">
     <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" />
   </source>
-  <source id="2834967828304165839" name="map_Main" hash="-prda2zdrtj159g0za25l6un2m8nu2h">
+  <source id="2834967828304165839" name="map_Main" hash="dfmyo385dunuep0dp8ojq0ggw6cfmjy">
     <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
   </source>
   <source id="5165761802077123674" name="reduce_Move" hash="5ek77hkq8ax538rg4rj9k1n19pe3gqt" />

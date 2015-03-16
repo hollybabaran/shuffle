@@ -8092,7 +8092,7 @@
                 </node>
               </node>
               <node role="ifFalse" roleId="tpee.1163668934364" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7501337804246945508" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="deckback_small.png" />
+                <property name="value" nameId="tpee.1070475926801" value="deckback_small.jpg" />
               </node>
             </node>
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.StringType" typeId="tpee.1225271177708" id="1320406746499451161" nodeInfo="in" />
