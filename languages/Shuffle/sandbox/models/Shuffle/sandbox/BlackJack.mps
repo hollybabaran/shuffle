@@ -351,6 +351,8 @@
           <property name="value" nameId="ffsp.2003306783291602631" value="false" />
         </node>
       </node>
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="5009859759414211461" nodeInfo="ng" />
+      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="5009859759414212027" nodeInfo="ng" />
       <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="5265026447206715535" nodeInfo="ng" />
     </node>
     <node role="computerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.ComputerTurnBlock" typeId="ffsp.465858332974170854" id="8329788417295680741" nodeInfo="ng">
