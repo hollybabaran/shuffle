@@ -963,6 +963,18 @@
             <node role="variable" roleId="ffsp.4653797233416726098" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="940413447906761720" nodeInfo="ng">
               <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="940413447906754191" resolveInfo="trumpSuit" />
             </node>
+            <node role="optionValues" roleId="ffsp.5302167629423834962" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="5009859759413410441" nodeInfo="ng">
+              <property name="number" nameId="ffsp.2455425859176336673" value="1" />
+            </node>
+            <node role="optionValues" roleId="ffsp.5302167629423834962" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="5009859759413411198" nodeInfo="ng">
+              <property name="number" nameId="ffsp.2455425859176336673" value="2" />
+            </node>
+            <node role="optionValues" roleId="ffsp.5302167629423834962" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="5009859759413411211" nodeInfo="ng">
+              <property name="number" nameId="ffsp.2455425859176336673" value="3" />
+            </node>
+            <node role="optionValues" roleId="ffsp.5302167629423834962" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="5009859759413411226" nodeInfo="ng">
+              <property name="number" nameId="ffsp.2455425859176336673" value="4" />
+            </node>
           </node>
           <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="940413447909079464" nodeInfo="ng" />
           <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="940413447909079483" nodeInfo="ng">

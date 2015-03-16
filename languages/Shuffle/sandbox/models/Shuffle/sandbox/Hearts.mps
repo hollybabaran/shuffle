@@ -646,7 +646,9 @@
                         <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="940413447903166389" nodeInfo="ng">
                           <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="940413447900761520" resolveInfo="currentHighestRank" />
                         </node>
-                        <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.RankLiteral" typeId="ffsp.2524059026155569696" id="940413447903166560" nodeInfo="ng" />
+                        <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.RankLiteral" typeId="ffsp.2524059026155569696" id="5302167629424175570" nodeInfo="ng">
+                          <property name="rank" nameId="ffsp.2524059026155583873" value="A" />
+                        </node>
                       </node>
                       <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="940413447903166195" nodeInfo="ng">
                         <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="940413447907393294" nodeInfo="ng">
@@ -675,7 +677,9 @@
                               </node>
                               <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="940413447903168287" nodeInfo="ng" />
                             </node>
-                            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.RankLiteral" typeId="ffsp.2524059026155569696" id="940413447903169364" nodeInfo="ng" />
+                            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.RankLiteral" typeId="ffsp.2524059026155569696" id="5302167629424181238" nodeInfo="ng">
+                              <property name="rank" nameId="ffsp.2524059026155583873" value="A" />
+                            </node>
                           </node>
                         </node>
                         <node role="body" roleId="ffsp.5565452210788214069" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="940413447903166706" nodeInfo="ng">
