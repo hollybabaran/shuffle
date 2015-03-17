@@ -174,22 +174,22 @@
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="3854676059697652960" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Card" />
     <property name="name" nameId="tpck.1169194664001" value="Suit" />
-    <property name="memberIdentifierPolicy" nameId="tpce.1197591154882" value="derive_from_internal_value" />
+    <property name="memberIdentifierPolicy" nameId="tpce.1197591154882" value="derive_from_presentation" />
     <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652961" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="1" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="♠" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="S" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652962" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="♥" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="H" />
       <property name="internalValue" nameId="tpce.1083923523171" value="2" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652965" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="♣" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="C" />
       <property name="internalValue" nameId="tpce.1083923523171" value="3" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652969" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="♦" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="D" />
       <property name="internalValue" nameId="tpce.1083923523171" value="4" />
     </node>
   </root>
