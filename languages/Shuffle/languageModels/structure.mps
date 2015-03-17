@@ -129,12 +129,6 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7674520359936462567" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Deal" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="deal" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3854676059697220626" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="CardCollection" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
@@ -799,12 +793,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;?&gt;" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176050087" resolveInfo="ShuffleBinaryExpression" />
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2455425859175603937" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
-    <property name="name" nameId="tpck.1169194664001" value="playCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Play card" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2455425859176049884" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
@@ -996,21 +984,6 @@
       <property name="role" nameId="tpce.1071599776563" value="pile" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4224678445064136690" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="NumHumanPlayers" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="number of human players" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4224678445064137271" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="expression" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4224678445064421209" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4224678445064421088" resolveInfo="setupCommand" />
     </node>
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4224678445064421088" nodeInfo="ig">
