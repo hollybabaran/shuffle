@@ -781,7 +781,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7878805613280127559" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="End" />
+        <property name="text" nameId="tpc2.1073389577007" value="end for each" />
       </node>
     </node>
   </root>
@@ -1372,7 +1372,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="8887962621204079825" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="end" />
+        <property name="text" nameId="tpc2.1073389577007" value="end while" />
       </node>
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="6377060046496279672" nodeInfo="nn" />
     </node>
