@@ -1238,29 +1238,5 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1745689507094880464" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="ControlFlow" />
-    <property name="name" nameId="tpck.1169194664001" value="FunctionInvocation" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="call" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1745689507094880985" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="name" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7501337804236030156" resolveInfo="FunctionCall" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1745689507095779007" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="ControlFlow" />
-    <property name="name" nameId="tpck.1169194664001" value="Break" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="break" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1745689507095960798" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="ControlFlow" />
-    <property name="name" nameId="tpck.1169194664001" value="Continue" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="continue" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-  </root>
 </model>
 
