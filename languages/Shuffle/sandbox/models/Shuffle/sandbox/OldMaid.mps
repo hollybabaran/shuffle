@@ -775,6 +775,19 @@
               <link role="card" roleId="ffsp.1418645885567322796" targetNodeId="1745689507095069991" resolveInfo="cardToTake" />
             </node>
           </node>
+          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="4593539035426972518" nodeInfo="ng">
+            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426972519" nodeInfo="ng">
+              <property name="value" nameId="ffsp.8642299736868227465" value="Player " />
+            </node>
+            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.CurrentPlayerNumber" typeId="ffsp.7644071217999812459" id="4593539035426972520" nodeInfo="ng" />
+            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426972521" nodeInfo="ng">
+              <property name="value" nameId="ffsp.8642299736868227465" value=" takes " />
+            </node>
+            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.CardReference" typeId="ffsp.1418645885567267462" id="4593539035426972818" nodeInfo="ng">
+              <link role="card" roleId="ffsp.1418645885567322796" targetNodeId="1745689507095069991" resolveInfo="cardToTake" />
+            </node>
+          </node>
+          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="4593539035426972268" nodeInfo="ng" />
           <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426272301" nodeInfo="ng">
             <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426272302" nodeInfo="nn">
               <property name="text" nameId="tpee.6329021646629104958" value="Find Pairs to remove" />
@@ -1424,6 +1437,22 @@
                 <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="1745689507095074275" nodeInfo="ng" />
                 <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507095074292" nodeInfo="ng" />
               </node>
+            </node>
+          </node>
+          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="4593539035426964632" nodeInfo="ng">
+            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426964856" nodeInfo="ng">
+              <property name="value" nameId="ffsp.8642299736868227465" value="Player " />
+            </node>
+            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.CurrentPlayerNumber" typeId="ffsp.7644071217999812459" id="4593539035426964968" nodeInfo="ng" />
+            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426964986" nodeInfo="ng">
+              <property name="value" nameId="ffsp.8642299736868227465" value=" takes " />
+            </node>
+            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426964921" nodeInfo="ng">
+              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426964896" nodeInfo="ng">
+                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426964891" nodeInfo="ng" />
+                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426964909" nodeInfo="ng" />
+              </node>
+              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.TopCard" typeId="ffsp.2678928131163028766" id="4593539035426964948" nodeInfo="ng" />
             </node>
           </node>
           <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426269748" nodeInfo="ng">
