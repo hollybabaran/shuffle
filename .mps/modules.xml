@@ -6,7 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/Shuffle/runtime/Shuffle.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Shuffle/sandbox/Shuffle.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ShuffleJava/ShuffleJava.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/shuffle.build/shuffle.build.msd" folder="" />
     </projectModules>
   </component>
 </project>
-

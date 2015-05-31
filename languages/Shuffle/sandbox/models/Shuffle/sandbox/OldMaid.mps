@@ -1,1294 +1,788 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:c201068d-cd80-4272-8e25-a41b07efe1f5(Shuffle.sandbox.OldMaid)">
-  <persistence version="8" />
-  <language namespace="360f183c-7a9f-4f9b-a4f3-c572eede364e(Shuffle)" />
-  <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="46" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <root type="ffsp.Main" typeId="ffsp.2834967828303785259" id="1745689507091309881" nodeInfo="ng">
-    <node role="setupBlock" roleId="ffsp.5722923068946478776" type="ffsp.SetupBlock" typeId="ffsp.5160494638280649077" id="1745689507091309882" nodeInfo="ng">
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.DefaultDeck" typeId="ffsp.1415725632945178473" id="1745689507092013625" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="__deck" />
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013626" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="1" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+<model ref="r:c201068d-cd80-4272-8e25-a41b07efe1f5(Shuffle.sandbox.OldMaid)">
+  <persistence version="9" />
+  <languages>
+    <use id="360f183c-7a9f-4f9b-a4f3-c572eede364e" name="Shuffle" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="360f183c-7a9f-4f9b-a4f3-c572eede364e" name="Shuffle">
+      <concept id="465858332974170854" name="Shuffle.structure.ComputerTurnBlock" flags="ng" index="22SWP9" />
+      <concept id="2241509385806353940" name="Shuffle.structure.Hand" flags="ng" index="iEArX" />
+      <concept id="2834967828303818439" name="Shuffle.structure.Card" flags="ng" index="kSBFZ">
+        <property id="2834967828304063038" name="suit" index="kVFS6" />
+        <property id="2834967828304050224" name="rank" index="kVIK8" />
+      </concept>
+      <concept id="2834967828303785259" name="Shuffle.structure.Main" flags="ng" index="kSJ$j">
+        <child id="465858332974171242" name="computerTurnBlock" index="22SWJ5" />
+        <child id="3561890535519279272" name="endBlock" index="N7rwU" />
+        <child id="1790098884239327234" name="playerTurnBlock" index="1NfNlL" />
+        <child id="5722923068946478776" name="setupBlock" index="3Q6DUd" />
+        <child id="5722923068946478778" name="winConditionBlock" index="3Q6DUf" />
+      </concept>
+      <concept id="2834967828304063230" name="Shuffle.structure.Player" flags="ng" index="kVFV6">
+        <child id="6952526287832333226" name="number" index="3XGYTS" />
+      </concept>
+      <concept id="8642299736868079625" name="Shuffle.structure.StringConstant" flags="ng" index="l_Hnr">
+        <property id="8642299736868227465" name="value" index="l_1hr" />
+      </concept>
+      <concept id="1745689507093400711" name="Shuffle.structure.RandomNumber" flags="ng" index="2ml2fs">
+        <child id="1745689507093400798" name="min" index="2ml2e5" />
+        <child id="1745689507093400800" name="max" index="2ml2eV" />
+      </concept>
+      <concept id="1745689507092017967" name="Shuffle.structure.RandomCard" flags="ng" index="2molLO">
+        <child id="1745689507092217450" name="pile" index="2mo_4L" />
+      </concept>
+      <concept id="2824091188896932087" name="Shuffle.structure.CommandList" flags="ng" index="oGwWe">
+        <child id="2824091188896932088" name="body" index="oGwW1" />
+      </concept>
+      <concept id="2455425859176050087" name="Shuffle.structure.ShuffleBinaryExpression" flags="ng" index="ur45C">
+        <child id="2455425859176050383" name="left" index="ur480" />
+        <child id="2455425859176050386" name="right" index="ur48t" />
+      </concept>
+      <concept id="2455425859176103333" name="Shuffle.structure.minusExpression" flags="ng" index="ur95E" />
+      <concept id="2455425859176095200" name="Shuffle.structure.addExpression" flags="ng" index="urb4J" />
+      <concept id="2455425859176336643" name="Shuffle.structure.NumberConstant" flags="ng" index="u$e7c">
+        <property id="2455425859176336673" name="number" index="u$e7I" />
+      </concept>
+      <concept id="5964992898508211303" name="Shuffle.structure.RankOp" flags="ng" index="2xyaO8" />
+      <concept id="5964992898508062080" name="Shuffle.structure.SuitOp" flags="ng" index="2xyLjJ" />
+      <concept id="1291148986966014861" name="Shuffle.structure.NotEqualToStatement" flags="ng" index="2xRuU$" />
+      <concept id="5144139994148159356" name="Shuffle.structure.AllowWithSize" flags="ng" index="2_tLtH">
+        <child id="5144139994148159653" name="size" index="2_tQyO" />
+        <child id="5144139994148159655" name="pile" index="2_tQyQ" />
+      </concept>
+      <concept id="2678928131162238767" name="Shuffle.structure.Boolean" flags="ng" index="L_9Bu">
+        <child id="2678928131162280636" name="value" index="L_Yhd" />
+      </concept>
+      <concept id="2678928131163028766" name="Shuffle.structure.TopCard" flags="ng" index="LU8JJ" />
+      <concept id="3561890535518455856" name="Shuffle.structure.EndBlock" flags="ng" index="N2iyy" />
+      <concept id="1418645885567267462" name="Shuffle.structure.CardReference" flags="ng" index="2OZBxG">
+        <reference id="1418645885567322796" name="card" index="2OZO16" />
+      </concept>
+      <concept id="1418645885567322850" name="Shuffle.structure.CardRefDeclaration" flags="ng" index="2OZO08">
+        <child id="1418645885567543114" name="card" index="2OSEQw" />
+      </concept>
+      <concept id="7644071217999812459" name="Shuffle.structure.CurrentPlayerNumber" flags="ng" index="2SJUkI" />
+      <concept id="2719425773106347456" name="Shuffle.structure.dotOperator" flags="ng" index="UHIEl">
+        <child id="2719425773106398155" name="operand" index="UGtiu" />
+        <child id="2719425773106586483" name="operation" index="UGzgA" />
+      </concept>
+      <concept id="3854676059697422932" name="Shuffle.structure.Pile" flags="ng" index="V2iOw">
+        <property id="162709756679410976" name="displayType" index="1y7XE9" />
+      </concept>
+      <concept id="3854676059697220626" name="Shuffle.structure.CardCollection" flags="ng" index="V2wdA">
+        <child id="3854676059697258441" name="cards" index="V2T2X" />
+      </concept>
+      <concept id="5565452210787037996" name="Shuffle.structure.ElseIfStatement" flags="ng" index="VoWpw">
+        <child id="5565452210788214069" name="body" index="Vjt1T" />
+        <child id="5565452210788214067" name="condition" index="Vjt1Z" />
+      </concept>
+      <concept id="5565452210787037995" name="Shuffle.structure.ForEachStatement" flags="ng" index="VoWpB">
+        <child id="7878805613278804333" name="cardPile" index="14whEr" />
+        <child id="7878805613278808793" name="body" index="14wm$J" />
+      </concept>
+      <concept id="5565452210787038123" name="Shuffle.structure.WhileStatement" flags="ng" index="VoWrB">
+        <child id="5565452210788213847" name="condition" index="Vjt4r" />
+        <child id="5565452210788213921" name="body" index="Vjt7H" />
+      </concept>
+      <concept id="5565452210787026454" name="Shuffle.structure.IfStatement" flags="ng" index="VoZdq">
+        <child id="5565452210788213992" name="condition" index="Vjt6$" />
+        <child id="5565452210788213994" name="body" index="Vjt6A" />
+        <child id="5565452210788292793" name="elseIf" index="VjERP" />
+        <child id="8116400040793688461" name="elseBody" index="3mQBto" />
+      </concept>
+      <concept id="4113687324191539085" name="Shuffle.structure.CurrentPlayer" flags="ng" index="12o7Xu" />
+      <concept id="7878805613278894690" name="Shuffle.structure.ForEachVarReference" flags="ng" index="14wbAk">
+        <reference id="7878805613278894769" name="foreach" index="14wb_7" />
+      </concept>
+      <concept id="5084755040949647097" name="Shuffle.structure.DeckReference" flags="ng" index="17fDGW" />
+      <concept id="1415725632945178473" name="Shuffle.structure.DefaultDeck" flags="ng" index="18ImQv" />
+      <concept id="7674520359936346144" name="Shuffle.structure.ShuffleDeck" flags="ng" index="190LuV">
+        <child id="7674520359936346172" name="deck" index="190LuB" />
+      </concept>
+      <concept id="7674520359934846973" name="Shuffle.structure.Number" flags="ng" index="19UzxA">
+        <child id="7674520359935510780" name="expression" index="19XdtB" />
+      </concept>
+      <concept id="7881733640607028947" name="Shuffle.structure.LessThanStatement" flags="ng" index="3bKlKJ" />
+      <concept id="7881733640606387481" name="Shuffle.structure.EqualToStatement" flags="ng" index="3bXCv_" />
+      <concept id="7881733640606387472" name="Shuffle.structure.AndStatement" flags="ng" index="3bXCvG" />
+      <concept id="1721387915554939518" name="Shuffle.structure.NumPlayers" flags="ng" index="1cFJHe">
+        <child id="7163396788749457844" name="expression" index="1LZarp" />
+      </concept>
+      <concept id="6265495446096081949" name="Shuffle.structure.Print" flags="ng" index="3g$vrO">
+        <child id="6265495446096126114" name="string" index="3g$a9b" />
+      </concept>
+      <concept id="7501337804229937804" name="Shuffle.structure.WaitForPlayer" flags="ng" index="1hjT1L">
+        <child id="7501337804230073635" name="expression" index="1hjovu" />
+      </concept>
+      <concept id="7501337804229938774" name="Shuffle.structure.ToMove" flags="ng" index="1hjTiF">
+        <child id="7501337804230072940" name="pile" index="1hjo2h" />
+        <child id="7501337804230072938" name="selection" index="1hjo2n" />
+      </concept>
+      <concept id="7501337804237190121" name="Shuffle.structure.Comment" flags="ng" index="1hRy$k">
+        <child id="7501337804237190869" name="comment" index="1hRyKC" />
+      </concept>
+      <concept id="2003306783291590326" name="Shuffle.structure.boolConstant" flags="ng" index="3hXeDh">
+        <property id="2003306783291602631" name="value" index="3hXdCw" />
+      </concept>
+      <concept id="6304222537138290358" name="Shuffle.structure.VariableReference" flags="ng" index="1onEp9">
+        <reference id="6304222537138290359" name="variable" index="1onEp8" />
+      </concept>
+      <concept id="150989085052660316" name="Shuffle.structure.ConditionBlock" flags="ng" index="3pBw6p">
+        <child id="150989085052711727" name="condition" index="3pBPzE" />
+      </concept>
+      <concept id="2190890532995396246" name="Shuffle.structure.Size" flags="ng" index="3A$QB2" />
+      <concept id="1790098884239250114" name="Shuffle.structure.PlayerTurnBlock" flags="ng" index="1NceuL" />
+      <concept id="5160494638280864183" name="Shuffle.structure.WinConditionBlock" flags="ng" index="1N_3cZ" />
+      <concept id="5160494638280568420" name="Shuffle.structure.CommandBlock" flags="ng" index="1NAaNG">
+        <child id="5160494638280568539" name="body" index="1NAaLj" />
+      </concept>
+      <concept id="5160494638280649077" name="Shuffle.structure.SetupBlock" flags="ng" index="1NAQJX" />
+      <concept id="939205226782726196" name="Shuffle.structure.VariableAssignment" flags="ng" index="1OAU8p">
+        <child id="939205226782740261" name="lvalue" index="1OAZk8" />
+        <child id="939205226782740263" name="value" index="1OAZka" />
+      </concept>
+      <concept id="6162892231914410061" name="Shuffle.structure.Move" flags="ng" index="1PKMQo">
+        <child id="4654595638702489163" name="cardNumbers" index="31qsLp" />
+        <child id="6162892231914411206" name="pile1" index="1PKM$j" />
+        <child id="6162892231914411208" name="pile2" index="1PKM$t" />
+      </concept>
+      <concept id="1298433529544597390" name="Shuffle.structure.EmptyLine" flags="ng" index="1YWEB$" />
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="kSJ$j" id="1wTVPIejukT">
+    <node concept="1NAQJX" id="1wTVPIejukU" role="3Q6DUd">
+      <node concept="18ImQv" id="1wTVPIema8T" role="1NAaLj">
+        <property role="TrG5h" value="__deck" />
+        <node concept="kSBFZ" id="1wTVPIema8U" role="V2T2X">
+          <property role="kVIK8" value="1" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013627" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="2" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+        <node concept="kSBFZ" id="1wTVPIema8V" role="V2T2X">
+          <property role="kVIK8" value="2" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013628" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="3" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+        <node concept="kSBFZ" id="1wTVPIema8W" role="V2T2X">
+          <property role="kVIK8" value="3" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013629" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="4" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+        <node concept="kSBFZ" id="1wTVPIema8X" role="V2T2X">
+          <property role="kVIK8" value="4" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013630" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="5" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+        <node concept="kSBFZ" id="1wTVPIema8Y" role="V2T2X">
+          <property role="kVIK8" value="5" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013631" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="6" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+        <node concept="kSBFZ" id="1wTVPIema8Z" role="V2T2X">
+          <property role="kVIK8" value="6" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013632" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="7" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+        <node concept="kSBFZ" id="1wTVPIema90" role="V2T2X">
+          <property role="kVIK8" value="7" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013633" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="8" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+        <node concept="kSBFZ" id="1wTVPIema91" role="V2T2X">
+          <property role="kVIK8" value="8" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013634" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="9" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+        <node concept="kSBFZ" id="1wTVPIema92" role="V2T2X">
+          <property role="kVIK8" value="9" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013635" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="10" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+        <node concept="kSBFZ" id="1wTVPIema93" role="V2T2X">
+          <property role="kVIK8" value="10" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013636" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="11" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+        <node concept="kSBFZ" id="1wTVPIema94" role="V2T2X">
+          <property role="kVIK8" value="11" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013637" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="12" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+        <node concept="kSBFZ" id="1wTVPIema95" role="V2T2X">
+          <property role="kVIK8" value="12" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013638" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="13" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="1" />
+        <node concept="kSBFZ" id="1wTVPIema96" role="V2T2X">
+          <property role="kVIK8" value="13" />
+          <property role="kVFS6" value="1" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013639" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="1" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema97" role="V2T2X">
+          <property role="kVIK8" value="1" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013640" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="2" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema98" role="V2T2X">
+          <property role="kVIK8" value="2" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013641" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="3" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema99" role="V2T2X">
+          <property role="kVIK8" value="3" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013642" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="4" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema9a" role="V2T2X">
+          <property role="kVIK8" value="4" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013643" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="5" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema9b" role="V2T2X">
+          <property role="kVIK8" value="5" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013644" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="6" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema9c" role="V2T2X">
+          <property role="kVIK8" value="6" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013645" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="7" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema9d" role="V2T2X">
+          <property role="kVIK8" value="7" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013646" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="8" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema9e" role="V2T2X">
+          <property role="kVIK8" value="8" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013647" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="9" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema9f" role="V2T2X">
+          <property role="kVIK8" value="9" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013648" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="10" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema9g" role="V2T2X">
+          <property role="kVIK8" value="10" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013649" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="11" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema9h" role="V2T2X">
+          <property role="kVIK8" value="11" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013650" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="12" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema9i" role="V2T2X">
+          <property role="kVIK8" value="12" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013651" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="13" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="2" />
+        <node concept="kSBFZ" id="1wTVPIema9j" role="V2T2X">
+          <property role="kVIK8" value="13" />
+          <property role="kVFS6" value="2" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013652" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="1" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9k" role="V2T2X">
+          <property role="kVIK8" value="1" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013653" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="2" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9l" role="V2T2X">
+          <property role="kVIK8" value="2" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013654" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="3" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9m" role="V2T2X">
+          <property role="kVIK8" value="3" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013655" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="4" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9n" role="V2T2X">
+          <property role="kVIK8" value="4" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013656" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="5" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9o" role="V2T2X">
+          <property role="kVIK8" value="5" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013657" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="6" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9p" role="V2T2X">
+          <property role="kVIK8" value="6" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013658" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="7" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9q" role="V2T2X">
+          <property role="kVIK8" value="7" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013659" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="8" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9r" role="V2T2X">
+          <property role="kVIK8" value="8" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013660" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="9" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9s" role="V2T2X">
+          <property role="kVIK8" value="9" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013661" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="10" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9t" role="V2T2X">
+          <property role="kVIK8" value="10" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013662" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="11" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9u" role="V2T2X">
+          <property role="kVIK8" value="11" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013663" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="12" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9v" role="V2T2X">
+          <property role="kVIK8" value="12" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013664" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="13" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="3" />
+        <node concept="kSBFZ" id="1wTVPIema9w" role="V2T2X">
+          <property role="kVIK8" value="13" />
+          <property role="kVFS6" value="3" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013665" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="1" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9x" role="V2T2X">
+          <property role="kVIK8" value="1" />
+          <property role="kVFS6" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013666" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="2" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9y" role="V2T2X">
+          <property role="kVIK8" value="2" />
+          <property role="kVFS6" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013667" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="3" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9z" role="V2T2X">
+          <property role="kVIK8" value="3" />
+          <property role="kVFS6" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013668" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="4" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9$" role="V2T2X">
+          <property role="kVIK8" value="4" />
+          <property role="kVFS6" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013669" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="5" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9_" role="V2T2X">
+          <property role="kVIK8" value="5" />
+          <property role="kVFS6" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013670" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="6" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9A" role="V2T2X">
+          <property role="kVIK8" value="6" />
+          <property role="kVFS6" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013671" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="7" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9B" role="V2T2X">
+          <property role="kVIK8" value="7" />
+          <property role="kVFS6" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013672" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="8" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9C" role="V2T2X">
+          <property role="kVIK8" value="8" />
+          <property role="kVFS6" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013673" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="9" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9D" role="V2T2X">
+          <property role="kVIK8" value="9" />
+          <property role="kVFS6" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013674" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="10" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9E" role="V2T2X">
+          <property role="kVIK8" value="10" />
+          <property role="kVFS6" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013675" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="11" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9F" role="V2T2X">
+          <property role="kVIK8" value="11" />
+          <property role="kVFS6" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013676" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="12" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9G" role="V2T2X">
+          <property role="kVIK8" value="12" />
+          <property role="kVFS6" value="4" />
         </node>
-        <node role="cards" roleId="ffsp.3854676059697258441" type="ffsp.Card" typeId="ffsp.2834967828303818439" id="1745689507092013677" nodeInfo="ng">
-          <property name="rank" nameId="ffsp.2834967828304050224" value="13" />
-          <property name="suit" nameId="ffsp.2834967828304063038" value="4" />
+        <node concept="kSBFZ" id="1wTVPIema9H" role="V2T2X">
+          <property role="kVIK8" value="13" />
+          <property role="kVFS6" value="4" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.NumPlayers" typeId="ffsp.1721387915554939518" id="1745689507092013786" nodeInfo="ng">
-        <node role="expression" roleId="ffsp.7163396788749457844" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507092013857" nodeInfo="ng">
-          <property name="number" nameId="ffsp.2455425859176336673" value="4" />
+      <node concept="1cFJHe" id="1wTVPIemabq" role="1NAaLj">
+        <node concept="u$e7c" id="1wTVPIemacx" role="1LZarp">
+          <property role="u$e7I" value="4" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.ShuffleDeck" typeId="ffsp.7674520359936346144" id="1745689507092013928" nodeInfo="ng">
-        <node role="deck" roleId="ffsp.7674520359936346172" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="1745689507092013989" nodeInfo="ng" />
+      <node concept="190LuV" id="1wTVPIemadC" role="1NAaLj">
+        <node concept="17fDGW" id="1wTVPIemae_" role="190LuB" />
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="1745689507092014274" nodeInfo="ng">
-        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="1745689507092014375" nodeInfo="ng" />
-        <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507092014425" nodeInfo="ng">
-          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507092014390" nodeInfo="ng">
-            <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507092014407" nodeInfo="ng">
-              <property name="number" nameId="ffsp.2455425859176336673" value="1" />
+      <node concept="1PKMQo" id="1wTVPIemaj2" role="1NAaLj">
+        <node concept="17fDGW" id="1wTVPIemakB" role="1PKM$j" />
+        <node concept="UHIEl" id="1wTVPIemalp" role="1PKM$t">
+          <node concept="kVFV6" id="1wTVPIemakQ" role="UGtiu">
+            <node concept="u$e7c" id="1wTVPIemal7" role="3XGYTS">
+              <property role="u$e7I" value="1" />
             </node>
           </node>
-          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507092014455" nodeInfo="ng" />
+          <node concept="iEArX" id="1wTVPIemalR" role="UGzgA" />
         </node>
-        <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507092014355" nodeInfo="ng">
-          <property name="number" nameId="ffsp.2455425859176336673" value="13" />
+        <node concept="u$e7c" id="1wTVPIemakj" role="31qsLp">
+          <property role="u$e7I" value="13" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="1745689507092014557" nodeInfo="ng">
-        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="1745689507092014685" nodeInfo="ng" />
-        <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507092014735" nodeInfo="ng">
-          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507092014700" nodeInfo="ng">
-            <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507092014717" nodeInfo="ng">
-              <property name="number" nameId="ffsp.2455425859176336673" value="2" />
+      <node concept="1PKMQo" id="1wTVPIemant" role="1NAaLj">
+        <node concept="17fDGW" id="1wTVPIemapt" role="1PKM$j" />
+        <node concept="UHIEl" id="1wTVPIemaqf" role="1PKM$t">
+          <node concept="kVFV6" id="1wTVPIemapG" role="UGtiu">
+            <node concept="u$e7c" id="1wTVPIemapX" role="3XGYTS">
+              <property role="u$e7I" value="2" />
             </node>
           </node>
-          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507092014765" nodeInfo="ng" />
+          <node concept="iEArX" id="1wTVPIemaqH" role="UGzgA" />
         </node>
-        <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507092014665" nodeInfo="ng">
-          <property name="number" nameId="ffsp.2455425859176336673" value="13" />
+        <node concept="u$e7c" id="1wTVPIemap9" role="31qsLp">
+          <property role="u$e7I" value="13" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="1745689507092014894" nodeInfo="ng">
-        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="1745689507092015049" nodeInfo="ng" />
-        <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507092015099" nodeInfo="ng">
-          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507092015064" nodeInfo="ng">
-            <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507092015081" nodeInfo="ng">
-              <property name="number" nameId="ffsp.2455425859176336673" value="3" />
+      <node concept="1PKMQo" id="1wTVPIemasI" role="1NAaLj">
+        <node concept="17fDGW" id="1wTVPIemav9" role="1PKM$j" />
+        <node concept="UHIEl" id="1wTVPIemavV" role="1PKM$t">
+          <node concept="kVFV6" id="1wTVPIemavo" role="UGtiu">
+            <node concept="u$e7c" id="1wTVPIemavD" role="3XGYTS">
+              <property role="u$e7I" value="3" />
             </node>
           </node>
-          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507092015129" nodeInfo="ng" />
+          <node concept="iEArX" id="1wTVPIemawp" role="UGzgA" />
         </node>
-        <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507092015029" nodeInfo="ng">
-          <property name="number" nameId="ffsp.2455425859176336673" value="13" />
+        <node concept="u$e7c" id="1wTVPIemauP" role="31qsLp">
+          <property role="u$e7I" value="13" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="1745689507092015285" nodeInfo="ng">
-        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.DeckReference" typeId="ffsp.5084755040949647097" id="1745689507092015467" nodeInfo="ng" />
-        <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507092015523" nodeInfo="ng">
-          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507092015482" nodeInfo="ng">
-            <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507092015499" nodeInfo="ng">
-              <property name="number" nameId="ffsp.2455425859176336673" value="4" />
+      <node concept="1PKMQo" id="1wTVPIemayP" role="1NAaLj">
+        <node concept="17fDGW" id="1wTVPIema_F" role="1PKM$j" />
+        <node concept="UHIEl" id="1wTVPIemaAz" role="1PKM$t">
+          <node concept="kVFV6" id="1wTVPIema_U" role="UGtiu">
+            <node concept="u$e7c" id="1wTVPIemaAb" role="3XGYTS">
+              <property role="u$e7I" value="4" />
             </node>
           </node>
-          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507092015553" nodeInfo="ng" />
+          <node concept="iEArX" id="1wTVPIemaB1" role="UGzgA" />
         </node>
-        <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507092015447" nodeInfo="ng">
-          <property name="number" nameId="ffsp.2455425859176336673" value="13" />
-        </node>
-      </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="7527628871378981373" nodeInfo="ng" />
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="1745689507092016078" nodeInfo="ng">
-        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="1745689507092016080" nodeInfo="nn">
-          <property name="text" nameId="tpee.6329021646629104958" value="remove a random card to leave 51 cards in the deck" />
+        <node concept="u$e7c" id="1wTVPIema_n" role="31qsLp">
+          <property role="u$e7I" value="13" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Pile" typeId="ffsp.3854676059697422932" id="1745689507092015736" nodeInfo="ng">
-        <property name="displayType" nameId="ffsp.162709756679410976" value="hidden" />
-        <property name="name" nameId="tpck.1169194664001" value="discardPile" />
+      <node concept="1YWEB$" id="6xRwDdfxd7X" role="1NAaLj" />
+      <node concept="1hRy$k" id="1wTVPIemaJe" role="1NAaLj">
+        <node concept="3SKdUq" id="1wTVPIemaJg" role="1hRyKC">
+          <property role="3SKdUp" value="remove a random card to leave 51 cards in the deck" />
+        </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Number" typeId="ffsp.7674520359934846973" id="1745689507093407049" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="randomPlayer" />
-        <node role="expression" roleId="ffsp.7674520359935510780" type="ffsp.RandomNumber" typeId="ffsp.1745689507093400711" id="1745689507094105985" nodeInfo="ng">
-          <node role="min" roleId="ffsp.1745689507093400798" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507094106012" nodeInfo="ng">
-            <property name="number" nameId="ffsp.2455425859176336673" value="1" />
+      <node concept="V2iOw" id="1wTVPIemaDS" role="1NAaLj">
+        <property role="1y7XE9" value="hidden" />
+        <property role="TrG5h" value="discardPile" />
+      </node>
+      <node concept="19UzxA" id="1wTVPIerul9" role="1NAaLj">
+        <property role="TrG5h" value="randomPlayer" />
+        <node concept="2ml2fs" id="1wTVPIeu8Y1" role="19XdtB">
+          <node concept="u$e7c" id="1wTVPIeu8Ys" role="2ml2e5">
+            <property role="u$e7I" value="1" />
           </node>
-          <node role="max" roleId="ffsp.1745689507093400800" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507094106038" nodeInfo="ng">
-            <property name="number" nameId="ffsp.2455425859176336673" value="4" />
+          <node concept="u$e7c" id="1wTVPIeu8YQ" role="2ml2eV">
+            <property role="u$e7I" value="4" />
           </node>
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.CardRefDeclaration" typeId="ffsp.1418645885567322850" id="1745689507092016832" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="randomCard" />
-        <node role="card" roleId="ffsp.1418645885567543114" type="ffsp.RandomCard" typeId="ffsp.1745689507092017967" id="1745689507092563053" nodeInfo="ng">
-          <node role="pile" roleId="ffsp.1745689507092217450" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507094280664" nodeInfo="ng">
-            <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507094280643" nodeInfo="ng">
-              <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507094280652" nodeInfo="ng">
-                <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507093407049" resolveInfo="randomPlayer" />
+      <node concept="2OZO08" id="1wTVPIemaV0" role="1NAaLj">
+        <property role="TrG5h" value="randomCard" />
+        <node concept="2molLO" id="1wTVPIeoghH" role="2OSEQw">
+          <node concept="UHIEl" id="1wTVPIeuNBo" role="2mo_4L">
+            <node concept="kVFV6" id="1wTVPIeuNB3" role="UGtiu">
+              <node concept="1onEp9" id="1wTVPIeuNBc" role="3XGYTS">
+                <ref role="1onEp8" node="1wTVPIerul9" resolve="randomPlayer" />
               </node>
             </node>
-            <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507094280700" nodeInfo="ng" />
+            <node concept="iEArX" id="1wTVPIeuNBW" role="UGzgA" />
           </node>
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="1745689507094280852" nodeInfo="ng">
-        <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507094281157" nodeInfo="ng">
-          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507094281029" nodeInfo="ng">
-            <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507094281118" nodeInfo="ng">
-              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507093407049" resolveInfo="randomPlayer" />
+      <node concept="1PKMQo" id="1wTVPIeuNEk" role="1NAaLj">
+        <node concept="UHIEl" id="1wTVPIeuNJ5" role="1PKM$j">
+          <node concept="kVFV6" id="1wTVPIeuNH5" role="UGtiu">
+            <node concept="1onEp9" id="1wTVPIeuNIu" role="3XGYTS">
+              <ref role="1onEp8" node="1wTVPIerul9" resolve="randomPlayer" />
             </node>
           </node>
-          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507094281207" nodeInfo="ng" />
+          <node concept="iEArX" id="1wTVPIeuNJR" role="UGzgA" />
         </node>
-        <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.CardReference" typeId="ffsp.1418645885567267462" id="1745689507094281014" nodeInfo="ng">
-          <link role="card" roleId="ffsp.1418645885567322796" targetNodeId="1745689507092016832" resolveInfo="randomCard" />
+        <node concept="2OZBxG" id="1wTVPIeuNGQ" role="31qsLp">
+          <ref role="2OZO16" node="1wTVPIemaV0" resolve="randomCard" />
         </node>
-        <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507094281252" nodeInfo="ng">
-          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507092015736" resolveInfo="discardPile" />
-        </node>
-      </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="1745689507094281778" nodeInfo="ng">
-        <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="1745689507094281948" nodeInfo="ng">
-          <property name="value" nameId="ffsp.8642299736868227465" value="Removed " />
-        </node>
-        <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.CardReference" typeId="ffsp.1418645885567267462" id="1745689507094282001" nodeInfo="ng">
-          <link role="card" roleId="ffsp.1418645885567322796" targetNodeId="1745689507092016832" resolveInfo="randomCard" />
+        <node concept="1onEp9" id="1wTVPIeuNK$" role="1PKM$t">
+          <ref role="1onEp8" node="1wTVPIemaDS" resolve="discardPile" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="4593539035426217027" nodeInfo="ng" />
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426217262" nodeInfo="ng">
-        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426217264" nodeInfo="nn">
-          <property name="text" nameId="tpee.6329021646629104958" value="Create a Number variable to keep track of player turns" />
+      <node concept="3g$vrO" id="1wTVPIeuNSM" role="1NAaLj">
+        <node concept="l_Hnr" id="1wTVPIeuNVs" role="3g$a9b">
+          <property role="l_1hr" value="Removed " />
+        </node>
+        <node concept="2OZBxG" id="1wTVPIeuNWh" role="3g$a9b">
+          <ref role="2OZO16" node="1wTVPIemaV0" resolve="randomCard" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426217504" nodeInfo="ng">
-        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426217506" nodeInfo="nn">
-          <property name="text" nameId="tpee.6329021646629104958" value="This is done so that it is known when it is a player's first turn" />
+      <node concept="1YWEB$" id="3YZxQD4u5L3" role="1NAaLj" />
+      <node concept="1hRy$k" id="3YZxQD4u5OI" role="1NAaLj">
+        <node concept="3SKdUq" id="3YZxQD4u5OK" role="1hRyKC">
+          <property role="3SKdUp" value="Create a Number variable to keep track of player turns" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Number" typeId="ffsp.7674520359934846973" id="1745689507094282841" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="turnCounter" />
-        <node role="expression" roleId="ffsp.7674520359935510780" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507094283279" nodeInfo="ng">
-          <property name="number" nameId="ffsp.2455425859176336673" value="0" />
+      <node concept="1hRy$k" id="3YZxQD4u5Sw" role="1NAaLj">
+        <node concept="3SKdUq" id="3YZxQD4u5Sy" role="1hRyKC">
+          <property role="3SKdUp" value="This is done so that it is known when it is a player's first turn" />
         </node>
       </node>
-    </node>
-    <node role="computerTurnBlock" roleId="ffsp.465858332974171242" type="ffsp.ComputerTurnBlock" typeId="ffsp.465858332974170854" id="1745689507091309883" nodeInfo="ng">
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426234809" nodeInfo="ng">
-        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426234810" nodeInfo="nn">
-          <property name="text" nameId="tpee.6329021646629104958" value="A new turn begins, so increment the player turn" />
-        </node>
-      </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="1745689507094283549" nodeInfo="ng">
-        <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507094283609" nodeInfo="ng">
-          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507094282841" resolveInfo="turnCounter" />
-        </node>
-        <node role="value" roleId="ffsp.939205226782740263" type="ffsp.addExpression" typeId="ffsp.2455425859176095200" id="1745689507094283703" nodeInfo="ng">
-          <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507094283626" nodeInfo="ng">
-            <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507094282841" resolveInfo="turnCounter" />
-          </node>
-          <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507094283787" nodeInfo="ng">
-            <property name="number" nameId="ffsp.2455425859176336673" value="1" />
-          </node>
-        </node>
-      </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="1745689507094283299" nodeInfo="ng">
-        <node role="elseIf" roleId="ffsp.5565452210788292793" type="ffsp.ElseIfStatement" typeId="ffsp.5565452210787037996" id="1745689507096393048" nodeInfo="ng">
-          <node role="condition" roleId="ffsp.5565452210788214067" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="1745689507096393380" nodeInfo="ng">
-            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096393336" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096393312" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="1745689507096393306" nodeInfo="ng" />
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507096393328" nodeInfo="ng" />
-              </node>
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="1745689507096393366" nodeInfo="ng" />
-            </node>
-            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096393422" nodeInfo="ng">
-              <property name="number" nameId="ffsp.2455425859176336673" value="0" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.5565452210788214069" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507096393050" nodeInfo="ng">
-            <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426235267" nodeInfo="ng">
-              <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426235268" nodeInfo="nn">
-                <property name="text" nameId="tpee.6329021646629104958" value="Do Nothing because the player has already removed all cards from his/her hand" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.LessThanStatement" typeId="ffsp.7881733640607028947" id="1745689507094283342" nodeInfo="ng">
-          <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507094283311" nodeInfo="ng">
-            <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507094282841" resolveInfo="turnCounter" />
-          </node>
-          <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507094283380" nodeInfo="ng">
-            <property name="number" nameId="ffsp.2455425859176336673" value="5" />
-          </node>
-        </node>
-        <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507094283301" nodeInfo="ng">
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426235248" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426235249" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="Since this is the player's first turn, remove all pairs and go to next turn" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426271071" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426271072" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="Find Pairs to remove" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ForEachStatement" typeId="ffsp.5565452210787037995" id="4593539035426271073" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="c" />
-            <node role="cardPile" roleId="ffsp.7878805613278804333" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271074" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426271075" nodeInfo="ng" />
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426271076" nodeInfo="ng" />
-            </node>
-            <node role="body" roleId="ffsp.7878805613278808793" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426271077" nodeInfo="ng">
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Boolean" typeId="ffsp.2678928131162238767" id="4593539035426271078" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="removedPair" />
-                <node role="value" roleId="ffsp.2678928131162280636" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426271079" nodeInfo="ng" />
-              </node>
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ForEachStatement" typeId="ffsp.5565452210787037995" id="4593539035426271080" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="d" />
-                <node role="cardPile" roleId="ffsp.7878805613278804333" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271081" nodeInfo="ng">
-                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426271082" nodeInfo="ng" />
-                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426271083" nodeInfo="ng" />
-                </node>
-                <node role="body" roleId="ffsp.7878805613278808793" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426271084" nodeInfo="ng">
-                  <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426271085" nodeInfo="ng">
-                    <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426271086" nodeInfo="nn">
-                      <property name="text" nameId="tpee.6329021646629104958" value="Only check for pair if it has not already been removed in previous iteration" />
-                    </node>
-                  </node>
-                  <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="4593539035426271087" nodeInfo="ng">
-                    <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426271088" nodeInfo="ng">
-                      <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426273270" nodeInfo="ng">
-                        <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426266152" resolveInfo="removedPair" />
-                      </node>
-                      <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426271090" nodeInfo="ng">
-                        <property name="value" nameId="ffsp.2003306783291602631" value="false" />
-                      </node>
-                    </node>
-                    <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426271091" nodeInfo="ng">
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426271092" nodeInfo="ng">
-                        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426271093" nodeInfo="nn">
-                          <property name="text" nameId="tpee.6329021646629104958" value="Start by checking if the card c has been removed in a previous iteration" />
-                        </node>
-                      </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Boolean" typeId="ffsp.2678928131162238767" id="4593539035426271094" nodeInfo="ng">
-                        <property name="name" nameId="tpck.1169194664001" value="stillInHand" />
-                        <node role="value" roleId="ffsp.2678928131162280636" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426271095" nodeInfo="ng" />
-                      </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426271096" nodeInfo="ng">
-                        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426271097" nodeInfo="nn">
-                          <property name="text" nameId="tpee.6329021646629104958" value="Check if the Card c has already been removed" />
-                        </node>
-                      </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ForEachStatement" typeId="ffsp.5565452210787037995" id="4593539035426271098" nodeInfo="ng">
-                        <property name="name" nameId="tpck.1169194664001" value="currentCard" />
-                        <node role="cardPile" roleId="ffsp.7878805613278804333" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271099" nodeInfo="ng">
-                          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426271100" nodeInfo="ng" />
-                          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426271101" nodeInfo="ng" />
-                        </node>
-                        <node role="body" roleId="ffsp.7878805613278808793" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426271102" nodeInfo="ng">
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="4593539035426271103" nodeInfo="ng">
-                            <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426271104" nodeInfo="ng">
-                              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426271105" nodeInfo="ng">
-                                <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426271106" nodeInfo="nn">
-                                  <property name="text" nameId="tpee.6329021646629104958" value="It has not been removed, so set removedPair to false" />
-                                </node>
-                              </node>
-                              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="4593539035426271107" nodeInfo="ng">
-                                <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426271108" nodeInfo="ng">
-                                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426271094" resolveInfo="stillInHand" />
-                                </node>
-                                <node role="value" roleId="ffsp.939205226782740263" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426271109" nodeInfo="ng">
-                                  <property name="value" nameId="ffsp.2003306783291602631" value="true" />
-                                </node>
-                              </node>
-                            </node>
-                            <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.AndStatement" typeId="ffsp.7881733640606387472" id="4593539035426271110" nodeInfo="ng">
-                              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426271111" nodeInfo="ng">
-                                <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271112" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426271113" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426271098" resolveInfo="currentCard" />
-                                  </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426271114" nodeInfo="ng" />
-                                </node>
-                                <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271115" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426271116" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426271073" resolveInfo="c" />
-                                  </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426271117" nodeInfo="ng" />
-                                </node>
-                              </node>
-                              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426271118" nodeInfo="ng">
-                                <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271119" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426271120" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426271098" resolveInfo="currentCard" />
-                                  </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426271121" nodeInfo="ng" />
-                                </node>
-                                <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271122" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426271123" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426271073" resolveInfo="c" />
-                                  </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426271124" nodeInfo="ng" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426271125" nodeInfo="ng">
-                        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426271126" nodeInfo="nn">
-                          <property name="text" nameId="tpee.6329021646629104958" value="The if block here only gets to run if stillInHand is true (meaning the pair has not been removed)" />
-                        </node>
-                      </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="4593539035426271127" nodeInfo="ng">
-                        <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426271128" nodeInfo="ng">
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426271129" nodeInfo="ng">
-                            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426271130" nodeInfo="nn">
-                              <property name="text" nameId="tpee.6329021646629104958" value="A Pair has been found!" />
-                            </node>
-                          </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4593539035426271131" nodeInfo="ng">
-                            <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271132" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426271133" nodeInfo="ng" />
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426271134" nodeInfo="ng" />
-                            </node>
-                            <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426271135" nodeInfo="ng">
-                              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507092015736" resolveInfo="discardPile" />
-                            </node>
-                            <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426271136" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426271073" resolveInfo="c" />
-                            </node>
-                          </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4593539035426271137" nodeInfo="ng">
-                            <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271138" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426271139" nodeInfo="ng" />
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426271140" nodeInfo="ng" />
-                            </node>
-                            <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426271141" nodeInfo="ng">
-                              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507092015736" resolveInfo="discardPile" />
-                            </node>
-                            <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426271142" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426271080" resolveInfo="d" />
-                            </node>
-                          </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="4593539035426271143" nodeInfo="ng">
-                            <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426273239" nodeInfo="ng">
-                              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426266152" resolveInfo="removedPair" />
-                            </node>
-                            <node role="value" roleId="ffsp.939205226782740263" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426271145" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.2003306783291602631" value="true" />
-                            </node>
-                          </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="4593539035426271146" nodeInfo="ng">
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426706659" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value="Player " />
-                            </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.CurrentPlayerNumber" typeId="ffsp.7644071217999812459" id="4593539035426706692" nodeInfo="ng" />
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426271148" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value=" removed pair (" />
-                            </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426271149" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426271073" resolveInfo="c" />
-                            </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426271150" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value=" : " />
-                            </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426271151" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426271080" resolveInfo="d" />
-                            </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426271152" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value=")" />
-                            </node>
-                          </node>
-                        </node>
-                        <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.AndStatement" typeId="ffsp.7881733640606387472" id="4593539035426271153" nodeInfo="ng">
-                          <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426271154" nodeInfo="ng">
-                            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271155" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426271156" nodeInfo="ng">
-                                <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426271073" resolveInfo="c" />
-                              </node>
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426271157" nodeInfo="ng" />
-                            </node>
-                            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271158" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426271159" nodeInfo="ng">
-                                <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426271080" resolveInfo="d" />
-                              </node>
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426271160" nodeInfo="ng" />
-                            </node>
-                          </node>
-                          <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.AndStatement" typeId="ffsp.7881733640606387472" id="4593539035426271161" nodeInfo="ng">
-                            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.NotEqualToStatement" typeId="ffsp.1291148986966014861" id="4593539035426271162" nodeInfo="ng">
-                              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271163" nodeInfo="ng">
-                                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426271164" nodeInfo="ng">
-                                  <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426271073" resolveInfo="c" />
-                                </node>
-                                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426271165" nodeInfo="ng" />
-                              </node>
-                              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426271166" nodeInfo="ng">
-                                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426271167" nodeInfo="ng">
-                                  <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426271080" resolveInfo="d" />
-                                </node>
-                                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426271168" nodeInfo="ng" />
-                              </node>
-                            </node>
-                            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426271169" nodeInfo="ng">
-                              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426271170" nodeInfo="ng">
-                                <property name="value" nameId="ffsp.2003306783291602631" value="true" />
-                              </node>
-                              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426271171" nodeInfo="ng">
-                                <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426271094" resolveInfo="stillInHand" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426271172" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426271173" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="All Pairs removed at this point for current player" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="4593539035426270722" nodeInfo="ng" />
-        </node>
-        <node role="elseBody" roleId="ffsp.8116400040793688461" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507095072844" nodeInfo="ng">
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426235345" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426235346" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="This is the case where there are cards in a player's hand and it is not the first turn" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426235347" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426235348" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="Determine which player is the one to take cards from" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Number" typeId="ffsp.7674520359934846973" id="1745689507095067389" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="playerToTakeFrom" />
-            <node role="expression" roleId="ffsp.7674520359935510780" type="ffsp.minusExpression" typeId="ffsp.2455425859176103333" id="1745689507095205342" nodeInfo="ng">
-              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.CurrentPlayerNumber" typeId="ffsp.7644071217999812459" id="1745689507095205107" nodeInfo="ng" />
-              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507095205582" nodeInfo="ng">
-                <property name="number" nameId="ffsp.2455425859176336673" value="1" />
-              </node>
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="1745689507095068012" nodeInfo="ng">
-            <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.LessThanStatement" typeId="ffsp.7881733640607028947" id="1745689507095068179" nodeInfo="ng">
-              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507095068120" nodeInfo="ng">
-                <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
-              </node>
-              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507095068337" nodeInfo="ng">
-                <property name="number" nameId="ffsp.2455425859176336673" value="1" />
-              </node>
-            </node>
-            <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507095068016" nodeInfo="ng">
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="1745689507095068499" nodeInfo="ng">
-                <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507095068511" nodeInfo="ng">
-                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
-                </node>
-                <node role="value" roleId="ffsp.939205226782740263" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507095068528" nodeInfo="ng">
-                  <property name="number" nameId="ffsp.2455425859176336673" value="4" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426235540" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426235541" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="We know which player we need to take from, but if that player has no cards, check the next one" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.WhileStatement" typeId="ffsp.5565452210787038123" id="1745689507096369523" nodeInfo="ng">
-            <node role="condition" roleId="ffsp.5565452210788213847" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="1745689507096372320" nodeInfo="ng">
-              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096370900" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096370704" nodeInfo="ng">
-                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507096370675" nodeInfo="ng">
-                    <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507096370692" nodeInfo="ng">
-                      <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
-                    </node>
-                  </node>
-                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507096370888" nodeInfo="ng" />
-                </node>
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="1745689507096371098" nodeInfo="ng" />
-              </node>
-              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096372526" nodeInfo="ng">
-                <property name="number" nameId="ffsp.2455425859176336673" value="0" />
-              </node>
-            </node>
-            <node role="body" roleId="ffsp.5565452210788213921" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507096369531" nodeInfo="ng">
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="1745689507096373844" nodeInfo="ng">
-                <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507096373867" nodeInfo="ng">
-                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
-                </node>
-                <node role="value" roleId="ffsp.939205226782740263" type="ffsp.minusExpression" typeId="ffsp.2455425859176103333" id="1745689507096374123" nodeInfo="ng">
-                  <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507096373884" nodeInfo="ng">
-                    <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
-                  </node>
-                  <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096374369" nodeInfo="ng">
-                    <property name="number" nameId="ffsp.2455425859176336673" value="1" />
-                  </node>
-                </node>
-              </node>
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="1745689507096373362" nodeInfo="ng">
-                <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.LessThanStatement" typeId="ffsp.7881733640607028947" id="1745689507096373363" nodeInfo="ng">
-                  <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507096373364" nodeInfo="ng">
-                    <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
-                  </node>
-                  <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096373365" nodeInfo="ng">
-                    <property name="number" nameId="ffsp.2455425859176336673" value="1" />
-                  </node>
-                </node>
-                <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507096373366" nodeInfo="ng">
-                  <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="1745689507096373367" nodeInfo="ng">
-                    <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507096373368" nodeInfo="ng">
-                      <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
-                    </node>
-                    <node role="value" roleId="ffsp.939205226782740263" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096373369" nodeInfo="ng">
-                      <property name="number" nameId="ffsp.2455425859176336673" value="4" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426235739" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426235740" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="At this point we know which player the computer player can take a card from" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.CardRefDeclaration" typeId="ffsp.1418645885567322850" id="1745689507095069991" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="cardToTake" />
-            <node role="card" roleId="ffsp.1418645885567543114" type="ffsp.RandomCard" typeId="ffsp.1745689507092017967" id="1745689507095070196" nodeInfo="ng">
-              <node role="pile" roleId="ffsp.1745689507092217450" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507095070223" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507095070202" nodeInfo="ng">
-                  <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507095070211" nodeInfo="ng">
-                    <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
-                  </node>
-                </node>
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507095070409" nodeInfo="ng" />
-              </node>
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="1745689507095065481" nodeInfo="ng">
-            <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507095070504" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507095070471" nodeInfo="ng">
-                <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507095070488" nodeInfo="ng">
-                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
-                </node>
-              </node>
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507095070704" nodeInfo="ng" />
-            </node>
-            <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507095070749" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="1745689507095070720" nodeInfo="ng" />
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507095070783" nodeInfo="ng" />
-            </node>
-            <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.CardReference" typeId="ffsp.1418645885567267462" id="1745689507095070456" nodeInfo="ng">
-              <link role="card" roleId="ffsp.1418645885567322796" targetNodeId="1745689507095069991" resolveInfo="cardToTake" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="4593539035426972518" nodeInfo="ng">
-            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426972519" nodeInfo="ng">
-              <property name="value" nameId="ffsp.8642299736868227465" value="Player " />
-            </node>
-            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.CurrentPlayerNumber" typeId="ffsp.7644071217999812459" id="4593539035426972520" nodeInfo="ng" />
-            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426972521" nodeInfo="ng">
-              <property name="value" nameId="ffsp.8642299736868227465" value=" takes " />
-            </node>
-            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.CardReference" typeId="ffsp.1418645885567267462" id="4593539035426972818" nodeInfo="ng">
-              <link role="card" roleId="ffsp.1418645885567322796" targetNodeId="1745689507095069991" resolveInfo="cardToTake" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="4593539035426972268" nodeInfo="ng" />
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426272301" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426272302" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="Find Pairs to remove" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ForEachStatement" typeId="ffsp.5565452210787037995" id="4593539035426272303" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="c" />
-            <node role="cardPile" roleId="ffsp.7878805613278804333" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272304" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426272305" nodeInfo="ng" />
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426272306" nodeInfo="ng" />
-            </node>
-            <node role="body" roleId="ffsp.7878805613278808793" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426272307" nodeInfo="ng">
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Boolean" typeId="ffsp.2678928131162238767" id="4593539035426272308" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="removedPair" />
-                <node role="value" roleId="ffsp.2678928131162280636" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426272309" nodeInfo="ng" />
-              </node>
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ForEachStatement" typeId="ffsp.5565452210787037995" id="4593539035426272310" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="d" />
-                <node role="cardPile" roleId="ffsp.7878805613278804333" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272311" nodeInfo="ng">
-                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426272312" nodeInfo="ng" />
-                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426272313" nodeInfo="ng" />
-                </node>
-                <node role="body" roleId="ffsp.7878805613278808793" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426272314" nodeInfo="ng">
-                  <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426272315" nodeInfo="ng">
-                    <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426272316" nodeInfo="nn">
-                      <property name="text" nameId="tpee.6329021646629104958" value="Only check for pair if it has not already been removed in previous iteration" />
-                    </node>
-                  </node>
-                  <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="4593539035426272317" nodeInfo="ng">
-                    <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426272318" nodeInfo="ng">
-                      <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426273001" nodeInfo="ng">
-                        <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426266152" resolveInfo="removedPair" />
-                      </node>
-                      <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426272320" nodeInfo="ng">
-                        <property name="value" nameId="ffsp.2003306783291602631" value="false" />
-                      </node>
-                    </node>
-                    <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426272321" nodeInfo="ng">
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426272322" nodeInfo="ng">
-                        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426272323" nodeInfo="nn">
-                          <property name="text" nameId="tpee.6329021646629104958" value="Start by checking if the card c has been removed in a previous iteration" />
-                        </node>
-                      </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Boolean" typeId="ffsp.2678928131162238767" id="4593539035426272324" nodeInfo="ng">
-                        <property name="name" nameId="tpck.1169194664001" value="stillInHand" />
-                        <node role="value" roleId="ffsp.2678928131162280636" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426272325" nodeInfo="ng" />
-                      </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426272326" nodeInfo="ng">
-                        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426272327" nodeInfo="nn">
-                          <property name="text" nameId="tpee.6329021646629104958" value="Check if the Card c has already been removed" />
-                        </node>
-                      </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ForEachStatement" typeId="ffsp.5565452210787037995" id="4593539035426272328" nodeInfo="ng">
-                        <property name="name" nameId="tpck.1169194664001" value="currentCard" />
-                        <node role="cardPile" roleId="ffsp.7878805613278804333" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272329" nodeInfo="ng">
-                          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426272330" nodeInfo="ng" />
-                          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426272331" nodeInfo="ng" />
-                        </node>
-                        <node role="body" roleId="ffsp.7878805613278808793" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426272332" nodeInfo="ng">
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="4593539035426272333" nodeInfo="ng">
-                            <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426272334" nodeInfo="ng">
-                              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426272335" nodeInfo="ng">
-                                <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426272336" nodeInfo="nn">
-                                  <property name="text" nameId="tpee.6329021646629104958" value="It has not been removed, so set removedPair to false" />
-                                </node>
-                              </node>
-                              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="4593539035426272337" nodeInfo="ng">
-                                <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426272338" nodeInfo="ng">
-                                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426272324" resolveInfo="stillInHand" />
-                                </node>
-                                <node role="value" roleId="ffsp.939205226782740263" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426272339" nodeInfo="ng">
-                                  <property name="value" nameId="ffsp.2003306783291602631" value="true" />
-                                </node>
-                              </node>
-                            </node>
-                            <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.AndStatement" typeId="ffsp.7881733640606387472" id="4593539035426272340" nodeInfo="ng">
-                              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426272341" nodeInfo="ng">
-                                <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272342" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426272343" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426272328" resolveInfo="currentCard" />
-                                  </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426272344" nodeInfo="ng" />
-                                </node>
-                                <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272345" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426272346" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426272303" resolveInfo="c" />
-                                  </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426272347" nodeInfo="ng" />
-                                </node>
-                              </node>
-                              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426272348" nodeInfo="ng">
-                                <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272349" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426272350" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426272328" resolveInfo="currentCard" />
-                                  </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426272351" nodeInfo="ng" />
-                                </node>
-                                <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272352" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426272353" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426272303" resolveInfo="c" />
-                                  </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426272354" nodeInfo="ng" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426272355" nodeInfo="ng">
-                        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426272356" nodeInfo="nn">
-                          <property name="text" nameId="tpee.6329021646629104958" value="The if block here only gets to run if stillInHand is true (meaning the pair has not been removed)" />
-                        </node>
-                      </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="4593539035426272357" nodeInfo="ng">
-                        <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426272358" nodeInfo="ng">
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426272359" nodeInfo="ng">
-                            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426272360" nodeInfo="nn">
-                              <property name="text" nameId="tpee.6329021646629104958" value="A Pair has been found!" />
-                            </node>
-                          </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4593539035426272361" nodeInfo="ng">
-                            <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272362" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426272363" nodeInfo="ng" />
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426272364" nodeInfo="ng" />
-                            </node>
-                            <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426272365" nodeInfo="ng">
-                              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507092015736" resolveInfo="discardPile" />
-                            </node>
-                            <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426272366" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426272303" resolveInfo="c" />
-                            </node>
-                          </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4593539035426272367" nodeInfo="ng">
-                            <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272368" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426272369" nodeInfo="ng" />
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426272370" nodeInfo="ng" />
-                            </node>
-                            <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426272371" nodeInfo="ng">
-                              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507092015736" resolveInfo="discardPile" />
-                            </node>
-                            <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426272372" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426272310" resolveInfo="d" />
-                            </node>
-                          </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="4593539035426272373" nodeInfo="ng">
-                            <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426273024" nodeInfo="ng">
-                              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426266152" resolveInfo="removedPair" />
-                            </node>
-                            <node role="value" roleId="ffsp.939205226782740263" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426272375" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.2003306783291602631" value="true" />
-                            </node>
-                          </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="4593539035426272376" nodeInfo="ng">
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426706615" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value="Player " />
-                            </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.CurrentPlayerNumber" typeId="ffsp.7644071217999812459" id="4593539035426706642" nodeInfo="ng" />
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426272378" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value=" removed pair (" />
-                            </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426272379" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426272303" resolveInfo="c" />
-                            </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426272380" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value=" : " />
-                            </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426272381" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426272310" resolveInfo="d" />
-                            </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426272382" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value=")" />
-                            </node>
-                          </node>
-                        </node>
-                        <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.AndStatement" typeId="ffsp.7881733640606387472" id="4593539035426272383" nodeInfo="ng">
-                          <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426272384" nodeInfo="ng">
-                            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272385" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426272386" nodeInfo="ng">
-                                <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426272303" resolveInfo="c" />
-                              </node>
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426272387" nodeInfo="ng" />
-                            </node>
-                            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272388" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426272389" nodeInfo="ng">
-                                <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426272310" resolveInfo="d" />
-                              </node>
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426272390" nodeInfo="ng" />
-                            </node>
-                          </node>
-                          <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.AndStatement" typeId="ffsp.7881733640606387472" id="4593539035426272391" nodeInfo="ng">
-                            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.NotEqualToStatement" typeId="ffsp.1291148986966014861" id="4593539035426272392" nodeInfo="ng">
-                              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272393" nodeInfo="ng">
-                                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426272394" nodeInfo="ng">
-                                  <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426272303" resolveInfo="c" />
-                                </node>
-                                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426272395" nodeInfo="ng" />
-                              </node>
-                              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426272396" nodeInfo="ng">
-                                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426272397" nodeInfo="ng">
-                                  <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426272310" resolveInfo="d" />
-                                </node>
-                                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426272398" nodeInfo="ng" />
-                              </node>
-                            </node>
-                            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426272399" nodeInfo="ng">
-                              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426272400" nodeInfo="ng">
-                                <property name="value" nameId="ffsp.2003306783291602631" value="true" />
-                              </node>
-                              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426272401" nodeInfo="ng">
-                                <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426272324" resolveInfo="stillInHand" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426272402" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426272403" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="All Pairs removed at this point for current player" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="4593539035426237979" nodeInfo="ng" />
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ShuffleDeck" typeId="ffsp.7674520359936346144" id="1745689507096364671" nodeInfo="ng">
-            <node role="deck" roleId="ffsp.7674520359936346172" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096364845" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="1745689507096364840" nodeInfo="ng" />
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507096364857" nodeInfo="ng" />
-            </node>
-          </node>
+      <node concept="19UzxA" id="1wTVPIeuO9p" role="1NAaLj">
+        <property role="TrG5h" value="turnCounter" />
+        <node concept="u$e7c" id="1wTVPIeuOgf" role="19XdtB">
+          <property role="u$e7I" value="0" />
         </node>
       </node>
     </node>
-    <node role="playerTurnBlock" roleId="ffsp.1790098884239327234" type="ffsp.PlayerTurnBlock" typeId="ffsp.1790098884239250114" id="1745689507091309884" nodeInfo="ng">
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426218063" nodeInfo="ng">
-        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426218065" nodeInfo="nn">
-          <property name="text" nameId="tpee.6329021646629104958" value="A new turn begins, so increment the player turn" />
+    <node concept="22SWP9" id="1wTVPIejukV" role="22SWJ5">
+      <node concept="1hRy$k" id="3YZxQD4ua6T" role="1NAaLj">
+        <node concept="3SKdUq" id="3YZxQD4ua6U" role="1hRyKC">
+          <property role="3SKdUp" value="A new turn begins, so increment the player turn" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="1745689507095063673" nodeInfo="ng">
-        <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507095063674" nodeInfo="ng">
-          <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507094282841" resolveInfo="turnCounter" />
+      <node concept="1OAU8p" id="1wTVPIeuOkt" role="1NAaLj">
+        <node concept="1onEp9" id="1wTVPIeuOlp" role="1OAZk8">
+          <ref role="1onEp8" node="1wTVPIeuO9p" resolve="turnCounter" />
         </node>
-        <node role="value" roleId="ffsp.939205226782740263" type="ffsp.addExpression" typeId="ffsp.2455425859176095200" id="1745689507095063675" nodeInfo="ng">
-          <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507095063676" nodeInfo="ng">
-            <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507094282841" resolveInfo="turnCounter" />
+        <node concept="urb4J" id="1wTVPIeuOmR" role="1OAZka">
+          <node concept="1onEp9" id="1wTVPIeuOlE" role="ur480">
+            <ref role="1onEp8" node="1wTVPIeuO9p" resolve="turnCounter" />
           </node>
-          <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507095063677" nodeInfo="ng">
-            <property name="number" nameId="ffsp.2455425859176336673" value="1" />
+          <node concept="u$e7c" id="1wTVPIeuOob" role="ur48t">
+            <property role="u$e7I" value="1" />
           </node>
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="1745689507095063678" nodeInfo="ng">
-        <node role="elseIf" roleId="ffsp.5565452210788292793" type="ffsp.ElseIfStatement" typeId="ffsp.5565452210787037996" id="1745689507096390060" nodeInfo="ng">
-          <node role="condition" roleId="ffsp.5565452210788214067" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="1745689507096390380" nodeInfo="ng">
-            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096390336" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096390312" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="1745689507096390306" nodeInfo="ng" />
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507096390328" nodeInfo="ng" />
+      <node concept="VoZdq" id="1wTVPIeuOgz" role="1NAaLj">
+        <node concept="VoWpw" id="1wTVPIeARlo" role="VjERP">
+          <node concept="3bXCv_" id="1wTVPIeARq$" role="Vjt1Z">
+            <node concept="UHIEl" id="1wTVPIeARpS" role="ur480">
+              <node concept="UHIEl" id="1wTVPIeARpw" role="UGtiu">
+                <node concept="12o7Xu" id="1wTVPIeARpq" role="UGtiu" />
+                <node concept="iEArX" id="1wTVPIeARpK" role="UGzgA" />
               </node>
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="1745689507096390366" nodeInfo="ng" />
+              <node concept="3A$QB2" id="1wTVPIeARqm" role="UGzgA" />
             </node>
-            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096390422" nodeInfo="ng">
-              <property name="number" nameId="ffsp.2455425859176336673" value="0" />
+            <node concept="u$e7c" id="1wTVPIeARre" role="ur48t">
+              <property role="u$e7I" value="0" />
             </node>
           </node>
-          <node role="body" roleId="ffsp.5565452210788214069" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507096390062" nodeInfo="ng">
-            <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="1745689507096390448" nodeInfo="ng">
-              <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="1745689507096390449" nodeInfo="nn">
-                <property name="text" nameId="tpee.6329021646629104958" value="Do Nothing because the player has already removed all cards from his/her hand" />
+          <node concept="oGwWe" id="1wTVPIeARlq" role="Vjt1T">
+            <node concept="1hRy$k" id="3YZxQD4uae3" role="oGwW1">
+              <node concept="3SKdUq" id="3YZxQD4uae4" role="1hRyKC">
+                <property role="3SKdUp" value="Do Nothing because the player has already removed all cards from his/her hand" />
               </node>
             </node>
           </node>
         </node>
-        <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.LessThanStatement" typeId="ffsp.7881733640607028947" id="1745689507095063679" nodeInfo="ng">
-          <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507095063680" nodeInfo="ng">
-            <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507094282841" resolveInfo="turnCounter" />
+        <node concept="3bKlKJ" id="1wTVPIeuOhe" role="Vjt6$">
+          <node concept="1onEp9" id="1wTVPIeuOgJ" role="ur480">
+            <ref role="1onEp8" node="1wTVPIeuO9p" resolve="turnCounter" />
           </node>
-          <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507095063681" nodeInfo="ng">
-            <property name="number" nameId="ffsp.2455425859176336673" value="5" />
+          <node concept="u$e7c" id="1wTVPIeuOhO" role="ur48t">
+            <property role="u$e7I" value="5" />
           </node>
         </node>
-        <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507095063682" nodeInfo="ng">
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426218319" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426218321" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="Since this is the player's first turn, remove all pairs and go to next turn" />
+        <node concept="oGwWe" id="1wTVPIeuOg_" role="Vjt6A">
+          <node concept="1hRy$k" id="3YZxQD4uadK" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4uadL" role="1hRyKC">
+              <property role="3SKdUp" value="Since this is the player's first turn, remove all pairs and go to next turn" />
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426241328" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426241329" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="Find Pairs to remove" />
+          <node concept="1hRy$k" id="3YZxQD4uiXv" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4uiXw" role="1hRyKC">
+              <property role="3SKdUp" value="Find Pairs to remove" />
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ForEachStatement" typeId="ffsp.5565452210787037995" id="4593539035426241330" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="c" />
-            <node role="cardPile" roleId="ffsp.7878805613278804333" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241331" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426241332" nodeInfo="ng" />
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426241333" nodeInfo="ng" />
+          <node concept="VoWpB" id="3YZxQD4uiXx" role="oGwW1">
+            <property role="TrG5h" value="c" />
+            <node concept="UHIEl" id="3YZxQD4uiXy" role="14whEr">
+              <node concept="12o7Xu" id="3YZxQD4uiXz" role="UGtiu" />
+              <node concept="iEArX" id="3YZxQD4uiX$" role="UGzgA" />
             </node>
-            <node role="body" roleId="ffsp.7878805613278808793" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426241334" nodeInfo="ng">
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Boolean" typeId="ffsp.2678928131162238767" id="4593539035426266152" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="removedPair" />
-                <node role="value" roleId="ffsp.2678928131162280636" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426266243" nodeInfo="ng" />
+            <node concept="oGwWe" id="3YZxQD4uiX_" role="14wm$J">
+              <node concept="L_9Bu" id="3YZxQD4uiXA" role="oGwW1">
+                <property role="TrG5h" value="removedPair" />
+                <node concept="3hXeDh" id="3YZxQD4uiXB" role="L_Yhd" />
               </node>
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ForEachStatement" typeId="ffsp.5565452210787037995" id="4593539035426241335" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="d" />
-                <node role="cardPile" roleId="ffsp.7878805613278804333" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241336" nodeInfo="ng">
-                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426241337" nodeInfo="ng" />
-                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426241338" nodeInfo="ng" />
+              <node concept="VoWpB" id="3YZxQD4uiXC" role="oGwW1">
+                <property role="TrG5h" value="d" />
+                <node concept="UHIEl" id="3YZxQD4uiXD" role="14whEr">
+                  <node concept="12o7Xu" id="3YZxQD4uiXE" role="UGtiu" />
+                  <node concept="iEArX" id="3YZxQD4uiXF" role="UGzgA" />
                 </node>
-                <node role="body" roleId="ffsp.7878805613278808793" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426241339" nodeInfo="ng">
-                  <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426268949" nodeInfo="ng">
-                    <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426268951" nodeInfo="nn">
-                      <property name="text" nameId="tpee.6329021646629104958" value="Only check for pair if it has not already been removed in previous iteration" />
+                <node concept="oGwWe" id="3YZxQD4uiXG" role="14wm$J">
+                  <node concept="1hRy$k" id="3YZxQD4uiXH" role="oGwW1">
+                    <node concept="3SKdUq" id="3YZxQD4uiXI" role="1hRyKC">
+                      <property role="3SKdUp" value="Only check for pair if it has not already been removed in previous iteration" />
                     </node>
                   </node>
-                  <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="4593539035426267285" nodeInfo="ng">
-                    <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426267403" nodeInfo="ng">
-                      <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426273447" nodeInfo="ng">
-                        <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426266152" resolveInfo="removedPair" />
+                  <node concept="VoZdq" id="3YZxQD4uiXJ" role="oGwW1">
+                    <node concept="3bXCv_" id="3YZxQD4uiXK" role="Vjt6$">
+                      <node concept="1onEp9" id="3YZxQD4ujvQ" role="ur480">
+                        <ref role="1onEp8" node="3YZxQD4uhKC" resolve="removedPair" />
                       </node>
-                      <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426267533" nodeInfo="ng">
-                        <property name="value" nameId="ffsp.2003306783291602631" value="false" />
+                      <node concept="3hXeDh" id="3YZxQD4uiXM" role="ur48t">
+                        <property role="3hXdCw" value="false" />
                       </node>
                     </node>
-                    <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426267289" nodeInfo="ng">
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426241340" nodeInfo="ng">
-                        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426241341" nodeInfo="nn">
-                          <property name="text" nameId="tpee.6329021646629104958" value="Start by checking if the card c has been removed in a previous iteration" />
+                    <node concept="oGwWe" id="3YZxQD4uiXN" role="Vjt6A">
+                      <node concept="1hRy$k" id="3YZxQD4uiXO" role="oGwW1">
+                        <node concept="3SKdUq" id="3YZxQD4uiXP" role="1hRyKC">
+                          <property role="3SKdUp" value="Start by checking if the card c has been removed in a previous iteration" />
                         </node>
                       </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Boolean" typeId="ffsp.2678928131162238767" id="4593539035426263475" nodeInfo="ng">
-                        <property name="name" nameId="tpck.1169194664001" value="stillInHand" />
-                        <node role="value" roleId="ffsp.2678928131162280636" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426263561" nodeInfo="ng" />
+                      <node concept="L_9Bu" id="3YZxQD4uiXQ" role="oGwW1">
+                        <property role="TrG5h" value="stillInHand" />
+                        <node concept="3hXeDh" id="3YZxQD4uiXR" role="L_Yhd" />
                       </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426241344" nodeInfo="ng">
-                        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426241345" nodeInfo="nn">
-                          <property name="text" nameId="tpee.6329021646629104958" value="Check if the Card c has already been removed" />
+                      <node concept="1hRy$k" id="3YZxQD4uiXS" role="oGwW1">
+                        <node concept="3SKdUq" id="3YZxQD4uiXT" role="1hRyKC">
+                          <property role="3SKdUp" value="Check if the Card c has already been removed" />
                         </node>
                       </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ForEachStatement" typeId="ffsp.5565452210787037995" id="4593539035426241346" nodeInfo="ng">
-                        <property name="name" nameId="tpck.1169194664001" value="currentCard" />
-                        <node role="cardPile" roleId="ffsp.7878805613278804333" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241347" nodeInfo="ng">
-                          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426241348" nodeInfo="ng" />
-                          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426241349" nodeInfo="ng" />
+                      <node concept="VoWpB" id="3YZxQD4uiXU" role="oGwW1">
+                        <property role="TrG5h" value="currentCard" />
+                        <node concept="UHIEl" id="3YZxQD4uiXV" role="14whEr">
+                          <node concept="12o7Xu" id="3YZxQD4uiXW" role="UGtiu" />
+                          <node concept="iEArX" id="3YZxQD4uiXX" role="UGzgA" />
                         </node>
-                        <node role="body" roleId="ffsp.7878805613278808793" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426241350" nodeInfo="ng">
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="4593539035426241351" nodeInfo="ng">
-                            <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426241352" nodeInfo="ng">
-                              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426241353" nodeInfo="ng">
-                                <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426241354" nodeInfo="nn">
-                                  <property name="text" nameId="tpee.6329021646629104958" value="It has not been removed, so set removedPair to false" />
+                        <node concept="oGwWe" id="3YZxQD4uiXY" role="14wm$J">
+                          <node concept="VoZdq" id="3YZxQD4uiXZ" role="oGwW1">
+                            <node concept="oGwWe" id="3YZxQD4uiY0" role="Vjt6A">
+                              <node concept="1hRy$k" id="3YZxQD4uiY1" role="oGwW1">
+                                <node concept="3SKdUq" id="3YZxQD4uiY2" role="1hRyKC">
+                                  <property role="3SKdUp" value="It has not been removed, so set removedPair to false" />
                                 </node>
                               </node>
-                              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="4593539035426241355" nodeInfo="ng">
-                                <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426264089" nodeInfo="ng">
-                                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426263475" resolveInfo="stillInHand" />
+                              <node concept="1OAU8p" id="3YZxQD4uiY3" role="oGwW1">
+                                <node concept="1onEp9" id="3YZxQD4uiY4" role="1OAZk8">
+                                  <ref role="1onEp8" node="3YZxQD4uiXQ" resolve="stillInHand" />
                                 </node>
-                                <node role="value" roleId="ffsp.939205226782740263" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426241357" nodeInfo="ng">
-                                  <property name="value" nameId="ffsp.2003306783291602631" value="true" />
+                                <node concept="3hXeDh" id="3YZxQD4uiY5" role="1OAZka">
+                                  <property role="3hXdCw" value="true" />
                                 </node>
                               </node>
                             </node>
-                            <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.AndStatement" typeId="ffsp.7881733640606387472" id="4593539035426241358" nodeInfo="ng">
-                              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426241359" nodeInfo="ng">
-                                <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241360" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426241361" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426241346" resolveInfo="currentCard" />
+                            <node concept="3bXCvG" id="3YZxQD4uiY6" role="Vjt6$">
+                              <node concept="3bXCv_" id="3YZxQD4uiY7" role="ur480">
+                                <node concept="UHIEl" id="3YZxQD4uiY8" role="ur480">
+                                  <node concept="14wbAk" id="3YZxQD4uiY9" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4uiXU" resolve="currentCard" />
                                   </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426241362" nodeInfo="ng" />
+                                  <node concept="2xyaO8" id="3YZxQD4uiYa" role="UGzgA" />
                                 </node>
-                                <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241363" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426241364" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426241330" resolveInfo="c" />
+                                <node concept="UHIEl" id="3YZxQD4uiYb" role="ur48t">
+                                  <node concept="14wbAk" id="3YZxQD4uiYc" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4uiXx" resolve="c" />
                                   </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426241365" nodeInfo="ng" />
+                                  <node concept="2xyaO8" id="3YZxQD4uiYd" role="UGzgA" />
                                 </node>
                               </node>
-                              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426241366" nodeInfo="ng">
-                                <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241367" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426241368" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426241346" resolveInfo="currentCard" />
+                              <node concept="3bXCv_" id="3YZxQD4uiYe" role="ur48t">
+                                <node concept="UHIEl" id="3YZxQD4uiYf" role="ur480">
+                                  <node concept="14wbAk" id="3YZxQD4uiYg" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4uiXU" resolve="currentCard" />
                                   </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426241369" nodeInfo="ng" />
+                                  <node concept="2xyLjJ" id="3YZxQD4uiYh" role="UGzgA" />
                                 </node>
-                                <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241370" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426241371" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426241330" resolveInfo="c" />
+                                <node concept="UHIEl" id="3YZxQD4uiYi" role="ur48t">
+                                  <node concept="14wbAk" id="3YZxQD4uiYj" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4uiXx" resolve="c" />
                                   </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426241372" nodeInfo="ng" />
+                                  <node concept="2xyLjJ" id="3YZxQD4uiYk" role="UGzgA" />
                                 </node>
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426241373" nodeInfo="ng">
-                        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426241374" nodeInfo="nn">
-                          <property name="text" nameId="tpee.6329021646629104958" value="The if block here only gets to run if stillInHand is true (meaning the pair has not been removed)" />
+                      <node concept="1hRy$k" id="3YZxQD4uiYl" role="oGwW1">
+                        <node concept="3SKdUq" id="3YZxQD4uiYm" role="1hRyKC">
+                          <property role="3SKdUp" value="The if block here only gets to run if stillInHand is true (meaning the pair has not been removed)" />
                         </node>
                       </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="4593539035426241375" nodeInfo="ng">
-                        <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426241376" nodeInfo="ng">
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426241377" nodeInfo="ng">
-                            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426241378" nodeInfo="nn">
-                              <property name="text" nameId="tpee.6329021646629104958" value="A Pair has been found!" />
+                      <node concept="VoZdq" id="3YZxQD4uiYn" role="oGwW1">
+                        <node concept="oGwWe" id="3YZxQD4uiYo" role="Vjt6A">
+                          <node concept="1hRy$k" id="3YZxQD4uiYp" role="oGwW1">
+                            <node concept="3SKdUq" id="3YZxQD4uiYq" role="1hRyKC">
+                              <property role="3SKdUp" value="A Pair has been found!" />
                             </node>
                           </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4593539035426241379" nodeInfo="ng">
-                            <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241380" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426241381" nodeInfo="ng" />
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426241382" nodeInfo="ng" />
+                          <node concept="1PKMQo" id="3YZxQD4uiYr" role="oGwW1">
+                            <node concept="UHIEl" id="3YZxQD4uiYs" role="1PKM$j">
+                              <node concept="12o7Xu" id="3YZxQD4uiYt" role="UGtiu" />
+                              <node concept="iEArX" id="3YZxQD4uiYu" role="UGzgA" />
                             </node>
-                            <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426241383" nodeInfo="ng">
-                              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507092015736" resolveInfo="discardPile" />
+                            <node concept="1onEp9" id="3YZxQD4uiYv" role="1PKM$t">
+                              <ref role="1onEp8" node="1wTVPIemaDS" resolve="discardPile" />
                             </node>
-                            <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426241384" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426241330" resolveInfo="c" />
-                            </node>
-                          </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4593539035426241385" nodeInfo="ng">
-                            <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241386" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426241387" nodeInfo="ng" />
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426241388" nodeInfo="ng" />
-                            </node>
-                            <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426241389" nodeInfo="ng">
-                              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507092015736" resolveInfo="discardPile" />
-                            </node>
-                            <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426241390" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426241335" resolveInfo="d" />
+                            <node concept="14wbAk" id="3YZxQD4uiYw" role="31qsLp">
+                              <ref role="14wb_7" node="3YZxQD4uiXx" resolve="c" />
                             </node>
                           </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="4593539035426266283" nodeInfo="ng">
-                            <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426273554" nodeInfo="ng">
-                              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426266152" resolveInfo="removedPair" />
+                          <node concept="1PKMQo" id="3YZxQD4uiYx" role="oGwW1">
+                            <node concept="UHIEl" id="3YZxQD4uiYy" role="1PKM$j">
+                              <node concept="12o7Xu" id="3YZxQD4uiYz" role="UGtiu" />
+                              <node concept="iEArX" id="3YZxQD4uiY$" role="UGzgA" />
                             </node>
-                            <node role="value" roleId="ffsp.939205226782740263" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426266339" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.2003306783291602631" value="true" />
+                            <node concept="1onEp9" id="3YZxQD4uiY_" role="1PKM$t">
+                              <ref role="1onEp8" node="1wTVPIemaDS" resolve="discardPile" />
+                            </node>
+                            <node concept="14wbAk" id="3YZxQD4uiYA" role="31qsLp">
+                              <ref role="14wb_7" node="3YZxQD4uiXC" resolve="d" />
                             </node>
                           </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="4593539035426241394" nodeInfo="ng">
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426706509" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value="Player" />
+                          <node concept="1OAU8p" id="3YZxQD4uiYB" role="oGwW1">
+                            <node concept="1onEp9" id="3YZxQD4ujvn" role="1OAZk8">
+                              <ref role="1onEp8" node="3YZxQD4uhKC" resolve="removedPair" />
                             </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.CurrentPlayerNumber" typeId="ffsp.7644071217999812459" id="4593539035426706555" nodeInfo="ng" />
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426241396" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value=" removed pair (" />
+                            <node concept="3hXeDh" id="3YZxQD4uiYD" role="1OAZka">
+                              <property role="3hXdCw" value="true" />
                             </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426241397" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426241330" resolveInfo="c" />
+                          </node>
+                          <node concept="3g$vrO" id="3YZxQD4uiYE" role="oGwW1">
+                            <node concept="l_Hnr" id="3YZxQD4vXjz" role="3g$a9b">
+                              <property role="l_1hr" value="Player " />
                             </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426241398" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value=" : " />
+                            <node concept="2SJUkI" id="3YZxQD4vXk4" role="3g$a9b" />
+                            <node concept="l_Hnr" id="3YZxQD4uiYG" role="3g$a9b">
+                              <property role="l_1hr" value=" removed pair (" />
                             </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426241399" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426241335" resolveInfo="d" />
+                            <node concept="14wbAk" id="3YZxQD4uiYH" role="3g$a9b">
+                              <ref role="14wb_7" node="3YZxQD4uiXx" resolve="c" />
                             </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426241400" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value=")" />
+                            <node concept="l_Hnr" id="3YZxQD4uiYI" role="3g$a9b">
+                              <property role="l_1hr" value=" : " />
+                            </node>
+                            <node concept="14wbAk" id="3YZxQD4uiYJ" role="3g$a9b">
+                              <ref role="14wb_7" node="3YZxQD4uiXC" resolve="d" />
+                            </node>
+                            <node concept="l_Hnr" id="3YZxQD4uiYK" role="3g$a9b">
+                              <property role="l_1hr" value=")" />
                             </node>
                           </node>
                         </node>
-                        <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.AndStatement" typeId="ffsp.7881733640606387472" id="4593539035426241402" nodeInfo="ng">
-                          <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426241403" nodeInfo="ng">
-                            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241404" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426241405" nodeInfo="ng">
-                                <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426241330" resolveInfo="c" />
+                        <node concept="3bXCvG" id="3YZxQD4uiYL" role="Vjt6$">
+                          <node concept="3bXCv_" id="3YZxQD4uiYM" role="ur480">
+                            <node concept="UHIEl" id="3YZxQD4uiYN" role="ur480">
+                              <node concept="14wbAk" id="3YZxQD4uiYO" role="UGtiu">
+                                <ref role="14wb_7" node="3YZxQD4uiXx" resolve="c" />
                               </node>
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426241406" nodeInfo="ng" />
+                              <node concept="2xyaO8" id="3YZxQD4uiYP" role="UGzgA" />
                             </node>
-                            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241407" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426241408" nodeInfo="ng">
-                                <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426241335" resolveInfo="d" />
+                            <node concept="UHIEl" id="3YZxQD4uiYQ" role="ur48t">
+                              <node concept="14wbAk" id="3YZxQD4uiYR" role="UGtiu">
+                                <ref role="14wb_7" node="3YZxQD4uiXC" resolve="d" />
                               </node>
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426241409" nodeInfo="ng" />
+                              <node concept="2xyaO8" id="3YZxQD4uiYS" role="UGzgA" />
                             </node>
                           </node>
-                          <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.AndStatement" typeId="ffsp.7881733640606387472" id="4593539035426241410" nodeInfo="ng">
-                            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.NotEqualToStatement" typeId="ffsp.1291148986966014861" id="4593539035426241411" nodeInfo="ng">
-                              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241412" nodeInfo="ng">
-                                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426241413" nodeInfo="ng">
-                                  <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426241330" resolveInfo="c" />
+                          <node concept="3bXCvG" id="3YZxQD4uiYT" role="ur48t">
+                            <node concept="2xRuU$" id="3YZxQD4uiYU" role="ur480">
+                              <node concept="UHIEl" id="3YZxQD4uiYV" role="ur480">
+                                <node concept="14wbAk" id="3YZxQD4uiYW" role="UGtiu">
+                                  <ref role="14wb_7" node="3YZxQD4uiXx" resolve="c" />
                                 </node>
-                                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426241414" nodeInfo="ng" />
+                                <node concept="2xyLjJ" id="3YZxQD4uiYX" role="UGzgA" />
                               </node>
-                              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426241415" nodeInfo="ng">
-                                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426241416" nodeInfo="ng">
-                                  <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426241335" resolveInfo="d" />
+                              <node concept="UHIEl" id="3YZxQD4uiYY" role="ur48t">
+                                <node concept="14wbAk" id="3YZxQD4uiYZ" role="UGtiu">
+                                  <ref role="14wb_7" node="3YZxQD4uiXC" resolve="d" />
                                 </node>
-                                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426241417" nodeInfo="ng" />
+                                <node concept="2xyLjJ" id="3YZxQD4uiZ0" role="UGzgA" />
                               </node>
                             </node>
-                            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426241418" nodeInfo="ng">
-                              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426241420" nodeInfo="ng">
-                                <property name="value" nameId="ffsp.2003306783291602631" value="true" />
+                            <node concept="3bXCv_" id="3YZxQD4uiZ1" role="ur48t">
+                              <node concept="3hXeDh" id="3YZxQD4uiZ2" role="ur48t">
+                                <property role="3hXdCw" value="true" />
                               </node>
-                              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426264364" nodeInfo="ng">
-                                <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426263475" resolveInfo="stillInHand" />
+                              <node concept="1onEp9" id="3YZxQD4uiZ3" role="ur480">
+                                <ref role="1onEp8" node="3YZxQD4uiXQ" resolve="stillInHand" />
                               </node>
                             </node>
                           </node>
@@ -1300,371 +794,369 @@
               </node>
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426241421" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426241422" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="All Pairs removed at this point for current player" />
+          <node concept="1hRy$k" id="3YZxQD4uiZ4" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4uiZ5" role="1hRyKC">
+              <property role="3SKdUp" value="All Pairs removed at this point for current player" />
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="4593539035426241039" nodeInfo="ng" />
+          <node concept="1YWEB$" id="3YZxQD4uiS2" role="oGwW1" />
         </node>
-        <node role="elseBody" roleId="ffsp.8116400040793688461" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507095073440" nodeInfo="ng">
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426218391" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426218393" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="This is the case where there are cards in a player's hand and it is not the first turn" />
+        <node concept="oGwWe" id="1wTVPIexP1c" role="3mQBto">
+          <node concept="1hRy$k" id="3YZxQD4uafh" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4uafi" role="1hRyKC">
+              <property role="3SKdUp" value="This is the case where there are cards in a player's hand and it is not the first turn" />
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426218513" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426218515" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="Determine which player is the one to take cards from" />
+          <node concept="1hRy$k" id="3YZxQD4uafj" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4uafk" role="1hRyKC">
+              <property role="3SKdUp" value="Determine which player is the one to take cards from" />
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Number" typeId="ffsp.7674520359934846973" id="1745689507095073666" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="playerToTakeFrom" />
-            <node role="expression" roleId="ffsp.7674520359935510780" type="ffsp.minusExpression" typeId="ffsp.2455425859176103333" id="1745689507095203672" nodeInfo="ng">
-              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.CurrentPlayerNumber" typeId="ffsp.7644071217999812459" id="1745689507095203437" nodeInfo="ng" />
-              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507095203912" nodeInfo="ng">
-                <property name="number" nameId="ffsp.2455425859176336673" value="1" />
+          <node concept="19UzxA" id="1wTVPIexNFX" role="oGwW1">
+            <property role="TrG5h" value="playerToTakeFrom" />
+            <node concept="ur95E" id="1wTVPIeylnu" role="19XdtB">
+              <node concept="2SJUkI" id="1wTVPIeyljN" role="ur480" />
+              <node concept="u$e7c" id="1wTVPIeylre" role="ur48t">
+                <property role="u$e7I" value="1" />
               </node>
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="1745689507095073670" nodeInfo="ng">
-            <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.LessThanStatement" typeId="ffsp.7881733640607028947" id="1745689507095073671" nodeInfo="ng">
-              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507095073672" nodeInfo="ng">
-                <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095073666" resolveInfo="playerToTakeFrom" />
+          <node concept="VoZdq" id="1wTVPIexNPG" role="oGwW1">
+            <node concept="3bKlKJ" id="1wTVPIexNSj" role="Vjt6$">
+              <node concept="1onEp9" id="1wTVPIexNRo" role="ur480">
+                <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
               </node>
-              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507095073673" nodeInfo="ng">
-                <property name="number" nameId="ffsp.2455425859176336673" value="1" />
+              <node concept="u$e7c" id="1wTVPIexNUL" role="ur48t">
+                <property role="u$e7I" value="1" />
               </node>
             </node>
-            <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507095073674" nodeInfo="ng">
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="1745689507095073675" nodeInfo="ng">
-                <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507095073676" nodeInfo="ng">
-                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095073666" resolveInfo="playerToTakeFrom" />
+            <node concept="oGwWe" id="1wTVPIexNPK" role="Vjt6A">
+              <node concept="1OAU8p" id="1wTVPIexNXj" role="oGwW1">
+                <node concept="1onEp9" id="1wTVPIexNXv" role="1OAZk8">
+                  <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
                 </node>
-                <node role="value" roleId="ffsp.939205226782740263" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507095073677" nodeInfo="ng">
-                  <property name="number" nameId="ffsp.2455425859176336673" value="4" />
+                <node concept="u$e7c" id="1wTVPIexNXK" role="1OAZka">
+                  <property role="u$e7I" value="4" />
                 </node>
               </node>
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426218639" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426218641" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="We know which player we need to take from, but if that player has no cards, check the next one" />
+          <node concept="1hRy$k" id="3YZxQD4uaik" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4uail" role="1hRyKC">
+              <property role="3SKdUp" value="We know which player we need to take from, but if that player has no cards, check the next one" />
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.WhileStatement" typeId="ffsp.5565452210787038123" id="1745689507096379559" nodeInfo="ng">
-            <node role="condition" roleId="ffsp.5565452210788213847" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="1745689507096379560" nodeInfo="ng">
-              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096379561" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096379562" nodeInfo="ng">
-                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507096379563" nodeInfo="ng">
-                    <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507096379564" nodeInfo="ng">
-                      <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
+          <node concept="VoWrB" id="1wTVPIeAL_N" role="oGwW1">
+            <node concept="3bXCv_" id="1wTVPIeAMhw" role="Vjt4r">
+              <node concept="UHIEl" id="1wTVPIeALVk" role="ur480">
+                <node concept="UHIEl" id="1wTVPIeALSg" role="UGtiu">
+                  <node concept="kVFV6" id="1wTVPIeALRN" role="UGtiu">
+                    <node concept="1onEp9" id="1wTVPIeALS4" role="3XGYTS">
+                      <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
                     </node>
                   </node>
-                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507096379565" nodeInfo="ng" />
+                  <node concept="iEArX" id="1wTVPIeALV8" role="UGzgA" />
                 </node>
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="1745689507096379566" nodeInfo="ng" />
+                <node concept="3A$QB2" id="1wTVPIeALYq" role="UGzgA" />
               </node>
-              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096379567" nodeInfo="ng">
-                <property name="number" nameId="ffsp.2455425859176336673" value="0" />
+              <node concept="u$e7c" id="1wTVPIeAMkI" role="ur48t">
+                <property role="u$e7I" value="0" />
               </node>
             </node>
-            <node role="body" roleId="ffsp.5565452210788213921" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507096379568" nodeInfo="ng">
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="1745689507096379569" nodeInfo="ng">
-                <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507096379570" nodeInfo="ng">
-                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
+            <node concept="oGwWe" id="1wTVPIeAL_V" role="Vjt7H">
+              <node concept="1OAU8p" id="1wTVPIeAMDk" role="oGwW1">
+                <node concept="1onEp9" id="1wTVPIeAMDF" role="1OAZk8">
+                  <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
                 </node>
-                <node role="value" roleId="ffsp.939205226782740263" type="ffsp.minusExpression" typeId="ffsp.2455425859176103333" id="1745689507096379571" nodeInfo="ng">
-                  <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507096379572" nodeInfo="ng">
-                    <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
+                <node concept="ur95E" id="1wTVPIeAMHF" role="1OAZka">
+                  <node concept="1onEp9" id="1wTVPIeAMDW" role="ur480">
+                    <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
                   </node>
-                  <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096379573" nodeInfo="ng">
-                    <property name="number" nameId="ffsp.2455425859176336673" value="1" />
+                  <node concept="u$e7c" id="1wTVPIeAMLx" role="ur48t">
+                    <property role="u$e7I" value="1" />
                   </node>
                 </node>
               </node>
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="1745689507096379574" nodeInfo="ng">
-                <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.LessThanStatement" typeId="ffsp.7881733640607028947" id="1745689507096379575" nodeInfo="ng">
-                  <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507096379576" nodeInfo="ng">
-                    <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
+              <node concept="VoZdq" id="1wTVPIeAMxM" role="oGwW1">
+                <node concept="3bKlKJ" id="1wTVPIeAMxN" role="Vjt6$">
+                  <node concept="1onEp9" id="1wTVPIeAMxO" role="ur480">
+                    <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
                   </node>
-                  <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096379577" nodeInfo="ng">
-                    <property name="number" nameId="ffsp.2455425859176336673" value="1" />
+                  <node concept="u$e7c" id="1wTVPIeAMxP" role="ur48t">
+                    <property role="u$e7I" value="1" />
                   </node>
                 </node>
-                <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507096379578" nodeInfo="ng">
-                  <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="1745689507096379579" nodeInfo="ng">
-                    <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507096379580" nodeInfo="ng">
-                      <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
+                <node concept="oGwWe" id="1wTVPIeAMxQ" role="Vjt6A">
+                  <node concept="1OAU8p" id="1wTVPIeAMxR" role="oGwW1">
+                    <node concept="1onEp9" id="1wTVPIeAMxS" role="1OAZk8">
+                      <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
                     </node>
-                    <node role="value" roleId="ffsp.939205226782740263" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096379581" nodeInfo="ng">
-                      <property name="number" nameId="ffsp.2455425859176336673" value="4" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426218769" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426218771" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="At this point we know which player we can take cards from. Wait for selection from that player's hand" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.AllowWithSize" typeId="ffsp.5144139994148159356" id="1745689507095073881" nodeInfo="ng">
-            <node role="size" roleId="ffsp.5144139994148159653" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="1745689507095073908" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="1" />
-            </node>
-            <node role="pile" roleId="ffsp.5144139994148159655" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507095073937" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507095073916" nodeInfo="ng">
-                <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507095073925" nodeInfo="ng">
-                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
-                </node>
-              </node>
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507095074189" nodeInfo="ng" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.WaitForPlayer" typeId="ffsp.7501337804229937804" id="1745689507095074221" nodeInfo="ng">
-            <node role="expression" roleId="ffsp.7501337804230073635" type="ffsp.ToMove" typeId="ffsp.7501337804229938774" id="1745689507095074245" nodeInfo="ng">
-              <node role="selection" roleId="ffsp.7501337804230072938" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507095076713" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507095074254" nodeInfo="ng">
-                  <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="1745689507095074263" nodeInfo="ng">
-                    <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507095067389" resolveInfo="playerToTakeFrom" />
-                  </node>
-                </node>
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507095076969" nodeInfo="ng" />
-              </node>
-              <node role="pile" roleId="ffsp.7501337804230072940" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507095074280" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="1745689507095074275" nodeInfo="ng" />
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507095074292" nodeInfo="ng" />
-              </node>
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="4593539035426964632" nodeInfo="ng">
-            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426964856" nodeInfo="ng">
-              <property name="value" nameId="ffsp.8642299736868227465" value="Player " />
-            </node>
-            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.CurrentPlayerNumber" typeId="ffsp.7644071217999812459" id="4593539035426964968" nodeInfo="ng" />
-            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426964986" nodeInfo="ng">
-              <property name="value" nameId="ffsp.8642299736868227465" value=" takes " />
-            </node>
-            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426964921" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426964896" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426964891" nodeInfo="ng" />
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426964909" nodeInfo="ng" />
-              </node>
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.TopCard" typeId="ffsp.2678928131163028766" id="4593539035426964948" nodeInfo="ng" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426269748" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426269749" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="Find Pairs to remove" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ForEachStatement" typeId="ffsp.5565452210787037995" id="4593539035426269750" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="c" />
-            <node role="cardPile" roleId="ffsp.7878805613278804333" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269751" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426269752" nodeInfo="ng" />
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426269753" nodeInfo="ng" />
-            </node>
-            <node role="body" roleId="ffsp.7878805613278808793" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426269754" nodeInfo="ng">
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Boolean" typeId="ffsp.2678928131162238767" id="4593539035426269755" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="removedPair" />
-                <node role="value" roleId="ffsp.2678928131162280636" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426269756" nodeInfo="ng" />
-              </node>
-              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ForEachStatement" typeId="ffsp.5565452210787037995" id="4593539035426269757" nodeInfo="ng">
-                <property name="name" nameId="tpck.1169194664001" value="d" />
-                <node role="cardPile" roleId="ffsp.7878805613278804333" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269758" nodeInfo="ng">
-                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426269759" nodeInfo="ng" />
-                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426269760" nodeInfo="ng" />
-                </node>
-                <node role="body" roleId="ffsp.7878805613278808793" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426269761" nodeInfo="ng">
-                  <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426269762" nodeInfo="ng">
-                    <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426269763" nodeInfo="nn">
-                      <property name="text" nameId="tpee.6329021646629104958" value="Only check for pair if it has not already been removed in previous iteration" />
+                    <node concept="u$e7c" id="1wTVPIeAMxT" role="1OAZka">
+                      <property role="u$e7I" value="4" />
                     </node>
                   </node>
-                  <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="4593539035426269764" nodeInfo="ng">
-                    <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426269765" nodeInfo="ng">
-                      <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426273295" nodeInfo="ng">
-                        <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426266152" resolveInfo="removedPair" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1hRy$k" id="3YZxQD4ualr" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4uals" role="1hRyKC">
+              <property role="3SKdUp" value="At this point we know which player the computer player can take a card from" />
+            </node>
+          </node>
+          <node concept="2OZO08" id="1wTVPIexOkB" role="oGwW1">
+            <property role="TrG5h" value="cardToTake" />
+            <node concept="2molLO" id="1wTVPIexOnO" role="2OSEQw">
+              <node concept="UHIEl" id="1wTVPIexOof" role="2mo_4L">
+                <node concept="kVFV6" id="1wTVPIexOnU" role="UGtiu">
+                  <node concept="1onEp9" id="1wTVPIexOo3" role="3XGYTS">
+                    <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
+                  </node>
+                </node>
+                <node concept="iEArX" id="1wTVPIexOr9" role="UGzgA" />
+              </node>
+            </node>
+          </node>
+          <node concept="1PKMQo" id="1wTVPIexNe9" role="oGwW1">
+            <node concept="UHIEl" id="1wTVPIexOsC" role="1PKM$j">
+              <node concept="kVFV6" id="1wTVPIexOs7" role="UGtiu">
+                <node concept="1onEp9" id="1wTVPIexOso" role="3XGYTS">
+                  <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
+                </node>
+              </node>
+              <node concept="iEArX" id="1wTVPIexOvK" role="UGzgA" />
+            </node>
+            <node concept="UHIEl" id="1wTVPIexOwt" role="1PKM$t">
+              <node concept="12o7Xu" id="1wTVPIexOw0" role="UGtiu" />
+              <node concept="iEArX" id="1wTVPIexOwZ" role="UGzgA" />
+            </node>
+            <node concept="2OZBxG" id="1wTVPIexOrS" role="31qsLp">
+              <ref role="2OZO16" node="1wTVPIexOkB" resolve="cardToTake" />
+            </node>
+          </node>
+          <node concept="3g$vrO" id="3YZxQD4wYdA" role="oGwW1">
+            <node concept="l_Hnr" id="3YZxQD4wYdB" role="3g$a9b">
+              <property role="l_1hr" value="Player " />
+            </node>
+            <node concept="2SJUkI" id="3YZxQD4wYdC" role="3g$a9b" />
+            <node concept="l_Hnr" id="3YZxQD4wYdD" role="3g$a9b">
+              <property role="l_1hr" value=" takes " />
+            </node>
+            <node concept="2OZBxG" id="3YZxQD4wYii" role="3g$a9b">
+              <ref role="2OZO16" node="1wTVPIexOkB" resolve="cardToTake" />
+            </node>
+          </node>
+          <node concept="1YWEB$" id="3YZxQD4wY9G" role="oGwW1" />
+          <node concept="1hRy$k" id="3YZxQD4ujgH" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4ujgI" role="1hRyKC">
+              <property role="3SKdUp" value="Find Pairs to remove" />
+            </node>
+          </node>
+          <node concept="VoWpB" id="3YZxQD4ujgJ" role="oGwW1">
+            <property role="TrG5h" value="c" />
+            <node concept="UHIEl" id="3YZxQD4ujgK" role="14whEr">
+              <node concept="12o7Xu" id="3YZxQD4ujgL" role="UGtiu" />
+              <node concept="iEArX" id="3YZxQD4ujgM" role="UGzgA" />
+            </node>
+            <node concept="oGwWe" id="3YZxQD4ujgN" role="14wm$J">
+              <node concept="L_9Bu" id="3YZxQD4ujgO" role="oGwW1">
+                <property role="TrG5h" value="removedPair" />
+                <node concept="3hXeDh" id="3YZxQD4ujgP" role="L_Yhd" />
+              </node>
+              <node concept="VoWpB" id="3YZxQD4ujgQ" role="oGwW1">
+                <property role="TrG5h" value="d" />
+                <node concept="UHIEl" id="3YZxQD4ujgR" role="14whEr">
+                  <node concept="12o7Xu" id="3YZxQD4ujgS" role="UGtiu" />
+                  <node concept="iEArX" id="3YZxQD4ujgT" role="UGzgA" />
+                </node>
+                <node concept="oGwWe" id="3YZxQD4ujgU" role="14wm$J">
+                  <node concept="1hRy$k" id="3YZxQD4ujgV" role="oGwW1">
+                    <node concept="3SKdUq" id="3YZxQD4ujgW" role="1hRyKC">
+                      <property role="3SKdUp" value="Only check for pair if it has not already been removed in previous iteration" />
+                    </node>
+                  </node>
+                  <node concept="VoZdq" id="3YZxQD4ujgX" role="oGwW1">
+                    <node concept="3bXCv_" id="3YZxQD4ujgY" role="Vjt6$">
+                      <node concept="1onEp9" id="3YZxQD4ujrD" role="ur480">
+                        <ref role="1onEp8" node="3YZxQD4uhKC" resolve="removedPair" />
                       </node>
-                      <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426269767" nodeInfo="ng">
-                        <property name="value" nameId="ffsp.2003306783291602631" value="false" />
+                      <node concept="3hXeDh" id="3YZxQD4ujh0" role="ur48t">
+                        <property role="3hXdCw" value="false" />
                       </node>
                     </node>
-                    <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426269768" nodeInfo="ng">
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426269769" nodeInfo="ng">
-                        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426269770" nodeInfo="nn">
-                          <property name="text" nameId="tpee.6329021646629104958" value="Start by checking if the card c has been removed in a previous iteration" />
+                    <node concept="oGwWe" id="3YZxQD4ujh1" role="Vjt6A">
+                      <node concept="1hRy$k" id="3YZxQD4ujh2" role="oGwW1">
+                        <node concept="3SKdUq" id="3YZxQD4ujh3" role="1hRyKC">
+                          <property role="3SKdUp" value="Start by checking if the card c has been removed in a previous iteration" />
                         </node>
                       </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Boolean" typeId="ffsp.2678928131162238767" id="4593539035426269771" nodeInfo="ng">
-                        <property name="name" nameId="tpck.1169194664001" value="stillInHand" />
-                        <node role="value" roleId="ffsp.2678928131162280636" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426269772" nodeInfo="ng" />
+                      <node concept="L_9Bu" id="3YZxQD4ujh4" role="oGwW1">
+                        <property role="TrG5h" value="stillInHand" />
+                        <node concept="3hXeDh" id="3YZxQD4ujh5" role="L_Yhd" />
                       </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426269773" nodeInfo="ng">
-                        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426269774" nodeInfo="nn">
-                          <property name="text" nameId="tpee.6329021646629104958" value="Check if the Card c has already been removed" />
+                      <node concept="1hRy$k" id="3YZxQD4ujh6" role="oGwW1">
+                        <node concept="3SKdUq" id="3YZxQD4ujh7" role="1hRyKC">
+                          <property role="3SKdUp" value="Check if the Card c has already been removed" />
                         </node>
                       </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ForEachStatement" typeId="ffsp.5565452210787037995" id="4593539035426269775" nodeInfo="ng">
-                        <property name="name" nameId="tpck.1169194664001" value="currentCard" />
-                        <node role="cardPile" roleId="ffsp.7878805613278804333" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269776" nodeInfo="ng">
-                          <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426269777" nodeInfo="ng" />
-                          <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426269778" nodeInfo="ng" />
+                      <node concept="VoWpB" id="3YZxQD4ujh8" role="oGwW1">
+                        <property role="TrG5h" value="currentCard" />
+                        <node concept="UHIEl" id="3YZxQD4ujh9" role="14whEr">
+                          <node concept="12o7Xu" id="3YZxQD4ujha" role="UGtiu" />
+                          <node concept="iEArX" id="3YZxQD4ujhb" role="UGzgA" />
                         </node>
-                        <node role="body" roleId="ffsp.7878805613278808793" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426269779" nodeInfo="ng">
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="4593539035426269780" nodeInfo="ng">
-                            <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426269781" nodeInfo="ng">
-                              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426269782" nodeInfo="ng">
-                                <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426269783" nodeInfo="nn">
-                                  <property name="text" nameId="tpee.6329021646629104958" value="It has not been removed, so set removedPair to false" />
+                        <node concept="oGwWe" id="3YZxQD4ujhc" role="14wm$J">
+                          <node concept="VoZdq" id="3YZxQD4ujhd" role="oGwW1">
+                            <node concept="oGwWe" id="3YZxQD4ujhe" role="Vjt6A">
+                              <node concept="1hRy$k" id="3YZxQD4ujhf" role="oGwW1">
+                                <node concept="3SKdUq" id="3YZxQD4ujhg" role="1hRyKC">
+                                  <property role="3SKdUp" value="It has not been removed, so set removedPair to false" />
                                 </node>
                               </node>
-                              <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="4593539035426269784" nodeInfo="ng">
-                                <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426269785" nodeInfo="ng">
-                                  <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426269771" resolveInfo="stillInHand" />
+                              <node concept="1OAU8p" id="3YZxQD4ujhh" role="oGwW1">
+                                <node concept="1onEp9" id="3YZxQD4ujhi" role="1OAZk8">
+                                  <ref role="1onEp8" node="3YZxQD4ujh4" resolve="stillInHand" />
                                 </node>
-                                <node role="value" roleId="ffsp.939205226782740263" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426269786" nodeInfo="ng">
-                                  <property name="value" nameId="ffsp.2003306783291602631" value="true" />
+                                <node concept="3hXeDh" id="3YZxQD4ujhj" role="1OAZka">
+                                  <property role="3hXdCw" value="true" />
                                 </node>
                               </node>
                             </node>
-                            <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.AndStatement" typeId="ffsp.7881733640606387472" id="4593539035426269787" nodeInfo="ng">
-                              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426269788" nodeInfo="ng">
-                                <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269789" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426269790" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426269775" resolveInfo="currentCard" />
+                            <node concept="3bXCvG" id="3YZxQD4ujhk" role="Vjt6$">
+                              <node concept="3bXCv_" id="3YZxQD4ujhl" role="ur480">
+                                <node concept="UHIEl" id="3YZxQD4ujhm" role="ur480">
+                                  <node concept="14wbAk" id="3YZxQD4ujhn" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4ujh8" resolve="currentCard" />
                                   </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426269791" nodeInfo="ng" />
+                                  <node concept="2xyaO8" id="3YZxQD4ujho" role="UGzgA" />
                                 </node>
-                                <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269792" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426269793" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426269750" resolveInfo="c" />
+                                <node concept="UHIEl" id="3YZxQD4ujhp" role="ur48t">
+                                  <node concept="14wbAk" id="3YZxQD4ujhq" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4ujgJ" resolve="c" />
                                   </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426269794" nodeInfo="ng" />
+                                  <node concept="2xyaO8" id="3YZxQD4ujhr" role="UGzgA" />
                                 </node>
                               </node>
-                              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426269795" nodeInfo="ng">
-                                <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269796" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426269797" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426269775" resolveInfo="currentCard" />
+                              <node concept="3bXCv_" id="3YZxQD4ujhs" role="ur48t">
+                                <node concept="UHIEl" id="3YZxQD4ujht" role="ur480">
+                                  <node concept="14wbAk" id="3YZxQD4ujhu" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4ujh8" resolve="currentCard" />
                                   </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426269798" nodeInfo="ng" />
+                                  <node concept="2xyLjJ" id="3YZxQD4ujhv" role="UGzgA" />
                                 </node>
-                                <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269799" nodeInfo="ng">
-                                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426269800" nodeInfo="ng">
-                                    <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426269750" resolveInfo="c" />
+                                <node concept="UHIEl" id="3YZxQD4ujhw" role="ur48t">
+                                  <node concept="14wbAk" id="3YZxQD4ujhx" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4ujgJ" resolve="c" />
                                   </node>
-                                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426269801" nodeInfo="ng" />
+                                  <node concept="2xyLjJ" id="3YZxQD4ujhy" role="UGzgA" />
                                 </node>
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426269802" nodeInfo="ng">
-                        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426269803" nodeInfo="nn">
-                          <property name="text" nameId="tpee.6329021646629104958" value="The if block here only gets to run if stillInHand is true (meaning the pair has not been removed)" />
+                      <node concept="1hRy$k" id="3YZxQD4ujhz" role="oGwW1">
+                        <node concept="3SKdUq" id="3YZxQD4ujh$" role="1hRyKC">
+                          <property role="3SKdUp" value="The if block here only gets to run if stillInHand is true (meaning the pair has not been removed)" />
                         </node>
                       </node>
-                      <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="4593539035426269804" nodeInfo="ng">
-                        <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="4593539035426269805" nodeInfo="ng">
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426269806" nodeInfo="ng">
-                            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426269807" nodeInfo="nn">
-                              <property name="text" nameId="tpee.6329021646629104958" value="A Pair has been found!" />
+                      <node concept="VoZdq" id="3YZxQD4ujh_" role="oGwW1">
+                        <node concept="oGwWe" id="3YZxQD4ujhA" role="Vjt6A">
+                          <node concept="1hRy$k" id="3YZxQD4ujhB" role="oGwW1">
+                            <node concept="3SKdUq" id="3YZxQD4ujhC" role="1hRyKC">
+                              <property role="3SKdUp" value="A Pair has been found!" />
                             </node>
                           </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4593539035426269808" nodeInfo="ng">
-                            <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269809" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426269810" nodeInfo="ng" />
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426269811" nodeInfo="ng" />
+                          <node concept="1PKMQo" id="3YZxQD4ujhD" role="oGwW1">
+                            <node concept="UHIEl" id="3YZxQD4ujhE" role="1PKM$j">
+                              <node concept="12o7Xu" id="3YZxQD4ujhF" role="UGtiu" />
+                              <node concept="iEArX" id="3YZxQD4ujhG" role="UGzgA" />
                             </node>
-                            <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426269812" nodeInfo="ng">
-                              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507092015736" resolveInfo="discardPile" />
+                            <node concept="1onEp9" id="3YZxQD4ujhH" role="1PKM$t">
+                              <ref role="1onEp8" node="1wTVPIemaDS" resolve="discardPile" />
                             </node>
-                            <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426269813" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426269750" resolveInfo="c" />
-                            </node>
-                          </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Move" typeId="ffsp.6162892231914410061" id="4593539035426269814" nodeInfo="ng">
-                            <node role="pile1" roleId="ffsp.6162892231914411206" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269815" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="4593539035426269816" nodeInfo="ng" />
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="4593539035426269817" nodeInfo="ng" />
-                            </node>
-                            <node role="pile2" roleId="ffsp.6162892231914411208" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426269818" nodeInfo="ng">
-                              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="1745689507092015736" resolveInfo="discardPile" />
-                            </node>
-                            <node role="cardNumbers" roleId="ffsp.4654595638702489163" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426269819" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426269757" resolveInfo="d" />
+                            <node concept="14wbAk" id="3YZxQD4ujhI" role="31qsLp">
+                              <ref role="14wb_7" node="3YZxQD4ujgJ" resolve="c" />
                             </node>
                           </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.VariableAssignment" typeId="ffsp.939205226782726196" id="4593539035426269820" nodeInfo="ng">
-                            <node role="lvalue" roleId="ffsp.939205226782740261" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426273338" nodeInfo="ng">
-                              <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426266152" resolveInfo="removedPair" />
+                          <node concept="1PKMQo" id="3YZxQD4ujhJ" role="oGwW1">
+                            <node concept="UHIEl" id="3YZxQD4ujhK" role="1PKM$j">
+                              <node concept="12o7Xu" id="3YZxQD4ujhL" role="UGtiu" />
+                              <node concept="iEArX" id="3YZxQD4ujhM" role="UGzgA" />
                             </node>
-                            <node role="value" roleId="ffsp.939205226782740263" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426269822" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.2003306783291602631" value="true" />
+                            <node concept="1onEp9" id="3YZxQD4ujhN" role="1PKM$t">
+                              <ref role="1onEp8" node="1wTVPIemaDS" resolve="discardPile" />
+                            </node>
+                            <node concept="14wbAk" id="3YZxQD4ujhO" role="31qsLp">
+                              <ref role="14wb_7" node="3YZxQD4ujgQ" resolve="d" />
                             </node>
                           </node>
-                          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="4593539035426269823" nodeInfo="ng">
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426706580" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value="Player " />
+                          <node concept="1OAU8p" id="3YZxQD4ujhP" role="oGwW1">
+                            <node concept="1onEp9" id="3YZxQD4ujs0" role="1OAZk8">
+                              <ref role="1onEp8" node="3YZxQD4uhKC" resolve="removedPair" />
                             </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.CurrentPlayerNumber" typeId="ffsp.7644071217999812459" id="4593539035426706564" nodeInfo="ng" />
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426269825" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value=" removed pair (" />
+                            <node concept="3hXeDh" id="3YZxQD4ujhR" role="1OAZka">
+                              <property role="3hXdCw" value="true" />
                             </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426269826" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426269750" resolveInfo="c" />
+                          </node>
+                          <node concept="3g$vrO" id="3YZxQD4ujhS" role="oGwW1">
+                            <node concept="l_Hnr" id="3YZxQD4vXiR" role="3g$a9b">
+                              <property role="l_1hr" value="Player " />
                             </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426269827" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value=" : " />
+                            <node concept="2SJUkI" id="3YZxQD4vXji" role="3g$a9b" />
+                            <node concept="l_Hnr" id="3YZxQD4ujhU" role="3g$a9b">
+                              <property role="l_1hr" value=" removed pair (" />
                             </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426269828" nodeInfo="ng">
-                              <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426269757" resolveInfo="d" />
+                            <node concept="14wbAk" id="3YZxQD4ujhV" role="3g$a9b">
+                              <ref role="14wb_7" node="3YZxQD4ujgJ" resolve="c" />
                             </node>
-                            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="4593539035426269829" nodeInfo="ng">
-                              <property name="value" nameId="ffsp.8642299736868227465" value=")" />
+                            <node concept="l_Hnr" id="3YZxQD4ujhW" role="3g$a9b">
+                              <property role="l_1hr" value=" : " />
+                            </node>
+                            <node concept="14wbAk" id="3YZxQD4ujhX" role="3g$a9b">
+                              <ref role="14wb_7" node="3YZxQD4ujgQ" resolve="d" />
+                            </node>
+                            <node concept="l_Hnr" id="3YZxQD4ujhY" role="3g$a9b">
+                              <property role="l_1hr" value=")" />
                             </node>
                           </node>
                         </node>
-                        <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.AndStatement" typeId="ffsp.7881733640606387472" id="4593539035426269830" nodeInfo="ng">
-                          <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426269831" nodeInfo="ng">
-                            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269832" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426269833" nodeInfo="ng">
-                                <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426269750" resolveInfo="c" />
+                        <node concept="3bXCvG" id="3YZxQD4ujhZ" role="Vjt6$">
+                          <node concept="3bXCv_" id="3YZxQD4uji0" role="ur480">
+                            <node concept="UHIEl" id="3YZxQD4uji1" role="ur480">
+                              <node concept="14wbAk" id="3YZxQD4uji2" role="UGtiu">
+                                <ref role="14wb_7" node="3YZxQD4ujgJ" resolve="c" />
                               </node>
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426269834" nodeInfo="ng" />
+                              <node concept="2xyaO8" id="3YZxQD4uji3" role="UGzgA" />
                             </node>
-                            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269835" nodeInfo="ng">
-                              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426269836" nodeInfo="ng">
-                                <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426269757" resolveInfo="d" />
+                            <node concept="UHIEl" id="3YZxQD4uji4" role="ur48t">
+                              <node concept="14wbAk" id="3YZxQD4uji5" role="UGtiu">
+                                <ref role="14wb_7" node="3YZxQD4ujgQ" resolve="d" />
                               </node>
-                              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.RankOp" typeId="ffsp.5964992898508211303" id="4593539035426269837" nodeInfo="ng" />
+                              <node concept="2xyaO8" id="3YZxQD4uji6" role="UGzgA" />
                             </node>
                           </node>
-                          <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.AndStatement" typeId="ffsp.7881733640606387472" id="4593539035426269838" nodeInfo="ng">
-                            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.NotEqualToStatement" typeId="ffsp.1291148986966014861" id="4593539035426269839" nodeInfo="ng">
-                              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269840" nodeInfo="ng">
-                                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426269841" nodeInfo="ng">
-                                  <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426269750" resolveInfo="c" />
+                          <node concept="3bXCvG" id="3YZxQD4uji7" role="ur48t">
+                            <node concept="2xRuU$" id="3YZxQD4uji8" role="ur480">
+                              <node concept="UHIEl" id="3YZxQD4uji9" role="ur480">
+                                <node concept="14wbAk" id="3YZxQD4ujia" role="UGtiu">
+                                  <ref role="14wb_7" node="3YZxQD4ujgJ" resolve="c" />
                                 </node>
-                                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426269842" nodeInfo="ng" />
+                                <node concept="2xyLjJ" id="3YZxQD4ujib" role="UGzgA" />
                               </node>
-                              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="4593539035426269843" nodeInfo="ng">
-                                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.ForEachVarReference" typeId="ffsp.7878805613278894690" id="4593539035426269844" nodeInfo="ng">
-                                  <link role="foreach" roleId="ffsp.7878805613278894769" targetNodeId="4593539035426269757" resolveInfo="d" />
+                              <node concept="UHIEl" id="3YZxQD4ujic" role="ur48t">
+                                <node concept="14wbAk" id="3YZxQD4ujid" role="UGtiu">
+                                  <ref role="14wb_7" node="3YZxQD4ujgQ" resolve="d" />
                                 </node>
-                                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.SuitOp" typeId="ffsp.5964992898508062080" id="4593539035426269845" nodeInfo="ng" />
+                                <node concept="2xyLjJ" id="3YZxQD4ujie" role="UGzgA" />
                               </node>
                             </node>
-                            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="4593539035426269846" nodeInfo="ng">
-                              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.boolConstant" typeId="ffsp.2003306783291590326" id="4593539035426269847" nodeInfo="ng">
-                                <property name="value" nameId="ffsp.2003306783291602631" value="true" />
+                            <node concept="3bXCv_" id="3YZxQD4ujif" role="ur48t">
+                              <node concept="3hXeDh" id="3YZxQD4ujig" role="ur48t">
+                                <property role="3hXdCw" value="true" />
                               </node>
-                              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.VariableReference" typeId="ffsp.6304222537138290358" id="4593539035426269848" nodeInfo="ng">
-                                <link role="variable" roleId="ffsp.6304222537138290359" targetNodeId="4593539035426269771" resolveInfo="stillInHand" />
+                              <node concept="1onEp9" id="3YZxQD4ujih" role="ur480">
+                                <ref role="1onEp8" node="3YZxQD4ujh4" resolve="stillInHand" />
                               </node>
                             </node>
                           </node>
@@ -1676,196 +1168,863 @@
               </node>
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426269849" nodeInfo="ng">
-            <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426269850" nodeInfo="nn">
-              <property name="text" nameId="tpee.6329021646629104958" value="All Pairs removed at this point for current player" />
+          <node concept="1hRy$k" id="3YZxQD4ujii" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4ujij" role="1hRyKC">
+              <property role="3SKdUp" value="All Pairs removed at this point for current player" />
             </node>
           </node>
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="4593539035426240878" nodeInfo="ng" />
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.ShuffleDeck" typeId="ffsp.7674520359936346144" id="1745689507096364293" nodeInfo="ng">
-            <node role="deck" roleId="ffsp.7674520359936346172" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096364482" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.CurrentPlayer" typeId="ffsp.4113687324191539085" id="1745689507096364473" nodeInfo="ng" />
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507096364494" nodeInfo="ng" />
+          <node concept="1YWEB$" id="3YZxQD4uaSr" role="oGwW1" />
+          <node concept="190LuV" id="1wTVPIeAKpZ" role="oGwW1">
+            <node concept="UHIEl" id="1wTVPIeAKsH" role="190LuB">
+              <node concept="12o7Xu" id="1wTVPIeAKsC" role="UGtiu" />
+              <node concept="iEArX" id="1wTVPIeAKsT" role="UGzgA" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node role="winConditionBlock" roleId="ffsp.5722923068946478778" type="ffsp.WinConditionBlock" typeId="ffsp.5160494638280864183" id="1745689507091309885" nodeInfo="ng">
-      <node role="condition" roleId="ffsp.150989085052711727" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="1745689507093397590" nodeInfo="ng">
-        <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.addExpression" typeId="ffsp.2455425859176095200" id="1745689507093397921" nodeInfo="ng">
-          <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507093399470" nodeInfo="ng">
-            <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507093397690" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507093397643" nodeInfo="ng">
-                <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507093397664" nodeInfo="ng">
-                  <property name="number" nameId="ffsp.2455425859176336673" value="1" />
-                </node>
-              </node>
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507093399373" nodeInfo="ng" />
-            </node>
-            <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="1745689507093399584" nodeInfo="ng" />
+    <node concept="1NceuL" id="1wTVPIejukW" role="1NfNlL">
+      <node concept="1hRy$k" id="3YZxQD4u61f" role="1NAaLj">
+        <node concept="3SKdUq" id="3YZxQD4u61h" role="1hRyKC">
+          <property role="3SKdUp" value="A new turn begins, so increment the player turn" />
+        </node>
+      </node>
+      <node concept="1OAU8p" id="1wTVPIexMLT" role="1NAaLj">
+        <node concept="1onEp9" id="1wTVPIexMLU" role="1OAZk8">
+          <ref role="1onEp8" node="1wTVPIeuO9p" resolve="turnCounter" />
+        </node>
+        <node concept="urb4J" id="1wTVPIexMLV" role="1OAZka">
+          <node concept="1onEp9" id="1wTVPIexMLW" role="ur480">
+            <ref role="1onEp8" node="1wTVPIeuO9p" resolve="turnCounter" />
           </node>
-          <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.addExpression" typeId="ffsp.2455425859176095200" id="1745689507093398547" nodeInfo="ng">
-            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507093399690" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507093398061" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507093397971" nodeInfo="ng">
-                  <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507093398013" nodeInfo="ng">
-                    <property name="number" nameId="ffsp.2455425859176336673" value="2" />
-                  </node>
-                </node>
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507093398117" nodeInfo="ng" />
+          <node concept="u$e7c" id="1wTVPIexMLX" role="ur48t">
+            <property role="u$e7I" value="1" />
+          </node>
+        </node>
+      </node>
+      <node concept="VoZdq" id="1wTVPIexMLY" role="1NAaLj">
+        <node concept="VoWpw" id="1wTVPIeAQAG" role="VjERP">
+          <node concept="3bXCv_" id="1wTVPIeAQFG" role="Vjt1Z">
+            <node concept="UHIEl" id="1wTVPIeAQF0" role="ur480">
+              <node concept="UHIEl" id="1wTVPIeAQEC" role="UGtiu">
+                <node concept="12o7Xu" id="1wTVPIeAQEy" role="UGtiu" />
+                <node concept="iEArX" id="1wTVPIeAQES" role="UGzgA" />
               </node>
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="1745689507093399757" nodeInfo="ng" />
+              <node concept="3A$QB2" id="1wTVPIeAQFu" role="UGzgA" />
             </node>
-            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.addExpression" typeId="ffsp.2455425859176095200" id="1745689507093398905" nodeInfo="ng">
-              <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507093399876" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507093398753" nodeInfo="ng">
-                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507093398619" nodeInfo="ng">
-                    <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507093398683" nodeInfo="ng">
-                      <property name="number" nameId="ffsp.2455425859176336673" value="3" />
-                    </node>
-                  </node>
-                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507093398831" nodeInfo="ng" />
-                </node>
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="1745689507093399948" nodeInfo="ng" />
-              </node>
-              <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507093400077" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507093399177" nodeInfo="ng">
-                  <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507093398999" nodeInfo="ng">
-                    <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507093399085" nodeInfo="ng">
-                      <property name="number" nameId="ffsp.2455425859176336673" value="4" />
-                    </node>
-                  </node>
-                  <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507093399277" nodeInfo="ng" />
-                </node>
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="1745689507093400221" nodeInfo="ng" />
+            <node concept="u$e7c" id="1wTVPIeAQGm" role="ur48t">
+              <property role="u$e7I" value="0" />
+            </node>
+          </node>
+          <node concept="oGwWe" id="1wTVPIeAQAI" role="Vjt1T">
+            <node concept="1hRy$k" id="1wTVPIeAQGK" role="oGwW1">
+              <node concept="3SKdUq" id="1wTVPIeAQGL" role="1hRyKC">
+                <property role="3SKdUp" value="Do Nothing because the player has already removed all cards from his/her hand" />
               </node>
             </node>
           </node>
         </node>
-        <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507093397625" nodeInfo="ng">
-          <property name="number" nameId="ffsp.2455425859176336673" value="1" />
+        <node concept="3bKlKJ" id="1wTVPIexMLZ" role="Vjt6$">
+          <node concept="1onEp9" id="1wTVPIexMM0" role="ur480">
+            <ref role="1onEp8" node="1wTVPIeuO9p" resolve="turnCounter" />
+          </node>
+          <node concept="u$e7c" id="1wTVPIexMM1" role="ur48t">
+            <property role="u$e7I" value="5" />
+          </node>
+        </node>
+        <node concept="oGwWe" id="1wTVPIexMM2" role="Vjt6A">
+          <node concept="1hRy$k" id="3YZxQD4u65f" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4u65h" role="1hRyKC">
+              <property role="3SKdUp" value="Since this is the player's first turn, remove all pairs and go to next turn" />
+            </node>
+          </node>
+          <node concept="1hRy$k" id="3YZxQD4ubGK" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4ubGL" role="1hRyKC">
+              <property role="3SKdUp" value="Find Pairs to remove" />
+            </node>
+          </node>
+          <node concept="VoWpB" id="3YZxQD4ubGM" role="oGwW1">
+            <property role="TrG5h" value="c" />
+            <node concept="UHIEl" id="3YZxQD4ubGN" role="14whEr">
+              <node concept="12o7Xu" id="3YZxQD4ubGO" role="UGtiu" />
+              <node concept="iEArX" id="3YZxQD4ubGP" role="UGzgA" />
+            </node>
+            <node concept="oGwWe" id="3YZxQD4ubGQ" role="14wm$J">
+              <node concept="L_9Bu" id="3YZxQD4uhKC" role="oGwW1">
+                <property role="TrG5h" value="removedPair" />
+                <node concept="3hXeDh" id="3YZxQD4uhM3" role="L_Yhd" />
+              </node>
+              <node concept="VoWpB" id="3YZxQD4ubGR" role="oGwW1">
+                <property role="TrG5h" value="d" />
+                <node concept="UHIEl" id="3YZxQD4ubGS" role="14whEr">
+                  <node concept="12o7Xu" id="3YZxQD4ubGT" role="UGtiu" />
+                  <node concept="iEArX" id="3YZxQD4ubGU" role="UGzgA" />
+                </node>
+                <node concept="oGwWe" id="3YZxQD4ubGV" role="14wm$J">
+                  <node concept="1hRy$k" id="3YZxQD4uisl" role="oGwW1">
+                    <node concept="3SKdUq" id="3YZxQD4uisn" role="1hRyKC">
+                      <property role="3SKdUp" value="Only check for pair if it has not already been removed in previous iteration" />
+                    </node>
+                  </node>
+                  <node concept="VoZdq" id="3YZxQD4ui2l" role="oGwW1">
+                    <node concept="3bXCv_" id="3YZxQD4ui4b" role="Vjt6$">
+                      <node concept="1onEp9" id="3YZxQD4ujyB" role="ur480">
+                        <ref role="1onEp8" node="3YZxQD4uhKC" resolve="removedPair" />
+                      </node>
+                      <node concept="3hXeDh" id="3YZxQD4ui6d" role="ur48t">
+                        <property role="3hXdCw" value="false" />
+                      </node>
+                    </node>
+                    <node concept="oGwWe" id="3YZxQD4ui2p" role="Vjt6A">
+                      <node concept="1hRy$k" id="3YZxQD4ubGW" role="oGwW1">
+                        <node concept="3SKdUq" id="3YZxQD4ubGX" role="1hRyKC">
+                          <property role="3SKdUp" value="Start by checking if the card c has been removed in a previous iteration" />
+                        </node>
+                      </node>
+                      <node concept="L_9Bu" id="3YZxQD4uh6N" role="oGwW1">
+                        <property role="TrG5h" value="stillInHand" />
+                        <node concept="3hXeDh" id="3YZxQD4uh89" role="L_Yhd" />
+                      </node>
+                      <node concept="1hRy$k" id="3YZxQD4ubH0" role="oGwW1">
+                        <node concept="3SKdUq" id="3YZxQD4ubH1" role="1hRyKC">
+                          <property role="3SKdUp" value="Check if the Card c has already been removed" />
+                        </node>
+                      </node>
+                      <node concept="VoWpB" id="3YZxQD4ubH2" role="oGwW1">
+                        <property role="TrG5h" value="currentCard" />
+                        <node concept="UHIEl" id="3YZxQD4ubH3" role="14whEr">
+                          <node concept="12o7Xu" id="3YZxQD4ubH4" role="UGtiu" />
+                          <node concept="iEArX" id="3YZxQD4ubH5" role="UGzgA" />
+                        </node>
+                        <node concept="oGwWe" id="3YZxQD4ubH6" role="14wm$J">
+                          <node concept="VoZdq" id="3YZxQD4ubH7" role="oGwW1">
+                            <node concept="oGwWe" id="3YZxQD4ubH8" role="Vjt6A">
+                              <node concept="1hRy$k" id="3YZxQD4ubH9" role="oGwW1">
+                                <node concept="3SKdUq" id="3YZxQD4ubHa" role="1hRyKC">
+                                  <property role="3SKdUp" value="It has not been removed, so set removedPair to false" />
+                                </node>
+                              </node>
+                              <node concept="1OAU8p" id="3YZxQD4ubHb" role="oGwW1">
+                                <node concept="1onEp9" id="3YZxQD4uhgp" role="1OAZk8">
+                                  <ref role="1onEp8" node="3YZxQD4uh6N" resolve="stillInHand" />
+                                </node>
+                                <node concept="3hXeDh" id="3YZxQD4ubHd" role="1OAZka">
+                                  <property role="3hXdCw" value="true" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3bXCvG" id="3YZxQD4ubHe" role="Vjt6$">
+                              <node concept="3bXCv_" id="3YZxQD4ubHf" role="ur480">
+                                <node concept="UHIEl" id="3YZxQD4ubHg" role="ur480">
+                                  <node concept="14wbAk" id="3YZxQD4ubHh" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4ubH2" resolve="currentCard" />
+                                  </node>
+                                  <node concept="2xyaO8" id="3YZxQD4ubHi" role="UGzgA" />
+                                </node>
+                                <node concept="UHIEl" id="3YZxQD4ubHj" role="ur48t">
+                                  <node concept="14wbAk" id="3YZxQD4ubHk" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4ubGM" resolve="c" />
+                                  </node>
+                                  <node concept="2xyaO8" id="3YZxQD4ubHl" role="UGzgA" />
+                                </node>
+                              </node>
+                              <node concept="3bXCv_" id="3YZxQD4ubHm" role="ur48t">
+                                <node concept="UHIEl" id="3YZxQD4ubHn" role="ur480">
+                                  <node concept="14wbAk" id="3YZxQD4ubHo" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4ubH2" resolve="currentCard" />
+                                  </node>
+                                  <node concept="2xyLjJ" id="3YZxQD4ubHp" role="UGzgA" />
+                                </node>
+                                <node concept="UHIEl" id="3YZxQD4ubHq" role="ur48t">
+                                  <node concept="14wbAk" id="3YZxQD4ubHr" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4ubGM" resolve="c" />
+                                  </node>
+                                  <node concept="2xyLjJ" id="3YZxQD4ubHs" role="UGzgA" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1hRy$k" id="3YZxQD4ubHt" role="oGwW1">
+                        <node concept="3SKdUq" id="3YZxQD4ubHu" role="1hRyKC">
+                          <property role="3SKdUp" value="The if block here only gets to run if stillInHand is true (meaning the pair has not been removed)" />
+                        </node>
+                      </node>
+                      <node concept="VoZdq" id="3YZxQD4ubHv" role="oGwW1">
+                        <node concept="oGwWe" id="3YZxQD4ubHw" role="Vjt6A">
+                          <node concept="1hRy$k" id="3YZxQD4ubHx" role="oGwW1">
+                            <node concept="3SKdUq" id="3YZxQD4ubHy" role="1hRyKC">
+                              <property role="3SKdUp" value="A Pair has been found!" />
+                            </node>
+                          </node>
+                          <node concept="1PKMQo" id="3YZxQD4ubHz" role="oGwW1">
+                            <node concept="UHIEl" id="3YZxQD4ubH$" role="1PKM$j">
+                              <node concept="12o7Xu" id="3YZxQD4ubH_" role="UGtiu" />
+                              <node concept="iEArX" id="3YZxQD4ubHA" role="UGzgA" />
+                            </node>
+                            <node concept="1onEp9" id="3YZxQD4ubHB" role="1PKM$t">
+                              <ref role="1onEp8" node="1wTVPIemaDS" resolve="discardPile" />
+                            </node>
+                            <node concept="14wbAk" id="3YZxQD4ubHC" role="31qsLp">
+                              <ref role="14wb_7" node="3YZxQD4ubGM" resolve="c" />
+                            </node>
+                          </node>
+                          <node concept="1PKMQo" id="3YZxQD4ubHD" role="oGwW1">
+                            <node concept="UHIEl" id="3YZxQD4ubHE" role="1PKM$j">
+                              <node concept="12o7Xu" id="3YZxQD4ubHF" role="UGtiu" />
+                              <node concept="iEArX" id="3YZxQD4ubHG" role="UGzgA" />
+                            </node>
+                            <node concept="1onEp9" id="3YZxQD4ubHH" role="1PKM$t">
+                              <ref role="1onEp8" node="1wTVPIemaDS" resolve="discardPile" />
+                            </node>
+                            <node concept="14wbAk" id="3YZxQD4ubHI" role="31qsLp">
+                              <ref role="14wb_7" node="3YZxQD4ubGR" resolve="d" />
+                            </node>
+                          </node>
+                          <node concept="1OAU8p" id="3YZxQD4uhMF" role="oGwW1">
+                            <node concept="1onEp9" id="3YZxQD4uj$i" role="1OAZk8">
+                              <ref role="1onEp8" node="3YZxQD4uhKC" resolve="removedPair" />
+                            </node>
+                            <node concept="3hXeDh" id="3YZxQD4uhNz" role="1OAZka">
+                              <property role="3hXdCw" value="true" />
+                            </node>
+                          </node>
+                          <node concept="3g$vrO" id="3YZxQD4ubHM" role="oGwW1">
+                            <node concept="l_Hnr" id="3YZxQD4vXhd" role="3g$a9b">
+                              <property role="l_1hr" value="Player" />
+                            </node>
+                            <node concept="2SJUkI" id="3YZxQD4vXhV" role="3g$a9b" />
+                            <node concept="l_Hnr" id="3YZxQD4ubHO" role="3g$a9b">
+                              <property role="l_1hr" value=" removed pair (" />
+                            </node>
+                            <node concept="14wbAk" id="3YZxQD4ubHP" role="3g$a9b">
+                              <ref role="14wb_7" node="3YZxQD4ubGM" resolve="c" />
+                            </node>
+                            <node concept="l_Hnr" id="3YZxQD4ubHQ" role="3g$a9b">
+                              <property role="l_1hr" value=" : " />
+                            </node>
+                            <node concept="14wbAk" id="3YZxQD4ubHR" role="3g$a9b">
+                              <ref role="14wb_7" node="3YZxQD4ubGR" resolve="d" />
+                            </node>
+                            <node concept="l_Hnr" id="3YZxQD4ubHS" role="3g$a9b">
+                              <property role="l_1hr" value=")" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3bXCvG" id="3YZxQD4ubHU" role="Vjt6$">
+                          <node concept="3bXCv_" id="3YZxQD4ubHV" role="ur480">
+                            <node concept="UHIEl" id="3YZxQD4ubHW" role="ur480">
+                              <node concept="14wbAk" id="3YZxQD4ubHX" role="UGtiu">
+                                <ref role="14wb_7" node="3YZxQD4ubGM" resolve="c" />
+                              </node>
+                              <node concept="2xyaO8" id="3YZxQD4ubHY" role="UGzgA" />
+                            </node>
+                            <node concept="UHIEl" id="3YZxQD4ubHZ" role="ur48t">
+                              <node concept="14wbAk" id="3YZxQD4ubI0" role="UGtiu">
+                                <ref role="14wb_7" node="3YZxQD4ubGR" resolve="d" />
+                              </node>
+                              <node concept="2xyaO8" id="3YZxQD4ubI1" role="UGzgA" />
+                            </node>
+                          </node>
+                          <node concept="3bXCvG" id="3YZxQD4ubI2" role="ur48t">
+                            <node concept="2xRuU$" id="3YZxQD4ubI3" role="ur480">
+                              <node concept="UHIEl" id="3YZxQD4ubI4" role="ur480">
+                                <node concept="14wbAk" id="3YZxQD4ubI5" role="UGtiu">
+                                  <ref role="14wb_7" node="3YZxQD4ubGM" resolve="c" />
+                                </node>
+                                <node concept="2xyLjJ" id="3YZxQD4ubI6" role="UGzgA" />
+                              </node>
+                              <node concept="UHIEl" id="3YZxQD4ubI7" role="ur48t">
+                                <node concept="14wbAk" id="3YZxQD4ubI8" role="UGtiu">
+                                  <ref role="14wb_7" node="3YZxQD4ubGR" resolve="d" />
+                                </node>
+                                <node concept="2xyLjJ" id="3YZxQD4ubI9" role="UGzgA" />
+                              </node>
+                            </node>
+                            <node concept="3bXCv_" id="3YZxQD4ubIa" role="ur48t">
+                              <node concept="3hXeDh" id="3YZxQD4ubIc" role="ur48t">
+                                <property role="3hXdCw" value="true" />
+                              </node>
+                              <node concept="1onEp9" id="3YZxQD4uhkG" role="ur480">
+                                <ref role="1onEp8" node="3YZxQD4uh6N" resolve="stillInHand" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1hRy$k" id="3YZxQD4ubId" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4ubIe" role="1hRyKC">
+              <property role="3SKdUp" value="All Pairs removed at this point for current player" />
+            </node>
+          </node>
+          <node concept="1YWEB$" id="3YZxQD4ubCf" role="oGwW1" />
+        </node>
+        <node concept="oGwWe" id="1wTVPIexPaw" role="3mQBto">
+          <node concept="1hRy$k" id="3YZxQD4u66n" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4u66p" role="1hRyKC">
+              <property role="3SKdUp" value="This is the case where there are cards in a player's hand and it is not the first turn" />
+            </node>
+          </node>
+          <node concept="1hRy$k" id="3YZxQD4u68h" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4u68j" role="1hRyKC">
+              <property role="3SKdUp" value="Determine which player is the one to take cards from" />
+            </node>
+          </node>
+          <node concept="19UzxA" id="1wTVPIexPe2" role="oGwW1">
+            <property role="TrG5h" value="playerToTakeFrom" />
+            <node concept="ur95E" id="1wTVPIeykXo" role="19XdtB">
+              <node concept="2SJUkI" id="1wTVPIeykTH" role="ur480" />
+              <node concept="u$e7c" id="1wTVPIeyl18" role="ur48t">
+                <property role="u$e7I" value="1" />
+              </node>
+            </node>
+          </node>
+          <node concept="VoZdq" id="1wTVPIexPe6" role="oGwW1">
+            <node concept="3bKlKJ" id="1wTVPIexPe7" role="Vjt6$">
+              <node concept="1onEp9" id="1wTVPIexPe8" role="ur480">
+                <ref role="1onEp8" node="1wTVPIexPe2" resolve="playerToTakeFrom" />
+              </node>
+              <node concept="u$e7c" id="1wTVPIexPe9" role="ur48t">
+                <property role="u$e7I" value="1" />
+              </node>
+            </node>
+            <node concept="oGwWe" id="1wTVPIexPea" role="Vjt6A">
+              <node concept="1OAU8p" id="1wTVPIexPeb" role="oGwW1">
+                <node concept="1onEp9" id="1wTVPIexPec" role="1OAZk8">
+                  <ref role="1onEp8" node="1wTVPIexPe2" resolve="playerToTakeFrom" />
+                </node>
+                <node concept="u$e7c" id="1wTVPIexPed" role="1OAZka">
+                  <property role="u$e7I" value="4" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1hRy$k" id="3YZxQD4u6af" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4u6ah" role="1hRyKC">
+              <property role="3SKdUp" value="We know which player we need to take from, but if that player has no cards, check the next one" />
+            </node>
+          </node>
+          <node concept="VoWrB" id="1wTVPIeAO2B" role="oGwW1">
+            <node concept="3bXCv_" id="1wTVPIeAO2C" role="Vjt4r">
+              <node concept="UHIEl" id="1wTVPIeAO2D" role="ur480">
+                <node concept="UHIEl" id="1wTVPIeAO2E" role="UGtiu">
+                  <node concept="kVFV6" id="1wTVPIeAO2F" role="UGtiu">
+                    <node concept="1onEp9" id="1wTVPIeAO2G" role="3XGYTS">
+                      <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
+                    </node>
+                  </node>
+                  <node concept="iEArX" id="1wTVPIeAO2H" role="UGzgA" />
+                </node>
+                <node concept="3A$QB2" id="1wTVPIeAO2I" role="UGzgA" />
+              </node>
+              <node concept="u$e7c" id="1wTVPIeAO2J" role="ur48t">
+                <property role="u$e7I" value="0" />
+              </node>
+            </node>
+            <node concept="oGwWe" id="1wTVPIeAO2K" role="Vjt7H">
+              <node concept="1OAU8p" id="1wTVPIeAO2L" role="oGwW1">
+                <node concept="1onEp9" id="1wTVPIeAO2M" role="1OAZk8">
+                  <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
+                </node>
+                <node concept="ur95E" id="1wTVPIeAO2N" role="1OAZka">
+                  <node concept="1onEp9" id="1wTVPIeAO2O" role="ur480">
+                    <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
+                  </node>
+                  <node concept="u$e7c" id="1wTVPIeAO2P" role="ur48t">
+                    <property role="u$e7I" value="1" />
+                  </node>
+                </node>
+              </node>
+              <node concept="VoZdq" id="1wTVPIeAO2Q" role="oGwW1">
+                <node concept="3bKlKJ" id="1wTVPIeAO2R" role="Vjt6$">
+                  <node concept="1onEp9" id="1wTVPIeAO2S" role="ur480">
+                    <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
+                  </node>
+                  <node concept="u$e7c" id="1wTVPIeAO2T" role="ur48t">
+                    <property role="u$e7I" value="1" />
+                  </node>
+                </node>
+                <node concept="oGwWe" id="1wTVPIeAO2U" role="Vjt6A">
+                  <node concept="1OAU8p" id="1wTVPIeAO2V" role="oGwW1">
+                    <node concept="1onEp9" id="1wTVPIeAO2W" role="1OAZk8">
+                      <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
+                    </node>
+                    <node concept="u$e7c" id="1wTVPIeAO2X" role="1OAZka">
+                      <property role="u$e7I" value="4" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1hRy$k" id="3YZxQD4u6ch" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4u6cj" role="1hRyKC">
+              <property role="3SKdUp" value="At this point we know which player we can take cards from. Wait for selection from that player's hand" />
+            </node>
+          </node>
+          <node concept="2_tLtH" id="1wTVPIexPhp" role="oGwW1">
+            <node concept="3cmrfG" id="1wTVPIexPhO" role="2_tQyO">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="UHIEl" id="1wTVPIexPih" role="2_tQyQ">
+              <node concept="kVFV6" id="1wTVPIexPhW" role="UGtiu">
+                <node concept="1onEp9" id="1wTVPIexPi5" role="3XGYTS">
+                  <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
+                </node>
+              </node>
+              <node concept="iEArX" id="1wTVPIexPmd" role="UGzgA" />
+            </node>
+          </node>
+          <node concept="1hjT1L" id="1wTVPIexPmH" role="oGwW1">
+            <node concept="1hjTiF" id="1wTVPIexPn5" role="1hjovu">
+              <node concept="UHIEl" id="1wTVPIexPXD" role="1hjo2n">
+                <node concept="kVFV6" id="1wTVPIexPne" role="UGtiu">
+                  <node concept="1onEp9" id="1wTVPIexPnn" role="3XGYTS">
+                    <ref role="1onEp8" node="1wTVPIexNFX" resolve="playerToTakeFrom" />
+                  </node>
+                </node>
+                <node concept="iEArX" id="1wTVPIexQ1D" role="UGzgA" />
+              </node>
+              <node concept="UHIEl" id="1wTVPIexPnC" role="1hjo2h">
+                <node concept="12o7Xu" id="1wTVPIexPnz" role="UGtiu" />
+                <node concept="iEArX" id="1wTVPIexPnO" role="UGzgA" />
+              </node>
+            </node>
+          </node>
+          <node concept="3g$vrO" id="3YZxQD4wWio" role="oGwW1">
+            <node concept="l_Hnr" id="3YZxQD4wWlS" role="3g$a9b">
+              <property role="l_1hr" value="Player " />
+            </node>
+            <node concept="2SJUkI" id="3YZxQD4wWnC" role="3g$a9b" />
+            <node concept="l_Hnr" id="3YZxQD4wWnU" role="3g$a9b">
+              <property role="l_1hr" value=" takes " />
+            </node>
+            <node concept="UHIEl" id="3YZxQD4wWmT" role="3g$a9b">
+              <node concept="UHIEl" id="3YZxQD4wWmw" role="UGtiu">
+                <node concept="12o7Xu" id="3YZxQD4wWmr" role="UGtiu" />
+                <node concept="iEArX" id="3YZxQD4wWmH" role="UGzgA" />
+              </node>
+              <node concept="LU8JJ" id="3YZxQD4wWnk" role="UGzgA" />
+            </node>
+          </node>
+          <node concept="1hRy$k" id="3YZxQD4uiCO" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4uiCP" role="1hRyKC">
+              <property role="3SKdUp" value="Find Pairs to remove" />
+            </node>
+          </node>
+          <node concept="VoWpB" id="3YZxQD4uiCQ" role="oGwW1">
+            <property role="TrG5h" value="c" />
+            <node concept="UHIEl" id="3YZxQD4uiCR" role="14whEr">
+              <node concept="12o7Xu" id="3YZxQD4uiCS" role="UGtiu" />
+              <node concept="iEArX" id="3YZxQD4uiCT" role="UGzgA" />
+            </node>
+            <node concept="oGwWe" id="3YZxQD4uiCU" role="14wm$J">
+              <node concept="L_9Bu" id="3YZxQD4uiCV" role="oGwW1">
+                <property role="TrG5h" value="removedPair" />
+                <node concept="3hXeDh" id="3YZxQD4uiCW" role="L_Yhd" />
+              </node>
+              <node concept="VoWpB" id="3YZxQD4uiCX" role="oGwW1">
+                <property role="TrG5h" value="d" />
+                <node concept="UHIEl" id="3YZxQD4uiCY" role="14whEr">
+                  <node concept="12o7Xu" id="3YZxQD4uiCZ" role="UGtiu" />
+                  <node concept="iEArX" id="3YZxQD4uiD0" role="UGzgA" />
+                </node>
+                <node concept="oGwWe" id="3YZxQD4uiD1" role="14wm$J">
+                  <node concept="1hRy$k" id="3YZxQD4uiD2" role="oGwW1">
+                    <node concept="3SKdUq" id="3YZxQD4uiD3" role="1hRyKC">
+                      <property role="3SKdUp" value="Only check for pair if it has not already been removed in previous iteration" />
+                    </node>
+                  </node>
+                  <node concept="VoZdq" id="3YZxQD4uiD4" role="oGwW1">
+                    <node concept="3bXCv_" id="3YZxQD4uiD5" role="Vjt6$">
+                      <node concept="1onEp9" id="3YZxQD4ujwf" role="ur480">
+                        <ref role="1onEp8" node="3YZxQD4uhKC" resolve="removedPair" />
+                      </node>
+                      <node concept="3hXeDh" id="3YZxQD4uiD7" role="ur48t">
+                        <property role="3hXdCw" value="false" />
+                      </node>
+                    </node>
+                    <node concept="oGwWe" id="3YZxQD4uiD8" role="Vjt6A">
+                      <node concept="1hRy$k" id="3YZxQD4uiD9" role="oGwW1">
+                        <node concept="3SKdUq" id="3YZxQD4uiDa" role="1hRyKC">
+                          <property role="3SKdUp" value="Start by checking if the card c has been removed in a previous iteration" />
+                        </node>
+                      </node>
+                      <node concept="L_9Bu" id="3YZxQD4uiDb" role="oGwW1">
+                        <property role="TrG5h" value="stillInHand" />
+                        <node concept="3hXeDh" id="3YZxQD4uiDc" role="L_Yhd" />
+                      </node>
+                      <node concept="1hRy$k" id="3YZxQD4uiDd" role="oGwW1">
+                        <node concept="3SKdUq" id="3YZxQD4uiDe" role="1hRyKC">
+                          <property role="3SKdUp" value="Check if the Card c has already been removed" />
+                        </node>
+                      </node>
+                      <node concept="VoWpB" id="3YZxQD4uiDf" role="oGwW1">
+                        <property role="TrG5h" value="currentCard" />
+                        <node concept="UHIEl" id="3YZxQD4uiDg" role="14whEr">
+                          <node concept="12o7Xu" id="3YZxQD4uiDh" role="UGtiu" />
+                          <node concept="iEArX" id="3YZxQD4uiDi" role="UGzgA" />
+                        </node>
+                        <node concept="oGwWe" id="3YZxQD4uiDj" role="14wm$J">
+                          <node concept="VoZdq" id="3YZxQD4uiDk" role="oGwW1">
+                            <node concept="oGwWe" id="3YZxQD4uiDl" role="Vjt6A">
+                              <node concept="1hRy$k" id="3YZxQD4uiDm" role="oGwW1">
+                                <node concept="3SKdUq" id="3YZxQD4uiDn" role="1hRyKC">
+                                  <property role="3SKdUp" value="It has not been removed, so set removedPair to false" />
+                                </node>
+                              </node>
+                              <node concept="1OAU8p" id="3YZxQD4uiDo" role="oGwW1">
+                                <node concept="1onEp9" id="3YZxQD4uiDp" role="1OAZk8">
+                                  <ref role="1onEp8" node="3YZxQD4uiDb" resolve="stillInHand" />
+                                </node>
+                                <node concept="3hXeDh" id="3YZxQD4uiDq" role="1OAZka">
+                                  <property role="3hXdCw" value="true" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3bXCvG" id="3YZxQD4uiDr" role="Vjt6$">
+                              <node concept="3bXCv_" id="3YZxQD4uiDs" role="ur480">
+                                <node concept="UHIEl" id="3YZxQD4uiDt" role="ur480">
+                                  <node concept="14wbAk" id="3YZxQD4uiDu" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4uiDf" resolve="currentCard" />
+                                  </node>
+                                  <node concept="2xyaO8" id="3YZxQD4uiDv" role="UGzgA" />
+                                </node>
+                                <node concept="UHIEl" id="3YZxQD4uiDw" role="ur48t">
+                                  <node concept="14wbAk" id="3YZxQD4uiDx" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4uiCQ" resolve="c" />
+                                  </node>
+                                  <node concept="2xyaO8" id="3YZxQD4uiDy" role="UGzgA" />
+                                </node>
+                              </node>
+                              <node concept="3bXCv_" id="3YZxQD4uiDz" role="ur48t">
+                                <node concept="UHIEl" id="3YZxQD4uiD$" role="ur480">
+                                  <node concept="14wbAk" id="3YZxQD4uiD_" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4uiDf" resolve="currentCard" />
+                                  </node>
+                                  <node concept="2xyLjJ" id="3YZxQD4uiDA" role="UGzgA" />
+                                </node>
+                                <node concept="UHIEl" id="3YZxQD4uiDB" role="ur48t">
+                                  <node concept="14wbAk" id="3YZxQD4uiDC" role="UGtiu">
+                                    <ref role="14wb_7" node="3YZxQD4uiCQ" resolve="c" />
+                                  </node>
+                                  <node concept="2xyLjJ" id="3YZxQD4uiDD" role="UGzgA" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1hRy$k" id="3YZxQD4uiDE" role="oGwW1">
+                        <node concept="3SKdUq" id="3YZxQD4uiDF" role="1hRyKC">
+                          <property role="3SKdUp" value="The if block here only gets to run if stillInHand is true (meaning the pair has not been removed)" />
+                        </node>
+                      </node>
+                      <node concept="VoZdq" id="3YZxQD4uiDG" role="oGwW1">
+                        <node concept="oGwWe" id="3YZxQD4uiDH" role="Vjt6A">
+                          <node concept="1hRy$k" id="3YZxQD4uiDI" role="oGwW1">
+                            <node concept="3SKdUq" id="3YZxQD4uiDJ" role="1hRyKC">
+                              <property role="3SKdUp" value="A Pair has been found!" />
+                            </node>
+                          </node>
+                          <node concept="1PKMQo" id="3YZxQD4uiDK" role="oGwW1">
+                            <node concept="UHIEl" id="3YZxQD4uiDL" role="1PKM$j">
+                              <node concept="12o7Xu" id="3YZxQD4uiDM" role="UGtiu" />
+                              <node concept="iEArX" id="3YZxQD4uiDN" role="UGzgA" />
+                            </node>
+                            <node concept="1onEp9" id="3YZxQD4uiDO" role="1PKM$t">
+                              <ref role="1onEp8" node="1wTVPIemaDS" resolve="discardPile" />
+                            </node>
+                            <node concept="14wbAk" id="3YZxQD4uiDP" role="31qsLp">
+                              <ref role="14wb_7" node="3YZxQD4uiCQ" resolve="c" />
+                            </node>
+                          </node>
+                          <node concept="1PKMQo" id="3YZxQD4uiDQ" role="oGwW1">
+                            <node concept="UHIEl" id="3YZxQD4uiDR" role="1PKM$j">
+                              <node concept="12o7Xu" id="3YZxQD4uiDS" role="UGtiu" />
+                              <node concept="iEArX" id="3YZxQD4uiDT" role="UGzgA" />
+                            </node>
+                            <node concept="1onEp9" id="3YZxQD4uiDU" role="1PKM$t">
+                              <ref role="1onEp8" node="1wTVPIemaDS" resolve="discardPile" />
+                            </node>
+                            <node concept="14wbAk" id="3YZxQD4uiDV" role="31qsLp">
+                              <ref role="14wb_7" node="3YZxQD4uiCX" resolve="d" />
+                            </node>
+                          </node>
+                          <node concept="1OAU8p" id="3YZxQD4uiDW" role="oGwW1">
+                            <node concept="1onEp9" id="3YZxQD4ujwU" role="1OAZk8">
+                              <ref role="1onEp8" node="3YZxQD4uhKC" resolve="removedPair" />
+                            </node>
+                            <node concept="3hXeDh" id="3YZxQD4uiDY" role="1OAZka">
+                              <property role="3hXdCw" value="true" />
+                            </node>
+                          </node>
+                          <node concept="3g$vrO" id="3YZxQD4uiDZ" role="oGwW1">
+                            <node concept="l_Hnr" id="3YZxQD4vXik" role="3g$a9b">
+                              <property role="l_1hr" value="Player " />
+                            </node>
+                            <node concept="2SJUkI" id="3YZxQD4vXi4" role="3g$a9b" />
+                            <node concept="l_Hnr" id="3YZxQD4uiE1" role="3g$a9b">
+                              <property role="l_1hr" value=" removed pair (" />
+                            </node>
+                            <node concept="14wbAk" id="3YZxQD4uiE2" role="3g$a9b">
+                              <ref role="14wb_7" node="3YZxQD4uiCQ" resolve="c" />
+                            </node>
+                            <node concept="l_Hnr" id="3YZxQD4uiE3" role="3g$a9b">
+                              <property role="l_1hr" value=" : " />
+                            </node>
+                            <node concept="14wbAk" id="3YZxQD4uiE4" role="3g$a9b">
+                              <ref role="14wb_7" node="3YZxQD4uiCX" resolve="d" />
+                            </node>
+                            <node concept="l_Hnr" id="3YZxQD4uiE5" role="3g$a9b">
+                              <property role="l_1hr" value=")" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3bXCvG" id="3YZxQD4uiE6" role="Vjt6$">
+                          <node concept="3bXCv_" id="3YZxQD4uiE7" role="ur480">
+                            <node concept="UHIEl" id="3YZxQD4uiE8" role="ur480">
+                              <node concept="14wbAk" id="3YZxQD4uiE9" role="UGtiu">
+                                <ref role="14wb_7" node="3YZxQD4uiCQ" resolve="c" />
+                              </node>
+                              <node concept="2xyaO8" id="3YZxQD4uiEa" role="UGzgA" />
+                            </node>
+                            <node concept="UHIEl" id="3YZxQD4uiEb" role="ur48t">
+                              <node concept="14wbAk" id="3YZxQD4uiEc" role="UGtiu">
+                                <ref role="14wb_7" node="3YZxQD4uiCX" resolve="d" />
+                              </node>
+                              <node concept="2xyaO8" id="3YZxQD4uiEd" role="UGzgA" />
+                            </node>
+                          </node>
+                          <node concept="3bXCvG" id="3YZxQD4uiEe" role="ur48t">
+                            <node concept="2xRuU$" id="3YZxQD4uiEf" role="ur480">
+                              <node concept="UHIEl" id="3YZxQD4uiEg" role="ur480">
+                                <node concept="14wbAk" id="3YZxQD4uiEh" role="UGtiu">
+                                  <ref role="14wb_7" node="3YZxQD4uiCQ" resolve="c" />
+                                </node>
+                                <node concept="2xyLjJ" id="3YZxQD4uiEi" role="UGzgA" />
+                              </node>
+                              <node concept="UHIEl" id="3YZxQD4uiEj" role="ur48t">
+                                <node concept="14wbAk" id="3YZxQD4uiEk" role="UGtiu">
+                                  <ref role="14wb_7" node="3YZxQD4uiCX" resolve="d" />
+                                </node>
+                                <node concept="2xyLjJ" id="3YZxQD4uiEl" role="UGzgA" />
+                              </node>
+                            </node>
+                            <node concept="3bXCv_" id="3YZxQD4uiEm" role="ur48t">
+                              <node concept="3hXeDh" id="3YZxQD4uiEn" role="ur48t">
+                                <property role="3hXdCw" value="true" />
+                              </node>
+                              <node concept="1onEp9" id="3YZxQD4uiEo" role="ur480">
+                                <ref role="1onEp8" node="3YZxQD4uiDb" resolve="stillInHand" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1hRy$k" id="3YZxQD4uiEp" role="oGwW1">
+            <node concept="3SKdUq" id="3YZxQD4uiEq" role="1hRyKC">
+              <property role="3SKdUp" value="All Pairs removed at this point for current player" />
+            </node>
+          </node>
+          <node concept="1YWEB$" id="3YZxQD4ub_I" role="oGwW1" />
+          <node concept="190LuV" id="1wTVPIeAKk5" role="oGwW1">
+            <node concept="UHIEl" id="1wTVPIeAKn2" role="190LuB">
+              <node concept="12o7Xu" id="1wTVPIeAKmT" role="UGtiu" />
+              <node concept="iEArX" id="1wTVPIeAKne" role="UGzgA" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
-    <node role="endBlock" roleId="ffsp.3561890535519279272" type="ffsp.EndBlock" typeId="ffsp.3561890535518455856" id="1745689507091309887" nodeInfo="ng">
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426236443" nodeInfo="ng">
-        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426236445" nodeInfo="nn">
-          <property name="text" nameId="tpee.6329021646629104958" value="Prints the information about the game after it has ended" />
-        </node>
-      </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Comment" typeId="ffsp.7501337804237190121" id="4593539035426236555" nodeInfo="ng">
-        <node role="comment" roleId="ffsp.7501337804237190869" type="tpee.TextCommentPart" typeId="tpee.6329021646629104957" id="4593539035426236557" nodeInfo="nn">
-          <property name="text" nameId="tpee.6329021646629104958" value="This checks to see which player has a hand of size equal to 1" />
-        </node>
-      </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="1745689507096359488" nodeInfo="ng">
-        <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="1745689507096359620" nodeInfo="ng">
-          <property name="value" nameId="ffsp.8642299736868227465" value="---Game is OVER---" />
-        </node>
-      </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.IfStatement" typeId="ffsp.5565452210787026454" id="1745689507096357601" nodeInfo="ng">
-        <node role="condition" roleId="ffsp.5565452210788213992" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="1745689507096357727" nodeInfo="ng">
-          <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096357678" nodeInfo="ng">
-            <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096357640" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507096357613" nodeInfo="ng">
-                <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096357624" nodeInfo="ng">
-                  <property name="number" nameId="ffsp.2455425859176336673" value="1" />
+    <node concept="1N_3cZ" id="1wTVPIejukX" role="3Q6DUf">
+      <node concept="3bXCv_" id="1wTVPIers1m" role="3pBPzE">
+        <node concept="urb4J" id="1wTVPIers6x" role="ur480">
+          <node concept="UHIEl" id="1wTVPIersuI" role="ur480">
+            <node concept="UHIEl" id="1wTVPIers2U" role="UGtiu">
+              <node concept="kVFV6" id="1wTVPIers2b" role="UGtiu">
+                <node concept="u$e7c" id="1wTVPIers2w" role="3XGYTS">
+                  <property role="u$e7I" value="1" />
                 </node>
               </node>
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507096357664" nodeInfo="ng" />
+              <node concept="iEArX" id="1wTVPIerstd" role="UGzgA" />
             </node>
-            <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="1745689507096357702" nodeInfo="ng" />
+            <node concept="3A$QB2" id="1wTVPIersww" role="UGzgA" />
           </node>
-          <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096357789" nodeInfo="ng">
-            <property name="number" nameId="ffsp.2455425859176336673" value="1" />
-          </node>
-        </node>
-        <node role="body" roleId="ffsp.5565452210788213994" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507096357603" nodeInfo="ng">
-          <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="1745689507096357815" nodeInfo="ng">
-            <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="1745689507096357817" nodeInfo="ng">
-              <property name="value" nameId="ffsp.8642299736868227465" value="Player 1 is stuck with the Old Maid!" />
-            </node>
-          </node>
-        </node>
-        <node role="elseIf" roleId="ffsp.5565452210788292793" type="ffsp.ElseIfStatement" typeId="ffsp.5565452210787037996" id="1745689507096358015" nodeInfo="ng">
-          <node role="condition" roleId="ffsp.5565452210788214067" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="1745689507096358179" nodeInfo="ng">
-            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096358127" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096358095" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507096358068" nodeInfo="ng">
-                  <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096358079" nodeInfo="ng">
-                    <property name="number" nameId="ffsp.2455425859176336673" value="2" />
+          <node concept="urb4J" id="1wTVPIersgj" role="ur48t">
+            <node concept="UHIEl" id="1wTVPIersya" role="ur480">
+              <node concept="UHIEl" id="1wTVPIers8H" role="UGtiu">
+                <node concept="kVFV6" id="1wTVPIers7j" role="UGtiu">
+                  <node concept="u$e7c" id="1wTVPIers7X" role="3XGYTS">
+                    <property role="u$e7I" value="2" />
                   </node>
                 </node>
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507096358119" nodeInfo="ng" />
+                <node concept="iEArX" id="1wTVPIers9_" role="UGzgA" />
               </node>
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="1745689507096358165" nodeInfo="ng" />
+              <node concept="3A$QB2" id="1wTVPIerszd" role="UGzgA" />
             </node>
-            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096358229" nodeInfo="ng">
-              <property name="number" nameId="ffsp.2455425859176336673" value="1" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.5565452210788214069" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507096357973" nodeInfo="ng">
-            <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="1745689507096358255" nodeInfo="ng">
-              <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="1745689507096358257" nodeInfo="ng">
-                <property name="value" nameId="ffsp.8642299736868227465" value="Player 2 is stuck with the Old Maid!" />
+            <node concept="urb4J" id="1wTVPIerslT" role="ur48t">
+              <node concept="UHIEl" id="1wTVPIers_4" role="ur480">
+                <node concept="UHIEl" id="1wTVPIersjx" role="UGtiu">
+                  <node concept="kVFV6" id="1wTVPIershr" role="UGtiu">
+                    <node concept="u$e7c" id="1wTVPIersir" role="3XGYTS">
+                      <property role="u$e7I" value="3" />
+                    </node>
+                  </node>
+                  <node concept="iEArX" id="1wTVPIerskJ" role="UGzgA" />
+                </node>
+                <node concept="3A$QB2" id="1wTVPIersAc" role="UGzgA" />
+              </node>
+              <node concept="UHIEl" id="1wTVPIersCd" role="ur48t">
+                <node concept="UHIEl" id="1wTVPIersq9" role="UGtiu">
+                  <node concept="kVFV6" id="1wTVPIersnn" role="UGtiu">
+                    <node concept="u$e7c" id="1wTVPIersoH" role="3XGYTS">
+                      <property role="u$e7I" value="4" />
+                    </node>
+                  </node>
+                  <node concept="iEArX" id="1wTVPIersrH" role="UGzgA" />
+                </node>
+                <node concept="3A$QB2" id="1wTVPIersEt" role="UGzgA" />
               </node>
             </node>
           </node>
         </node>
-        <node role="elseIf" roleId="ffsp.5565452210788292793" type="ffsp.ElseIfStatement" typeId="ffsp.5565452210787037996" id="1745689507096358949" nodeInfo="ng">
-          <node role="condition" roleId="ffsp.5565452210788214067" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="1745689507096358950" nodeInfo="ng">
-            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096358951" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096358952" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507096358953" nodeInfo="ng">
-                  <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096358954" nodeInfo="ng">
-                    <property name="number" nameId="ffsp.2455425859176336673" value="3" />
-                  </node>
-                </node>
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507096358955" nodeInfo="ng" />
-              </node>
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="1745689507096358956" nodeInfo="ng" />
-            </node>
-            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096358957" nodeInfo="ng">
-              <property name="number" nameId="ffsp.2455425859176336673" value="1" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.5565452210788214069" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507096358958" nodeInfo="ng">
-            <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="1745689507096358959" nodeInfo="ng">
-              <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="1745689507096358960" nodeInfo="ng">
-                <property name="value" nameId="ffsp.8642299736868227465" value="Player 3 is stuck with the Old Maid!" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="elseIf" roleId="ffsp.5565452210788292793" type="ffsp.ElseIfStatement" typeId="ffsp.5565452210787037996" id="1745689507096359153" nodeInfo="ng">
-          <node role="condition" roleId="ffsp.5565452210788214067" type="ffsp.EqualToStatement" typeId="ffsp.7881733640606387481" id="1745689507096359154" nodeInfo="ng">
-            <node role="left" roleId="ffsp.2455425859176050383" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096359155" nodeInfo="ng">
-              <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.dotOperator" typeId="ffsp.2719425773106347456" id="1745689507096359156" nodeInfo="ng">
-                <node role="operand" roleId="ffsp.2719425773106398155" type="ffsp.Player" typeId="ffsp.2834967828304063230" id="1745689507096359157" nodeInfo="ng">
-                  <node role="number" roleId="ffsp.6952526287832333226" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096359158" nodeInfo="ng">
-                    <property name="number" nameId="ffsp.2455425859176336673" value="4" />
-                  </node>
-                </node>
-                <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Hand" typeId="ffsp.2241509385806353940" id="1745689507096359159" nodeInfo="ng" />
-              </node>
-              <node role="operation" roleId="ffsp.2719425773106586483" type="ffsp.Size" typeId="ffsp.2190890532995396246" id="1745689507096359160" nodeInfo="ng" />
-            </node>
-            <node role="right" roleId="ffsp.2455425859176050386" type="ffsp.NumberConstant" typeId="ffsp.2455425859176336643" id="1745689507096359161" nodeInfo="ng">
-              <property name="number" nameId="ffsp.2455425859176336673" value="1" />
-            </node>
-          </node>
-          <node role="body" roleId="ffsp.5565452210788214069" type="ffsp.CommandList" typeId="ffsp.2824091188896932087" id="1745689507096359162" nodeInfo="ng">
-            <node role="body" roleId="ffsp.2824091188896932088" type="ffsp.Print" typeId="ffsp.6265495446096081949" id="1745689507096359163" nodeInfo="ng">
-              <node role="string" roleId="ffsp.6265495446096126114" type="ffsp.StringConstant" typeId="ffsp.8642299736868079625" id="1745689507096359164" nodeInfo="ng">
-                <property name="value" nameId="ffsp.8642299736868227465" value="Player 4 is stuck with the Old Maid!" />
-              </node>
-            </node>
-          </node>
+        <node concept="u$e7c" id="1wTVPIers1T" role="ur48t">
+          <property role="u$e7I" value="1" />
         </node>
       </node>
-      <node role="body" roleId="ffsp.5160494638280568539" type="ffsp.EmptyLine" typeId="ffsp.1298433529544597390" id="1745689507096358689" nodeInfo="ng" />
     </node>
-  </root>
+    <node concept="N2iyy" id="1wTVPIejukZ" role="N7rwU">
+      <node concept="1hRy$k" id="3YZxQD4uawr" role="1NAaLj">
+        <node concept="3SKdUq" id="3YZxQD4uawt" role="1hRyKC">
+          <property role="3SKdUp" value="Prints the information about the game after it has ended" />
+        </node>
+      </node>
+      <node concept="1hRy$k" id="3YZxQD4uayb" role="1NAaLj">
+        <node concept="3SKdUq" id="3YZxQD4uayd" role="1hRyKC">
+          <property role="3SKdUp" value="This checks to see which player has a hand of size equal to 1" />
+        </node>
+      </node>
+      <node concept="3g$vrO" id="1wTVPIeAJ90" role="1NAaLj">
+        <node concept="l_Hnr" id="1wTVPIeAJb4" role="3g$a9b">
+          <property role="l_1hr" value="---Game is OVER---" />
+        </node>
+      </node>
+      <node concept="VoZdq" id="1wTVPIeAIFx" role="1NAaLj">
+        <node concept="3bXCv_" id="1wTVPIeAIHv" role="Vjt6$">
+          <node concept="UHIEl" id="1wTVPIeAIGI" role="ur480">
+            <node concept="UHIEl" id="1wTVPIeAIG8" role="UGtiu">
+              <node concept="kVFV6" id="1wTVPIeAIFH" role="UGtiu">
+                <node concept="u$e7c" id="1wTVPIeAIFS" role="3XGYTS">
+                  <property role="u$e7I" value="1" />
+                </node>
+              </node>
+              <node concept="iEArX" id="1wTVPIeAIGw" role="UGzgA" />
+            </node>
+            <node concept="3A$QB2" id="1wTVPIeAIH6" role="UGzgA" />
+          </node>
+          <node concept="u$e7c" id="1wTVPIeAIIt" role="ur48t">
+            <property role="u$e7I" value="1" />
+          </node>
+        </node>
+        <node concept="oGwWe" id="1wTVPIeAIFz" role="Vjt6A">
+          <node concept="3g$vrO" id="1wTVPIeAIIR" role="oGwW1">
+            <node concept="l_Hnr" id="1wTVPIeAIIT" role="3g$a9b">
+              <property role="l_1hr" value="Player 1 is stuck with the Old Maid!" />
+            </node>
+          </node>
+        </node>
+        <node concept="VoWpw" id="1wTVPIeAILZ" role="VjERP">
+          <node concept="3bXCv_" id="1wTVPIeAIOz" role="Vjt1Z">
+            <node concept="UHIEl" id="1wTVPIeAINJ" role="ur480">
+              <node concept="UHIEl" id="1wTVPIeAINf" role="UGtiu">
+                <node concept="kVFV6" id="1wTVPIeAIMO" role="UGtiu">
+                  <node concept="u$e7c" id="1wTVPIeAIMZ" role="3XGYTS">
+                    <property role="u$e7I" value="2" />
+                  </node>
+                </node>
+                <node concept="iEArX" id="1wTVPIeAINB" role="UGzgA" />
+              </node>
+              <node concept="3A$QB2" id="1wTVPIeAIOl" role="UGzgA" />
+            </node>
+            <node concept="u$e7c" id="1wTVPIeAIPl" role="ur48t">
+              <property role="u$e7I" value="1" />
+            </node>
+          </node>
+          <node concept="oGwWe" id="1wTVPIeAILl" role="Vjt1T">
+            <node concept="3g$vrO" id="1wTVPIeAIPJ" role="oGwW1">
+              <node concept="l_Hnr" id="1wTVPIeAIPL" role="3g$a9b">
+                <property role="l_1hr" value="Player 2 is stuck with the Old Maid!" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VoWpw" id="1wTVPIeAJ0_" role="VjERP">
+          <node concept="3bXCv_" id="1wTVPIeAJ0A" role="Vjt1Z">
+            <node concept="UHIEl" id="1wTVPIeAJ0B" role="ur480">
+              <node concept="UHIEl" id="1wTVPIeAJ0C" role="UGtiu">
+                <node concept="kVFV6" id="1wTVPIeAJ0D" role="UGtiu">
+                  <node concept="u$e7c" id="1wTVPIeAJ0E" role="3XGYTS">
+                    <property role="u$e7I" value="3" />
+                  </node>
+                </node>
+                <node concept="iEArX" id="1wTVPIeAJ0F" role="UGzgA" />
+              </node>
+              <node concept="3A$QB2" id="1wTVPIeAJ0G" role="UGzgA" />
+            </node>
+            <node concept="u$e7c" id="1wTVPIeAJ0H" role="ur48t">
+              <property role="u$e7I" value="1" />
+            </node>
+          </node>
+          <node concept="oGwWe" id="1wTVPIeAJ0I" role="Vjt1T">
+            <node concept="3g$vrO" id="1wTVPIeAJ0J" role="oGwW1">
+              <node concept="l_Hnr" id="1wTVPIeAJ0K" role="3g$a9b">
+                <property role="l_1hr" value="Player 3 is stuck with the Old Maid!" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VoWpw" id="1wTVPIeAJ3L" role="VjERP">
+          <node concept="3bXCv_" id="1wTVPIeAJ3M" role="Vjt1Z">
+            <node concept="UHIEl" id="1wTVPIeAJ3N" role="ur480">
+              <node concept="UHIEl" id="1wTVPIeAJ3O" role="UGtiu">
+                <node concept="kVFV6" id="1wTVPIeAJ3P" role="UGtiu">
+                  <node concept="u$e7c" id="1wTVPIeAJ3Q" role="3XGYTS">
+                    <property role="u$e7I" value="4" />
+                  </node>
+                </node>
+                <node concept="iEArX" id="1wTVPIeAJ3R" role="UGzgA" />
+              </node>
+              <node concept="3A$QB2" id="1wTVPIeAJ3S" role="UGzgA" />
+            </node>
+            <node concept="u$e7c" id="1wTVPIeAJ3T" role="ur48t">
+              <property role="u$e7I" value="1" />
+            </node>
+          </node>
+          <node concept="oGwWe" id="1wTVPIeAJ3U" role="Vjt1T">
+            <node concept="3g$vrO" id="1wTVPIeAJ3V" role="oGwW1">
+              <node concept="l_Hnr" id="1wTVPIeAJ3W" role="3g$a9b">
+                <property role="l_1hr" value="Player 4 is stuck with the Old Maid!" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1YWEB$" id="1wTVPIeAIWx" role="1NAaLj" />
+    </node>
+  </node>
 </model>
 

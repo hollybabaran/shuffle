@@ -1,1242 +1,1290 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="46">
-  <persistence version="8" />
-  <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="4fqr" modelUID="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" version="-1" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" />
-  <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="ffsp" modelUID="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)" version="46" implicit="yes" />
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2834967828303451498" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Deck" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="CardSet" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3854676059697220626" resolveInfo="CardCollection" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2834967828303785259" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Main" />
-    <property name="rootable" nameId="tpce.1096454100552" value="true" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5722923068946478776" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="setupBlock" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5160494638280649077" resolveInfo="SetupBlock" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="465858332974171242" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="computerTurnBlock" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="465858332974170854" resolveInfo="ComputerTurnBlock" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1790098884239327234" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="playerTurnBlock" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="1790098884239250114" resolveInfo="PlayerTurnBlock" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8340020017782161297" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="functions" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8340020017781900658" resolveInfo="FunctionDefinition" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5722923068946478778" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="winConditionBlock" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5160494638280864183" resolveInfo="WinConditionBlock" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3561890535519279272" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="endBlock" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="3561890535518455856" resolveInfo="EndBlock" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2834967828304552915" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4fqr.4666195181811081429" resolveInfo="IMainClass" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7674520359937817749" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.3734116213129792499" resolveInfo="ScopeProvider" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2834967828303818439" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Card" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Card" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2834967828304050224" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="rank" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="3854676059697653018" resolveInfo="Rank" />
-    </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2834967828304063038" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="suit" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="3854676059697652960" resolveInfo="Suit" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2834967828303856791" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="VariableDeclaration" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7674520359935706740" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2834967828304063230" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Player" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="player" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6952526287830939805" resolveInfo="AbstractVariableReference" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6952526287832333226" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="number" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7674520359934846973" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Number" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.Number" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Number" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7674520359935510780" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="expression" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7674520359934875793" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7674520359936137193" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Command" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7674520359936346144" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ShuffleDeck" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="shuffle" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7674520359936346172" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="deck" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3854676059697220626" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="CardCollection" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1792558764413319989" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="size" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3854676059697258441" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="cards" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2834967828303818439" resolveInfo="Card" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3854676059697422932" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection.Pile" />
-    <property name="name" nameId="tpck.1169194664001" value="Pile" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="create Pile" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3854676059697220626" resolveInfo="CardCollection" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2824091188896369485" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="faceup" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="2824091188895594038" resolveInfo="faceupdown" />
-    </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="162709756679410976" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="displayType" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="162709756679418747" resolveInfo="CCDisplayType" />
-    </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8960773502389131203" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="horizontal" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8960773502389047198" resolveInfo="Horizontal" />
-    </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8960773502389131208" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="vertical" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8960773502389052909" resolveInfo="Vertical" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="1721387915554876123" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-  </root>
-  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="3854676059697652960" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Card" />
-    <property name="name" nameId="tpck.1169194664001" value="Suit" />
-    <property name="memberIdentifierPolicy" nameId="tpce.1197591154882" value="derive_from_presentation" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652961" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="S" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652962" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="H" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="2" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652965" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="C" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="3" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697652969" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="D" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="4" />
-    </node>
-  </root>
-  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="3854676059697653018" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Card" />
-    <property name="name" nameId="tpck.1169194664001" value="Rank" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653019" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="A" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653020" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="2" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="2" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653023" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="3" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="3" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653027" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="4" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="4" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653032" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="5" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="5" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653038" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="6" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="6" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653045" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="7" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="7" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653053" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="8" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="8" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653062" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="9" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="9" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653072" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="10" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="10" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653083" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="J" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="11" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653095" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="Q" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="12" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3854676059697653108" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="K" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="13" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5160494638280568420" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="CommandBlock" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="150989085052660317" resolveInfo="Block" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="5160494638280568776" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="name" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5160494638280568539" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="body" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5160494638280649077" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
-    <property name="name" nameId="tpck.1169194664001" value="SetupBlock" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Setup Board" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5160494638280568420" resolveInfo="CommandBlock" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5160494638280864183" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
-    <property name="name" nameId="tpck.1169194664001" value="WinConditionBlock" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="End Condition" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="150989085052660316" resolveInfo="ConditionBlock" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7881733640606387490" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="GreaterThanStatement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="greater than" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5565452210787642242" resolveInfo="BooleanExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5565452210787642242" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="BooleanExpression" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176050087" resolveInfo="ShuffleBinaryExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7881733640606387386" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="OrStatement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="or" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5565452210787642242" resolveInfo="BooleanExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7881733640606387472" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="AndStatement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="and" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5565452210787642242" resolveInfo="BooleanExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5565452210787037996" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="ControlFlow" />
-    <property name="name" nameId="tpck.1169194664001" value="ElseIfStatement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="else if" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5565452210788214067" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="condition" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5565452210788214069" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="body" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2824091188896932087" resolveInfo="CommandList" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5565452210787026454" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="IfStatement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="if" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="ControlFlow" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5565452210788213992" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="condition" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5565452210788213994" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="body" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2824091188896932087" resolveInfo="CommandList" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5565452210788292793" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="elseIf" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5565452210787037996" resolveInfo="ElseIfStatement" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8116400040793688461" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="elseBody" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2824091188896932087" resolveInfo="CommandList" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5565452210787037995" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="ControlFlow" />
-    <property name="name" nameId="tpck.1169194664001" value="ForEachStatement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="for each" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7878805613278803603" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7878805613278804333" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="cardPile" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7878805613278808793" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="body" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2824091188896932087" resolveInfo="CommandList" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="150989085052660317" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
-    <property name="name" nameId="tpck.1169194664001" value="Block" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="150989085052660316" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
-    <property name="name" nameId="tpck.1169194664001" value="ConditionBlock" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="150989085052660317" resolveInfo="Block" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="150989085052711727" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="condition" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7881733640607028947" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="LessThanStatement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="less than" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5565452210787642242" resolveInfo="BooleanExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7881733640606387481" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="EqualToStatement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="equal to" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5565452210787642242" resolveInfo="BooleanExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5565452210787038123" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="ControlFlow" />
-    <property name="name" nameId="tpck.1169194664001" value="WhileStatement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="while" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5565452210788213847" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="condition" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5565452210787642242" resolveInfo="BooleanExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5565452210788213921" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="body" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2824091188896932087" resolveInfo="CommandList" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5565452210787038188" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="NotStatement" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="not" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7881733640606383392" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="orignal" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1721387915554939518" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="NumPlayers" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="number of players" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4224678445064422349" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="4224678445064421088" resolveInfo="setupCommand" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7163396788749457844" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="expression" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6162892231914410061" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Move" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="move" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6162892231914411206" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="pile1" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6162892231914411208" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="pile2" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4654595638702489163" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="cardNumbers" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6304222537138290358" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="VariableReference" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="VariableReference" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6952526287830939805" resolveInfo="AbstractVariableReference" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6304222537138290359" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="variable" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4113687324191539085" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
-    <property name="name" nameId="tpck.1169194664001" value="CurrentPlayer" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="currentPlayer" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6952526287830939805" resolveInfo="AbstractVariableReference" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="465858332974170854" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
-    <property name="name" nameId="tpck.1169194664001" value="ComputerTurnBlock" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Computer Turn" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5160494638280568420" resolveInfo="CommandBlock" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1298433529544597390" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="EmptyLine" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2241509385806353940" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
-    <property name="name" nameId="tpck.1169194664001" value="Hand" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="hand" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2719425773106875611" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2719425773106586486" resolveInfo="dotOperation" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2190890532995396246" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.Number" />
-    <property name="name" nameId="tpck.1169194664001" value="Size" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="size" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2719425773108112489" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2719425773106586486" resolveInfo="dotOperation" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6952526287830939805" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="VariableReference" />
-    <property name="name" nameId="tpck.1169194664001" value="AbstractVariableReference" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5084755040949647097" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="VariableReference" />
-    <property name="name" nameId="tpck.1169194664001" value="DeckReference" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="CardSet" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6952526287830939805" resolveInfo="AbstractVariableReference" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5084755040949780445" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="deck" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2834967828303451498" resolveInfo="Deck" />
-    </node>
-  </root>
-  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="2824091188895594038" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
-    <property name="name" nameId="tpck.1169194664001" value="faceupdown" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2824091188895594497" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="faceup" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="true" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="2824091188895612938" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="facedown" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="false" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1415725632945178473" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="DefaultDeck" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="default CardSet" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303451498" resolveInfo="Deck" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6965435806309709998" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="CardPileType" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Types" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2678928131162238767" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration" />
-    <property name="name" nameId="tpck.1169194664001" value="Boolean" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Boolean" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2678928131162280633" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2678928131162280636" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="value" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2678928131163028766" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration" />
-    <property name="name" nameId="tpck.1169194664001" value="TopCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="TopCard" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2719425773106875782" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2719425773106586486" resolveInfo="dotOperation" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2824091188896932087" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
-    <property name="name" nameId="tpck.1169194664001" value="CommandList" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2824091188896932088" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="body" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5964992898508211424" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardRefs" />
-    <property name="name" nameId="tpck.1169194664001" value="RankObj" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Rank" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5964992898508211431" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="rankExpr" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5964992898508211303" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardRefs" />
-    <property name="name" nameId="tpck.1169194664001" value="RankOp" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Rank" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2719425773107029862" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2719425773106586486" resolveInfo="dotOperation" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5964992898507957035" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardRefs" />
-    <property name="name" nameId="tpck.1169194664001" value="SuitObj" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Suit" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5964992898507957153" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="suitExpr" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5964992898508062080" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardRefs" />
-    <property name="name" nameId="tpck.1169194664001" value="SuitOp" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Suit" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2719425773107029691" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2719425773106586486" resolveInfo="dotOperation" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1418645885567322850" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration" />
-    <property name="name" nameId="tpck.1169194664001" value="CardRefDeclaration" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Card" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1418645885567543114" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="card" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1418645885567267462" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="VariableReference" />
-    <property name="name" nameId="tpck.1169194664001" value="CardReference" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6952526287830939805" resolveInfo="AbstractVariableReference" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1418645885567322796" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="card" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="1418645885567322850" resolveInfo="CardRefDeclaration" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7878805613278894690" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="VariableReference" />
-    <property name="name" nameId="tpck.1169194664001" value="ForEachVarReference" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="6952526287830939805" resolveInfo="AbstractVariableReference" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7878805613278894769" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="foreach" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5565452210787037995" resolveInfo="ForEachStatement" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="939205226782726196" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="VariableAssignment" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="set" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="939205226782740261" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="lvalue" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6304222537138290358" resolveInfo="VariableReference" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="939205226782740263" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="value" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7181767954433034087" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.Keywords" />
-    <property name="name" nameId="tpck.1169194664001" value="AllKeyword" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="all" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2524059026155569696" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardRefs" />
-    <property name="name" nameId="tpck.1169194664001" value="RankLiteral" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Rank" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2524059026155583873" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="rank" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="3854676059697653018" resolveInfo="Rank" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2524059026155779482" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardRefs" />
-    <property name="name" nameId="tpck.1169194664001" value="SuitLiteral" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Suit" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2524059026155779483" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="suit" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="3854676059697652960" resolveInfo="Suit" />
-    </node>
-  </root>
-  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="8960773502389047198" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection.Pile" />
-    <property name="name" nameId="tpck.1169194664001" value="Horizontal" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389047199" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="A" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="A" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052694" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="B" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="B" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052699" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="C" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="C" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052706" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="D" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="D" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052715" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="E" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="E" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052726" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="F" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="F" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052739" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="G" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="G" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052754" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="H" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="H" />
-    </node>
-  </root>
-  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="8960773502389052909" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection.Pile" />
-    <property name="name" nameId="tpck.1169194664001" value="Vertical" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052967" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="1" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="1" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052972" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="2" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="2" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052979" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="3" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="3" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052988" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="4" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="4" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389052999" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="5" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="5" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389053012" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="6" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="6" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="8960773502389053027" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="7" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="7" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="162709756680012448" nodeInfo="ig">
-      <property name="externalValue" nameId="tpce.1083923523172" value="8" />
-      <property name="internalValue" nameId="tpce.1083923523171" value="8" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2455425859176095937" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.MathExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="MathExpression" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;?&gt;" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176050087" resolveInfo="ShuffleBinaryExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2455425859176049884" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="ShuffleExpression" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2455425859176103333" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.MathExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="minusExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176095937" resolveInfo="MathExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2455425859176095200" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.MathExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="addExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="+" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176095937" resolveInfo="MathExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1790098884239250114" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
-    <property name="name" nameId="tpck.1169194664001" value="PlayerTurnBlock" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Player Turn" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5160494638280568420" resolveInfo="CommandBlock" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4653797233416144760" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="Popup" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="popup" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4653797233416199712" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="message" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1070475926800" resolveInfo="StringLiteral" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4653797233416199976" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="options" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1070475926800" resolveInfo="StringLiteral" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5302167629423834962" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="optionValues" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4653797233416726098" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="variable" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6304222537138290358" resolveInfo="VariableReference" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="2719425773106586486" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression" />
-    <property name="name" nameId="tpck.1169194664001" value="dotOperation" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2455425859176050087" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.MathExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="ShuffleBinaryExpression" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="?" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2455425859176050383" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="left" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2455425859176050386" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="right" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6265495446096081949" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="Print" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="print" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6265495446096126114" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="string" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2455425859176336643" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.MathExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="NumberConstant" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2455425859176336673" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="number" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2003306783291590326" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression" />
-    <property name="name" nameId="tpck.1169194664001" value="boolConstant" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2003306783291602631" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="value" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2719425773106347456" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression" />
-    <property name="name" nameId="tpck.1169194664001" value="dotOperator" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="." />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2719425773106398155" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="operand" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2719425773106586483" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="operation" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2719425773106586486" resolveInfo="dotOperation" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9073716074620391503" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.MathExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="divideExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="/" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176095937" resolveInfo="MathExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9073716074620380222" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.MathExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="multExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="*" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176095937" resolveInfo="MathExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8642299736868079625" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression" />
-    <property name="name" nameId="tpck.1169194664001" value="StringConstant" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&quot;" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="8642299736868227465" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="value" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8340020017782162052" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="ReturnStatement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="return" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8340020017782162085" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="boolean" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8340020017781900658" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
-    <property name="name" nameId="tpck.1169194664001" value="FunctionDefinition" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Function" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="150989085052660317" resolveInfo="Block" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="8340020017782161576" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8340020017782266822" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="body" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1291148986966014861" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="NotEqualToStatement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="not equal to" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5565452210787642242" resolveInfo="BooleanExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5144139994143192935" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="Allow" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="allow selection" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5144139994143234770" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="pile" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="4224678445064421088" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="setupCommand" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5144139994148159356" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="AllowWithSize" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="allow selection of size" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5144139994148159653" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="size" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.1179362310214" resolveInfo="IntegerLiteral" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5144139994148159655" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="pile" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5144139994149540014" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="Disallow" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="disallow selection" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5144139994149540209" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="pile" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5144139994150387084" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
-    <property name="name" nameId="tpck.1169194664001" value="Selection" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="selection" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5144139994150387347" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2719425773106586486" resolveInfo="dotOperation" />
-    </node>
-  </root>
-  <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="162709756679418747" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration.CardCollection" />
-    <property name="name" nameId="tpck.1169194664001" value="CCDisplayType" />
-    <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="162709756679418749" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="stacked" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="stacked" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="162709756679418752" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="cascading" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="cascading" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="162709756679418748" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="hidden" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="hidden" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7501337804229937804" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="WaitForPlayer" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="wait for player" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7501337804230073635" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="expression" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7501337804229938774" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="ToMove" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="to move selection" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7501337804230072938" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="selection" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7501337804230072940" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="pile" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7501337804235854819" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="ToMoveCheck" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="to move selection with check" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7501337804235855654" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="selectedPile" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7501337804235855656" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="pile" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7501337804235855659" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="function" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7501337804236030156" resolveInfo="FunctionCall" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7501337804236030156" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
-    <property name="name" nameId="tpck.1169194664001" value="FunctionCall" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7501337804236030235" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="definition" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8340020017781900658" resolveInfo="FunctionDefinition" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7501337804237190121" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="Comment" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="//" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7501337804237190869" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="comment" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="tpee.6329021646629104957" resolveInfo="TextCommentPart" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6780516275963637041" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="ToClick" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="to click" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6780516275963637095" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="button" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6780516275963016114" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration" />
-    <property name="name" nameId="tpck.1169194664001" value="ShuffleButton" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="create Button" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6780516275963027845" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6780516275963027847" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="horizontal" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8960773502389047198" resolveInfo="Horizontal" />
-    </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6780516275963027849" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="vertical" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="8960773502389052909" resolveInfo="Vertical" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7740785425695892080" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands.VariableDeclaration" />
-    <property name="name" nameId="tpck.1169194664001" value="String" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="String" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2834967828303856791" resolveInfo="VariableDeclaration" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7740785425695892303" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1169194658468" resolveInfo="INamedConcept" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7740785425695893153" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="value" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3561890535518455856" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Block" />
-    <property name="name" nameId="tpck.1169194664001" value="EndBlock" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="End Block" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5160494638280568420" resolveInfo="CommandBlock" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2674640898150006095" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.BooleanExpression" />
-    <property name="name" nameId="tpck.1169194664001" value="isClicked" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="player clicked" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2674640898150017257" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="button" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6304222537138290358" resolveInfo="VariableReference" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7644071217999812459" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Players" />
-    <property name="name" nameId="tpck.1169194664001" value="CurrentPlayerNumber" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="currentPlayerNumber" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7644071217998376951" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Commands" />
-    <property name="name" nameId="tpck.1169194664001" value="SetCurrentPlayer" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="set currentPlayer to" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7644071217998378970" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="value" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5265026447207044013" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="ControlFlow" />
-    <property name="name" nameId="tpck.1169194664001" value="ForNumberStatement" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7674520359936137193" resolveInfo="Command" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1745689507092017967" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.Keywords" />
-    <property name="name" nameId="tpck.1169194664001" value="RandomCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="random card" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1745689507092217450" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="pile" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1745689507093400711" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="Expression.Keywords" />
-    <property name="name" nameId="tpck.1169194664001" value="RandomNumber" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="random number" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1745689507093400798" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="min" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="1745689507093400800" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="max" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="2455425859176049884" resolveInfo="ShuffleExpression" />
-    </node>
-  </root>
+<model ref="r:c7d67aeb-edcf-4a0e-a53e-e5e3ee2ab3bf(Shuffle.structure)">
+  <persistence version="9" />
+  <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  </languages>
+  <imports>
+    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
+      <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
+      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
+        <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1TIwiD" id="2tnP3wNG1lE">
+    <property role="TrG5h" value="Deck" />
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardCollection" />
+    <property role="34LRSv" value="CardSet" />
+    <ref role="1TJDcQ" node="3lYzRget8Ki" resolve="CardCollection" />
+  </node>
+  <node concept="1TIwiD" id="2tnP3wNHiOF">
+    <property role="TrG5h" value="Main" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4XFU3mTsnqS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="setupBlock" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4utKCwO1E_P" resolve="SetupBlock" />
+    </node>
+    <node concept="1TJgyj" id="pR3UY4_chE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="computerTurnBlock" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="pR3UY4_cbA" resolve="ComputerTurnBlock" />
+    </node>
+    <node concept="1TJgyj" id="1znHndFU802" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="playerTurnBlock" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1znHndFTPb2" resolve="PlayerTurnBlock" />
+    </node>
+    <node concept="1TJgyj" id="7eXH0jjznYh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="functions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7eXH0jjyolM" resolve="FunctionDefinition" />
+    </node>
+    <node concept="1TJgyj" id="4XFU3mTsnqU" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="winConditionBlock" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4utKCwO2v6R" resolve="WinConditionBlock" />
+    </node>
+    <node concept="1TJgyj" id="35Io982sXyC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="endBlock" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="35Io982pOwK" resolve="EndBlock" />
+    </node>
+    <node concept="PrWs8" id="2tnP3wNKefj" role="PzmwI">
+      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
+    </node>
+    <node concept="PrWs8" id="6E1nTGzAbMl" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2tnP3wNHqV7">
+    <property role="TrG5h" value="Card" />
+    <property role="3GE5qa" value="Card" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2tnP3wNIjwK" role="1TKVEl">
+      <property role="TrG5h" value="rank" />
+      <ref role="AX2Wp" node="3lYzRgeuMkq" resolve="Rank" />
+    </node>
+    <node concept="1TJgyi" id="2tnP3wNImCY" role="1TKVEl">
+      <property role="TrG5h" value="suit" />
+      <ref role="AX2Wp" node="3lYzRgeuMjw" resolve="Suit" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2tnP3wNH$in">
+    <property role="TrG5h" value="VariableDeclaration" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="Commands.VariableDeclaration" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="PrWs8" id="6E1nTGzu8pO" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2tnP3wNImFY">
+    <property role="TrG5h" value="Player" />
+    <property role="3GE5qa" value="Players" />
+    <property role="34LRSv" value="player" />
+    <ref role="1TJDcQ" node="61WltatIByt" resolve="AbstractVariableReference" />
+    <node concept="1TJgyj" id="61WltatNVIE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="number" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6E1nTGzqQvX">
+    <property role="TrG5h" value="Number" />
+    <property role="3GE5qa" value="Commands.VariableDeclaration.Number" />
+    <property role="34LRSv" value="Number" />
+    <ref role="1TJDcQ" node="2tnP3wNH$in" resolve="VariableDeclaration" />
+    <node concept="1TJgyj" id="6E1nTGztozW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="PrWs8" id="6E1nTGzqXyh" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6E1nTGzvLvD">
+    <property role="TrG5h" value="Command" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="Commands" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6E1nTGzw$ww">
+    <property role="TrG5h" value="ShuffleDeck" />
+    <property role="34LRSv" value="shuffle" />
+    <property role="3GE5qa" value="Commands" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="6E1nTGzw$wW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="deck" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3lYzRget8Ki">
+    <property role="TrG5h" value="CardCollection" />
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardCollection" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="2tnP3wNH$in" resolve="VariableDeclaration" />
+    <node concept="1TJgyi" id="1zwsFbBRBGP" role="1TKVEl">
+      <property role="TrG5h" value="size" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="3lYzRgethZ9" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cards" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2tnP3wNHqV7" resolve="Card" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3lYzRgetU9k">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardCollection.Pile" />
+    <property role="TrG5h" value="Pile" />
+    <property role="34LRSv" value="create Pile" />
+    <ref role="1TJDcQ" node="3lYzRget8Ki" resolve="CardCollection" />
+    <node concept="1TJgyi" id="2sLbZ$ZuCHd" role="1TKVEl">
+      <property role="TrG5h" value="faceup" />
+      <ref role="AX2Wp" node="2sLbZ$ZrFoQ" resolve="faceupdown" />
+    </node>
+    <node concept="1TJgyi" id="923U_wntkw" role="1TKVEl">
+      <property role="TrG5h" value="displayType" />
+      <ref role="AX2Wp" node="923U_wnvdV" resolve="CCDisplayType" />
+    </node>
+    <node concept="1TJgyi" id="7Lr40oMCLv3" role="1TKVEl">
+      <property role="TrG5h" value="horizontal" />
+      <ref role="AX2Wp" node="7Lr40oMCsYu" resolve="Horizontal" />
+    </node>
+    <node concept="1TJgyi" id="7Lr40oMCLv8" role="1TKVEl">
+      <property role="TrG5h" value="vertical" />
+      <ref role="AX2Wp" node="7Lr40oMCunH" resolve="Vertical" />
+    </node>
+    <node concept="PrWs8" id="1vzAj1rj6Fr" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="3lYzRgeuMjw">
+    <property role="3GE5qa" value="Card" />
+    <property role="TrG5h" value="Suit" />
+    <property role="3lZH7k" value="derive_from_presentation" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="3lYzRgeuMjx" role="M5hS2">
+      <property role="1uS6qv" value="1" />
+      <property role="1uS6qo" value="S" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMjy" role="M5hS2">
+      <property role="1uS6qo" value="H" />
+      <property role="1uS6qv" value="2" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMj_" role="M5hS2">
+      <property role="1uS6qo" value="C" />
+      <property role="1uS6qv" value="3" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMjD" role="M5hS2">
+      <property role="1uS6qo" value="D" />
+      <property role="1uS6qv" value="4" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="3lYzRgeuMkq">
+    <property role="3GE5qa" value="Card" />
+    <property role="TrG5h" value="Rank" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="3lYzRgeuMkr" role="M5hS2">
+      <property role="1uS6qv" value="1" />
+      <property role="1uS6qo" value="A" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMks" role="M5hS2">
+      <property role="1uS6qo" value="2" />
+      <property role="1uS6qv" value="2" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMkv" role="M5hS2">
+      <property role="1uS6qo" value="3" />
+      <property role="1uS6qv" value="3" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMkz" role="M5hS2">
+      <property role="1uS6qo" value="4" />
+      <property role="1uS6qv" value="4" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMkC" role="M5hS2">
+      <property role="1uS6qo" value="5" />
+      <property role="1uS6qv" value="5" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMkI" role="M5hS2">
+      <property role="1uS6qo" value="6" />
+      <property role="1uS6qv" value="6" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMkP" role="M5hS2">
+      <property role="1uS6qo" value="7" />
+      <property role="1uS6qv" value="7" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMkX" role="M5hS2">
+      <property role="1uS6qo" value="8" />
+      <property role="1uS6qv" value="8" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMl6" role="M5hS2">
+      <property role="1uS6qo" value="9" />
+      <property role="1uS6qv" value="9" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMlg" role="M5hS2">
+      <property role="1uS6qo" value="10" />
+      <property role="1uS6qv" value="10" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMlr" role="M5hS2">
+      <property role="1uS6qo" value="J" />
+      <property role="1uS6qv" value="11" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMlB" role="M5hS2">
+      <property role="1uS6qo" value="Q" />
+      <property role="1uS6qv" value="12" />
+    </node>
+    <node concept="M4N5e" id="3lYzRgeuMlO" role="M5hS2">
+      <property role="1uS6qo" value="K" />
+      <property role="1uS6qv" value="13" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4utKCwO1mT$">
+    <property role="TrG5h" value="CommandBlock" />
+    <property role="3GE5qa" value="Block" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="8oqWnrxADt" resolve="Block" />
+    <node concept="1TJgyi" id="4utKCwO1mZ8" role="1TKVEl">
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="4utKCwO1mVr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6E1nTGzvLvD" resolve="Command" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4utKCwO1E_P">
+    <property role="3GE5qa" value="Block" />
+    <property role="TrG5h" value="SetupBlock" />
+    <property role="34LRSv" value="Setup Board" />
+    <ref role="1TJDcQ" node="4utKCwO1mT$" resolve="CommandBlock" />
+  </node>
+  <node concept="1TIwiD" id="4utKCwO2v6R">
+    <property role="3GE5qa" value="Block" />
+    <property role="TrG5h" value="WinConditionBlock" />
+    <property role="34LRSv" value="End Condition" />
+    <ref role="1TJDcQ" node="8oqWnrxADs" resolve="ConditionBlock" />
+  </node>
+  <node concept="1TIwiD" id="6PxyJMA_KOy">
+    <property role="3GE5qa" value="Expression.BooleanExpression" />
+    <property role="TrG5h" value="GreaterThanStatement" />
+    <property role="34LRSv" value="greater than" />
+    <ref role="1TJDcQ" node="4OWtkLQqeI2" resolve="BooleanExpression" />
+  </node>
+  <node concept="1TIwiD" id="4OWtkLQqeI2">
+    <property role="3GE5qa" value="Expression.BooleanExpression" />
+    <property role="TrG5h" value="BooleanExpression" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="28jrcWWvMQB" resolve="ShuffleBinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="6PxyJMA_KMU">
+    <property role="3GE5qa" value="Expression.BooleanExpression" />
+    <property role="TrG5h" value="OrStatement" />
+    <property role="34LRSv" value="or" />
+    <ref role="1TJDcQ" node="4OWtkLQqeI2" resolve="BooleanExpression" />
+  </node>
+  <node concept="1TIwiD" id="6PxyJMA_KOg">
+    <property role="3GE5qa" value="Expression.BooleanExpression" />
+    <property role="TrG5h" value="AndStatement" />
+    <property role="34LRSv" value="and" />
+    <ref role="1TJDcQ" node="4OWtkLQqeI2" resolve="BooleanExpression" />
+  </node>
+  <node concept="1TIwiD" id="4OWtkLQnVcG">
+    <property role="3GE5qa" value="ControlFlow" />
+    <property role="TrG5h" value="ElseIfStatement" />
+    <property role="34LRSv" value="else if" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4OWtkLQsqkN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="1TJgyj" id="4OWtkLQsqkP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2sLbZ$ZwM3R" resolve="CommandList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4OWtkLQnSom">
+    <property role="TrG5h" value="IfStatement" />
+    <property role="34LRSv" value="if" />
+    <property role="3GE5qa" value="ControlFlow" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="4OWtkLQsqjC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="1TJgyj" id="4OWtkLQsqjE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2sLbZ$ZwM3R" resolve="CommandList" />
+    </node>
+    <node concept="1TJgyj" id="4OWtkLQsHyT" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elseIf" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4OWtkLQnVcG" resolve="ElseIfStatement" />
+    </node>
+    <node concept="1TJgyj" id="72zfHmAukAd" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elseBody" />
+      <ref role="20lvS9" node="2sLbZ$ZwM3R" resolve="CommandList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4OWtkLQnVcF">
+    <property role="3GE5qa" value="ControlFlow" />
+    <property role="TrG5h" value="ForEachStatement" />
+    <property role="34LRSv" value="for each" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="PrWs8" id="6Pn8ZoDPzqj" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6Pn8ZoDPz_H" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cardPile" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="1TJgyj" id="6Pn8ZoDP$Fp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2sLbZ$ZwM3R" resolve="CommandList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="8oqWnrxADt">
+    <property role="3GE5qa" value="Block" />
+    <property role="TrG5h" value="Block" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="8oqWnrxADs">
+    <property role="3GE5qa" value="Block" />
+    <property role="TrG5h" value="ConditionBlock" />
+    <ref role="1TJDcQ" node="8oqWnrxADt" resolve="Block" />
+    <node concept="1TJgyj" id="8oqWnrxNcJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6PxyJMACdrj">
+    <property role="3GE5qa" value="Expression.BooleanExpression" />
+    <property role="TrG5h" value="LessThanStatement" />
+    <property role="34LRSv" value="less than" />
+    <ref role="1TJDcQ" node="4OWtkLQqeI2" resolve="BooleanExpression" />
+  </node>
+  <node concept="1TIwiD" id="6PxyJMA_KOp">
+    <property role="3GE5qa" value="Expression.BooleanExpression" />
+    <property role="TrG5h" value="EqualToStatement" />
+    <property role="34LRSv" value="equal to" />
+    <ref role="1TJDcQ" node="4OWtkLQqeI2" resolve="BooleanExpression" />
+  </node>
+  <node concept="1TIwiD" id="4OWtkLQnVeF">
+    <property role="3GE5qa" value="ControlFlow" />
+    <property role="TrG5h" value="WhileStatement" />
+    <property role="34LRSv" value="while" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="4OWtkLQsqhn" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4OWtkLQqeI2" resolve="BooleanExpression" />
+    </node>
+    <node concept="1TJgyj" id="4OWtkLQsqix" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2sLbZ$ZwM3R" resolve="CommandList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4OWtkLQnVfG">
+    <property role="TrG5h" value="NotStatement" />
+    <property role="3GE5qa" value="Expression.BooleanExpression" />
+    <property role="34LRSv" value="not" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyj" id="6PxyJMA_JOw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="orignal" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1vzAj1rjm9Y">
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="NumPlayers" />
+    <property role="34LRSv" value="number of players" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="PrWs8" id="3Ex4EAok8fd" role="PzmwI">
+      <ref role="PrY4T" node="3Ex4EAok7Vw" resolve="setupCommand" />
+    </node>
+    <node concept="1TJgyj" id="6dDvQOi_tAO" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5m6Ztkwht1d">
+    <property role="TrG5h" value="Move" />
+    <property role="34LRSv" value="move" />
+    <property role="3GE5qa" value="Commands" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="5m6Ztkwhtj6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="pile1" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="1TJgyj" id="5m6Ztkwhtj8" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="pile2" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="1TJgyj" id="42osxa1WrTb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cardNumbers" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5tX6fWf8VUQ">
+    <property role="TrG5h" value="VariableReference" />
+    <property role="3GE5qa" value="VariableReference" />
+    <ref role="1TJDcQ" node="61WltatIByt" resolve="AbstractVariableReference" />
+    <node concept="1TJgyj" id="5tX6fWf8VUR" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="variable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2tnP3wNH$in" resolve="VariableDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3$mKddVtFYd">
+    <property role="3GE5qa" value="Players" />
+    <property role="TrG5h" value="CurrentPlayer" />
+    <property role="34LRSv" value="currentPlayer" />
+    <ref role="1TJDcQ" node="61WltatIByt" resolve="AbstractVariableReference" />
+  </node>
+  <node concept="1TIwiD" id="pR3UY4_cbA">
+    <property role="3GE5qa" value="Block" />
+    <property role="TrG5h" value="ComputerTurnBlock" />
+    <property role="34LRSv" value="Computer Turn" />
+    <ref role="1TJDcQ" node="4utKCwO1mT$" resolve="CommandBlock" />
+  </node>
+  <node concept="1TIwiD" id="184XADGX_Ye">
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="EmptyLine" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+  </node>
+  <node concept="1TIwiD" id="1Wrse$dGhok">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardCollection" />
+    <property role="TrG5h" value="Hand" />
+    <property role="34LRSv" value="hand" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2mXlPkv4WNr" role="PzmwI">
+      <ref role="PrY4T" node="2mXlPkv3QdQ" resolve="dotOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1TBAPjSXfam">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.Number" />
+    <property role="TrG5h" value="Size" />
+    <property role="34LRSv" value="size" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2mXlPkv9ELD" role="PzmwI">
+      <ref role="PrY4T" node="2mXlPkv3QdQ" resolve="dotOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="61WltatIByt">
+    <property role="3GE5qa" value="VariableReference" />
+    <property role="TrG5h" value="AbstractVariableReference" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+  </node>
+  <node concept="1TIwiD" id="4qgFsk1FzrT">
+    <property role="3GE5qa" value="VariableReference" />
+    <property role="TrG5h" value="DeckReference" />
+    <property role="34LRSv" value="CardSet" />
+    <ref role="1TJDcQ" node="61WltatIByt" resolve="AbstractVariableReference" />
+    <node concept="1TJgyj" id="4qgFsk1G3Zt" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="deck" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2tnP3wNG1lE" resolve="Deck" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="2sLbZ$ZrFoQ">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardCollection" />
+    <property role="TrG5h" value="faceupdown" />
+    <ref role="M4eZT" to="tpck:fKAQMTB" resolve="boolean" />
+    <node concept="M4N5e" id="2sLbZ$ZrFw1" role="M5hS2">
+      <property role="1uS6qo" value="faceup" />
+      <property role="1uS6qv" value="true" />
+    </node>
+    <node concept="M4N5e" id="2sLbZ$ZrK0a" role="M5hS2">
+      <property role="1uS6qo" value="facedown" />
+      <property role="1uS6qv" value="false" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1e_EJpr7ctD">
+    <property role="TrG5h" value="DefaultDeck" />
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardCollection" />
+    <property role="34LRSv" value="default CardSet" />
+    <ref role="1TJDcQ" node="2tnP3wNG1lE" resolve="Deck" />
+  </node>
+  <node concept="1TIwiD" id="62EcJosS7yI">
+    <property role="TrG5h" value="CardPileType" />
+    <property role="3GE5qa" value="Types" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2kHtJ4kIuWJ">
+    <property role="3GE5qa" value="Commands.VariableDeclaration" />
+    <property role="TrG5h" value="Boolean" />
+    <property role="34LRSv" value="Boolean" />
+    <ref role="1TJDcQ" node="2tnP3wNH$in" resolve="VariableDeclaration" />
+    <node concept="PrWs8" id="2kHtJ4kIDaT" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2kHtJ4kIDaW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kHtJ4kLvOu">
+    <property role="3GE5qa" value="Commands.VariableDeclaration" />
+    <property role="TrG5h" value="TopCard" />
+    <property role="34LRSv" value="TopCard" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2mXlPkv4WQ6" role="PzmwI">
+      <ref role="PrY4T" node="2mXlPkv3QdQ" resolve="dotOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2sLbZ$ZwM3R">
+    <property role="3GE5qa" value="Block" />
+    <property role="TrG5h" value="CommandList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2sLbZ$ZwM3S" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6E1nTGzvLvD" resolve="Command" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5b7UmZNjOjw">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardRefs" />
+    <property role="TrG5h" value="RankObj" />
+    <property role="34LRSv" value="Rank" />
+    <ref role="1TJDcQ" node="2tnP3wNH$in" resolve="VariableDeclaration" />
+    <node concept="1TJgyj" id="5b7UmZNjOjB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="rankExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5b7UmZNjOhB">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardRefs" />
+    <property role="TrG5h" value="RankOp" />
+    <property role="34LRSv" value="Rank" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2mXlPkv5ytA" role="PzmwI">
+      <ref role="PrY4T" node="2mXlPkv3QdQ" resolve="dotOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5b7UmZNiQcF">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardRefs" />
+    <property role="TrG5h" value="SuitObj" />
+    <property role="34LRSv" value="Suit" />
+    <ref role="1TJDcQ" node="2tnP3wNH$in" resolve="VariableDeclaration" />
+    <node concept="1TJgyj" id="5b7UmZNiQex" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="suitExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5b7UmZNjfQ0">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardRefs" />
+    <property role="TrG5h" value="SuitOp" />
+    <property role="34LRSv" value="Suit" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2mXlPkv5yqV" role="PzmwI">
+      <ref role="PrY4T" node="2mXlPkv3QdQ" resolve="dotOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eK2IEBjOFy">
+    <property role="3GE5qa" value="Commands.VariableDeclaration" />
+    <property role="TrG5h" value="CardRefDeclaration" />
+    <property role="34LRSv" value="Card" />
+    <ref role="1TJDcQ" node="2tnP3wNH$in" resolve="VariableDeclaration" />
+    <node concept="1TJgyj" id="1eK2IEBkEta" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="card" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eK2IEBjBa6">
+    <property role="3GE5qa" value="VariableReference" />
+    <property role="TrG5h" value="CardReference" />
+    <ref role="1TJDcQ" node="61WltatIByt" resolve="AbstractVariableReference" />
+    <node concept="1TJgyj" id="1eK2IEBjOEG" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="card" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1eK2IEBjOFy" resolve="CardRefDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Pn8ZoDPTDy">
+    <property role="3GE5qa" value="VariableReference" />
+    <property role="TrG5h" value="ForEachVarReference" />
+    <ref role="1TJDcQ" node="61WltatIByt" resolve="AbstractVariableReference" />
+    <node concept="1TJgyj" id="6Pn8ZoDPTEL" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="foreach" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4OWtkLQnVcF" resolve="ForEachStatement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="O8IyPT$LwO">
+    <property role="TrG5h" value="VariableAssignment" />
+    <property role="3GE5qa" value="Commands" />
+    <property role="34LRSv" value="set" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="O8IyPT$OW_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="lvalue" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5tX6fWf8VUQ" resolve="VariableReference" />
+    </node>
+    <node concept="1TJgyj" id="O8IyPT$OWB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6eEKYtBgWtB">
+    <property role="3GE5qa" value="Expression.Keywords" />
+    <property role="TrG5h" value="AllKeyword" />
+    <property role="34LRSv" value="all" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+  </node>
+  <node concept="1TIwiD" id="2c7g$YI7K8w">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardRefs" />
+    <property role="TrG5h" value="RankLiteral" />
+    <property role="34LRSv" value="Rank" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyi" id="2c7g$YI7NA1" role="1TKVEl">
+      <property role="TrG5h" value="rank" />
+      <ref role="AX2Wp" node="3lYzRgeuMkq" resolve="Rank" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2c7g$YI8zmq">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardRefs" />
+    <property role="TrG5h" value="SuitLiteral" />
+    <property role="34LRSv" value="Suit" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyi" id="2c7g$YI8zmr" role="1TKVEl">
+      <property role="TrG5h" value="suit" />
+      <ref role="AX2Wp" node="3lYzRgeuMjw" resolve="Suit" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="7Lr40oMCsYu">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardCollection.Pile" />
+    <property role="TrG5h" value="Horizontal" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="7Lr40oMCsYv" role="M5hS2">
+      <property role="1uS6qv" value="A" />
+      <property role="1uS6qo" value="A" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCukm" role="M5hS2">
+      <property role="1uS6qv" value="B" />
+      <property role="1uS6qo" value="B" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCukr" role="M5hS2">
+      <property role="1uS6qv" value="C" />
+      <property role="1uS6qo" value="C" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCuky" role="M5hS2">
+      <property role="1uS6qv" value="D" />
+      <property role="1uS6qo" value="D" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCukF" role="M5hS2">
+      <property role="1uS6qv" value="E" />
+      <property role="1uS6qo" value="E" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCukQ" role="M5hS2">
+      <property role="1uS6qv" value="F" />
+      <property role="1uS6qo" value="F" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCul3" role="M5hS2">
+      <property role="1uS6qv" value="G" />
+      <property role="1uS6qo" value="G" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCuli" role="M5hS2">
+      <property role="1uS6qv" value="H" />
+      <property role="1uS6qo" value="H" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="7Lr40oMCunH">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardCollection.Pile" />
+    <property role="TrG5h" value="Vertical" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="7Lr40oMCuoB" role="M5hS2">
+      <property role="1uS6qo" value="1" />
+      <property role="1uS6qv" value="1" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCuoG" role="M5hS2">
+      <property role="1uS6qo" value="2" />
+      <property role="1uS6qv" value="2" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCuoN" role="M5hS2">
+      <property role="1uS6qo" value="3" />
+      <property role="1uS6qv" value="3" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCuoW" role="M5hS2">
+      <property role="1uS6qo" value="4" />
+      <property role="1uS6qv" value="4" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCup7" role="M5hS2">
+      <property role="1uS6qo" value="5" />
+      <property role="1uS6qv" value="5" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCupk" role="M5hS2">
+      <property role="1uS6qo" value="6" />
+      <property role="1uS6qv" value="6" />
+    </node>
+    <node concept="M4N5e" id="7Lr40oMCupz" role="M5hS2">
+      <property role="1uS6qo" value="7" />
+      <property role="1uS6qv" value="7" />
+    </node>
+    <node concept="M4N5e" id="923U_wpKaw" role="M5hS2">
+      <property role="1uS6qo" value="8" />
+      <property role="1uS6qv" value="8" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="28jrcWWvY31">
+    <property role="3GE5qa" value="Expression.MathExpression" />
+    <property role="TrG5h" value="MathExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="&lt;?&gt;" />
+    <ref role="1TJDcQ" node="28jrcWWvMQB" resolve="ShuffleBinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="28jrcWWvMNs">
+    <property role="3GE5qa" value="Expression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="ShuffleExpression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="28jrcWWvZQ_">
+    <property role="3GE5qa" value="Expression.MathExpression" />
+    <property role="TrG5h" value="minusExpression" />
+    <property role="34LRSv" value="-" />
+    <ref role="1TJDcQ" node="28jrcWWvY31" resolve="MathExpression" />
+  </node>
+  <node concept="1TIwiD" id="28jrcWWvXRw">
+    <property role="3GE5qa" value="Expression.MathExpression" />
+    <property role="TrG5h" value="addExpression" />
+    <property role="34LRSv" value="+" />
+    <ref role="1TJDcQ" node="28jrcWWvY31" resolve="MathExpression" />
+  </node>
+  <node concept="1TIwiD" id="1znHndFTPb2">
+    <property role="3GE5qa" value="Block" />
+    <property role="TrG5h" value="PlayerTurnBlock" />
+    <property role="34LRSv" value="Player Turn" />
+    <ref role="1TJDcQ" node="4utKCwO1mT$" resolve="CommandBlock" />
+  </node>
+  <node concept="1TIwiD" id="42lAYPatKtS">
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="Popup" />
+    <property role="34LRSv" value="popup" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="42lAYPatXSw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="message" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+    </node>
+    <node concept="1TJgyj" id="42lAYPatXWC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="options" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+    </node>
+    <node concept="1TJgyj" id="4Al5lRFovti" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="optionValues" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="1TJgyj" id="42lAYPavYpi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="variable" />
+      <ref role="20lvS9" node="5tX6fWf8VUQ" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2mXlPkv3QdQ">
+    <property role="3GE5qa" value="Expression" />
+    <property role="TrG5h" value="dotOperation" />
+  </node>
+  <node concept="1TIwiD" id="28jrcWWvMQB">
+    <property role="3GE5qa" value="Expression.MathExpression" />
+    <property role="TrG5h" value="ShuffleBinaryExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="?" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyj" id="28jrcWWvMVf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="1TJgyj" id="28jrcWWvMVi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5rNwIA6oBgt">
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="Print" />
+    <property role="34LRSv" value="print" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="5rNwIA6oM2y" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="string" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="28jrcWWwSO3">
+    <property role="3GE5qa" value="Expression.MathExpression" />
+    <property role="TrG5h" value="NumberConstant" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyi" id="28jrcWWwSOx" role="1TKVEl">
+      <property role="TrG5h" value="number" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1JdbevaesqQ">
+    <property role="3GE5qa" value="Expression" />
+    <property role="TrG5h" value="boolConstant" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyi" id="1Jdbevaevr7" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2mXlPkv2VR0">
+    <property role="3GE5qa" value="Expression" />
+    <property role="TrG5h" value="dotOperator" />
+    <property role="34LRSv" value="." />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyj" id="2mXlPkv38fb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operand" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="1TJgyj" id="2mXlPkv3QdN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operation" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2mXlPkv3QdQ" resolve="dotOperation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7RGkb7Ww11f">
+    <property role="3GE5qa" value="Expression.MathExpression" />
+    <property role="TrG5h" value="divideExpression" />
+    <property role="34LRSv" value="/" />
+    <ref role="1TJDcQ" node="28jrcWWvY31" resolve="MathExpression" />
+  </node>
+  <node concept="1TIwiD" id="7RGkb7WvYgY">
+    <property role="3GE5qa" value="Expression.MathExpression" />
+    <property role="TrG5h" value="multExpression" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" node="28jrcWWvY31" resolve="MathExpression" />
+  </node>
+  <node concept="1TIwiD" id="7vJBt9yukw9">
+    <property role="3GE5qa" value="Expression" />
+    <property role="TrG5h" value="StringConstant" />
+    <property role="34LRSv" value="&quot;" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyi" id="7vJBt9yuSA9" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7eXH0jjzoa4">
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="ReturnStatement" />
+    <property role="34LRSv" value="return" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="7eXH0jjzoa_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="boolean" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7eXH0jjyolM">
+    <property role="3GE5qa" value="Block" />
+    <property role="TrG5h" value="FunctionDefinition" />
+    <property role="34LRSv" value="Function" />
+    <ref role="1TJDcQ" node="8oqWnrxADt" resolve="Block" />
+    <node concept="PrWs8" id="7eXH0jjzo2C" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="7eXH0jjzLJ6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6E1nTGzvLvD" resolve="Command" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="17F5iAKdJId">
+    <property role="3GE5qa" value="Expression.BooleanExpression" />
+    <property role="TrG5h" value="NotEqualToStatement" />
+    <property role="34LRSv" value="not equal to" />
+    <ref role="1TJDcQ" node="4OWtkLQqeI2" resolve="BooleanExpression" />
+  </node>
+  <node concept="1TIwiD" id="4tzE17xMftB">
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="Allow" />
+    <property role="34LRSv" value="allow selection" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="4tzE17xMpFi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="pile" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3Ex4EAok7Vw">
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="setupCommand" />
+  </node>
+  <node concept="1TIwiD" id="4tzE17y5bXW">
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="AllowWithSize" />
+    <property role="34LRSv" value="allow selection of size" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="4tzE17y5c2_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="size" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:hanubx6" resolve="IntegerLiteral" />
+    </node>
+    <node concept="1TJgyj" id="4tzE17y5c2B" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="pile" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4tzE17yat2I">
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="Disallow" />
+    <property role="34LRSv" value="disallow selection" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="4tzE17yat5L" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="pile" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4tzE17ydFQc">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardCollection" />
+    <property role="TrG5h" value="Selection" />
+    <property role="34LRSv" value="selection" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="PrWs8" id="4tzE17ydFUj" role="PzmwI">
+      <ref role="PrY4T" node="2mXlPkv3QdQ" resolve="dotOperation" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="923U_wnvdV">
+    <property role="3GE5qa" value="Commands.VariableDeclaration.CardCollection" />
+    <property role="TrG5h" value="CCDisplayType" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="923U_wnvdX" role="M5hS2">
+      <property role="1uS6qv" value="stacked" />
+      <property role="1uS6qo" value="stacked" />
+    </node>
+    <node concept="M4N5e" id="923U_wnve0" role="M5hS2">
+      <property role="1uS6qv" value="cascading" />
+      <property role="1uS6qo" value="cascading" />
+    </node>
+    <node concept="M4N5e" id="923U_wnvdW" role="M5hS2">
+      <property role="1uS6qv" value="hidden" />
+      <property role="1uS6qo" value="hidden" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wq6JOTloEc">
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="WaitForPlayer" />
+    <property role="34LRSv" value="wait for player" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="6wq6JOTlTOz" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wq6JOTloTm">
+    <property role="3GE5qa" value="Expression.BooleanExpression" />
+    <property role="TrG5h" value="ToMove" />
+    <property role="34LRSv" value="to move selection" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyj" id="6wq6JOTlTDE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="selection" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="1TJgyj" id="6wq6JOTlTDG" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="pile" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wq6JOTFXfz">
+    <property role="3GE5qa" value="Expression.BooleanExpression" />
+    <property role="TrG5h" value="ToMoveCheck" />
+    <property role="34LRSv" value="to move selection with check" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyj" id="6wq6JOTFXsA" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="selectedPile" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="1TJgyj" id="6wq6JOTFXsC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="pile" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="1TJgyj" id="6wq6JOTFXsF" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="function" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6wq6JOTGC3c" resolve="FunctionCall" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wq6JOTGC3c">
+    <property role="3GE5qa" value="Block" />
+    <property role="TrG5h" value="FunctionCall" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6wq6JOTGC4r" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7eXH0jjyolM" resolve="FunctionDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wq6JOTL3fD">
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="Comment" />
+    <property role="34LRSv" value="//" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="6wq6JOTL3rl" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="comment" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:5vlcUuJ5uOX" resolve="TextCommentPart" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5SpeU3m$iOL">
+    <property role="3GE5qa" value="Expression.BooleanExpression" />
+    <property role="TrG5h" value="ToClick" />
+    <property role="34LRSv" value="to click" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyj" id="5SpeU3m$iPB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="button" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5SpeU3mxVeM">
+    <property role="3GE5qa" value="Commands.VariableDeclaration" />
+    <property role="TrG5h" value="ShuffleButton" />
+    <property role="34LRSv" value="create Button" />
+    <ref role="1TJDcQ" node="2tnP3wNH$in" resolve="VariableDeclaration" />
+    <node concept="PrWs8" id="5SpeU3mxY65" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="5SpeU3mxY67" role="1TKVEl">
+      <property role="TrG5h" value="horizontal" />
+      <ref role="AX2Wp" node="7Lr40oMCsYu" resolve="Horizontal" />
+    </node>
+    <node concept="1TJgyi" id="5SpeU3mxY69" role="1TKVEl">
+      <property role="TrG5h" value="vertical" />
+      <ref role="AX2Wp" node="7Lr40oMCunH" resolve="Vertical" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6HGMPkd7Y9K">
+    <property role="3GE5qa" value="Commands.VariableDeclaration" />
+    <property role="TrG5h" value="String" />
+    <property role="34LRSv" value="String" />
+    <ref role="1TJDcQ" node="2tnP3wNH$in" resolve="VariableDeclaration" />
+    <node concept="PrWs8" id="6HGMPkd7Ydf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6HGMPkd7Yqx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="35Io982pOwK">
+    <property role="3GE5qa" value="Block" />
+    <property role="TrG5h" value="EndBlock" />
+    <property role="34LRSv" value="End Block" />
+    <ref role="1TJDcQ" node="4utKCwO1mT$" resolve="CommandBlock" />
+  </node>
+  <node concept="1TIwiD" id="2kueVBrXBPf">
+    <property role="3GE5qa" value="Expression.BooleanExpression" />
+    <property role="TrG5h" value="isClicked" />
+    <property role="34LRSv" value="player clicked" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyj" id="2kueVBrXEzD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="button" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5tX6fWf8VUQ" resolve="VariableReference" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Clc$niEDtF">
+    <property role="3GE5qa" value="Players" />
+    <property role="TrG5h" value="CurrentPlayerNumber" />
+    <property role="34LRSv" value="currentPlayerNumber" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+  </node>
+  <node concept="1TIwiD" id="6Clc$ni_aZR">
+    <property role="3GE5qa" value="Commands" />
+    <property role="TrG5h" value="SetCurrentPlayer" />
+    <property role="34LRSv" value="set currentPlayer to" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+    <node concept="1TJgyj" id="6Clc$ni_bvq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4$h8qyeO1eH">
+    <property role="3GE5qa" value="ControlFlow" />
+    <property role="TrG5h" value="ForNumberStatement" />
+    <ref role="1TJDcQ" node="6E1nTGzvLvD" resolve="Command" />
+  </node>
+  <node concept="1TIwiD" id="1wTVPIembcJ">
+    <property role="3GE5qa" value="Expression.Keywords" />
+    <property role="TrG5h" value="RandomCard" />
+    <property role="34LRSv" value="random card" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyj" id="1wTVPIemVTE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="pile" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1wTVPIersM7">
+    <property role="3GE5qa" value="Expression.Keywords" />
+    <property role="TrG5h" value="RandomNumber" />
+    <property role="34LRSv" value="random number" />
+    <ref role="1TJDcQ" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    <node concept="1TJgyj" id="1wTVPIersNu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="min" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+    <node concept="1TJgyj" id="1wTVPIersNw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="max" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="28jrcWWvMNs" resolve="ShuffleExpression" />
+    </node>
+  </node>
 </model>
 
